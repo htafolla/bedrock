@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Bedrock — a field manual of biblical first principles for enduring suffering and walking by the Spirit.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

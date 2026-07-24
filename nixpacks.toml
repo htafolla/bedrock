@@ -1,6 +1,6 @@
-# Ensure Railway/Nixpacks installs deps and builds the Vite app
+# Railway/Nixpacks — Vite 8 needs Node ^20.19 or >=22
 [phases.setup]
-nixPkgs = ["nodejs_20"]
+nixPkgs = ["nodejs_22"]
 
 [phases.install]
 cmds = ["npm ci"]
