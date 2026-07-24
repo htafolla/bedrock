@@ -1,4 +1,4 @@
-# Same style as ~/dev/chrono-warp-drive/mcp — Nixpacks, no Docker
+# Pattern from ~/dev/chrono-warp-drive/mcp — Nixpacks only, no Docker
 [build]
 builder = "nixpacks"
 buildCommand = "npm install && npm run build"

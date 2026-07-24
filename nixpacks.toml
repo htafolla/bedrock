@@ -1,4 +1,2 @@
-# Match working Railway Node services (chrono-warp-drive/mcp style)
-[variables]
-NPM_CONFIG_PRODUCTION = "false"
-NIXPACKS_NODE_VERSION = "22"
+# Minimal — like ~/dev/chrono-warp-drive/mcp (no Docker, Node via railway.json)
+# Do not force npm ci; install phase is handled by buildCommand.

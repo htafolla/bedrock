@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Bedrock — a field manual of biblical first principles for enduring suffering and walking by the Spirit.",
+  "description": "Bedrock — a field guide to Love · Living · Enduring. First principles for the road.",
   "engines": {
     "node": ">=20.19.0"
   },
@@ -17,25 +17,23 @@
     "lint": "tsc -b --pretty false"
   },
   "dependencies": {
-    "@0xray/repertoire": "^0.1.8",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
-    "0xray": "^3.5.5",
+    "@tailwindcss/vite": "^4.1.18",
+    "@vitejs/plugin-react": "^6.0.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "serve": "^14.2.5",
-    "three": "^0.182.0"
+    "tailwindcss": "^4.1.18",
+    "three": "^0.182.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.1.1"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@types/three": "^0.182.0",
-    "@vitejs/plugin-react": "^6.0.3",
-    "tailwindcss": "^4.1.18",
-    "typescript": "~5.9.3",
-    "vite": "^8.1.1",
     "vitest": "^3.2.4"
   }
 }
