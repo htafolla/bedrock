@@ -1,10 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../types/content'
 import { ChamberNav } from './ChamberNav'
 import { VerseLink } from './VerseLink'
 import { SealedTestimony } from './SealedTestimony'
-import { PermanenceBadge } from './PermanenceBadge'
-import { buildPermanenceRecord, createLocalPermanenceAdapter } from '../lib/permanence'
+
 
 interface ReadingExperienceProps {
   document: BedrockDocument
@@ -97,9 +96,7 @@ function ChamberView({
       {chamber.verses.length > 0 ? (
         <footer className="chamber-verses">
           <h3 className="verses-heading">Scripture</h3>
-          <p className="field-layer-hint">
-            Primary opens the verse on Bible Gateway. ∞ marks the permanent path.
-          </p>
+          <p className="field-layer-hint">Opens the passage on Bible Gateway.</p>
           <ul className="verses-list">
             {chamber.verses.map((v, i) => (
               <li key={`${v.display}-${i}`}>
@@ -135,22 +132,11 @@ function ChamberView({
 
 export function ReadingExperience({ document }: ReadingExperienceProps) {
   const [activeId, setActiveId] = useState(document.chambers[0]?.id ?? '')
-  const [localHash, setLocalHash] = useState<string | null>(null)
 
   const active = useMemo(
     () => document.chambers.find((c) => c.id === activeId) ?? document.chambers[0],
     [document.chambers, activeId],
   )
-
-  useEffect(() => {
-    let cancelled = false
-    void buildPermanenceRecord(document, createLocalPermanenceAdapter()).then((record) => {
-      if (!cancelled) setLocalHash(record.contentHash)
-    })
-    return () => {
-      cancelled = true
-    }
-  }, [document])
 
   if (!active) {
     return <p className="empty-state">No chambers in document yet.</p>
@@ -160,10 +146,10 @@ export function ReadingExperience({ document }: ReadingExperienceProps) {
     <div className="reading">
       <header className="site-header">
         <p className="site-eyebrow">
-          {document.meta.tagline ?? 'A field guide to Love · Living · Enduring'}
+          {document.meta.tagline ?? "A Hitchhiker's Guide to Love · Living · Enduring"}
         </p>
         <h1 className="site-title">{document.meta.title}</h1>
-        <p className="site-subtitle">{document.meta.subtitle}</p>
+        <p className="site-motto">{document.meta.subtitle}</p>
         {document.meta.mission ? (
           <p className="site-mission">{document.meta.mission}</p>
         ) : null}
@@ -192,7 +178,7 @@ export function ReadingExperience({ document }: ReadingExperienceProps) {
             onSelect={setActiveId}
           />
           <SealedTestimony testimony={document.testimony} />
-          <PermanenceBadge meta={document.meta} localHash={localHash} />
+          {/* PermanenceBadge hidden until IPFS / chain pin is live */}
         </div>
       </div>
     </div>

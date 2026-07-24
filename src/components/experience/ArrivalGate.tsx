@@ -1,6 +1,8 @@
 interface ArrivalGateProps {
   title: string
+  /** Motto: Do Better. Be Better. Trust God. */
   subtitle: string
+  /** Hitchhiker's Guide line (holds the triad once) */
   tagline?: string
   mission?: string
   prologue?: string[]
@@ -18,9 +20,11 @@ export function ArrivalGate({
   return (
     <div className="arrival-gate">
       <div className="arrival-card">
-        <p className="site-eyebrow">{tagline ?? 'A field guide to Love · Living · Enduring'}</p>
+        <p className="site-eyebrow">
+          {tagline ?? "A Hitchhiker's Guide to Love · Living · Enduring"}
+        </p>
         <h1 className="site-title">{title}</h1>
-        <p className="site-subtitle">{subtitle}</p>
+        <p className="site-motto">{subtitle}</p>
         {mission ? <p className="site-mission">{mission}</p> : null}
         {prologue?.length ? (
           <div className="prologue">

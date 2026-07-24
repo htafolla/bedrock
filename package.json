@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Bedrock — a field guide to Love · Living · Enduring. First principles for the road.",
+  "description": "Bedrock — A Hitchhiker's Guide to Love · Living · Enduring. Do Better. Be Better. Trust God.",
   "engines": {
     "node": ">=20.19.0"
   },

@@ -63,22 +63,34 @@ Canonical pilgrimage order is `SPINE_ORDER` in `src/lib/spine.ts`.
 
 ---
 
-## 5. Interaction map
+## 5. Three navigators (mobile-first)
+
+Sticky bottom bar after arrival: **Keys · Map · Contents**
+
+| Tab | Role | Default |
+|-----|------|---------|
+| **Keys** | Trial chips (“I fell”, Fear, Covenant…) → chamber | Default on narrow screens |
+| **Map** | Spine strip + 3D constellation when capable; chamber reading when open | Default on wide screens |
+| **Contents** | Full TOC (all first principles, pilgrimage order) | Always available |
+
+Selecting a chamber from Keys or Contents opens reading under **Map**.
+
+## 6. Interaction map
 
 | Input | Mode | Result |
 |-------|------|--------|
-| Enter the nave | arrival | → constellation |
-| Click node | constellation | → chamber(id) |
-| Back to map | chamber | → constellation (keep last id for highlight) |
+| Enter the nave | arrival | → constellation (+ Keys or Map tab) |
+| Key / TOC / spine / node | any | → chamber(id), switch to Map |
+| Back to map | chamber | → constellation Map tab |
 | Spine ← / → | chamber | adjacent spine chamber |
 | Related chip | chamber | → chamber(relatedId) |
 | Esc | chamber | → constellation |
 
-Pointer: constellation canvas `pointer-events: auto`; chamber panel owns pointers; scene may stay visible but non-blocking under panel.
+Pointer: constellation canvas `pointer-events: auto` only on Map tab; chamber panel owns pointers.
 
 ---
 
-## 6. Progressive enhancement
+## 7. Progressive enhancement
 
 | Capability | Experience |
 |------------|------------|
@@ -89,7 +101,7 @@ Visual language (stone, ember, beam) shared; geometry optional.
 
 ---
 
-## 7. Content ownership
+## 8. Content ownership
 
 | Layer | Owns |
 |-------|------|
@@ -99,7 +111,7 @@ Visual language (stone, ember, beam) shared; geometry optional.
 
 ---
 
-## 8. Success criteria
+## 9. Success criteria
 
 1. First-time user can enter without a manual.  
 2. In crisis, spine Next is always available.  

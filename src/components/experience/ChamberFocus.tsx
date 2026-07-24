@@ -135,9 +135,7 @@ export function ChamberFocus({
         {chamber.verses.length > 0 ? (
           <footer className="chamber-verses">
             <h3 className="verses-heading">Scripture</h3>
-            <p className="field-layer-hint">
-              Primary opens the verse on Bible Gateway. ∞ marks the permanent path.
-            </p>
+            <p className="field-layer-hint">Opens the passage on Bible Gateway.</p>
             <ul className="verses-list">
               {chamber.verses.map((v, i) => (
                 <li key={`${v.display}-${i}`}>

@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Bedrock",
-    "subtitle": "Love · Living · Enduring",
-    "tagline": "A field guide to Love · Living · Enduring",
+    "subtitle": "Do Better. Be Better. Trust God.",
+    "tagline": "A Hitchhiker's Guide to Love · Living · Enduring",
     "mission": "First principles, brain hacks, and short prayers to navigate a troubled life — truth you can stand on when the ground is shaking.",
     "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
     "version": "0.1.0",
@@ -181,8 +181,13 @@
           "verseStart": 11
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "When chaos feels big, look up: the heavens declare His glory — your crisis is not the largest thing in the room.",
+        "Worship is a weapon. Name one true thing about who He is before you name one more fear."
+      ],
+      "prayers": [
+        "Lord of all power and beauty, I worship You. Hold all things together — including me. Amen."
+      ],
       "related": [
         "god-first",
         "his-promises",
@@ -316,8 +321,13 @@
           "verseStart": 33
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Ask for daily bread, not a five-year fortress. Today’s obedience + today’s trust.",
+        "Your Father knows what you need. Anxiety is not a provision strategy."
+      ],
+      "prayers": [
+        "Father, give us this day our daily bread. I trust Your knowing more than my planning. Amen."
+      ],
       "related": [
         "the-lords-prayer",
         "trust-in-the-lord",
@@ -359,8 +369,13 @@
           "verseEnd": 13
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Pray it slowly as a reset: Name → Kingdom → Will → Bread → Forgive → Deliver.",
+        "If you cannot form words, pray the Lord’s Prayer until your spirit steadies."
+      ],
+      "prayers": [
+        "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done. Amen."
+      ],
       "related": [
         "his-provision",
         "forgive-as-you-have-been-forgiven",
@@ -486,8 +501,13 @@
           "verseStart": 7
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "If God is for you, stop rehearsing every face that seems against you.",
+        "Cast the care — do not decorate it. He cares for you is a fact, not a mood."
+      ],
+      "prayers": [
+        "Lord, You are for me. I cast my cares on You. Remember mercy over my sin. Amen."
+      ],
       "related": [
         "the-cross-and-our-justification",
         "his-promises",
@@ -582,8 +602,13 @@
           "verseStart": 27
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Simplify the assignment: love God fully; love people as yourself. Everything else is secondary.",
+        "When overwhelmed, ask only: what does love require of me in the next hour?"
+      ],
+      "prayers": [
+        "Jesus, teach me to love You with all my heart and to love others as myself. Amen."
+      ],
       "related": [
         "love-and-patience",
         "choose-selfless-love",
@@ -619,8 +644,13 @@
           "verseEnd": 25
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "The cross is daily. Ask: what must I lay down right now — ego, argument, appetite, control?",
+        "Losing your life for His sake is not self-hatred; it is refusing to make self the god of this hour."
+      ],
+      "prayers": [
+        "Lord, I deny myself. I take up my cross. I follow You — not my flesh. Amen."
+      ],
       "related": [
         "walk-by-the-spirit",
         "the-cross-and-our-justification",
@@ -744,8 +774,13 @@
           "verseStart": 18
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "God’s design does not change when feelings collapse. Hold the standard; entrust the outcome.",
+        "He is witness between a man and the wife of his youth. Speak as if He is in the room."
+      ],
+      "prayers": [
+        "God of the covenant, You hate faithlessness. Make me faithful. Heal what is broken. Amen."
+      ],
       "related": [
         "marriage-covenant",
         "love-and-patience",
@@ -888,8 +923,13 @@
           "verseEnd": 7
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Love keeps no record of wrongs — delete the scoreboard you keep replaying.",
+        "Patience is love under pressure. Slow the reply. Soften the tone. Protect, trust, hope, persevere."
+      ],
+      "prayers": [
+        "Lord, make my love patient and kind. No envy, no record of wrongs. Help me endure. Amen."
+      ],
       "related": [
         "marriage-covenant",
         "forgive-as-you-have-been-forgiven",
@@ -1052,7 +1092,8 @@
       "related": [
         "a-broken-and-contrite-heart",
         "wait-on-the-lord",
-        "he-is-for-you"
+        "he-is-for-you",
+        "loss"
       ]
     },
     {
@@ -1093,12 +1134,18 @@
           "verseStart": 17
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Broken is not useless. God looks to the humble and contrite — not the polished performance.",
+        "Do not rush past conviction. Sit with a clean sorrow that leads to life, not a toxic shame that freezes you."
+      ],
+      "prayers": [
+        "O God, a broken and contrite heart You will not despise. I humble myself. Look upon me. Amen."
+      ],
       "related": [
         "lament-and-pour-out-your-heart",
         "confess-and-be-cleansed",
-        "the-righteous-fall"
+        "the-righteous-fall",
+        "loss"
       ]
     },
     {
@@ -1135,8 +1182,13 @@
           "verseStart": 29
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Everything flows from the heart — so gate the inputs and the words. Silence is sometimes love.",
+        "Before you speak: does this build up according to need, or does it only relieve my pressure?"
+      ],
+      "prayers": [
+        "Set a guard, O Lord, over my mouth. Keep my heart. Let my words give grace. Amen."
+      ],
       "related": [
         "be-quick-to-listen",
         "walk-in-honesty-and-truth",
@@ -1161,8 +1213,13 @@
           "verseStart": 19
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Count to three before you answer. Listening is not losing; it is refusing to let anger drive.",
+        "Slow to speak is spiritual warfare when the flesh wants the last word."
+      ],
+      "prayers": [
+        "Lord, make me quick to listen, slow to speak, slow to anger. Amen."
+      ],
       "related": [
         "guard-your-heart-and-mouth",
         "love-and-patience",
@@ -1197,8 +1254,13 @@
           "verseStart": 1
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Gentleness is not weakness. Restore with care — and watch yourself so you do not fall the same way.",
+        "There is a time for everything. Do not force a harvest in a winter season."
+      ],
+      "prayers": [
+        "Father, teach me to restore gently. Give wisdom for timing. Keep me from pride. Amen."
+      ],
       "related": [
         "confess-and-be-cleansed",
         "love-and-patience",
@@ -1291,8 +1353,13 @@
           "verseStart": 37
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Let your yes be yes. Half-truths are full lies with better manners.",
+        "Put off falsehood even when truth costs status. Light is safer than managed darkness."
+      ],
+      "prayers": [
+        "God of truth, I put off falsehood. Make my words straight. Keep me in the light. Amen."
+      ],
       "related": [
         "confess-and-be-cleansed",
         "guard-your-heart-and-mouth",
@@ -1329,8 +1396,13 @@
           "verseEnd": 16
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "In humility count others more significant. Ask: what serves them, not what wins for me?",
+        "Selfish ambition feels like clarity and is often poison. Check the motive before the move."
+      ],
+      "prayers": [
+        "Lord, empty me of selfish ambition. Let me look to others’ interests in love. Amen."
+      ],
       "related": [
         "love-and-patience",
         "deny-yourself",
@@ -1359,8 +1431,13 @@
           "verseStart": 9
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Blessing is the counter-move. Evil repaid with evil multiplies darkness.",
+        "When insult rises, answer with a blessing — out loud if you can, in prayer if you cannot yet."
+      ],
+      "prayers": [
+        "Lord, I will not repay evil with evil. Teach me to bless. Guard my tongue and heart. Amen."
+      ],
       "related": [
         "leave-vengeance-to-the-lord",
         "forgive-as-you-have-been-forgiven",
@@ -1370,7 +1447,7 @@
     {
       "id": "leave-vengeance-to-the-lord",
       "title": "Leave Vengeance to the Lord",
-      "summary": "The Lord will fight for you; you need only be still.",
+      "summary": "Vengeance belongs to Him — and hatred has no place with love.",
       "body": [
         {
           "type": "paragraph",
@@ -1379,6 +1456,18 @@
         {
           "type": "paragraph",
           "text": "Never avenge yourselves. Leave it to the wrath of God. Vengeance belongs to Him; He will repay."
+        },
+        {
+          "type": "paragraph",
+          "text": "If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hatred is vengeance that never leaves the heart. Put it down. Bless. Entrust the scales to God."
         }
       ],
       "verses": [
@@ -1393,19 +1482,49 @@
           "book": "Romans",
           "chapter": 12,
           "verseStart": 19
+        },
+        {
+          "display": "1 John 4:20",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 20
+        },
+        {
+          "display": "1 John 3:15",
+          "book": "1 John",
+          "chapter": 3,
+          "verseStart": 15
+        },
+        {
+          "display": "Leviticus 19:17–18",
+          "book": "Leviticus",
+          "chapter": 19,
+          "verseStart": 17,
+          "verseEnd": 18
+        },
+        {
+          "display": "Matthew 5:43–44",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 43,
+          "verseEnd": 44
         }
       ],
       "hacks": [
         "Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.",
-        "If the urge is to repay, that is flesh. Bless, entrust, do the next right thing."
+        "If the urge is to repay, that is flesh. Bless, entrust, do the next right thing.",
+        "Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin."
       ],
       "prayers": [
-        "Lord, fight for me. Vengeance is Yours. Make me still. Keep me from evil repayment. Amen."
+        "Lord, fight for me. Vengeance is Yours. Root hatred out of me. Teach me to love as You love. Amen."
       ],
       "related": [
         "do-not-repay-evil-with-evil",
         "forgive-as-you-have-been-forgiven",
-        "wait-on-the-lord"
+        "wait-on-the-lord",
+        "love-and-patience",
+        "choose-selfless-love",
+        "fear"
       ]
     },
     {
@@ -1509,8 +1628,13 @@
           "verseEnd": 25
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "You were not designed to carry this alone. Bear burdens — and let trusted saints bear yours.",
+        "Encourage daily. Isolation hardens the heart; presence softens deceit."
+      ],
+      "prayers": [
+        "Father, place me in Your body. Help me bear burdens and receive help. Stir love and good works. Amen."
+      ],
       "related": [
         "restore-gently-and-give-time",
         "confess-and-be-cleansed",
@@ -1558,8 +1682,13 @@
           "verseStart": 34
         }
       ],
-      "hacks": [],
-      "prayers": [],
+      "hacks": [
+        "Lean not on your own understanding — especially when your understanding is panic with a spreadsheet.",
+        "Trust is active: acknowledge Him in this path, then walk the straight step He shows."
+      ],
+      "prayers": [
+        "Lord, I trust You with all my heart. I will not lean on my own understanding. Direct my path. Amen."
+      ],
       "related": [
         "god-first",
         "do-not-fear",
@@ -1625,9 +1754,180 @@
         "God, You have not given me a spirit of fear. Be with me. Steady my mind. Amen."
       ],
       "related": [
+        "fear",
         "trust-in-the-lord",
         "his-promises",
         "take-every-thought-captive"
+      ]
+    },
+    {
+      "id": "fear",
+      "title": "Fear",
+      "summary": "There is no fear in love, but perfect love casts out fear.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fear is the absence of perfect love — not the absence of danger. The cure is not bravado; it is abiding in His love."
+        },
+        {
+          "type": "paragraph",
+          "text": "When I am afraid, I put my trust in You."
+        },
+        {
+          "type": "paragraph",
+          "text": "The fear of man lays a snare, but whoever trusts in the Lord is safe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go."
+        },
+        {
+          "type": "paragraph",
+          "text": "Name the fear. Receive His love. Take the next obedient step."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 John 4:18",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 18
+        },
+        {
+          "display": "Psalm 56:3",
+          "book": "Psalm",
+          "chapter": 56,
+          "verseStart": 3
+        },
+        {
+          "display": "Proverbs 29:25",
+          "book": "Proverbs",
+          "chapter": 29,
+          "verseStart": 25
+        },
+        {
+          "display": "John 14:27",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 27
+        },
+        {
+          "display": "Joshua 1:9",
+          "book": "Joshua",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "Romans 8:15",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 15
+        }
+      ],
+      "hacks": [
+        "Fear is the absence of perfect love — not proof that danger is fake. Run toward His love, not toward control.",
+        "Say it plain: I am afraid of ___. Then: when I am afraid, I put my trust in You.",
+        "Fear of man is a snare. Whose face are you managing? Put that face down. Look to the Lord.",
+        "Peace is given, not earned. Receive His love; then take the next obedient step — even if your hands still shake."
+      ],
+      "prayers": [
+        "Father, perfect Your love in me. Cast out fear. I am Your child, not a slave to terror. Amen."
+      ],
+      "related": [
+        "do-not-fear",
+        "trust-in-the-lord",
+        "loss",
+        "take-every-thought-captive",
+        "his-promises",
+        "he-is-for-you",
+        "his-grace-is-sufficient"
+      ]
+    },
+    {
+      "id": "loss",
+      "title": "Loss",
+      "summary": "The Lord is near to the brokenhearted and saves the crushed in spirit.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The Lord is near to the brokenhearted and saves the crushed in spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Blessed are those who mourn, for they shall be comforted."
+        },
+        {
+          "type": "paragraph",
+          "text": "We do not grieve as others do who have no hope."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Lord gave, and the Lord has taken away; blessed be the name of the Lord."
+        },
+        {
+          "type": "paragraph",
+          "text": "Loss empties hands. It does not empty God. Pour out your heart. Wait. Hold what remains true."
+        },
+        {
+          "type": "paragraph",
+          "text": "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Matthew 5:4",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 4
+        },
+        {
+          "display": "1 Thessalonians 4:13",
+          "book": "1 Thessalonians",
+          "chapter": 4,
+          "verseStart": 13
+        },
+        {
+          "display": "Job 1:21",
+          "book": "Job",
+          "chapter": 1,
+          "verseStart": 21
+        },
+        {
+          "display": "Revelation 21:4",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Name what was lost without rewriting God. Mourning is not unbelief.",
+        "Do not grieve as those without hope — hope does not erase tears; it frames them.",
+        "Empty hands can still bless His name. One honest sentence to God is better than a performance of fine."
+      ],
+      "prayers": [
+        "Father, I am near the broken place. Be near me. Comfort those who mourn. Hold what I cannot hold. Amen."
+      ],
+      "related": [
+        "lament-and-pour-out-your-heart",
+        "a-broken-and-contrite-heart",
+        "hope-of-glory",
+        "wait-on-the-lord",
+        "he-is-for-you",
+        "fear"
       ]
     },
     {
@@ -1919,34 +2219,41 @@
   "testimony": {
     "sealed": true,
     "previewLabel": "A sealed word",
-    "title": "Backstory",
     "lines": [
-      "I made a grave error.",
-      "Travesty has beset me.",
-      "Chaos swirls all around me,",
-      "though I take no delight in it, nor part in its ways.",
-      "Truth and integrity are my shield,",
-      "yet I am flawed to the core.",
-      "I strive to control myself at every turn,",
-      "but still I slip and stumble.",
-      "I have taken a fall.",
-      "I fell from the grace that once protected me.",
-      "The hoot of the owl in the haunt warned me.",
-      "I heard it. I listened. I pondered.",
-      "Yet I did not heed the warning,",
-      "and I failed to guard myself from travesty.",
-      "Discipline and justice come to all whom the Lord loves—",
-      "by His hand, without prejudice.",
-      "He stores up His wrath for everyone else.",
-      "Take correction when it comes to you.",
-      "Study its ways.",
-      "Digest its warnings.",
-      "Redemption’s journey may be quick or prolonged.",
-      "Pray for mercy.",
-      "Delight in goodness.",
-      "Once restored, help others who share the same plight.",
-      "For it is only by His lovingkindness and mercy",
-      "that we are forgiven, restored, and saved."
-    ]
+      "This is a testament to Him that through the fire He was always with me.",
+      "I have found a crucible in the rubble. A hidden gem only He could fashion."
+    ],
+    "poem": {
+      "title": "Backstory",
+      "linkLabel": "For a deeper understanding",
+      "lines": [
+        "I made a grave error.",
+        "Travesty has beset me.",
+        "Chaos swirls all around me,",
+        "though I take no delight in it, nor part in its ways.",
+        "Truth and integrity are my shield,",
+        "yet I am flawed to the core.",
+        "I strive to control myself at every turn,",
+        "but still I slip and stumble.",
+        "I have taken a fall.",
+        "I fell from the grace that once protected me.",
+        "The hoot of the owl in the haunt warned me.",
+        "I heard it. I listened. I pondered.",
+        "Yet I did not heed the warning,",
+        "and I failed to guard myself from travesty.",
+        "Discipline and justice come to all whom the Lord loves—",
+        "by His hand, without prejudice.",
+        "He stores up His wrath for everyone else.",
+        "Take correction when it comes to you.",
+        "Study its ways.",
+        "Digest its warnings.",
+        "Redemption’s journey may be quick or prolonged.",
+        "Pray for mercy.",
+        "Delight in goodness.",
+        "Once restored, help others who share the same plight.",
+        "For it is only by His lovingkindness and mercy",
+        "that we are forgiven, restored, and saved."
+      ]
+    }
   }
 }

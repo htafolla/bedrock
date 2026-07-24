@@ -1,9 +1,10 @@
 # Bedrock
 
-**A field guide to Love · Living · Enduring** — first principles, under-fire brain hacks, and short prayers for a troubled life.
+**A Hitchhiker’s Guide to Love · Living · Enduring**
 
-Original working title: *The Hitchhiker’s Guild · Love · Living · Enduring*  
-Final name: **Bedrock** (because these are first principles that remain true)
+**Motto:** Do Better. Be Better. Trust God.
+
+First principles, under-fire brain hacks, and short prayers for a troubled life.
 
 > I hold these things to be true. A lifetime to master them.  
 > Though I fall, I get back up. Out of the fire a crucible emerges.

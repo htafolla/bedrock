@@ -38,6 +38,8 @@ export const SPINE_ORDER = [
   'one-another-in-the-body',
   'trust-in-the-lord',
   'do-not-fear',
+  'fear',
+  'loss',
   'renew-your-mind',
   'take-every-thought-captive',
   'the-full-armor-of-god',
@@ -84,16 +86,22 @@ export interface NodePose {
 }
 
 /**
- * Nave path: entrance +Z → glory −Z.
- * Slight lateral alternate for legibility; gentle vertical arc.
+ * Fanned DNA / double-helix path: entrance +Z → glory −Z.
+ * Wide lateral spread so nodes are clickable and readable, not a tight line.
  */
 export function spinePosition(index: number, total: number): THREE.Vector3 {
   const n = Math.max(total - 1, 1)
   const t = index / n
-  const z = THREE.MathUtils.lerp(7.5, -13.5, t)
-  const y = 0.35 + Math.sin(t * Math.PI) * 0.55
-  const lateral = (index % 2 === 0 ? -1 : 1) * (0.55 + t * 0.35)
-  const x = Math.sin(t * Math.PI) * 0.25 + lateral
+  // Long corridor of first principles
+  const z = THREE.MathUtils.lerp(11, -20, t)
+  // Fan radius: narrow at ends, open in the middle (helix envelope)
+  const radius = 1.6 + Math.sin(t * Math.PI) * 4.2
+  // ~2.25 turns along the path
+  const angle = t * Math.PI * 4.5
+  // Second strand offset for even/odd (DNA ladder feel)
+  const strand = index % 2 === 0 ? 0 : Math.PI
+  const x = Math.cos(angle + strand) * radius
+  const y = 1.4 + Math.sin(angle + strand) * (radius * 0.62)
   return new THREE.Vector3(x, y, z)
 }
 
@@ -126,22 +134,24 @@ export interface CameraPose {
 
 export function cameraForArrival(): CameraPose {
   return {
-    position: new THREE.Vector3(0, 1.45, 11.2),
-    target: new THREE.Vector3(0, 0.45, 2.2),
+    position: new THREE.Vector3(0, 2.2, 14),
+    target: new THREE.Vector3(0, 1.2, 2),
   }
 }
 
+/** Pull back high enough to read the fanned DNA. */
 export function cameraForConstellation(poses: NodePose[]): CameraPose {
   const mid = pathMidpoint(poses)
   return {
-    position: new THREE.Vector3(0.2, 9.8, 14.5),
-    target: new THREE.Vector3(mid.x * 0.3, mid.y + 0.2, mid.z),
+    position: new THREE.Vector3(0.4, 14.5, 22),
+    target: new THREE.Vector3(mid.x * 0.15, mid.y + 0.4, mid.z),
   }
 }
 
+/** Intimate frame on a node — used for enter transition into chamber reading. */
 export function cameraForChamber(nodePos: THREE.Vector3): CameraPose {
   return {
-    position: new THREE.Vector3(nodePos.x + 2.1, nodePos.y + 1.15, nodePos.z + 3.4),
-    target: nodePos.clone().add(new THREE.Vector3(0, 0.05, 0)),
+    position: new THREE.Vector3(nodePos.x + 2.1, nodePos.y + 1.15, nodePos.z + 3.35),
+    target: nodePos.clone().add(new THREE.Vector3(0, 0.12, 0)),
   }
 }

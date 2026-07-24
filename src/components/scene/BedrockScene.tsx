@@ -8,6 +8,7 @@ import type { ExperienceMode } from '../../types/experience'
 import { buildNodePoses, orderChambersBySpine } from '../../lib/spine'
 import { CameraRig } from './CameraRig'
 import { ConstellationGraph } from './ConstellationGraph'
+import { OrbitSpin } from './OrbitSpin'
 
 interface BedrockSceneProps {
   mode: ExperienceMode
@@ -127,6 +128,7 @@ export function BedrockScene({
 }: BedrockSceneProps) {
   const ordered = useMemo(() => orderChambersBySpine(chambers), [chambers])
   const poses = useMemo(() => buildNodePoses(ordered.map((c) => c.id)), [ordered])
+  const orbitEnabled = interactive && mode === 'constellation' && !reducedMotion
 
   return (
     <div
@@ -135,7 +137,7 @@ export function BedrockScene({
     >
       <Canvas
         dpr={[1, 1.5]}
-        camera={{ position: [0, 1.45, 11.2], fov: 42, near: 0.1, far: 80 }}
+        camera={{ position: [0, 2.2, 14], fov: 46, near: 0.1, far: 90 }}
         gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
       >
         <Suspense fallback={null}>
@@ -152,7 +154,9 @@ export function BedrockScene({
             poses={poses}
             activeChamberId={activeChamberId}
             reducedMotion={reducedMotion}
+            orbitEnabled={orbitEnabled}
           />
+          <OrbitSpin enabled={orbitEnabled} autoRotate={!reducedMotion} />
         </Suspense>
       </Canvas>
     </div>

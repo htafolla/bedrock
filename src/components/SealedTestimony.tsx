@@ -6,15 +6,19 @@ interface SealedTestimonyProps {
 }
 
 /**
- * Sealed by default. Visitor must choose to open.
- * Holds the backstory poem — not the product pitch.
- * Restraint: no animation spectacle — quiet reveal.
+ * Sealed by default. Short word first; poem behind a deeper-understanding link.
  */
 export function SealedTestimony({ testimony }: SealedTestimonyProps) {
   const [open, setOpen] = useState(false)
+  const [showPoem, setShowPoem] = useState(false)
+
+  const close = () => {
+    setOpen(false)
+    setShowPoem(false)
+  }
 
   return (
-    <section className="testimony" aria-label="Sealed backstory">
+    <section className="testimony" aria-label="Sealed word">
       {!open ? (
         <button
           type="button"
@@ -29,21 +33,48 @@ export function SealedTestimony({ testimony }: SealedTestimonyProps) {
         </button>
       ) : (
         <div className="testimony-body">
-          {testimony.title ? (
-            <h3 className="testimony-title">{testimony.title}</h3>
-          ) : null}
-          <div className="testimony-poem">
-            {testimony.lines.map((line, i) => (
-              <p key={`${i}-${line.slice(0, 24)}`} className="testimony-text">
-                {line}
-              </p>
-            ))}
-          </div>
-          <button
-            type="button"
-            className="testimony-close"
-            onClick={() => setOpen(false)}
-          >
+          {!showPoem ? (
+            <>
+              {testimony.title ? (
+                <h3 className="testimony-title">{testimony.title}</h3>
+              ) : null}
+              <div className="testimony-poem">
+                {testimony.lines.map((line, i) => (
+                  <p key={`${i}-${line.slice(0, 24)}`} className="testimony-text">
+                    {line}
+                  </p>
+                ))}
+              </div>
+              {testimony.poem ? (
+                <button
+                  type="button"
+                  className="testimony-deeper"
+                  onClick={() => setShowPoem(true)}
+                >
+                  {testimony.poem.linkLabel}
+                </button>
+              ) : null}
+            </>
+          ) : (
+            <>
+              <h3 className="testimony-title">{testimony.poem?.title ?? 'Backstory'}</h3>
+              <div className="testimony-poem">
+                {(testimony.poem?.lines ?? []).map((line, i) => (
+                  <p key={`${i}-${line.slice(0, 24)}`} className="testimony-text">
+                    {line}
+                  </p>
+                ))}
+              </div>
+              <button
+                type="button"
+                className="testimony-deeper ghost"
+                onClick={() => setShowPoem(false)}
+              >
+                ← Back to the sealed word
+              </button>
+            </>
+          )}
+          <button type="button" className="testimony-close" onClick={close}>
             Seal again
           </button>
         </div>

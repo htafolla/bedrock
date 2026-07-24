@@ -134,21 +134,321 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* —— Constellation HUD —— */
-.constellation-hud {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.25rem 1.25rem 2rem;
+/* —— Mobile-first shell: TOP nav + content (DNA click-through under Map) —— */
+.experience-main-with-nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  /* Let empty space pass clicks to the 3D scene */
+  pointer-events: none;
 }
 
-.constellation-hud-copy {
+.experience-main {
+  flex: 1;
+  padding-top: 0.5rem;
+  pointer-events: none;
+}
+
+.experience-main > * {
+  pointer-events: auto;
+}
+
+.nav-modes {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: calc(0.45rem + env(safe-area-inset-top, 0px)) 0.75rem 0.45rem;
+  pointer-events: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 10, 9, 0.94) 0%,
+    rgba(12, 10, 9, 0.82) 70%,
+    transparent 100%
+  );
+  backdrop-filter: blur(12px);
+}
+
+.nav-modes-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.nav-brand {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+}
+
+.nav-modes-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  background: rgba(12, 10, 9, 0.9);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.nav-mode-btn {
+  min-height: 2.75rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-mode-btn:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+.nav-mode-btn.active {
+  background: rgba(232, 160, 80, 0.18);
+  color: var(--beam);
+}
+
+.nav-mode-btn:active {
+  transform: scale(0.98);
+}
+
+/* Map: compact chrome so DNA has room and remains clickable */
+.mode-constellation.nav-map .constellation-hud.map-chrome {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.35rem;
+  padding-bottom: 0.5rem;
+}
+
+.mode-constellation.nav-map .map-chrome-header {
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.mode-constellation.nav-map .constellation-title {
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0.25rem;
+}
+
+.mode-constellation.nav-map .experience-main {
+  /* leave lower 55%+ open for DNA interaction */
+  min-height: 0;
+}
+
+.map-hint {
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* 3D node hover / enter labels (Html from drei) */
+.dna-node-label {
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(12, 10, 9, 0.88);
+  border: 1px solid rgba(196, 165, 116, 0.45);
+  color: #f0d9a8;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+.dna-node-label.active,
+.dna-node-label.entering {
+  border-color: rgba(232, 160, 80, 0.75);
+  color: #fff6e6;
+  background: rgba(40, 28, 16, 0.92);
+}
+
+@media (min-width: 768px) {
+  .nav-modes-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 56rem;
+    gap: 1rem;
+  }
+
+  .nav-brand {
+    text-align: left;
+    min-width: 6rem;
+  }
+
+  .nav-modes-inner {
+    flex: 1;
+    max-width: 22rem;
+    margin-left: auto;
+  }
+}
+
+.nav-panel-header {
   max-width: 36rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   padding: 1rem 1.15rem;
   backdrop-filter: blur(12px);
+}
+
+/* —— Key chips (trial entry) —— */
+.key-chips-panel,
+.toc-panel,
+.constellation-hud {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 1rem 1.5rem;
+}
+
+.key-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+
+@media (min-width: 640px) {
+  .key-chips {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .key-chips {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.key-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2rem;
+  min-height: 4.25rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(12, 10, 9, 0.75);
+  color: var(--stone-100);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.key-chip:active {
+  transform: scale(0.98);
+}
+
+.key-chip.active,
+.key-chip:hover {
+  border-color: rgba(232, 160, 80, 0.5);
+  background: rgba(232, 160, 80, 0.1);
+}
+
+.key-chip-label {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--beam);
+  line-height: 1.2;
+}
+
+.key-chip-hint {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* —— Table of contents —— */
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.toc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 3.25rem;
+  text-align: left;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: rgba(12, 10, 9, 0.55);
+  color: var(--stone-100);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.toc-item:hover,
+.toc-item.active {
+  border-color: rgba(232, 160, 80, 0.4);
+  background: rgba(232, 160, 80, 0.08);
+}
+
+.toc-num {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ember-soft);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.2rem;
+}
+
+.toc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.toc-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--beam);
+  line-height: 1.25;
+}
+
+.toc-summary {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* —— Map (constellation) —— */
+.constellation-hud {
+  /* max-width set with key-chips-panel */
 }
 
 .constellation-kicker {
@@ -242,7 +542,7 @@ body {
 .chamber-focus {
   max-width: 720px;
   margin: 0 auto;
-  padding: 1rem 1.25rem 3rem;
+  padding: 1rem 1rem 1.5rem;
 }
 
 .chamber-focus-toolbar {
@@ -307,7 +607,7 @@ body {
 .experience-footer-stack {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.25rem 2.5rem;
+  padding: 0 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -321,16 +621,7 @@ body {
   margin-top: 0;
 }
 
-/* Constellation: leave lower viewport open for 3D */
-.mode-constellation .constellation-hud {
-  padding-bottom: 0.5rem;
-}
 
-@media (min-width: 900px) {
-  .mode-constellation .constellation-hud-copy {
-    max-width: 28rem;
-  }
-}
 
 .fallback-atmosphere {
   background:
@@ -397,21 +688,23 @@ body {
   color: var(--beam);
 }
 
-.site-subtitle {
+.site-subtitle,
+.site-motto {
   font-family: var(--font-display);
-  font-style: italic;
-  font-size: clamp(1.15rem, 3vw, 1.5rem);
-  color: var(--muted);
-  margin: 0.75rem 0 0;
-  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.1rem, 2.8vw, 1.35rem);
+  color: var(--beam);
+  margin: 0.65rem 0 0;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .site-mission {
-  margin: 1rem auto 0;
-  max-width: 40rem;
-  font-size: 0.98rem;
+  margin: 0.85rem auto 0;
+  max-width: 36rem;
+  font-size: 0.95rem;
   line-height: 1.55;
-  color: var(--stone-400);
+  color: var(--muted);
 }
 
 .prologue {
@@ -798,6 +1091,34 @@ body {
 
 .testimony-text:last-child {
   margin-bottom: 0;
+}
+
+.testimony-deeper {
+  display: block;
+  margin: 0.25rem auto 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(196, 165, 116, 0.45);
+  color: var(--ember-soft);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  padding: 0.2rem 0;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.testimony-deeper:hover {
+  color: var(--beam);
+  border-bottom-color: var(--ember);
+}
+
+.testimony-deeper.ghost {
+  border-bottom: none;
+  font-size: 0.95rem;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
 }
 
 .testimony-close {

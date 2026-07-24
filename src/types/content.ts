@@ -40,11 +40,14 @@ export interface Chamber {
 export interface BedrockMeta {
   /** Final product name — always "Bedrock" */
   title: string
-  /** Heritage triad: Love · Living · Enduring */
+  /** Motto under the name: Do Better. Be Better. Trust God. */
   subtitle: string
-  /** Optional short field-manual tagline */
+  /**
+   * Product line (one place for the triad).
+   * e.g. A Hitchhiker's Guide to Love · Living · Enduring
+   */
   tagline?: string
-  /** One-line product mission */
+  /** What the guide is — one sentence under motto */
   mission?: string
   /** Original working title (historical, not primary brand) */
   workingTitle?: string
@@ -63,10 +66,16 @@ export interface Testimony {
   /** Sealed by default; only opened by visitor choice */
   sealed: true
   previewLabel: string
-  /** Optional heading when opened (e.g. Backstory) */
+  /** Optional heading when opened */
   title?: string
-  /** Poem / sealed word lines — the private backstory, not the product pitch */
+  /** Short sealed word (shown first) */
   lines: string[]
+  /** Optional poem for deeper understanding */
+  poem?: {
+    title: string
+    linkLabel: string
+    lines: string[]
+  }
 }
 
 export interface Prologue {

@@ -5,10 +5,10 @@ interface ConstellationHudProps {
   chambers: Chamber[]
   activeChamberId: string | null
   onSelect: (id: string) => void
-  /** 2D fallback when 3D is off */
   fallbackList?: boolean
 }
 
+/** Compact top chrome for Map — DNA lives in the open canvas below. */
 export function ConstellationHud({
   chambers,
   activeChamberId,
@@ -18,20 +18,20 @@ export function ConstellationHud({
   const ordered = orderChambersBySpine(chambers)
 
   return (
-    <div className={`constellation-hud ${fallbackList ? 'constellation-hud-fallback' : ''}`}>
-      <div className="constellation-hud-copy">
-        <p className="constellation-kicker">Nave · Constellation</p>
-        <h2 className="constellation-title">Walk the first principles</h2>
+    <div
+      className={`constellation-hud map-chrome ${fallbackList ? 'constellation-hud-fallback' : ''}`}
+    >
+      <header className="nav-panel-header map-chrome-header">
+        <p className="constellation-kicker">Map</p>
+        <h2 className="constellation-title">The path · fanned</h2>
         <p className="constellation-blurb">
-          The spine is the pilgrimage. Dim lines are connected truth. Select a chamber when you know
-          what you are fighting — or walk the path in order.
+          {fallbackList
+            ? 'Swipe the spine below. On larger screens you can spin the DNA constellation.'
+            : 'Drag to spin · scroll to zoom · hover a node for its name · click to enter.'}
         </p>
-      </div>
+      </header>
 
-      <ol
-        className={`spine-strip ${fallbackList ? 'spine-strip-wrap' : ''}`}
-        aria-label="Spine of first principles"
-      >
+      <ol className="spine-strip" aria-label="Spine of first principles">
         {ordered.map((c, i) => {
           const active = c.id === activeChamberId
           return (
@@ -49,11 +49,17 @@ export function ConstellationHud({
         })}
       </ol>
 
-      {activeChamberId && spineIndexOf(activeChamberId) >= 0 ? (
-        <p className="constellation-focus-hint">
-          Highlighted on the path · click a node or chip to enter the chamber
+      {!fallbackList ? (
+        <p className="constellation-focus-hint map-hint">
+          Drag empty space to orbit · scroll to zoom · nodes open chambers
         </p>
-      ) : null}
+      ) : (
+        <p className="constellation-focus-hint">
+          {activeChamberId && spineIndexOf(activeChamberId) >= 0
+            ? 'Selected on the path'
+            : 'Choose a chamber from the spine'}
+        </p>
+      )}
     </div>
   )
 }

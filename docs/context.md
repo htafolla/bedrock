@@ -43,16 +43,16 @@ A response to:
 
 > What remains true when the ground is shaking?
 
-### Sealed backstory (poem — optional open, not the product pitch)
+### Sealed word (optional open, not the product pitch)
 
-The private origin is a poem of fall, warning unheeded, discipline, and restoration:
+**First (short):**
 
-> I made a grave error. / Travesty has beset me. / …  
-> Take correction when it comes to you. / Pray for mercy. / Delight in goodness.  
-> Once restored, help others who share the same plight.  
-> For it is only by His lovingkindness and mercy that we are forgiven, restored, and saved.
+> This is a testament to Him that through the fire He was always with me.  
+> I have found a crucible in the rubble. A hidden gem only He could fashion.
 
-**Public framing:** Bedrock is a Hitchhiker’s field guide to Love · Living · Enduring — first principles for the road. The poem is sealed for those who choose to open it; the product is the map.
+**Deeper (poem link — “For a deeper understanding”):** backstory poem of fall, unheeded warning, discipline, mercy, and restoring others.
+
+**Public framing:** Bedrock is a Hitchhiker’s field guide to Love · Living · Enduring — first principles for the road. The sealed word is optional; the product is the map.
 
 ## The dichotomy (two dual systems)
 
@@ -88,7 +88,7 @@ Visual language: quiet cathedral / forge / crucible of light and stone — resid
 
 ## Structure (35 major sections)
 
-God First · His Power and Beauty · His Promises · His Provision · The Lord’s Prayer · The Cross and Our Justification · He Is For You · His Grace Is Sufficient · The Meaning of Life · Deny Yourself · Walk by the Spirit · God on Marriage · Marriage Covenant · Love and Patience · Count the Trial as Joy · Wait on the Lord · Lament and Pour Out Your Heart · A Broken and Contrite Heart · Guard Your Heart and Mouth · Be Quick to Listen · Restore Gently and Give Time · Confess and Be Cleansed · Walk in Honesty and Truth · Choose Selfless Love · Do Not Repay Evil with Evil · Leave Vengeance to the Lord · Forgive as You Have Been Forgiven · One Another in the Body · Trust in the Lord · Do Not Fear · Renew Your Mind · Take Every Thought Captive · The Full Armor of God · Hope of Glory (crowns / rewards) · The Righteous Fall
+God First · His Power and Beauty · His Promises · His Provision · The Lord’s Prayer · The Cross and Our Justification · He Is For You · His Grace Is Sufficient · The Meaning of Life · Deny Yourself · Walk by the Spirit · God on Marriage · Marriage Covenant · Love and Patience · Count the Trial as Joy · Wait on the Lord · Lament and Pour Out Your Heart · A Broken and Contrite Heart · Guard Your Heart and Mouth · Be Quick to Listen · Restore Gently and Give Time · Confess and Be Cleansed · Walk in Honesty and Truth · Choose Selfless Love · Do Not Repay Evil with Evil · Leave Vengeance to the Lord · Forgive as You Have Been Forgiven · One Another in the Body · Trust in the Lord · Do Not Fear · Fear · Loss · Renew Your Mind · Take Every Thought Captive · The Full Armor of God · Hope of Glory (crowns / rewards) · The Righteous Fall
 
 Every section ends with supporting Scripture references. Chambers may also carry **hacks**, **prayers**, and **related** links.
 

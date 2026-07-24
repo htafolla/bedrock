@@ -43,6 +43,14 @@ describe('layout', () => {
     expect(b.z).toBeLessThan(a.z)
   })
 
+  it('fans mid-path nodes wider than the ends (DNA envelope)', () => {
+    const start = spinePosition(0, SPINE_ORDER.length)
+    const mid = spinePosition(Math.floor(SPINE_ORDER.length / 2), SPINE_ORDER.length)
+    const startR = Math.hypot(start.x, start.y - 1.4)
+    const midR = Math.hypot(mid.x, mid.y - 1.4)
+    expect(midR).toBeGreaterThan(startR)
+  })
+
   it('builds a pose per id', () => {
     const poses = buildNodePoses([...SPINE_ORDER])
     expect(poses).toHaveLength(SPINE_ORDER.length)
