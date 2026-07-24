@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.vite
+.xray
+.strray
+.strray
+.opencode
+.grok
+logs
+*.log
+.DS_Store
+coverage
+*.tsbuildinfo
