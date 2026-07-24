@@ -63,7 +63,9 @@ export interface Testimony {
   /** Sealed by default; only opened by visitor choice */
   sealed: true
   previewLabel: string
-  /** One or more short lines; keep steel, not spectacle */
+  /** Optional heading when opened (e.g. Backstory) */
+  title?: string
+  /** Poem / sealed word lines — the private backstory, not the product pitch */
   lines: string[]
 }
 

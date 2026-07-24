@@ -770,20 +770,34 @@ body {
   opacity: 0.7;
 }
 
+.testimony-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.testimony-poem {
+  max-width: 34rem;
+  margin: 0 auto 1.15rem;
+}
+
 .testimony-text {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.08rem;
+  line-height: 1.55;
   color: var(--stone-100);
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.35rem;
   text-align: center;
-  max-width: 40ch;
-  margin-inline: auto;
 }
 
-.testimony-text:last-of-type {
-  margin-bottom: 1.15rem;
+.testimony-text:last-child {
+  margin-bottom: 0;
 }
 
 .testimony-close {

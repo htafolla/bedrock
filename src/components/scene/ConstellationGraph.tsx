@@ -30,14 +30,12 @@ function undirectedEdges(chambers: Chamber[]): Array<[string, string]> {
 
 function ChamberNode({
   pose,
-  title,
   active,
   dimmed,
   interactive,
   onSelect,
 }: {
   pose: NodePose
-  title: string
   active: boolean
   dimmed: boolean
   interactive: boolean
@@ -119,12 +117,6 @@ export function ConstellationGraph({
     return m
   }, [poses])
 
-  const titleById = useMemo(() => {
-    const m = new Map<string, string>()
-    for (const c of chambers) m.set(c.id, c.title)
-    return m
-  }, [chambers])
-
   const edgePositions = useMemo(() => {
     const edges = undirectedEdges(chambers)
     const segments: number[] = []
@@ -175,7 +167,6 @@ export function ConstellationGraph({
         <ChamberNode
           key={pose.id}
           pose={pose}
-          title={titleById.get(pose.id) ?? pose.id}
           active={pose.id === activeChamberId}
           dimmed={dimmed}
           interactive={interactive}

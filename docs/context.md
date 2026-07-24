@@ -35,22 +35,24 @@ A **working field manual** for enduring suffering, walking by the Spirit, and st
 
 ## Origin & purpose
 
-Forged in real time during severe personal crisis (marital separation, PFA, grief, betrayal trauma, loss of daily life with wife and dogs).
+Forged under real pressure — not theory. Written by a disciple of Jesus Christ: a fallen man who works hard to do good and be good, and still falls. The return path: Spirit over flesh, rise after fall, truth over self-deception.
 
-Author framing: a disciple of Jesus Christ; a fallen man who works hard to do good and be good — and still falls. After walking in the flesh for a season and wounding wife and family (as head of household), this guide is the return path: Spirit over flesh, rise after fall, truth over self-deception.
+**Product identity:** a Hitchhiker’s field guide to Love · Living · Enduring — first principles for the road. Private fire may have forged it; the public gift is the map, not the headline.
 
-Not theoretical. A response to:
+A response to:
 
 > What remains true when the ground is shaking?
 
-### Testimony (sealed by default)
+### Sealed backstory (poem — optional open, not the product pitch)
 
-> My wife is leaving me. But this is a testament to Him that through the fire He was always with me.
+The private origin is a poem of fall, warning unheeded, discipline, and restoration:
 
-### Refined crucible metaphor
+> I made a grave error. / Travesty has beset me. / …  
+> Take correction when it comes to you. / Pray for mercy. / Delight in goodness.  
+> Once restored, help others who share the same plight.  
+> For it is only by His lovingkindness and mercy that we are forgiven, restored, and saved.
 
-> I have found a crucible in the rubble.  
-> A hidden gem only He could fashion.
+**Public framing:** Bedrock is a Hitchhiker’s field guide to Love · Living · Enduring — first principles for the road. The poem is sealed for those who choose to open it; the product is the map.
 
 ## The dichotomy (two dual systems)
 

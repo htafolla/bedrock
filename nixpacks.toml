@@ -1,12 +1,4 @@
-# Railway/Nixpacks — Vite 8 needs Node ^20.19 or >=22
-[phases.setup]
-nixPkgs = ["nodejs_22"]
-
-[phases.install]
-cmds = ["npm ci"]
-
-[phases.build]
-cmds = ["npm run build"]
-
-[start]
-cmd = "npm start"
+# Match working Railway Node services (chrono-warp-drive/mcp style)
+[variables]
+NPM_CONFIG_PRODUCTION = "false"
+NIXPACKS_NODE_VERSION = "22"

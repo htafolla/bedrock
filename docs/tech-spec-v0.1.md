@@ -65,9 +65,7 @@ The experience should feel weighty, quiet, and modern enough for a generation th
 
 ### 4.5 Testimony Layer
 
-Quiet, optional personal statement area (sealed by default):
-
-> “My wife is leaving me. This is a testament that through the fire He was always with me.”
+Quiet, optional sealed **backstory poem** (not the product pitch): fall, unheeded warning, discipline, mercy, restore others. Full text in `bedrock.json` → `testimony.lines`.
 
 ## 5. Technical Architecture
 
