@@ -13,7 +13,8 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
         <p className="constellation-kicker">Keys</p>
         <h2 className="constellation-title">What are you facing?</h2>
         <p className="constellation-blurb">
-          Tap a key for the chamber that meets that trial. For the full path, use Map or Contents.
+          Start with the big ones — God, fear, marriage, loss. Then the rest of the fight. Map and
+          Contents hold the full path.
         </p>
       </header>
       <ul className="key-chips" aria-label="Key entry points">

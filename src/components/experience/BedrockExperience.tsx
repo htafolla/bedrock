@@ -21,10 +21,10 @@ interface BedrockExperienceProps {
 }
 
 export function BedrockExperience({ document }: BedrockExperienceProps) {
-  const { allow3d, reducedMotion, isNarrow } = useMediaCapability()
+  const { allow3d, reducedMotion } = useMediaCapability()
   const { state, enterNave, openChamber, backToMap, spineStep } = useExperience()
-  /** Mobile-first default: Keys. Wide: Map so DNA is visible first. */
-  const [navMode, setNavMode] = useState<NavMode>(() => (isNarrow ? 'keys' : 'map'))
+  /** Always open on Keys so crisis chips (God · Fear · Marriage…) lead navigation. */
+  const [navMode, setNavMode] = useState<NavMode>('keys')
 
   const activeChamber = useMemo(() => {
     if (!state.activeChamberId) return null
