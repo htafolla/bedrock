@@ -1,7 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../../types/content'
 import { VerseLink } from '../VerseLink'
 import { spineNeighbor, spineIndexOf, SPINE_ORDER } from '../../lib/spine'
+import { scrollExperienceToTop } from '../../lib/scroll-top'
 
 interface ChamberFocusProps {
   document: BedrockDocument
@@ -42,12 +43,21 @@ export function ChamberFocus({
   onSelect,
   onSpineStep,
 }: ChamberFocusProps) {
+  const rootRef = useRef<HTMLDivElement>(null)
+  const titleRef = useRef<HTMLHeadingElement>(null)
   const prev = spineNeighbor(chamber.id, -1)
   const next = spineNeighbor(chamber.id, 1)
   const idx = spineIndexOf(chamber.id)
   const related = chamber.related
     .map((id) => document.chambers.find((c) => c.id === id))
     .filter((c): c is Chamber => c != null)
+
+  // Connected truth · spine prev/next · any chamber swap: pin to top (mobile-first).
+  useEffect(() => {
+    scrollExperienceToTop(rootRef.current)
+    // Move focus to the new title so screen readers / keyboard land at the start.
+    titleRef.current?.focus({ preventScroll: true })
+  }, [chamber.id])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -60,10 +70,10 @@ export function ChamberFocus({
   }, [onBack, onSpineStep])
 
   return (
-    <div className="chamber-focus">
+    <div className="chamber-focus" ref={rootRef}>
       <div className="chamber-focus-toolbar">
         <button type="button" className="focus-btn ghost" onClick={onBack}>
-          ← Back to map
+          ← Back
         </button>
         <p className="focus-spine-meta">
           {idx >= 0 ? `${idx + 1} / ${SPINE_ORDER.length}` : '—'} · spine
@@ -91,7 +101,13 @@ export function ChamberFocus({
       <article className="chamber chamber-in-focus" id={chamber.id}>
         <header className="chamber-header">
           <p className="chamber-kicker">First principle</p>
-          <h2 className="chamber-title">{chamber.title}</h2>
+          <h2
+            className="chamber-title"
+            ref={titleRef}
+            tabIndex={-1}
+          >
+            {chamber.title}
+          </h2>
           <p className="chamber-summary">{chamber.summary}</p>
         </header>
 
@@ -109,7 +125,7 @@ export function ChamberFocus({
             <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
               Under fire
             </h3>
-            <p className="field-layer-hint">Short reframes when the ground is shaking.</p>
+            <p className="field-layer-hint">Scripture under pressure — how to walk this hour.</p>
             <ul className="field-list">
               {chamber.hacks.map((hack) => (
                 <li key={hack}>{hack}</li>

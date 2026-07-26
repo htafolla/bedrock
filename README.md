@@ -20,7 +20,7 @@ See [`docs/ia-hybrid.md`](docs/ia-hybrid.md).
 
 | Mode | What you do |
 |------|-------------|
-| **Arrival** | Threshold + prologue → *Enter the nave* |
+| **Arrival** | Threshold + prologue → *Enter* |
 | **Constellation** | Spine strip + 3D path of first principles |
 | **Chamber** | Field manual (Truth / Under fire / Prayer / Scripture) |
 
@@ -30,22 +30,41 @@ Spine order SSOT: `src/lib/spine.ts`
 
 ```bash
 npm install
-npm run dev
+cp .env.example .env   # set XAI_API_KEY for guide chat (server-only)
+npm run dev            # Vite UI
+# optional second terminal for chat API:
+npm run dev:server     # Express on :3000 — Vite proxies /api
 ```
 
 ```bash
 npm test
 npm run build
+npm start              # production: static dist + POST /api/chat
 ```
+
+### Guide chat (SpaceXAI / xAI)
+
+| Item | Value |
+|------|--------|
+| **OAuth (preferred)** | SuperGrok / X Premium+ — `npm run xai:login` → Railway `XAI_OAUTH_B64` |
+| **Auto-refresh** | Server refreshes access token before expiry; optional `RAILWAY_TOKEN` persists blob |
+| **API key fallback** | `XAI_API_KEY` console key (Railway Variables / `.env`) |
+| API | OpenAI-compatible `https://api.x.ai/v1` via `openai` npm |
+| Model | `grok-4.5` (override with `XAI_MODEL`) |
+| Endpoint | `POST /api/chat` (SSE stream) · `GET /api/health` (`authMode`, `oauthExpiresAt`) |
+
+Never put secrets in `VITE_*`. Pattern ported from `~/dev/xray/scripts/node/setup-xai-oauth.mjs` + Hermes `auth.json`.
 
 ## Product SSOT
 
 | Doc | Role |
 |-----|------|
-| [`docs/context.md`](docs/context.md) | Full product context (what / why / tone / structure) |
+| [`docs/FINAL_PLAN.md`](docs/FINAL_PLAN.md) | **Locked final plan** — storm set, aggressor/victim, roadmap |
+| [`docs/context.md`](docs/context.md) | Full product context |
 | [`docs/tech-spec-v0.1.md`](docs/tech-spec-v0.1.md) | 3D + permanence tech spec |
 | [`docs/architecture.md`](docs/architecture.md) | App architecture |
-| [`src/content/bedrock.json`](src/content/bedrock.json) | Content source of truth (34 chambers) |
+| [`docs/ux-ui.md`](docs/ux-ui.md) | UX / 3D interaction |
+| [`src/content/bedrock.json`](src/content/bedrock.json) | Content SSOT (39 chambers) |
 
 ## Locked decisions
 

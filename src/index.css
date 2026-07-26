@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-:root {
+/* Dark is default (data-theme="dark" or unset). Light via [data-theme="light"]. */
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
   --stone-950: #0c0a09;
   --stone-900: #1a1410;
   --stone-800: #2a221c;
@@ -15,8 +18,60 @@
   --muted: #a89884;
   --glass: rgba(18, 14, 12, 0.72);
   --glass-border: rgba(196, 165, 116, 0.18);
+  --panel-fill: rgba(12, 10, 9, 0.75);
+  --panel-fill-strong: rgba(12, 10, 9, 0.9);
+  --panel-fill-soft: rgba(12, 10, 9, 0.55);
+  --chrome-scrim-top: rgba(12, 10, 9, 0.94);
+  --chrome-scrim-mid: rgba(12, 10, 9, 0.82);
+  --footer-scrim-bot: rgba(12, 10, 9, 0.92);
+  --footer-scrim-mid: rgba(12, 10, 9, 0.55);
+  --shadow-card: rgba(0, 0, 0, 0.4);
+  --on-ember: #0c0a09;
+  --dna-label-bg: rgba(12, 10, 9, 0.88);
+  --dna-label-fg: #f0d9a8;
+  --dna-label-active-bg: rgba(40, 28, 16, 0.92);
+  --dna-label-active-fg: #fff6e6;
+  --atmosphere-top: #120e0b;
+  --atmosphere-bot: #0c0a09;
+  --atmosphere-glow: rgba(232, 160, 80, 0.12);
+  --atmosphere-ember: rgba(90, 60, 30, 0.25);
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --stone-950: #f6f0e6;
+  --stone-900: #ebe3d4;
+  --stone-800: #d9cfc0;
+  --stone-600: #7a6b5a;
+  --stone-400: #6b5c4c;
+  --stone-200: #3d342a;
+  --stone-100: #1f1a15;
+  --ember: #b86a1a;
+  --ember-soft: #8a6240;
+  --beam: #2a2018;
+  --ink: #1c1612;
+  --muted: #6a5c4e;
+  --glass: rgba(255, 250, 242, 0.86);
+  --glass-border: rgba(90, 70, 40, 0.2);
+  --panel-fill: rgba(255, 250, 242, 0.9);
+  --panel-fill-strong: rgba(255, 250, 242, 0.96);
+  --panel-fill-soft: rgba(255, 250, 242, 0.72);
+  --chrome-scrim-top: rgba(246, 240, 230, 0.96);
+  --chrome-scrim-mid: rgba(246, 240, 230, 0.88);
+  --footer-scrim-bot: rgba(246, 240, 230, 0.94);
+  --footer-scrim-mid: rgba(246, 240, 230, 0.6);
+  --shadow-card: rgba(40, 30, 20, 0.12);
+  --on-ember: #0c0a09;
+  --dna-label-bg: rgba(255, 250, 242, 0.94);
+  --dna-label-fg: #3d2e1c;
+  --dna-label-active-bg: rgba(255, 240, 220, 0.98);
+  --dna-label-active-fg: #2a1a0c;
+  --atmosphere-top: #efe6d6;
+  --atmosphere-bot: #f6f0e6;
+  --atmosphere-glow: rgba(184, 106, 26, 0.1);
+  --atmosphere-ember: rgba(140, 100, 50, 0.12);
 }
 
 *,
@@ -75,6 +130,22 @@ body {
 .scene-root canvas {
   width: 100% !important;
   height: 100% !important;
+  /* Mobile + desktop: map owns the gesture; do not scroll the page */
+  touch-action: none !important;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+}
+
+/* Keys/Map: keep UI chrome above scene but leave empty space for DNA */
+.mode-constellation.nav-keys .scene-interactive,
+.mode-constellation.nav-map .scene-interactive {
+  z-index: 1;
+}
+
+.mode-constellation.nav-keys .experience-ui,
+.mode-constellation.nav-map .experience-ui {
+  z-index: 2;
 }
 
 .experience-ui {
@@ -87,37 +158,68 @@ body {
   pointer-events: auto;
 }
 
-/* —— Arrival —— */
+/* —— Arrival (text card only — no hero image) —— */
 .arrival-gate {
-  min-height: 100vh;
+  min-height: 100dvh;
+  max-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1.25rem;
+  padding: calc(0.75rem + env(safe-area-inset-top, 0px)) 1.25rem
+    calc(1rem + env(safe-area-inset-bottom, 0px));
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .arrival-card {
-  max-width: 36rem;
+  max-width: 32rem;
+  width: 100%;
   text-align: center;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
-  padding: clamp(1.75rem, 4vw, 2.75rem);
+  padding: clamp(1.35rem, 4vw, 2rem) clamp(1.15rem, 4vw, 1.85rem)
+    clamp(1.25rem, 3.5vw, 1.75rem);
   backdrop-filter: blur(14px);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 48px var(--shadow-card);
+}
+
+.arrival-theme-slot {
+  position: fixed;
+  top: calc(0.65rem + env(safe-area-inset-top, 0px));
+  right: 0.75rem;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+.arrival-card .site-eyebrow {
+  margin: 0 0 0.5rem;
+}
+
+.arrival-card .site-title {
+  font-size: clamp(2.25rem, 7vw, 3.25rem);
+}
+
+.arrival-card .site-motto {
+  margin: 0.45rem 0 0;
+}
+
+.arrival-card .site-mission {
+  margin: 0.75rem auto 0;
+  max-width: 28rem;
 }
 
 .arrival-enter {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--stone-950);
+  color: var(--on-ember);
   background: linear-gradient(180deg, #f0d9a8 0%, #c4a574 100%);
   border: none;
   border-radius: 999px;
-  padding: 0.85rem 1.6rem;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
   transition: filter 0.2s ease, transform 0.2s ease;
 }
@@ -127,11 +229,25 @@ body {
   transform: translateY(-1px);
 }
 
-.arrival-hint {
-  margin: 1rem 0 0;
-  font-size: 0.8rem;
+/* Quiet seal under Enter — replaces the old Keys/Map chrome hint */
+.arrival-under-enter {
+  margin: 1rem auto 0;
+  max-width: 26rem;
+}
+
+.arrival-under-enter-line {
+  margin: 0.3rem 0;
+  font-family: var(--font-display);
+  font-size: clamp(0.88rem, 2.2vw, 1rem);
+  font-style: italic;
+  line-height: 1.4;
   color: var(--muted);
-  letter-spacing: 0.04em;
+}
+
+@media (max-height: 560px) {
+  .arrival-under-enter {
+    display: none;
+  }
 }
 
 /* —— Mobile-first shell: TOP nav + content (DNA click-through under Map) —— */
@@ -145,11 +261,33 @@ body {
 
 .experience-main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   padding-top: 0.5rem;
+  /* Empty chrome passes through to the 3D DNA */
+  pointer-events: none;
+  min-height: 0;
+}
+
+/* Only interactive chrome captures taps — not full-bleed panels */
+.experience-main > * {
   pointer-events: none;
 }
 
-.experience-main > * {
+.experience-main .key-chips-panel,
+.experience-main .constellation-hud,
+.experience-main .toc-panel,
+.experience-main .nav-panel-header,
+.experience-main .key-chips,
+.experience-main .key-chip,
+.experience-main .spine-strip,
+.experience-main .spine-chip,
+.experience-main .constellation-focus-hint,
+.experience-main .map-hint,
+.experience-main .toc-list,
+.experience-main .toc-item,
+.experience-main .chamber-focus,
+.experience-main .site-footer {
   pointer-events: auto;
 }
 
@@ -161,41 +299,107 @@ body {
   pointer-events: auto;
   background: linear-gradient(
     180deg,
-    rgba(12, 10, 9, 0.94) 0%,
-    rgba(12, 10, 9, 0.82) 70%,
+    var(--chrome-scrim-top) 0%,
+    var(--chrome-scrim-mid) 70%,
     transparent 100%
   );
   backdrop-filter: blur(12px);
 }
 
+.theme-toggle {
+  flex-shrink: 0;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-strong);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--beam);
+  border-color: rgba(232, 160, 80, 0.45);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+/* Bedrock (left) · Keys/Map/Contents (center) · theme (far right) */
 .nav-modes-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.45rem;
-  max-width: 40rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 'brand tabs theme';
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  max-width: 56rem;
   margin: 0 auto;
 }
 
 .nav-brand {
+  grid-area: brand;
   margin: 0;
-  text-align: center;
+  padding: 0.25rem 0.15rem;
+  border: none;
+  background: transparent;
+  text-align: left;
   font-family: var(--font-display);
   font-size: 0.95rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--ember-soft);
+  cursor: pointer;
+  transition: color 0.15s ease;
+  justify-self: start;
+}
+
+.nav-brand:hover {
+  color: var(--beam);
+}
+
+.nav-brand:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .nav-modes-inner {
+  grid-area: tabs;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.3rem;
   padding: 0.3rem;
-  background: rgba(12, 10, 9, 0.9);
+  max-width: 22rem;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--panel-fill-strong);
   border: 1px solid var(--glass-border);
   border-radius: 999px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 28px var(--shadow-card);
+}
+
+.nav-theme {
+  grid-area: theme;
+  justify-self: end;
+}
+
+@media (max-width: 640px) {
+  .nav-modes-bar {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'brand theme'
+      'tabs tabs';
+  }
+
+  .nav-modes-inner {
+    max-width: none;
+  }
 }
 
 .nav-mode-btn {
@@ -227,28 +431,65 @@ body {
   transform: scale(0.98);
 }
 
-/* Map: compact chrome so DNA has room and remains clickable */
-.mode-constellation.nav-map .constellation-hud.map-chrome {
+/* Keys · Map · Contents: compact chrome so DNA has room and remains clickable */
+.mode-constellation.nav-map .constellation-hud.map-chrome,
+.mode-constellation.nav-keys .key-chips-panel,
+.mode-constellation.nav-toc .toc-panel {
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0.35rem;
-  padding-bottom: 0.5rem;
 }
 
-.mode-constellation.nav-map .map-chrome-header {
+/* Shared glass frame — DNA spins outside / through the border on all three surfaces */
+.mode-constellation.nav-keys .key-chips-panel,
+.mode-constellation.nav-map .constellation-hud.map-chrome,
+.mode-constellation.nav-toc .toc-panel {
+  padding: 0.85rem 0.9rem 1rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 0 0 1px rgba(232, 160, 80, 0.06),
+    0 12px 40px var(--shadow-card);
+}
+
+/* Contents is long — keep the frame finite so DNA still shows around it */
+.mode-constellation.nav-toc .toc-panel {
+  max-height: min(70dvh, 40rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--stone-600) transparent;
+}
+
+.mode-constellation.nav-map .map-chrome-header,
+.mode-constellation.nav-keys .key-chips-panel .nav-panel-header,
+.mode-constellation.nav-toc .toc-panel .nav-panel-header {
   margin-bottom: 0.5rem;
   padding: 0.75rem 1rem;
 }
 
-.mode-constellation.nav-map .constellation-title {
-  font-size: 1.35rem;
-  margin: 0.2rem 0 0.25rem;
+/* Header sits inside the frame — no second box */
+.mode-constellation.nav-keys .key-chips-panel .nav-panel-header,
+.mode-constellation.nav-map .constellation-hud.map-chrome .nav-panel-header,
+.mode-constellation.nav-toc .toc-panel .nav-panel-header {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  max-width: none;
+  margin-bottom: 0.65rem;
+  padding: 0.15rem 0.25rem 0.55rem;
+  border-bottom: 1px solid var(--glass-border);
 }
 
-.mode-constellation.nav-map .experience-main {
-  /* leave lower 55%+ open for DNA interaction */
-  min-height: 0;
+.mode-constellation.nav-map .constellation-title,
+.mode-constellation.nav-keys .constellation-title,
+.mode-constellation.nav-toc .constellation-title {
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0.25rem;
 }
 
 .map-hint {
@@ -260,44 +501,31 @@ body {
 .dna-node-label {
   padding: 0.28rem 0.65rem;
   border-radius: 999px;
-  background: rgba(12, 10, 9, 0.88);
-  border: 1px solid rgba(196, 165, 116, 0.45);
-  color: #f0d9a8;
+  background: var(--dna-label-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--dna-label-fg);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 6px 20px var(--shadow-card);
   transform: translateY(-2px);
 }
 
 .dna-node-label.active,
 .dna-node-label.entering {
   border-color: rgba(232, 160, 80, 0.75);
-  color: #fff6e6;
-  background: rgba(40, 28, 16, 0.92);
+  color: var(--dna-label-active-fg);
+  background: var(--dna-label-active-bg);
 }
 
-@media (min-width: 768px) {
-  .nav-modes-bar {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 56rem;
-    gap: 1rem;
-  }
-
-  .nav-brand {
-    text-align: left;
-    min-width: 6rem;
-  }
-
-  .nav-modes-inner {
-    flex: 1;
-    max-width: 22rem;
-    margin-left: auto;
-  }
+/* Hub topics — slightly stronger chrome so anchors read as path joints */
+.dna-node-label.anchor {
+  border-color: rgba(232, 160, 80, 0.4);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  opacity: 0.92;
 }
 
 .nav-panel-header {
@@ -319,25 +547,60 @@ body {
   padding: 1rem 1rem 1.5rem;
 }
 
-.key-chips {
+/* Carousel: one row of 3 so DNA stays open behind/below */
+.key-chips-carousel-panel {
+  max-width: 40rem;
+}
+
+.key-chips-carousel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: stretch;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+  touch-action: pan-y;
+}
+
+.key-chips-arrow {
+  flex-shrink: 0;
+  align-self: center;
+  width: 2.25rem;
+  height: 2.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-strong);
+  color: var(--beam);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: border-color 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+}
+
+.key-chips-arrow:hover:not(:disabled) {
+  border-color: rgba(232, 160, 80, 0.45);
+  background: rgba(232, 160, 80, 0.12);
+}
+
+.key-chips-arrow:disabled {
+  opacity: 0.28;
+  cursor: not-allowed;
+}
+
+.key-chips-arrow:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+.key-chips,
+.key-chips-page {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.55rem;
-}
-
-@media (min-width: 640px) {
-  .key-chips {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 900px) {
-  .key-chips {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+  min-width: 0;
 }
 
 .key-chip {
@@ -349,10 +612,10 @@ body {
   min-height: 4.25rem;
   width: 100%;
   text-align: left;
-  padding: 0.75rem 0.85rem;
+  padding: 0.65rem 0.55rem;
   border-radius: 12px;
   border: 1px solid var(--glass-border);
-  background: rgba(12, 10, 9, 0.75);
+  background: var(--panel-fill);
   color: var(--stone-100);
   cursor: pointer;
   transition: border-color 0.2s ease, background 0.2s ease;
@@ -370,15 +633,96 @@ body {
 
 .key-chip-label {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 3.2vw, 1.1rem);
   color: var(--beam);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .key-chip-hint {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--muted);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+}
+
+.key-chips-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.55rem;
+}
+
+.key-chips-page-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.key-chips-dots {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.key-chips-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  border: none;
+  padding: 0;
+  background: var(--stone-600);
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.key-chips-dot.active {
+  background: var(--ember);
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.key-chips-dot:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+/* Ensure carousel chrome receives taps (DNA click-through elsewhere) */
+.experience-main .key-chips-carousel,
+.experience-main .key-chips-arrow,
+.experience-main .key-chips-dot,
+.experience-main .key-chips-pager {
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .key-chips-carousel-panel .constellation-blurb {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .key-chip {
+    min-height: 3.85rem;
+    padding: 0.55rem 0.45rem;
+  }
+
+  .key-chips-arrow {
+    width: 2rem;
+    height: 2.5rem;
+    font-size: 1.35rem;
+  }
+
+  /* Compact Keys chrome so DNA owns the rest of the viewport */
+  .mode-constellation.nav-keys .key-chips-panel {
+    padding: 0.65rem 0.65rem 0.75rem;
+  }
 }
 
 /* —— Table of contents —— */
@@ -401,7 +745,7 @@ body {
   padding: 0.7rem 0.85rem;
   border-radius: 12px;
   border: 1px solid transparent;
-  background: rgba(12, 10, 9, 0.55);
+  background: var(--panel-fill-soft);
   color: var(--stone-100);
   cursor: pointer;
   transition: border-color 0.2s ease, background 0.2s ease;
@@ -494,7 +838,7 @@ body {
   min-width: 7.5rem;
   max-width: 9.5rem;
   text-align: left;
-  background: rgba(12, 10, 9, 0.72);
+  background: var(--panel-fill);
   border: 1px solid var(--glass-border);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
@@ -538,11 +882,28 @@ body {
   overflow: visible;
 }
 
+/* Map uses same key-chip storm list as Keys */
+.map-chrome .map-storm-chips {
+  margin-top: 0.35rem;
+}
+
 /* —— Chamber focus —— */
 .chamber-focus {
   max-width: 720px;
   margin: 0 auto;
   padding: 1rem 1rem 1.5rem;
+  /* Anchor for scroll-to-top after Connected truth / spine nav (mobile). */
+  scroll-margin-top: 4.5rem;
+}
+
+.chamber-title:focus {
+  outline: none;
+}
+
+.chamber-title:focus-visible {
+  outline: 2px solid rgba(232, 160, 80, 0.55);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .chamber-focus-toolbar {
@@ -604,30 +965,131 @@ body {
   /* inherits .chamber */
 }
 
+/* True footer — fixed to viewport bottom (not mid-page under Keys/Map chrome) */
 .experience-footer-stack {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 1rem 1.5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 35;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  padding: 0.45rem 1rem calc(0.65rem + env(safe-area-inset-bottom, 0px));
+  /* Leave room for the Guide chat FAB on the right (mobile) */
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.25rem;
+  pointer-events: none;
+  background: linear-gradient(
+    0deg,
+    var(--footer-scrim-bot) 0%,
+    var(--footer-scrim-mid) 55%,
+    transparent 100%
+  );
 }
 
-.mode-constellation .experience-footer-stack {
-  max-width: 1120px;
+.experience-footer-stack > * {
+  pointer-events: auto;
+  max-width: 40rem;
+  width: 100%;
 }
 
 .site-footer.compact {
-  margin-top: 0;
+  margin: 0;
+  padding: 0.35rem 0.5rem 0.15rem;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+/* Keys / Map: room so fixed footer doesn't cover chips on short phones */
+.mode-constellation.nav-keys .experience-main,
+.mode-constellation.nav-map .experience-main {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+/* Map: keep chrome short so DNA remains the usable surface */
+.mode-constellation.nav-map .constellation-hud.map-chrome {
+  max-height: min(38dvh, 20rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.mode-constellation.nav-map .spine-strip {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: 8.5rem;
+}
+
+.spine-chip-hub .spine-chip-title {
+  font-weight: 600;
+}
+
+.spine-chip-leaf {
+  border-style: dashed;
+  border-color: rgba(232, 160, 80, 0.35);
+}
+
+@media (max-width: 768px) {
+  .mode-constellation.nav-map .constellation-hud.map-chrome {
+    max-height: min(34dvh, 16.5rem);
+    padding: 0.65rem 0.7rem 0.75rem;
+  }
+
+  .mode-constellation.nav-map .constellation-title {
+    font-size: 1.15rem;
+  }
+
+  .mode-constellation.nav-map .constellation-blurb {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .mode-constellation.nav-map .spine-chip {
+    min-width: 6.25rem;
+    max-width: 7.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+
+  .mode-constellation.nav-map .spine-chip-title {
+    font-size: 0.85rem;
+  }
+
+  .mode-constellation.nav-map .constellation-focus-hint {
+    font-size: 0.72rem;
+  }
+
+  .experience-footer-stack {
+    /* Clear the Guide button on the lower-right */
+    padding-right: 4.75rem;
+  }
+
+  .site-footer.compact {
+    font-size: 0.8rem;
+  }
+
+  .site-footer.compact .site-footer-meta {
+    font-size: 0.68rem;
+  }
 }
 
 
 
 .fallback-atmosphere {
   background:
-    radial-gradient(ellipse 80% 50% at 50% 20%, rgba(232, 160, 80, 0.12), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 50% 80%, rgba(90, 60, 30, 0.25), transparent 50%),
-    linear-gradient(180deg, #120e0b 0%, #0c0a09 100%);
+    radial-gradient(ellipse 80% 50% at 50% 20%, var(--atmosphere-glow), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 50% 80%, var(--atmosphere-ember), transparent 50%),
+    linear-gradient(180deg, var(--atmosphere-top) 0%, var(--atmosphere-bot) 100%);
 }
 
 .fallback-glow {
@@ -1030,8 +1492,8 @@ body {
 }
 
 .testimony {
-  background: rgba(12, 10, 9, 0.55);
-  border: 1px dashed rgba(196, 165, 116, 0.28);
+  background: var(--panel-fill-soft);
+  border: 1px dashed var(--glass-border);
   border-radius: 12px;
   padding: 1.25rem;
 }
@@ -1209,4 +1671,459 @@ body {
 .empty-state {
   text-align: center;
   color: var(--muted);
+}
+
+/* —— Guide chat (SpaceXAI / xAI proxy) —— */
+.guide-chat {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.65rem;
+  max-width: min(24rem, calc(100vw - 1.5rem));
+  pointer-events: none;
+}
+
+.guide-chat > * {
+  pointer-events: auto;
+}
+
+.guide-chat-fab {
+  border: 1px solid rgba(232, 160, 80, 0.45);
+  background: var(--panel-fill-strong);
+  color: var(--beam);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 28px var(--shadow-card);
+  backdrop-filter: blur(10px);
+}
+
+.guide-chat-fab:hover {
+  border-color: rgba(232, 160, 80, 0.75);
+  background: rgba(232, 160, 80, 0.12);
+}
+
+.guide-chat-panel {
+  width: min(24rem, calc(100vw - 1.5rem));
+  max-height: min(32rem, calc(100dvh - 5.5rem));
+  display: flex;
+  flex-direction: column;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.guide-chat-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem 0.65rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.guide-chat-kicker {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.guide-chat-title {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--beam);
+  line-height: 1.15;
+}
+
+.guide-chat-context {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  color: var(--ember-soft);
+  text-align: right;
+  max-width: 9rem;
+}
+
+.guide-chat-banner,
+.guide-chat-error {
+  margin: 0;
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.guide-chat-banner {
+  background: rgba(232, 160, 80, 0.1);
+  color: var(--stone-200);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.guide-chat-banner code {
+  font-size: 0.75rem;
+  color: var(--ember);
+}
+
+.guide-chat-error {
+  color: #f0b4a0;
+  border-top: 1px solid var(--glass-border);
+}
+
+.guide-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 10rem;
+}
+
+.guide-chat-empty p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.guide-chat-starters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.guide-chat-starters button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-soft);
+  color: var(--stone-100);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.guide-chat-starters button:hover:not(:disabled) {
+  border-color: rgba(232, 160, 80, 0.45);
+  background: rgba(232, 160, 80, 0.08);
+}
+
+.guide-chat-starters button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.guide-chat-user-text {
+  margin: 0.2rem 0 0;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  font-size: 0.92rem;
+  color: var(--stone-100);
+}
+
+.guide-chat-role {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Thinking indicator while Grok streams */
+.guide-chat-thinking {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.45rem 0 0.15rem;
+  min-height: 1.1rem;
+}
+
+.guide-chat-dot {
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: var(--ember);
+  opacity: 0.35;
+  animation: guide-chat-dot-pulse 1.05s ease-in-out infinite;
+}
+
+.guide-chat-dot:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.guide-chat-dot:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+@keyframes guide-chat-dot-pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.28;
+    transform: translateY(0) scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-0.2rem) scale(1);
+    background: var(--beam);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-chat-dot {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
+/* Mini field card — mirrors chamber card chrome in a compact chat bubble */
+.guide-chat-md,
+.guide-mini-card {
+  margin: 0.35rem 0 0;
+  color: var(--stone-100);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  padding: 0.75rem 0.85rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(12, 10, 9, 0.45);
+}
+
+.guide-mini-card > *:first-child {
+  margin-top: 0;
+}
+
+.guide-mini-card > *:last-child {
+  margin-bottom: 0;
+}
+
+.guide-card-kicker,
+.guide-card-kicker-em,
+.guide-mini-card > p:first-child em {
+  display: block;
+  margin: 0 0 0.2rem;
+  font-style: normal;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+  font-family: var(--font-body);
+}
+
+.guide-card-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--beam);
+  line-height: 1.15;
+  margin: 0.15rem 0 0.35rem;
+}
+
+/* Summary line right under title */
+.guide-card-title + .guide-card-line {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+  max-width: 36ch;
+}
+
+.guide-card-layer {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ember-soft);
+  letter-spacing: 0.04em;
+  margin: 0.85rem 0 0.35rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.guide-card-line {
+  margin: 0.35rem 0;
+  color: var(--stone-100);
+}
+
+.guide-card-strong {
+  color: var(--beam);
+  font-weight: 600;
+}
+
+.guide-card-list {
+  list-style: none;
+  margin: 0.25rem 0 0.35rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.guide-card-item {
+  margin: 0;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-soft);
+  color: var(--stone-100);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.guide-card-item > p {
+  margin: 0;
+}
+
+/* Scripture + Connected truth: chip row (like key chips / related doors) */
+.guide-card-layer-chips + .guide-card-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.guide-card-layer-chips + .guide-card-list .guide-card-item {
+  flex: 0 1 auto;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--beam);
+  background: rgba(232, 160, 80, 0.08);
+  border-color: rgba(232, 160, 80, 0.28);
+}
+
+/* Clickable Scripture (external) + Connected truth (open spine, chat stays open) */
+.guide-card-item.is-clickable {
+  padding: 0;
+  overflow: hidden;
+}
+
+.guide-card-chip-action {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.35rem 0.65rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+a.guide-card-chip-action {
+  color: inherit;
+  text-decoration: none;
+}
+
+.guide-card-item.is-clickable:hover,
+.guide-card-item.is-clickable:focus-within {
+  border-color: rgba(232, 160, 80, 0.55);
+  background: rgba(232, 160, 80, 0.16);
+}
+
+.guide-card-chip-action:focus-visible {
+  outline: 2px solid var(--ember-soft);
+  outline-offset: -2px;
+}
+
+.guide-mini-card blockquote {
+  margin: 0.45rem 0;
+  padding: 0.3rem 0 0.3rem 0.65rem;
+  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  color: var(--stone-200);
+  font-style: italic;
+}
+
+.guide-mini-card a {
+  color: var(--ember);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.guide-mini-card hr {
+  border: none;
+  border-top: 1px solid var(--glass-border);
+  margin: 0.55rem 0;
+}
+
+.guide-mini-card code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82em;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.guide-chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid var(--glass-border);
+  align-items: end;
+}
+
+.guide-chat-form textarea {
+  resize: none;
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  background: var(--panel-fill);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.55rem 0.7rem;
+  min-height: 2.75rem;
+}
+
+.guide-chat-form textarea:focus {
+  outline: 1px solid rgba(232, 160, 80, 0.55);
+  border-color: rgba(232, 160, 80, 0.4);
+}
+
+.guide-chat-form button[type='submit'] {
+  border: 1px solid rgba(232, 160, 80, 0.5);
+  background: rgba(232, 160, 80, 0.15);
+  color: var(--beam);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 2.75rem;
+}
+
+.guide-chat-form button[type='submit']:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .guide-chat {
+    right: 0.65rem;
+    bottom: 0.65rem;
+  }
+
+  .guide-chat-panel {
+    max-height: min(70dvh, calc(100dvh - 4.5rem));
+  }
 }

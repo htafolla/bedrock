@@ -1,22 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      /* Avoid theme flash: apply local preference before first paint. Dark is default. */
+      try {
+        var t = localStorage.getItem('bedrock.theme')
+        if (t !== 'light' && t !== 'dark') t = 'dark'
+        document.documentElement.setAttribute('data-theme', t)
+        document.documentElement.style.colorScheme = t
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark')
+      }
+    </script>
+
+    <title>Bedrock — Do Better. Be Better. Trust God.</title>
     <meta
       name="description"
-      content="Bedrock — A Hitchhiker's Guide to Love · Living · Enduring. Do Better. Be Better. Trust God."
+      content="Bedrock is a Hitchhiker's field guide for the storm: biblical first principles, short under-fire hacks, and prayer for grief, regret, fear, spiritual warfare, and readiness. Max-cope. Grow. Trust God."
     />
-    <title>Bedrock — Do Better. Be Better. Trust God.</title>
+    <meta
+      name="keywords"
+      content="Bedrock, Christian field guide, spiritual warfare, grief, regret, rumination, fear, Armor of God, fruit of the Spirit, watch and be ready, ten virgins, hope of glory, treasure in heaven, prayer, Bible, Do Better Be Better Trust God"
+    />
+    <meta name="author" content="Bedrock" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#0c0a09" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Bedrock" />
+    <meta name="apple-mobile-web-app-title" content="Bedrock" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="ai-content-declaration"
+      content="human-authored Christian field guide; first principles from Scripture"
+    />
+    <meta name="subject" content="Christian spiritual formation, grief, spiritual warfare, readiness" />
+
+    <link rel="canonical" href="https://bedrock.rippel.ai/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/og-hero.jpg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Bedrock" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bedrock — Do Better. Be Better. Trust God." />
+    <meta
+      property="og:description"
+      content="A Hitchhiker's field guide for the storm: Scripture, under-fire hacks, and prayer. Grief, warfare, readiness, hope of glory."
+    />
+    <meta property="og:url" content="https://bedrock.rippel.ai/" />
+    <meta property="og:image" content="https://bedrock.rippel.ai/og-hero.jpg?v=2" />
+    <meta property="og:image:secure_url" content="https://bedrock.rippel.ai/og-hero.jpg?v=2" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bedrock — Do Better. Be Better. Trust God. A hitchhiker's guide for the storm." />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bedrock — Do Better. Be Better. Trust God." />
+    <meta
+      name="twitter:description"
+      content="A Hitchhiker's field guide for the storm: Scripture, under-fire hacks, and prayer."
+    />
+    <meta name="twitter:image" content="https://bedrock.rippel.ai/og-hero.jpg?v=2" />
+    <meta name="twitter:image:alt" content="Bedrock — Do Better. Be Better. Trust God. A hitchhiker's guide for the storm." />
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.biblegateway.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap JSON-LD (SPA upgrades on mount) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bedrock",
+        "url": "https://bedrock.rippel.ai/",
+        "description": "A Hitchhiker's field guide for the storm: biblical first principles, under-fire hacks, and prayer.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Bedrock",
+          "url": "https://bedrock.rippel.ai/",
+          "motto": "Do Better. Be Better. Trust God."
+        }
+      }
+    </script>
   </head>
   <body>
+    <!-- Crawlable bootstrap for SEO/AEO before React hydrates -->
+    <noscript>
+      <main>
+        <h1>Bedrock — Do Better. Be Better. Trust God.</h1>
+        <p>
+          A Hitchhiker's Guide to Love · Living · Enduring. Truth, brain hacks, and prayer to max-cope
+          and grow out of the storm — when everything feels out of control.
+        </p>
+        <p>
+          Open Keys for storm triage, Map for the full path, Contents for every chamber: Scripture
+          truth, under fire, and prayer — including spiritual warfare, works of the flesh, readiness,
+          treasure in heaven, gifts, and hope of glory.
+        </p>
+        <p><a href="https://bedrock.rippel.ai/">https://bedrock.rippel.ai/</a></p>
+      </main>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

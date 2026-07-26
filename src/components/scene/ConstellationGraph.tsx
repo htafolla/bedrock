@@ -49,6 +49,7 @@ function ChamberNode({
   const ref = useRef<Mesh>(null)
   const [hovered, setHovered] = useState(false)
   const enterPulse = useRef(0)
+  const anchor = pose.anchor
 
   useFrame((state) => {
     if (!ref.current) return
@@ -57,16 +58,30 @@ function ChamberNode({
     } else {
       enterPulse.current = Math.max(0, enterPulse.current - 0.06)
     }
-    const base = active || entering ? 0.24 : hovered ? 0.18 : 0.14
+    // Anchors (warfare, Spirit hub, gifts…) read as larger cluster heads.
+    const rest = anchor ? 0.22 : 0.13
+    const hot = anchor ? 0.3 : 0.24
+    const base = active || entering ? hot : hovered ? rest * 1.22 : rest
     const pulse =
-      Math.sin(state.clock.elapsedTime * (active || entering ? 2.6 : 1.1) + pose.index) * 0.015
-    const burst = enterPulse.current * 0.14
+      Math.sin(state.clock.elapsedTime * (active || entering ? 2.6 : anchor ? 1.4 : 1.1) + pose.index) *
+      (anchor ? 0.02 : 0.012)
+    const burst = enterPulse.current * (anchor ? 0.16 : 0.12)
     ref.current.scale.setScalar(base + pulse + burst)
   })
 
-  const color = active || entering ? '#f0d9a8' : hovered ? '#e0c898' : pose.onSpine ? '#c4a574' : '#8a7a68'
-  const emissive = active || entering ? '#e8a050' : '#a85c20'
-  const opacity = dimmed && !active && !entering ? 0.22 : 0.95
+  const color = active || entering
+    ? '#f0d9a8'
+    : hovered
+      ? '#e0c898'
+      : anchor
+        ? '#e0c090'
+        : pose.onSpine
+          ? '#c4a574'
+          : '#8a7a68'
+  const emissive = active || entering ? '#e8a050' : anchor ? '#c47830' : '#a85c20'
+  // Keep neighbors readable in chamber focus so the path still “stays behind.”
+  const opacity = dimmed && !active && !entering ? (anchor ? 0.55 : 0.38) : 0.95
+  // Labels only on hover / active — permanent hub labels clutter mobile DNA.
   const showLabel = interactive && (hovered || active || entering)
 
   const bind = {
@@ -87,23 +102,42 @@ function ChamberNode({
     },
   }
 
+  const hitR = anchor ? 1.05 : 0.78
+  const ringInner = anchor ? 0.42 : 0.34
+  const ringOuter = anchor ? 0.55 : 0.44
+  const labelY = anchor ? 0.72 : 0.55
+
   return (
     <group position={pose.position.toArray()}>
       <mesh ref={ref} {...bind}>
-        <sphereGeometry args={[1, 28, 28]} />
+        <sphereGeometry args={[1, anchor ? 32 : 24, anchor ? 32 : 24]} />
         <meshStandardMaterial
           color={color}
           emissive={emissive}
-          emissiveIntensity={active || entering ? 1.15 : hovered ? 0.65 : pose.onSpine ? 0.42 : 0.2}
+          emissiveIntensity={
+            active || entering ? 1.2 : hovered ? 0.7 : anchor ? 0.62 : pose.onSpine ? 0.38 : 0.2
+          }
           roughness={0.4}
-          metalness={0.25}
+          metalness={anchor ? 0.32 : 0.25}
           transparent
           opacity={opacity}
         />
       </mesh>
+      {/* Quiet halo marks hub topics that stitch the spine together */}
+      {anchor && !active && !entering ? (
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <ringGeometry args={[ringInner, ringOuter, 48]} />
+          <meshBasicMaterial
+            color="#c4a574"
+            transparent
+            opacity={dimmed ? 0.22 : 0.4}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+      ) : null}
       {active || entering ? (
         <mesh rotation={[Math.PI / 2, 0, 0]}>
-          <ringGeometry args={[0.34, 0.44, 48]} />
+          <ringGeometry args={[ringInner, ringOuter, 48]} />
           <meshBasicMaterial
             color="#e8a050"
             transparent
@@ -113,18 +147,20 @@ function ChamberNode({
         </mesh>
       ) : null}
       <mesh visible={false} {...bind}>
-        <sphereGeometry args={[0.78, 12, 12]} />
+        <sphereGeometry args={[hitR, 12, 12]} />
         <meshBasicMaterial />
       </mesh>
       {showLabel ? (
         <Html
           center
-          distanceFactor={14}
-          position={[0, 0.55, 0]}
+          distanceFactor={anchor ? 16 : 14}
+          position={[0, labelY, 0]}
           style={{ pointerEvents: 'none', userSelect: 'none' }}
           zIndexRange={[20, 0]}
         >
-          <div className={`dna-node-label${entering ? ' entering' : ''}${active ? ' active' : ''}`}>
+          <div
+            className={`dna-node-label${entering ? ' entering' : ''}${active ? ' active' : ''}${anchor ? ' anchor' : ''}`}
+          >
             {title}
           </div>
         </Html>
@@ -188,12 +224,12 @@ export function ConstellationGraph({
 
   const handleSelect = (id: string) => {
     if (!interactive || enteringId) return
+    // Slight enter pulse, but keep orbit camera free (CameraRig must not re-home)
     setEnteringId(id)
     window.setTimeout(() => {
       onSelect(id)
-      // Clear pulse after parent has switched; keep ring via activeChamberId
-      window.setTimeout(() => setEnteringId(null), 600)
-    }, 380)
+      window.setTimeout(() => setEnteringId(null), 400)
+    }, 220)
   }
 
   return (
@@ -202,7 +238,7 @@ export function ConstellationGraph({
         <bufferGeometry>
           <bufferAttribute attach="attributes-position" args={[spineLine, 3]} />
         </bufferGeometry>
-        <lineBasicMaterial color="#c4a574" transparent opacity={dimmed ? 0.12 : 0.35} />
+        <lineBasicMaterial color="#c4a574" transparent opacity={dimmed ? 0.22 : 0.35} />
       </line>
 
       {edgePositions.length > 0 ? (
@@ -210,7 +246,7 @@ export function ConstellationGraph({
           <bufferGeometry>
             <bufferAttribute attach="attributes-position" args={[edgePositions, 3]} />
           </bufferGeometry>
-          <lineBasicMaterial color="#5c4f42" transparent opacity={dimmed ? 0.06 : 0.18} />
+          <lineBasicMaterial color="#5c4f42" transparent opacity={dimmed ? 0.12 : 0.18} />
         </lineSegments>
       ) : null}
 

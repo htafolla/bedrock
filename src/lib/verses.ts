@@ -55,7 +55,9 @@ export function normalizeRefKey(ref: ScriptureRef): string {
 /** Parse common display strings like "John 3:16", "1 John 4:7–8", "Ephesians 6:10-18". */
 export function parseScriptureDisplay(display: string): ScriptureRef | null {
   const cleaned = display.trim().replace(/[–—]/g, '-')
-  const match = cleaned.match(
+  // Allow trailing notes: "John 15:13 — comment" → take the ref only
+  const head = cleaned.split(/\s+[—–-]\s+/)[0]?.trim() ?? cleaned
+  const match = head.match(
     /^((?:\d\s*)?[A-Za-z]+(?:\s+[A-Za-z]+)?)\s+(\d+):(\d+)(?:-(\d+))?$/,
   )
   if (!match) return null
@@ -76,6 +78,21 @@ export function parseScriptureDisplay(display: string): ScriptureRef | null {
     verseStart,
     verseEnd,
   }
+}
+
+/** Bible Gateway search for free-text refs from the guide (fallback when parse fails). */
+export function bibleGatewaySearchUrl(
+  display: string,
+  version: string = PRIMARY_BIBLE_VERSION,
+): string {
+  const search = display.trim().replace(/[–—]/g, '-').replace(/\s+/g, ' ')
+  const params = new URLSearchParams({ search, version })
+  return `${BIBLE_GATEWAY_PASSAGE}?${params.toString()}`
+}
+
+export function scriptureChipHref(display: string): string {
+  const ref = parseScriptureDisplay(display)
+  return ref ? primaryVerseUrl(ref) : bibleGatewaySearchUrl(display)
 }
 
 /**

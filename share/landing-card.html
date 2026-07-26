@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bedrock — landing card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ember-soft: #c4a574;
+      --beam: #f5e6c8;
+      --ink: #f7f1e8;
+      --muted: #a89884;
+      --glass: rgba(18, 14, 12, 0.82);
+      --glass-border: rgba(196, 165, 116, 0.22);
+      --shadow-card: rgba(0, 0, 0, 0.45);
+      --on-ember: #0c0a09;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Source Sans 3", system-ui, sans-serif;
+      --stone-200: #d4c4ae;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-family: var(--font-body);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Capture frame: card only, slight padding for soft shadow */
+    #shot {
+      display: inline-block;
+      padding: 28px;
+      background: transparent;
+    }
+    .arrival-card {
+      width: 512px;
+      max-width: 512px;
+      text-align: center;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 2rem 1.85rem 1.75rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 16px 48px var(--shadow-card);
+      /* solid fall-back so FB doesn't get a washed card without blur */
+      background:
+        linear-gradient(165deg, rgba(36, 28, 22, 0.96) 0%, rgba(16, 12, 10, 0.98) 100%);
+      border: 1px solid rgba(196, 165, 116, 0.28);
+    }
+    .site-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ember-soft);
+      margin: 0 0 0.5rem;
+      font-weight: 500;
+    }
+    .site-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 3.25rem;
+      letter-spacing: 0.04em;
+      margin: 0;
+      line-height: 1;
+      color: var(--beam);
+    }
+    .site-motto {
+      font-family: var(--font-display);
+      font-style: normal;
+      font-size: 1.35rem;
+      color: var(--beam);
+      margin: 0.45rem 0 0;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .site-mission {
+      margin: 0.75rem auto 0;
+      max-width: 28rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .arrival-enter {
+      display: inline-block;
+      margin-top: 1.25rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--on-ember);
+      background: linear-gradient(180deg, #f0d9a8 0%, #c4a574 100%);
+      border: none;
+      border-radius: 999px;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+    }
+    .arrival-under-enter {
+      margin: 1rem auto 0;
+      max-width: 26rem;
+    }
+    .arrival-under-enter-line {
+      margin: 0.3rem 0;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--stone-200);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="shot">
+    <div class="arrival-card">
+      <p class="site-eyebrow">A Hitchhiker's Guide to Love · Living · Enduring</p>
+      <h1 class="site-title">Bedrock</h1>
+      <p class="site-motto">Do Better. Be Better. Trust God.</p>
+      <p class="site-mission">Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.</p>
+      <div class="arrival-enter">Enter</div>
+      <div class="arrival-under-enter">
+        <p class="arrival-under-enter-line">I hold these things to be true. A lifetime to master them.</p>
+        <p class="arrival-under-enter-line">Though I fall, I get back up. Out of the fire a crucible emerges.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

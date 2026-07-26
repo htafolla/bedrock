@@ -26,19 +26,18 @@ export function ArrivalGate({
         <h1 className="site-title">{title}</h1>
         <p className="site-motto">{subtitle}</p>
         {mission ? <p className="site-mission">{mission}</p> : null}
+        <button type="button" className="arrival-enter" onClick={onEnter}>
+          Enter
+        </button>
         {prologue?.length ? (
-          <div className="prologue">
+          <div className="arrival-under-enter" aria-label="Prologue">
             {prologue.map((line) => (
-              <p key={line} className="prologue-line">
+              <p key={line} className="arrival-under-enter-line">
                 {line}
               </p>
             ))}
           </div>
         ) : null}
-        <button type="button" className="arrival-enter" onClick={onEnter}>
-          Enter the nave
-        </button>
-        <p className="arrival-hint">A quiet path of first principles. Solid ground.</p>
       </div>
     </div>
   )

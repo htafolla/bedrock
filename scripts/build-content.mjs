@@ -61,7 +61,19 @@ function chamber(title, summary, bodyLines, verseLine) {
   }
 }
 
-/** Pressure-ready aids: truth is in body/verses; these are the usable layer under fire. */
+/**
+ * Pressure-ready aids: Truth = Scripture (body); Under fire = our words (≤3);
+ * Prayer = **release** — same temperance as the first spines (god-first → fall).
+ *
+ * Release prayer form (locked):
+ * 1. Address God (Father / Lord / Jesus / Holy Spirit / Our Father)
+ * 2. Truth about Him or honest empty hands (You are… / I cast… / I wait… / I am not God…)
+ * 3. One quiet **release** — not war-orders, not “make me perform,” not gripping outcomes
+ * 4. Short. Steel. Worshipful. End Amen.
+ *
+ * Gold: “Father, You are first. I am not God. Be still my heart and lead me in Your will. Amen.”
+ * Gold: “Lord, I trust You with all my heart. I release control. Direct my path. Amen.”
+ */
 const FIELD_AIDS = {
   'god-first': {
     hacks: [
@@ -78,7 +90,7 @@ const FIELD_AIDS = {
       'Worship is a weapon. Name one true thing about who He is before you name one more fear.',
     ],
     prayers: [
-      'Lord of all power and beauty, I worship You. Hold all things together — including me. Amen.',
+      'Lord of all power and beauty, I worship You. I release this chaos into Your hands. Amen.',
     ],
   },
   'his-promises': {
@@ -87,7 +99,7 @@ const FIELD_AIDS = {
       'Once you are in His hand, no one snatches you out — including your own shame narrative.',
     ],
     prayers: [
-      'Lord, You are faithful. Anchor me to Your word when my feelings lie. Amen.',
+      'Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen.',
     ],
   },
   'his-provision': {
@@ -96,7 +108,7 @@ const FIELD_AIDS = {
       'Your Father knows what you need. Anxiety is not a provision strategy.',
     ],
     prayers: [
-      'Father, give us this day our daily bread. I trust Your knowing more than my planning. Amen.',
+      'Father, give us this day our daily bread. I release tomorrow into Your knowing. Amen.',
     ],
   },
   'the-lords-prayer': {
@@ -123,16 +135,17 @@ const FIELD_AIDS = {
       'When overwhelmed, ask only: what does love require of me in the next hour?',
     ],
     prayers: [
-      'Jesus, teach me to love You with all my heart and to love others as myself. Amen.',
+      'Jesus, You are the aim. I release lesser gods. Teach me to love You and my neighbor. Amen.',
     ],
   },
   'deny-yourself': {
     hacks: [
       'The cross is daily. Ask: what must I lay down right now — ego, argument, appetite, control?',
       'Losing your life for His sake is not self-hatred; it is refusing to make self the god of this hour.',
+      'Self-control is Spirit fruit for *you* — deny the flesh once more; do not try to deny them into compliance.',
     ],
     prayers: [
-      'Lord, I deny myself. I take up my cross. I follow You — not my flesh. Amen.',
+      'Lord, I lay self down. I take up my cross. I release the need to be god of this hour. Amen.',
     ],
   },
   'god-on-marriage': {
@@ -141,7 +154,7 @@ const FIELD_AIDS = {
       'He is witness between a man and the wife of his youth. Speak as if He is in the room.',
     ],
     prayers: [
-      'God of the covenant, You hate faithlessness. Make me faithful. Heal what is broken. Amen.',
+      'Father of the covenant, I release my grip on the outcome. Make me faithful under Your eye. Amen.',
     ],
   },
   'love-and-patience': {
@@ -150,7 +163,7 @@ const FIELD_AIDS = {
       'Patience is love under pressure. Slow the reply. Soften the tone. Protect, trust, hope, persevere.',
     ],
     prayers: [
-      'Lord, make my love patient and kind. No envy, no record of wrongs. Help me endure. Amen.',
+      'Lord, I release the scoreboard. Soften me to love and wait as You love. Amen.',
     ],
   },
   'a-broken-and-contrite-heart': {
@@ -159,7 +172,7 @@ const FIELD_AIDS = {
       'Do not rush past conviction. Sit with a clean sorrow that leads to life, not a toxic shame that freezes you.',
     ],
     prayers: [
-      'O God, a broken and contrite heart You will not despise. I humble myself. Look upon me. Amen.',
+      'Father, I bring a broken heart. I release pride. Look upon me in mercy. Amen.',
     ],
   },
   'guard-your-heart-and-mouth': {
@@ -168,16 +181,17 @@ const FIELD_AIDS = {
       'Before you speak: does this build up according to need, or does it only relieve my pressure?',
     ],
     prayers: [
-      'Set a guard, O Lord, over my mouth. Keep my heart. Let my words give grace. Amen.',
+      'Lord, I release the sharp word. Guard my mouth and keep my heart. Amen.',
     ],
   },
   'be-quick-to-listen': {
     hacks: [
       'Count to three before you answer. Listening is not losing; it is refusing to let anger drive.',
+      'Anger is fast flesh. Listening is love under pressure — hear fully before you defend, explain, or strike.',
       'Slow to speak is spiritual warfare when the flesh wants the last word.',
     ],
     prayers: [
-      'Lord, make me quick to listen, slow to speak, slow to anger. Amen.',
+      'Lord, I release the need for the last word. Make me quick to listen. Amen.',
     ],
   },
   'restore-gently-and-give-time': {
@@ -186,7 +200,7 @@ const FIELD_AIDS = {
       'There is a time for everything. Do not force a harvest in a winter season.',
     ],
     prayers: [
-      'Father, teach me to restore gently. Give wisdom for timing. Keep me from pride. Amen.',
+      'Father, I release forced harvests. Teach me gentle timing under Your hand. Amen.',
     ],
   },
   'walk-in-honesty-and-truth': {
@@ -195,7 +209,7 @@ const FIELD_AIDS = {
       'Put off falsehood even when truth costs status. Light is safer than managed darkness.',
     ],
     prayers: [
-      'God of truth, I put off falsehood. Make my words straight. Keep me in the light. Amen.',
+      'Lord, I release managed darkness. Keep me in the light with straight words. Amen.',
     ],
   },
   'choose-selfless-love': {
@@ -204,7 +218,7 @@ const FIELD_AIDS = {
       'Selfish ambition feels like clarity and is often poison. Check the motive before the move.',
     ],
     prayers: [
-      'Lord, empty me of selfish ambition. Let me look to others’ interests in love. Amen.',
+      'Lord, I release selfish ambition. Open my hands to serve in love. Amen.',
     ],
   },
   'do-not-repay-evil-with-evil': {
@@ -213,7 +227,7 @@ const FIELD_AIDS = {
       'When insult rises, answer with a blessing — out loud if you can, in prayer if you cannot yet.',
     ],
     prayers: [
-      'Lord, I will not repay evil with evil. Teach me to bless. Guard my tongue and heart. Amen.',
+      'Lord, I release repayment. Teach me to bless and entrust the rest to You. Amen.',
     ],
   },
   'one-another-in-the-body': {
@@ -222,16 +236,17 @@ const FIELD_AIDS = {
       'Encourage daily. Isolation hardens the heart; presence softens deceit.',
     ],
     prayers: [
-      'Father, place me in Your body. Help me bear burdens and receive help. Stir love and good works. Amen.',
+      'Father, I release isolation. Place me in Your body to give and receive. Amen.',
     ],
   },
   'trust-in-the-lord': {
     hacks: [
-      'Lean not on your own understanding — especially when your understanding is panic with a spreadsheet.',
-      'Trust is active: acknowledge Him in this path, then walk the straight step He shows.',
+      'Trust in the Lord with all your heart — lean not on panic as if it were wisdom.',
+      'In all your ways acknowledge Him; take only the next straight step He shows.',
+      'Release the outcome you cannot rule. He still holds the path.',
     ],
     prayers: [
-      'Lord, I trust You with all my heart. I will not lean on my own understanding. Direct my path. Amen.',
+      'Lord, I trust You with all my heart. I release control. Direct my path. Amen.',
     ],
   },
   'the-cross-and-our-justification': {
@@ -240,7 +255,7 @@ const FIELD_AIDS = {
       'Your standing is not your streak of good days. You are justified by faith in Christ.',
     ],
     prayers: [
-      'Jesus, by Your wounds I am healed. There is no condemnation in You. Keep me there. Amen.',
+      'Jesus, it is finished. I release condemnation. Keep me under Your blood. Amen.',
     ],
   },
   'his-grace-is-sufficient': {
@@ -249,7 +264,7 @@ const FIELD_AIDS = {
       'Grace trains you; it does not excuse you. Receive mercy, then renounce the flesh habit.',
     ],
     prayers: [
-      'Lord, Your grace is enough for this hour. Power in my weakness. Teach me to live upright. Amen.',
+      'Lord, Your grace is enough. I release performed strength. Meet me in weakness. Amen.',
     ],
   },
   'walk-by-the-spirit': {
@@ -258,7 +273,107 @@ const FIELD_AIDS = {
       'Flesh wants the last word. Spirit keeps in step. Delay the reaction; choose the next right fruit.',
     ],
     prayers: [
-      'Holy Spirit, I choose to walk with You. Kill rage, impatience, and control in me. Grow Your fruit. Amen.',
+      'Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Amen.',
+    ],
+  },
+  'holy-spirit': {
+    hacks: [
+      'Jesus did not leave you alone. The Helper is with you and in you — Spirit of truth, not a vague feeling.',
+      'He testifies to the truth. When lies press in, ask Him to bear witness and open the Word.',
+      'Power is for witness and warfare under God — demolish strongholds, stand in authority — not for show or self-glory.',
+    ],
+    prayers: [
+      'Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen.',
+    ],
+  },
+  love: {
+    hacks: [
+      'Flesh counterfeit: lust, scorekeeping, or “love” that needs them to change so you feel safe — that is not the Spirit’s fruit.',
+      'Before you act “for love,” ask: does this serve their good under God — or my appetite, my image, my control?',
+      'If hatred rises, name it. Put it down. Bless once. Entrust the scales. Hatred and love of God cannot share a heart.',
+    ],
+    prayers: [
+      'Holy Spirit, I release cold love and scorekeeping. Pour Your love into this heart. Amen.',
+    ],
+  },
+  joy: {
+    hacks: [
+      'Flesh counterfeit: happiness rented from circumstances; bitterness when the rent comes due.',
+      'When joy dies with the outcome, speak one true thing about God that does not depend on them.',
+      'Grief is allowed; bitterness as identity is not. Rejoice in the Lord — His joy is your strength.',
+    ],
+    prayers: [
+      'Lord, I release joy rented from outcomes. Be my strength and restore Your joy. Amen.',
+    ],
+  },
+  peace: {
+    hacks: [
+      'Flesh counterfeit: numbness, conflict-avoidance, or “peace” that only arrives when you grip the timeline.',
+      'Stop negotiating every what-if. Pray, thank, and receive the guard over heart and mind.',
+      'Peace is given, not earned. Receive it; let the peace of Christ rule this hour.',
+    ],
+    prayers: [
+      'Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Amen.',
+    ],
+  },
+  patience: {
+    hacks: [
+      'Flesh counterfeit: force the outcome, rage at the clock, punish them for not moving on your schedule.',
+      'When urgency screams “fix them,” answer: wait for the Lord; do the one duty you own today.',
+      'Slow the reply. Soften the tone. Love is patient — you are not the weather.',
+    ],
+    prayers: [
+      'Father, I release outcomes I cannot rule. Grow patience while I wait on You. Amen.',
+    ],
+  },
+  kindness: {
+    hacks: [
+      'Flesh counterfeit: niceness to manage image, or harshness justified as “just being honest.”',
+      'Replace the sharp text with one true, clean sentence — or silence if silence is love.',
+      'Do one kind act without announcement. Kindness that needs credit is still flesh.',
+    ],
+    prayers: [
+      'Lord, I release the sharp edge. Soften what is hard in me. Amen.',
+    ],
+  },
+  goodness: {
+    hacks: [
+      'Flesh counterfeit: performative virtue, self-justifying “good reasons,” or evil for a noble end.',
+      'Ask: is this good, or only useful for my case? Choose light over managed darkness.',
+      'One honest yes, one honest no. Half-truths are full lies with better manners.',
+    ],
+    prayers: [
+      'Lord, I release useful darkness. Keep me clinging to what is good. Amen.',
+    ],
+  },
+  faithfulness: {
+    hacks: [
+      'Flesh counterfeit: conditional loyalty, ghosting covenant, “I need to be true to myself” as exit ramp.',
+      'Covenant is not a contract of feelings. Keep the next faithful act you already know is right.',
+      'When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true.',
+    ],
+    prayers: [
+      'Lord, You are faithful. I release exit stories. Keep me true. Amen.',
+    ],
+  },
+  gentleness: {
+    hacks: [
+      'Flesh counterfeit: harsh correction to feel powerful, or limp avoidance labeled “gentleness.”',
+      'If you must correct, restore gently — and audit your pride first. Contempt is not courage.',
+      'Soft answer to hard moment. Truth without the knife. No venom.',
+    ],
+    prayers: [
+      'Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Amen.',
+    ],
+  },
+  'self-control': {
+    hacks: [
+      'Flesh counterfeit: impulse as master — rage, lust, the check-again loop — or controlling them because you cannot control you.',
+      'Name the impulse. Delay. Capture the thought. Do the next right fruit under the Spirit.',
+      'Self-control rules you — not them. Keep in step with the Spirit when the flesh wants the last word.',
+    ],
+    prayers: [
+      'Holy Spirit, I release the impulse to master others — and myself in rage. Keep me in step. Amen.',
     ],
   },
   'marriage-covenant': {
@@ -267,7 +382,7 @@ const FIELD_AIDS = {
       'If separation exists: do not invent a new story. Remain faithful to what God still calls true.',
     ],
     prayers: [
-      'Lord of the covenant, make me a husband of sacrificial love. Heal what I broke. Keep me faithful. Amen.',
+      'Lord of the covenant, I release winning the argument. Make me faithful. Amen.',
     ],
   },
   'count-the-trial-as-joy': {
@@ -276,16 +391,17 @@ const FIELD_AIDS = {
       'Name the fruit goal: perseverance → character → hope. Ask which of the three is forming today.',
     ],
     prayers: [
-      'Father, I do not love this fire. Use it. Produce endurance and hope in me. Amen.',
+      'Father, I do not love this fire. I release the demand that it stop on my terms. Use it. Amen.',
     ],
   },
   'wait-on-the-lord': {
     hacks: [
-      'Waiting is not passivity. It is refusing to force outcomes with flesh while you stay obedient today.',
-      'When urgency screams, answer with: “Be strong. Take courage. Wait for the Lord.”',
+      'Be strong. Take courage. Wait for the Lord — not for your timeline to bend.',
+      'Those who wait renew strength. Force is flesh; waiting is faith with open hands.',
+      'Stop forcing outcomes you cannot rule. Obey today; leave the harvest to Him.',
     ],
     prayers: [
-      'Lord, I wait for You. Renew my strength. I will not force what only You can restore. Amen.',
+      'Lord, I wait for You. I release forced outcomes. Renew my strength. Amen.',
     ],
   },
   'lament-and-pour-out-your-heart': {
@@ -294,7 +410,7 @@ const FIELD_AIDS = {
       '“How long, O Lord?” is Scripture language. Use it instead of bitterness monologue.',
     ],
     prayers: [
-      'Lord, I pour out my heart. How long? Stay near the brokenhearted. I trust You with this pain. Amen.',
+      'Lord, I pour out my heart. I release the need to hold it alone. Stay near. Amen.',
     ],
   },
   'confess-and-be-cleansed': {
@@ -303,7 +419,7 @@ const FIELD_AIDS = {
       'Draw near with confidence — not swagger. Mercy is for need, not for performance.',
     ],
     prayers: [
-      'Father, I confess. Cleanse me from all unrighteousness. I draw near to Your throne of grace. Amen.',
+      'Father, I confess. I release this sin into Your light. Cleanse me. Amen.',
     ],
   },
   'forgive-as-you-have-been-forgiven': {
@@ -312,17 +428,17 @@ const FIELD_AIDS = {
       'Unforgiveness chains you to the wound. Forgiveness frees you to obey — even while grief remains.',
     ],
     prayers: [
-      'Lord, as You forgave me in Christ, I forgive. Soften my heart. Keep no record of wrongs in me. Amen.',
+      'Lord, as You forgave me, I release this debt. Soften my heart. Amen.',
     ],
   },
   'leave-vengeance-to-the-lord': {
     hacks: [
       'Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.',
-      'If the urge is to repay, that is flesh. Bless, entrust, do the next right thing.',
+      'If the urge is to repay, that is flesh. Bless, entrust the scales to God, do the next right thing.',
       'Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin.',
     ],
     prayers: [
-      'Lord, fight for me. Vengeance is Yours. Root hatred out of me. Teach me to love as You love. Amen.',
+      'Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen.',
     ],
   },
   'do-not-fear': {
@@ -331,46 +447,318 @@ const FIELD_AIDS = {
       'You cannot add an hour by worry. So put the hour into prayer and duty instead.',
     ],
     prayers: [
-      'God, You have not given me a spirit of fear. Be with me. Steady my mind. Amen.',
+      'Lord, I release the spirit of fear. Be with me. Steady my mind. Amen.',
     ],
   },
   fear: {
     hacks: [
-      'Fear is the absence of perfect love — not proof that danger is fake. Run toward His love, not toward control.',
-      'Say it plain: I am afraid of ___. Then: when I am afraid, I put my trust in You.',
-      'Fear of man is a snare. Whose face are you managing? Put that face down. Look to the Lord.',
-      'Peace is given, not earned. Receive His love; then take the next obedient step — even if your hands still shake.',
+      'Perfect love casts out fear — run toward His love, not toward control.',
+      'When I am afraid, I put my trust in You. Name the fear; then trust.',
+      'Fear of man lays a snare. Put that face down. You cry Abba, Father — not slave to terror.',
     ],
     prayers: [
-      'Father, perfect Your love in me. Cast out fear. I am Your child, not a slave to terror. Amen.',
+      'Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen.',
     ],
   },
   loss: {
     hacks: [
-      'Name what was lost without rewriting God. Mourning is not unbelief.',
-      'Do not grieve as those without hope — hope does not erase tears; it frames them.',
-      'Empty hands can still bless His name. One honest sentence to God is better than a performance of fine.',
+      'The Lord is near the brokenhearted — mourning is not unbelief.',
+      'Do not grieve as those without hope. Hope does not erase tears; it frames them.',
+      'The Lord gave and the Lord has taken away — bless His name with empty hands.',
     ],
     prayers: [
-      'Father, I am near the broken place. Be near me. Comfort those who mourn. Hold what I cannot hold. Amen.',
+      'Father, my hands are empty. I release what I cannot keep. Be near the broken place. Amen.',
+    ],
+  },
+  wounded: {
+    hacks: [
+      'You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.',
+      'Their leaving does not cancel whose you are. You are His; cry Abba, Father.',
+      'Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains.',
+    ],
+    prayers: [
+      'Father, You see what was done to me. I release hatred. Heal me and hold me. Amen.',
     ],
   },
   'take-every-thought-captive': {
     hacks: [
       'Catch the thought early: is it true, pure, lovely — or accusation, fantasy, revenge, despair?',
-      'Capture → replace with Scripture → act. Do not argue with every intrusive story all day.',
+      'Weapons are not fleshly — they have divine power to destroy strongholds. Capture the thought; demolish the lie.',
+      'Take it captive to obey Christ. Replace with what is true. Then act.',
     ],
     prayers: [
-      'Jesus, I take this thought captive to You. Fill my mind with what is true and pure. Amen.',
+      'Jesus, I release this loop into Your hands. Destroy the stronghold. I take the thought captive to You. Amen.',
+    ],
+  },
+  rumination: {
+    // Chamber title: Obsession (plain speech). Id stays rumination.
+    hacks: [
+      'Take every thought captive to obey Christ — obsession is not revelation.',
+      'When cares are many, His consolations cheer the soul. Pray the spiral; do not feed it.',
+      'Mind stayed on Him is kept in perfect peace. Capture → replace → the next obedient step.',
+    ],
+    prayers: [
+      'Lord, I release the replaying mind. I take every thought captive to You. Amen.',
+    ],
+  },
+  regret: {
+    hacks: [
+      'Godly grief produces repentance that leads to life; worldly grief produces death — refuse the death-tape.',
+      'Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.',
+      'There is now no condemnation in Christ Jesus — self-hate is not holiness. Own what is yours; then rise.',
+    ],
+    prayers: [
+      'Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy. Amen.',
+    ],
+  },
+  addiction: {
+    hacks: [
+      'All things are lawful — not all helpful. If it masters you, it is not free. Name the master and refuse its throne.',
+      'Do not get drunk with wine (or any substitute god). Be filled with the Spirit. Walk by the Spirit; put the flesh to death one hour at a time.',
+      'Confess, forsake, and get real help. Freedom is not alone-willpower theater. Name it → capture the craving → pray → one next sober step.',
+    ],
+    prayers: [
+      'Father, I release every false master. I am Yours. Fill me with Your Spirit and keep me free. Amen.',
+    ],
+  },
+  jealousy: {
+    hacks: [
+      'Name it the moment it rises: “This is jealousy.” It is not protection — it is a demand that another exist to secure you. Refuse its throne.',
+      'Do not investigate, accuse, or punish. Capture the thought → pray → one next free step.',
+      'Love does not envy. Walk by the Spirit; put the flesh to death.',
+    ],
+    prayers: [
+      'Father, I release this jealousy. I will not demand control of another. Fill me with Your Spirit and teach me to love without grasping. Amen.',
+    ],
+  },
+  control: {
+    hacks: [
+      'Name the grip: outcomes, people, image, timeline — if you must hold it, it has become a god. Open the hand.',
+      'Trust is not passivity. Do the next obedient step; leave the rest to Him who knows the end from the beginning.',
+      'Self-control rules you — not them. Walk by the Spirit when the flesh wants the last word over another life.',
+    ],
+    prayers: [
+      'Lord, I trust You with all my heart. I release control. Direct my path. Amen.',
+    ],
+  },
+  'spiritual-warfare': {
+    hacks: [
+      'Name the war: this is not only circumstance. Schemes are real — stay sober and watchful.',
+      'A chief lie: “You cannot know or understand the Word.” That is the serpent’s fog. Open Scripture; fight with the sword of the Spirit.',
+      'Weapons have divine power to destroy strongholds. Authority is given to trample the enemy — under Christ, not in flesh bravado. Resist; stand.',
+    ],
+    prayers: [
+      'Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your strength and Your Word. Amen.',
+    ],
+  },
+  'the-word': {
+    hacks: [
+      'The enemy says: “You cannot understand the Bible — leave it to experts.” God says His words give light to the simple. Open it.',
+      'People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line. Understanding grows in the doing.',
+      'Do not wait to feel smart. Abide in His Word. The truth sets free — not vibes, not secondhand summaries alone.',
+    ],
+    prayers: [
+      'Father, Your Word is for me. I release the lie that I cannot understand. Give light. Teach me. Amen.',
+    ],
+  },
+  'the-adversary': {
+    hacks: [
+      'He is real — not a cartoon, not a metaphor. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.',
+      'Weeds grow among wheat: not everyone who looks religious is of the kingdom. Discern fruit; do not play detective for the devil’s resume.',
+      'When persecution and schemes hit: submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind.',
+    ],
+    prayers: [
+      'Father, open my eyes to the real enemy. I release fear and fixation. I stand with You. Amen.',
+    ],
+  },
+  'wheat-and-tares': {
+    hacks: [
+      'The field is mixed. Do not assume every plant is the Master’s sowing.',
+      'The enemy sows while people sleep — stay awake; do not let night cover what you know is seed.',
+      'Judgment is the Lord’s at harvest. Your work today: plant good seed and refuse the weed’s root in you.',
+    ],
+    prayers: [
+      'Lord of the harvest, I release premature judgment. Keep me awake and wheat. Amen.',
+    ],
+  },
+  'works-of-the-flesh': {
+    hacks: [
+      'Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”',
+      'Those who practice such things will not inherit the kingdom — this is warning, not a joke.',
+      'Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate.',
+    ],
+    prayers: [
+      'Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen.',
+    ],
+  },
+  adultery: {
+    hacks: [
+      'Flee sexual immorality. Your body is not a private playground — it is a temple of the Holy Spirit.',
+      'Adultery starts in the heart before the bed. Guard the look, the chat, the fantasy.',
+      'Confess, forsake, be cleansed. Do not call darkness a new identity.',
+    ],
+    prayers: [
+      'Father, I release every false intimacy. Cleanse me. Keep me pure. Amen.',
+    ],
+  },
+  pharmakeia: {
+    hacks: [
+      'Pharmakeia is not neutral “help” when it is sorcery, occult power, or numbing the soul against God.',
+      'Do not open doors to spirits through what promises control of mood, fate, or power without the Lord.',
+      'Be sober-minded. If it owns you, renounce it. Draw near to God; resist the devil.',
+    ],
+    prayers: [
+      'Father, I release every counterfeit power. I belong to You. Make me sober. Amen.',
+    ],
+  },
+  murder: {
+    hacks: [
+      'Murder is not only the knife — hatred of a brother is already death in the heart.',
+      'Do not avenge. Leave wrath to God. Put down the wish that they would be erased.',
+      'If blood is on your hands in truth, run to confession and the Cross — not deeper dark.',
+    ],
+    prayers: [
+      'Father, I release hatred and the wish to erase. Have mercy. Soften my heart. Amen.',
+    ],
+  },
+  malice: {
+    hacks: [
+      'Malice is the quiet wish to harm. Name it. Put it off with the old self.',
+      'Bitterness, rage, slander — these are not “just honesty.” They are flesh.',
+      'Be kind and tenderhearted. Forgive as you were forgiven — or malice will keep the ledger.',
+    ],
+    prayers: [
+      'Father, I release the quiet wish to harm. Put away malice from me. Amen.',
+    ],
+  },
+  falsehood: {
+    hacks: [
+      'Liars have no place in the city of God. Half-truths are still lies with manners.',
+      'Let your yes be yes. Put off falsehood even when truth costs status.',
+      'Walk in light. Managed darkness is still darkness.',
+    ],
+    prayers: [
+      'Lord, I release managed darkness. Keep me in the light with straight words. Amen.',
     ],
   },
   'the-full-armor-of-god': {
     hacks: [
       'Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer — not vibes.',
       'Flaming darts are expected. Raise the shield of faith instead of explaining every dart to yourself.',
+      'Armor is for standing — after you know you are in a fight. Stay dressed; stay praying.',
     ],
     prayers: [
-      'Lord, I put on Your full armor. Help me stand against the schemes of the devil. Amen.',
+      'Lord, I release naked self-reliance. I put on Your armor and stand. Amen.',
+    ],
+  },
+  'watch-and-be-ready': {
+    hacks: [
+      'Stay awake. The hour is unknown — readiness is oil, not panic.',
+      'He told you beforehand. Do not sleep through the warning.',
+      'When He knocks, open. Do not assume tomorrow is yours.',
+    ],
+    prayers: [
+      'Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen.',
+    ],
+  },
+  'ten-virgins': {
+    hacks: [
+      'Oil is not borrowed at the door. What you store with Him now is what you have then.',
+      'Both groups waited — only the wise were ready when the cry came.',
+      'Do not delay repentance until the wedding feast is shut.',
+    ],
+    prayers: [
+      'Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen.',
+    ],
+  },
+  'the-faithful-servant': {
+    hacks: [
+      'Faithful is ordinary obedience while the Master delays — not performance when He is watching.',
+      'Beating others, eating and drinking with drunkards — that is the wicked servant’s path.',
+      'Blessed is the one the Master finds doing the assignment when He comes.',
+    ],
+    prayers: [
+      'Lord, I release the wicked servant’s ease. Find me faithful when You come. Amen.',
+    ],
+  },
+  'one-taken-one-left': {
+    hacks: [
+      'Two side by side — only readiness separates them. Proximity is not salvation.',
+      'As in the days of Noah: life looked normal until the door shut.',
+      'Watch. You do not know which hour. Live ready, not guessing the calendar.',
+    ],
+    prayers: [
+      'Lord, I release presumption. Keep me watching for You. Amen.',
+    ],
+  },
+  'treasure-in-heaven': {
+    hacks: [
+      'Where your treasure is, your heart follows — audit the vault, not only the feelings.',
+      'Earth rusts and thieves break in. Lay up what the fire cannot touch.',
+      'Fight for the lasting: obedience, love, souls, the kingdom — not the applause of a week.',
+    ],
+    prayers: [
+      'Father, I release rust and moth. Set my treasure in heaven. Amen.',
+    ],
+  },
+  prayer: {
+    hacks: [
+      'When you do not know what to pray, the Spirit helps — groan, wait, then one true sentence.',
+      'Ask, seek, knock — persistence is faith, not nagging God into a corner.',
+      'Pray without ceasing means stay turned toward Him all day, not only at crisis.',
+    ],
+    prayers: [
+      'Father, I bring this need and I wait. I release the need to control the answer. Amen.',
+    ],
+  },
+  fasting: {
+    hacks: [
+      'Fast to seek God, not to twist His arm or impress people. Secret, sincere, humbled.',
+      'Hunger can sharpen prayer — or harden pride. Pair the fast with the Word and mercy.',
+      'If health forbids a food fast, fast something that costs you: noise, scroll, appetite for control.',
+    ],
+    prayers: [
+      'Lord, I set this aside to seek You. I release appetite for control. Humble me. Amen.',
+    ],
+  },
+  sabbath: {
+    hacks: [
+      'The Sabbath is the seventh day — Saturday — still holy to the Lord. He made it holy; you do not rename it.',
+      'He knows His people as they obey: keep His Sabbaths as a sign that He is the Lord who sanctifies you.',
+      'Rest is not laziness. Stop the grind, delight in His day, and remember He is God.',
+    ],
+    prayers: [
+      'Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it holy. Amen.',
+    ],
+  },
+  healing: {
+    hacks: [
+      'Ask boldly for healing. Receive His will either way — miracle, medicine, or mercy in the wait.',
+      'Do not shame the sick for “lack of faith.” Jesus healed the weak who came.',
+      'Pray, anoint, and also use wise means. God is not against doctors or against prayer.',
+    ],
+    prayers: [
+      'Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Amen.',
+    ],
+  },
+  'laying-on-of-hands': {
+    hacks: [
+      'Hands are not magic — they are obedient faith under the name of Jesus.',
+      'Invite mature believers. Avoid spectacle and pressure. Let the Spirit lead the moment.',
+      'If you are the one prayed for: receive without performing. God sees the heart.',
+    ],
+    prayers: [
+      'Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen.',
+    ],
+  },
+  'spiritual-gifts': {
+    hacks: [
+      'Gifts of the Spirit are for the common good — not a stage name. Use what He gave.',
+      'Steward the gift as one who will give account. Do not bury the talent in fear.',
+      'Desire the greater gifts, and still walk in love — without love, gifts are noise.',
+    ],
+    prayers: [
+      'Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen.',
     ],
   },
   'the-righteous-fall': {
@@ -380,7 +768,7 @@ const FIELD_AIDS = {
       'Your fall does not cancel the crucible. Get up. The righteous man rises again.',
     ],
     prayers: [
-      'Father, I fell. Cleanse me. I rise by Your mercy. Teach me not to walk in the flesh. Amen.',
+      'Father, I fell. I release the lie that I am finished. Cleanse me by Your mercy. Amen.',
     ],
   },
   'hope-of-glory': {
@@ -389,16 +777,16 @@ const FIELD_AIDS = {
       'Steadfast under trial is not glamorous. Crowns are for those who remain — keep remaining today.',
     ],
     prayers: [
-      'Jesus, my hope of glory. Wipe tears in Your time. Keep me steadfast until You appear. Amen.',
+      'Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen.',
     ],
   },
   'renew-your-mind': {
     hacks: [
-      'The world pattern will reassert itself by default. Choose a deliberate input: Word over feed, prayer over spiral.',
-      'Transformation is renewed thinking practiced daily — not one emotional breakthrough.',
+      'The world pattern will reassert itself by default. Choose Word and prayer over the spiral.',
+      'Transformation is renewed thinking practiced daily — the mind of Christ, one thought at a time.',
     ],
     prayers: [
-      'Lord, renew my mind. Break conformity to the world. Transform how I see this trial. Amen.',
+      'Lord, I release the world’s pattern. Renew my mind in this trial. Amen.',
     ],
   },
 }
@@ -409,7 +797,12 @@ const RELATED = {
   'his-power-and-beauty': ['god-first', 'his-promises', 'hope-of-glory'],
   'his-promises': ['god-first', 'he-is-for-you', 'trust-in-the-lord', 'hope-of-glory'],
   'his-provision': ['the-lords-prayer', 'trust-in-the-lord', 'god-first'],
-  'the-lords-prayer': ['his-provision', 'forgive-as-you-have-been-forgiven', 'god-first'],
+  'the-lords-prayer': [
+    'his-provision',
+    'forgive-as-you-have-been-forgiven',
+    'god-first',
+    'prayer',
+  ],
   'the-cross-and-our-justification': [
     'he-is-for-you',
     'his-grace-is-sufficient',
@@ -423,12 +816,114 @@ const RELATED = {
     'the-cross-and-our-justification',
   ],
   'the-meaning-of-life': ['love-and-patience', 'choose-selfless-love', 'god-first'],
-  'deny-yourself': ['walk-by-the-spirit', 'the-cross-and-our-justification', 'count-the-trial-as-joy'],
+  'deny-yourself': [
+    'walk-by-the-spirit',
+    'the-cross-and-our-justification',
+    'count-the-trial-as-joy',
+    'self-control',
+  ],
   'walk-by-the-spirit': [
     'deny-yourself',
+    'holy-spirit',
+    'love',
+    'joy',
+    'peace',
+    'patience',
+    'kindness',
+    'goodness',
+    'faithfulness',
+    'gentleness',
+    'self-control',
+    'works-of-the-flesh',
     'take-every-thought-captive',
+    'spiritual-warfare',
     'the-righteous-fall',
     'the-full-armor-of-god',
+  ],
+  'holy-spirit': [
+    'walk-by-the-spirit',
+    'the-word',
+    'spiritual-gifts',
+    'take-every-thought-captive',
+    'spiritual-warfare',
+    'the-adversary',
+    'prayer',
+    'god-first',
+    'love',
+  ],
+  love: [
+    'walk-by-the-spirit',
+    'holy-spirit',
+    'love-and-patience',
+    'choose-selfless-love',
+    'leave-vengeance-to-the-lord',
+    'marriage-covenant',
+    'joy',
+    'jealousy',
+  ],
+  joy: [
+    'walk-by-the-spirit',
+    'count-the-trial-as-joy',
+    'hope-of-glory',
+    'loss',
+    'peace',
+    'love',
+  ],
+  peace: [
+    'walk-by-the-spirit',
+    'fear',
+    'do-not-fear',
+    'trust-in-the-lord',
+    'take-every-thought-captive',
+    'patience',
+  ],
+  patience: [
+    'walk-by-the-spirit',
+    'wait-on-the-lord',
+    'love-and-patience',
+    'trust-in-the-lord',
+    'peace',
+    'self-control',
+  ],
+  kindness: [
+    'walk-by-the-spirit',
+    'be-quick-to-listen',
+    'forgive-as-you-have-been-forgiven',
+    'restore-gently-and-give-time',
+    'goodness',
+    'gentleness',
+  ],
+  goodness: [
+    'walk-by-the-spirit',
+    'walk-in-honesty-and-truth',
+    'confess-and-be-cleansed',
+    'the-full-armor-of-god',
+    'kindness',
+    'faithfulness',
+  ],
+  faithfulness: [
+    'walk-by-the-spirit',
+    'marriage-covenant',
+    'god-on-marriage',
+    'his-promises',
+    'goodness',
+    'gentleness',
+  ],
+  gentleness: [
+    'walk-by-the-spirit',
+    'restore-gently-and-give-time',
+    'guard-your-heart-and-mouth',
+    'leave-vengeance-to-the-lord',
+    'kindness',
+    'self-control',
+  ],
+  'self-control': [
+    'walk-by-the-spirit',
+    'deny-yourself',
+    'take-every-thought-captive',
+    'rumination',
+    'wait-on-the-lord',
+    'patience',
   ],
   'god-on-marriage': ['marriage-covenant', 'love-and-patience', 'forgive-as-you-have-been-forgiven'],
   'marriage-covenant': [
@@ -436,10 +931,29 @@ const RELATED = {
     'love-and-patience',
     'choose-selfless-love',
     'leave-vengeance-to-the-lord',
+    'faithfulness',
+    'love',
   ],
-  'love-and-patience': ['marriage-covenant', 'forgive-as-you-have-been-forgiven', 'be-quick-to-listen'],
-  'count-the-trial-as-joy': ['wait-on-the-lord', 'hope-of-glory', 'lament-and-pour-out-your-heart'],
-  'wait-on-the-lord': ['count-the-trial-as-joy', 'trust-in-the-lord', 'do-not-fear'],
+  'love-and-patience': [
+    'marriage-covenant',
+    'forgive-as-you-have-been-forgiven',
+    'be-quick-to-listen',
+    'love',
+    'patience',
+  ],
+  'count-the-trial-as-joy': [
+    'wait-on-the-lord',
+    'hope-of-glory',
+    'lament-and-pour-out-your-heart',
+    'joy',
+  ],
+  'wait-on-the-lord': [
+    'count-the-trial-as-joy',
+    'trust-in-the-lord',
+    'do-not-fear',
+    'patience',
+    'self-control',
+  ],
   'lament-and-pour-out-your-heart': [
     'a-broken-and-contrite-heart',
     'wait-on-the-lord',
@@ -454,15 +968,30 @@ const RELATED = {
   ],
   'guard-your-heart-and-mouth': ['be-quick-to-listen', 'walk-in-honesty-and-truth', 'walk-by-the-spirit'],
   'be-quick-to-listen': ['guard-your-heart-and-mouth', 'love-and-patience', 'restore-gently-and-give-time'],
-  'restore-gently-and-give-time': ['confess-and-be-cleansed', 'love-and-patience', 'one-another-in-the-body'],
+  'restore-gently-and-give-time': [
+    'confess-and-be-cleansed',
+    'love-and-patience',
+    'one-another-in-the-body',
+    'gentleness',
+  ],
   'confess-and-be-cleansed': [
     'the-righteous-fall',
     'a-broken-and-contrite-heart',
     'his-grace-is-sufficient',
     'walk-by-the-spirit',
   ],
-  'walk-in-honesty-and-truth': ['confess-and-be-cleansed', 'guard-your-heart-and-mouth', 'the-full-armor-of-god'],
-  'choose-selfless-love': ['love-and-patience', 'deny-yourself', 'marriage-covenant'],
+  'walk-in-honesty-and-truth': [
+    'falsehood',
+    'confess-and-be-cleansed',
+    'guard-your-heart-and-mouth',
+    'the-full-armor-of-god',
+  ],
+  'choose-selfless-love': [
+    'love-and-patience',
+    'deny-yourself',
+    'marriage-covenant',
+    'love',
+  ],
   'do-not-repay-evil-with-evil': [
     'leave-vengeance-to-the-lord',
     'forgive-as-you-have-been-forgiven',
@@ -475,6 +1004,9 @@ const RELATED = {
     'love-and-patience',
     'choose-selfless-love',
     'fear',
+    'love',
+    'gentleness',
+    'wounded',
   ],
   'forgive-as-you-have-been-forgiven': [
     'the-cross-and-our-justification',
@@ -482,7 +1014,15 @@ const RELATED = {
     'love-and-patience',
   ],
   'one-another-in-the-body': ['restore-gently-and-give-time', 'confess-and-be-cleansed', 'choose-selfless-love'],
-  'trust-in-the-lord': ['god-first', 'do-not-fear', 'wait-on-the-lord', 'his-promises'],
+  'trust-in-the-lord': [
+    'god-first',
+    'do-not-fear',
+    'wait-on-the-lord',
+    'his-promises',
+    'faithfulness',
+    'patience',
+    'control',
+  ],
   'do-not-fear': ['fear', 'trust-in-the-lord', 'his-promises', 'take-every-thought-captive'],
   fear: [
     'do-not-fear',
@@ -492,6 +1032,7 @@ const RELATED = {
     'his-promises',
     'he-is-for-you',
     'his-grace-is-sufficient',
+    'peace',
   ],
   loss: [
     'lament-and-pour-out-your-heart',
@@ -500,24 +1041,303 @@ const RELATED = {
     'wait-on-the-lord',
     'he-is-for-you',
     'fear',
+    'wounded',
+    'rumination',
   ],
-  'renew-your-mind': ['take-every-thought-captive', 'walk-by-the-spirit', 'the-full-armor-of-god'],
+  wounded: [
+    'loss',
+    'leave-vengeance-to-the-lord',
+    'do-not-repay-evil-with-evil',
+    'forgive-as-you-have-been-forgiven',
+    'he-is-for-you',
+    'fear',
+    'hope-of-glory',
+  ],
+  'renew-your-mind': [
+    'take-every-thought-captive',
+    'the-word',
+    'walk-by-the-spirit',
+    'spiritual-warfare',
+    'the-full-armor-of-god',
+  ],
   'take-every-thought-captive': [
+    'rumination',
     'renew-your-mind',
+    'the-word',
+    'spiritual-warfare',
     'the-full-armor-of-god',
     'walk-by-the-spirit',
     'do-not-fear',
   ],
-  'the-full-armor-of-god': [
+  'the-word': [
+    'god-first',
+    'renew-your-mind',
+    'take-every-thought-captive',
+    'the-adversary',
+    'spiritual-warfare',
+    'the-full-armor-of-god',
+    'prayer',
+    'walk-by-the-spirit',
+    'falsehood',
+  ],
+  'the-adversary': [
+    'god-first',
+    'the-word',
+    'spiritual-warfare',
+    'wheat-and-tares',
+    'the-full-armor-of-god',
+    'the-cross-and-our-justification',
+    'do-not-fear',
+    'take-every-thought-captive',
+  ],
+  rumination: [
+    'take-every-thought-captive',
+    'renew-your-mind',
+    'the-word',
+    'fear',
+    'loss',
+    'wait-on-the-lord',
+    'self-control',
+    'peace',
+    'spiritual-warfare',
+    'the-adversary',
+  ],
+  regret: [
+    'the-righteous-fall',
+    'confess-and-be-cleansed',
+    'his-grace-is-sufficient',
+    'the-cross-and-our-justification',
+    'rumination',
+    'addiction',
+    'hope-of-glory',
+  ],
+  addiction: [
+    // Core cluster: mastery, mind, Spirit, fruit — then grace; substance/sexual doors last
+    'self-control',
+    'take-every-thought-captive',
+    'renew-your-mind',
+    'walk-by-the-spirit',
+    'holy-spirit',
+    'works-of-the-flesh',
+    'confess-and-be-cleansed',
+    'his-grace-is-sufficient',
+    'jealousy',
+    'pharmakeia',
+    'adultery',
+  ],
+  jealousy: [
+    'control',
+    'works-of-the-flesh',
+    'self-control',
+    'walk-by-the-spirit',
+    'take-every-thought-captive',
+    'love',
+    'addiction',
+    'fear',
+    'trust-in-the-lord',
+  ],
+  control: [
+    'trust-in-the-lord',
+    'self-control',
+    'walk-by-the-spirit',
+    'jealousy',
+    'wait-on-the-lord',
+    'god-first',
+    'take-every-thought-captive',
+    'peace',
+  ],
+  'spiritual-warfare': [
+    'the-adversary',
+    'wheat-and-tares',
+    'works-of-the-flesh',
+    'the-full-armor-of-god',
+    'the-word',
     'take-every-thought-captive',
     'walk-by-the-spirit',
+    'do-not-fear',
+    'the-cross-and-our-justification',
+  ],
+  'wheat-and-tares': [
+    'the-adversary',
+    'spiritual-warfare',
+    'works-of-the-flesh',
+    'walk-by-the-spirit',
     'hope-of-glory',
+    'god-first',
+  ],
+  'works-of-the-flesh': [
+    'spiritual-warfare',
+    'walk-by-the-spirit',
+    'adultery',
+    'pharmakeia',
+    'addiction',
+    'jealousy',
+    'murder',
+    'malice',
+    'falsehood',
+    'wheat-and-tares',
+    'confess-and-be-cleansed',
+  ],
+  adultery: [
+    'works-of-the-flesh',
+    'confess-and-be-cleansed',
+    'marriage-covenant',
+    'god-on-marriage',
+    'walk-by-the-spirit',
+    'self-control',
+    'addiction',
+  ],
+  pharmakeia: [
+    'addiction',
+    'works-of-the-flesh',
+    'spiritual-warfare',
+    'do-not-fear',
+    'walk-by-the-spirit',
+    'self-control',
+    'confess-and-be-cleansed',
+  ],
+  murder: [
+    'works-of-the-flesh',
+    'leave-vengeance-to-the-lord',
+    'do-not-repay-evil-with-evil',
+    'malice',
+    'spiritual-warfare',
+    'confess-and-be-cleansed',
+  ],
+  malice: [
+    'works-of-the-flesh',
+    'murder',
+    'leave-vengeance-to-the-lord',
+    'forgive-as-you-have-been-forgiven',
+    'kindness',
+    'walk-by-the-spirit',
+  ],
+  falsehood: [
+    'works-of-the-flesh',
+    'walk-in-honesty-and-truth',
+    'confess-and-be-cleansed',
+    'the-full-armor-of-god',
+    'spiritual-warfare',
+  ],
+  'the-full-armor-of-god': [
+    'spiritual-warfare',
+    'works-of-the-flesh',
+    'take-every-thought-captive',
+    'walk-by-the-spirit',
+    'watch-and-be-ready',
+    'hope-of-glory',
+  ],
+  'watch-and-be-ready': [
+    'ten-virgins',
+    'the-faithful-servant',
+    'one-taken-one-left',
+    'hope-of-glory',
+    'wheat-and-tares',
+    'wait-on-the-lord',
+    'spiritual-warfare',
+  ],
+  'ten-virgins': [
+    'watch-and-be-ready',
+    'the-faithful-servant',
+    'hope-of-glory',
+    'one-taken-one-left',
+    'walk-by-the-spirit',
+  ],
+  'the-faithful-servant': [
+    'watch-and-be-ready',
+    'ten-virgins',
+    'one-taken-one-left',
+    'deny-yourself',
+    'love-and-patience',
+    'hope-of-glory',
+  ],
+  'one-taken-one-left': [
+    'watch-and-be-ready',
+    'ten-virgins',
+    'the-faithful-servant',
+    'hope-of-glory',
+    'treasure-in-heaven',
+    'wheat-and-tares',
+    'do-not-fear',
+  ],
+  'treasure-in-heaven': [
+    'hope-of-glory',
+    'prayer',
+    'spiritual-gifts',
+    'the-faithful-servant',
+    'god-first',
+    'his-provision',
+    'watch-and-be-ready',
+  ],
+  prayer: [
+    'the-lords-prayer',
+    'fasting',
+    'healing',
+    'lament-and-pour-out-your-heart',
+    'walk-by-the-spirit',
+    'spiritual-gifts',
+    'god-first',
+  ],
+  fasting: [
+    'prayer',
+    'sabbath',
+    'deny-yourself',
+    'a-broken-and-contrite-heart',
+    'healing',
+    'wait-on-the-lord',
+    'walk-by-the-spirit',
+  ],
+  sabbath: [
+    'god-first',
+    'prayer',
+    'fasting',
+    'his-provision',
+    'wait-on-the-lord',
+    'peace',
+    'the-lords-prayer',
+  ],
+  healing: [
+    'prayer',
+    'laying-on-of-hands',
+    'fasting',
+    'sabbath',
+    'his-power-and-beauty',
+    'faithfulness',
+    'hope-of-glory',
+    'spiritual-gifts',
+  ],
+  'laying-on-of-hands': [
+    'healing',
+    'prayer',
+    'spiritual-gifts',
+    'one-another-in-the-body',
+    'walk-by-the-spirit',
+    'his-power-and-beauty',
+  ],
+  'spiritual-gifts': [
+    'treasure-in-heaven',
+    'hope-of-glory',
+    'holy-spirit',
+    'prayer',
+    'healing',
+    'laying-on-of-hands',
+    'the-faithful-servant',
+    'one-another-in-the-body',
+    'walk-by-the-spirit',
+    'love',
   ],
   'hope-of-glory': [
     'count-the-trial-as-joy',
     'the-cross-and-our-justification',
     'the-righteous-fall',
     'wait-on-the-lord',
+    'spiritual-warfare',
+    'wheat-and-tares',
+    'watch-and-be-ready',
+    'treasure-in-heaven',
+    'spiritual-gifts',
+    'healing',
+    'prayer',
   ],
   'the-righteous-fall': [
     'confess-and-be-cleansed',
@@ -525,6 +1345,7 @@ const RELATED = {
     'walk-by-the-spirit',
     'hope-of-glory',
     'a-broken-and-contrite-heart',
+    'regret',
   ],
 }
 
@@ -536,10 +1357,10 @@ const document = {
     /** One place for the triad */
     tagline: "A Hitchhiker's Guide to Love · Living · Enduring",
     mission:
-      'First principles, brain hacks, and short prayers to navigate a troubled life — truth you can stand on when the ground is shaking.',
+      'Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.',
     workingTitle: "The Hitchhiker's Guild · Love · Living · Enduring",
-    version: '0.1.0',
-    revised: '2026-07-24',
+    version: '0.2.0-beta',
+    revised: '2026-07-26',
     contentHash: null,
     ipfsCid: null,
     baseAnchorTx: null,
@@ -622,41 +1443,43 @@ const document = {
     ),
     chamber(
       'He Is For You',
-      'He is for you, not against you.',
+      'God is for you.',
       [
-        'He is for you, not against you.',
+        'If God is for us, who can be against us?',
+        'He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?',
         'He casts your sins behind His back and remembers them no more.',
         'Cast all your cares on Him, because He cares for you.',
       ],
-      'Romans 8:31 · Isaiah 43:25 · Hebrews 8:12 · 1 Peter 5:7',
+      'Romans 8:31-32 · Isaiah 43:25 · Hebrews 8:12 · 1 Peter 5:7',
     ),
     chamber(
       'His Grace Is Sufficient',
-      'My grace is sufficient for you, for My power is made perfect in weakness.',
+      'Grace enough for this hour.',
       [
         'My grace is sufficient for you, for My power is made perfect in weakness.',
-        'The grace of God has appeared, bringing salvation… training us to renounce ungodliness and to live self-controlled, upright, and godly lives.',
+        'The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.',
         'We love because He first loved us.',
       ],
       '2 Corinthians 12:9 · Titus 2:11-12 · 1 John 4:19',
     ),
     chamber(
       'The Meaning of Life',
-      'Love God with all your heart, soul, mind, and strength. And love everyone as yourself.',
+      'The greatest commandments.',
       [
-        'Love God with all your heart, soul, mind, and strength.',
-        'And love everyone as yourself.',
+        'You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.',
+        'You shall love your neighbor as yourself.',
+        'On these two commandments depend all the Law and the Prophets.',
       ],
-      'Matthew 22:37-39 · Mark 12:30-31 · Luke 10:27',
+      'Matthew 22:37-40 · Mark 12:30-31 · Luke 10:27',
     ),
     chamber(
       'Deny Yourself',
-      'If anyone would come after Me, let him deny himself, take up his cross daily, and follow Me.',
+      'Cross daily. Follow Me.',
       [
-        'If anyone would come after Me, let him deny himself, take up his cross daily, and follow Me.',
-        'Whoever loses his life for My sake will find it.',
+        'If anyone would come after Me, let him deny himself and take up his cross daily and follow Me.',
+        'For whoever would save his life will lose it, but whoever loses his life for My sake will save it.',
       ],
-      'Luke 9:23 · Matthew 16:24-25',
+      'Luke 9:23-24 · Matthew 16:24-25',
     ),
     chamber(
       'Walk by the Spirit',
@@ -667,6 +1490,131 @@ const document = {
         'If we live by the Spirit, let us also keep in step with the Spirit.',
       ],
       'Galatians 5:16, 22-23, 25 · Romans 8:5-6, 14',
+    ),
+    chamber(
+      'Holy Spirit',
+      'Jesus gave the Helper — Spirit of truth with you, to testify and empower.',
+      [
+        'And I will ask the Father, and He will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees Him nor knows Him. You know Him, for He dwells with you and will be in you.',
+        'But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things and bring to your remembrance all that I have said to you.',
+        'But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, He will bear witness about Me.',
+        'Nevertheless, I tell you the truth: it is to your advantage that I go away, for if I do not go away, the Helper will not come to you. But if I go, I will send Him to you.',
+        'When the Spirit of truth comes, He will guide you into all the truth.',
+        'But you will receive power when the Holy Spirit has come upon you, and you will be My witnesses.',
+        'God’s love has been poured into our hearts through the Holy Spirit who has been given to us.',
+        'Now there are varieties of gifts, but the same Spirit… To each is given the manifestation of the Spirit for the common good.',
+        'For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.',
+        'Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.',
+      ],
+      'John 14:16-17 · John 14:26 · John 15:26 · John 16:7 · John 16:13 · Acts 1:8 · Romans 5:5 · 1 Corinthians 12:4-7 · 2 Corinthians 10:4 · Luke 10:19',
+    ),
+    chamber(
+      'Love',
+      'Spirit fruit: love.',
+      [
+        'The fruit of the Spirit is love.',
+        'Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love.',
+        'If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.',
+        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth.',
+        'God’s love has been poured into our hearts through the Holy Spirit who has been given to us.',
+      ],
+      'Galatians 5:22 · 1 John 4:7-8, 20 · 1 Corinthians 13:4-6 · Romans 5:5',
+    ),
+    chamber(
+      'Joy',
+      'Spirit fruit: joy.',
+      [
+        'The fruit of the Spirit is joy.',
+        'Do not be grieved, for the joy of the Lord is your strength.',
+        'Rejoice in the Lord always; again I will say, rejoice.',
+        'These things I have spoken to you, that My joy may be in you, and that your joy may be full.',
+        'Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.',
+      ],
+      'Galatians 5:22 · Nehemiah 8:10 · Philippians 4:4 · John 15:11 · 1 Thessalonians 5:16-18',
+    ),
+    chamber(
+      'Peace',
+      'Spirit fruit: peace.',
+      [
+        'The fruit of the Spirit is peace.',
+        'Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
+        'And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.',
+        'You keep him in perfect peace whose mind is stayed on You, because he trusts in You.',
+      ],
+      'Galatians 5:22 · John 14:27 · Philippians 4:6-7 · Colossians 3:15 · Isaiah 26:3',
+    ),
+    chamber(
+      'Patience',
+      'Spirit fruit: patience.',
+      [
+        'The fruit of the Spirit is patience.',
+        'Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. You also, be patient. Establish your hearts, for the coming of the Lord is at hand.',
+        'Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!',
+        'Rejoice in hope, be patient in tribulation, be constant in prayer.',
+        'Love is patient and kind.',
+      ],
+      'Galatians 5:22 · James 5:7-8 · Psalm 27:14 · Romans 12:12 · 1 Corinthians 13:4',
+    ),
+    chamber(
+      'Kindness',
+      'Spirit fruit: kindness.',
+      [
+        'The fruit of the Spirit is kindness.',
+        'Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.',
+        'Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience.',
+        'Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart.',
+        'Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God’s kindness is meant to lead you to repentance?',
+      ],
+      'Galatians 5:22 · Ephesians 4:32 · Colossians 3:12 · Proverbs 3:3 · Romans 2:4',
+    ),
+    chamber(
+      'Goodness',
+      'Spirit fruit: goodness.',
+      [
+        'The fruit of the Spirit is goodness.',
+        'Let love be genuine. Abhor what is evil; hold fast to what is good.',
+        'He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?',
+        'For the fruit of light is found in all that is good and right and true.',
+        'Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever.',
+      ],
+      'Galatians 5:22 · Romans 12:9 · Micah 6:8 · Ephesians 5:9 · Psalm 23:6',
+    ),
+    chamber(
+      'Faithfulness',
+      'Spirit fruit: faithfulness.',
+      [
+        'The fruit of the Spirit is faithfulness.',
+        'Moreover, it is required of stewards that they be found faithful.',
+        'The steadfast love of the Lord never ceases; His mercies never come to an end; they are new every morning; great is Your faithfulness.',
+        'Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man.',
+        'If we are faithless, He remains faithful—for He cannot deny Himself.',
+      ],
+      'Galatians 5:22 · 1 Corinthians 4:2 · Lamentations 3:22-23 · Proverbs 3:3-4 · 2 Timothy 2:13',
+    ),
+    chamber(
+      'Gentleness',
+      'Spirit fruit: gentleness.',
+      [
+        'The fruit of the Spirit is gentleness.',
+        'Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.',
+        'Take My yoke upon you, and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls.',
+        'Let your reasonableness be known to everyone. The Lord is at hand.',
+        'Always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect.',
+      ],
+      'Galatians 5:22-23 · Galatians 6:1 · Matthew 11:29 · Philippians 4:5 · 1 Peter 3:15',
+    ),
+    chamber(
+      'Self-control',
+      'Spirit fruit: self-control.',
+      [
+        'The fruit of the Spirit is self-control; against such things there is no law.',
+        'For God gave us a spirit not of fear but of power and love and self-control.',
+        'A man without self-control is like a city broken into and left without walls.',
+        'Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable.',
+        'For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.',
+      ],
+      'Galatians 5:22-23 · 2 Timothy 1:7 · Proverbs 25:28 · 1 Corinthians 9:25 · Titus 2:11-12',
     ),
     chamber(
       'God on Marriage',
@@ -681,17 +1629,17 @@ const document = {
     ),
     chamber(
       'Marriage Covenant',
-      'Marriage is a lifelong one-flesh covenant of sacrificial love and mutual faithfulness.',
+      'One-flesh covenant. Sacrificial love.',
       [
-        'Marriage is a lifelong one-flesh covenant of sacrificial love and mutual faithfulness.',
-        'The husband is the head of the wife as Christ is head of the church.',
-        'Husbands love by giving themselves up and washing her with the word — leadership is defined by sacrifice, not control.',
-        'Wives respect their husbands with pure and reverent conduct. She brings him good, not harm, all the days of her life.',
-        'Do not deprive one another except by mutual agreement for a limited time.',
-        'Do not separate except briefly. If separation occurs, remain unmarried or be reconciled.',
-        'Husbands must not divorce their wives. Divorce for any reason other than sexual immorality makes them and those who remarry them adulterers.',
+        'The husband is the head of the wife even as Christ is the head of the church, His body, and is Himself its Savior.',
+        'Husbands, love your wives, as Christ loved the church and gave Himself up for her, that He might sanctify her, having cleansed her by the washing of water with the word.',
+        'However, let each one of you love his wife as himself, and let the wife see that she respects her husband.',
+        'Wives, be subject to your own husbands, so that even if some do not obey the word, they may be won without a word by the conduct of their wives, when they see your respectful and pure conduct.',
+        'She does him good, and not harm, all the days of her life.',
+        'Do not deprive one another, except perhaps by agreement for a limited time, that you may devote yourselves to prayer; but then come together again.',
+        'To the married I give this charge (not I, but the Lord): the wife should not separate from her husband… and the husband should not divorce his wife.',
       ],
-      'Ephesians 5:23, 25-27, 33 · 1 Peter 3:1-2 · Proverbs 31:11-12 · 1 Corinthians 7:5, 10-11 · Matthew 19:6, 8-9',
+      'Ephesians 5:23, 25-26, 33 · 1 Peter 3:1-2 · Proverbs 31:12 · 1 Corinthians 7:5, 10-11 · Matthew 19:6, 8-9',
     ),
     chamber(
       'Love and Patience',
@@ -715,13 +1663,14 @@ const document = {
     ),
     chamber(
       'Wait on the Lord',
-      'Wait for the Lord; be strong, and let your heart take courage; wait for the Lord.',
+      'When everything is out of your control — wait. Be strong. Take courage.',
       [
         'Wait for the Lord; be strong, and let your heart take courage; wait for the Lord.',
-        'Those who wait for the Lord shall renew their strength.',
+        'Those who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.',
         'The Lord is good to those who wait for Him, to the soul who seeks Him.',
+        'Be still before the Lord and wait patiently for Him; fret not yourself over the one who prospers in his way.',
       ],
-      'Psalm 27:14 · Isaiah 40:31 · Lamentations 3:25',
+      'Psalm 27:14 · Isaiah 40:31 · Lamentations 3:25 · Psalm 37:7',
     ),
     chamber(
       'Lament and Pour Out Your Heart',
@@ -746,44 +1695,48 @@ const document = {
     ),
     chamber(
       'Guard Your Heart and Mouth',
-      'Guard your heart above all else, for everything you do flows from it.',
+      'Gate the heart and the mouth.',
       [
-        'Guard your heart above all else, for everything you do flows from it.',
-        'Speak only what builds others up according to their needs.',
+        'Keep your heart with all vigilance, for from it flow the springs of life.',
+        'Set a guard, O Lord, over my mouth; keep watch over the door of my lips!',
+        'Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.',
       ],
       'Proverbs 4:23 · Psalm 141:3 · Ephesians 4:29',
     ),
     chamber(
       'Be Quick to Listen',
-      'Be quick to listen, slow to speak, and slow to become angry.',
-      ['Be quick to listen, slow to speak, and slow to become angry.'],
-      'James 1:19',
+      'Quick to hear. Slow to speak. Slow to anger.',
+      [
+        'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.',
+      ],
+      'James 1:19-20',
     ),
     chamber(
       'Restore Gently and Give Time',
-      'If someone is caught in sin, restore them gently while watching yourself.',
+      'Gentleness and timing.',
       [
-        'If someone is caught in sin, restore them gently while watching yourself.',
-        'There is a time for everything.',
+        'Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.',
+        'For everything there is a season, and a time for every matter under heaven.',
       ],
       'Galatians 6:1 · Ecclesiastes 3:1',
     ),
     chamber(
       'Confess and Be Cleansed',
-      'If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.',
+      'Confess. Be cleansed. Draw near.',
       [
         'If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.',
-        'Confess your sins to one another and pray for one another, that you may be healed.',
+        'Therefore, confess your sins to one another and pray for one another, that you may be healed.',
         'Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.',
       ],
       '1 John 1:9 · James 5:16 · Hebrews 4:16',
     ),
     chamber(
       'Walk in Honesty and Truth',
-      'Put off falsehood and speak truthfully.',
+      'Truthful lips. Yes and no.',
       [
-        'Put off falsehood and speak truthfully.',
-        'Let your yes be yes and your no be no.',
+        'Lying lips are an abomination to the Lord, but those who act faithfully are His delight.',
+        'Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.',
+        'Let what you say be simply “Yes” or “No”; anything more than this comes from evil.',
       ],
       'Proverbs 12:22 · Ephesians 4:25 · Matthew 5:37',
     ),
@@ -813,7 +1766,8 @@ const document = {
         'Never avenge yourselves. Leave it to the wrath of God. Vengeance belongs to Him; He will repay.',
         'If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.',
         'Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.',
-        'Hatred is vengeance that never leaves the heart. Put it down. Bless. Entrust the scales to God.',
+        'You shall not take vengeance or bear a grudge… but you shall love your neighbor as yourself.',
+        'Love your enemies and pray for those who persecute you.',
       ],
       'Exodus 14:14 · Romans 12:19 · 1 John 4:20 · 1 John 3:15 · Leviticus 19:17-18 · Matthew 5:43-44',
     ),
@@ -840,12 +1794,14 @@ const document = {
     ),
     chamber(
       'Trust in the Lord',
-      'Trust in the Lord with all your heart and lean not on your own understanding.',
+      'When you cannot grip the outcome — trust.',
       [
-        'Trust in the Lord with all your heart and lean not on your own understanding.',
-        'Do not be anxious about anything.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
+        'And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
+        'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
       ],
-      'Proverbs 3:5-6 · Philippians 4:6 · Matthew 6:27, 34',
+      'Proverbs 3:5-6 · Philippians 4:6-7 · Matthew 6:27, 34',
     ),
     chamber(
       'Do Not Fear',
@@ -862,49 +1818,262 @@ const document = {
       'There is no fear in love, but perfect love casts out fear.',
       [
         'There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.',
-        'Fear is the absence of perfect love — not the absence of danger. The cure is not bravado; it is abiding in His love.',
         'When I am afraid, I put my trust in You.',
         'The fear of man lays a snare, but whoever trusts in the Lord is safe.',
         'Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.',
         'Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.',
-        'Name the fear. Receive His love. Take the next obedient step.',
+        'For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”',
       ],
       '1 John 4:18 · Psalm 56:3 · Proverbs 29:25 · John 14:27 · Joshua 1:9 · Romans 8:15',
     ),
     chamber(
       'Loss',
-      'The Lord is near to the brokenhearted and saves the crushed in spirit.',
+      'Grief for real loss and possible loss — He is near the brokenhearted.',
       [
         'The Lord is near to the brokenhearted and saves the crushed in spirit.',
         'Blessed are those who mourn, for they shall be comforted.',
-        'We do not grieve as others do who have no hope.',
+        'But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope.',
         'The Lord gave, and the Lord has taken away; blessed be the name of the Lord.',
-        'Loss empties hands. It does not empty God. Pour out your heart. Wait. Hold what remains true.',
-        'He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore.',
+        'He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.',
       ],
       'Psalm 34:18 · Matthew 5:4 · 1 Thessalonians 4:13 · Job 1:21 · Revelation 21:4',
     ),
     chamber(
-      'Renew Your Mind',
-      'Do not conform to the pattern of this world, but be transformed by the renewing of your mind.',
+      'Wounded',
+      'You were harmed — God sees; He is near the crushed.',
       [
-        'Do not conform to the pattern of this world, but be transformed by the renewing of your mind.',
+        'The Lord is near to the brokenhearted and saves the crushed in spirit.',
+        'He heals the brokenhearted and binds up their wounds.',
+        'Do not repay evil for evil or reviling for reviling, but on the contrary, bless, for to this you were called, that you may obtain a blessing.',
+        'Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”',
+        'Fear not, for I have redeemed you; I have called you by name, you are Mine.',
+        'For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”',
       ],
-      'Romans 12:2',
+      'Psalm 34:18 · Psalm 147:3 · 1 Peter 3:9 · Romans 12:19 · Isaiah 43:1 · Romans 8:15',
+    ),
+    (() => {
+      // Plain speech title (Keys: Obsession). Stable id keeps spine/related unbroken.
+      const c = chamber(
+        'Obsession',
+        'The stuck, replaying mind is not the Holy Spirit. Capture it.',
+        [
+          'We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.',
+          'Do not be conformed to this world, but be transformed by the renewal of your mind.',
+          'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
+          'Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable… think about these things.',
+          'When the cares of my heart are many, Your consolations cheer my soul.',
+          'You keep him in perfect peace whose mind is stayed on You, because he trusts in You.',
+        ],
+        '2 Corinthians 10:5 · Romans 12:2 · Philippians 4:6-8 · Psalm 94:19 · Isaiah 26:3',
+      )
+      c.id = 'rumination'
+      return c
+    })(),
+    chamber(
+      'Regret',
+      'Godly grief leads to life; worldly grief leads to death.',
+      [
+        'Godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death.',
+        'If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.',
+        'There is therefore now no condemnation for those who are in Christ Jesus.',
+        'Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.',
+        'Create in me a clean heart, O God, and renew a right spirit within me.',
+      ],
+      '2 Corinthians 7:10 · 1 John 1:9 · Romans 8:1 · Proverbs 28:13 · Psalm 51:10',
+    ),
+    chamber(
+      'Addiction',
+      'If it masters you, it is not free — walk by the Spirit; put the flesh to death.',
+      [
+        '“All things are lawful for me,” but not all things are helpful. “All things are lawful for me,” but I will not be dominated by anything.',
+        'And do not get drunk with wine, for that is debauchery, but be filled with the Spirit.',
+        'But I say, walk by the Spirit, and you will not gratify the desires of the flesh.',
+        'Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.',
+        'For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.',
+        'And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.',
+      ],
+      '1 Corinthians 6:12 · Ephesians 5:18 · Galatians 5:16 · 1 Corinthians 6:19-20 · 2 Corinthians 10:4 · 1 Corinthians 6:11',
+    ),
+    chamber(
+      'Jealousy',
+      'If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.',
+      [
+        'For where jealousy and selfish ambition exist, there will be disorder and every vile practice.',
+        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.',
+        'Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.',
+        'But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.',
+      ],
+      'James 3:16 · 1 Corinthians 13:4-5 · Galatians 5:19-21 · Galatians 5:22-23',
+    ),
+    chamber(
+      'Control',
+      'Open the hand — trust is not passivity; self-control rules you, not them.',
+      [
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
+        'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
+        'The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
+        'Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.',
+      ],
+      'Proverbs 3:5-6 · Psalm 46:10 · Galatians 5:22-23 · Philippians 4:6 · Psalm 55:22',
+    ),
+    chamber(
+      'Renew Your Mind',
+      'Transformed mind.',
+      [
+        'Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.',
+        'Have this mind among yourselves, which is yours in Christ Jesus.',
+      ],
+      'Romans 12:2 · Philippians 2:5',
     ),
     chamber(
       'Take Every Thought Captive',
-      'Take every thought captive and make it obedient to Christ.',
+      'Divine power demolishes strongholds — take every thought captive to Christ.',
       [
-        'Take every thought captive and make it obedient to Christ.',
-        'Put on the full armor of God.',
-        'Focus on what is true, noble, right, pure, lovely, and admirable.',
+        'For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.',
+        'We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.',
+        'Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.',
+        'Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.',
       ],
-      '2 Corinthians 10:5 · Ephesians 6:10-18 · Philippians 4:8',
+      '2 Corinthians 10:4-5 · Philippians 4:8 · Luke 10:19',
+    ),
+    chamber(
+      'The Word',
+      'The enemy says you cannot know or understand. God says His Word is for you — light to the simple.',
+      [
+        'The unfolding of Your words gives light; it imparts understanding to the simple.',
+        'For this commandment that I command you today is not too hard for you, neither is it far off… But the word is very near you. It is in your mouth and in your heart, so that you can do it.',
+        'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.',
+        'If you abide in My word, you are truly My disciples, and you will know the truth, and the truth will set you free.',
+        'When the Spirit of truth comes, He will guide you into all the truth.',
+        'Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God.',
+        'For the word of God is living and active, sharper than any two-edged sword.',
+        'My people are destroyed for lack of knowledge.',
+        'Man shall not live by bread alone, but by every word that comes from the mouth of God.',
+        'And take the helmet of salvation, and the sword of the Spirit, which is the word of God.',
+        'But I am afraid that as the serpent deceived Eve by his cunning, your thoughts will be led astray from a sincere and pure devotion to Christ.',
+      ],
+      'Psalm 119:130 · Deuteronomy 30:11-14 · 2 Timothy 3:16-17 · John 8:31-32 · John 16:13 · 1 Corinthians 2:12 · Hebrews 4:12 · Hosea 4:6 · Matthew 4:4 · Ephesians 6:17 · 2 Corinthians 11:3',
+    ),
+    chamber(
+      'The Adversary',
+      'He is real. Do not fixate. Name him, resist him, stand with God.',
+      [
+        'Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.',
+        'You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.',
+        'The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil.',
+        'By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother.',
+        'Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.',
+        'If the world hates you, know that it has hated Me before it hated you… If they persecuted Me, they will also persecute you.',
+        'Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.',
+        'Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you.',
+        'And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death.',
+        'The God of peace will soon crush Satan under your feet.',
+      ],
+      '1 Peter 5:8-9 · John 8:44 · Matthew 13:38-39 · 1 John 3:10 · 2 Timothy 3:12 · John 15:18-20 · Ephesians 6:11-12 · James 4:7-8 · Revelation 12:11 · Romans 16:20',
+    ),
+    chamber(
+      'Spiritual Warfare',
+      'We are at war — not against flesh and blood.',
+      [
+        'For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.',
+        'Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.',
+        'Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you.',
+        'For though we walk in the flesh, we are not waging war according to the flesh. For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.',
+        'Finally, be strong in the Lord and in the strength of His might. Put on the whole armor of God, that you may be able to stand against the schemes of the devil.',
+        'For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.',
+        'Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.',
+        'The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly.',
+        'You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.',
+      ],
+      'Ephesians 6:12 · 1 Peter 5:8-9 · James 4:7-8 · 2 Corinthians 10:3-4 · Ephesians 6:10-11 · Luke 10:19 · John 10:10 · John 8:44',
+    ),
+    chamber(
+      'Wheat and Tares',
+      'A good farmer sowed wheat; an enemy sowed weeds at night.',
+      [
+        'The kingdom of heaven may be compared to a man who sowed good seed in his field, but while his men were sleeping, his enemy came and sowed weeds among the wheat and went away.',
+        'He said, “An enemy has done this.” … “Let both grow together until the harvest, and at harvest time I will tell the reapers, Gather the weeds first and bind them in bundles to be burned, but gather the wheat into my barn.”',
+        'The one who sows the good seed is the Son of Man. The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil.',
+        'The harvest is the end of the age, and the reapers are angels. … The Son of Man will send His angels, and they will gather out of His kingdom all causes of sin and all law-breakers.',
+      ],
+      'Matthew 13:24-30, 37-41',
+    ),
+    chamber(
+      'Works of the Flesh',
+      'Those who practice such things will not inherit the kingdom of God.',
+      [
+        'Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.',
+        'I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.',
+        'Or do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God.',
+        'And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.',
+        'But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.',
+      ],
+      'Galatians 5:19-21 · 1 Corinthians 6:9-11 · Revelation 21:8',
+    ),
+    chamber(
+      'Adultery',
+      'Flee sexual immorality. You are not your own.',
+      [
+        'You shall not commit adultery.',
+        'But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart.',
+        'Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body.',
+        'Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.',
+        'Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous.',
+      ],
+      'Exodus 20:14 · Matthew 5:28 · 1 Corinthians 6:18-20 · Hebrews 13:4',
+    ),
+    chamber(
+      'Pharmakeia',
+      'Sorcery — and every counterfeit power — is works of the flesh.',
+      [
+        'Now the works of the flesh are evident: … idolatry, sorcery… and things like these. I warn you… that those who do such things will not inherit the kingdom of God.',
+        'But as for … sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur.',
+        'Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.',
+        'Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.',
+        'Submit yourselves therefore to God. Resist the devil, and he will flee from you.',
+      ],
+      'Galatians 5:19-21 · Revelation 21:8 · Revelation 22:15 · 1 Peter 5:8 · James 4:7',
+    ),
+    chamber(
+      'Murder',
+      'You shall not murder — not by hand, and not by hatred.',
+      [
+        'You shall not murder.',
+        'Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.',
+        'You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment.',
+        'But as for … murderers… their portion will be in the lake that burns with fire and sulfur.',
+        'Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”',
+      ],
+      'Exodus 20:13 · 1 John 3:15 · Matthew 5:21-22 · Revelation 21:8 · Romans 12:19',
+    ),
+    chamber(
+      'Malice',
+      'Put away all malice — the quiet wish to harm.',
+      [
+        'Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.',
+        'So put away all malice and all deceit and hypocrisy and envy and all slander.',
+        'Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.',
+        'Now the works of the flesh are evident: … enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy…',
+        'Those who do such things will not inherit the kingdom of God.',
+      ],
+      'Ephesians 4:31-32 · 1 Peter 2:1 · Galatians 5:19-21',
+    ),
+    chamber(
+      'Falsehood',
+      'All liars — and everyone who loves and practices falsehood.',
+      [
+        'Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.',
+        'Lying lips are an abomination to the Lord, but those who act faithfully are His delight.',
+        'But as for … all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.',
+        'Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.',
+        'Let what you say be simply “Yes” or “No”; anything more than this comes from evil.',
+      ],
+      'Ephesians 4:25 · Proverbs 12:22 · Revelation 21:8 · Revelation 22:15 · Matthew 5:37',
     ),
     chamber(
       'The Full Armor of God',
-      'Be strong in the Lord and in the strength of His might.',
+      'The kit for the war — stand.',
       [
         'Be strong in the Lord and in the strength of His might.',
         'Put on the whole armor of God, that you may be able to stand against the schemes of the devil.',
@@ -914,10 +2083,161 @@ const document = {
       'Ephesians 6:10-18',
     ),
     chamber(
+      'Watch and Be Ready',
+      'Stay awake. The Son of Man is coming at an hour you do not expect.',
+      [
+        'Watch therefore, for you know neither the day nor the hour.',
+        'Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect.',
+        'See, I have told you beforehand.',
+        'But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man.',
+        'Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and eat with him, and he with Me.',
+        'I have said these things to you, that when their hour comes you may remember that I told them to you.',
+      ],
+      'Matthew 25:13 · Matthew 24:44 · Matthew 24:25 · Luke 21:36 · Revelation 3:20 · John 16:4',
+    ),
+    chamber(
+      'Ten Virgins',
+      'Five were wise, five foolish — the door was shut.',
+      [
+        'Then the kingdom of heaven will be like ten virgins who took their lamps and went to meet the bridegroom. Five of them were foolish, and five were wise.',
+        'For when the foolish took their lamps, they took no oil with them, but the wise took flasks of oil with their lamps.',
+        'As the bridegroom was delayed, they all became drowsy and slept. But at midnight there was a cry, “Here is the bridegroom! Come out to meet him.”',
+        'And the foolish said to the wise, “Give us some of your oil, for our lamps are going out.” But the wise answered, saying, “Since there will not be enough for us and for you, go rather to the dealers and buy for yourselves.”',
+        'And while they were going to buy, the bridegroom came, and those who were ready went in with him to the marriage feast, and the door was shut.',
+        'Afterward the other virgins came also, saying, “Lord, lord, open to us.” But he answered, “Truly, I say to you, I do not know you.” Watch therefore, for you know neither the day nor the hour.',
+      ],
+      'Matthew 25:1-13',
+    ),
+    chamber(
+      'The Faithful Servant',
+      'Blessed is that servant whom his master will find so doing when he comes.',
+      [
+        'Who then is the faithful and wise servant, whom his master has set over his household, to give them their food at the proper time? Blessed is that servant whom his master will find so doing when he comes.',
+        'But if that wicked servant says to himself, “My master is delayed,” and begins to beat his fellow servants and eats and drinks with drunkards, the master of that servant will come on a day when he does not expect him and at an hour he does not know.',
+        'And will cut him in pieces and put him with the hypocrites. In that place there will be weeping and gnashing of teeth.',
+        'Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more.',
+        'Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks.',
+      ],
+      'Matthew 24:45-51 · Luke 12:35-36, 48',
+    ),
+    chamber(
+      'One Taken, One Left',
+      'Two in the field — one taken, one left.',
+      [
+        'Then two men will be in the field; one will be taken and one left. Two women will be grinding at the mill; one will be taken and one left.',
+        'I tell you, in that night there will be two in one bed. One will be taken and the other left. There will be two women grinding together. One will be taken and the other left.',
+        'As were the days of Noah, so will be the coming of the Son of Man. For as in those days before the flood they were eating and drinking, marrying and giving in marriage, until the day when Noah entered the ark, and they were unaware until the flood came and swept them all away, so will be the coming of the Son of Man.',
+        'Therefore, stay awake, for you do not know on what day your Lord is coming.',
+        'See, I have told you beforehand.',
+      ],
+      'Matthew 24:40-42 · Luke 17:34-35 · Matthew 24:37-39 · Matthew 24:25',
+    ),
+    chamber(
+      'Treasure in Heaven',
+      'Lay up treasure where moth and rust do not destroy.',
+      [
+        'Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal.',
+        'For where your treasure is, there your heart will be also.',
+        'But seek first the kingdom of God and His righteousness, and all these things will be added to you.',
+        'Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail.',
+        'As for the rich in this present age, charge them not to be haughty, nor to set their hopes on the uncertainty of riches, but on God… They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation for the future.',
+      ],
+      'Matthew 6:19-21 · Matthew 6:33 · Luke 12:33 · 1 Timothy 6:17-19',
+    ),
+    chamber(
+      'Prayer',
+      'Ask, seek, knock — pray without ceasing.',
+      [
+        'Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.',
+        'And He told them a parable to the effect that they ought always to pray and not lose heart.',
+        'Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.',
+        'Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit Himself intercedes for us with groanings too deep for words.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
+        'If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.',
+        'The prayer of a righteous person has great power as it is working.',
+      ],
+      'Matthew 7:7 · Luke 18:1 · 1 Thessalonians 5:16-18 · Romans 8:26 · Philippians 4:6 · James 1:5 · James 5:16',
+    ),
+    chamber(
+      'Fasting',
+      'Humble yourself with fasting — seek God, not applause.',
+      [
+        'And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others… But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret.',
+        'Then I turned my face to the Lord God, seeking Him by prayer and pleas for mercy with fasting and sackcloth and ashes.',
+        'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free… Is it not to share your bread with the hungry…?',
+        'And Jesus said to them, “Can the wedding guests mourn as long as the bridegroom is with them? The days will come when the bridegroom is taken away from them, and then they will fast.”',
+        'While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.”',
+        'So we fasted and implored our God for this, and He listened to our entreaty.',
+      ],
+      'Matthew 6:16-18 · Daniel 9:3 · Isaiah 58:6-7 · Matthew 9:15 · Acts 13:2 · Ezra 8:23',
+    ),
+    chamber(
+      'Sabbath',
+      'The seventh day is the Sabbath — Saturday — still holy to the Lord. A holy day He made.',
+      [
+        'So God blessed the seventh day and made it holy, because on it God rested from all His work that He had done in creation.',
+        'Remember the Sabbath day, to keep it holy. Six days you shall labor, and do all your work, but the seventh day is a Sabbath to the Lord your God. On it you shall not do any work.',
+        'You shall keep My Sabbaths, for this is a sign between Me and you throughout your generations, that you may know that I, the Lord, sanctify you.',
+        'Moreover, I gave them My Sabbaths as a sign between Me and them, that they might know that I am the Lord who sanctifies them.',
+        'And keep My Sabbaths holy that they may be a sign between Me and you, that you may know that I am the Lord your God.',
+        'If you turn back your foot from the Sabbath, from doing your pleasure on My holy day, and call the Sabbath a delight and the holy day of the Lord honorable… then you shall take delight in the Lord.',
+        'And He said to them, “The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath.”',
+        'There remains a Sabbath rest for the people of God, for whoever has entered God’s rest has also rested from his works as God did from His.',
+        'Be still, and know that I am God.',
+      ],
+      'Genesis 2:3 · Exodus 20:8-10 · Exodus 31:13 · Ezekiel 20:12 · Ezekiel 20:20 · Isaiah 58:13-14 · Mark 2:27-28 · Hebrews 4:9-10 · Psalm 46:10',
+    ),
+    chamber(
+      'Healing',
+      'Jesus heals — ask, trust, and do not lose heart.',
+      [
+        'And He went throughout all Galilee, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction among the people.',
+        'He Himself took our illnesses and bore our diseases.',
+        'Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. And the prayer of faith will save the one who is sick, and the Lord will raise him up.',
+        'And these signs will accompany those who believe: in My name they will cast out demons… they will lay their hands on the sick, and they will recover.',
+        'Bless the Lord, O my soul, and forget not all His benefits, who forgives all your iniquity, who heals all your diseases.',
+        'Heal me, O Lord, and I shall be healed; save me, and I shall be saved, for You are my praise.',
+      ],
+      'Matthew 4:23 · Matthew 8:17 · James 5:14-15 · Mark 16:17-18 · Psalm 103:2-3 · Jeremiah 17:14',
+    ),
+    chamber(
+      'Laying on of Hands',
+      'Hands laid in faith under the name of Jesus.',
+      [
+        'Then they laid their hands on them and they received the Holy Spirit.',
+        'Do not neglect the gift you have, which was given you by prophecy when the council of elders laid their hands on you.',
+        'And He could do no mighty work there, except that He laid His hands on a few sick people and healed them.',
+        'They will lay their hands on the sick, and they will recover.',
+        'And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying.',
+        'And God was doing extraordinary miracles by the hands of Paul.',
+      ],
+      'Acts 8:17 · 1 Timothy 4:14 · Mark 6:5 · Mark 16:18 · Acts 19:6 · Acts 19:11',
+    ),
+    (() => {
+      // Title people search for; stable id keeps spine/related/tests unbroken.
+      const c = chamber(
+        'Gifts of the Spirit',
+        'Varieties of gifts, one Spirit — for the common good.',
+        [
+          'Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of activities, but it is the same God who empowers them all in everyone. To each is given the manifestation of the Spirit for the common good.',
+          'For to one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge… to another faith… to another gifts of healing… to another the working of miracles, to another prophecy, to another the ability to distinguish between spirits, to another various kinds of tongues, to another the interpretation of tongues.',
+          'Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts, in his exhortation; the one who contributes, in generosity; the one who leads, with zeal; the one who does acts of mercy, with cheerfulness.',
+          'As each has received a gift, use it to serve one another, as good stewards of God’s varied grace… in order that in everything God may be glorified through Jesus Christ.',
+          'And He gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
+          'Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy.',
+          'If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.',
+        ],
+        '1 Corinthians 12:4-11 · Romans 12:6-8 · 1 Peter 4:10-11 · Ephesians 4:11-12 · 1 Corinthians 14:1 · 1 Corinthians 13:1',
+      )
+      c.id = 'spiritual-gifts'
+      return c
+    })(),
+    chamber(
       'Hope of Glory',
-      'The sufferings of this present time are not worth comparing with the glory that is to be revealed to us.',
+      'What we fight toward — glory with Him.',
       [
         'The sufferings of this present time are not worth comparing with the glory that is to be revealed to us.',
+        'Christ in you, the hope of glory.',
         'We wait for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ.',
         'Behold, the dwelling place of God is with man… He will wipe away every tear from their eyes.',
         'Behold, I am coming soon, bringing My recompense with Me, to repay each one for what he has done.',
@@ -925,16 +2245,16 @@ const document = {
         'There is laid up for me the crown of righteousness, which the Lord will award on that day.',
         'When the Chief Shepherd appears, you will receive the unfading crown of glory.',
       ],
-      'Romans 8:18 · Titus 2:13 · Revelation 21:3-4 · Revelation 22:12 · James 1:12 · 2 Timothy 4:8 · 1 Peter 5:4',
+      'Romans 8:18 · Colossians 1:27 · Titus 2:13 · Revelation 21:3-4 · Revelation 22:12 · James 1:12 · 2 Timothy 4:8 · 1 Peter 5:4',
     ),
     chamber(
       'The Righteous Fall',
-      'The righteous man falls seven times and rises again.',
+      'Fall and rise.',
       [
-        'The righteous man falls seven times and rises again.',
-        'All have sinned and fall short of the glory of God.',
+        'For the righteous falls seven times and rises again, but the wicked stumble in times of calamity.',
+        'For all have sinned and fall short of the glory of God.',
         'If we say we have no sin, we deceive ourselves, and the truth is not in us.',
-        'There is none righteous, no, not one.',
+        'As it is written: “None is righteous, no, not one.”',
       ],
       'Proverbs 24:16 · Romans 3:23 · 1 John 1:8 · Romans 3:10',
     ),
@@ -991,13 +2311,118 @@ for (const c of document.chambers) {
   c.related = RELATED[c.id] ?? []
 }
 
-// Validate verse parse coverage + related ids
+/**
+ * UI shows summary under the title, then Truth body.
+ * Drop body[0] when it only repeats the lead (exact or near).
+ * If body lead is richer, promote it to summary so nothing is lost.
+ */
+function normalizeLead(s) {
+  return s
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+const STOP = new Set([
+  'the',
+  'and',
+  'for',
+  'you',
+  'your',
+  'with',
+  'that',
+  'this',
+  'from',
+  'not',
+  'but',
+  'are',
+  'was',
+  'has',
+  'have',
+  'will',
+  'shall',
+  'his',
+  'her',
+  'our',
+  'all',
+  'who',
+  'whom',
+  'into',
+  'onto',
+  'than',
+  'then',
+  'when',
+  'what',
+  'your',
+])
+
+function significantWords(s) {
+  return normalizeLead(s)
+    .split(' ')
+    .filter((w) => w.length > 2 && !STOP.has(w))
+}
+
+function isLeadRedundant(summary, first) {
+  const nS = normalizeLead(summary)
+  const nF = normalizeLead(first)
+  if (!nS || !nF) return false
+  // Exact or one is a strict prefix of the other (true UI duplicate)
+  if (nS === nF) return true
+  if (nF.startsWith(nS) || nS.startsWith(nF)) return true
+  // Fuzzy only when lengths are close — do not yank a full verse into a short door summary
+  const lenRatio = Math.min(nS.length, nF.length) / Math.max(nS.length, nF.length)
+  if (lenRatio < 0.72) return false
+  const sW = significantWords(summary)
+  const fSet = new Set(significantWords(first))
+  if (sW.length >= 4) {
+    const hits = sW.filter((w) => fSet.has(w)).length
+    if (hits / sW.length >= 0.85) return true
+  }
+  const take = Math.min(6, nS.split(' ').length, nF.split(' ').length)
+  if (take >= 5 && nS.split(' ').slice(0, take).join(' ') === nF.split(' ').slice(0, take).join(' ')) {
+    return true
+  }
+  return false
+}
+
+let dedupedLeads = 0
+for (const c of document.chambers) {
+  if (c.body.length === 0) continue
+  const first = c.body[0].text
+  if (!isLeadRedundant(c.summary, first)) continue
+  // Prefer the fuller line as the header summary
+  if (first.length > c.summary.length + 10) {
+    c.summary = first
+  }
+  c.body = c.body.slice(1)
+  dedupedLeads += 1
+}
+
+// Validate verse parse coverage + related ids + Under fire cap
+const MAX_HACKS = 3
 let totalVerses = 0
 const ids = new Set(document.chambers.map((c) => c.id))
 for (const c of document.chambers) {
   totalVerses += c.verses.length
   if (c.verses.length === 0) {
     console.error('No verses for chamber:', c.title)
+    process.exit(1)
+  }
+  if (c.body.length === 0) {
+    console.error('Empty Truth body after lead dedupe (add a non-summary line):', c.title)
+    process.exit(1)
+  }
+  if (c.hacks.length === 0) {
+    console.error('Empty Under fire (need 1–3 hacks):', c.title)
+    process.exit(1)
+  }
+  if (c.hacks.length > MAX_HACKS) {
+    console.error(`Under fire max ${MAX_HACKS} (has ${c.hacks.length}):`, c.title)
+    process.exit(1)
+  }
+  if (c.prayers.length === 0) {
+    console.error('Empty Prayer:', c.title)
     process.exit(1)
   }
   for (const rid of c.related) {
@@ -1012,6 +2437,47 @@ const withHacks = document.chambers.filter((c) => c.hacks.length > 0).length
 const withPrayers = document.chambers.filter((c) => c.prayers.length > 0).length
 
 writeFileSync(out, JSON.stringify(document, null, 2) + '\n')
+
+// Dynamic sitemap for SEO (chambers as hash URLs on the SPA)
+const origin = 'https://bedrock.rippel.ai'
+const today = new Date().toISOString().slice(0, 10)
+const sitemapUrls = [
+  { loc: `${origin}/`, priority: '1.0' },
+  { loc: `${origin}/#keys`, priority: '0.9' },
+  { loc: `${origin}/#map`, priority: '0.9' },
+  { loc: `${origin}/#contents`, priority: '0.85' },
+  ...document.chambers.map((c) => ({
+    loc: `${origin}/#${c.id}`,
+    priority: '0.7',
+  })),
+]
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${sitemapUrls
+  .map(
+    (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${u.priority}</priority>${
+      u.loc === `${origin}/`
+        ? `
+    <image:image>
+      <image:loc>${origin}/og-hero.jpg</image:loc>
+      <image:title>Bedrock — cornerstone foundation</image:title>
+    </image:image>`
+        : ''
+    }
+  </url>`,
+  )
+  .join('\n')}
+</urlset>
+`
+const sitemapPath = join(__dirname, '../public/sitemap.xml')
+writeFileSync(sitemapPath, sitemap + '\n')
+
 console.log(
-  `Wrote ${document.chambers.length} chambers, ${totalVerses} verse refs, ${withHacks} with hacks, ${withPrayers} with prayers → ${out}`,
+  `Wrote ${document.chambers.length} chambers, ${totalVerses} verse refs, ${withHacks} with hacks, ${withPrayers} with prayers, ${dedupedLeads} lead dedupes → ${out}`,
 )
+console.log(`Wrote sitemap (${sitemapUrls.length} URLs) → ${sitemapPath}`)

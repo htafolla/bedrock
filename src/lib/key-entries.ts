@@ -1,20 +1,22 @@
 /**
- * Key entry chips — ordered for first navigation under pressure.
- * Lead with what people are actually facing (God, fear, marriage, loss…),
- * not abstract “category” depth or spine pilgrimage order.
+ * Keys = storm triage only (short list).
+ * Full atlas lives on Map · Contents — not on the first screen.
+ *
+ * Two solid doors first: God · Marriage.
+ * Then the fire — chip labels lead with positives / plain speech people recognize.
+ * Close the grid (12 = clean 3×4 / 4×3): Jealousy · Sexual sin · Love.
+ * Addiction replaces Regret; Jealousy replaces Witchcraft on Keys
+ * (regret / pharmakeia stay on Map · Contents).
+ * Hope of glory stays Map terminus. Faith ≈ Trust already.
  */
 export interface KeyEntry {
   id: string
   label: string
-  /** Short tag under the label */
   hint: string
   chamberId: string
 }
 
-/**
- * Display order = priority on page load (Keys tab default).
- * God → Fear → Marriage first; then common trials; deeper categories later.
- */
+/** First doors for the broken — short, ordered. */
 export const KEY_ENTRIES: KeyEntry[] = [
   {
     id: 'key-god',
@@ -23,81 +25,69 @@ export const KEY_ENTRIES: KeyEntry[] = [
     chamberId: 'god-first',
   },
   {
-    id: 'key-fear',
-    label: 'Fear',
-    hint: 'Perfect love',
-    chamberId: 'fear',
-  },
-  {
     id: 'key-marriage',
     label: 'Marriage',
     hint: 'Covenant',
     chamberId: 'marriage-covenant',
   },
   {
+    id: 'key-patience',
+    label: 'Patience',
+    hint: "Can't force it",
+    chamberId: 'patience',
+  },
+  {
+    id: 'key-trust',
+    label: 'Trust',
+    hint: 'Release grip',
+    chamberId: 'trust-in-the-lord',
+  },
+  {
     id: 'key-loss',
-    label: 'Loss',
-    hint: 'Brokenhearted',
+    label: 'Grief',
+    hint: 'Loss',
     chamberId: 'loss',
   },
   {
-    id: 'key-fall',
-    label: 'I fell',
-    hint: 'Rise again',
-    chamberId: 'the-righteous-fall',
+    id: 'key-wounded',
+    label: 'Wounded',
+    hint: 'I was hurt',
+    chamberId: 'wounded',
   },
   {
-    id: 'key-forgive',
-    label: 'Forgive',
-    hint: 'As forgiven',
-    chamberId: 'forgive-as-you-have-been-forgiven',
+    id: 'key-obsession',
+    label: 'Obsession',
+    hint: 'Mind stuck on loop',
+    chamberId: 'rumination',
   },
   {
-    id: 'key-wait',
-    label: 'Wait',
-    hint: 'On the Lord',
-    chamberId: 'wait-on-the-lord',
+    id: 'key-addiction',
+    label: 'Addiction',
+    hint: 'It owns me',
+    chamberId: 'addiction',
   },
   {
-    id: 'key-vengeance',
-    label: 'Hatred',
-    hint: 'Leave vengeance',
-    chamberId: 'leave-vengeance-to-the-lord',
+    id: 'key-fear',
+    label: 'Fear',
+    hint: 'Abandonment',
+    chamberId: 'fear',
   },
   {
-    id: 'key-grace',
-    label: 'Grace',
-    hint: 'Sufficient',
-    chamberId: 'his-grace-is-sufficient',
+    id: 'key-jealousy',
+    label: 'Jealousy',
+    hint: 'Not love',
+    chamberId: 'jealousy',
   },
   {
-    id: 'key-spirit',
-    label: 'Spirit',
-    hint: 'Not flesh',
-    chamberId: 'walk-by-the-spirit',
+    id: 'key-sexual-sin',
+    label: 'Sexual sin',
+    hint: 'Not your own',
+    chamberId: 'adultery',
   },
   {
-    id: 'key-confess',
-    label: 'Confess',
-    hint: 'Be cleansed',
-    chamberId: 'confess-and-be-cleansed',
-  },
-  {
-    id: 'key-armor',
-    label: 'Armor',
-    hint: 'Stand',
-    chamberId: 'the-full-armor-of-god',
-  },
-  {
-    id: 'key-hope',
-    label: 'Hope',
-    hint: 'Of glory',
-    chamberId: 'hope-of-glory',
-  },
-  {
-    id: 'key-cross',
-    label: 'The Cross',
-    hint: 'Justified',
-    chamberId: 'the-cross-and-our-justification',
+    id: 'key-love',
+    label: 'Love',
+    hint: 'Still the way',
+    chamberId: 'love',
   },
 ]

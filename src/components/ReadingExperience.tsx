@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../types/content'
+import { scrollExperienceToTop } from '../lib/scroll-top'
 import { ChamberNav } from './ChamberNav'
 import { VerseLink } from './VerseLink'
 import { SealedTestimony } from './SealedTestimony'
@@ -70,7 +71,7 @@ function ChamberView({
           <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
             Under fire
           </h3>
-          <p className="field-layer-hint">Short reframes you can use when the ground is shaking.</p>
+          <p className="field-layer-hint">Scripture under pressure — how to walk this hour.</p>
           <ul className="field-list">
             {chamber.hacks.map((hack) => (
               <li key={hack}>{hack}</li>
@@ -133,6 +134,11 @@ function ChamberView({
 export function ReadingExperience({ document }: ReadingExperienceProps) {
   const [activeId, setActiveId] = useState(document.chambers[0]?.id ?? '')
 
+  const selectChamber = (id: string) => {
+    setActiveId(id)
+    scrollExperienceToTop()
+  }
+
   const active = useMemo(
     () => document.chambers.find((c) => c.id === activeId) ?? document.chambers[0],
     [document.chambers, activeId],
@@ -168,14 +174,14 @@ export function ReadingExperience({ document }: ReadingExperienceProps) {
         <ChamberNav
           chambers={document.chambers}
           activeId={active.id}
-          onSelect={setActiveId}
+          onSelect={selectChamber}
         />
         <div className="reading-main">
           <ChamberView
             chamber={active}
             chambers={document.chambers}
             ipfsCid={document.meta.ipfsCid}
-            onSelect={setActiveId}
+            onSelect={selectChamber}
           />
           <SealedTestimony testimony={document.testimony} />
           {/* PermanenceBadge hidden until IPFS / chain pin is live */}

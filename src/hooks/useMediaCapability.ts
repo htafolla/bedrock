@@ -25,8 +25,9 @@ function detect(): MediaCapability {
     webgl = false
   }
 
-  // Light shell: skip 3D on narrow screens or reduced motion
-  const allow3d = webgl && !reducedMotion && !isNarrow
+  // DNA map is the hero surface — allow WebGL on mobile when available.
+  // Reduced-motion still skips 3D (a11y).
+  const allow3d = webgl && !reducedMotion
 
   return { allow3d, reducedMotion, isNarrow }
 }

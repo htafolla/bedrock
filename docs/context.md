@@ -1,14 +1,18 @@
 # Bedrock — Full Context (SSOT)
 
-**Updated:** 2026-07-24  
+**Updated:** 2026-07-25  
 **Final product name:** Bedrock  
-**Original working title:** The Hitchhiker’s Guild · Love · Living · Enduring
+**Original working title:** The Hitchhiker’s Guild · Love · Living · Enduring  
+**Atlas:** 49 chambers — storm problem doors (Regret ≠ Wounded, separate paths) + Fruit of the Spirit (hub: Walk by the Spirit) + solution web
 
 ## Overall goal
 
-Bedrock is a **field guide to Love · Living · Enduring**.
+Bedrock is a **Hitchhiker’s Guide to Love · Living · Enduring**.
 
-It defines the core first principles needed to navigate a troubled life — for people who struggle to hold the Word of God in the heat of the moment.
+**Core failure it trains against:** impatience and unbelief when life is **out of control** (patience + trust).  
+**Promise:** truth, brain hacks, and prayer to **max-cope and grow out of the storm** — **do better, be better, trust God**.
+
+It defines first principles for people who struggle to hold the Word in the heat of the moment — grief, rumination, regret, abandonment fear — aggressor and victim both.
 
 It is meant to be:
 
@@ -18,9 +22,9 @@ It is meant to be:
 - A **navigable web**, not only a linear scroll
 - Permanent (IPFS + on-chain), so the testimony is hard to erase
 
-**Why “Bedrock”:** these are first principles that remain true when the ground is shaking.
+**Why “Bedrock”:** first principles that remain true when the ground is shaking — how to **hack your way out** of the storm and be better, not only survive.
 
-Internal framing (author): *first principles to “hack the matrix” of flesh, fear, and false narrative — by Spirit, not gimmick.* Public tone stays steel and restrained.
+Internal framing (author): *crucible in the storm; gift to help others.* Public tone stays steel and restrained.
 
 ## What it is
 

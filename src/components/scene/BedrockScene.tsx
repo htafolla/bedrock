@@ -99,9 +99,16 @@ function Atmosphere({ mode }: { mode: ExperienceMode }) {
   return (
     <>
       <color attach="background" args={['#0c0a09']} />
-      <fog attach="fog" args={['#0c0a09', mode === 'constellation' ? 12 : 5, mode === 'constellation' ? 36 : 20]} />
+      <fog
+        attach="fog"
+        args={['#0c0a09', mode === 'constellation' ? 10 : 8, mode === 'constellation' ? 34 : 32]}
+      />
       <ambientLight intensity={mode === 'chamber' ? 0.1 : 0.16} color="#8a7a68" />
-      <directionalLight position={[5, 12, 4]} intensity={mode === 'chamber' ? 0.25 : 0.4} color="#f5e6c8" />
+      <directionalLight
+        position={[5, 12, 4]}
+        intensity={mode === 'chamber' ? 0.25 : 0.4}
+        color="#f5e6c8"
+      />
       <spotLight
         position={[0, 14, 2]}
         angle={0.4}
@@ -109,7 +116,15 @@ function Atmosphere({ mode }: { mode: ExperienceMode }) {
         intensity={mode === 'chamber' ? 0.5 : 1.0}
         color="#ffe0b0"
       />
-      <Stars radius={50} depth={40} count={mode === 'chamber' ? 600 : 1400} factor={2} saturation={0} fade speed={0.15} />
+      <Stars
+        radius={50}
+        depth={40}
+        count={mode === 'chamber' ? 600 : 1400}
+        factor={2}
+        saturation={0}
+        fade
+        speed={0.15}
+      />
       <Ground />
       <EntranceCrucible visible={mode !== 'chamber'} />
       <Embers intensity={emberIntensity} />
@@ -127,8 +142,15 @@ export function BedrockScene({
   interactive,
 }: BedrockSceneProps) {
   const ordered = useMemo(() => orderChambersBySpine(chambers), [chambers])
-  const poses = useMemo(() => buildNodePoses(ordered.map((c) => c.id)), [ordered])
+  const poseIds = useMemo(() => ordered.map((c) => c.id).join('|'), [ordered])
+  const poses = useMemo(
+    () => buildNodePoses(ordered.map((c) => c.id)),
+    // poseIds is a stable string fingerprint of order; avoids reset on parent re-renders
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [poseIds],
+  )
   const orbitEnabled = interactive && mode === 'constellation' && !reducedMotion
+  const autoSpin = orbitEnabled && !reducedMotion
 
   return (
     <div
@@ -136,9 +158,20 @@ export function BedrockScene({
       aria-hidden={!interactive}
     >
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={[1, Math.min(typeof window !== 'undefined' ? window.devicePixelRatio : 1.5, 2)]}
         camera={{ position: [0, 2.2, 14], fov: 46, near: 0.1, far: 90 }}
-        gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
+        gl={{
+          antialias: true,
+          alpha: false,
+          powerPreference: 'high-performance',
+        }}
+        onCreated={({ gl }) => {
+          const el = gl.domElement
+          el.style.touchAction = 'none'
+          el.style.outline = 'none'
+          el.setAttribute('touch-action', 'none')
+        }}
+        eventPrefix="client"
       >
         <Suspense fallback={null}>
           <Atmosphere mode={mode} />
@@ -156,7 +189,7 @@ export function BedrockScene({
             reducedMotion={reducedMotion}
             orbitEnabled={orbitEnabled}
           />
-          <OrbitSpin enabled={orbitEnabled} autoRotate={!reducedMotion} />
+          <OrbitSpin enabled={orbitEnabled} autoRotate={autoSpin} />
         </Suspense>
       </Canvas>
     </div>

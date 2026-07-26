@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import {
+  bibleGatewaySearchUrl,
   formatVerseRange,
   normalizeRefKey,
   parseScriptureDisplay,
   parseVerseList,
   permanentVerseUrl,
   primaryVerseUrl,
+  scriptureChipHref,
 } from './verses'
 import type { ScriptureRef } from '../types/content'
 
@@ -103,5 +105,27 @@ describe('parseVerseList', () => {
       'Galatians 5:22–23',
       'Galatians 5:25',
     ])
+  })
+})
+
+describe('scriptureChipHref', () => {
+  it('uses passage URL when parse succeeds', () => {
+    const url = scriptureChipHref('John 3:16')
+    expect(url).toBe(primaryVerseUrl({
+      display: 'John 3:16',
+      book: 'John',
+      chapter: 3,
+      verseStart: 16,
+    }))
+  })
+
+  it('falls back to search URL for free text', () => {
+    const url = scriptureChipHref('the armor of God')
+    expect(url).toBe(bibleGatewaySearchUrl('the armor of God'))
+  })
+
+  it('strips trailing notes before linking', () => {
+    const url = scriptureChipHref('John 15:13 — greater love')
+    expect(new URL(url).searchParams.get('search')).toBe('John 15:13')
   })
 })

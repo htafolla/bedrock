@@ -7,6 +7,7 @@ import {
   cameraForArrival,
   cameraForChamber,
   cameraForConstellation,
+  chamberApproachStart,
 } from '../../lib/spine'
 
 interface CameraRigProps {
@@ -15,12 +16,15 @@ interface CameraRigProps {
   activeChamberId: string | null
   reducedMotion: boolean
   /**
-   * When true (Map + interactive), lerp to a pose then yield to OrbitControls
-   * so the user can spin / zoom the DNA freely.
+   * When true (Keys/Map), snap home then permanently yield so OrbitControls can auto-spin.
    */
   orbitEnabled: boolean
 }
 
+/**
+ * Guided camera for arrival / chamber.
+ * Map/Keys: snap to overview and hand off immediately — do not lerp forever against autoRotate.
+ */
 export function CameraRig({
   mode,
   poses,
@@ -33,8 +37,10 @@ export function CameraRig({
   const desiredPos = useRef(new THREE.Vector3(0, 2.2, 14))
   const desiredTarget = useRef(new THREE.Vector3(0, 1.2, 2))
   const settled = useRef(false)
-  /** Softer damp when entering/leaving a chamber for cinematic weight */
+  const orbitHandedOff = useRef(false)
   const dampRef = useRef(0.045)
+  const prevMode = useRef<ExperienceMode | null>(null)
+  const prevOrbit = useRef(orbitEnabled)
 
   const poseMap = useMemo(() => {
     const m = new Map<string, NodePose>()
@@ -43,21 +49,65 @@ export function CameraRig({
   }, [poses])
 
   useEffect(() => {
+    const modeChanged = prevMode.current !== mode
+    const orbitJustOn = orbitEnabled && !prevOrbit.current
+    prevMode.current = mode
+    prevOrbit.current = orbitEnabled
+
+    // Free Map/Keys orbit: snap home once, then leave the camera alone so spin works.
+    if (mode === 'constellation' && orbitEnabled && !reducedMotion) {
+      if (orbitHandedOff.current && !modeChanged && !orbitJustOn) {
+        return
+      }
+      const next = cameraForConstellation(poses)
+      camera.position.copy(next.position)
+      target.current.copy(next.target)
+      camera.lookAt(target.current)
+      desiredPos.current.copy(next.position)
+      desiredTarget.current.copy(next.target)
+      settled.current = true
+      orbitHandedOff.current = true
+      return
+    }
+
+    // Contents (constellation, no orbit): don't steal the camera
+    if (mode === 'constellation' && !orbitEnabled) {
+      return
+    }
+
+    // Leaving free orbit
+    if (mode !== 'constellation') {
+      orbitHandedOff.current = false
+    }
+
     settled.current = false
     let next
     if (mode === 'arrival') {
       next = cameraForArrival()
       dampRef.current = 0.05
-    } else if (mode === 'constellation') {
-      next = cameraForConstellation(poses)
-      // Exit chamber → map: ease out, then hand off to orbit
-      dampRef.current = 0.038
     } else {
+      // chamber
       const node = activeChamberId ? poseMap.get(activeChamberId) : undefined
       next = node ? cameraForChamber(node.position) : cameraForConstellation(poses)
-      // Enter chamber: slower, weightier approach
-      dampRef.current = 0.028
+      dampRef.current = 0.045
+
+      // Map → any bead: reseat near the node (no full-helix fly-through).
+      if (node && !reducedMotion) {
+        const approach = chamberApproachStart(
+          camera.position,
+          next,
+          modeChanged ? 0 : 8,
+        )
+        if (approach) {
+          camera.position.copy(approach)
+          target.current.copy(next.target)
+          camera.lookAt(target.current)
+        } else {
+          target.current.copy(next.target)
+        }
+      }
     }
+
     desiredPos.current.copy(next.position)
     desiredTarget.current.copy(next.target)
 
@@ -67,10 +117,16 @@ export function CameraRig({
       camera.lookAt(target.current)
       settled.current = true
     }
-  }, [mode, poses, activeChamberId, poseMap, camera, reducedMotion])
+  }, [mode, poses, activeChamberId, poseMap, camera, reducedMotion, orbitEnabled])
 
   useFrame(() => {
-    if (orbitEnabled && settled.current && !reducedMotion) return
+    // Never fight OrbitControls after hand-off — this was killing auto-spin on load.
+    if (orbitEnabled && orbitHandedOff.current && mode === 'constellation') {
+      return
+    }
+    if (orbitEnabled && settled.current && !reducedMotion && mode === 'constellation') {
+      return
+    }
     if (reducedMotion) return
 
     const damp = dampRef.current
@@ -79,13 +135,9 @@ export function CameraRig({
     camera.lookAt(target.current)
 
     const dist = camera.position.distanceTo(desiredPos.current)
-    // Chamber settles when close; constellation slightly looser before orbit takes over
     const threshold = mode === 'chamber' ? 0.12 : 0.18
     if (dist < threshold) {
       settled.current = true
-      if (mode === 'constellation') {
-        dampRef.current = 0.06
-      }
     }
   })
 
