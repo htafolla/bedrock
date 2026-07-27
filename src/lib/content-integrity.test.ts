@@ -20,8 +20,10 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(74)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(74)
+    expect(chambers.length).toBe(75)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(75)
+    expect(byId.has('persecution')).toBe(true)
+    expect(byId.get('persecution')!.title).toBe('Persecution')
     expect(byId.has('addiction')).toBe(true)
     expect(byId.get('addiction')!.title).toBe('Addiction')
     expect(byId.get('addiction')!.summary.toLowerCase()).toMatch(/master|spirit|flesh/)
@@ -96,7 +98,8 @@ describe('bedrock content integrity', () => {
     const a = SPINE_ORDER.indexOf('the-full-armor-of-god')
     expect(w).toBeGreaterThanOrEqual(0)
     expect(wt).toBe(w + 1)
-    expect(f).toBe(wt + 1)
+    // persecution sits between wheat-and-tares and works-of-the-flesh
+    expect(f).toBe(wt + 2)
     expect(a).toBeGreaterThan(f)
   })
 

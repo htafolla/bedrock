@@ -62,6 +62,7 @@ export const SPINE_ORDER = [
   'the-adversary',
   'spiritual-warfare',
   'wheat-and-tares',
+  'persecution',
   'works-of-the-flesh',
   'adultery',
   'pharmakeia',
@@ -111,6 +112,7 @@ export const SPINE_ANCHORS = [
   'works-of-the-flesh',
   'the-full-armor-of-god',
   'watch-and-be-ready',
+  'control', // release grip / open hand — hub for jealousy & trust
   'prayer', // practice / gifts approach
   'spiritual-gifts',
   'hope-of-glory',

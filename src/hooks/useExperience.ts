@@ -33,12 +33,16 @@ function reducer(state: ExperienceState, action: ExperienceAction): ExperienceSt
   }
 }
 
-const initial: ExperienceState = {
-  mode: 'arrival',
-  activeChamberId: null,
+export interface UseExperienceOptions {
+  /** Deep link: open this chamber and skip arrival. */
+  initialChamberId?: string | null
 }
 
-export function useExperience() {
+export function useExperience(options: UseExperienceOptions = {}) {
+  const initial: ExperienceState = options.initialChamberId
+    ? { mode: 'chamber', activeChamberId: options.initialChamberId }
+    : { mode: 'arrival', activeChamberId: null }
+
   const [state, dispatch] = useReducer(reducer, initial)
 
   const enterNave = useCallback(() => dispatch({ type: 'ENTER_NAVE' }), [])

@@ -69,6 +69,10 @@ Thumbs.db
 *.tmp
 *.tgz
 
+# Durable local telemetry (no PII; keep out of git)
+data/
+*.jsonl
+
 # --- 0xray suit (postinstall) ---
 .grok/
 .mcp.json

@@ -1,0 +1,46 @@
+# Works of the Flesh
+
+> Those who practice such things will not inherit the kingdom of God.
+
+*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/works-of-the-flesh*
+
+## Truth
+
+- Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.
+- I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+- Or do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God.
+- And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.
+- But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.
+
+## Under fire
+
+- Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”
+- Those who practice such things will not inherit the kingdom — this is warning, not a joke.
+- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate.
+
+## Prayer
+
+Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen.
+
+## Scripture
+
+- Galatians 5:19–21
+- 1 Corinthians 6:9–11
+- Revelation 21:8
+
+## Connected truth
+
+- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [adultery](https://bedrock.rippel.ai/c/adultery)
+- [pharmakeia](https://bedrock.rippel.ai/c/pharmakeia)
+- [addiction](https://bedrock.rippel.ai/c/addiction)
+- [jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [murder](https://bedrock.rippel.ai/c/murder)
+- [malice](https://bedrock.rippel.ai/c/malice)
+- [falsehood](https://bedrock.rippel.ai/c/falsehood)
+- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+
+---
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline.

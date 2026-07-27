@@ -1,0 +1,79 @@
+# Bedrock chambers
+
+Canonical field-guide pages for crawlers and answer engines.
+
+- [God First](https://bedrock.rippel.ai/c/god-first) — God is with you and will never leave you.
+- [His Power and Beauty](https://bedrock.rippel.ai/c/his-power-and-beauty) — All things were created by Him and for Him.
+- [His Promises](https://bedrock.rippel.ai/c/his-promises) — God is faithful. He will never leave you nor forsake you.
+- [His Provision](https://bedrock.rippel.ai/c/his-provision) — Give us this day our daily bread.
+- [The Lord's Prayer](https://bedrock.rippel.ai/c/the-lords-prayer) — Our Father in heaven, hallowed be Your name.
+- [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification) — Christ died for our sins according to the Scriptures. He was raised on the third day.
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you) — God is for you.
+- [His Grace Is Sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient) — Grace enough for this hour.
+- [The Meaning of Life](https://bedrock.rippel.ai/c/the-meaning-of-life) — The greatest commandments.
+- [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself) — Cross daily. Follow Me.
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit) — Walk by the Spirit, and you will not gratify the desires of the flesh.
+- [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit) — Jesus gave the Helper — Spirit of truth with you, to testify and empower.
+- [Love](https://bedrock.rippel.ai/c/love) — Spirit fruit: love.
+- [Joy](https://bedrock.rippel.ai/c/joy) — Spirit fruit: joy.
+- [Peace](https://bedrock.rippel.ai/c/peace) — Spirit fruit: peace.
+- [Patience](https://bedrock.rippel.ai/c/patience) — Spirit fruit: patience.
+- [Kindness](https://bedrock.rippel.ai/c/kindness) — Spirit fruit: kindness.
+- [Goodness](https://bedrock.rippel.ai/c/goodness) — Spirit fruit: goodness.
+- [Faithfulness](https://bedrock.rippel.ai/c/faithfulness) — Spirit fruit: faithfulness.
+- [Gentleness](https://bedrock.rippel.ai/c/gentleness) — Spirit fruit: gentleness.
+- [Self-control](https://bedrock.rippel.ai/c/self-control) — Spirit fruit: self-control.
+- [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage) — God designed marriage as a lifelong one-flesh covenant and hates divorce.
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant) — One-flesh covenant. Sacrificial love.
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience) — True love is patient, kind, and keeps no record of wrongs.
+- [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy) — Consider it pure joy when you face trials.
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord) — When everything is out of your control — wait. Be strong. Take courage.
+- [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart) — Pour out your heart like water before the presence of the Lord.
+- [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart) — The Lord is near to the brokenhearted.
+- [Guard Your Heart and Mouth](https://bedrock.rippel.ai/c/guard-your-heart-and-mouth) — Gate the heart and the mouth.
+- [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen) — Quick to hear. Slow to speak. Slow to anger.
+- [Restore Gently and Give Time](https://bedrock.rippel.ai/c/restore-gently-and-give-time) — Gentleness and timing.
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed) — Confess. Be cleansed. Draw near.
+- [Walk in Honesty and Truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth) — Truthful lips. Yes and no.
+- [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love) — In humility value others above yourselves.
+- [Do Not Repay Evil with Evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil) — Do not repay evil with evil or insult with insult.
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord) — Vengeance belongs to Him — and hatred has no place with love.
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven) — Forgive one another as God in Christ forgave you.
+- [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body) — Bear one another’s burdens, and so fulfill the law of Christ.
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord) — When you cannot grip the outcome — trust.
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear) — God has not given you a spirit of fear, but of power, love, and a sound mind.
+- [Fear](https://bedrock.rippel.ai/c/fear) — There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.
+- [Loss](https://bedrock.rippel.ai/c/loss) — Grief for real loss and possible loss — He is near the brokenhearted.
+- [Wounded](https://bedrock.rippel.ai/c/wounded) — You were harmed — God sees; He is near the crushed.
+- [Obsession](https://bedrock.rippel.ai/c/rumination) — The stuck, replaying mind is not the Holy Spirit. Capture it.
+- [Regret](https://bedrock.rippel.ai/c/regret) — Godly grief leads to life; worldly grief leads to death.
+- [Addiction](https://bedrock.rippel.ai/c/addiction) — If it masters you, it is not free — walk by the Spirit; put the flesh to death.
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy) — If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
+- [Control](https://bedrock.rippel.ai/c/control) — Open the hand — trust is not passivity; self-control rules you, not them.
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
+- [The Word](https://bedrock.rippel.ai/c/the-word) — The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — He is real. Do not fixate. Name him, resist him, stand with God.
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare) — We are at war — not against flesh and blood.
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares) — A good farmer sowed wheat; an enemy sowed weeds at night.
+- [Persecution](https://bedrock.rippel.ai/c/persecution) — Blessed when they revile you for His name — stand, bless, do not repay evil.
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh) — Those who practice such things will not inherit the kingdom of God.
+- [Adultery](https://bedrock.rippel.ai/c/adultery) — Flee sexual immorality. You are not your own.
+- [Pharmakeia](https://bedrock.rippel.ai/c/pharmakeia) — Sorcery — and every counterfeit power — is works of the flesh.
+- [Murder](https://bedrock.rippel.ai/c/murder) — You shall not murder — not by hand, and not by hatred.
+- [Malice](https://bedrock.rippel.ai/c/malice) — Put away all malice — the quiet wish to harm.
+- [Falsehood](https://bedrock.rippel.ai/c/falsehood) — All liars — and everyone who loves and practices falsehood.
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god) — The kit for the war — stand.
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready) — Stay awake. The Son of Man is coming at an hour you do not expect.
+- [Ten Virgins](https://bedrock.rippel.ai/c/ten-virgins) — Five were wise, five foolish — the door was shut.
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant) — Blessed is that servant whom his master will find so doing when he comes.
+- [One Taken, One Left](https://bedrock.rippel.ai/c/one-taken-one-left) — Two in the field — one taken, one left.
+- [Treasure in Heaven](https://bedrock.rippel.ai/c/treasure-in-heaven) — Lay up treasure where moth and rust do not destroy.
+- [Prayer](https://bedrock.rippel.ai/c/prayer) — Ask, seek, knock — pray without ceasing.
+- [Fasting](https://bedrock.rippel.ai/c/fasting) — Humble yourself with fasting — seek God, not applause.
+- [Sabbath](https://bedrock.rippel.ai/c/sabbath) — The seventh day is the Sabbath — Saturday — still holy to the Lord. A holy day He made.
+- [Healing](https://bedrock.rippel.ai/c/healing) — Jesus heals — ask, trust, and do not lose heart.
+- [Laying on of Hands](https://bedrock.rippel.ai/c/laying-on-of-hands) — Hands laid in faith under the name of Jesus.
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts) — Varieties of gifts, one Spirit — for the common good.
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory) — What we fight toward — glory with Him.
+- [The Righteous Fall](https://bedrock.rippel.ai/c/the-righteous-fall) — Fall and rise.

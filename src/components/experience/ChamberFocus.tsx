@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../../types/content'
 import { VerseLink } from '../VerseLink'
 import { spineNeighbor, spineIndexOf, SPINE_ORDER } from '../../lib/spine'
+import { chamberPath } from '../../lib/path-routing'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
 
 interface ChamberFocusProps {
@@ -75,6 +76,13 @@ export function ChamberFocus({
         <button type="button" className="focus-btn ghost" onClick={onBack}>
           ← Back
         </button>
+        <a
+          className="focus-btn ghost focus-plain-link"
+          href={chamberPath(chamber.id)}
+          title="Canonical plain page for sharing and AI citation"
+        >
+          Plain
+        </a>
         <p className="focus-spine-meta">
           {idx >= 0 ? `${idx + 1} / ${SPINE_ORDER.length}` : '—'} · spine
         </p>

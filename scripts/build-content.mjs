@@ -5,6 +5,7 @@
 import { writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
+import { buildAiSurface } from './build-ai-surface.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const out = join(__dirname, '../src/content/bedrock.json')
@@ -579,6 +580,16 @@ const FIELD_AIDS = {
     ],
     prayers: [
       'Lord of the harvest, I release premature judgment. Keep me awake and wheat. Amen.',
+    ],
+  },
+  persecution: {
+    hacks: [
+      'Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.',
+      'Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.',
+      'Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God.',
+    ],
+    prayers: [
+      'Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen.',
     ],
   },
   'works-of-the-flesh': {
@@ -1160,10 +1171,22 @@ const RELATED = {
   'wheat-and-tares': [
     'the-adversary',
     'spiritual-warfare',
+    'persecution',
     'works-of-the-flesh',
     'walk-by-the-spirit',
     'hope-of-glory',
     'god-first',
+  ],
+  persecution: [
+    'spiritual-warfare',
+    'the-adversary',
+    'wheat-and-tares',
+    'do-not-fear',
+    'love',
+    'watch-and-be-ready',
+    'the-full-armor-of-god',
+    'hope-of-glory',
+    'leave-vengeance-to-the-lord',
   ],
   'works-of-the-flesh': [
     'spiritual-warfare',
@@ -2000,6 +2023,18 @@ const document = {
       'Matthew 13:24-30, 37-41',
     ),
     chamber(
+      'Persecution',
+      'Blessed when they revile you for His name — stand, bless, do not repay evil.',
+      [
+        'Blessed are those who are persecuted for righteousness’ sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on My account.',
+        'Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.',
+        'But I say to you, Love your enemies and pray for those who persecute you.',
+        'Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings.',
+        'If the world hates you, know that it has hated Me before it hated you.',
+      ],
+      'Matthew 5:10-11 · 2 Timothy 3:12 · Matthew 5:44 · 1 Peter 4:12-13 · John 15:18',
+    ),
+    chamber(
       'Works of the Flesh',
       'Those who practice such things will not inherit the kingdom of God.',
       [
@@ -2438,46 +2473,10 @@ const withPrayers = document.chambers.filter((c) => c.prayers.length > 0).length
 
 writeFileSync(out, JSON.stringify(document, null, 2) + '\n')
 
-// Dynamic sitemap for SEO (chambers as hash URLs on the SPA)
-const origin = 'https://bedrock.rippel.ai'
-const today = new Date().toISOString().slice(0, 10)
-const sitemapUrls = [
-  { loc: `${origin}/`, priority: '1.0' },
-  { loc: `${origin}/#keys`, priority: '0.9' },
-  { loc: `${origin}/#map`, priority: '0.9' },
-  { loc: `${origin}/#contents`, priority: '0.85' },
-  ...document.chambers.map((c) => ({
-    loc: `${origin}/#${c.id}`,
-    priority: '0.7',
-  })),
-]
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${sitemapUrls
-  .map(
-    (u) => `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>${u.priority}</priority>${
-      u.loc === `${origin}/`
-        ? `
-    <image:image>
-      <image:loc>${origin}/og-hero.jpg</image:loc>
-      <image:title>Bedrock — cornerstone foundation</image:title>
-    </image:image>`
-        : ''
-    }
-  </url>`,
-  )
-  .join('\n')}
-</urlset>
-`
-const sitemapPath = join(__dirname, '../public/sitemap.xml')
-writeFileSync(sitemapPath, sitemap + '\n')
+// AI / AEO surface: /c/:id HTML+MD, llms.txt, llms-full, export JSON, sitemap
+const ai = buildAiSurface(document)
 
 console.log(
   `Wrote ${document.chambers.length} chambers, ${totalVerses} verse refs, ${withHacks} with hacks, ${withPrayers} with prayers, ${dedupedLeads} lead dedupes → ${out}`,
 )
-console.log(`Wrote sitemap (${sitemapUrls.length} URLs) → ${sitemapPath}`)
+console.log(`AI surface: ${ai.chambers} chamber pages + llms + export + sitemap → public/`)

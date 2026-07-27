@@ -39,7 +39,7 @@ describe('seo', () => {
     const seo = buildChamberSeo(doc, c)
     expect(seo.title).toContain('Spiritual Warfare')
     expect(seo.ogType).toBe('article')
-    expect(seo.canonical).toContain('#spiritual-warfare')
+    expect(seo.canonical).toContain('/c/spiritual-warfare')
     expect(seo.jsonLd.some((b) => b['@type'] === 'Article')).toBe(true)
   })
 

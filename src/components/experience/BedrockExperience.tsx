@@ -1,10 +1,11 @@
-import { lazy, Suspense, useCallback, useMemo } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo } from 'react'
 import type { BedrockDocument } from '../../types/content'
 import { useExperience } from '../../hooks/useExperience'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
 import { useNavModePreference } from '../../hooks/useNavModePreference'
 import { useThemePreference } from '../../hooks/useThemePreference'
 import { DEFAULT_NAV_MODE } from '../../lib/nav-preference'
+import { parseChamberFromLocation, setChamberQuery } from '../../lib/path-routing'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
 import { track } from '../../lib/telemetry'
 import { ArrivalGate } from './ArrivalGate'
@@ -29,7 +30,17 @@ interface BedrockExperienceProps {
 
 export function BedrockExperience({ document }: BedrockExperienceProps) {
   const { allow3d, reducedMotion } = useMediaCapability()
-  const { state, enterNave, openChamber, backToMap, spineStep } = useExperience()
+
+  const deepLinkId = useMemo(() => {
+    if (typeof window === 'undefined') return null
+    const raw = parseChamberFromLocation()
+    if (!raw) return null
+    return document.chambers.some((c) => c.id === raw) ? raw : null
+  }, [document.chambers])
+
+  const { state, enterNave, openChamber, backToMap, spineStep } = useExperience({
+    initialChamberId: deepLinkId,
+  })
   /** Preferred Keys · Map · Contents — localStorage-backed. */
   const { navMode, setNavMode } = useNavModePreference()
   /** Dark default; light available — localStorage-backed. */
@@ -39,6 +50,15 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     if (!state.activeChamberId) return null
     return document.chambers.find((c) => c.id === state.activeChamberId) ?? null
   }, [document.chambers, state.activeChamberId])
+
+  // Keep shareable ?c= in sync with open chamber (canonical /c/:id is static HTML for AI/SEO)
+  useEffect(() => {
+    if (state.mode === 'chamber' && state.activeChamberId) {
+      setChamberQuery(state.activeChamberId)
+    } else if (state.mode === 'constellation' || state.mode === 'arrival') {
+      setChamberQuery(null)
+    }
+  }, [state.mode, state.activeChamberId])
 
   const showScene = allow3d && state.mode !== 'arrival'
   // DNA interactive on Keys and Map (same orbit/click). Contents stays list-first.
@@ -62,6 +82,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   /** Leave chamber; keep user’s preferred header tab. */
   const leaveChamber = useCallback(() => {
+    setChamberQuery(null)
     backToMap()
   }, [backToMap])
 

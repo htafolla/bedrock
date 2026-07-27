@@ -3773,10 +3773,91 @@
       "related": [
         "the-adversary",
         "spiritual-warfare",
+        "persecution",
         "works-of-the-flesh",
         "walk-by-the-spirit",
         "hope-of-glory",
         "god-first"
+      ]
+    },
+    {
+      "id": "persecution",
+      "title": "Persecution",
+      "summary": "Blessed when they revile you for His name — stand, bless, do not repay evil.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Blessed are those who are persecuted for righteousness’ sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on My account."
+        },
+        {
+          "type": "paragraph",
+          "text": "Indeed, all who desire to live a godly life in Christ Jesus will be persecuted."
+        },
+        {
+          "type": "paragraph",
+          "text": "But I say to you, Love your enemies and pray for those who persecute you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the world hates you, know that it has hated Me before it hated you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 5:10–11",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 10,
+          "verseEnd": 11
+        },
+        {
+          "display": "2 Timothy 3:12",
+          "book": "2 Timothy",
+          "chapter": 3,
+          "verseStart": 12
+        },
+        {
+          "display": "Matthew 5:44",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 44
+        },
+        {
+          "display": "1 Peter 4:12–13",
+          "book": "1 Peter",
+          "chapter": 4,
+          "verseStart": 12,
+          "verseEnd": 13
+        },
+        {
+          "display": "John 15:18",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 18
+        }
+      ],
+      "hacks": [
+        "Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.",
+        "Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.",
+        "Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God."
+      ],
+      "prayers": [
+        "Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen."
+      ],
+      "related": [
+        "spiritual-warfare",
+        "the-adversary",
+        "wheat-and-tares",
+        "do-not-fear",
+        "love",
+        "watch-and-be-ready",
+        "the-full-armor-of-god",
+        "hope-of-glory",
+        "leave-vengeance-to-the-lord"
       ]
     },
     {

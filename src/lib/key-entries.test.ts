@@ -15,11 +15,12 @@ describe('KEY_ENTRIES', () => {
       'Addiction',
       'Fear',
       'Jealousy',
+      'Control',
       'Sexual sin',
       'Love',
     ])
-    // 12 fills 3×4 and 4×3 cleanly (no lonely last cell)
-    expect(KEY_ENTRIES.length).toBe(12)
+    // 13 doors → carousel pages of 3 (last page Love alone is fine)
+    expect(KEY_ENTRIES.length).toBe(13)
   })
 
   it('keeps wounded on Keys; addiction replaces regret (regret stays on Map)', () => {
@@ -43,8 +44,10 @@ describe('KEY_ENTRIES', () => {
     expect(door?.chamberId).toBe('rumination')
   })
 
-  it('closes with Jealousy and Sexual sin (storm) then Love (still the way)', () => {
+  it('closes with Jealousy · Control · Sexual sin · Love', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-jealousy')?.chamberId).toBe('jealousy')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.chamberId).toBe('control')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.hint).toBe('Open hand')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-sexual-sin')?.chamberId).toBe('adultery')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-love')?.chamberId).toBe('love')
     // Witchcraft stays on Map/Contents, not Keys

@@ -60,14 +60,31 @@ function createGuideMarkdownComponents(
   let chipSection: ChipSection = 'none'
 
   return {
-    h1: ({ children }: { children?: ReactNode }) => (
-      <h1 className="guide-card-title">{children}</h1>
-    ),
+    h1: ({ children }: { children?: ReactNode }) => {
+      const text = childText(children).trim()
+      const chamberId = text ? resolveChamberId(text, chambers) : null
+      if (chamberId && onOpenChamber) {
+        return (
+          <h1 className="guide-card-title">
+            <button
+              type="button"
+              className="guide-card-title-btn"
+              onClick={() => onOpenChamber(chamberId)}
+              title={`Open ${text} on the spine`}
+            >
+              {children}
+            </button>
+          </h1>
+        )
+      }
+      return <h1 className="guide-card-title">{children}</h1>
+    },
     h2: ({ children }: { children?: ReactNode }) => {
       const label = childText(children).trim().toLowerCase()
       if (label === 'scripture') chipSection = 'scripture'
-      else if (label === 'connected truth') chipSection = 'truth'
-      else chipSection = 'none'
+      else if (label === 'connected truth' || label === 'related' || label === 'related chambers') {
+        chipSection = 'truth'
+      } else chipSection = 'none'
       const chipSections = chipSection !== 'none'
       return (
         <h2 className={`guide-card-layer${chipSections ? ' guide-card-layer-chips' : ''}`}>
@@ -83,6 +100,24 @@ function createGuideMarkdownComponents(
       const text = childText(children).trim()
       if (/^first principle$/i.test(text)) {
         return <p className="guide-card-kicker">{text}</p>
+      }
+      // Short line that is exactly a chamber title → open spine
+      if (text && text.length <= 48 && onOpenChamber) {
+        const chamberId = resolveChamberId(text, chambers)
+        if (chamberId) {
+          return (
+            <p className="guide-card-line">
+              <button
+                type="button"
+                className="guide-card-chip-action guide-inline-chamber"
+                onClick={() => onOpenChamber(chamberId)}
+                title={`Open ${text} on the spine`}
+              >
+                {text}
+              </button>
+            </p>
+          )
+        }
       }
       return <p className="guide-card-line">{children}</p>
     },
@@ -119,9 +154,10 @@ function createGuideMarkdownComponents(
         )
       }
 
-      if (chipSection === 'truth' && text) {
+      // Connected truth — or any short list line that matches a chamber title
+      if (text && onOpenChamber) {
         const chamberId = resolveChamberId(text, chambers)
-        if (chamberId && onOpenChamber) {
+        if (chamberId && (chipSection === 'truth' || text.length <= 40)) {
           return (
             <li className="guide-card-item guide-card-chip is-clickable">
               <button

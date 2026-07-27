@@ -4,9 +4,9 @@
  *
  * Two solid doors first: God · Marriage.
  * Then the fire — chip labels lead with positives / plain speech people recognize.
- * Close the grid (12 = clean 3×4 / 4×3): Jealousy · Sexual sin · Love.
- * Addiction replaces Regret; Jealousy replaces Witchcraft on Keys
- * (regret / pharmakeia stay on Map · Contents).
+ * Carousel of 3: pages of storm doors.
+ * Control sits with Jealousy (demand vs release grip).
+ * Regret / pharmakeia / persecution stay Map · Contents.
  * Hope of glory stays Map terminus. Faith ≈ Trust already.
  */
 export interface KeyEntry {
@@ -77,6 +77,12 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Jealousy',
     hint: 'Not love',
     chamberId: 'jealousy',
+  },
+  {
+    id: 'key-control',
+    label: 'Control',
+    hint: 'Open hand',
+    chamberId: 'control',
   },
   {
     id: 'key-sexual-sin',

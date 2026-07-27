@@ -9,9 +9,14 @@ export const OG_IMAGE_PATH = '/og-hero.jpg'
 export const OG_IMAGE_VERSION = '2'
 export const OG_IMAGE_URL = `${SITE_ORIGIN}${OG_IMAGE_PATH}?v=${OG_IMAGE_VERSION}`
 
+/** Canonical crawlable chamber URL (static HTML + .md for AI). */
+export function chamberCanonicalUrl(id: string): string {
+  return `${SITE_ORIGIN}/c/${id}`
+}
+
 export const DEFAULT_TITLE = 'Bedrock — Do Better. Be Better. Trust God.'
 export const DEFAULT_DESCRIPTION =
-  "Bedrock is a Hitchhiker's field guide for the storm (public beta): biblical first principles, short under-fire hacks, and prayer for grief, obsession, addiction, jealousy, fear, spiritual warfare, and readiness. Max-cope. Grow. Trust God."
+  "Bedrock is a Hitchhiker's field guide for the storm (public beta): biblical first principles, short under-fire hacks, and prayer for grief, obsession, addiction, jealousy, control, fear, spiritual warfare, and readiness. Max-cope. Grow. Trust God."
 
 export interface SeoPayload {
   title: string
@@ -55,11 +60,11 @@ export function buildFaqEntities(doc: BedrockDocument): Array<{ q: string; a: st
     },
     {
       q: 'Who is Bedrock for?',
-      a: 'People in the storm — grief, obsession (stuck replaying), regret, fear of abandonment, marriage fracture, spiritual warfare, and the need to stay ready. Aggressor and wounded paths are separate doors.',
+      a: 'People in the storm — grief, obsession (stuck replaying), addiction, jealousy, control, fear of abandonment, marriage fracture, spiritual warfare, and the need to stay ready. Aggressor and wounded paths are separate doors. Public beta — not a crisis hotline.',
     },
     {
       q: 'How do I use Bedrock?',
-      a: 'Open Keys for storm triage, Map for the full DNA path of first principles, or Contents for the full list. Each chamber gives Truth (Scripture), Under fire (short reframes), Prayer, and related chambers.',
+      a: 'Open Keys for storm triage (three doors at a time), Map for DNA hubs, or Contents for the full list. Each chamber gives Truth (Scripture), Under fire (max 3), Prayer, and related chambers. Canonical pages for citation: /c/{id} and /c/{id}.md.',
     },
     {
       q: 'What is the motto of Bedrock?',
@@ -79,7 +84,7 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
     position: i + 1,
     name: c.title,
     description: c.summary,
-    url: `${CANONICAL_URL}#${c.id}`,
+    url: chamberCanonicalUrl(c.id),
   }))
 
   const jsonLd: Record<string, unknown>[] = [
@@ -165,7 +170,8 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
       author: { '@type': 'Organization', name: 'Bedrock' },
       publisher: { '@type': 'Organization', name: 'Bedrock', url: CANONICAL_URL },
       image: OG_IMAGE_URL,
-      mainEntityOfPage: `${CANONICAL_URL}#${chamber.id}`,
+      mainEntityOfPage: chamberCanonicalUrl(chamber.id),
+      url: chamberCanonicalUrl(chamber.id),
       keywords: [chamber.title, ...chamber.verses.map((v) => v.display)].join(', '),
       articleSection: 'First principles',
       inLanguage: 'en',
@@ -175,12 +181,12 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: CANONICAL_URL },
-        { '@type': 'ListItem', position: 2, name: 'Map', item: `${CANONICAL_URL}#map` },
+        { '@type': 'ListItem', position: 2, name: 'Atlas', item: `${SITE_ORIGIN}/export/chambers.json` },
         {
           '@type': 'ListItem',
           position: 3,
           name: chamber.title,
-          item: `${CANONICAL_URL}#${chamber.id}`,
+          item: chamberCanonicalUrl(chamber.id),
         },
       ],
     },
@@ -189,7 +195,7 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
   return {
     title,
     description: description.slice(0, 160),
-    canonical: `${CANONICAL_URL}#${chamber.id}`,
+    canonical: chamberCanonicalUrl(chamber.id),
     ogImage: OG_IMAGE_URL,
     ogType: 'article',
     keywords: [chamber.title, chamber.summary, 'Bedrock', 'Bible', 'prayer'].join(', '),

@@ -10,7 +10,13 @@
  */
 import 'dotenv/config'
 import path from 'node:path'
-import { existsSync } from 'node:fs'
+import {
+  appendFileSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+} from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
 import OpenAI from 'openai'
@@ -23,6 +29,10 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
 const dist = path.join(root, 'dist')
+const publicDir = path.join(root, 'public')
+const dataDir = process.env.TELEMETRY_DIR?.trim() || path.join(root, 'data')
+const telemetryPath = path.join(dataDir, 'telemetry.jsonl')
+const contentPath = path.join(root, 'src/content/bedrock.json')
 
 const PORT = Number(process.env.PORT) || 3000
 const MODEL = process.env.XAI_MODEL || 'grok-4.5'
@@ -176,10 +186,76 @@ export function normalizeChatBody(body) {
   return { messages, contextLine }
 }
 
+/** @returns {{ chambers: Array<{ id: string, title: string, summary: string, body: unknown[], verses: unknown[], hacks: string[], prayers: string[], related: string[] }>, meta: Record<string, unknown> } | null} */
+function loadDocument() {
+  const candidates = [
+    path.join(dist, 'content/bedrock.json'),
+    contentPath,
+    path.join(publicDir, 'export/chambers.json'),
+  ]
+  for (const p of candidates) {
+    try {
+      if (!existsSync(p)) continue
+      const raw = JSON.parse(readFileSync(p, 'utf8'))
+      if (Array.isArray(raw.chambers)) return raw
+    } catch {
+      /* try next */
+    }
+  }
+  return null
+}
+
+function loadTelemetryFromDisk(doorHits, recentEvents) {
+  if (!existsSync(telemetryPath)) return { total: 0 }
+  let total = 0
+  try {
+    const lines = readFileSync(telemetryPath, 'utf8').split('\n').filter(Boolean)
+    // Only keep last 5000 lines in aggregate to bound memory
+    const slice = lines.slice(-5000)
+    for (const line of slice) {
+      try {
+        const row = JSON.parse(line)
+        total += 1
+        if (
+          row.chamberId &&
+          (row.event === 'open_chamber' || row.event === 'key_tap')
+        ) {
+          doorHits.set(row.chamberId, (doorHits.get(row.chamberId) || 0) + 1)
+        }
+        recentEvents.push({
+          t: row.t || Date.now(),
+          event: row.event,
+          chamberId: row.chamberId,
+          source: row.source,
+          nav: row.nav,
+        })
+      } catch {
+        /* skip bad line */
+      }
+    }
+    while (recentEvents.length > 400) recentEvents.shift()
+  } catch (err) {
+    console.warn('[telemetry] load failed', err instanceof Error ? err.message : err)
+  }
+  return { total }
+}
+
+function persistTelemetryRow(row) {
+  try {
+    mkdirSync(dataDir, { recursive: true })
+    appendFileSync(telemetryPath, JSON.stringify(row) + '\n', { mode: 0o600 })
+  } catch (err) {
+    console.warn('[telemetry] append failed', err instanceof Error ? err.message : err)
+  }
+}
+
 function createApp() {
   const app = express()
   app.disable('x-powered-by')
   app.use(express.json({ limit: '48kb' }))
+
+  const doc = loadDocument()
+  const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
 
   app.get('/api/health', (_req, res) => {
     const oauth = oauthStatus()
@@ -195,16 +271,57 @@ function createApp() {
       model: MODEL,
       version: process.env.npm_package_version || '0.2.0-beta',
       beta: true,
+      chambers: chamberById.size,
+      aiSurface: {
+        chamberPages: '/c/{id}',
+        markdown: '/c/{id}.md',
+        export: '/export/chambers.json',
+        llms: '/llms.txt',
+        llmsFull: '/llms-full.txt',
+      },
     })
   })
 
-  // Lightweight, privacy-first analytics (no IP/user ids stored)
+  // —— Chamber API for tools / agents ——
+  app.get('/api/chambers', (_req, res) => {
+    if (!doc) {
+      res.status(503).json({ error: 'Content not loaded' })
+      return
+    }
+    res.json({
+      meta: doc.meta,
+      chambers: doc.chambers.map((c) => ({
+        id: c.id,
+        title: c.title,
+        summary: c.summary,
+        url: `https://bedrock.rippel.ai/c/${c.id}`,
+        markdownUrl: `https://bedrock.rippel.ai/c/${c.id}.md`,
+      })),
+    })
+  })
+
+  app.get('/api/chambers/:id', (req, res) => {
+    const id = String(req.params.id || '').toLowerCase()
+    const c = chamberById.get(id)
+    if (!c) {
+      res.status(404).json({ error: 'Chamber not found' })
+      return
+    }
+    res.json({
+      ...c,
+      url: `https://bedrock.rippel.ai/c/${c.id}`,
+      markdownUrl: `https://bedrock.rippel.ai/c/${c.id}.md`,
+    })
+  })
+
+  // Privacy-first analytics — memory + durable JSONL (no IP/PII)
   /** @type {Map<string, number>} */
   const doorHits = new Map()
   /** @type {Array<{ t: number, event: string, chamberId?: string, source?: string, nav?: string }>} */
   const recentEvents = []
   const MAX_RECENT = 400
-  let telemetryTotal = 0
+  const loaded = loadTelemetryFromDisk(doorHits, recentEvents)
+  let telemetryTotal = loaded.total
 
   app.post('/api/telemetry', (req, res) => {
     const body = req.body && typeof req.body === 'object' ? req.body : {}
@@ -219,18 +336,19 @@ function createApp() {
     const source = typeof body.source === 'string' ? body.source.trim().slice(0, 40) : undefined
     const nav = typeof body.nav === 'string' ? body.nav.trim().slice(0, 20) : undefined
 
+    const row = { t: Date.now(), event, chamberId, source, nav }
     telemetryTotal += 1
     if (chamberId && (event === 'open_chamber' || event === 'key_tap')) {
       doorHits.set(chamberId, (doorHits.get(chamberId) || 0) + 1)
     }
-    recentEvents.push({ t: Date.now(), event, chamberId, source, nav })
+    recentEvents.push(row)
     if (recentEvents.length > MAX_RECENT) recentEvents.shift()
+    persistTelemetryRow(row)
 
     res.status(204).end()
   })
 
   app.get('/api/telemetry/summary', (req, res) => {
-    // Optional owner key — if TELEMETRY_KEY set, require ?key=
     const need = process.env.TELEMETRY_KEY?.trim()
     if (need && req.query.key !== need) {
       res.status(401).json({ error: 'unauthorized' })
@@ -245,7 +363,8 @@ function createApp() {
       uniqueDoors: doorHits.size,
       top,
       recent: recentEvents.slice(-40),
-      note: 'In-memory only · resets on deploy · no IP/PII',
+      durable: existsSync(telemetryPath),
+      note: 'No IP/PII · JSONL on disk when writable · resets only if volume wiped',
     })
   })
 
@@ -300,17 +419,79 @@ function createApp() {
     }
   })
 
+  // Canonical AI/SEO chamber pages: prefer dist (prod), fall back to public (dev)
+  const staticRoots = [dist, publicDir].filter((p) => existsSync(p))
+
+  // Clean /c/:id → .html ; /c/:id.md → markdown
+  app.get('/c/:id.md', (req, res, next) => {
+    const id = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+      next()
+      return
+    }
+    for (const base of staticRoots) {
+      const file = path.join(base, 'c', `${id}.md`)
+      if (existsSync(file)) {
+        res.type('text/markdown; charset=utf-8')
+        res.setHeader('Cache-Control', 'public, max-age=3600')
+        res.sendFile(file)
+        return
+      }
+    }
+    res.status(404).type('text').send('Chamber markdown not found')
+  })
+
+  app.get('/c/:id', (req, res, next) => {
+    const id = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+      next()
+      return
+    }
+    for (const base of staticRoots) {
+      const file = path.join(base, 'c', `${id}.html`)
+      if (existsSync(file)) {
+        res.setHeader('Cache-Control', 'public, max-age=3600')
+        res.sendFile(file)
+        return
+      }
+    }
+    res.status(404).type('text').send('Chamber not found')
+  })
+
   if (existsSync(dist)) {
-    app.use(express.static(dist, { index: false, maxAge: '1h' }))
-    app.get(/^(?!\/api(?:\/|$)).*/, (_req, res) => {
-      res.sendFile(path.join(dist, 'index.html'))
+    app.use(
+      express.static(dist, {
+        index: false,
+        maxAge: '1h',
+        // Don't treat missing /c/ as SPA yet
+        fallthrough: true,
+      }),
+    )
+    // SPA shell for app routes (home, ?c=, etc.) — not /api or missing static
+    app.get(/^(?!\/api(?:\/|$)).*/, (req, res, next) => {
+      // Let express.static 404s that are under known asset dirs fail cleanly
+      if (req.path.startsWith('/c/')) {
+        res.status(404).type('text').send('Not found')
+        return
+      }
+      const index = path.join(dist, 'index.html')
+      if (!existsSync(index)) {
+        next()
+        return
+      }
+      res.sendFile(index)
     })
-  } else {
+  } else if (existsSync(publicDir)) {
+    app.use(express.static(publicDir, { index: false, maxAge: '1h' }))
     app.get('/', (_req, res) => {
       res
         .status(503)
         .type('text')
-        .send('Bedrock dist/ missing. Run npm run build, or use vite for frontend + this server for /api.')
+        .send('Bedrock dist/ missing. Run npm run build for the SPA; /c/:id static pages are in public/.')
+    })
+  } else {
+    app.get('/', (_req, res) => {
+      res.status(503).type('text').send('Bedrock dist/ missing. Run npm run build.')
     })
   }
 

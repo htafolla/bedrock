@@ -1,0 +1,5592 @@
+{
+  "meta": {
+    "title": "Bedrock",
+    "subtitle": "Do Better. Be Better. Trust God.",
+    "tagline": "A Hitchhiker's Guide to Love · Living · Enduring",
+    "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.",
+    "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
+    "version": "0.2.0-beta",
+    "revised": "2026-07-26",
+    "contentHash": null,
+    "ipfsCid": null,
+    "baseAnchorTx": null,
+    "origin": "https://bedrock.rippel.ai",
+    "chamberCount": 75,
+    "exportedAt": "2026-07-27T09:57:33.232Z",
+    "license": "Public gift — cite Bedrock; not a crisis hotline"
+  },
+  "chambers": [
+    {
+      "id": "god-first",
+      "title": "God First",
+      "summary": "God is with you and will never leave you.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "He goes before you, guards behind you, stays close when you are brokenhearted, and fights for you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still and know that He is God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. Keep His commandments and follow Him."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Deuteronomy 31:6",
+          "book": "Deuteronomy",
+          "chapter": 31,
+          "verseStart": 6
+        },
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Isaiah 52:12",
+          "book": "Isaiah",
+          "chapter": 52,
+          "verseStart": 12
+        },
+        {
+          "display": "Exodus 14:14",
+          "book": "Exodus",
+          "chapter": 14,
+          "verseStart": 14
+        },
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        },
+        {
+          "display": "Revelation 2:4",
+          "book": "Revelation",
+          "chapter": 2,
+          "verseStart": 4
+        },
+        {
+          "display": "Matthew 6:33",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 33
+        },
+        {
+          "display": "Proverbs 1:7",
+          "book": "Proverbs",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "John 15:4",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 4
+        },
+        {
+          "display": "John 14:15",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 15
+        }
+      ],
+      "hacks": [
+        "When panic rises, stop and name who is first: God — not outcome, not reputation, not control.",
+        "Seek first the kingdom in the next five minutes: one obedient act, not a full recovery plan."
+      ],
+      "prayers": [
+        "Father, You are first. I am not God. Be still my heart and lead me in Your will. Amen."
+      ],
+      "related": [
+        "his-promises",
+        "trust-in-the-lord",
+        "do-not-fear",
+        "the-lords-prayer"
+      ],
+      "url": "https://bedrock.rippel.ai/c/god-first",
+      "markdownUrl": "https://bedrock.rippel.ai/c/god-first.md"
+    },
+    {
+      "id": "his-power-and-beauty",
+      "title": "His Power and Beauty",
+      "summary": "All things were created by Him and for Him.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "He holds all things together by the word of His power."
+        },
+        {
+          "type": "paragraph",
+          "text": "From Him and through Him and to Him are all things."
+        },
+        {
+          "type": "paragraph",
+          "text": "The heavens declare the glory of God, and the sky above proclaims His handiwork."
+        },
+        {
+          "type": "paragraph",
+          "text": "Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are His judgments and how inscrutable His ways!"
+        }
+      ],
+      "verses": [
+        {
+          "display": "Colossians 1:16–17",
+          "book": "Colossians",
+          "chapter": 1,
+          "verseStart": 16,
+          "verseEnd": 17
+        },
+        {
+          "display": "Hebrews 1:3",
+          "book": "Hebrews",
+          "chapter": 1,
+          "verseStart": 3
+        },
+        {
+          "display": "Romans 11:33",
+          "book": "Romans",
+          "chapter": 11,
+          "verseStart": 33
+        },
+        {
+          "display": "Romans 11:36",
+          "book": "Romans",
+          "chapter": 11,
+          "verseStart": 36
+        },
+        {
+          "display": "Psalm 19:1",
+          "book": "Psalm",
+          "chapter": 19,
+          "verseStart": 1
+        },
+        {
+          "display": "Revelation 4:11",
+          "book": "Revelation",
+          "chapter": 4,
+          "verseStart": 11
+        }
+      ],
+      "hacks": [
+        "When chaos feels big, look up: the heavens declare His glory — your crisis is not the largest thing in the room.",
+        "Worship is a weapon. Name one true thing about who He is before you name one more fear."
+      ],
+      "prayers": [
+        "Lord of all power and beauty, I worship You. I release this chaos into Your hands. Amen."
+      ],
+      "related": [
+        "god-first",
+        "his-promises",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/his-power-and-beauty",
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-power-and-beauty.md"
+    },
+    {
+      "id": "his-promises",
+      "title": "His Promises",
+      "summary": "God is faithful. He will never leave you nor forsake you.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Once you are in His hand, no one can snatch you out."
+        },
+        {
+          "type": "paragraph",
+          "text": "The work of God is this: to believe in the One He has sent."
+        },
+        {
+          "type": "paragraph",
+          "text": "Abide in Me, and I will abide in you."
+        },
+        {
+          "type": "paragraph",
+          "text": "He is faithful. His word is true. He never breaks His promises."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Deuteronomy 31:6",
+          "book": "Deuteronomy",
+          "chapter": 31,
+          "verseStart": 6
+        },
+        {
+          "display": "John 10:28–29",
+          "book": "John",
+          "chapter": 10,
+          "verseStart": 28,
+          "verseEnd": 29
+        },
+        {
+          "display": "John 6:29",
+          "book": "John",
+          "chapter": 6,
+          "verseStart": 29
+        },
+        {
+          "display": "John 15:4",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 4
+        },
+        {
+          "display": "Hebrews 10:23",
+          "book": "Hebrews",
+          "chapter": 10,
+          "verseStart": 23
+        },
+        {
+          "display": "Numbers 23:19",
+          "book": "Numbers",
+          "chapter": 23,
+          "verseStart": 19
+        }
+      ],
+      "hacks": [
+        "Replace “what if they never…” with “what has He already promised that does not depend on them.”",
+        "Once you are in His hand, no one snatches you out — including your own shame narrative."
+      ],
+      "prayers": [
+        "Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen."
+      ],
+      "related": [
+        "god-first",
+        "he-is-for-you",
+        "trust-in-the-lord",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/his-promises",
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-promises.md"
+    },
+    {
+      "id": "his-provision",
+      "title": "His Provision",
+      "summary": "Give us this day our daily bread.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Your Father knows what you need before you ask Him."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you then, who are evil, know how to give good gifts to your children, how much more will your Father in heaven give good things to those who ask Him."
+        },
+        {
+          "type": "paragraph",
+          "text": "Seek first the kingdom of God and His righteousness, and all these things will be added to you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 6:11",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 11
+        },
+        {
+          "display": "Matthew 6:8",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 8
+        },
+        {
+          "display": "Matthew 7:11",
+          "book": "Matthew",
+          "chapter": 7,
+          "verseStart": 11
+        },
+        {
+          "display": "Matthew 6:33",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 33
+        }
+      ],
+      "hacks": [
+        "Ask for daily bread, not a five-year fortress. Today’s obedience + today’s trust.",
+        "Your Father knows what you need. Anxiety is not a provision strategy."
+      ],
+      "prayers": [
+        "Father, give us this day our daily bread. I release tomorrow into Your knowing. Amen."
+      ],
+      "related": [
+        "the-lords-prayer",
+        "trust-in-the-lord",
+        "god-first"
+      ],
+      "url": "https://bedrock.rippel.ai/c/his-provision",
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-provision.md"
+    },
+    {
+      "id": "the-lords-prayer",
+      "title": "The Lord's Prayer",
+      "summary": "Our Father in heaven, hallowed be Your name.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Your kingdom come, Your will be done, on earth as it is in heaven."
+        },
+        {
+          "type": "paragraph",
+          "text": "Give us this day our daily bread."
+        },
+        {
+          "type": "paragraph",
+          "text": "And forgive us our debts, as we also have forgiven our debtors."
+        },
+        {
+          "type": "paragraph",
+          "text": "And lead us not into temptation, but deliver us from evil."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 6:9–13",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 9,
+          "verseEnd": 13
+        }
+      ],
+      "hacks": [
+        "Pray it slowly as a reset: Name → Kingdom → Will → Bread → Forgive → Deliver.",
+        "If you cannot form words, pray the Lord’s Prayer until your spirit steadies."
+      ],
+      "prayers": [
+        "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done. Amen."
+      ],
+      "related": [
+        "his-provision",
+        "forgive-as-you-have-been-forgiven",
+        "god-first",
+        "prayer"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-lords-prayer",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-lords-prayer.md"
+    },
+    {
+      "id": "the-cross-and-our-justification",
+      "title": "The Cross and Our Justification",
+      "summary": "Christ died for our sins according to the Scriptures. He was raised on the third day.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "By His wounds you have been healed. There is therefore now no condemnation for those who are in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "We have been justified by faith and have peace with God through our Lord Jesus Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "It is finished."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Corinthians 15:3–4",
+          "book": "1 Corinthians",
+          "chapter": 15,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "Isaiah 53:5",
+          "book": "Isaiah",
+          "chapter": 53,
+          "verseStart": 5
+        },
+        {
+          "display": "1 Peter 2:24",
+          "book": "1 Peter",
+          "chapter": 2,
+          "verseStart": 24
+        },
+        {
+          "display": "Romans 8:1",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 1
+        },
+        {
+          "display": "Romans 5:1",
+          "book": "Romans",
+          "chapter": 5,
+          "verseStart": 1
+        },
+        {
+          "display": "John 19:30",
+          "book": "John",
+          "chapter": 19,
+          "verseStart": 30
+        }
+      ],
+      "hacks": [
+        "Condemnation says “you are finished.” The cross says “it is finished.” Choose the finished work.",
+        "Your standing is not your streak of good days. You are justified by faith in Christ."
+      ],
+      "prayers": [
+        "Jesus, it is finished. I release condemnation. Keep me under Your blood. Amen."
+      ],
+      "related": [
+        "he-is-for-you",
+        "his-grace-is-sufficient",
+        "the-righteous-fall",
+        "confess-and-be-cleansed"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-cross-and-our-justification",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-cross-and-our-justification.md"
+    },
+    {
+      "id": "he-is-for-you",
+      "title": "He Is For You",
+      "summary": "God is for you.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "If God is for us, who can be against us?"
+        },
+        {
+          "type": "paragraph",
+          "text": "He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?"
+        },
+        {
+          "type": "paragraph",
+          "text": "He casts your sins behind His back and remembers them no more."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cast all your cares on Him, because He cares for you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Romans 8:31–32",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 31,
+          "verseEnd": 32
+        },
+        {
+          "display": "Isaiah 43:25",
+          "book": "Isaiah",
+          "chapter": 43,
+          "verseStart": 25
+        },
+        {
+          "display": "Hebrews 8:12",
+          "book": "Hebrews",
+          "chapter": 8,
+          "verseStart": 12
+        },
+        {
+          "display": "1 Peter 5:7",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 7
+        }
+      ],
+      "hacks": [
+        "If God is for you, stop rehearsing every face that seems against you.",
+        "Cast the care — do not decorate it. He cares for you is a fact, not a mood."
+      ],
+      "prayers": [
+        "Lord, You are for me. I cast my cares on You. Remember mercy over my sin. Amen."
+      ],
+      "related": [
+        "the-cross-and-our-justification",
+        "his-promises",
+        "do-not-fear"
+      ],
+      "url": "https://bedrock.rippel.ai/c/he-is-for-you",
+      "markdownUrl": "https://bedrock.rippel.ai/c/he-is-for-you.md"
+    },
+    {
+      "id": "his-grace-is-sufficient",
+      "title": "His Grace Is Sufficient",
+      "summary": "Grace enough for this hour.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "My grace is sufficient for you, for My power is made perfect in weakness."
+        },
+        {
+          "type": "paragraph",
+          "text": "The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age."
+        },
+        {
+          "type": "paragraph",
+          "text": "We love because He first loved us."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Corinthians 12:9",
+          "book": "2 Corinthians",
+          "chapter": 12,
+          "verseStart": 9
+        },
+        {
+          "display": "Titus 2:11–12",
+          "book": "Titus",
+          "chapter": 2,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "1 John 4:19",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 19
+        }
+      ],
+      "hacks": [
+        "Weakness is not the end of usefulness — it is where His power is perfected. Stop performing strength.",
+        "Grace trains you; it does not excuse you. Receive mercy, then renounce the flesh habit."
+      ],
+      "prayers": [
+        "Lord, Your grace is enough. I release performed strength. Meet me in weakness. Amen."
+      ],
+      "related": [
+        "the-righteous-fall",
+        "walk-by-the-spirit",
+        "the-cross-and-our-justification"
+      ],
+      "url": "https://bedrock.rippel.ai/c/his-grace-is-sufficient",
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-grace-is-sufficient.md"
+    },
+    {
+      "id": "the-meaning-of-life",
+      "title": "The Meaning of Life",
+      "summary": "The greatest commandments.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength."
+        },
+        {
+          "type": "paragraph",
+          "text": "You shall love your neighbor as yourself."
+        },
+        {
+          "type": "paragraph",
+          "text": "On these two commandments depend all the Law and the Prophets."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 22:37–40",
+          "book": "Matthew",
+          "chapter": 22,
+          "verseStart": 37,
+          "verseEnd": 40
+        },
+        {
+          "display": "Mark 12:30–31",
+          "book": "Mark",
+          "chapter": 12,
+          "verseStart": 30,
+          "verseEnd": 31
+        },
+        {
+          "display": "Luke 10:27",
+          "book": "Luke",
+          "chapter": 10,
+          "verseStart": 27
+        }
+      ],
+      "hacks": [
+        "Simplify the assignment: love God fully; love people as yourself. Everything else is secondary.",
+        "When overwhelmed, ask only: what does love require of me in the next hour?"
+      ],
+      "prayers": [
+        "Jesus, You are the aim. I release lesser gods. Teach me to love You and my neighbor. Amen."
+      ],
+      "related": [
+        "love-and-patience",
+        "choose-selfless-love",
+        "god-first"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-meaning-of-life",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-meaning-of-life.md"
+    },
+    {
+      "id": "deny-yourself",
+      "title": "Deny Yourself",
+      "summary": "Cross daily. Follow Me.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "If anyone would come after Me, let him deny himself and take up his cross daily and follow Me."
+        },
+        {
+          "type": "paragraph",
+          "text": "For whoever would save his life will lose it, but whoever loses his life for My sake will save it."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Luke 9:23–24",
+          "book": "Luke",
+          "chapter": 9,
+          "verseStart": 23,
+          "verseEnd": 24
+        },
+        {
+          "display": "Matthew 16:24–25",
+          "book": "Matthew",
+          "chapter": 16,
+          "verseStart": 24,
+          "verseEnd": 25
+        }
+      ],
+      "hacks": [
+        "The cross is daily. Ask: what must I lay down right now — ego, argument, appetite, control?",
+        "Losing your life for His sake is not self-hatred; it is refusing to make self the god of this hour.",
+        "Self-control is Spirit fruit for *you* — deny the flesh once more; do not try to deny them into compliance."
+      ],
+      "prayers": [
+        "Lord, I lay self down. I take up my cross. I release the need to be god of this hour. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "the-cross-and-our-justification",
+        "count-the-trial-as-joy",
+        "self-control"
+      ],
+      "url": "https://bedrock.rippel.ai/c/deny-yourself",
+      "markdownUrl": "https://bedrock.rippel.ai/c/deny-yourself.md"
+    },
+    {
+      "id": "walk-by-the-spirit",
+      "title": "Walk by the Spirit",
+      "summary": "Walk by the Spirit, and you will not gratify the desires of the flesh.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control."
+        },
+        {
+          "type": "paragraph",
+          "text": "If we live by the Spirit, let us also keep in step with the Spirit."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:16",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 16
+        },
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "Galatians 5:25",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 25
+        },
+        {
+          "display": "Romans 8:5–6",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 5,
+          "verseEnd": 6
+        },
+        {
+          "display": "Romans 8:14",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 14
+        }
+      ],
+      "hacks": [
+        "Before you speak, check the fruit: is this love, patience, self-control — or flesh wanting control?",
+        "Flesh wants the last word. Spirit keeps in step. Delay the reaction; choose the next right fruit."
+      ],
+      "prayers": [
+        "Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Amen."
+      ],
+      "related": [
+        "deny-yourself",
+        "holy-spirit",
+        "love",
+        "joy",
+        "peace",
+        "patience",
+        "kindness",
+        "goodness",
+        "faithfulness",
+        "gentleness",
+        "self-control",
+        "works-of-the-flesh",
+        "take-every-thought-captive",
+        "spiritual-warfare",
+        "the-righteous-fall",
+        "the-full-armor-of-god"
+      ],
+      "url": "https://bedrock.rippel.ai/c/walk-by-the-spirit",
+      "markdownUrl": "https://bedrock.rippel.ai/c/walk-by-the-spirit.md"
+    },
+    {
+      "id": "holy-spirit",
+      "title": "Holy Spirit",
+      "summary": "Jesus gave the Helper — Spirit of truth with you, to testify and empower.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "And I will ask the Father, and He will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees Him nor knows Him. You know Him, for He dwells with you and will be in you."
+        },
+        {
+          "type": "paragraph",
+          "text": "But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things and bring to your remembrance all that I have said to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, He will bear witness about Me."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nevertheless, I tell you the truth: it is to your advantage that I go away, for if I do not go away, the Helper will not come to you. But if I go, I will send Him to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the Spirit of truth comes, He will guide you into all the truth."
+        },
+        {
+          "type": "paragraph",
+          "text": "But you will receive power when the Holy Spirit has come upon you, and you will be My witnesses."
+        },
+        {
+          "type": "paragraph",
+          "text": "God’s love has been poured into our hearts through the Holy Spirit who has been given to us."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now there are varieties of gifts, but the same Spirit… To each is given the manifestation of the Spirit for the common good."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "John 14:16–17",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 16,
+          "verseEnd": 17
+        },
+        {
+          "display": "John 14:26",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 26
+        },
+        {
+          "display": "John 15:26",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 26
+        },
+        {
+          "display": "John 16:7",
+          "book": "John",
+          "chapter": 16,
+          "verseStart": 7
+        },
+        {
+          "display": "John 16:13",
+          "book": "John",
+          "chapter": 16,
+          "verseStart": 13
+        },
+        {
+          "display": "Acts 1:8",
+          "book": "Acts",
+          "chapter": 1,
+          "verseStart": 8
+        },
+        {
+          "display": "Romans 5:5",
+          "book": "Romans",
+          "chapter": 5,
+          "verseStart": 5
+        },
+        {
+          "display": "1 Corinthians 12:4–7",
+          "book": "1 Corinthians",
+          "chapter": 12,
+          "verseStart": 4,
+          "verseEnd": 7
+        },
+        {
+          "display": "2 Corinthians 10:4",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 4
+        },
+        {
+          "display": "Luke 10:19",
+          "book": "Luke",
+          "chapter": 10,
+          "verseStart": 19
+        }
+      ],
+      "hacks": [
+        "Jesus did not leave you alone. The Helper is with you and in you — Spirit of truth, not a vague feeling.",
+        "He testifies to the truth. When lies press in, ask Him to bear witness and open the Word.",
+        "Power is for witness and warfare under God — demolish strongholds, stand in authority — not for show or self-glory."
+      ],
+      "prayers": [
+        "Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "the-word",
+        "spiritual-gifts",
+        "take-every-thought-captive",
+        "spiritual-warfare",
+        "the-adversary",
+        "prayer",
+        "god-first",
+        "love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/holy-spirit",
+      "markdownUrl": "https://bedrock.rippel.ai/c/holy-spirit.md"
+    },
+    {
+      "id": "love",
+      "title": "Love",
+      "summary": "Spirit fruit: love.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is love."
+        },
+        {
+          "type": "paragraph",
+          "text": "Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love."
+        },
+        {
+          "type": "paragraph",
+          "text": "If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth."
+        },
+        {
+          "type": "paragraph",
+          "text": "God’s love has been poured into our hearts through the Holy Spirit who has been given to us."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "1 John 4:7–8",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 7,
+          "verseEnd": 8
+        },
+        {
+          "display": "1 John 4:20",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 20
+        },
+        {
+          "display": "1 Corinthians 13:4–6",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 6
+        },
+        {
+          "display": "Romans 5:5",
+          "book": "Romans",
+          "chapter": 5,
+          "verseStart": 5
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: lust, scorekeeping, or “love” that needs them to change so you feel safe — that is not the Spirit’s fruit.",
+        "Before you act “for love,” ask: does this serve their good under God — or my appetite, my image, my control?",
+        "If hatred rises, name it. Put it down. Bless once. Entrust the scales. Hatred and love of God cannot share a heart."
+      ],
+      "prayers": [
+        "Holy Spirit, I release cold love and scorekeeping. Pour Your love into this heart. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "holy-spirit",
+        "love-and-patience",
+        "choose-selfless-love",
+        "leave-vengeance-to-the-lord",
+        "marriage-covenant",
+        "joy",
+        "jealousy"
+      ],
+      "url": "https://bedrock.rippel.ai/c/love",
+      "markdownUrl": "https://bedrock.rippel.ai/c/love.md"
+    },
+    {
+      "id": "joy",
+      "title": "Joy",
+      "summary": "Spirit fruit: joy.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is joy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be grieved, for the joy of the Lord is your strength."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rejoice in the Lord always; again I will say, rejoice."
+        },
+        {
+          "type": "paragraph",
+          "text": "These things I have spoken to you, that My joy may be in you, and that your joy may be full."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "Nehemiah 8:10",
+          "book": "Nehemiah",
+          "chapter": 8,
+          "verseStart": 10
+        },
+        {
+          "display": "Philippians 4:4",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 4
+        },
+        {
+          "display": "John 15:11",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 11
+        },
+        {
+          "display": "1 Thessalonians 5:16–18",
+          "book": "1 Thessalonians",
+          "chapter": 5,
+          "verseStart": 16,
+          "verseEnd": 18
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: happiness rented from circumstances; bitterness when the rent comes due.",
+        "When joy dies with the outcome, speak one true thing about God that does not depend on them.",
+        "Grief is allowed; bitterness as identity is not. Rejoice in the Lord — His joy is your strength."
+      ],
+      "prayers": [
+        "Lord, I release joy rented from outcomes. Be my strength and restore Your joy. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "count-the-trial-as-joy",
+        "hope-of-glory",
+        "loss",
+        "peace",
+        "love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/joy",
+      "markdownUrl": "https://bedrock.rippel.ai/c/joy.md"
+    },
+    {
+      "id": "peace",
+      "title": "Peace",
+      "summary": "Spirit fruit: peace.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is peace."
+        },
+        {
+          "type": "paragraph",
+          "text": "Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful."
+        },
+        {
+          "type": "paragraph",
+          "text": "You keep him in perfect peace whose mind is stayed on You, because he trusts in You."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "John 14:27",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 27
+        },
+        {
+          "display": "Philippians 4:6–7",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6,
+          "verseEnd": 7
+        },
+        {
+          "display": "Colossians 3:15",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 15
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: numbness, conflict-avoidance, or “peace” that only arrives when you grip the timeline.",
+        "Stop negotiating every what-if. Pray, thank, and receive the guard over heart and mind.",
+        "Peace is given, not earned. Receive it; let the peace of Christ rule this hour."
+      ],
+      "prayers": [
+        "Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "fear",
+        "do-not-fear",
+        "trust-in-the-lord",
+        "take-every-thought-captive",
+        "patience"
+      ],
+      "url": "https://bedrock.rippel.ai/c/peace",
+      "markdownUrl": "https://bedrock.rippel.ai/c/peace.md"
+    },
+    {
+      "id": "patience",
+      "title": "Patience",
+      "summary": "Spirit fruit: patience.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is patience."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. You also, be patient. Establish your hearts, for the coming of the Lord is at hand."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!"
+        },
+        {
+          "type": "paragraph",
+          "text": "Rejoice in hope, be patient in tribulation, be constant in prayer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love is patient and kind."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "James 5:7–8",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 7,
+          "verseEnd": 8
+        },
+        {
+          "display": "Psalm 27:14",
+          "book": "Psalm",
+          "chapter": 27,
+          "verseStart": 14
+        },
+        {
+          "display": "Romans 12:12",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 12
+        },
+        {
+          "display": "1 Corinthians 13:4",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: force the outcome, rage at the clock, punish them for not moving on your schedule.",
+        "When urgency screams “fix them,” answer: wait for the Lord; do the one duty you own today.",
+        "Slow the reply. Soften the tone. Love is patient — you are not the weather."
+      ],
+      "prayers": [
+        "Father, I release outcomes I cannot rule. Grow patience while I wait on You. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "wait-on-the-lord",
+        "love-and-patience",
+        "trust-in-the-lord",
+        "peace",
+        "self-control"
+      ],
+      "url": "https://bedrock.rippel.ai/c/patience",
+      "markdownUrl": "https://bedrock.rippel.ai/c/patience.md"
+    },
+    {
+      "id": "kindness",
+      "title": "Kindness",
+      "summary": "Spirit fruit: kindness.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is kindness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart."
+        },
+        {
+          "type": "paragraph",
+          "text": "Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God’s kindness is meant to lead you to repentance?"
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "Ephesians 4:32",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 32
+        },
+        {
+          "display": "Colossians 3:12",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 12
+        },
+        {
+          "display": "Proverbs 3:3",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 3
+        },
+        {
+          "display": "Romans 2:4",
+          "book": "Romans",
+          "chapter": 2,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: niceness to manage image, or harshness justified as “just being honest.”",
+        "Replace the sharp text with one true, clean sentence — or silence if silence is love.",
+        "Do one kind act without announcement. Kindness that needs credit is still flesh."
+      ],
+      "prayers": [
+        "Lord, I release the sharp edge. Soften what is hard in me. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "be-quick-to-listen",
+        "forgive-as-you-have-been-forgiven",
+        "restore-gently-and-give-time",
+        "goodness",
+        "gentleness"
+      ],
+      "url": "https://bedrock.rippel.ai/c/kindness",
+      "markdownUrl": "https://bedrock.rippel.ai/c/kindness.md"
+    },
+    {
+      "id": "goodness",
+      "title": "Goodness",
+      "summary": "Spirit fruit: goodness.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is goodness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let love be genuine. Abhor what is evil; hold fast to what is good."
+        },
+        {
+          "type": "paragraph",
+          "text": "He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the fruit of light is found in all that is good and right and true."
+        },
+        {
+          "type": "paragraph",
+          "text": "Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "Romans 12:9",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 9
+        },
+        {
+          "display": "Micah 6:8",
+          "book": "Micah",
+          "chapter": 6,
+          "verseStart": 8
+        },
+        {
+          "display": "Ephesians 5:9",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 9
+        },
+        {
+          "display": "Psalm 23:6",
+          "book": "Psalm",
+          "chapter": 23,
+          "verseStart": 6
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: performative virtue, self-justifying “good reasons,” or evil for a noble end.",
+        "Ask: is this good, or only useful for my case? Choose light over managed darkness.",
+        "One honest yes, one honest no. Half-truths are full lies with better manners."
+      ],
+      "prayers": [
+        "Lord, I release useful darkness. Keep me clinging to what is good. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "walk-in-honesty-and-truth",
+        "confess-and-be-cleansed",
+        "the-full-armor-of-god",
+        "kindness",
+        "faithfulness"
+      ],
+      "url": "https://bedrock.rippel.ai/c/goodness",
+      "markdownUrl": "https://bedrock.rippel.ai/c/goodness.md"
+    },
+    {
+      "id": "faithfulness",
+      "title": "Faithfulness",
+      "summary": "Spirit fruit: faithfulness.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is faithfulness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, it is required of stewards that they be found faithful."
+        },
+        {
+          "type": "paragraph",
+          "text": "The steadfast love of the Lord never ceases; His mercies never come to an end; they are new every morning; great is Your faithfulness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man."
+        },
+        {
+          "type": "paragraph",
+          "text": "If we are faithless, He remains faithful—for He cannot deny Himself."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22
+        },
+        {
+          "display": "1 Corinthians 4:2",
+          "book": "1 Corinthians",
+          "chapter": 4,
+          "verseStart": 2
+        },
+        {
+          "display": "Lamentations 3:22–23",
+          "book": "Lamentations",
+          "chapter": 3,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "Proverbs 3:3–4",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "2 Timothy 2:13",
+          "book": "2 Timothy",
+          "chapter": 2,
+          "verseStart": 13
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: conditional loyalty, ghosting covenant, “I need to be true to myself” as exit ramp.",
+        "Covenant is not a contract of feelings. Keep the next faithful act you already know is right.",
+        "When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true."
+      ],
+      "prayers": [
+        "Lord, You are faithful. I release exit stories. Keep me true. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "marriage-covenant",
+        "god-on-marriage",
+        "his-promises",
+        "goodness",
+        "gentleness"
+      ],
+      "url": "https://bedrock.rippel.ai/c/faithfulness",
+      "markdownUrl": "https://bedrock.rippel.ai/c/faithfulness.md"
+    },
+    {
+      "id": "gentleness",
+      "title": "Gentleness",
+      "summary": "Spirit fruit: gentleness.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is gentleness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted."
+        },
+        {
+          "type": "paragraph",
+          "text": "Take My yoke upon you, and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let your reasonableness be known to everyone. The Lord is at hand."
+        },
+        {
+          "type": "paragraph",
+          "text": "Always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "Galatians 6:1",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 1
+        },
+        {
+          "display": "Matthew 11:29",
+          "book": "Matthew",
+          "chapter": 11,
+          "verseStart": 29
+        },
+        {
+          "display": "Philippians 4:5",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 5
+        },
+        {
+          "display": "1 Peter 3:15",
+          "book": "1 Peter",
+          "chapter": 3,
+          "verseStart": 15
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: harsh correction to feel powerful, or limp avoidance labeled “gentleness.”",
+        "If you must correct, restore gently — and audit your pride first. Contempt is not courage.",
+        "Soft answer to hard moment. Truth without the knife. No venom."
+      ],
+      "prayers": [
+        "Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "restore-gently-and-give-time",
+        "guard-your-heart-and-mouth",
+        "leave-vengeance-to-the-lord",
+        "kindness",
+        "self-control"
+      ],
+      "url": "https://bedrock.rippel.ai/c/gentleness",
+      "markdownUrl": "https://bedrock.rippel.ai/c/gentleness.md"
+    },
+    {
+      "id": "self-control",
+      "title": "Self-control",
+      "summary": "Spirit fruit: self-control.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is self-control; against such things there is no law."
+        },
+        {
+          "type": "paragraph",
+          "text": "For God gave us a spirit not of fear but of power and love and self-control."
+        },
+        {
+          "type": "paragraph",
+          "text": "A man without self-control is like a city broken into and left without walls."
+        },
+        {
+          "type": "paragraph",
+          "text": "Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "Proverbs 25:28",
+          "book": "Proverbs",
+          "chapter": 25,
+          "verseStart": 28
+        },
+        {
+          "display": "1 Corinthians 9:25",
+          "book": "1 Corinthians",
+          "chapter": 9,
+          "verseStart": 25
+        },
+        {
+          "display": "Titus 2:11–12",
+          "book": "Titus",
+          "chapter": 2,
+          "verseStart": 11,
+          "verseEnd": 12
+        }
+      ],
+      "hacks": [
+        "Flesh counterfeit: impulse as master — rage, lust, the check-again loop — or controlling them because you cannot control you.",
+        "Name the impulse. Delay. Capture the thought. Do the next right fruit under the Spirit.",
+        "Self-control rules you — not them. Keep in step with the Spirit when the flesh wants the last word."
+      ],
+      "prayers": [
+        "Holy Spirit, I release the impulse to master others — and myself in rage. Keep me in step. Amen."
+      ],
+      "related": [
+        "walk-by-the-spirit",
+        "deny-yourself",
+        "take-every-thought-captive",
+        "rumination",
+        "wait-on-the-lord",
+        "patience"
+      ],
+      "url": "https://bedrock.rippel.ai/c/self-control",
+      "markdownUrl": "https://bedrock.rippel.ai/c/self-control.md"
+    },
+    {
+      "id": "god-on-marriage",
+      "title": "God on Marriage",
+      "summary": "God designed marriage as a lifelong one-flesh covenant and hates divorce.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "God is the witness between a man and the wife of his youth."
+        },
+        {
+          "type": "paragraph",
+          "text": "What He has joined, no one should separate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Malachi 2:14–16",
+          "book": "Malachi",
+          "chapter": 2,
+          "verseStart": 14,
+          "verseEnd": 16
+        },
+        {
+          "display": "Matthew 19:4–6",
+          "book": "Matthew",
+          "chapter": 19,
+          "verseStart": 4,
+          "verseEnd": 6
+        },
+        {
+          "display": "Matthew 19:8–9",
+          "book": "Matthew",
+          "chapter": 19,
+          "verseStart": 8,
+          "verseEnd": 9
+        },
+        {
+          "display": "Luke 16:18",
+          "book": "Luke",
+          "chapter": 16,
+          "verseStart": 18
+        }
+      ],
+      "hacks": [
+        "God’s design does not change when feelings collapse. Hold the standard; entrust the outcome.",
+        "He is witness between a man and the wife of his youth. Speak as if He is in the room."
+      ],
+      "prayers": [
+        "Father of the covenant, I release my grip on the outcome. Make me faithful under Your eye. Amen."
+      ],
+      "related": [
+        "marriage-covenant",
+        "love-and-patience",
+        "forgive-as-you-have-been-forgiven"
+      ],
+      "url": "https://bedrock.rippel.ai/c/god-on-marriage",
+      "markdownUrl": "https://bedrock.rippel.ai/c/god-on-marriage.md"
+    },
+    {
+      "id": "marriage-covenant",
+      "title": "Marriage Covenant",
+      "summary": "One-flesh covenant. Sacrificial love.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The husband is the head of the wife even as Christ is the head of the church, His body, and is Himself its Savior."
+        },
+        {
+          "type": "paragraph",
+          "text": "Husbands, love your wives, as Christ loved the church and gave Himself up for her, that He might sanctify her, having cleansed her by the washing of water with the word."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, let each one of you love his wife as himself, and let the wife see that she respects her husband."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wives, be subject to your own husbands, so that even if some do not obey the word, they may be won without a word by the conduct of their wives, when they see your respectful and pure conduct."
+        },
+        {
+          "type": "paragraph",
+          "text": "She does him good, and not harm, all the days of her life."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not deprive one another, except perhaps by agreement for a limited time, that you may devote yourselves to prayer; but then come together again."
+        },
+        {
+          "type": "paragraph",
+          "text": "To the married I give this charge (not I, but the Lord): the wife should not separate from her husband… and the husband should not divorce his wife."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 5:23",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 23
+        },
+        {
+          "display": "Ephesians 5:25–26",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 25,
+          "verseEnd": 26
+        },
+        {
+          "display": "Ephesians 5:33",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 33
+        },
+        {
+          "display": "1 Peter 3:1–2",
+          "book": "1 Peter",
+          "chapter": 3,
+          "verseStart": 1,
+          "verseEnd": 2
+        },
+        {
+          "display": "Proverbs 31:12",
+          "book": "Proverbs",
+          "chapter": 31,
+          "verseStart": 12
+        },
+        {
+          "display": "1 Corinthians 7:5",
+          "book": "1 Corinthians",
+          "chapter": 7,
+          "verseStart": 5
+        },
+        {
+          "display": "1 Corinthians 7:10–11",
+          "book": "1 Corinthians",
+          "chapter": 7,
+          "verseStart": 10,
+          "verseEnd": 11
+        },
+        {
+          "display": "Matthew 19:6",
+          "book": "Matthew",
+          "chapter": 19,
+          "verseStart": 6
+        },
+        {
+          "display": "Matthew 19:8–9",
+          "book": "Matthew",
+          "chapter": 19,
+          "verseStart": 8,
+          "verseEnd": 9
+        }
+      ],
+      "hacks": [
+        "Covenant is not a contract of feelings. Lead by sacrifice, not by winning the argument.",
+        "If separation exists: do not invent a new story. Remain faithful to what God still calls true."
+      ],
+      "prayers": [
+        "Lord of the covenant, I release winning the argument. Make me faithful. Amen."
+      ],
+      "related": [
+        "god-on-marriage",
+        "love-and-patience",
+        "choose-selfless-love",
+        "leave-vengeance-to-the-lord",
+        "faithfulness",
+        "love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/marriage-covenant",
+      "markdownUrl": "https://bedrock.rippel.ai/c/marriage-covenant.md"
+    },
+    {
+      "id": "love-and-patience",
+      "title": "Love and Patience",
+      "summary": "True love is patient, kind, and keeps no record of wrongs.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Love does not envy, boast, or act proudly. It is not self-seeking or easily angered."
+        },
+        {
+          "type": "paragraph",
+          "text": "It always protects, trusts, hopes, and perseveres."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Corinthians 13:4–7",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 7
+        }
+      ],
+      "hacks": [
+        "Love keeps no record of wrongs — delete the scoreboard you keep replaying.",
+        "Patience is love under pressure. Slow the reply. Soften the tone. Protect, trust, hope, persevere."
+      ],
+      "prayers": [
+        "Lord, I release the scoreboard. Soften me to love and wait as You love. Amen."
+      ],
+      "related": [
+        "marriage-covenant",
+        "forgive-as-you-have-been-forgiven",
+        "be-quick-to-listen",
+        "love",
+        "patience"
+      ],
+      "url": "https://bedrock.rippel.ai/c/love-and-patience",
+      "markdownUrl": "https://bedrock.rippel.ai/c/love-and-patience.md"
+    },
+    {
+      "id": "count-the-trial-as-joy",
+      "title": "Count the Trial as Joy",
+      "summary": "Consider it pure joy when you face trials.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The testing of your faith produces perseverance that makes you mature and complete."
+        },
+        {
+          "type": "paragraph",
+          "text": "Suffering produces perseverance; perseverance, character; and character, hope."
+        }
+      ],
+      "verses": [
+        {
+          "display": "James 1:2–4",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 2,
+          "verseEnd": 4
+        },
+        {
+          "display": "Romans 5:3–4",
+          "book": "Romans",
+          "chapter": 5,
+          "verseStart": 3,
+          "verseEnd": 4
+        }
+      ],
+      "hacks": [
+        "Joy here is not denial. It is trusting that testing is producing endurance, not random cruelty.",
+        "Name the fruit goal: perseverance → character → hope. Ask which of the three is forming today."
+      ],
+      "prayers": [
+        "Father, I do not love this fire. I release the demand that it stop on my terms. Use it. Amen."
+      ],
+      "related": [
+        "wait-on-the-lord",
+        "hope-of-glory",
+        "lament-and-pour-out-your-heart",
+        "joy"
+      ],
+      "url": "https://bedrock.rippel.ai/c/count-the-trial-as-joy",
+      "markdownUrl": "https://bedrock.rippel.ai/c/count-the-trial-as-joy.md"
+    },
+    {
+      "id": "wait-on-the-lord",
+      "title": "Wait on the Lord",
+      "summary": "When everything is out of your control — wait. Be strong. Take courage.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Wait for the Lord; be strong, and let your heart take courage; wait for the Lord."
+        },
+        {
+          "type": "paragraph",
+          "text": "Those who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Lord is good to those who wait for Him, to the soul who seeks Him."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still before the Lord and wait patiently for Him; fret not yourself over the one who prospers in his way."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 27:14",
+          "book": "Psalm",
+          "chapter": 27,
+          "verseStart": 14
+        },
+        {
+          "display": "Isaiah 40:31",
+          "book": "Isaiah",
+          "chapter": 40,
+          "verseStart": 31
+        },
+        {
+          "display": "Lamentations 3:25",
+          "book": "Lamentations",
+          "chapter": 3,
+          "verseStart": 25
+        },
+        {
+          "display": "Psalm 37:7",
+          "book": "Psalm",
+          "chapter": 37,
+          "verseStart": 7
+        }
+      ],
+      "hacks": [
+        "Be strong. Take courage. Wait for the Lord — not for your timeline to bend.",
+        "Those who wait renew strength. Force is flesh; waiting is faith with open hands.",
+        "Stop forcing outcomes you cannot rule. Obey today; leave the harvest to Him."
+      ],
+      "prayers": [
+        "Lord, I wait for You. I release forced outcomes. Renew my strength. Amen."
+      ],
+      "related": [
+        "count-the-trial-as-joy",
+        "trust-in-the-lord",
+        "do-not-fear",
+        "patience",
+        "self-control"
+      ],
+      "url": "https://bedrock.rippel.ai/c/wait-on-the-lord",
+      "markdownUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord.md"
+    },
+    {
+      "id": "lament-and-pour-out-your-heart",
+      "title": "Lament and Pour Out Your Heart",
+      "summary": "Pour out your heart like water before the presence of the Lord.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "How long, O Lord? Will You forget me forever?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Lord is near to the brokenhearted and saves the crushed in spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trust in Him at all times… pour out your heart before Him."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Lamentations 2:19",
+          "book": "Lamentations",
+          "chapter": 2,
+          "verseStart": 19
+        },
+        {
+          "display": "Psalm 13:1",
+          "book": "Psalm",
+          "chapter": 13,
+          "verseStart": 1
+        },
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Psalm 62:8",
+          "book": "Psalm",
+          "chapter": 62,
+          "verseStart": 8
+        }
+      ],
+      "hacks": [
+        "Lament is allowed. Stuffing is not holiness. Pour it out to God, not onto people as weapons.",
+        "“How long, O Lord?” is Scripture language. Use it instead of bitterness monologue."
+      ],
+      "prayers": [
+        "Lord, I pour out my heart. I release the need to hold it alone. Stay near. Amen."
+      ],
+      "related": [
+        "a-broken-and-contrite-heart",
+        "wait-on-the-lord",
+        "he-is-for-you",
+        "loss"
+      ],
+      "url": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart",
+      "markdownUrl": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md"
+    },
+    {
+      "id": "a-broken-and-contrite-heart",
+      "title": "A Broken and Contrite Heart",
+      "summary": "The Lord is near to the brokenhearted.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "This is the one to whom I will look: he who is humble and contrite in spirit and trembles at My word."
+        },
+        {
+          "type": "paragraph",
+          "text": "The sacrifices of God are a broken spirit; a broken and contrite heart, O God, You will not despise."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Isaiah 66:2",
+          "book": "Isaiah",
+          "chapter": 66,
+          "verseStart": 2
+        },
+        {
+          "display": "Psalm 51:17",
+          "book": "Psalm",
+          "chapter": 51,
+          "verseStart": 17
+        }
+      ],
+      "hacks": [
+        "Broken is not useless. God looks to the humble and contrite — not the polished performance.",
+        "Do not rush past conviction. Sit with a clean sorrow that leads to life, not a toxic shame that freezes you."
+      ],
+      "prayers": [
+        "Father, I bring a broken heart. I release pride. Look upon me in mercy. Amen."
+      ],
+      "related": [
+        "lament-and-pour-out-your-heart",
+        "confess-and-be-cleansed",
+        "the-righteous-fall",
+        "loss"
+      ],
+      "url": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart",
+      "markdownUrl": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md"
+    },
+    {
+      "id": "guard-your-heart-and-mouth",
+      "title": "Guard Your Heart and Mouth",
+      "summary": "Gate the heart and the mouth.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        },
+        {
+          "type": "paragraph",
+          "text": "Set a guard, O Lord, over my mouth; keep watch over the door of my lips!"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Proverbs 4:23",
+          "book": "Proverbs",
+          "chapter": 4,
+          "verseStart": 23
+        },
+        {
+          "display": "Psalm 141:3",
+          "book": "Psalm",
+          "chapter": 141,
+          "verseStart": 3
+        },
+        {
+          "display": "Ephesians 4:29",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 29
+        }
+      ],
+      "hacks": [
+        "Everything flows from the heart — so gate the inputs and the words. Silence is sometimes love.",
+        "Before you speak: does this build up according to need, or does it only relieve my pressure?"
+      ],
+      "prayers": [
+        "Lord, I release the sharp word. Guard my mouth and keep my heart. Amen."
+      ],
+      "related": [
+        "be-quick-to-listen",
+        "walk-in-honesty-and-truth",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth",
+      "markdownUrl": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md"
+    },
+    {
+      "id": "be-quick-to-listen",
+      "title": "Be Quick to Listen",
+      "summary": "Quick to hear. Slow to speak. Slow to anger.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God."
+        }
+      ],
+      "verses": [
+        {
+          "display": "James 1:19–20",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 19,
+          "verseEnd": 20
+        }
+      ],
+      "hacks": [
+        "Count to three before you answer. Listening is not losing; it is refusing to let anger drive.",
+        "Anger is fast flesh. Listening is love under pressure — hear fully before you defend, explain, or strike.",
+        "Slow to speak is spiritual warfare when the flesh wants the last word."
+      ],
+      "prayers": [
+        "Lord, I release the need for the last word. Make me quick to listen. Amen."
+      ],
+      "related": [
+        "guard-your-heart-and-mouth",
+        "love-and-patience",
+        "restore-gently-and-give-time"
+      ],
+      "url": "https://bedrock.rippel.ai/c/be-quick-to-listen",
+      "markdownUrl": "https://bedrock.rippel.ai/c/be-quick-to-listen.md"
+    },
+    {
+      "id": "restore-gently-and-give-time",
+      "title": "Restore Gently and Give Time",
+      "summary": "Gentleness and timing.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted."
+        },
+        {
+          "type": "paragraph",
+          "text": "For everything there is a season, and a time for every matter under heaven."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 6:1",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 1
+        },
+        {
+          "display": "Ecclesiastes 3:1",
+          "book": "Ecclesiastes",
+          "chapter": 3,
+          "verseStart": 1
+        }
+      ],
+      "hacks": [
+        "Gentleness is not weakness. Restore with care — and watch yourself so you do not fall the same way.",
+        "There is a time for everything. Do not force a harvest in a winter season."
+      ],
+      "prayers": [
+        "Father, I release forced harvests. Teach me gentle timing under Your hand. Amen."
+      ],
+      "related": [
+        "confess-and-be-cleansed",
+        "love-and-patience",
+        "one-another-in-the-body",
+        "gentleness"
+      ],
+      "url": "https://bedrock.rippel.ai/c/restore-gently-and-give-time",
+      "markdownUrl": "https://bedrock.rippel.ai/c/restore-gently-and-give-time.md"
+    },
+    {
+      "id": "confess-and-be-cleansed",
+      "title": "Confess and Be Cleansed",
+      "summary": "Confess. Be cleansed. Draw near.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore, confess your sins to one another and pray for one another, that you may be healed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 John 1:9",
+          "book": "1 John",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "James 5:16",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 16
+        },
+        {
+          "display": "Hebrews 4:16",
+          "book": "Hebrews",
+          "chapter": 4,
+          "verseStart": 16
+        }
+      ],
+      "hacks": [
+        "Confession is specific. Vague sorrow keeps the sin warm. Name it, release it, receive cleansing.",
+        "Draw near with confidence — not swagger. Mercy is for need, not for performance."
+      ],
+      "prayers": [
+        "Father, I confess. I release this sin into Your light. Cleanse me. Amen."
+      ],
+      "related": [
+        "the-righteous-fall",
+        "a-broken-and-contrite-heart",
+        "his-grace-is-sufficient",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/confess-and-be-cleansed",
+      "markdownUrl": "https://bedrock.rippel.ai/c/confess-and-be-cleansed.md"
+    },
+    {
+      "id": "walk-in-honesty-and-truth",
+      "title": "Walk in Honesty and Truth",
+      "summary": "Truthful lips. Yes and no.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Lying lips are an abomination to the Lord, but those who act faithfully are His delight."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let what you say be simply “Yes” or “No”; anything more than this comes from evil."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Proverbs 12:22",
+          "book": "Proverbs",
+          "chapter": 12,
+          "verseStart": 22
+        },
+        {
+          "display": "Ephesians 4:25",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 25
+        },
+        {
+          "display": "Matthew 5:37",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 37
+        }
+      ],
+      "hacks": [
+        "Let your yes be yes. Half-truths are full lies with better manners.",
+        "Put off falsehood even when truth costs status. Light is safer than managed darkness."
+      ],
+      "prayers": [
+        "Lord, I release managed darkness. Keep me in the light with straight words. Amen."
+      ],
+      "related": [
+        "falsehood",
+        "confess-and-be-cleansed",
+        "guard-your-heart-and-mouth",
+        "the-full-armor-of-god"
+      ],
+      "url": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth",
+      "markdownUrl": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md"
+    },
+    {
+      "id": "choose-selfless-love",
+      "title": "Choose Selfless Love",
+      "summary": "In humility value others above yourselves.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Look not only to your own interests, but also to the interests of others."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Philippians 2:3–4",
+          "book": "Philippians",
+          "chapter": 2,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "James 3:14–16",
+          "book": "James",
+          "chapter": 3,
+          "verseStart": 14,
+          "verseEnd": 16
+        }
+      ],
+      "hacks": [
+        "In humility count others more significant. Ask: what serves them, not what wins for me?",
+        "Selfish ambition feels like clarity and is often poison. Check the motive before the move."
+      ],
+      "prayers": [
+        "Lord, I release selfish ambition. Open my hands to serve in love. Amen."
+      ],
+      "related": [
+        "love-and-patience",
+        "deny-yourself",
+        "marriage-covenant",
+        "love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/choose-selfless-love",
+      "markdownUrl": "https://bedrock.rippel.ai/c/choose-selfless-love.md"
+    },
+    {
+      "id": "do-not-repay-evil-with-evil",
+      "title": "Do Not Repay Evil with Evil",
+      "summary": "Do not repay evil with evil or insult with insult.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "On the contrary, repay evil with blessing."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Peter 3:9",
+          "book": "1 Peter",
+          "chapter": 3,
+          "verseStart": 9
+        }
+      ],
+      "hacks": [
+        "Blessing is the counter-move. Evil repaid with evil multiplies darkness.",
+        "When insult rises, answer with a blessing — out loud if you can, in prayer if you cannot yet."
+      ],
+      "prayers": [
+        "Lord, I release repayment. Teach me to bless and entrust the rest to You. Amen."
+      ],
+      "related": [
+        "leave-vengeance-to-the-lord",
+        "forgive-as-you-have-been-forgiven",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil",
+      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md"
+    },
+    {
+      "id": "leave-vengeance-to-the-lord",
+      "title": "Leave Vengeance to the Lord",
+      "summary": "Vengeance belongs to Him — and hatred has no place with love.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The Lord will fight for you; you need only be still."
+        },
+        {
+          "type": "paragraph",
+          "text": "Never avenge yourselves. Leave it to the wrath of God. Vengeance belongs to Him; He will repay."
+        },
+        {
+          "type": "paragraph",
+          "text": "If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him."
+        },
+        {
+          "type": "paragraph",
+          "text": "You shall not take vengeance or bear a grudge… but you shall love your neighbor as yourself."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love your enemies and pray for those who persecute you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Exodus 14:14",
+          "book": "Exodus",
+          "chapter": 14,
+          "verseStart": 14
+        },
+        {
+          "display": "Romans 12:19",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 19
+        },
+        {
+          "display": "1 John 4:20",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 20
+        },
+        {
+          "display": "1 John 3:15",
+          "book": "1 John",
+          "chapter": 3,
+          "verseStart": 15
+        },
+        {
+          "display": "Leviticus 19:17–18",
+          "book": "Leviticus",
+          "chapter": 19,
+          "verseStart": 17,
+          "verseEnd": 18
+        },
+        {
+          "display": "Matthew 5:43–44",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 43,
+          "verseEnd": 44
+        }
+      ],
+      "hacks": [
+        "Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.",
+        "If the urge is to repay, that is flesh. Bless, entrust the scales to God, do the next right thing.",
+        "Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin."
+      ],
+      "prayers": [
+        "Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen."
+      ],
+      "related": [
+        "do-not-repay-evil-with-evil",
+        "forgive-as-you-have-been-forgiven",
+        "wait-on-the-lord",
+        "love-and-patience",
+        "choose-selfless-love",
+        "fear",
+        "love",
+        "gentleness",
+        "wounded"
+      ],
+      "url": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord",
+      "markdownUrl": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md"
+    },
+    {
+      "id": "forgive-as-you-have-been-forgiven",
+      "title": "Forgive as You Have Been Forgiven",
+      "summary": "Forgive one another as God in Christ forgave you.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "If you do not forgive others their trespasses, neither will your Father forgive your trespasses."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be kind to one another, tenderhearted, forgiving one another."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 4:32",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 32
+        },
+        {
+          "display": "Matthew 6:14–15",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 14,
+          "verseEnd": 15
+        },
+        {
+          "display": "Colossians 3:13",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 13
+        }
+      ],
+      "hacks": [
+        "Forgiveness is not saying it did not hurt. It is releasing vengeance to God and refusing the debt ledger.",
+        "Unforgiveness chains you to the wound. Forgiveness frees you to obey — even while grief remains."
+      ],
+      "prayers": [
+        "Lord, as You forgave me, I release this debt. Soften my heart. Amen."
+      ],
+      "related": [
+        "the-cross-and-our-justification",
+        "leave-vengeance-to-the-lord",
+        "love-and-patience"
+      ],
+      "url": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven",
+      "markdownUrl": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md"
+    },
+    {
+      "id": "one-another-in-the-body",
+      "title": "One Another in the Body",
+      "summary": "Bear one another’s burdens, and so fulfill the law of Christ.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Encourage one another daily… that none of you may be hardened by the deceitfulness of sin."
+        },
+        {
+          "type": "paragraph",
+          "text": "Confess your sins to one another and pray for one another."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let us consider how to stir up one another to love and good works, not neglecting to meet together."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 6:2",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 2
+        },
+        {
+          "display": "Hebrews 3:13",
+          "book": "Hebrews",
+          "chapter": 3,
+          "verseStart": 13
+        },
+        {
+          "display": "James 5:16",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 16
+        },
+        {
+          "display": "Hebrews 10:24–25",
+          "book": "Hebrews",
+          "chapter": 10,
+          "verseStart": 24,
+          "verseEnd": 25
+        }
+      ],
+      "hacks": [
+        "You were not designed to carry this alone. Bear burdens — and let trusted saints bear yours.",
+        "Encourage daily. Isolation hardens the heart; presence softens deceit."
+      ],
+      "prayers": [
+        "Father, I release isolation. Place me in Your body to give and receive. Amen."
+      ],
+      "related": [
+        "restore-gently-and-give-time",
+        "confess-and-be-cleansed",
+        "choose-selfless-love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/one-another-in-the-body",
+      "markdownUrl": "https://bedrock.rippel.ai/c/one-another-in-the-body.md"
+    },
+    {
+      "id": "trust-in-the-lord",
+      "title": "Trust in the Lord",
+      "summary": "When you cannot grip the outcome — trust.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Proverbs 3:5–6",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5,
+          "verseEnd": 6
+        },
+        {
+          "display": "Philippians 4:6–7",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6,
+          "verseEnd": 7
+        },
+        {
+          "display": "Matthew 6:27",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 27
+        },
+        {
+          "display": "Matthew 6:34",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 34
+        }
+      ],
+      "hacks": [
+        "Trust in the Lord with all your heart — lean not on panic as if it were wisdom.",
+        "In all your ways acknowledge Him; take only the next straight step He shows.",
+        "Release the outcome you cannot rule. He still holds the path."
+      ],
+      "prayers": [
+        "Lord, I trust You with all my heart. I release control. Direct my path. Amen."
+      ],
+      "related": [
+        "god-first",
+        "do-not-fear",
+        "wait-on-the-lord",
+        "his-promises",
+        "faithfulness",
+        "patience",
+        "control"
+      ],
+      "url": "https://bedrock.rippel.ai/c/trust-in-the-lord",
+      "markdownUrl": "https://bedrock.rippel.ai/c/trust-in-the-lord.md"
+    },
+    {
+      "id": "do-not-fear",
+      "title": "Do Not Fear",
+      "summary": "God has not given you a spirit of fear, but of power, love, and a sound mind.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Do not fear, for He is with you."
+        },
+        {
+          "type": "paragraph",
+          "text": "You cannot add a single hour to your life. Even the hairs of your head are all numbered."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "Isaiah 41:10",
+          "book": "Isaiah",
+          "chapter": 41,
+          "verseStart": 10
+        },
+        {
+          "display": "Philippians 4:6",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "Matthew 6:27",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 27
+        },
+        {
+          "display": "Matthew 10:30",
+          "book": "Matthew",
+          "chapter": 10,
+          "verseStart": 30
+        }
+      ],
+      "hacks": [
+        "Fear is a spirit-claim. Counter it: power, love, sound mind — then take the next obedient step.",
+        "You cannot add an hour by worry. So put the hour into prayer and duty instead."
+      ],
+      "prayers": [
+        "Lord, I release the spirit of fear. Be with me. Steady my mind. Amen."
+      ],
+      "related": [
+        "fear",
+        "trust-in-the-lord",
+        "his-promises",
+        "take-every-thought-captive"
+      ],
+      "url": "https://bedrock.rippel.ai/c/do-not-fear",
+      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-fear.md"
+    },
+    {
+      "id": "fear",
+      "title": "Fear",
+      "summary": "There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "When I am afraid, I put my trust in You."
+        },
+        {
+          "type": "paragraph",
+          "text": "The fear of man lays a snare, but whoever trusts in the Lord is safe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go."
+        },
+        {
+          "type": "paragraph",
+          "text": "For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”"
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 John 4:18",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 18
+        },
+        {
+          "display": "Psalm 56:3",
+          "book": "Psalm",
+          "chapter": 56,
+          "verseStart": 3
+        },
+        {
+          "display": "Proverbs 29:25",
+          "book": "Proverbs",
+          "chapter": 29,
+          "verseStart": 25
+        },
+        {
+          "display": "John 14:27",
+          "book": "John",
+          "chapter": 14,
+          "verseStart": 27
+        },
+        {
+          "display": "Joshua 1:9",
+          "book": "Joshua",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "Romans 8:15",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 15
+        }
+      ],
+      "hacks": [
+        "Perfect love casts out fear — run toward His love, not toward control.",
+        "When I am afraid, I put my trust in You. Name the fear; then trust.",
+        "Fear of man lays a snare. Put that face down. You cry Abba, Father — not slave to terror."
+      ],
+      "prayers": [
+        "Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen."
+      ],
+      "related": [
+        "do-not-fear",
+        "trust-in-the-lord",
+        "loss",
+        "take-every-thought-captive",
+        "his-promises",
+        "he-is-for-you",
+        "his-grace-is-sufficient",
+        "peace"
+      ],
+      "url": "https://bedrock.rippel.ai/c/fear",
+      "markdownUrl": "https://bedrock.rippel.ai/c/fear.md"
+    },
+    {
+      "id": "loss",
+      "title": "Loss",
+      "summary": "Grief for real loss and possible loss — He is near the brokenhearted.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The Lord is near to the brokenhearted and saves the crushed in spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Blessed are those who mourn, for they shall be comforted."
+        },
+        {
+          "type": "paragraph",
+          "text": "But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Lord gave, and the Lord has taken away; blessed be the name of the Lord."
+        },
+        {
+          "type": "paragraph",
+          "text": "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Matthew 5:4",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 4
+        },
+        {
+          "display": "1 Thessalonians 4:13",
+          "book": "1 Thessalonians",
+          "chapter": 4,
+          "verseStart": 13
+        },
+        {
+          "display": "Job 1:21",
+          "book": "Job",
+          "chapter": 1,
+          "verseStart": 21
+        },
+        {
+          "display": "Revelation 21:4",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "The Lord is near the brokenhearted — mourning is not unbelief.",
+        "Do not grieve as those without hope. Hope does not erase tears; it frames them.",
+        "The Lord gave and the Lord has taken away — bless His name with empty hands."
+      ],
+      "prayers": [
+        "Father, my hands are empty. I release what I cannot keep. Be near the broken place. Amen."
+      ],
+      "related": [
+        "lament-and-pour-out-your-heart",
+        "a-broken-and-contrite-heart",
+        "hope-of-glory",
+        "wait-on-the-lord",
+        "he-is-for-you",
+        "fear",
+        "wounded",
+        "rumination"
+      ],
+      "url": "https://bedrock.rippel.ai/c/loss",
+      "markdownUrl": "https://bedrock.rippel.ai/c/loss.md"
+    },
+    {
+      "id": "wounded",
+      "title": "Wounded",
+      "summary": "You were harmed — God sees; He is near the crushed.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The Lord is near to the brokenhearted and saves the crushed in spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "He heals the brokenhearted and binds up their wounds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not repay evil for evil or reviling for reviling, but on the contrary, bless, for to this you were called, that you may obtain a blessing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fear not, for I have redeemed you; I have called you by name, you are Mine."
+        },
+        {
+          "type": "paragraph",
+          "text": "For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”"
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 34:18",
+          "book": "Psalm",
+          "chapter": 34,
+          "verseStart": 18
+        },
+        {
+          "display": "Psalm 147:3",
+          "book": "Psalm",
+          "chapter": 147,
+          "verseStart": 3
+        },
+        {
+          "display": "1 Peter 3:9",
+          "book": "1 Peter",
+          "chapter": 3,
+          "verseStart": 9
+        },
+        {
+          "display": "Romans 12:19",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 19
+        },
+        {
+          "display": "Isaiah 43:1",
+          "book": "Isaiah",
+          "chapter": 43,
+          "verseStart": 1
+        },
+        {
+          "display": "Romans 8:15",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 15
+        }
+      ],
+      "hacks": [
+        "You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.",
+        "Their leaving does not cancel whose you are. You are His; cry Abba, Father.",
+        "Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains."
+      ],
+      "prayers": [
+        "Father, You see what was done to me. I release hatred. Heal me and hold me. Amen."
+      ],
+      "related": [
+        "loss",
+        "leave-vengeance-to-the-lord",
+        "do-not-repay-evil-with-evil",
+        "forgive-as-you-have-been-forgiven",
+        "he-is-for-you",
+        "fear",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/wounded",
+      "markdownUrl": "https://bedrock.rippel.ai/c/wounded.md"
+    },
+    {
+      "id": "rumination",
+      "title": "Obsession",
+      "summary": "The stuck, replaying mind is not the Holy Spirit. Capture it.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be conformed to this world, but be transformed by the renewal of your mind."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable… think about these things."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the cares of my heart are many, Your consolations cheer my soul."
+        },
+        {
+          "type": "paragraph",
+          "text": "You keep him in perfect peace whose mind is stayed on You, because he trusts in You."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Corinthians 10:5",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 5
+        },
+        {
+          "display": "Romans 12:2",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 2
+        },
+        {
+          "display": "Philippians 4:6–8",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6,
+          "verseEnd": 8
+        },
+        {
+          "display": "Psalm 94:19",
+          "book": "Psalm",
+          "chapter": 94,
+          "verseStart": 19
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
+        }
+      ],
+      "hacks": [
+        "Take every thought captive to obey Christ — obsession is not revelation.",
+        "When cares are many, His consolations cheer the soul. Pray the spiral; do not feed it.",
+        "Mind stayed on Him is kept in perfect peace. Capture → replace → the next obedient step."
+      ],
+      "prayers": [
+        "Lord, I release the replaying mind. I take every thought captive to You. Amen."
+      ],
+      "related": [
+        "take-every-thought-captive",
+        "renew-your-mind",
+        "the-word",
+        "fear",
+        "loss",
+        "wait-on-the-lord",
+        "self-control",
+        "peace",
+        "spiritual-warfare",
+        "the-adversary"
+      ],
+      "url": "https://bedrock.rippel.ai/c/rumination",
+      "markdownUrl": "https://bedrock.rippel.ai/c/rumination.md"
+    },
+    {
+      "id": "regret",
+      "title": "Regret",
+      "summary": "Godly grief leads to life; worldly grief leads to death.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death."
+        },
+        {
+          "type": "paragraph",
+          "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+        },
+        {
+          "type": "paragraph",
+          "text": "There is therefore now no condemnation for those who are in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Create in me a clean heart, O God, and renew a right spirit within me."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Corinthians 7:10",
+          "book": "2 Corinthians",
+          "chapter": 7,
+          "verseStart": 10
+        },
+        {
+          "display": "1 John 1:9",
+          "book": "1 John",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "Romans 8:1",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 1
+        },
+        {
+          "display": "Proverbs 28:13",
+          "book": "Proverbs",
+          "chapter": 28,
+          "verseStart": 13
+        },
+        {
+          "display": "Psalm 51:10",
+          "book": "Psalm",
+          "chapter": 51,
+          "verseStart": 10
+        }
+      ],
+      "hacks": [
+        "Godly grief produces repentance that leads to life; worldly grief produces death — refuse the death-tape.",
+        "Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.",
+        "There is now no condemnation in Christ Jesus — self-hate is not holiness. Own what is yours; then rise."
+      ],
+      "prayers": [
+        "Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy. Amen."
+      ],
+      "related": [
+        "the-righteous-fall",
+        "confess-and-be-cleansed",
+        "his-grace-is-sufficient",
+        "the-cross-and-our-justification",
+        "rumination",
+        "addiction",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/regret",
+      "markdownUrl": "https://bedrock.rippel.ai/c/regret.md"
+    },
+    {
+      "id": "addiction",
+      "title": "Addiction",
+      "summary": "If it masters you, it is not free — walk by the Spirit; put the flesh to death.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "“All things are lawful for me,” but not all things are helpful. “All things are lawful for me,” but I will not be dominated by anything."
+        },
+        {
+          "type": "paragraph",
+          "text": "And do not get drunk with wine, for that is debauchery, but be filled with the Spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "But I say, walk by the Spirit, and you will not gratify the desires of the flesh."
+        },
+        {
+          "type": "paragraph",
+          "text": "Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds."
+        },
+        {
+          "type": "paragraph",
+          "text": "And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Corinthians 6:12",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 12
+        },
+        {
+          "display": "Ephesians 5:18",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 18
+        },
+        {
+          "display": "Galatians 5:16",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 16
+        },
+        {
+          "display": "1 Corinthians 6:19–20",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 19,
+          "verseEnd": 20
+        },
+        {
+          "display": "2 Corinthians 10:4",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 4
+        },
+        {
+          "display": "1 Corinthians 6:11",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 11
+        }
+      ],
+      "hacks": [
+        "All things are lawful — not all helpful. If it masters you, it is not free. Name the master and refuse its throne.",
+        "Do not get drunk with wine (or any substitute god). Be filled with the Spirit. Walk by the Spirit; put the flesh to death one hour at a time.",
+        "Confess, forsake, and get real help. Freedom is not alone-willpower theater. Name it → capture the craving → pray → one next sober step."
+      ],
+      "prayers": [
+        "Father, I release every false master. I am Yours. Fill me with Your Spirit and keep me free. Amen."
+      ],
+      "related": [
+        "self-control",
+        "take-every-thought-captive",
+        "renew-your-mind",
+        "walk-by-the-spirit",
+        "holy-spirit",
+        "works-of-the-flesh",
+        "confess-and-be-cleansed",
+        "his-grace-is-sufficient",
+        "jealousy",
+        "pharmakeia",
+        "adultery"
+      ],
+      "url": "https://bedrock.rippel.ai/c/addiction",
+      "markdownUrl": "https://bedrock.rippel.ai/c/addiction.md"
+    },
+    {
+      "id": "jealousy",
+      "title": "Jealousy",
+      "summary": "If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "For where jealousy and selfish ambition exist, there will be disorder and every vile practice."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these."
+        },
+        {
+          "type": "paragraph",
+          "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law."
+        }
+      ],
+      "verses": [
+        {
+          "display": "James 3:16",
+          "book": "James",
+          "chapter": 3,
+          "verseStart": 16
+        },
+        {
+          "display": "1 Corinthians 13:4–5",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "Galatians 5:19–21",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 19,
+          "verseEnd": 21
+        },
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        }
+      ],
+      "hacks": [
+        "Name it the moment it rises: “This is jealousy.” It is not protection — it is a demand that another exist to secure you. Refuse its throne.",
+        "Do not investigate, accuse, or punish. Capture the thought → pray → one next free step.",
+        "Love does not envy. Walk by the Spirit; put the flesh to death."
+      ],
+      "prayers": [
+        "Father, I release this jealousy. I will not demand control of another. Fill me with Your Spirit and teach me to love without grasping. Amen."
+      ],
+      "related": [
+        "control",
+        "works-of-the-flesh",
+        "self-control",
+        "walk-by-the-spirit",
+        "take-every-thought-captive",
+        "love",
+        "addiction",
+        "fear",
+        "trust-in-the-lord"
+      ],
+      "url": "https://bedrock.rippel.ai/c/jealousy",
+      "markdownUrl": "https://bedrock.rippel.ai/c/jealousy.md"
+    },
+    {
+      "id": "control",
+      "title": "Control",
+      "summary": "Open the hand — trust is not passivity; self-control rules you, not them.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!"
+        },
+        {
+          "type": "paragraph",
+          "text": "The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Proverbs 3:5–6",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5,
+          "verseEnd": 6
+        },
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        },
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "Philippians 4:6",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "Psalm 55:22",
+          "book": "Psalm",
+          "chapter": 55,
+          "verseStart": 22
+        }
+      ],
+      "hacks": [
+        "Name the grip: outcomes, people, image, timeline — if you must hold it, it has become a god. Open the hand.",
+        "Trust is not passivity. Do the next obedient step; leave the rest to Him who knows the end from the beginning.",
+        "Self-control rules you — not them. Walk by the Spirit when the flesh wants the last word over another life."
+      ],
+      "prayers": [
+        "Lord, I trust You with all my heart. I release control. Direct my path. Amen."
+      ],
+      "related": [
+        "trust-in-the-lord",
+        "self-control",
+        "walk-by-the-spirit",
+        "jealousy",
+        "wait-on-the-lord",
+        "god-first",
+        "take-every-thought-captive",
+        "peace"
+      ],
+      "url": "https://bedrock.rippel.ai/c/control",
+      "markdownUrl": "https://bedrock.rippel.ai/c/control.md"
+    },
+    {
+      "id": "renew-your-mind",
+      "title": "Renew Your Mind",
+      "summary": "Transformed mind.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."
+        },
+        {
+          "type": "paragraph",
+          "text": "Have this mind among yourselves, which is yours in Christ Jesus."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Romans 12:2",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 2
+        },
+        {
+          "display": "Philippians 2:5",
+          "book": "Philippians",
+          "chapter": 2,
+          "verseStart": 5
+        }
+      ],
+      "hacks": [
+        "The world pattern will reassert itself by default. Choose Word and prayer over the spiral.",
+        "Transformation is renewed thinking practiced daily — the mind of Christ, one thought at a time."
+      ],
+      "prayers": [
+        "Lord, I release the world’s pattern. Renew my mind in this trial. Amen."
+      ],
+      "related": [
+        "take-every-thought-captive",
+        "the-word",
+        "walk-by-the-spirit",
+        "spiritual-warfare",
+        "the-full-armor-of-god"
+      ],
+      "url": "https://bedrock.rippel.ai/c/renew-your-mind",
+      "markdownUrl": "https://bedrock.rippel.ai/c/renew-your-mind.md"
+    },
+    {
+      "id": "take-every-thought-captive",
+      "title": "Take Every Thought Captive",
+      "summary": "Divine power demolishes strongholds — take every thought captive to Christ.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds."
+        },
+        {
+          "type": "paragraph",
+          "text": "We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Corinthians 10:4–5",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "Philippians 4:8",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 8
+        },
+        {
+          "display": "Luke 10:19",
+          "book": "Luke",
+          "chapter": 10,
+          "verseStart": 19
+        }
+      ],
+      "hacks": [
+        "Catch the thought early: is it true, pure, lovely — or accusation, fantasy, revenge, despair?",
+        "Weapons are not fleshly — they have divine power to destroy strongholds. Capture the thought; demolish the lie.",
+        "Take it captive to obey Christ. Replace with what is true. Then act."
+      ],
+      "prayers": [
+        "Jesus, I release this loop into Your hands. Destroy the stronghold. I take the thought captive to You. Amen."
+      ],
+      "related": [
+        "rumination",
+        "renew-your-mind",
+        "the-word",
+        "spiritual-warfare",
+        "the-full-armor-of-god",
+        "walk-by-the-spirit",
+        "do-not-fear"
+      ],
+      "url": "https://bedrock.rippel.ai/c/take-every-thought-captive",
+      "markdownUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive.md"
+    },
+    {
+      "id": "the-word",
+      "title": "The Word",
+      "summary": "The enemy says you cannot know or understand. God says His Word is for you — light to the simple.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The unfolding of Your words gives light; it imparts understanding to the simple."
+        },
+        {
+          "type": "paragraph",
+          "text": "For this commandment that I command you today is not too hard for you, neither is it far off… But the word is very near you. It is in your mouth and in your heart, so that you can do it."
+        },
+        {
+          "type": "paragraph",
+          "text": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you abide in My word, you are truly My disciples, and you will know the truth, and the truth will set you free."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the Spirit of truth comes, He will guide you into all the truth."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the word of God is living and active, sharper than any two-edged sword."
+        },
+        {
+          "type": "paragraph",
+          "text": "My people are destroyed for lack of knowledge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Man shall not live by bread alone, but by every word that comes from the mouth of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "And take the helmet of salvation, and the sword of the Spirit, which is the word of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "But I am afraid that as the serpent deceived Eve by his cunning, your thoughts will be led astray from a sincere and pure devotion to Christ."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 119:130",
+          "book": "Psalm",
+          "chapter": 119,
+          "verseStart": 130
+        },
+        {
+          "display": "Deuteronomy 30:11–14",
+          "book": "Deuteronomy",
+          "chapter": 30,
+          "verseStart": 11,
+          "verseEnd": 14
+        },
+        {
+          "display": "2 Timothy 3:16–17",
+          "book": "2 Timothy",
+          "chapter": 3,
+          "verseStart": 16,
+          "verseEnd": 17
+        },
+        {
+          "display": "John 8:31–32",
+          "book": "John",
+          "chapter": 8,
+          "verseStart": 31,
+          "verseEnd": 32
+        },
+        {
+          "display": "John 16:13",
+          "book": "John",
+          "chapter": 16,
+          "verseStart": 13
+        },
+        {
+          "display": "1 Corinthians 2:12",
+          "book": "1 Corinthians",
+          "chapter": 2,
+          "verseStart": 12
+        },
+        {
+          "display": "Hebrews 4:12",
+          "book": "Hebrews",
+          "chapter": 4,
+          "verseStart": 12
+        },
+        {
+          "display": "Hosea 4:6",
+          "book": "Hosea",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "Matthew 4:4",
+          "book": "Matthew",
+          "chapter": 4,
+          "verseStart": 4
+        },
+        {
+          "display": "Ephesians 6:17",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 17
+        },
+        {
+          "display": "2 Corinthians 11:3",
+          "book": "2 Corinthians",
+          "chapter": 11,
+          "verseStart": 3
+        }
+      ],
+      "hacks": [
+        "The enemy says: “You cannot understand the Bible — leave it to experts.” God says His words give light to the simple. Open it.",
+        "People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line. Understanding grows in the doing.",
+        "Do not wait to feel smart. Abide in His Word. The truth sets free — not vibes, not secondhand summaries alone."
+      ],
+      "prayers": [
+        "Father, Your Word is for me. I release the lie that I cannot understand. Give light. Teach me. Amen."
+      ],
+      "related": [
+        "god-first",
+        "renew-your-mind",
+        "take-every-thought-captive",
+        "the-adversary",
+        "spiritual-warfare",
+        "the-full-armor-of-god",
+        "prayer",
+        "walk-by-the-spirit",
+        "falsehood"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-word",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-word.md"
+    },
+    {
+      "id": "the-adversary",
+      "title": "The Adversary",
+      "summary": "He is real. Do not fixate. Name him, resist him, stand with God.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith."
+        },
+        {
+          "type": "paragraph",
+          "text": "You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil."
+        },
+        {
+          "type": "paragraph",
+          "text": "By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother."
+        },
+        {
+          "type": "paragraph",
+          "text": "Indeed, all who desire to live a godly life in Christ Jesus will be persecuted."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the world hates you, know that it has hated Me before it hated you… If they persecuted Me, they will also persecute you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places."
+        },
+        {
+          "type": "paragraph",
+          "text": "Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death."
+        },
+        {
+          "type": "paragraph",
+          "text": "The God of peace will soon crush Satan under your feet."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Peter 5:8–9",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 8,
+          "verseEnd": 9
+        },
+        {
+          "display": "John 8:44",
+          "book": "John",
+          "chapter": 8,
+          "verseStart": 44
+        },
+        {
+          "display": "Matthew 13:38–39",
+          "book": "Matthew",
+          "chapter": 13,
+          "verseStart": 38,
+          "verseEnd": 39
+        },
+        {
+          "display": "1 John 3:10",
+          "book": "1 John",
+          "chapter": 3,
+          "verseStart": 10
+        },
+        {
+          "display": "2 Timothy 3:12",
+          "book": "2 Timothy",
+          "chapter": 3,
+          "verseStart": 12
+        },
+        {
+          "display": "John 15:18–20",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 18,
+          "verseEnd": 20
+        },
+        {
+          "display": "Ephesians 6:11–12",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "James 4:7–8",
+          "book": "James",
+          "chapter": 4,
+          "verseStart": 7,
+          "verseEnd": 8
+        },
+        {
+          "display": "Revelation 12:11",
+          "book": "Revelation",
+          "chapter": 12,
+          "verseStart": 11
+        },
+        {
+          "display": "Romans 16:20",
+          "book": "Romans",
+          "chapter": 16,
+          "verseStart": 20
+        }
+      ],
+      "hacks": [
+        "He is real — not a cartoon, not a metaphor. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.",
+        "Weeds grow among wheat: not everyone who looks religious is of the kingdom. Discern fruit; do not play detective for the devil’s resume.",
+        "When persecution and schemes hit: submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind."
+      ],
+      "prayers": [
+        "Father, open my eyes to the real enemy. I release fear and fixation. I stand with You. Amen."
+      ],
+      "related": [
+        "god-first",
+        "the-word",
+        "spiritual-warfare",
+        "wheat-and-tares",
+        "the-full-armor-of-god",
+        "the-cross-and-our-justification",
+        "do-not-fear",
+        "take-every-thought-captive"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-adversary",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-adversary.md"
+    },
+    {
+      "id": "spiritual-warfare",
+      "title": "Spiritual Warfare",
+      "summary": "We are at war — not against flesh and blood.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith."
+        },
+        {
+          "type": "paragraph",
+          "text": "Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "For though we walk in the flesh, we are not waging war according to the flesh. For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, be strong in the Lord and in the strength of His might. Put on the whole armor of God, that you may be able to stand against the schemes of the devil."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you."
+        },
+        {
+          "type": "paragraph",
+          "text": "The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly."
+        },
+        {
+          "type": "paragraph",
+          "text": "You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 6:12",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 12
+        },
+        {
+          "display": "1 Peter 5:8–9",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 8,
+          "verseEnd": 9
+        },
+        {
+          "display": "James 4:7–8",
+          "book": "James",
+          "chapter": 4,
+          "verseStart": 7,
+          "verseEnd": 8
+        },
+        {
+          "display": "2 Corinthians 10:3–4",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "Ephesians 6:10–11",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 10,
+          "verseEnd": 11
+        },
+        {
+          "display": "Luke 10:19",
+          "book": "Luke",
+          "chapter": 10,
+          "verseStart": 19
+        },
+        {
+          "display": "John 10:10",
+          "book": "John",
+          "chapter": 10,
+          "verseStart": 10
+        },
+        {
+          "display": "John 8:44",
+          "book": "John",
+          "chapter": 8,
+          "verseStart": 44
+        }
+      ],
+      "hacks": [
+        "Name the war: this is not only circumstance. Schemes are real — stay sober and watchful.",
+        "A chief lie: “You cannot know or understand the Word.” That is the serpent’s fog. Open Scripture; fight with the sword of the Spirit.",
+        "Weapons have divine power to destroy strongholds. Authority is given to trample the enemy — under Christ, not in flesh bravado. Resist; stand."
+      ],
+      "prayers": [
+        "Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your strength and Your Word. Amen."
+      ],
+      "related": [
+        "the-adversary",
+        "wheat-and-tares",
+        "works-of-the-flesh",
+        "the-full-armor-of-god",
+        "the-word",
+        "take-every-thought-captive",
+        "walk-by-the-spirit",
+        "do-not-fear",
+        "the-cross-and-our-justification"
+      ],
+      "url": "https://bedrock.rippel.ai/c/spiritual-warfare",
+      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-warfare.md"
+    },
+    {
+      "id": "wheat-and-tares",
+      "title": "Wheat and Tares",
+      "summary": "A good farmer sowed wheat; an enemy sowed weeds at night.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The kingdom of heaven may be compared to a man who sowed good seed in his field, but while his men were sleeping, his enemy came and sowed weeds among the wheat and went away."
+        },
+        {
+          "type": "paragraph",
+          "text": "He said, “An enemy has done this.” … “Let both grow together until the harvest, and at harvest time I will tell the reapers, Gather the weeds first and bind them in bundles to be burned, but gather the wheat into my barn.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "The one who sows the good seed is the Son of Man. The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil."
+        },
+        {
+          "type": "paragraph",
+          "text": "The harvest is the end of the age, and the reapers are angels. … The Son of Man will send His angels, and they will gather out of His kingdom all causes of sin and all law-breakers."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 13:24–30",
+          "book": "Matthew",
+          "chapter": 13,
+          "verseStart": 24,
+          "verseEnd": 30
+        },
+        {
+          "display": "Matthew 13:37–41",
+          "book": "Matthew",
+          "chapter": 13,
+          "verseStart": 37,
+          "verseEnd": 41
+        }
+      ],
+      "hacks": [
+        "The field is mixed. Do not assume every plant is the Master’s sowing.",
+        "The enemy sows while people sleep — stay awake; do not let night cover what you know is seed.",
+        "Judgment is the Lord’s at harvest. Your work today: plant good seed and refuse the weed’s root in you."
+      ],
+      "prayers": [
+        "Lord of the harvest, I release premature judgment. Keep me awake and wheat. Amen."
+      ],
+      "related": [
+        "the-adversary",
+        "spiritual-warfare",
+        "persecution",
+        "works-of-the-flesh",
+        "walk-by-the-spirit",
+        "hope-of-glory",
+        "god-first"
+      ],
+      "url": "https://bedrock.rippel.ai/c/wheat-and-tares",
+      "markdownUrl": "https://bedrock.rippel.ai/c/wheat-and-tares.md"
+    },
+    {
+      "id": "persecution",
+      "title": "Persecution",
+      "summary": "Blessed when they revile you for His name — stand, bless, do not repay evil.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Blessed are those who are persecuted for righteousness’ sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on My account."
+        },
+        {
+          "type": "paragraph",
+          "text": "Indeed, all who desire to live a godly life in Christ Jesus will be persecuted."
+        },
+        {
+          "type": "paragraph",
+          "text": "But I say to you, Love your enemies and pray for those who persecute you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the world hates you, know that it has hated Me before it hated you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 5:10–11",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 10,
+          "verseEnd": 11
+        },
+        {
+          "display": "2 Timothy 3:12",
+          "book": "2 Timothy",
+          "chapter": 3,
+          "verseStart": 12
+        },
+        {
+          "display": "Matthew 5:44",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 44
+        },
+        {
+          "display": "1 Peter 4:12–13",
+          "book": "1 Peter",
+          "chapter": 4,
+          "verseStart": 12,
+          "verseEnd": 13
+        },
+        {
+          "display": "John 15:18",
+          "book": "John",
+          "chapter": 15,
+          "verseStart": 18
+        }
+      ],
+      "hacks": [
+        "Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.",
+        "Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.",
+        "Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God."
+      ],
+      "prayers": [
+        "Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen."
+      ],
+      "related": [
+        "spiritual-warfare",
+        "the-adversary",
+        "wheat-and-tares",
+        "do-not-fear",
+        "love",
+        "watch-and-be-ready",
+        "the-full-armor-of-god",
+        "hope-of-glory",
+        "leave-vengeance-to-the-lord"
+      ],
+      "url": "https://bedrock.rippel.ai/c/persecution",
+      "markdownUrl": "https://bedrock.rippel.ai/c/persecution.md"
+    },
+    {
+      "id": "works-of-the-flesh",
+      "title": "Works of the Flesh",
+      "summary": "Those who practice such things will not inherit the kingdom of God.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these."
+        },
+        {
+          "type": "paragraph",
+          "text": "I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Or do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God."
+        },
+        {
+          "type": "paragraph",
+          "text": "But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:19–21",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 19,
+          "verseEnd": 21
+        },
+        {
+          "display": "1 Corinthians 6:9–11",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 9,
+          "verseEnd": 11
+        },
+        {
+          "display": "Revelation 21:8",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 8
+        }
+      ],
+      "hacks": [
+        "Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”",
+        "Those who practice such things will not inherit the kingdom — this is warning, not a joke.",
+        "Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate."
+      ],
+      "prayers": [
+        "Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen."
+      ],
+      "related": [
+        "spiritual-warfare",
+        "walk-by-the-spirit",
+        "adultery",
+        "pharmakeia",
+        "addiction",
+        "jealousy",
+        "murder",
+        "malice",
+        "falsehood",
+        "wheat-and-tares",
+        "confess-and-be-cleansed"
+      ],
+      "url": "https://bedrock.rippel.ai/c/works-of-the-flesh",
+      "markdownUrl": "https://bedrock.rippel.ai/c/works-of-the-flesh.md"
+    },
+    {
+      "id": "adultery",
+      "title": "Adultery",
+      "summary": "Flee sexual immorality. You are not your own.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "You shall not commit adultery."
+        },
+        {
+          "type": "paragraph",
+          "text": "But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart."
+        },
+        {
+          "type": "paragraph",
+          "text": "Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body."
+        },
+        {
+          "type": "paragraph",
+          "text": "Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Exodus 20:14",
+          "book": "Exodus",
+          "chapter": 20,
+          "verseStart": 14
+        },
+        {
+          "display": "Matthew 5:28",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 28
+        },
+        {
+          "display": "1 Corinthians 6:18–20",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 18,
+          "verseEnd": 20
+        },
+        {
+          "display": "Hebrews 13:4",
+          "book": "Hebrews",
+          "chapter": 13,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Flee sexual immorality. Your body is not a private playground — it is a temple of the Holy Spirit.",
+        "Adultery starts in the heart before the bed. Guard the look, the chat, the fantasy.",
+        "Confess, forsake, be cleansed. Do not call darkness a new identity."
+      ],
+      "prayers": [
+        "Father, I release every false intimacy. Cleanse me. Keep me pure. Amen."
+      ],
+      "related": [
+        "works-of-the-flesh",
+        "confess-and-be-cleansed",
+        "marriage-covenant",
+        "god-on-marriage",
+        "walk-by-the-spirit",
+        "self-control",
+        "addiction"
+      ],
+      "url": "https://bedrock.rippel.ai/c/adultery",
+      "markdownUrl": "https://bedrock.rippel.ai/c/adultery.md"
+    },
+    {
+      "id": "pharmakeia",
+      "title": "Pharmakeia",
+      "summary": "Sorcery — and every counterfeit power — is works of the flesh.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Now the works of the flesh are evident: … idolatry, sorcery… and things like these. I warn you… that those who do such things will not inherit the kingdom of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "But as for … sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur."
+        },
+        {
+          "type": "paragraph",
+          "text": "Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour."
+        },
+        {
+          "type": "paragraph",
+          "text": "Submit yourselves therefore to God. Resist the devil, and he will flee from you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Galatians 5:19–21",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 19,
+          "verseEnd": 21
+        },
+        {
+          "display": "Revelation 21:8",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 8
+        },
+        {
+          "display": "Revelation 22:15",
+          "book": "Revelation",
+          "chapter": 22,
+          "verseStart": 15
+        },
+        {
+          "display": "1 Peter 5:8",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 8
+        },
+        {
+          "display": "James 4:7",
+          "book": "James",
+          "chapter": 4,
+          "verseStart": 7
+        }
+      ],
+      "hacks": [
+        "Pharmakeia is not neutral “help” when it is sorcery, occult power, or numbing the soul against God.",
+        "Do not open doors to spirits through what promises control of mood, fate, or power without the Lord.",
+        "Be sober-minded. If it owns you, renounce it. Draw near to God; resist the devil."
+      ],
+      "prayers": [
+        "Father, I release every counterfeit power. I belong to You. Make me sober. Amen."
+      ],
+      "related": [
+        "addiction",
+        "works-of-the-flesh",
+        "spiritual-warfare",
+        "do-not-fear",
+        "walk-by-the-spirit",
+        "self-control",
+        "confess-and-be-cleansed"
+      ],
+      "url": "https://bedrock.rippel.ai/c/pharmakeia",
+      "markdownUrl": "https://bedrock.rippel.ai/c/pharmakeia.md"
+    },
+    {
+      "id": "murder",
+      "title": "Murder",
+      "summary": "You shall not murder — not by hand, and not by hatred.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him."
+        },
+        {
+          "type": "paragraph",
+          "text": "You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment."
+        },
+        {
+          "type": "paragraph",
+          "text": "But as for … murderers… their portion will be in the lake that burns with fire and sulfur."
+        },
+        {
+          "type": "paragraph",
+          "text": "Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”"
+        }
+      ],
+      "verses": [
+        {
+          "display": "Exodus 20:13",
+          "book": "Exodus",
+          "chapter": 20,
+          "verseStart": 13
+        },
+        {
+          "display": "1 John 3:15",
+          "book": "1 John",
+          "chapter": 3,
+          "verseStart": 15
+        },
+        {
+          "display": "Matthew 5:21–22",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 21,
+          "verseEnd": 22
+        },
+        {
+          "display": "Revelation 21:8",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 8
+        },
+        {
+          "display": "Romans 12:19",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 19
+        }
+      ],
+      "hacks": [
+        "Murder is not only the knife — hatred of a brother is already death in the heart.",
+        "Do not avenge. Leave wrath to God. Put down the wish that they would be erased.",
+        "If blood is on your hands in truth, run to confession and the Cross — not deeper dark."
+      ],
+      "prayers": [
+        "Father, I release hatred and the wish to erase. Have mercy. Soften my heart. Amen."
+      ],
+      "related": [
+        "works-of-the-flesh",
+        "leave-vengeance-to-the-lord",
+        "do-not-repay-evil-with-evil",
+        "malice",
+        "spiritual-warfare",
+        "confess-and-be-cleansed"
+      ],
+      "url": "https://bedrock.rippel.ai/c/murder",
+      "markdownUrl": "https://bedrock.rippel.ai/c/murder.md"
+    },
+    {
+      "id": "malice",
+      "title": "Malice",
+      "summary": "Put away all malice — the quiet wish to harm.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice."
+        },
+        {
+          "type": "paragraph",
+          "text": "So put away all malice and all deceit and hypocrisy and envy and all slander."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Now the works of the flesh are evident: … enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy…"
+        },
+        {
+          "type": "paragraph",
+          "text": "Those who do such things will not inherit the kingdom of God."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 4:31–32",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 31,
+          "verseEnd": 32
+        },
+        {
+          "display": "1 Peter 2:1",
+          "book": "1 Peter",
+          "chapter": 2,
+          "verseStart": 1
+        },
+        {
+          "display": "Galatians 5:19–21",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 19,
+          "verseEnd": 21
+        }
+      ],
+      "hacks": [
+        "Malice is the quiet wish to harm. Name it. Put it off with the old self.",
+        "Bitterness, rage, slander — these are not “just honesty.” They are flesh.",
+        "Be kind and tenderhearted. Forgive as you were forgiven — or malice will keep the ledger."
+      ],
+      "prayers": [
+        "Father, I release the quiet wish to harm. Put away malice from me. Amen."
+      ],
+      "related": [
+        "works-of-the-flesh",
+        "murder",
+        "leave-vengeance-to-the-lord",
+        "forgive-as-you-have-been-forgiven",
+        "kindness",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/malice",
+      "markdownUrl": "https://bedrock.rippel.ai/c/malice.md"
+    },
+    {
+      "id": "falsehood",
+      "title": "Falsehood",
+      "summary": "All liars — and everyone who loves and practices falsehood.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lying lips are an abomination to the Lord, but those who act faithfully are His delight."
+        },
+        {
+          "type": "paragraph",
+          "text": "But as for … all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death."
+        },
+        {
+          "type": "paragraph",
+          "text": "Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let what you say be simply “Yes” or “No”; anything more than this comes from evil."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 4:25",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 25
+        },
+        {
+          "display": "Proverbs 12:22",
+          "book": "Proverbs",
+          "chapter": 12,
+          "verseStart": 22
+        },
+        {
+          "display": "Revelation 21:8",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 8
+        },
+        {
+          "display": "Revelation 22:15",
+          "book": "Revelation",
+          "chapter": 22,
+          "verseStart": 15
+        },
+        {
+          "display": "Matthew 5:37",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 37
+        }
+      ],
+      "hacks": [
+        "Liars have no place in the city of God. Half-truths are still lies with manners.",
+        "Let your yes be yes. Put off falsehood even when truth costs status.",
+        "Walk in light. Managed darkness is still darkness."
+      ],
+      "prayers": [
+        "Lord, I release managed darkness. Keep me in the light with straight words. Amen."
+      ],
+      "related": [
+        "works-of-the-flesh",
+        "walk-in-honesty-and-truth",
+        "confess-and-be-cleansed",
+        "the-full-armor-of-god",
+        "spiritual-warfare"
+      ],
+      "url": "https://bedrock.rippel.ai/c/falsehood",
+      "markdownUrl": "https://bedrock.rippel.ai/c/falsehood.md"
+    },
+    {
+      "id": "the-full-armor-of-god",
+      "title": "The Full Armor of God",
+      "summary": "The kit for the war — stand.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Be strong in the Lord and in the strength of His might."
+        },
+        {
+          "type": "paragraph",
+          "text": "Put on the whole armor of God, that you may be able to stand against the schemes of the devil."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, and as shoes for your feet, having put on the readiness given by the gospel of peace."
+        },
+        {
+          "type": "paragraph",
+          "text": "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one; and take the helmet of salvation, and the sword of the Spirit, which is the word of God, praying at all times in the Spirit."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Ephesians 6:10–18",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 10,
+          "verseEnd": 18
+        }
+      ],
+      "hacks": [
+        "Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer — not vibes.",
+        "Flaming darts are expected. Raise the shield of faith instead of explaining every dart to yourself.",
+        "Armor is for standing — after you know you are in a fight. Stay dressed; stay praying."
+      ],
+      "prayers": [
+        "Lord, I release naked self-reliance. I put on Your armor and stand. Amen."
+      ],
+      "related": [
+        "spiritual-warfare",
+        "works-of-the-flesh",
+        "take-every-thought-captive",
+        "walk-by-the-spirit",
+        "watch-and-be-ready",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-full-armor-of-god",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-full-armor-of-god.md"
+    },
+    {
+      "id": "watch-and-be-ready",
+      "title": "Watch and Be Ready",
+      "summary": "Stay awake. The Son of Man is coming at an hour you do not expect.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Watch therefore, for you know neither the day nor the hour."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect."
+        },
+        {
+          "type": "paragraph",
+          "text": "See, I have told you beforehand."
+        },
+        {
+          "type": "paragraph",
+          "text": "But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and eat with him, and he with Me."
+        },
+        {
+          "type": "paragraph",
+          "text": "I have said these things to you, that when their hour comes you may remember that I told them to you."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 25:13",
+          "book": "Matthew",
+          "chapter": 25,
+          "verseStart": 13
+        },
+        {
+          "display": "Matthew 24:44",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 44
+        },
+        {
+          "display": "Matthew 24:25",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 25
+        },
+        {
+          "display": "Luke 21:36",
+          "book": "Luke",
+          "chapter": 21,
+          "verseStart": 36
+        },
+        {
+          "display": "Revelation 3:20",
+          "book": "Revelation",
+          "chapter": 3,
+          "verseStart": 20
+        },
+        {
+          "display": "John 16:4",
+          "book": "John",
+          "chapter": 16,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Stay awake. The hour is unknown — readiness is oil, not panic.",
+        "He told you beforehand. Do not sleep through the warning.",
+        "When He knocks, open. Do not assume tomorrow is yours."
+      ],
+      "prayers": [
+        "Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen."
+      ],
+      "related": [
+        "ten-virgins",
+        "the-faithful-servant",
+        "one-taken-one-left",
+        "hope-of-glory",
+        "wheat-and-tares",
+        "wait-on-the-lord",
+        "spiritual-warfare"
+      ],
+      "url": "https://bedrock.rippel.ai/c/watch-and-be-ready",
+      "markdownUrl": "https://bedrock.rippel.ai/c/watch-and-be-ready.md"
+    },
+    {
+      "id": "ten-virgins",
+      "title": "Ten Virgins",
+      "summary": "Five were wise, five foolish — the door was shut.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Then the kingdom of heaven will be like ten virgins who took their lamps and went to meet the bridegroom. Five of them were foolish, and five were wise."
+        },
+        {
+          "type": "paragraph",
+          "text": "For when the foolish took their lamps, they took no oil with them, but the wise took flasks of oil with their lamps."
+        },
+        {
+          "type": "paragraph",
+          "text": "As the bridegroom was delayed, they all became drowsy and slept. But at midnight there was a cry, “Here is the bridegroom! Come out to meet him.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "And the foolish said to the wise, “Give us some of your oil, for our lamps are going out.” But the wise answered, saying, “Since there will not be enough for us and for you, go rather to the dealers and buy for yourselves.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "And while they were going to buy, the bridegroom came, and those who were ready went in with him to the marriage feast, and the door was shut."
+        },
+        {
+          "type": "paragraph",
+          "text": "Afterward the other virgins came also, saying, “Lord, lord, open to us.” But he answered, “Truly, I say to you, I do not know you.” Watch therefore, for you know neither the day nor the hour."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 25:1–13",
+          "book": "Matthew",
+          "chapter": 25,
+          "verseStart": 1,
+          "verseEnd": 13
+        }
+      ],
+      "hacks": [
+        "Oil is not borrowed at the door. What you store with Him now is what you have then.",
+        "Both groups waited — only the wise were ready when the cry came.",
+        "Do not delay repentance until the wedding feast is shut."
+      ],
+      "prayers": [
+        "Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen."
+      ],
+      "related": [
+        "watch-and-be-ready",
+        "the-faithful-servant",
+        "hope-of-glory",
+        "one-taken-one-left",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/ten-virgins",
+      "markdownUrl": "https://bedrock.rippel.ai/c/ten-virgins.md"
+    },
+    {
+      "id": "the-faithful-servant",
+      "title": "The Faithful Servant",
+      "summary": "Blessed is that servant whom his master will find so doing when he comes.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Who then is the faithful and wise servant, whom his master has set over his household, to give them their food at the proper time? Blessed is that servant whom his master will find so doing when he comes."
+        },
+        {
+          "type": "paragraph",
+          "text": "But if that wicked servant says to himself, “My master is delayed,” and begins to beat his fellow servants and eats and drinks with drunkards, the master of that servant will come on a day when he does not expect him and at an hour he does not know."
+        },
+        {
+          "type": "paragraph",
+          "text": "And will cut him in pieces and put him with the hypocrites. In that place there will be weeping and gnashing of teeth."
+        },
+        {
+          "type": "paragraph",
+          "text": "Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 24:45–51",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 45,
+          "verseEnd": 51
+        },
+        {
+          "display": "Luke 12:35–36",
+          "book": "Luke",
+          "chapter": 12,
+          "verseStart": 35,
+          "verseEnd": 36
+        },
+        {
+          "display": "Luke 12:48",
+          "book": "Luke",
+          "chapter": 12,
+          "verseStart": 48
+        }
+      ],
+      "hacks": [
+        "Faithful is ordinary obedience while the Master delays — not performance when He is watching.",
+        "Beating others, eating and drinking with drunkards — that is the wicked servant’s path.",
+        "Blessed is the one the Master finds doing the assignment when He comes."
+      ],
+      "prayers": [
+        "Lord, I release the wicked servant’s ease. Find me faithful when You come. Amen."
+      ],
+      "related": [
+        "watch-and-be-ready",
+        "ten-virgins",
+        "one-taken-one-left",
+        "deny-yourself",
+        "love-and-patience",
+        "hope-of-glory"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-faithful-servant",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-faithful-servant.md"
+    },
+    {
+      "id": "one-taken-one-left",
+      "title": "One Taken, One Left",
+      "summary": "Two in the field — one taken, one left.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Then two men will be in the field; one will be taken and one left. Two women will be grinding at the mill; one will be taken and one left."
+        },
+        {
+          "type": "paragraph",
+          "text": "I tell you, in that night there will be two in one bed. One will be taken and the other left. There will be two women grinding together. One will be taken and the other left."
+        },
+        {
+          "type": "paragraph",
+          "text": "As were the days of Noah, so will be the coming of the Son of Man. For as in those days before the flood they were eating and drinking, marrying and giving in marriage, until the day when Noah entered the ark, and they were unaware until the flood came and swept them all away, so will be the coming of the Son of Man."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore, stay awake, for you do not know on what day your Lord is coming."
+        },
+        {
+          "type": "paragraph",
+          "text": "See, I have told you beforehand."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 24:40–42",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 40,
+          "verseEnd": 42
+        },
+        {
+          "display": "Luke 17:34–35",
+          "book": "Luke",
+          "chapter": 17,
+          "verseStart": 34,
+          "verseEnd": 35
+        },
+        {
+          "display": "Matthew 24:37–39",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 37,
+          "verseEnd": 39
+        },
+        {
+          "display": "Matthew 24:25",
+          "book": "Matthew",
+          "chapter": 24,
+          "verseStart": 25
+        }
+      ],
+      "hacks": [
+        "Two side by side — only readiness separates them. Proximity is not salvation.",
+        "As in the days of Noah: life looked normal until the door shut.",
+        "Watch. You do not know which hour. Live ready, not guessing the calendar."
+      ],
+      "prayers": [
+        "Lord, I release presumption. Keep me watching for You. Amen."
+      ],
+      "related": [
+        "watch-and-be-ready",
+        "ten-virgins",
+        "the-faithful-servant",
+        "hope-of-glory",
+        "treasure-in-heaven",
+        "wheat-and-tares",
+        "do-not-fear"
+      ],
+      "url": "https://bedrock.rippel.ai/c/one-taken-one-left",
+      "markdownUrl": "https://bedrock.rippel.ai/c/one-taken-one-left.md"
+    },
+    {
+      "id": "treasure-in-heaven",
+      "title": "Treasure in Heaven",
+      "summary": "Lay up treasure where moth and rust do not destroy.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal."
+        },
+        {
+          "type": "paragraph",
+          "text": "For where your treasure is, there your heart will be also."
+        },
+        {
+          "type": "paragraph",
+          "text": "But seek first the kingdom of God and His righteousness, and all these things will be added to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail."
+        },
+        {
+          "type": "paragraph",
+          "text": "As for the rich in this present age, charge them not to be haughty, nor to set their hopes on the uncertainty of riches, but on God… They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation for the future."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 6:19–21",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 19,
+          "verseEnd": 21
+        },
+        {
+          "display": "Matthew 6:33",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 33
+        },
+        {
+          "display": "Luke 12:33",
+          "book": "Luke",
+          "chapter": 12,
+          "verseStart": 33
+        },
+        {
+          "display": "1 Timothy 6:17–19",
+          "book": "1 Timothy",
+          "chapter": 6,
+          "verseStart": 17,
+          "verseEnd": 19
+        }
+      ],
+      "hacks": [
+        "Where your treasure is, your heart follows — audit the vault, not only the feelings.",
+        "Earth rusts and thieves break in. Lay up what the fire cannot touch.",
+        "Fight for the lasting: obedience, love, souls, the kingdom — not the applause of a week."
+      ],
+      "prayers": [
+        "Father, I release rust and moth. Set my treasure in heaven. Amen."
+      ],
+      "related": [
+        "hope-of-glory",
+        "prayer",
+        "spiritual-gifts",
+        "the-faithful-servant",
+        "god-first",
+        "his-provision",
+        "watch-and-be-ready"
+      ],
+      "url": "https://bedrock.rippel.ai/c/treasure-in-heaven",
+      "markdownUrl": "https://bedrock.rippel.ai/c/treasure-in-heaven.md"
+    },
+    {
+      "id": "prayer",
+      "title": "Prayer",
+      "summary": "Ask, seek, knock — pray without ceasing.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you."
+        },
+        {
+          "type": "paragraph",
+          "text": "And He told them a parable to the effect that they ought always to pray and not lose heart."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit Himself intercedes for us with groanings too deep for words."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him."
+        },
+        {
+          "type": "paragraph",
+          "text": "The prayer of a righteous person has great power as it is working."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 7:7",
+          "book": "Matthew",
+          "chapter": 7,
+          "verseStart": 7
+        },
+        {
+          "display": "Luke 18:1",
+          "book": "Luke",
+          "chapter": 18,
+          "verseStart": 1
+        },
+        {
+          "display": "1 Thessalonians 5:16–18",
+          "book": "1 Thessalonians",
+          "chapter": 5,
+          "verseStart": 16,
+          "verseEnd": 18
+        },
+        {
+          "display": "Romans 8:26",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 26
+        },
+        {
+          "display": "Philippians 4:6",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "James 1:5",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 5
+        },
+        {
+          "display": "James 5:16",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 16
+        }
+      ],
+      "hacks": [
+        "When you do not know what to pray, the Spirit helps — groan, wait, then one true sentence.",
+        "Ask, seek, knock — persistence is faith, not nagging God into a corner.",
+        "Pray without ceasing means stay turned toward Him all day, not only at crisis."
+      ],
+      "prayers": [
+        "Father, I bring this need and I wait. I release the need to control the answer. Amen."
+      ],
+      "related": [
+        "the-lords-prayer",
+        "fasting",
+        "healing",
+        "lament-and-pour-out-your-heart",
+        "walk-by-the-spirit",
+        "spiritual-gifts",
+        "god-first"
+      ],
+      "url": "https://bedrock.rippel.ai/c/prayer",
+      "markdownUrl": "https://bedrock.rippel.ai/c/prayer.md"
+    },
+    {
+      "id": "fasting",
+      "title": "Fasting",
+      "summary": "Humble yourself with fasting — seek God, not applause.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others… But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret."
+        },
+        {
+          "type": "paragraph",
+          "text": "Then I turned my face to the Lord God, seeking Him by prayer and pleas for mercy with fasting and sackcloth and ashes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free… Is it not to share your bread with the hungry…?"
+        },
+        {
+          "type": "paragraph",
+          "text": "And Jesus said to them, “Can the wedding guests mourn as long as the bridegroom is with them? The days will come when the bridegroom is taken away from them, and then they will fast.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "So we fasted and implored our God for this, and He listened to our entreaty."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 6:16–18",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 16,
+          "verseEnd": 18
+        },
+        {
+          "display": "Daniel 9:3",
+          "book": "Daniel",
+          "chapter": 9,
+          "verseStart": 3
+        },
+        {
+          "display": "Isaiah 58:6–7",
+          "book": "Isaiah",
+          "chapter": 58,
+          "verseStart": 6,
+          "verseEnd": 7
+        },
+        {
+          "display": "Matthew 9:15",
+          "book": "Matthew",
+          "chapter": 9,
+          "verseStart": 15
+        },
+        {
+          "display": "Acts 13:2",
+          "book": "Acts",
+          "chapter": 13,
+          "verseStart": 2
+        },
+        {
+          "display": "Ezra 8:23",
+          "book": "Ezra",
+          "chapter": 8,
+          "verseStart": 23
+        }
+      ],
+      "hacks": [
+        "Fast to seek God, not to twist His arm or impress people. Secret, sincere, humbled.",
+        "Hunger can sharpen prayer — or harden pride. Pair the fast with the Word and mercy.",
+        "If health forbids a food fast, fast something that costs you: noise, scroll, appetite for control."
+      ],
+      "prayers": [
+        "Lord, I set this aside to seek You. I release appetite for control. Humble me. Amen."
+      ],
+      "related": [
+        "prayer",
+        "sabbath",
+        "deny-yourself",
+        "a-broken-and-contrite-heart",
+        "healing",
+        "wait-on-the-lord",
+        "walk-by-the-spirit"
+      ],
+      "url": "https://bedrock.rippel.ai/c/fasting",
+      "markdownUrl": "https://bedrock.rippel.ai/c/fasting.md"
+    },
+    {
+      "id": "sabbath",
+      "title": "Sabbath",
+      "summary": "The seventh day is the Sabbath — Saturday — still holy to the Lord. A holy day He made.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "So God blessed the seventh day and made it holy, because on it God rested from all His work that He had done in creation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember the Sabbath day, to keep it holy. Six days you shall labor, and do all your work, but the seventh day is a Sabbath to the Lord your God. On it you shall not do any work."
+        },
+        {
+          "type": "paragraph",
+          "text": "You shall keep My Sabbaths, for this is a sign between Me and you throughout your generations, that you may know that I, the Lord, sanctify you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Moreover, I gave them My Sabbaths as a sign between Me and them, that they might know that I am the Lord who sanctifies them."
+        },
+        {
+          "type": "paragraph",
+          "text": "And keep My Sabbaths holy that they may be a sign between Me and you, that you may know that I am the Lord your God."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you turn back your foot from the Sabbath, from doing your pleasure on My holy day, and call the Sabbath a delight and the holy day of the Lord honorable… then you shall take delight in the Lord."
+        },
+        {
+          "type": "paragraph",
+          "text": "And He said to them, “The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "There remains a Sabbath rest for the people of God, for whoever has entered God’s rest has also rested from his works as God did from His."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still, and know that I am God."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Genesis 2:3",
+          "book": "Genesis",
+          "chapter": 2,
+          "verseStart": 3
+        },
+        {
+          "display": "Exodus 20:8–10",
+          "book": "Exodus",
+          "chapter": 20,
+          "verseStart": 8,
+          "verseEnd": 10
+        },
+        {
+          "display": "Exodus 31:13",
+          "book": "Exodus",
+          "chapter": 31,
+          "verseStart": 13
+        },
+        {
+          "display": "Ezekiel 20:12",
+          "book": "Ezekiel",
+          "chapter": 20,
+          "verseStart": 12
+        },
+        {
+          "display": "Ezekiel 20:20",
+          "book": "Ezekiel",
+          "chapter": 20,
+          "verseStart": 20
+        },
+        {
+          "display": "Isaiah 58:13–14",
+          "book": "Isaiah",
+          "chapter": 58,
+          "verseStart": 13,
+          "verseEnd": 14
+        },
+        {
+          "display": "Mark 2:27–28",
+          "book": "Mark",
+          "chapter": 2,
+          "verseStart": 27,
+          "verseEnd": 28
+        },
+        {
+          "display": "Hebrews 4:9–10",
+          "book": "Hebrews",
+          "chapter": 4,
+          "verseStart": 9,
+          "verseEnd": 10
+        },
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        }
+      ],
+      "hacks": [
+        "The Sabbath is the seventh day — Saturday — still holy to the Lord. He made it holy; you do not rename it.",
+        "He knows His people as they obey: keep His Sabbaths as a sign that He is the Lord who sanctifies you.",
+        "Rest is not laziness. Stop the grind, delight in His day, and remember He is God."
+      ],
+      "prayers": [
+        "Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it holy. Amen."
+      ],
+      "related": [
+        "god-first",
+        "prayer",
+        "fasting",
+        "his-provision",
+        "wait-on-the-lord",
+        "peace",
+        "the-lords-prayer"
+      ],
+      "url": "https://bedrock.rippel.ai/c/sabbath",
+      "markdownUrl": "https://bedrock.rippel.ai/c/sabbath.md"
+    },
+    {
+      "id": "healing",
+      "title": "Healing",
+      "summary": "Jesus heals — ask, trust, and do not lose heart.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "And He went throughout all Galilee, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction among the people."
+        },
+        {
+          "type": "paragraph",
+          "text": "He Himself took our illnesses and bore our diseases."
+        },
+        {
+          "type": "paragraph",
+          "text": "Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. And the prayer of faith will save the one who is sick, and the Lord will raise him up."
+        },
+        {
+          "type": "paragraph",
+          "text": "And these signs will accompany those who believe: in My name they will cast out demons… they will lay their hands on the sick, and they will recover."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bless the Lord, O my soul, and forget not all His benefits, who forgives all your iniquity, who heals all your diseases."
+        },
+        {
+          "type": "paragraph",
+          "text": "Heal me, O Lord, and I shall be healed; save me, and I shall be saved, for You are my praise."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 4:23",
+          "book": "Matthew",
+          "chapter": 4,
+          "verseStart": 23
+        },
+        {
+          "display": "Matthew 8:17",
+          "book": "Matthew",
+          "chapter": 8,
+          "verseStart": 17
+        },
+        {
+          "display": "James 5:14–15",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 14,
+          "verseEnd": 15
+        },
+        {
+          "display": "Mark 16:17–18",
+          "book": "Mark",
+          "chapter": 16,
+          "verseStart": 17,
+          "verseEnd": 18
+        },
+        {
+          "display": "Psalm 103:2–3",
+          "book": "Psalm",
+          "chapter": 103,
+          "verseStart": 2,
+          "verseEnd": 3
+        },
+        {
+          "display": "Jeremiah 17:14",
+          "book": "Jeremiah",
+          "chapter": 17,
+          "verseStart": 14
+        }
+      ],
+      "hacks": [
+        "Ask boldly for healing. Receive His will either way — miracle, medicine, or mercy in the wait.",
+        "Do not shame the sick for “lack of faith.” Jesus healed the weak who came.",
+        "Pray, anoint, and also use wise means. God is not against doctors or against prayer."
+      ],
+      "prayers": [
+        "Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Amen."
+      ],
+      "related": [
+        "prayer",
+        "laying-on-of-hands",
+        "fasting",
+        "sabbath",
+        "his-power-and-beauty",
+        "faithfulness",
+        "hope-of-glory",
+        "spiritual-gifts"
+      ],
+      "url": "https://bedrock.rippel.ai/c/healing",
+      "markdownUrl": "https://bedrock.rippel.ai/c/healing.md"
+    },
+    {
+      "id": "laying-on-of-hands",
+      "title": "Laying on of Hands",
+      "summary": "Hands laid in faith under the name of Jesus.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Then they laid their hands on them and they received the Holy Spirit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not neglect the gift you have, which was given you by prophecy when the council of elders laid their hands on you."
+        },
+        {
+          "type": "paragraph",
+          "text": "And He could do no mighty work there, except that He laid His hands on a few sick people and healed them."
+        },
+        {
+          "type": "paragraph",
+          "text": "They will lay their hands on the sick, and they will recover."
+        },
+        {
+          "type": "paragraph",
+          "text": "And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying."
+        },
+        {
+          "type": "paragraph",
+          "text": "And God was doing extraordinary miracles by the hands of Paul."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Acts 8:17",
+          "book": "Acts",
+          "chapter": 8,
+          "verseStart": 17
+        },
+        {
+          "display": "1 Timothy 4:14",
+          "book": "1 Timothy",
+          "chapter": 4,
+          "verseStart": 14
+        },
+        {
+          "display": "Mark 6:5",
+          "book": "Mark",
+          "chapter": 6,
+          "verseStart": 5
+        },
+        {
+          "display": "Mark 16:18",
+          "book": "Mark",
+          "chapter": 16,
+          "verseStart": 18
+        },
+        {
+          "display": "Acts 19:6",
+          "book": "Acts",
+          "chapter": 19,
+          "verseStart": 6
+        },
+        {
+          "display": "Acts 19:11",
+          "book": "Acts",
+          "chapter": 19,
+          "verseStart": 11
+        }
+      ],
+      "hacks": [
+        "Hands are not magic — they are obedient faith under the name of Jesus.",
+        "Invite mature believers. Avoid spectacle and pressure. Let the Spirit lead the moment.",
+        "If you are the one prayed for: receive without performing. God sees the heart."
+      ],
+      "prayers": [
+        "Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen."
+      ],
+      "related": [
+        "healing",
+        "prayer",
+        "spiritual-gifts",
+        "one-another-in-the-body",
+        "walk-by-the-spirit",
+        "his-power-and-beauty"
+      ],
+      "url": "https://bedrock.rippel.ai/c/laying-on-of-hands",
+      "markdownUrl": "https://bedrock.rippel.ai/c/laying-on-of-hands.md"
+    },
+    {
+      "id": "spiritual-gifts",
+      "title": "Gifts of the Spirit",
+      "summary": "Varieties of gifts, one Spirit — for the common good.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of activities, but it is the same God who empowers them all in everyone. To each is given the manifestation of the Spirit for the common good."
+        },
+        {
+          "type": "paragraph",
+          "text": "For to one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge… to another faith… to another gifts of healing… to another the working of miracles, to another prophecy, to another the ability to distinguish between spirits, to another various kinds of tongues, to another the interpretation of tongues."
+        },
+        {
+          "type": "paragraph",
+          "text": "Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts, in his exhortation; the one who contributes, in generosity; the one who leads, with zeal; the one who does acts of mercy, with cheerfulness."
+        },
+        {
+          "type": "paragraph",
+          "text": "As each has received a gift, use it to serve one another, as good stewards of God’s varied grace… in order that in everything God may be glorified through Jesus Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "And He gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy."
+        },
+        {
+          "type": "paragraph",
+          "text": "If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal."
+        }
+      ],
+      "verses": [
+        {
+          "display": "1 Corinthians 12:4–11",
+          "book": "1 Corinthians",
+          "chapter": 12,
+          "verseStart": 4,
+          "verseEnd": 11
+        },
+        {
+          "display": "Romans 12:6–8",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 6,
+          "verseEnd": 8
+        },
+        {
+          "display": "1 Peter 4:10–11",
+          "book": "1 Peter",
+          "chapter": 4,
+          "verseStart": 10,
+          "verseEnd": 11
+        },
+        {
+          "display": "Ephesians 4:11–12",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "1 Corinthians 14:1",
+          "book": "1 Corinthians",
+          "chapter": 14,
+          "verseStart": 1
+        },
+        {
+          "display": "1 Corinthians 13:1",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 1
+        }
+      ],
+      "hacks": [
+        "Gifts of the Spirit are for the common good — not a stage name. Use what He gave.",
+        "Steward the gift as one who will give account. Do not bury the talent in fear.",
+        "Desire the greater gifts, and still walk in love — without love, gifts are noise."
+      ],
+      "prayers": [
+        "Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen."
+      ],
+      "related": [
+        "treasure-in-heaven",
+        "hope-of-glory",
+        "holy-spirit",
+        "prayer",
+        "healing",
+        "laying-on-of-hands",
+        "the-faithful-servant",
+        "one-another-in-the-body",
+        "walk-by-the-spirit",
+        "love"
+      ],
+      "url": "https://bedrock.rippel.ai/c/spiritual-gifts",
+      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-gifts.md"
+    },
+    {
+      "id": "hope-of-glory",
+      "title": "Hope of Glory",
+      "summary": "What we fight toward — glory with Him.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The sufferings of this present time are not worth comparing with the glory that is to be revealed to us."
+        },
+        {
+          "type": "paragraph",
+          "text": "Christ in you, the hope of glory."
+        },
+        {
+          "type": "paragraph",
+          "text": "We wait for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, the dwelling place of God is with man… He will wipe away every tear from their eyes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Behold, I am coming soon, bringing My recompense with Me, to repay each one for what he has done."
+        },
+        {
+          "type": "paragraph",
+          "text": "Blessed is the one who remains steadfast under trial, for when he has stood the test he will receive the crown of life."
+        },
+        {
+          "type": "paragraph",
+          "text": "There is laid up for me the crown of righteousness, which the Lord will award on that day."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the Chief Shepherd appears, you will receive the unfading crown of glory."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Romans 8:18",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 18
+        },
+        {
+          "display": "Colossians 1:27",
+          "book": "Colossians",
+          "chapter": 1,
+          "verseStart": 27
+        },
+        {
+          "display": "Titus 2:13",
+          "book": "Titus",
+          "chapter": 2,
+          "verseStart": 13
+        },
+        {
+          "display": "Revelation 21:3–4",
+          "book": "Revelation",
+          "chapter": 21,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "Revelation 22:12",
+          "book": "Revelation",
+          "chapter": 22,
+          "verseStart": 12
+        },
+        {
+          "display": "James 1:12",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 12
+        },
+        {
+          "display": "2 Timothy 4:8",
+          "book": "2 Timothy",
+          "chapter": 4,
+          "verseStart": 8
+        },
+        {
+          "display": "1 Peter 5:4",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 4
+        }
+      ],
+      "hacks": [
+        "Present pain is real. Future glory is more real. Hold both without denying either.",
+        "Steadfast under trial is not glamorous. Crowns are for those who remain — keep remaining today."
+      ],
+      "prayers": [
+        "Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen."
+      ],
+      "related": [
+        "count-the-trial-as-joy",
+        "the-cross-and-our-justification",
+        "the-righteous-fall",
+        "wait-on-the-lord",
+        "spiritual-warfare",
+        "wheat-and-tares",
+        "watch-and-be-ready",
+        "treasure-in-heaven",
+        "spiritual-gifts",
+        "healing",
+        "prayer"
+      ],
+      "url": "https://bedrock.rippel.ai/c/hope-of-glory",
+      "markdownUrl": "https://bedrock.rippel.ai/c/hope-of-glory.md"
+    },
+    {
+      "id": "the-righteous-fall",
+      "title": "The Righteous Fall",
+      "summary": "Fall and rise.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "For the righteous falls seven times and rises again, but the wicked stumble in times of calamity."
+        },
+        {
+          "type": "paragraph",
+          "text": "For all have sinned and fall short of the glory of God."
+        },
+        {
+          "type": "paragraph",
+          "text": "If we say we have no sin, we deceive ourselves, and the truth is not in us."
+        },
+        {
+          "type": "paragraph",
+          "text": "As it is written: “None is righteous, no, not one.”"
+        }
+      ],
+      "verses": [
+        {
+          "display": "Proverbs 24:16",
+          "book": "Proverbs",
+          "chapter": 24,
+          "verseStart": 16
+        },
+        {
+          "display": "Romans 3:23",
+          "book": "Romans",
+          "chapter": 3,
+          "verseStart": 23
+        },
+        {
+          "display": "1 John 1:8",
+          "book": "1 John",
+          "chapter": 1,
+          "verseStart": 8
+        },
+        {
+          "display": "Romans 3:10",
+          "book": "Romans",
+          "chapter": 3,
+          "verseStart": 10
+        }
+      ],
+      "hacks": [
+        "Name the fall without lying: I sinned. I am not finished. Rising is obedience, not self-pity.",
+        "Do not claim sinlessness. Do not camp in shame. Confess, rise, walk by the Spirit again.",
+        "Your fall does not cancel the crucible. Get up. The righteous man rises again."
+      ],
+      "prayers": [
+        "Father, I fell. I release the lie that I am finished. Cleanse me by Your mercy. Amen."
+      ],
+      "related": [
+        "confess-and-be-cleansed",
+        "his-grace-is-sufficient",
+        "walk-by-the-spirit",
+        "hope-of-glory",
+        "a-broken-and-contrite-heart",
+        "regret"
+      ],
+      "url": "https://bedrock.rippel.ai/c/the-righteous-fall",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-righteous-fall.md"
+    }
+  ]
+}

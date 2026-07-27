@@ -10,7 +10,8 @@
 Bedrock is a **Hitchhiker’s Guide to Love · Living · Enduring**.
 
 **Core failure it trains against:** impatience and unbelief when life is **out of control** (patience + trust).  
-**Promise:** truth, brain hacks, and prayer to **max-cope and grow out of the storm** — **do better, be better, trust God**.
+**Promise:** truth, brain hacks, and prayer to **max-cope and grow out of the storm** — **do better, be better, trust God**.  
+**Status:** public beta (`0.2.0-beta`). Canonical chamber URLs: `/c/{id}` · `/c/{id}.md` · `/export/chambers.json` · `/llms.txt`.
 
 It defines first principles for people who struggle to hold the Word in the heat of the moment — grief, rumination, regret, abandonment fear — aggressor and victim both.
 
