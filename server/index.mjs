@@ -6,7 +6,10 @@
  *   XAI_OAUTH_B64 / XAI_OAUTH_JSON — SuperGrok OAuth (auto-refresh)
  *   XAI_API_KEY — console API key fallback
  *   PORT, XAI_MODEL (default grok-4.5)
- * Optional: RAILWAY_TOKEN to persist refreshed OAuth blobs across restarts
+ * OAuth persist (Postalocity MCP pattern):
+ *   REDIS_URL — primary SSOT across redeploys
+ *   XAI_OAUTH_PATH / data/xai-oauth-tokens.json — file fallback
+ *   RAILWAY_API_TOKEN (account, not project) + project/env/service IDs — env backup, skipDeploys
  */
 import 'dotenv/config'
 import path from 'node:path'
@@ -15,7 +18,6 @@ import {
   existsSync,
   mkdirSync,
   readFileSync,
-  writeFileSync,
 } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
@@ -24,6 +26,7 @@ import {
   resolveXaiBearer,
   startOAuthRefreshLoop,
   oauthStatus,
+  invalidateCachedAccessToken,
 } from './xai-oauth.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -128,14 +131,25 @@ Core verses (reach for these first when relevant):
 Core posture:
 Help the visitor stand on what is true when feelings and circumstances are unstable.`
 
-async function getClient() {
-  const apiKey = await resolveXaiBearer()
+/**
+ * @param {{ forceRefresh?: boolean }} [opts]
+ */
+async function getClient(opts = {}) {
+  const apiKey = await resolveXaiBearer({ forceRefresh: Boolean(opts.forceRefresh) })
   if (!apiKey) return null
   return new OpenAI({
     apiKey,
     baseURL: 'https://api.x.ai/v1',
     timeout: 120_000,
   })
+}
+
+function isAuthUpstreamError(err) {
+  const status = /** @type {{ status?: number, statusCode?: number }} */ (err)?.status
+    ?? /** @type {{ status?: number }} */ (err)?.statusCode
+  if (status === 401 || status === 403) return true
+  const msg = err instanceof Error ? err.message : String(err)
+  return /\b401\b|\b403\b|unauthorized|invalid.?api.?key|authentication/i.test(msg)
 }
 
 /**
@@ -268,6 +282,9 @@ function createApp() {
       oauthHasRefresh: oauth.hasRefresh,
       oauthAccessExpired: oauth.accessExpired ?? false,
       oauthPersistOk: oauth.persistOk ?? false,
+      oauthPersist: oauth.persist ?? null,
+      oauthRefreshQuarantined: oauth.refreshQuarantined ?? false,
+      oauthAuthMethod: oauth.authMethod ?? null,
       model: MODEL,
       version: process.env.npm_package_version || '0.2.0-beta',
       beta: true,
@@ -369,15 +386,6 @@ function createApp() {
   })
 
   app.post('/api/chat', async (req, res) => {
-    const client = await getClient()
-    if (!client) {
-      res.status(503).json({
-        error:
-          'Chat is not configured. Run node scripts/xai-oauth-login.mjs (OAuth) or set XAI_API_KEY on Railway.',
-      })
-      return
-    }
-
     const { messages, contextLine, error } = normalizeChatBody(req.body)
     if (error) {
       res.status(400).json({ error })
@@ -387,36 +395,65 @@ function createApp() {
     const systemContent = contextLine
       ? `${BEDROCK_SYSTEM}\n\nContext: ${contextLine}`
       : BEDROCK_SYSTEM
+    const chatMessages = [{ role: 'system', content: systemContent }, ...messages]
 
-    try {
-      const stream = await client.chat.completions.create({
-        model: MODEL,
-        stream: true,
-        messages: [{ role: 'system', content: systemContent }, ...messages],
-      })
-
-      res.setHeader('Content-Type', 'text/event-stream; charset=utf-8')
-      res.setHeader('Cache-Control', 'no-cache, no-transform')
-      res.setHeader('Connection', 'keep-alive')
-      res.flushHeaders?.()
-
-      for await (const chunk of stream) {
-        const delta = chunk.choices[0]?.delta?.content
-        if (!delta) continue
-        res.write(`data: ${JSON.stringify({ type: 'delta', text: delta })}\n\n`)
-      }
-      res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`)
-      res.end()
-    } catch (err) {
-      const message = err instanceof Error ? err.message : 'Upstream chat failed'
-      console.error('[chat]', message)
-      if (res.headersSent) {
-        res.write(`data: ${JSON.stringify({ type: 'error', error: message })}\n\n`)
-        res.end()
+    /**
+     * Stream one attempt. On 401 before headers: refresh + retry once (Postalocity pattern).
+     * @param {boolean} isRetry
+     */
+    async function streamAttempt(isRetry) {
+      const client = await getClient({ forceRefresh: isRetry })
+      if (!client) {
+        if (!res.headersSent) {
+          res.status(503).json({
+            error:
+              'Chat is not configured. Run npm run xai:login (OAuth) or set XAI_API_KEY / REDIS_URL tokens.',
+          })
+        }
         return
       }
-      res.status(502).json({ error: 'Chat upstream failed', detail: message })
+
+      try {
+        const stream = await client.chat.completions.create({
+          model: MODEL,
+          stream: true,
+          messages: chatMessages,
+        })
+
+        if (!res.headersSent) {
+          res.setHeader('Content-Type', 'text/event-stream; charset=utf-8')
+          res.setHeader('Cache-Control', 'no-cache, no-transform')
+          res.setHeader('Connection', 'keep-alive')
+          res.flushHeaders?.()
+        }
+
+        for await (const chunk of stream) {
+          const delta = chunk.choices[0]?.delta?.content
+          if (!delta) continue
+          res.write(`data: ${JSON.stringify({ type: 'delta', text: delta })}\n\n`)
+        }
+        res.write(`data: ${JSON.stringify({ type: 'done' })}\n\n`)
+        res.end()
+      } catch (err) {
+        const message = err instanceof Error ? err.message : 'Upstream chat failed'
+        // Reactive refresh: 401 → force token refresh → single retry (not after stream started)
+        if (!isRetry && !res.headersSent && isAuthUpstreamError(err)) {
+          console.warn('[chat] upstream auth error — force OAuth refresh + retry')
+          invalidateCachedAccessToken()
+          await streamAttempt(true)
+          return
+        }
+        console.error('[chat]', message)
+        if (res.headersSent) {
+          res.write(`data: ${JSON.stringify({ type: 'error', error: message })}\n\n`)
+          res.end()
+          return
+        }
+        res.status(502).json({ error: 'Chat upstream failed', detail: message })
+      }
     }
+
+    await streamAttempt(false)
   })
 
   // Canonical AI/SEO chamber pages: prefer dist (prod), fall back to public (dev)
@@ -503,13 +540,20 @@ const isMain =
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 
 if (isMain) {
-  startOAuthRefreshLoop()
+  await startOAuthRefreshLoop()
   const app = createApp()
   app.listen(PORT, '0.0.0.0', () => {
     const st = oauthStatus()
     const chat =
-      st.mode === 'none' ? 'off (oauth login or XAI_API_KEY)' : `on (${st.mode})`
-    console.log(`Bedrock listening on http://0.0.0.0:${PORT} · chat ${chat} · model ${MODEL}`)
+      st.mode === 'none' || st.needsReauth
+        ? 'off (oauth login or XAI_API_KEY)'
+        : `on (${st.mode})`
+    const persist = st.persist
+      ? `redis=${st.persist.redis} railway=${st.persist.railwayGraphQl}`
+      : 'persist=?'
+    console.log(
+      `Bedrock listening on http://0.0.0.0:${PORT} · chat ${chat} · model ${MODEL} · ${persist}`,
+    )
   })
 }
 

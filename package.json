@@ -28,6 +28,7 @@
     "@vitejs/plugin-react": "^6.0.3",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "ioredis": "^5.11.1",
     "openai": "^6.49.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

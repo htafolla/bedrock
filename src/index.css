@@ -547,7 +547,27 @@ body {
   padding: 1rem 1rem 1.5rem;
 }
 
-/* Carousel: one row of 3 so DNA stays open behind/below */
+/* Desktop: full storm grid (all doors visible at once) */
+.key-chips-grid-panel {
+  max-width: min(48rem, 100%);
+}
+
+.key-chips-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+}
+
+@media (min-width: 900px) {
+  .key-chips-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobile carousel: one row of 3 so DNA stays open behind/below */
 .key-chips-carousel-panel {
   max-width: 40rem;
 }

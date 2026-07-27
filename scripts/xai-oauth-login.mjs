@@ -14,7 +14,7 @@
  */
 
 import { randomBytes, createHash } from 'node:crypto'
-import { writeFileSync, readFileSync, unlinkSync, existsSync } from 'node:fs'
+import { writeFileSync, readFileSync, unlinkSync, existsSync, mkdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -146,37 +146,38 @@ async function exchangeCode(code, verifier) {
 }
 
 function toStoredTokens(data) {
+  const obtained_at = Math.floor(Date.now() / 1000)
+  const expires_in = Number(data.expires_in) || 86400
   return {
     access_token: data.access_token,
     refresh_token: data.refresh_token,
-    expires_at: Math.floor(Date.now() / 1000) + (data.expires_in || 86400),
+    expires_in,
+    obtained_at,
+    expires_at: obtained_at + expires_in,
     token_type: data.token_type || 'Bearer',
     scope: data.scope || 'openid profile email offline_access grok-cli:access api:access',
   }
 }
 
-function pushToRailway(b64) {
-  console.log('Setting Railway variable XAI_OAUTH_B64 …')
-  // railway variables set KEY=value (v4)
-  let r = spawnSync('railway', ['variables', '--set', `XAI_OAUTH_B64=${b64}`], {
-    encoding: 'utf8',
-    cwd: join(__dirname, '..'),
-  })
-  if (r.status !== 0) {
-    r = spawnSync('railway', ['variables', 'set', `XAI_OAUTH_B64=${b64}`], {
-      encoding: 'utf8',
-      cwd: join(__dirname, '..'),
-    })
+function pushToRailway(b64, json) {
+  console.log('Setting Railway variables XAI_OAUTH_B64 + XAI_OAUTH_TOKENS …')
+  const cwd = join(__dirname, '..')
+  for (const pair of [`XAI_OAUTH_B64=${b64}`, `XAI_OAUTH_TOKENS=${json}`]) {
+    let r = spawnSync('railway', ['variables', '--set', pair], { encoding: 'utf8', cwd })
+    if (r.status !== 0) {
+      r = spawnSync('railway', ['variables', 'set', pair], { encoding: 'utf8', cwd })
+    }
+    if (r.status !== 0) {
+      console.error(r.stderr || r.stdout || 'railway variables set failed')
+      console.error('\nSet manually:')
+      console.error('  railway variables --set XAI_OAUTH_B64=<b64>')
+      console.error('  railway variables --set XAI_OAUTH_TOKENS=<json>')
+      return false
+    }
   }
-  if (r.status !== 0) {
-    console.error(r.stderr || r.stdout || 'railway variables set failed')
-    console.error('\nSet manually:')
-    console.error('  railway variables --set XAI_OAUTH_B64=<paste b64 from stdout>')
-    process.stdout.write(`\nXAI_OAUTH_B64=${b64}\n`)
-    return false
-  }
-  console.log('✅ XAI_OAUTH_B64 set on Railway project')
-  console.log('   Restart the service (or railway up) so the process loads it.')
+  console.log('✅ OAuth vars set on Railway')
+  console.log('   Optional durable: add REDIS_URL (Railway Redis) and/or RAILWAY_API_TOKEN (account token).')
+  console.log('   Restart the service (or railway up) so the process loads tokens.')
   return true
 }
 
@@ -203,11 +204,21 @@ async function main() {
     console.log(`✅ Saved local ${path}`)
     console.log(`   Expires ${new Date(stored.expires_at * 1000).toISOString()}`)
 
-    const { b64 } = serializeTokensForEnv(stored)
+    const { b64, json } = serializeTokensForEnv(stored)
+    // Local file SSOT (same path server uses by default)
+    try {
+      const dataPath = join(__dirname, '..', 'data', 'xai-oauth-tokens.json')
+      mkdirSync(join(__dirname, '..', 'data'), { recursive: true })
+      writeFileSync(dataPath, JSON.stringify(stored, null, 2), { mode: 0o600 })
+      console.log(`✅ Saved ${dataPath}`)
+    } catch (e) {
+      console.warn('Could not write data/xai-oauth-tokens.json', e)
+    }
     if (!noRailway) {
-      pushToRailway(b64)
+      pushToRailway(b64, json)
     } else {
       process.stdout.write(`\nXAI_OAUTH_B64=${b64}\n`)
+      process.stdout.write(`XAI_OAUTH_TOKENS=${json}\n`)
     }
   } catch (err) {
     console.error('❌', err instanceof Error ? err.message : err)

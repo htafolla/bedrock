@@ -69,9 +69,11 @@ Thumbs.db
 *.tmp
 *.tgz
 
-# Durable local telemetry (no PII; keep out of git)
+# Durable local telemetry + OAuth token file SSOT (no PII/secrets in git)
 data/
 *.jsonl
+xai-tokens.json
+**/xai-oauth-tokens.json
 
 # --- 0xray suit (postinstall) ---
 .grok/

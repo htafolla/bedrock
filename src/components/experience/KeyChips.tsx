@@ -7,22 +7,76 @@ import {
   type TouchEvent,
 } from 'react'
 import { KEY_ENTRIES } from '../../lib/key-entries'
+import { useMediaCapability } from '../../hooks/useMediaCapability'
 
 interface KeyChipsProps {
   activeChamberId: string | null
   onSelect: (chamberId: string) => void
 }
 
-/** One row of three doors — carousel so DNA stays visible and tappable. */
+/** Mobile carousel page size — one row so DNA stays usable. */
 export const KEYS_PAGE_SIZE = 3
 
-/** Storm triage — short doors into the atlas; paged so the 3D map keeps the stage. */
+function ChipButton({
+  entry,
+  active,
+  onSelect,
+}: {
+  entry: (typeof KEY_ENTRIES)[number]
+  active: boolean
+  onSelect: (id: string) => void
+}) {
+  return (
+    <button
+      type="button"
+      className={active ? 'key-chip active' : 'key-chip'}
+      onClick={() => onSelect(entry.chamberId)}
+    >
+      <span className="key-chip-label">{entry.label}</span>
+      <span className="key-chip-hint">{entry.hint}</span>
+    </button>
+  )
+}
+
+/** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
+  const { isNarrow } = useMediaCapability()
+
+  if (!isNarrow) {
+    return (
+      <div className="key-chips-panel key-chips-grid-panel">
+        <header className="nav-panel-header">
+          <p className="constellation-kicker">Keys · Storm triage</p>
+          <h2 className="constellation-title">What are you facing?</h2>
+          <p className="constellation-blurb">
+            God and marriage first — then the fire, named plainly — then love, still the way. Tap a
+            door. DNA is live behind the panel. Map holds the full path. Contents is the full list.
+          </p>
+        </header>
+        <ul className="key-chips key-chips-grid" aria-label="Storm triage doors">
+          {KEY_ENTRIES.map((entry) => (
+            <li key={entry.id}>
+              <ChipButton
+                entry={entry}
+                active={entry.chamberId === activeChamberId}
+                onSelect={onSelect}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
+  return <KeyChipsCarousel activeChamberId={activeChamberId} onSelect={onSelect} />
+}
+
+/** Mobile-only: one row of three + arrows so the DNA map stays interactive. */
+function KeyChipsCarousel({ activeChamberId, onSelect }: KeyChipsProps) {
   const pageCount = Math.ceil(KEY_ENTRIES.length / KEYS_PAGE_SIZE)
   const [page, setPage] = useState(0)
   const touchStartX = useRef<number | null>(null)
 
-  // Jump to the page that holds the open door
   useEffect(() => {
     if (!activeChamberId) return
     const idx = KEY_ENTRIES.findIndex((e) => e.chamberId === activeChamberId)
@@ -88,21 +142,15 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
         </button>
 
         <ul className="key-chips key-chips-page" aria-live="polite">
-          {pageEntries.map((entry) => {
-            const active = entry.chamberId === activeChamberId
-            return (
-              <li key={entry.id}>
-                <button
-                  type="button"
-                  className={active ? 'key-chip active' : 'key-chip'}
-                  onClick={() => onSelect(entry.chamberId)}
-                >
-                  <span className="key-chip-label">{entry.label}</span>
-                  <span className="key-chip-hint">{entry.hint}</span>
-                </button>
-              </li>
-            )
-          })}
+          {pageEntries.map((entry) => (
+            <li key={entry.id}>
+              <ChipButton
+                entry={entry}
+                active={entry.chamberId === activeChamberId}
+                onSelect={onSelect}
+              />
+            </li>
+          ))}
         </ul>
 
         <button
@@ -116,7 +164,7 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
         </button>
       </div>
 
-      <div className="key-chips-pager" aria-hidden={false}>
+      <div className="key-chips-pager">
         <span className="key-chips-page-label">
           {page + 1} / {pageCount}
         </span>
