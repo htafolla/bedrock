@@ -9,7 +9,8 @@ function reduce(
     | { type: 'ENTER_NAVE' }
     | { type: 'OPEN_CHAMBER'; id: string }
     | { type: 'BACK_TO_MAP' }
-    | { type: 'SPINE_STEP'; delta: -1 | 1 },
+    | { type: 'SPINE_STEP'; delta: -1 | 1 }
+    | { type: 'RESTORE'; mode: ExperienceState['mode']; activeChamberId: string | null },
 ): ExperienceState {
   switch (action.type) {
     case 'ENTER_NAVE':
@@ -24,6 +25,8 @@ function reduce(
       if (!next) return state
       return { mode: 'chamber', activeChamberId: next }
     }
+    case 'RESTORE':
+      return { mode: action.mode, activeChamberId: action.activeChamberId }
     default:
       return state
   }
@@ -58,5 +61,13 @@ describe('experience state machine', () => {
       { type: 'SPINE_STEP', delta: 1 },
     )
     expect(next.activeChamberId).toBe('his-power-and-beauty')
+  })
+
+  it('RESTORE applies browser history without other transitions', () => {
+    const next = reduce(
+      { mode: 'chamber', activeChamberId: 'loss' },
+      { type: 'RESTORE', mode: 'constellation', activeChamberId: 'loss' },
+    )
+    expect(next).toEqual({ mode: 'constellation', activeChamberId: 'loss' })
   })
 })

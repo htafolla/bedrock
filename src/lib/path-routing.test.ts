@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  buildAppHref,
   chamberAppHref,
   chamberPath,
   journeyAppHref,
@@ -16,6 +17,14 @@ describe('path-routing', () => {
   it('builds journey app hrefs', () => {
     expect(journeyAppHref('spouse-left')).toBe('/?j=spouse-left')
     expect(journeyAppHref('spouse-left', 'wounded')).toBe('/?j=spouse-left&c=wounded')
+  })
+
+  it('buildAppHref orders journey then chamber and home', () => {
+    expect(buildAppHref({})).toBe('/')
+    expect(buildAppHref({ chamberId: 'loss' })).toBe('/?c=loss')
+    expect(buildAppHref({ journeyId: 'spouse-left', chamberId: 'wounded' })).toBe(
+      '/?j=spouse-left&c=wounded',
+    )
   })
 
   it('parses ?c= query', () => {

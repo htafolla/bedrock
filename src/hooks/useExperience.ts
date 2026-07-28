@@ -28,6 +28,11 @@ function reducer(state: ExperienceState, action: ExperienceAction): ExperienceSt
         activeChamberId: next,
       }
     }
+    case 'RESTORE':
+      return {
+        mode: action.mode,
+        activeChamberId: action.activeChamberId,
+      }
     default:
       return state
   }
@@ -49,6 +54,11 @@ export function useExperience(options: UseExperienceOptions = {}) {
   const openChamber = useCallback((id: string) => dispatch({ type: 'OPEN_CHAMBER', id }), [])
   const backToMap = useCallback(() => dispatch({ type: 'BACK_TO_MAP' }), [])
   const spineStep = useCallback((delta: -1 | 1) => dispatch({ type: 'SPINE_STEP', delta }), [])
+  const restore = useCallback(
+    (mode: ExperienceState['mode'], activeChamberId: string | null) =>
+      dispatch({ type: 'RESTORE', mode, activeChamberId }),
+    [],
+  )
 
   return {
     state,
@@ -56,5 +66,6 @@ export function useExperience(options: UseExperienceOptions = {}) {
     openChamber,
     backToMap,
     spineStep,
+    restore,
   }
 }

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { BedrockDocument } from '../../types/content'
 import { useExperience } from '../../hooks/useExperience'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
@@ -8,7 +8,8 @@ import { DEFAULT_NAV_MODE } from '../../lib/nav-preference'
 import {
   parseChamberFromLocation,
   parseJourneyFromLocation,
-  setChamberQuery,
+  readAppLocationFromUrl,
+  writeAppLocation,
 } from '../../lib/path-routing'
 import { getJourney } from '../../lib/journeys'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
@@ -59,13 +60,17 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   const [activeJourneyId, setActiveJourneyId] = useState<string | null>(deepLink.journeyId)
 
-  const { state, enterNave, openChamber, backToMap, spineStep } = useExperience({
+  const { state, enterNave, openChamber, backToMap, spineStep, restore } = useExperience({
     initialChamberId: deepLink.chamberId,
   })
-  /** Preferred Keys · Map · Contents — localStorage-backed. */
+  /** Preferred Keys · Journeys · Contents — localStorage-backed. */
   const { navMode, setNavMode } = useNavModePreference()
   /** Dark default; light available — localStorage-backed. */
   const { theme, toggleTheme } = useThemePreference()
+
+  /** Skip push when restoring from browser Back/Forward. */
+  const skipHistoryRef = useRef(false)
+  const historySeededRef = useRef(false)
 
   const activeChamber = useMemo(() => {
     if (!state.activeChamberId) return null
@@ -77,22 +82,81 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     [activeJourneyId],
   )
 
-  // Keep shareable ?c= / ?j= in sync with open chamber + journey
+  // Push history on navigation so the browser Back button returns to the prior view
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    if (skipHistoryRef.current) {
+      skipHistoryRef.current = false
+      return
+    }
+
+    const chamberId =
+      state.mode === 'chamber' ? state.activeChamberId : null
+    const journeyId = state.mode === 'arrival' ? null : activeJourneyId
+    const mode = state.mode
+
+    if (!historySeededRef.current) {
+      historySeededRef.current = true
+      writeAppLocation({
+        chamberId,
+        journeyId,
+        mode,
+        method: 'replace',
+      })
+      return
+    }
+
+    writeAppLocation({
+      chamberId,
+      journeyId,
+      mode,
+      method: 'push',
+    })
+
     if (state.mode === 'chamber' && state.activeChamberId) {
-      setChamberQuery(state.activeChamberId, { journeyId: activeJourneyId })
       const path = activeJourneyId
         ? `/?j=${activeJourneyId}&c=${state.activeChamberId}`
         : `/?c=${state.activeChamberId}`
       trackPageview(path)
     } else if (state.mode === 'constellation') {
-      // Keep journey context on the Journeys tab; only drop chamber from URL
-      setChamberQuery(null, { journeyId: activeJourneyId })
-    } else if (state.mode === 'arrival') {
-      setChamberQuery(null, { journeyId: null })
-      setActiveJourneyId(null)
+      trackPageview(activeJourneyId ? `/?j=${activeJourneyId}` : '/')
     }
   }, [state.mode, state.activeChamberId, activeJourneyId])
+
+  // Browser Back / Forward — restore from history.state + URL
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const onPopState = (event: PopStateEvent) => {
+      skipHistoryRef.current = true
+      const st = (event.state || {}) as {
+        chamberId?: string | null
+        journeyId?: string | null
+        mode?: 'arrival' | 'constellation' | 'chamber'
+      }
+      const loc = readAppLocationFromUrl()
+      const rawChamber = loc.chamberId ?? st.chamberId ?? null
+      const chamberOk =
+        rawChamber && document.chambers.some((c) => c.id === rawChamber) ? rawChamber : null
+      const journeyId = loc.journeyId ?? st.journeyId ?? null
+      setActiveJourneyId(journeyId)
+
+      const mode = st.mode
+      if (mode === 'arrival') {
+        restore('arrival', null)
+        setActiveJourneyId(null)
+      } else if (mode === 'chamber' || chamberOk) {
+        restore('chamber', chamberOk)
+      } else {
+        restore('constellation', chamberOk)
+      }
+      scrollExperienceToTop()
+    }
+
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [document.chambers, restore])
 
   const showScene = allow3d && state.mode !== 'arrival'
   // DNA interactive on Keys / Journeys. Contents stays list-first.
@@ -121,9 +185,8 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   /** Leave chamber; keep journey path context for the Journeys tab. */
   const leaveChamber = useCallback(() => {
-    setChamberQuery(null, { journeyId: activeJourneyId })
     backToMap()
-  }, [backToMap, activeJourneyId])
+  }, [backToMap])
 
   /** Tab switch: persist preference; if reading, return to that surface. */
   const onNavChange = useCallback(
@@ -137,11 +200,10 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     [setNavMode, state.mode, backToMap],
   )
 
-  /** Brand mark → home: default Keys surface, leave any chamber, clear journey. */
+  /** Brand mark → home: default Keys surface, leave chamber, clear journey. */
   const goHome = useCallback(() => {
     setNavMode(DEFAULT_NAV_MODE)
     setActiveJourneyId(null)
-    setChamberQuery(null, { journeyId: null })
     if (state.mode === 'chamber') {
       backToMap()
     }

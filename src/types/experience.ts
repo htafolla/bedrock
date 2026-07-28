@@ -12,3 +12,5 @@ export type ExperienceAction =
   | { type: 'OPEN_CHAMBER'; id: string }
   | { type: 'BACK_TO_MAP' }
   | { type: 'SPINE_STEP'; delta: -1 | 1 }
+  /** Browser history pop — restore mode + chamber without pushing history */
+  | { type: 'RESTORE'; mode: ExperienceMode; activeChamberId: string | null }
