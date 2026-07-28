@@ -355,7 +355,7 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
           <div className="guide-chat-messages" ref={listRef}>
             {messages.length === 0 ? (
               <div className="guide-chat-empty">
-                <p>Short counsel under pressure. Start with a starter or type your own.</p>
+                <p>Say hi, or ask under pressure. Starters below if you want a field card.</p>
                 <ul className="guide-chat-starters">
                   {STARTERS.map((s) => (
                     <li key={s}>
