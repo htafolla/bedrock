@@ -34,6 +34,14 @@ import {
   ensureFreshOAuth,
 } from './xai-oauth.mjs'
 import {
+  listJourneys,
+  getJourney,
+  getJourneysMeta,
+  matchJourneyFromText,
+  formatJourneyContextLine,
+  journeysForChamber,
+} from './journeys.mjs'
+import {
   initTelemetryStore,
   isTelemetryRedisReady,
   hydrateFromJsonl,
@@ -156,7 +164,15 @@ Core verses (reach for these first when relevant):
 - Mind / Capture thought: 2 Corinthians 10:5 · Romans 12:2 · Philippians 4:6-8 · Isaiah 26:3
 
 Core posture:
-Help the visitor stand on what is true when feelings and circumstances are unstable.`
+Help the visitor stand on what is true when feelings and circumstances are unstable.
+
+Core journeys (ground-shaking life — multi-stage paths, not one chamber):
+When the visitor describes real life (spouse left, death, addiction, obsession, fall, wait…), you are walking a **journey**, not dumping a random card.
+- Prefer Connected truth from the **next stations** on the matched journey (see context if provided).
+- Death of a loved one ≠ spouse left — never mix those doors (Loss vs Wounded).
+- Journeys loop: spiral and long middle re-enter; invite the next station, not a finished checklist.
+- API catalog: GET /api/journeys
+`
 
 /**
  * @param {{ forceRefresh?: boolean }} [opts]
@@ -213,15 +229,30 @@ export function normalizeChatBody(body) {
   }
 
   let contextLine = null
+  /** @type {string | null} */
+  let chamberId = null
   const ctx = raw.context
   if (ctx && typeof ctx === 'object') {
     const c = /** @type {{ chamberTitle?: unknown, chamberSummary?: unknown, chamberId?: unknown }} */ (ctx)
     const title = typeof c.chamberTitle === 'string' ? c.chamberTitle.trim() : ''
     const summary = typeof c.chamberSummary === 'string' ? c.chamberSummary.trim() : ''
     const id = typeof c.chamberId === 'string' ? c.chamberId.trim() : ''
+    if (id) chamberId = id
     if (title || id) {
       contextLine = `Visitor is currently in chamber${title ? ` "${title}"` : ''}${id ? ` (${id})` : ''}${summary ? `: ${summary}` : ''}.`
     }
+  }
+
+  // Core journey detection: last user turn plain speech, else chamber-linked journey
+  const lastUser = messages[messages.length - 1]?.content || ''
+  let journey = matchJourneyFromText(lastUser)
+  if (!journey && chamberId) {
+    const linked = journeysForChamber(chamberId)
+    journey = linked[0] || null
+  }
+  if (journey) {
+    const journeyLine = formatJourneyContextLine(journey, { chamberId })
+    contextLine = contextLine ? `${contextLine}\n${journeyLine}` : journeyLine
   }
 
   return { messages, contextLine }
@@ -280,13 +311,71 @@ function createApp() {
       version: process.env.npm_package_version || '0.2.0-beta',
       beta: true,
       chambers: chamberById.size,
+      journeys: listJourneys().length,
       aiSurface: {
         chamberPages: '/c/{id}',
         markdown: '/c/{id}.md',
         export: '/export/chambers.json',
+        journeys: '/export/journeys.json',
         llms: '/llms.txt',
         llmsFull: '/llms-full.txt',
       },
+    })
+  })
+
+  // —— Core journeys (multi-stage walks through the atlas) ——
+  app.get('/api/journeys', (_req, res) => {
+    const meta = getJourneysMeta()
+    res.json({
+      meta,
+      journeys: listJourneys().map((j) => ({
+        id: j.id,
+        title: j.title,
+        family: j.family,
+        wave: j.wave,
+        summary: j.summary,
+        plainSpeech: j.plainSpeech,
+        doorChamberId: j.doorChamberId,
+        distinctFrom: j.distinctFrom || [],
+        keyIds: j.keyIds || [],
+        stageCount: (j.stages && j.stages.length) || 0,
+        stages: (j.stages || []).map((s) => {
+          const ch = chamberById.get(s.chamberId)
+          return {
+            id: s.id,
+            role: s.role,
+            label: s.label,
+            chamberId: s.chamberId,
+            note: s.note,
+            title: (ch && ch.title) || s.chamberId,
+          }
+        }),
+      })),
+    })
+  })
+
+  app.get('/api/journeys/:id', (req, res) => {
+    const id = String(req.params.id || '').toLowerCase()
+    const j = getJourney(id)
+    if (!j) {
+      res.status(404).json({ error: 'Journey not found' })
+      return
+    }
+    res.json({
+      ...j,
+      stages: (j.stages || []).map((s) => {
+        const ch = chamberById.get(s.chamberId)
+        return {
+          id: s.id,
+          role: s.role,
+          label: s.label,
+          chamberId: s.chamberId,
+          note: s.note,
+          title: (ch && ch.title) || s.chamberId,
+          summary: (ch && ch.summary) || '',
+          url: `https://bedrock.rippel.ai/c/${s.chamberId}`,
+        }
+      }),
     })
   })
 

@@ -1,0 +1,989 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "revised": "2026-07-28",
+    "title": "Bedrock core journeys",
+    "description": "Ordered multi-stage walks through the chamber atlas for ground-shaking life. Chambers are stations; journeys are paths. Shared spine: blow → near → spiral → fork → long_middle → remain. People loop spiral↔fork↔long_middle; the path is to keep walking, not complete a checklist.",
+    "stageRoles": ["blow", "near", "spiral", "fork", "long_middle", "remain"],
+    "families": {
+      "body": "Blow to the body — loss, wound, abandonment",
+      "will": "Blow to the will — bondage, loops, grip",
+      "conscience": "Blow to the conscience — fall, return, regret",
+      "world": "Blow to the world — persecution, warfare, forced wait"
+    },
+    "count": 14
+  },
+  "journeys": [
+    {
+      "id": "death-of-loved-one",
+      "title": "Death of a loved one",
+      "family": "body",
+      "wave": 1,
+      "summary": "Mourning is not unbelief. Hope does not erase tears; it frames them. Empty hands; remain today.",
+      "plainSpeech": [
+        "they died",
+        "my loved one died",
+        "we buried them",
+        "someone died",
+        "i lost someone",
+        "my dad died",
+        "my mom died",
+        "my child died",
+        "grief",
+        "bereavement"
+      ],
+      "doorChamberId": "loss",
+      "distinctFrom": ["spouse-left"],
+      "keyIds": ["key-loss"],
+      "loopStageIds": ["spiral", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "The blow",
+          "chamberId": "loss",
+          "note": "Name the death. Mourning is not unbelief."
+        },
+        {
+          "id": "near",
+          "role": "near",
+          "label": "Who holds me",
+          "chamberId": "he-is-for-you",
+          "note": "Presence before advice."
+        },
+        {
+          "id": "promises",
+          "role": "near",
+          "label": "What still stands",
+          "chamberId": "his-promises",
+          "note": "Faithful when the chair is empty."
+        },
+        {
+          "id": "lament",
+          "role": "spiral",
+          "label": "Pour out",
+          "chamberId": "lament-and-pour-out-your-heart",
+          "note": "Do not perform fine."
+        },
+        {
+          "id": "hope",
+          "role": "long_middle",
+          "label": "Pain and glory",
+          "chamberId": "hope-of-glory",
+          "note": "Present pain real; future glory more real. Hold both."
+        },
+        {
+          "id": "wait",
+          "role": "long_middle",
+          "label": "The long middle",
+          "chamberId": "wait-on-the-lord",
+          "note": "Time moves; they do not."
+        },
+        {
+          "id": "peace",
+          "role": "remain",
+          "label": "Guard the mind",
+          "chamberId": "peace",
+          "note": "Peace given, not earned by gripping the timeline."
+        }
+      ]
+    },
+    {
+      "id": "spouse-left",
+      "title": "Spouse left / marriage under fire",
+      "family": "body",
+      "wave": 1,
+      "summary": "You were wounded. Their leaving does not cancel whose you are. Entrust the scales; take the next right step — with boundaries, without hatred as home.",
+      "plainSpeech": [
+        "my wife left",
+        "my husband left",
+        "they left me",
+        "divorce",
+        "separation",
+        "she filed",
+        "he filed",
+        "marriage is over",
+        "spouse left",
+        "abandoned by spouse"
+      ],
+      "doorChamberId": "wounded",
+      "distinctFrom": ["death-of-loved-one"],
+      "keyIds": ["key-wounded", "key-marriage"],
+      "loopStageIds": ["spiral", "fork", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "The wound",
+          "chamberId": "wounded",
+          "note": "Name harm. Do not make hatred your shelter."
+        },
+        {
+          "id": "near",
+          "role": "near",
+          "label": "Whose you are",
+          "chamberId": "he-is-for-you",
+          "note": "Their leaving does not cancel you are His."
+        },
+        {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "The replay",
+          "chamberId": "rumination",
+          "note": "Obsession is not revelation."
+        },
+        {
+          "id": "fear",
+          "role": "spiral",
+          "label": "Abandonment fear",
+          "chamberId": "fear",
+          "note": "Name the fear; then trust."
+        },
+        {
+          "id": "fork-vengeance",
+          "role": "fork",
+          "label": "Courtroom of the mind",
+          "chamberId": "leave-vengeance-to-the-lord",
+          "note": "Flesh wants repayment; entrust the scales."
+        },
+        {
+          "id": "fork-repay",
+          "role": "fork",
+          "label": "Do not repay",
+          "chamberId": "do-not-repay-evil-with-evil",
+          "note": "Bless; do not multiply darkness."
+        },
+        {
+          "id": "covenant",
+          "role": "long_middle",
+          "label": "Covenant honesty",
+          "chamberId": "marriage-covenant",
+          "note": "Do not invent a new story. Faithful to what God still calls true — not self-erasure in harm."
+        },
+        {
+          "id": "forgive",
+          "role": "long_middle",
+          "label": "Forgiveness over time",
+          "chamberId": "forgive-as-you-have-been-forgiven",
+          "note": "Not saying it did not hurt. Release the ledger while grief remains."
+        },
+        {
+          "id": "endure",
+          "role": "long_middle",
+          "label": "Long middle",
+          "chamberId": "patience",
+          "note": "One duty you own today."
+        },
+        {
+          "id": "trust",
+          "role": "remain",
+          "label": "Release the outcome",
+          "chamberId": "trust-in-the-lord",
+          "note": "You cannot grip the outcome."
+        },
+        {
+          "id": "hope",
+          "role": "remain",
+          "label": "Keep remaining",
+          "chamberId": "hope-of-glory",
+          "note": "Steadfast under trial."
+        }
+      ]
+    },
+    {
+      "id": "deep-wound",
+      "title": "Deep wound / betrayal",
+      "family": "body",
+      "wave": 2,
+      "summary": "You were harmed. God sees. Do not repay evil; forgive over time; keep wise boundaries.",
+      "plainSpeech": [
+        "i was betrayed",
+        "they hurt me",
+        "i was crushed",
+        "deep wound",
+        "someone harmed me",
+        "abuse",
+        "i was wronged"
+      ],
+      "doorChamberId": "wounded",
+      "distinctFrom": ["spouse-left", "death-of-loved-one"],
+      "keyIds": ["key-wounded"],
+      "loopStageIds": ["fork", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "The wound",
+          "chamberId": "wounded",
+          "note": "Name harm without false total blame."
+        },
+        {
+          "id": "near",
+          "role": "near",
+          "label": "He is for you",
+          "chamberId": "he-is-for-you",
+          "note": "Cast the care; do not decorate it."
+        },
+        {
+          "id": "fork-repay",
+          "role": "fork",
+          "label": "Do not repay",
+          "chamberId": "do-not-repay-evil-with-evil",
+          "note": "Evil repaid multiplies darkness."
+        },
+        {
+          "id": "fork-vengeance",
+          "role": "fork",
+          "label": "Leave vengeance",
+          "chamberId": "leave-vengeance-to-the-lord",
+          "note": "Stillness is a weapon."
+        },
+        {
+          "id": "forgive",
+          "role": "long_middle",
+          "label": "Forgive as forgiven",
+          "chamberId": "forgive-as-you-have-been-forgiven",
+          "note": "Frees you to obey while grief remains."
+        },
+        {
+          "id": "peace",
+          "role": "remain",
+          "label": "Peace",
+          "chamberId": "peace",
+          "note": "Receive the guard over heart and mind."
+        }
+      ]
+    },
+    {
+      "id": "abandonment-fear",
+      "title": "Abandonment fear / free-fall alone",
+      "family": "body",
+      "wave": 2,
+      "summary": "Perfect love casts out fear. You cry Abba — not slave to terror. Trust when the face is gone.",
+      "plainSpeech": [
+        "everyone leaves",
+        "i can't be alone",
+        "abandonment",
+        "afraid they will leave",
+        "free-fall",
+        "terrified of being alone",
+        "fear of abandonment"
+      ],
+      "doorChamberId": "fear",
+      "keyIds": ["key-fear"],
+      "loopStageIds": ["spiral"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the fear",
+          "chamberId": "fear",
+          "note": "Perfect love casts out fear."
+        },
+        {
+          "id": "do-not-fear",
+          "role": "near",
+          "label": "Do not fear",
+          "chamberId": "do-not-fear",
+          "note": "Command and comfort."
+        },
+        {
+          "id": "near",
+          "role": "near",
+          "label": "He is for you",
+          "chamberId": "he-is-for-you",
+          "note": "Stop rehearsing every face against you."
+        },
+        {
+          "id": "promises",
+          "role": "near",
+          "label": "Promises",
+          "chamberId": "his-promises",
+          "note": "What does not depend on them."
+        },
+        {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "Capture the spiral",
+          "chamberId": "take-every-thought-captive",
+          "note": "Fear thoughts are not prophecy."
+        },
+        {
+          "id": "trust",
+          "role": "long_middle",
+          "label": "Trust",
+          "chamberId": "trust-in-the-lord",
+          "note": "When I am afraid, I put my trust in You."
+        },
+        {
+          "id": "peace",
+          "role": "remain",
+          "label": "Peace",
+          "chamberId": "peace",
+          "note": "Let the peace of Christ rule this hour."
+        }
+      ]
+    },
+    {
+      "id": "addiction",
+      "title": "Addiction / mastery",
+      "family": "will",
+      "wave": 1,
+      "summary": "If it masters you, it is not free. Name the master; walk by the Spirit one hour; get real help.",
+      "plainSpeech": [
+        "it owns me",
+        "i'm addicted",
+        "i can't stop",
+        "addiction",
+        "it masters me",
+        "substance",
+        "i'm trapped in a habit"
+      ],
+      "doorChamberId": "addiction",
+      "keyIds": ["key-addiction"],
+      "loopStageIds": ["spiral", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the master",
+          "chamberId": "addiction",
+          "note": "Lawful is not free if it masters you."
+        },
+        {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "Capture the craving",
+          "chamberId": "take-every-thought-captive",
+          "note": "Craving is not command."
+        },
+        {
+          "id": "renew",
+          "role": "spiral",
+          "label": "Renew the mind",
+          "chamberId": "renew-your-mind",
+          "note": "World pattern reasserts by default."
+        },
+        {
+          "id": "spirit",
+          "role": "fork",
+          "label": "Walk by the Spirit",
+          "chamberId": "walk-by-the-spirit",
+          "note": "Put the flesh to death one hour at a time."
+        },
+        {
+          "id": "self-control",
+          "role": "fork",
+          "label": "Self-control",
+          "chamberId": "self-control",
+          "note": "Spirit fruit for you."
+        },
+        {
+          "id": "confess",
+          "role": "long_middle",
+          "label": "Confess and forsake",
+          "chamberId": "confess-and-be-cleansed",
+          "note": "Freedom is not alone-willpower theater."
+        },
+        {
+          "id": "grace",
+          "role": "long_middle",
+          "label": "Grace for this hour",
+          "chamberId": "his-grace-is-sufficient",
+          "note": "Weakness is where His power is perfected."
+        },
+        {
+          "id": "remain",
+          "role": "remain",
+          "label": "Keep remaining",
+          "chamberId": "hope-of-glory",
+          "note": "One next sober step; real help when needed."
+        }
+      ]
+    },
+    {
+      "id": "obsession",
+      "title": "Obsession / replaying mind",
+      "family": "will",
+      "wave": 1,
+      "summary": "The stuck replaying mind is not the Holy Spirit. Capture → replace → next obedient step.",
+      "plainSpeech": [
+        "i can't stop replaying",
+        "stuck on loop",
+        "obsessing",
+        "rumination",
+        "my mind won't stop",
+        "i keep going over it",
+        "can't stop thinking about it"
+      ],
+      "doorChamberId": "rumination",
+      "keyIds": ["key-obsession"],
+      "loopStageIds": ["spiral"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the loop",
+          "chamberId": "rumination",
+          "note": "Obsession is not revelation."
+        },
+        {
+          "id": "captive",
+          "role": "spiral",
+          "label": "Take captive",
+          "chamberId": "take-every-thought-captive",
+          "note": "Capture to obey Christ."
+        },
+        {
+          "id": "word",
+          "role": "near",
+          "label": "The Word",
+          "chamberId": "the-word",
+          "note": "Open Scripture; fight fog with light."
+        },
+        {
+          "id": "prayer",
+          "role": "fork",
+          "label": "Pray the spiral",
+          "chamberId": "prayer",
+          "note": "Do not feed the loop."
+        },
+        {
+          "id": "trust",
+          "role": "long_middle",
+          "label": "Trust",
+          "chamberId": "trust-in-the-lord",
+          "note": "Next duty, not more analysis."
+        },
+        {
+          "id": "peace",
+          "role": "remain",
+          "label": "Peace",
+          "chamberId": "peace",
+          "note": "Mind stayed on Him."
+        }
+      ]
+    },
+    {
+      "id": "control-grip",
+      "title": "Control grip",
+      "family": "will",
+      "wave": 2,
+      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them.",
+      "plainSpeech": [
+        "i have to fix it",
+        "i have to fix them",
+        "i can't let go",
+        "control",
+        "everything must go my way",
+        "i grip the outcome",
+        "open hand"
+      ],
+      "doorChamberId": "control",
+      "keyIds": ["key-control"],
+      "loopStageIds": ["fork", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the grip",
+          "chamberId": "control",
+          "note": "Outcomes, people, image, timeline — if you must hold it, it has become a god."
+        },
+        {
+          "id": "trust",
+          "role": "near",
+          "label": "Trust",
+          "chamberId": "trust-in-the-lord",
+          "note": "Release the outcome you cannot rule."
+        },
+        {
+          "id": "patience",
+          "role": "long_middle",
+          "label": "Patience",
+          "chamberId": "patience",
+          "note": "You are not the weather."
+        },
+        {
+          "id": "wait",
+          "role": "long_middle",
+          "label": "Wait",
+          "chamberId": "wait-on-the-lord",
+          "note": "Do the one duty you own today."
+        },
+        {
+          "id": "self-control",
+          "role": "fork",
+          "label": "Self-control",
+          "chamberId": "self-control",
+          "note": "Rules you, not them."
+        },
+        {
+          "id": "spirit",
+          "role": "remain",
+          "label": "Walk by the Spirit",
+          "chamberId": "walk-by-the-spirit",
+          "note": "Flesh wants the last word over another life."
+        }
+      ]
+    },
+    {
+      "id": "jealousy",
+      "title": "Jealousy / rivalry love",
+      "family": "will",
+      "wave": 2,
+      "summary": "Jealousy is not love. Capture the rivalry; choose selfless love; trust God with what is not yours to grip.",
+      "plainSpeech": [
+        "i'm jealous",
+        "jealousy",
+        "i can't stand them having",
+        "envy",
+        "rivalry",
+        "possessive"
+      ],
+      "doorChamberId": "jealousy",
+      "keyIds": ["key-jealousy"],
+      "loopStageIds": ["spiral", "fork"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name jealousy",
+          "chamberId": "jealousy",
+          "note": "Not love."
+        },
+        {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "Capture",
+          "chamberId": "take-every-thought-captive",
+          "note": "Rival thoughts are not truth."
+        },
+        {
+          "id": "fork-vengeance",
+          "role": "fork",
+          "label": "Leave vengeance",
+          "chamberId": "leave-vengeance-to-the-lord",
+          "note": "Do not turn rivalry into payback."
+        },
+        {
+          "id": "love",
+          "role": "long_middle",
+          "label": "Selfless love",
+          "chamberId": "choose-selfless-love",
+          "note": "Love does not seek its own way."
+        },
+        {
+          "id": "trust",
+          "role": "remain",
+          "label": "Trust",
+          "chamberId": "trust-in-the-lord",
+          "note": "Release what is not yours to grip."
+        }
+      ]
+    },
+    {
+      "id": "i-fell",
+      "title": "I fell — return path",
+      "family": "conscience",
+      "wave": 1,
+      "summary": "Name the fall. Confess. Grace is enough. Rise. The righteous man falls and gets up again. Hub path after any journey’s failure.",
+      "plainSpeech": [
+        "i fell",
+        "i blew it",
+        "i sinned",
+        "i can't face myself",
+        "i failed again",
+        "i'm ashamed",
+        "i collapsed"
+      ],
+      "doorChamberId": "the-righteous-fall",
+      "keyIds": [],
+      "loopStageIds": ["long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the fall",
+          "chamberId": "the-righteous-fall",
+          "note": "I sinned. I am not finished."
+        },
+        {
+          "id": "confess",
+          "role": "near",
+          "label": "Confess and be cleansed",
+          "chamberId": "confess-and-be-cleansed",
+          "note": "Concealment will not prosper."
+        },
+        {
+          "id": "grace",
+          "role": "near",
+          "label": "Grace sufficient",
+          "chamberId": "his-grace-is-sufficient",
+          "note": "Receive mercy; renounce the flesh habit."
+        },
+        {
+          "id": "cross",
+          "role": "near",
+          "label": "No condemnation",
+          "chamberId": "the-cross-and-our-justification",
+          "note": "Self-hate is not holiness."
+        },
+        {
+          "id": "spirit",
+          "role": "fork",
+          "label": "Walk by the Spirit",
+          "chamberId": "walk-by-the-spirit",
+          "note": "Rise and walk again."
+        },
+        {
+          "id": "regret",
+          "role": "spiral",
+          "label": "Godly grief",
+          "chamberId": "regret",
+          "note": "Refuse the death-tape of worldly grief."
+        },
+        {
+          "id": "remain",
+          "role": "remain",
+          "label": "Hope of glory",
+          "chamberId": "hope-of-glory",
+          "note": "Your fall does not cancel the crucible."
+        }
+      ]
+    },
+    {
+      "id": "sexual-sin",
+      "title": "Sexual sin / covenant fracture",
+      "family": "conscience",
+      "wave": 2,
+      "summary": "Confess, forsake, be cleansed. Do not call darkness a new identity. Deny yourself; walk by the Spirit.",
+      "plainSpeech": [
+        "i cheated",
+        "adultery",
+        "sexual sin",
+        "lust owns me",
+        "porn",
+        "i broke the marriage bed",
+        "affair"
+      ],
+      "doorChamberId": "adultery",
+      "keyIds": ["key-sexual-sin"],
+      "loopStageIds": ["spiral", "long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name it",
+          "chamberId": "adultery",
+          "note": "Not your own; do not rename darkness."
+        },
+        {
+          "id": "confess",
+          "role": "near",
+          "label": "Confess",
+          "chamberId": "confess-and-be-cleansed",
+          "note": "Forsake; receive cleansing."
+        },
+        {
+          "id": "deny",
+          "role": "fork",
+          "label": "Deny yourself",
+          "chamberId": "deny-yourself",
+          "note": "Cross daily; refuse self as god of this hour."
+        },
+        {
+          "id": "self-control",
+          "role": "fork",
+          "label": "Self-control",
+          "chamberId": "self-control",
+          "note": "Spirit fruit."
+        },
+        {
+          "id": "spirit",
+          "role": "long_middle",
+          "label": "Walk by the Spirit",
+          "chamberId": "walk-by-the-spirit",
+          "note": "One hour free."
+        },
+        {
+          "id": "covenant",
+          "role": "long_middle",
+          "label": "Covenant / faithfulness",
+          "chamberId": "marriage-covenant",
+          "note": "When marriage is in view — faithfulness, not fantasy."
+        },
+        {
+          "id": "rise",
+          "role": "remain",
+          "label": "Rise",
+          "chamberId": "the-righteous-fall",
+          "note": "Identity is not the sin."
+        }
+      ]
+    },
+    {
+      "id": "stuck-regret",
+      "title": "Stuck regret",
+      "family": "conscience",
+      "wave": 3,
+      "summary": "Godly grief leads to life; worldly grief leads to death. Own what is yours; refuse self-hate as god; rise.",
+      "plainSpeech": [
+        "i can't undo it",
+        "regret",
+        "i keep regretting",
+        "if only i had",
+        "i can't forgive myself",
+        "stuck in the past"
+      ],
+      "doorChamberId": "regret",
+      "keyIds": [],
+      "loopStageIds": ["spiral"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the regret",
+          "chamberId": "regret",
+          "note": "Godly grief vs death-tape."
+        },
+        {
+          "id": "confess",
+          "role": "near",
+          "label": "If sin — confess",
+          "chamberId": "confess-and-be-cleansed",
+          "note": "Own what is yours."
+        },
+        {
+          "id": "grace",
+          "role": "near",
+          "label": "Grace",
+          "chamberId": "his-grace-is-sufficient",
+          "note": "No condemnation theater."
+        },
+        {
+          "id": "cross",
+          "role": "near",
+          "label": "Cross",
+          "chamberId": "the-cross-and-our-justification",
+          "note": "Christ died for sins; rise."
+        },
+        {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "Stop the replay",
+          "chamberId": "rumination",
+          "note": "Regret loop is not holiness."
+        },
+        {
+          "id": "rise",
+          "role": "remain",
+          "label": "Rise",
+          "chamberId": "the-righteous-fall",
+          "note": "Next obedience."
+        }
+      ]
+    },
+    {
+      "id": "persecution",
+      "title": "Persecution / hated for His name",
+      "family": "world",
+      "wave": 3,
+      "summary": "Blessed when persecuted for righteousness. Armor on; do not repay; remain faithful; hope of glory.",
+      "plainSpeech": [
+        "persecution",
+        "hated for his name",
+        "they're against me for my faith",
+        "suffering for christ",
+        "rejected for believing"
+      ],
+      "doorChamberId": "persecution",
+      "keyIds": ["key-persecution"],
+      "loopStageIds": ["long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name persecution",
+          "chamberId": "persecution",
+          "note": "For His name — not every conflict is this."
+        },
+        {
+          "id": "armor",
+          "role": "near",
+          "label": "Full armor",
+          "chamberId": "the-full-armor-of-god",
+          "note": "Stand."
+        },
+        {
+          "id": "warfare",
+          "role": "spiral",
+          "label": "Warfare right-sized",
+          "chamberId": "spiritual-warfare",
+          "note": "Not against flesh and blood; no devil-fascination."
+        },
+        {
+          "id": "fork",
+          "role": "fork",
+          "label": "Do not repay",
+          "chamberId": "do-not-repay-evil-with-evil",
+          "note": "Bless when insulted."
+        },
+        {
+          "id": "faithful",
+          "role": "long_middle",
+          "label": "Faithful servant",
+          "chamberId": "the-faithful-servant",
+          "note": "Found doing when He comes."
+        },
+        {
+          "id": "hope",
+          "role": "remain",
+          "label": "Hope of glory",
+          "chamberId": "hope-of-glory",
+          "note": "Crowns for those who remain."
+        }
+      ]
+    },
+    {
+      "id": "spiritual-warfare-fog",
+      "title": "Spiritual warfare / oppression fog",
+      "family": "world",
+      "wave": 3,
+      "summary": "The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not devil-fascination.",
+      "plainSpeech": [
+        "spiritual warfare",
+        "under attack",
+        "oppression",
+        "something is attacking my mind",
+        "the enemy",
+        "spiritual fog"
+      ],
+      "doorChamberId": "spiritual-warfare",
+      "keyIds": ["key-witchcraft"],
+      "loopStageIds": ["spiral"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the war",
+          "chamberId": "spiritual-warfare",
+          "note": "Not against flesh and blood."
+        },
+        {
+          "id": "adversary",
+          "role": "near",
+          "label": "The adversary",
+          "chamberId": "the-adversary",
+          "note": "Real; do not fixate."
+        },
+        {
+          "id": "armor",
+          "role": "near",
+          "label": "Armor",
+          "chamberId": "the-full-armor-of-god",
+          "note": "Stand equipped."
+        },
+        {
+          "id": "word",
+          "role": "fork",
+          "label": "The Word",
+          "chamberId": "the-word",
+          "note": "Sword of the Spirit; fight the lie you cannot understand."
+        },
+        {
+          "id": "prayer",
+          "role": "fork",
+          "label": "Prayer",
+          "chamberId": "prayer",
+          "note": "Pray; do not spiral into fascination."
+        },
+        {
+          "id": "captive",
+          "role": "spiral",
+          "label": "Capture thoughts",
+          "chamberId": "take-every-thought-captive",
+          "note": "Accusation and despair are not the Spirit."
+        },
+        {
+          "id": "remain",
+          "role": "remain",
+          "label": "Stand",
+          "chamberId": "hope-of-glory",
+          "note": "Eyes on Christ."
+        }
+      ]
+    },
+    {
+      "id": "forced-waiting",
+      "title": "Forced waiting / life out of control",
+      "family": "world",
+      "wave": 1,
+      "summary": "You cannot force the timeline. Wait on the Lord; trust; one duty today; provision for this day.",
+      "plainSpeech": [
+        "nothing moves",
+        "i'm waiting forever",
+        "out of control",
+        "can't force it",
+        "life is chaos",
+        "drowning in wait",
+        "everything is stuck",
+        "i feel lost"
+      ],
+      "doorChamberId": "patience",
+      "keyIds": ["key-patience", "key-trust", "key-god"],
+      "loopStageIds": ["long_middle"],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Can't force it",
+          "chamberId": "patience",
+          "note": "Urgency is not wisdom."
+        },
+        {
+          "id": "wait",
+          "role": "near",
+          "label": "Wait on the Lord",
+          "chamberId": "wait-on-the-lord",
+          "note": "Do the one duty you own today."
+        },
+        {
+          "id": "trust",
+          "role": "near",
+          "label": "Trust",
+          "chamberId": "trust-in-the-lord",
+          "note": "Lean not on panic as wisdom."
+        },
+        {
+          "id": "god-first",
+          "role": "near",
+          "label": "God first",
+          "chamberId": "god-first",
+          "note": "Seek first the kingdom in the next five minutes."
+        },
+        {
+          "id": "provision",
+          "role": "long_middle",
+          "label": "Daily bread",
+          "chamberId": "his-provision",
+          "note": "This day, not the whole future."
+        },
+        {
+          "id": "prayer",
+          "role": "fork",
+          "label": "Prayer",
+          "chamberId": "prayer",
+          "note": "Cast cares; do not decorate them."
+        },
+        {
+          "id": "hope",
+          "role": "remain",
+          "label": "Remain",
+          "chamberId": "hope-of-glory",
+          "note": "Keep remaining today."
+        }
+      ]
+    }
+  ]
+}

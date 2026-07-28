@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import document from '../content/bedrock.json'
+import journeysDoc from '../content/journeys.json'
 import { SPINE_ORDER } from './spine'
 import { KEY_ENTRIES } from './key-entries'
+import { listJourneys } from './journeys'
 
 const FRUIT = [
   'love',
@@ -234,6 +236,17 @@ describe('bedrock content integrity', () => {
     expect(c!.title).toBe('Obsession')
     expect(c!.summary.toLowerCase()).toMatch(/stuck|replay|loop|captive|mind/)
     expect(c!.body.map((b) => b.text).join(' ').toLowerCase()).toMatch(/thought captive|renewal of your mind/)
+  })
+
+  it('core journeys SSOT is 14 arcs and every station is a real chamber', () => {
+    expect(journeysDoc.meta.count).toBe(14)
+    expect(listJourneys()).toHaveLength(14)
+    for (const j of listJourneys()) {
+      expect(byId.has(j.doorChamberId), `missing door ${j.doorChamberId}`).toBe(true)
+      for (const s of j.stages) {
+        expect(byId.has(s.chamberId), `missing station ${j.id}/${s.chamberId}`).toBe(true)
+      }
+    }
   })
 
   it('Truth stays verse-shaped — application lives in Under fire', () => {

@@ -84,4 +84,11 @@ describe('KEY_ENTRIES', () => {
       expect(spine.has(k.chamberId as (typeof SPINE_ORDER)[number])).toBe(true)
     }
   })
+
+  it('storm Keys link to core journey ids when set', () => {
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-loss')?.journeyId).toBe('death-of-loved-one')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('spouse-left')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.journeyId).toBe('addiction')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-love')?.journeyId).toBeUndefined()
+  })
 })

@@ -33,9 +33,12 @@ interface GuideChatProps {
 }
 
 const STARTERS = [
-  'Where do I start when I feel lost?',
-  'How do I stand solid under fire?',
-  'What does love look like when it costs me?',
+  'My loved one died.',
+  'My spouse left me.',
+  "It owns me — I can't stop.",
+  "I can't stop replaying it.",
+  'I fell again.',
+  "I can't force the timeline.",
 ]
 
 function childText(node: ReactNode): string {
