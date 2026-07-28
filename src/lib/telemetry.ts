@@ -1,15 +1,26 @@
 /**
- * Lightweight privacy-first telemetry — chamber / key taps only.
- * No cookies, no IP collection client-side, no user ids.
+ * Lightweight privacy-first telemetry transport.
+ * Anonymous visitor id optional; no IP collection client-side.
  */
 
-export type TelemetryEvent = 'open_chamber' | 'key_tap' | 'nav' | 'enter' | 'guide_open'
+export type TelemetryEvent =
+  | 'open_chamber'
+  | 'key_tap'
+  | 'nav'
+  | 'enter'
+  | 'guide_open'
+  | 'pageview'
 
 export interface TelemetryPayload {
-  event: TelemetryEvent
+  event: TelemetryEvent | string
   chamberId?: string
   source?: string
   nav?: string
+  /** Path for pageviews */
+  path?: string
+  /** Anonymous first-party visitor id */
+  vid?: string
+  referrer?: string
 }
 
 /** Fire-and-forget; never throws into UI. */

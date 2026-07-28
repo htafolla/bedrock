@@ -7,7 +7,7 @@ import { useThemePreference } from '../../hooks/useThemePreference'
 import { DEFAULT_NAV_MODE } from '../../lib/nav-preference'
 import { parseChamberFromLocation, setChamberQuery } from '../../lib/path-routing'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
-import { track } from '../../lib/telemetry'
+import { trackEvent, trackPageview } from '../../lib/analytics'
 import { ArrivalGate } from './ArrivalGate'
 import { ConstellationHud } from './ConstellationHud'
 import { ChamberFocus } from './ChamberFocus'
@@ -55,6 +55,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   useEffect(() => {
     if (state.mode === 'chamber' && state.activeChamberId) {
       setChamberQuery(state.activeChamberId)
+      trackPageview(`/?c=${state.activeChamberId}`)
     } else if (state.mode === 'constellation' || state.mode === 'arrival') {
       setChamberQuery(null)
     }
@@ -67,8 +68,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   const selectChamber = useCallback(
     (id: string, source: string = 'ui') => {
-      track({
-        event: source === 'keys' ? 'key_tap' : 'open_chamber',
+      trackEvent(source === 'keys' ? 'key_tap' : 'open_chamber', {
         chamberId: id,
         source,
         nav: navMode,
@@ -89,7 +89,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   /** Tab switch: persist preference; if reading, return to that surface. */
   const onNavChange = useCallback(
     (mode: NavMode) => {
-      track({ event: 'nav', nav: mode, source: 'header' })
+      trackEvent('nav', { nav: mode, source: 'header' })
       setNavMode(mode)
       if (state.mode === 'chamber') {
         backToMap()
@@ -151,7 +151,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               mission={document.meta.mission}
               prologue={document.prologue?.lines}
               onEnter={() => {
-                track({ event: 'enter', source: 'arrival' })
+                trackEvent('enter', { source: 'arrival' })
                 enterNave()
               }}
             />

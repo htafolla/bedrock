@@ -4,9 +4,9 @@
  *
  * Two solid doors first: God · Marriage.
  * Then the fire — chip labels lead with positives / plain speech people recognize.
- * Carousel of 3: pages of storm doors.
- * Control sits with Jealousy (demand vs release grip).
- * Regret / pharmakeia / persecution stay Map · Contents.
+ * Desktop: 4-column grid · Mobile: carousel of 3.
+ * Close: Sexual sin · Witchcraft · Persecution · Love.
+ * Regret stays Map / Contents (past act; Addiction owns the first-screen bondage door).
  * Hope of glory stays Map terminus. Faith ≈ Trust already.
  */
 export interface KeyEntry {
@@ -89,6 +89,18 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Sexual sin',
     hint: 'Not your own',
     chamberId: 'adultery',
+  },
+  {
+    id: 'key-witchcraft',
+    label: 'Witchcraft',
+    hint: 'Counterfeit power',
+    chamberId: 'pharmakeia',
+  },
+  {
+    id: 'key-persecution',
+    label: 'Persecution',
+    hint: 'For His name',
+    chamberId: 'persecution',
   },
   {
     id: 'key-love',

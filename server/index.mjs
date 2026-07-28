@@ -219,22 +219,34 @@ function loadDocument() {
   return null
 }
 
-function loadTelemetryFromDisk(doorHits, recentEvents) {
-  if (!existsSync(telemetryPath)) return { total: 0 }
+function dayKey(ts = Date.now()) {
+  return new Date(ts).toISOString().slice(0, 10)
+}
+
+function loadTelemetryFromDisk(doorHits, recentEvents, pathHits, uniquesAll, uniquesByDay) {
+  if (!existsSync(telemetryPath)) return { total: 0, pageviews: 0 }
   let total = 0
+  let pageviews = 0
   try {
     const lines = readFileSync(telemetryPath, 'utf8').split('\n').filter(Boolean)
-    // Only keep last 5000 lines in aggregate to bound memory
-    const slice = lines.slice(-5000)
+    // Bound memory — last 20k lines for unique reconstruction
+    const slice = lines.slice(-20_000)
     for (const line of slice) {
       try {
         const row = JSON.parse(line)
         total += 1
-        if (
-          row.chamberId &&
-          (row.event === 'open_chamber' || row.event === 'key_tap')
-        ) {
+        if (row.event === 'pageview') pageviews += 1
+        if (row.chamberId && (row.event === 'open_chamber' || row.event === 'key_tap')) {
           doorHits.set(row.chamberId, (doorHits.get(row.chamberId) || 0) + 1)
+        }
+        if (row.path && row.event === 'pageview') {
+          pathHits.set(row.path, (pathHits.get(row.path) || 0) + 1)
+        }
+        if (typeof row.vid === 'string' && row.vid.length >= 8) {
+          uniquesAll.add(row.vid)
+          const d = dayKey(row.t || Date.now())
+          if (!uniquesByDay.has(d)) uniquesByDay.set(d, new Set())
+          uniquesByDay.get(d).add(row.vid)
         }
         recentEvents.push({
           t: row.t || Date.now(),
@@ -242,6 +254,8 @@ function loadTelemetryFromDisk(doorHits, recentEvents) {
           chamberId: row.chamberId,
           source: row.source,
           nav: row.nav,
+          path: row.path,
+          vid: row.vid ? `${String(row.vid).slice(0, 8)}…` : undefined,
         })
       } catch {
         /* skip bad line */
@@ -251,7 +265,7 @@ function loadTelemetryFromDisk(doorHits, recentEvents) {
   } catch (err) {
     console.warn('[telemetry] load failed', err instanceof Error ? err.message : err)
   }
-  return { total }
+  return { total, pageviews }
 }
 
 function persistTelemetryRow(row) {
@@ -331,19 +345,35 @@ function createApp() {
     })
   })
 
-  // Privacy-first analytics — memory + durable JSONL (no IP/PII)
+  // Privacy-first analytics — memory + durable JSONL (no IP/PII names)
   /** @type {Map<string, number>} */
   const doorHits = new Map()
-  /** @type {Array<{ t: number, event: string, chamberId?: string, source?: string, nav?: string }>} */
+  /** @type {Map<string, number>} */
+  const pathHits = new Map()
+  /** @type {Set<string>} */
+  const uniquesAll = new Set()
+  /** @type {Map<string, Set<string>>} */
+  const uniquesByDay = new Map()
+  /** @type {Array<Record<string, unknown>>} */
   const recentEvents = []
   const MAX_RECENT = 400
-  const loaded = loadTelemetryFromDisk(doorHits, recentEvents)
+  const loaded = loadTelemetryFromDisk(doorHits, recentEvents, pathHits, uniquesAll, uniquesByDay)
   let telemetryTotal = loaded.total
+  let pageviews = loaded.pageviews
+
+  const VID_RE = /^[a-zA-Z0-9_-]{8,80}$/
 
   app.post('/api/telemetry', (req, res) => {
     const body = req.body && typeof req.body === 'object' ? req.body : {}
     const event = typeof body.event === 'string' ? body.event.trim().slice(0, 40) : ''
-    const allowed = new Set(['open_chamber', 'key_tap', 'nav', 'enter', 'guide_open'])
+    const allowed = new Set([
+      'open_chamber',
+      'key_tap',
+      'nav',
+      'enter',
+      'guide_open',
+      'pageview',
+    ])
     if (!allowed.has(event)) {
       res.status(400).json({ error: 'unknown event' })
       return
@@ -352,13 +382,38 @@ function createApp() {
       typeof body.chamberId === 'string' ? body.chamberId.trim().slice(0, 80) : undefined
     const source = typeof body.source === 'string' ? body.source.trim().slice(0, 40) : undefined
     const nav = typeof body.nav === 'string' ? body.nav.trim().slice(0, 20) : undefined
+    const pathVal =
+      typeof body.path === 'string' ? body.path.trim().slice(0, 200) : undefined
+    const referrer =
+      typeof body.referrer === 'string' ? body.referrer.trim().slice(0, 200) : undefined
+    const rawVid = typeof body.vid === 'string' ? body.vid.trim() : ''
+    const vid = VID_RE.test(rawVid) ? rawVid : undefined
 
-    const row = { t: Date.now(), event, chamberId, source, nav }
+    const t = Date.now()
+    const row = { t, event, chamberId, source, nav, path: pathVal, referrer, vid }
     telemetryTotal += 1
+    if (event === 'pageview') pageviews += 1
     if (chamberId && (event === 'open_chamber' || event === 'key_tap')) {
       doorHits.set(chamberId, (doorHits.get(chamberId) || 0) + 1)
     }
-    recentEvents.push(row)
+    if (pathVal && event === 'pageview') {
+      pathHits.set(pathVal, (pathHits.get(pathVal) || 0) + 1)
+    }
+    if (vid) {
+      uniquesAll.add(vid)
+      const d = dayKey(t)
+      if (!uniquesByDay.has(d)) uniquesByDay.set(d, new Set())
+      uniquesByDay.get(d).add(vid)
+    }
+    recentEvents.push({
+      t,
+      event,
+      chamberId,
+      source,
+      nav,
+      path: pathVal,
+      vid: vid ? `${vid.slice(0, 8)}…` : undefined,
+    })
     if (recentEvents.length > MAX_RECENT) recentEvents.shift()
     persistTelemetryRow(row)
 
@@ -371,17 +426,33 @@ function createApp() {
       res.status(401).json({ error: 'unauthorized' })
       return
     }
-    const top = [...doorHits.entries()]
+    const today = dayKey()
+    const topDoors = [...doorHits.entries()]
       .sort((a, b) => b[1] - a[1])
       .slice(0, 30)
       .map(([chamberId, count]) => ({ chamberId, count }))
+    const topPaths = [...pathHits.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 30)
+      .map(([path, count]) => ({ path, count }))
+    // last 7 days uniques
+    const last7 = []
+    for (let i = 6; i >= 0; i--) {
+      const d = dayKey(Date.now() - i * 86_400_000)
+      last7.push({ day: d, uniques: uniquesByDay.get(d)?.size || 0 })
+    }
     res.json({
       total: telemetryTotal,
+      pageviews,
+      uniqueVisitors: uniquesAll.size,
+      uniqueVisitorsToday: uniquesByDay.get(today)?.size || 0,
       uniqueDoors: doorHits.size,
-      top,
+      topDoors,
+      topPaths,
+      uniquesLast7Days: last7,
       recent: recentEvents.slice(-40),
       durable: existsSync(telemetryPath),
-      note: 'No IP/PII · JSONL on disk when writable · resets only if volume wiped',
+      note: 'Privacy-first: anonymous localStorage vid only · no IP · no names · JSONL on disk',
     })
   })
 

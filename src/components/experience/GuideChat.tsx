@@ -17,6 +17,7 @@ import {
 } from '../../lib/chat'
 import { resolveChamberId } from '../../lib/chamber-match'
 import { scriptureChipHref } from '../../lib/verses'
+import { trackEvent } from '../../lib/analytics'
 
 interface GuideChamberRef {
   id: string
@@ -314,7 +315,13 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
         className="guide-chat-fab"
         aria-expanded={open}
         aria-controls={panelId}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => {
+          setOpen((v) => {
+            const next = !v
+            if (next) trackEvent('guide_open', { source: 'fab' })
+            return next
+          })
+        }}
       >
         {open ? 'Close' : 'Ask'}
       </button>

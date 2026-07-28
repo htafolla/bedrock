@@ -20,6 +20,18 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Article","headline":"Hope of Glory","description":"What we fight toward — glory with Him.","url":"https://bedrock.rippel.ai/c/hope-of-glory","author":{"@type":"Organization","name":"Bedrock","url":"https://bedrock.rippel.ai"},"publisher":{"@type":"Organization","name":"Bedrock","url":"https://bedrock.rippel.ai"},"image":"https://bedrock.rippel.ai/og-hero.jpg","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Bedrock","url":"https://bedrock.rippel.ai"}}
   </script>
+  <script>
+(function(){
+  try {
+    var k='bedrock.vid';
+    var vid=localStorage.getItem(k);
+    if(!vid||vid.length<8){vid=(crypto.randomUUID&&crypto.randomUUID())||('v_'+Date.now().toString(36)+Math.random().toString(36).slice(2));localStorage.setItem(k,vid);}
+    var body=JSON.stringify({event:'pageview',path:"/c/hope-of-glory",referrer:document.referrer?String(document.referrer).slice(0,200):undefined,vid:vid,source:'static-chamber'});
+    if(navigator.sendBeacon){navigator.sendBeacon('/api/telemetry',new Blob([body],{type:'application/json'}));}
+    else{fetch('/api/telemetry',{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true});}
+  } catch(e) {}
+})();
+</script>
   <style>
     :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
     * { box-sizing: border-box; }

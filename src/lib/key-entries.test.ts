@@ -17,13 +17,15 @@ describe('KEY_ENTRIES', () => {
       'Jealousy',
       'Control',
       'Sexual sin',
+      'Witchcraft',
+      'Persecution',
       'Love',
     ])
-    // 13 doors → carousel pages of 3 (last page Love alone is fine)
-    expect(KEY_ENTRIES.length).toBe(13)
+    // 15 doors: desktop 4-col (last row 3) · mobile carousel of 3 (5 pages)
+    expect(KEY_ENTRIES.length).toBe(15)
   })
 
-  it('keeps wounded on Keys; addiction replaces regret (regret stays on Map)', () => {
+  it('keeps wounded on Keys; addiction on Keys; regret stays Map-only', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.chamberId).toBe('wounded')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.chamberId).toBe('addiction')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.hint).toBe('It owns me')
@@ -44,14 +46,13 @@ describe('KEY_ENTRIES', () => {
     expect(door?.chamberId).toBe('rumination')
   })
 
-  it('closes with Jealousy · Control · Sexual sin · Love', () => {
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-jealousy')?.chamberId).toBe('jealousy')
+  it('closes flesh/war doors then Love — Witchcraft + Persecution on Keys', () => {
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-witchcraft')?.chamberId).toBe('pharmakeia')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-witchcraft')?.hint).toBe('Counterfeit power')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-persecution')?.chamberId).toBe('persecution')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-persecution')?.hint).toBe('For His name')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.chamberId).toBe('control')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.hint).toBe('Open hand')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-sexual-sin')?.chamberId).toBe('adultery')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-love')?.chamberId).toBe('love')
-    // Witchcraft stays on Map/Contents, not Keys
-    expect(KEY_ENTRIES.some((k) => k.chamberId === 'pharmakeia')).toBe(false)
   })
 
   it('does not put syllabus / map-path chips on the first screen', () => {
@@ -70,9 +71,7 @@ describe('KEY_ENTRIES', () => {
       'Rumination',
       'Faith',
       'Hope',
-      'Persecution',
       'War',
-      'Witchcraft',
       'Regret',
     ]) {
       expect(labels.has(syllabus)).toBe(false)

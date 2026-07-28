@@ -62,6 +62,39 @@ Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
 `
 }
 
+/** Optional privacy analytics for static chamber pages (build-time env). */
+function analyticsHeadSnippet(pagePath) {
+  const plausibleDomain = (process.env.PLAUSIBLE_DOMAIN || process.env.VITE_PLAUSIBLE_DOMAIN || '').trim()
+  const plausibleSrc = (process.env.PLAUSIBLE_SRC || process.env.VITE_PLAUSIBLE_SRC || 'https://plausible.io/js/script.js').trim()
+  const umamiId = (process.env.UMAMI_WEBSITE_ID || process.env.VITE_UMAMI_WEBSITE_ID || '').trim()
+  const umamiSrc = (process.env.UMAMI_SRC || process.env.VITE_UMAMI_SRC || '').trim()
+  const parts = []
+  if (plausibleDomain) {
+    parts.push(
+      `<script defer data-domain="${esc(plausibleDomain)}" src="${esc(plausibleSrc)}"></script>`,
+    )
+  }
+  if (umamiId && umamiSrc) {
+    parts.push(
+      `<script defer src="${esc(umamiSrc)}" data-website-id="${esc(umamiId)}"></script>`,
+    )
+  }
+  // First-party pageview (anonymous localStorage vid) — always on for /c/* traffic
+  parts.push(`<script>
+(function(){
+  try {
+    var k='bedrock.vid';
+    var vid=localStorage.getItem(k);
+    if(!vid||vid.length<8){vid=(crypto.randomUUID&&crypto.randomUUID())||('v_'+Date.now().toString(36)+Math.random().toString(36).slice(2));localStorage.setItem(k,vid);}
+    var body=JSON.stringify({event:'pageview',path:${JSON.stringify(pagePath)},referrer:document.referrer?String(document.referrer).slice(0,200):undefined,vid:vid,source:'static-chamber'});
+    if(navigator.sendBeacon){navigator.sendBeacon('/api/telemetry',new Blob([body],{type:'application/json'}));}
+    else{fetch('/api/telemetry',{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true});}
+  } catch(e) {}
+})();
+</script>`)
+  return parts.join('\n  ')
+}
+
 function chamberHtml(c, meta) {
   const truth = c.body
     .filter((b) => b.type === 'paragraph' || b.type === 'quote')
@@ -88,6 +121,8 @@ function chamberHtml(c, meta) {
   const desc = esc(
     `${c.summary} Scripture, under-fire steps, and prayer. Do Better. Be Better. Trust God.`,
   ).slice(0, 160)
+  const pagePath = `/c/${c.id}`
+  const analytics = analyticsHeadSnippet(pagePath)
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -122,6 +157,7 @@ function chamberHtml(c, meta) {
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
   })}
   </script>
+  ${analytics}
   <style>
     :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
     * { box-sizing: border-box; }
