@@ -1,7 +1,7 @@
 import type { ThemeMode } from '../../lib/theme-preference'
 import { ThemeToggle } from './ThemeToggle'
 
-export type NavMode = 'keys' | 'map' | 'toc'
+export type NavMode = 'keys' | 'journeys' | 'map' | 'toc'
 
 interface NavModesProps {
   mode: NavMode
@@ -14,11 +14,12 @@ interface NavModesProps {
 
 const MODES: Array<{ id: NavMode; label: string }> = [
   { id: 'keys', label: 'Keys' },
+  { id: 'journeys', label: 'Journeys' },
   { id: 'map', label: 'Map' },
   { id: 'toc', label: 'Contents' },
 ]
 
-/** Mobile-first top chrome: Bedrock · Keys/Map/Contents · theme far right. */
+/** Mobile-first top chrome: Bedrock · Keys/Journeys/Map/Contents · theme far right. */
 export function NavModes({ mode, onChange, theme, onToggleTheme, onHome }: NavModesProps) {
   return (
     <header className="nav-modes" role="banner">

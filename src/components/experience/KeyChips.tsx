@@ -52,7 +52,8 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
           <h2 className="constellation-title">What are you facing?</h2>
           <p className="constellation-blurb">
             God and marriage first — then the fire, named plainly — then love, still the way. Tap a
-            door. DNA is live behind the panel. Map holds the full path. Contents is the full list.
+            door. For multi-step walks (they left, death, addiction…), open the{' '}
+            <strong>Journeys</strong> tab.
           </p>
         </header>
         <ul className="key-chips key-chips-grid" aria-label="Storm triage doors">

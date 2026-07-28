@@ -18,6 +18,7 @@ import { ConstellationHud } from './ConstellationHud'
 import { ChamberFocus } from './ChamberFocus'
 import { GuideChat } from './GuideChat'
 import { KeyChips } from './KeyChips'
+import { JourneyPanel } from './JourneyPanel'
 import { TableOfContents } from './TableOfContents'
 import { NavModes, type NavMode } from './NavModes'
 import { ThemeToggle } from './ThemeToggle'
@@ -85,16 +86,20 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         ? `/?j=${activeJourneyId}&c=${state.activeChamberId}`
         : `/?c=${state.activeChamberId}`
       trackPageview(path)
-    } else if (state.mode === 'constellation' || state.mode === 'arrival') {
+    } else if (state.mode === 'constellation') {
+      // Keep journey context on the Journeys tab; only drop chamber from URL
+      setChamberQuery(null, { journeyId: activeJourneyId })
+    } else if (state.mode === 'arrival') {
       setChamberQuery(null, { journeyId: null })
       setActiveJourneyId(null)
     }
   }, [state.mode, state.activeChamberId, activeJourneyId])
 
   const showScene = allow3d && state.mode !== 'arrival'
-  // DNA interactive on Keys and Map (same orbit/click). Contents stays list-first.
+  // DNA interactive on Keys / Journeys / Map. Contents stays list-first.
   const sceneInteractive =
-    state.mode === 'constellation' && (navMode === 'map' || navMode === 'keys')
+    state.mode === 'constellation' &&
+    (navMode === 'map' || navMode === 'keys' || navMode === 'journeys')
 
   const selectChamber = useCallback(
     (id: string, source: string = 'ui', journeyId?: string | null) => {
@@ -116,12 +121,11 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     [openChamber, navMode],
   )
 
-  /** Leave chamber; keep user’s preferred header tab. */
+  /** Leave chamber; keep journey path context for the Journeys tab. */
   const leaveChamber = useCallback(() => {
-    setChamberQuery(null, { journeyId: null })
-    setActiveJourneyId(null)
+    setChamberQuery(null, { journeyId: activeJourneyId })
     backToMap()
-  }, [backToMap])
+  }, [backToMap, activeJourneyId])
 
   /** Tab switch: persist preference; if reading, return to that surface. */
   const onNavChange = useCallback(
@@ -135,9 +139,11 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     [setNavMode, state.mode, backToMap],
   )
 
-  /** Brand mark → home: default Keys surface, leave any chamber. */
+  /** Brand mark → home: default Keys surface, leave any chamber, clear journey. */
   const goHome = useCallback(() => {
     setNavMode(DEFAULT_NAV_MODE)
+    setActiveJourneyId(null)
+    setChamberQuery(null, { journeyId: null })
     if (state.mode === 'chamber') {
       backToMap()
     }
@@ -197,7 +203,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
         {state.mode !== 'arrival' ? (
           <div className="experience-main-with-nav">
-            {/* Top: Keys · Map · Contents — Map uses same storm doors as Keys; no sealed word. */}
+            {/* Top: Keys · Journeys · Map · Contents */}
             <NavModes
               mode={navMode}
               onChange={onNavChange}
@@ -211,6 +217,24 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 <KeyChips
                   activeChamberId={state.activeChamberId}
                   onSelect={(id, journeyId) => selectChamber(id, 'keys', journeyId)}
+                />
+              ) : null}
+
+              {state.mode === 'constellation' && navMode === 'journeys' ? (
+                <JourneyPanel
+                  activeJourneyId={activeJourneyId}
+                  activeChamberId={state.activeChamberId}
+                  onSelectJourney={(journeyId, chamberId) => {
+                    trackEvent('open_chamber', {
+                      chamberId,
+                      source: 'journeys',
+                      nav: 'journeys',
+                      journeyId,
+                    })
+                    setActiveJourneyId(journeyId)
+                    openChamber(chamberId)
+                    scrollExperienceToTop()
+                  }}
                 />
               ) : null}
 
@@ -246,7 +270,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
         {/* Viewport-fixed footer — outside nested chrome so mobile always pins bottom */}
         {state.mode === 'constellation' &&
-        (navMode === 'keys' || navMode === 'map') ? (
+        (navMode === 'keys' || navMode === 'journeys' || navMode === 'map') ? (
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
               <p>Standing on something solid.</p>

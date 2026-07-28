@@ -3,7 +3,7 @@ import type { NavMode } from '../components/experience/NavModes'
 export const NAV_MODE_STORAGE_KEY = 'bedrock.navMode'
 export const DEFAULT_NAV_MODE: NavMode = 'keys'
 
-const VALID: ReadonlySet<string> = new Set(['keys', 'map', 'toc'])
+const VALID: ReadonlySet<string> = new Set(['keys', 'journeys', 'map', 'toc'])
 
 export function isNavMode(value: unknown): value is NavMode {
   return typeof value === 'string' && VALID.has(value)
@@ -23,7 +23,7 @@ export function readNavModePreference(): NavMode {
   return DEFAULT_NAV_MODE
 }
 
-/** Persist preferred nav mode (Keys · Map · Contents). */
+/** Persist preferred nav mode (Keys · Journeys · Map · Contents). */
 export function writeNavModePreference(mode: NavMode): void {
   if (typeof window === 'undefined') return
   try {
