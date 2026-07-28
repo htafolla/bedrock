@@ -249,6 +249,18 @@ describe('bedrock content integrity', () => {
     }
   })
 
+  it('etches critical healing axiom: emotional state is your own (≤3 under-fire lines)', () => {
+    const axiom = /emotional state is your own/i
+    for (const id of ['control', 'self-control', 'he-is-for-you', 'wounded'] as const) {
+      const c = byId.get(id)
+      expect(c, id).toBeDefined()
+      expect(c!.hacks.length).toBeLessThanOrEqual(3)
+      expect(c!.hacks.join(' ')).toMatch(axiom)
+    }
+    const spouse = journeysDoc.journeys.find((j) => j.id === 'spouse-left')
+    expect(spouse?.summary).toMatch(axiom)
+  })
+
   it('Truth stays verse-shaped — application lives in Under fire', () => {
     const ids = [
       'regret',

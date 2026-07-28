@@ -15,6 +15,7 @@
 
 - If God is for you, stop rehearsing every face that seems against you.
 - Cast the care — do not decorate it. He cares for you is a fact, not a mood.
+- Your emotional state is your own — not dependent on them. Love them; refuse them the remote to your insides.
 
 ## Prayer
 

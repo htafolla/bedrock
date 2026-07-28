@@ -14,9 +14,9 @@
 
 ## Under fire
 
+- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
 - Flesh counterfeit: impulse as master — rage, lust, the check-again loop — or controlling them because you cannot control you.
-- Name the impulse. Delay. Capture the thought. Do the next right fruit under the Spirit.
-- Self-control rules you — not them. Keep in step with the Spirit when the flesh wants the last word.
+- Name the impulse. Delay. Capture the thought. Self-control rules you — not them. Keep in step with the Spirit.
 
 ## Prayer
 

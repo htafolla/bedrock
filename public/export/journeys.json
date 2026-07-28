@@ -107,7 +107,7 @@
       "title": "Spouse left / marriage under fire",
       "family": "body",
       "wave": 1,
-      "summary": "You were wounded. Their leaving does not cancel whose you are. Entrust the scales; take the next right step — with boundaries, without hatred as home.",
+      "summary": "You were wounded. Their leaving does not cancel whose you are. Critical to healing: your emotional state is your own — not dependent on them. Love and pursue reconciliation if God leads — and still refuse them the remote to your internal state. Adult position. Hold it.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -146,21 +146,21 @@
           "role": "near",
           "label": "Whose you are",
           "chamberId": "he-is-for-you",
-          "note": "Their leaving does not cancel you are His."
+          "note": "Their leaving does not cancel you are His. Your emotional state is your own — not dependent on them."
         },
         {
           "id": "spiral",
           "role": "spiral",
           "label": "The replay",
           "chamberId": "rumination",
-          "note": "Obsession is not revelation."
+          "note": "Obsession is not revelation. Do not hand the loop the remote to your insides."
         },
         {
           "id": "fear",
           "role": "spiral",
           "label": "Abandonment fear",
           "chamberId": "fear",
-          "note": "Name the fear; then trust."
+          "note": "Name the fear; then trust. Adult position: refuse fear the throne of your state."
         },
         {
           "id": "fork-vengeance",
@@ -513,7 +513,7 @@
       "title": "Control grip",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them.",
+      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Critical to healing: your emotional state is your own — not dependent on them. Refuse them the remote. Adult position. Hold it.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
@@ -521,7 +521,9 @@
         "control",
         "everything must go my way",
         "i grip the outcome",
-        "open hand"
+        "open hand",
+        "my emotional state",
+        "not dependent on them"
       ],
       "doorChamberId": "control",
       "keyIds": [
@@ -537,7 +539,7 @@
           "role": "blow",
           "label": "Name the grip",
           "chamberId": "control",
-          "note": "Outcomes, people, image, timeline — if you must hold it, it has become a god."
+          "note": "Emotional state is your own — not dependent on them. Outcomes, people, image, timeline: if you must hold it, it has become a god. Open the hand."
         },
         {
           "id": "trust",
