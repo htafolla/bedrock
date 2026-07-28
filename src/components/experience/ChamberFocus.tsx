@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../../types/content'
+import type { Journey } from '../../types/journey'
 import { VerseLink } from '../VerseLink'
 import { spineNeighbor, spineIndexOf, SPINE_ORDER } from '../../lib/spine'
 import { chamberPath } from '../../lib/path-routing'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
+import { JourneyStageRail } from './JourneyStageRail'
 
 interface ChamberFocusProps {
   document: BedrockDocument
@@ -11,6 +13,9 @@ interface ChamberFocusProps {
   onBack: () => void
   onSelect: (id: string) => void
   onSpineStep: (delta: -1 | 1) => void
+  /** When set, path rail sticks to top + bottom of this station card */
+  journey?: Journey | null
+  onSelectJourneyStage?: (chamberId: string) => void
 }
 
 function renderBlock(block: BodyBlock, key: number) {
@@ -43,6 +48,8 @@ export function ChamberFocus({
   onBack,
   onSelect,
   onSpineStep,
+  journey = null,
+  onSelectJourneyStage,
 }: ChamberFocusProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -52,6 +59,15 @@ export function ChamberFocus({
   const related = chamber.related
     .map((id) => document.chambers.find((c) => c.id === id))
     .filter((c): c is Chamber => c != null)
+  const stageIdx = journey?.stages.findIndex((s) => s.chamberId === chamber.id) ?? -1
+  const onPath = stageIdx >= 0
+  const showJourneyRail = Boolean(journey && onSelectJourneyStage)
+  const journeyPrev =
+    journey && stageIdx > 0 ? journey.stages[stageIdx - 1]?.chamberId ?? null : null
+  const journeyNext =
+    journey && stageIdx >= 0 && stageIdx < journey.stages.length - 1
+      ? journey.stages[stageIdx + 1]?.chamberId ?? null
+      : null
 
   // Connected truth · spine prev/next · any chamber swap: pin to top (mobile-first).
   useEffect(() => {
@@ -71,7 +87,7 @@ export function ChamberFocus({
   }, [onBack, onSpineStep])
 
   return (
-    <div className="chamber-focus" ref={rootRef}>
+    <div className={`chamber-focus${showJourneyRail ? ' has-journey-path' : ''}`} ref={rootRef}>
       <div className="chamber-focus-toolbar">
         <button type="button" className="focus-btn ghost" onClick={onBack}>
           ← Back
@@ -84,31 +100,69 @@ export function ChamberFocus({
           Plain
         </a>
         <p className="focus-spine-meta">
-          {idx >= 0 ? `${idx + 1} / ${SPINE_ORDER.length}` : '—'} · spine
+          {journey && onPath
+            ? `${journey.title}`
+            : idx >= 0
+              ? `${idx + 1} / ${SPINE_ORDER.length} · spine`
+              : '—'}
         </p>
         <div className="focus-spine-nav">
-          <button
-            type="button"
-            className="focus-btn"
-            disabled={!prev}
-            onClick={() => onSpineStep(-1)}
-          >
-            ← Prev
-          </button>
-          <button
-            type="button"
-            className="focus-btn"
-            disabled={!next}
-            onClick={() => onSpineStep(1)}
-          >
-            Next →
-          </button>
+          {showJourneyRail && onPath && onSelectJourneyStage ? (
+            <>
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!journeyPrev}
+                onClick={() => journeyPrev && onSelectJourneyStage(journeyPrev)}
+              >
+                ← Prev station
+              </button>
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!journeyNext}
+                onClick={() => journeyNext && onSelectJourneyStage(journeyNext)}
+              >
+                Next station →
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!prev}
+                onClick={() => onSpineStep(-1)}
+              >
+                ← Prev
+              </button>
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!next}
+                onClick={() => onSpineStep(1)}
+              >
+                Next →
+              </button>
+            </>
+          )}
         </div>
       </div>
 
+      {showJourneyRail && journey && onSelectJourneyStage ? (
+        <JourneyStageRail
+          journey={journey}
+          activeChamberId={chamber.id}
+          placement="top"
+          onSelectStage={onSelectJourneyStage}
+        />
+      ) : null}
+
       <article className="chamber chamber-in-focus" id={chamber.id}>
         <header className="chamber-header">
-          <p className="chamber-kicker">First principle</p>
+          <p className="chamber-kicker">
+            {journey && onPath ? 'Journey station · First principle' : 'First principle'}
+          </p>
           <h2
             className="chamber-title"
             ref={titleRef}
@@ -186,6 +240,15 @@ export function ChamberFocus({
           </nav>
         ) : null}
       </article>
+
+      {showJourneyRail && journey && onSelectJourneyStage ? (
+        <JourneyStageRail
+          journey={journey}
+          activeChamberId={chamber.id}
+          placement="bottom"
+          onSelectStage={onSelectJourneyStage}
+        />
+      ) : null}
     </div>
   )
 }

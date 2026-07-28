@@ -172,7 +172,9 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         journeyId: journeyId || undefined,
       })
       if (journeyId) setActiveJourneyId(journeyId)
-      else if (source === 'keys' || source === 'ui') {
+      else if (source === 'journey-stage') {
+        // stay on active journey
+      } else if (source === 'keys' || source === 'ui') {
         // Opening a door without journey id clears path context
         setActiveJourneyId(null)
       }
@@ -313,6 +315,12 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                   onBack={leaveChamber}
                   onSelect={selectChamber}
                   onSpineStep={spineStep}
+                  journey={activeJourney}
+                  onSelectJourneyStage={
+                    activeJourney
+                      ? (chamberId) => selectChamber(chamberId, 'journey-stage', activeJourney.id)
+                      : undefined
+                  }
                 />
               ) : null}
             </div>

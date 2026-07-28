@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { listJourneys } from '../../lib/journeys'
 import type { Journey, JourneyFamily } from '../../types/journey'
+import { JourneyStageRail } from './JourneyStageRail'
 
 const FAMILY_ORDER: JourneyFamily[] = ['body', 'will', 'conscience', 'world']
 
@@ -66,26 +67,12 @@ export function JourneyPanel({
 
       {active ? (
         <div className="journey-active-strip" aria-live="polite">
-          <p className="journey-active-label">On path</p>
-          <p className="journey-active-title">{active.title}</p>
-          <ol className="journey-stage-rail">
-            {active.stages.map((s) => {
-              const here = s.chamberId === activeChamberId
-              return (
-                <li key={s.id} className={here ? 'is-here' : undefined}>
-                  <button
-                    type="button"
-                    className={here ? 'journey-stage-chip active' : 'journey-stage-chip'}
-                    onClick={() => onSelectJourney(active.id, s.chamberId)}
-                    title={s.note || s.label}
-                  >
-                    <span className="journey-stage-role">{s.role.replace('_', ' ')}</span>
-                    <span className="journey-stage-name">{s.label}</span>
-                  </button>
-                </li>
-              )
-            })}
-          </ol>
+          <JourneyStageRail
+            journey={active}
+            activeChamberId={activeChamberId ?? null}
+            placement="top"
+            onSelectStage={(chamberId) => onSelectJourney(active.id, chamberId)}
+          />
         </div>
       ) : null}
 
