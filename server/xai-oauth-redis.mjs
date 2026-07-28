@@ -78,6 +78,22 @@ export async function writeOAuthTokensToRedis(tokenJson) {
   }
 }
 
+/**
+ * Drop revoked / quarantined blobs so the next boot does not rehydrate them.
+ * @returns {Promise<boolean>}
+ */
+export async function deleteOAuthTokensFromRedis() {
+  if (!isOAuthRedisAvailable() || !redis) return false
+  try {
+    await redis.del(XAI_OAUTH_REDIS_KEY)
+    console.log('[xai-oauth] Redis OAuth key cleared')
+    return true
+  } catch (err) {
+    console.warn('[xai-oauth] Redis delete failed:', err instanceof Error ? err.message : err)
+    return false
+  }
+}
+
 export async function shutdownOAuthRedis() {
   if (!redis) return
   try {

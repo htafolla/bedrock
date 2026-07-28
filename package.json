@@ -16,7 +16,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "start": "node server/index.mjs",
-    "xai:login": "node scripts/xai-oauth-login.mjs",
+    "xai:login": "node scripts/xai-oauth-login.mjs --device",
+    "xai:login:local": "node scripts/xai-oauth-login.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc -b --pretty false"

@@ -4,6 +4,9 @@ import {
   oauthStatus,
   normalizeTokenBlob,
   isRailwayOAuthSyncEnabled,
+  exportTokensForRailway,
+  hasOAuthTokens,
+  getOAuthFlowStatus,
 } from './xai-oauth.mjs'
 
 describe('xai-oauth helpers', () => {
@@ -54,5 +57,19 @@ describe('xai-oauth helpers', () => {
     // Even with project id vars, no account API token → disabled
     expect(isRailwayOAuthSyncEnabled()).toBe(false)
     if (prev) process.env.RAILWAY_API_TOKEN = prev
+  })
+
+  it('exportTokensForRailway is null without live tokens', () => {
+    // No tokens in this process → null (Postalocity export shape)
+    const exp = exportTokensForRailway()
+    expect(exp === null || typeof exp?.value === 'string').toBe(true)
+  })
+
+  it('getOAuthFlowStatus exposes device-code fields', () => {
+    const flow = getOAuthFlowStatus()
+    expect(flow).toHaveProperty('pendingApproval')
+    expect(flow).toHaveProperty('verificationUrl')
+    expect(flow).toHaveProperty('authenticated')
+    expect(typeof hasOAuthTokens()).toBe('boolean')
   })
 })

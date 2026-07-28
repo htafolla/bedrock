@@ -10,6 +10,11 @@
  *   REDIS_URL — primary SSOT across redeploys
  *   XAI_OAUTH_PATH / data/xai-oauth-tokens.json — file fallback
  *   RAILWAY_API_TOKEN (account, not project) + project/env/service IDs — env backup, skipDeploys
+ * Device-code (production, same as postalocity-mcp):
+ *   POST /oauth/initiate  (X-API-Key when OAUTH_ADMIN_KEY set)
+ *   GET  /oauth/status
+ *   POST /oauth/refresh
+ *   GET  /oauth/export
  */
 import 'dotenv/config'
 import path from 'node:path'
@@ -22,6 +27,11 @@ import {
   startOAuthRefreshLoop,
   oauthStatus,
   invalidateCachedAccessToken,
+  startDeviceCodeFlow,
+  getOAuthFlowStatus,
+  hasOAuthTokens,
+  exportTokensForRailway,
+  ensureFreshOAuth,
 } from './xai-oauth.mjs'
 import {
   initTelemetryStore,
@@ -232,6 +242,7 @@ function createApp() {
 
   app.get('/api/health', (_req, res) => {
     const oauth = oauthStatus()
+    const flow = getOAuthFlowStatus()
     res.json({
       ok: true,
       chatConfigured: oauth.mode !== 'none' && !oauth.needsReauth,
@@ -243,7 +254,9 @@ function createApp() {
       oauthPersistOk: oauth.persistOk ?? false,
       oauthPersist: oauth.persist ?? null,
       oauthRefreshQuarantined: oauth.refreshQuarantined ?? false,
-      oauthAuthMethod: oauth.authMethod ?? null,
+      oauthAuthMethod: oauth.authMethod ?? 'device-code',
+      oauthPendingApproval: flow.pendingApproval,
+      oauthVerificationUrl: flow.verificationUrl,
       redis: {
         urlConfigured: Boolean(process.env.REDIS_URL?.trim()),
         oauth: Boolean(oauth.persist?.redis),
@@ -260,6 +273,121 @@ function createApp() {
         llms: '/llms.txt',
         llmsFull: '/llms-full.txt',
       },
+    })
+  })
+
+  // ── xAI OAuth device-code (Postalocity MCP pattern) ─────────────────────
+  // Status is public (no secrets). Initiate / refresh / export require admin key when set.
+  const OAUTH_ADMIN_KEY =
+    process.env.OAUTH_ADMIN_KEY?.trim() ||
+    process.env.BEDROCK_ADMIN_KEY?.trim() ||
+    process.env.MCP_API_KEY?.trim() ||
+    ''
+
+  /**
+   * @param {import('express').Request} req
+   * @param {import('express').Response} res
+   * @param {import('express').NextFunction} next
+   */
+  function requireOAuthAdmin(req, res, next) {
+    if (!OAUTH_ADMIN_KEY) {
+      next()
+      return
+    }
+    const provided = String(req.headers['x-api-key'] || '')
+    if (provided !== OAUTH_ADMIN_KEY) {
+      res.status(401).json({ error: 'Unauthorized — set X-API-Key (OAUTH_ADMIN_KEY)' })
+      return
+    }
+    next()
+  }
+
+  const RAILWAY_PERSIST_HINT =
+    'Tokens auto-persist to Redis; RAILWAY_API_TOKEN mirrors XAI_OAUTH_TOKENS with skipDeploys.'
+
+  app.get('/oauth/status', (_req, res) => {
+    const flow = getOAuthFlowStatus()
+    const oauth = oauthStatus()
+    res.json({
+      ...flow,
+      mode: oauth.mode,
+      needsReauth: oauth.needsReauth,
+      hasRefresh: oauth.hasRefresh,
+      persist: oauth.persist,
+      hint: flow.authenticated
+        ? 'Tokens auto-refresh every 60s when within 5min of expiry. Redis SSOT; optional Railway env mirror.'
+        : 'Not authenticated. POST /oauth/initiate to start device-code (open verification_uri_complete).',
+    })
+  })
+
+  app.post('/oauth/initiate', requireOAuthAdmin, async (_req, res) => {
+    try {
+      if (hasOAuthTokens()) {
+        const status = getOAuthFlowStatus()
+        if (status.tokenValid) {
+          res.json({ message: 'Already authenticated. Tokens are valid.', status })
+          return
+        }
+      }
+      const deviceCodeInfo = await startDeviceCodeFlow()
+      res.json({
+        message:
+          'Visit the URL to authenticate. Tokens save automatically on the server (Redis + Railway).',
+        verification_uri: deviceCodeInfo.verification_uri,
+        verification_uri_complete: deviceCodeInfo.verification_uri_complete,
+        user_code: deviceCodeInfo.user_code,
+        expires_in: deviceCodeInfo.expires_in,
+        interval: deviceCodeInfo.interval,
+        polling: deviceCodeInfo.polling,
+      })
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err)
+      res.status(500).json({ error: message })
+    }
+  })
+
+  app.post('/oauth/refresh', requireOAuthAdmin, async (_req, res) => {
+    try {
+      await ensureFreshOAuth({ force: true })
+      const exportPayload = exportTokensForRailway()
+      const oauth = oauthStatus()
+      res.json({
+        success: Boolean(exportPayload),
+        ...getOAuthFlowStatus(),
+        needsReauth: oauth.needsReauth,
+        railway: exportPayload
+          ? {
+              envVar: exportPayload.envVar,
+              value: exportPayload.value,
+              expiresAt: exportPayload.expiresAt,
+              hint: RAILWAY_PERSIST_HINT,
+            }
+          : null,
+      })
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err)
+      res.status(500).json({ success: false, error: message, ...getOAuthFlowStatus() })
+    }
+  })
+
+  app.get('/oauth/export', requireOAuthAdmin, (_req, res) => {
+    const exportPayload = exportTokensForRailway()
+    if (!exportPayload) {
+      res.status(404).json({
+        error: 'No OAuth tokens to export. POST /oauth/initiate and complete device-code approval first.',
+        ...getOAuthFlowStatus(),
+      })
+      return
+    }
+    res.json({
+      success: true,
+      railway: {
+        envVar: exportPayload.envVar,
+        value: exportPayload.value,
+        expiresAt: exportPayload.expiresAt,
+        hint: RAILWAY_PERSIST_HINT,
+      },
+      ...getOAuthFlowStatus(),
     })
   })
 

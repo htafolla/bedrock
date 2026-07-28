@@ -1,7 +1,12 @@
 /**
  * xAI OAuth (SuperGrok / X Premium+) — server-side access + refresh.
  *
- * Pattern: Postalocity MCP (src/lib/xai-oauth.ts) + Hermes refresh_token grant.
+ * Pattern: Postalocity MCP `src/lib/xai-oauth.ts` + `railway-oauth-sync.ts` +
+ * `xai-oauth-redis.ts` (device-code on the running service, not localhost PKCE).
+ *
+ * Auth flow that works in production (verbatim Postalocity):
+ *   POST /oauth/initiate → device code → user opens verification_uri_complete
+ *   Production process polls token URL → saveTokens → Redis + Railway env (skipDeploys)
  *
  * Load order (SSOT-aware):
  *   1. Redis (REDIS_URL) — survives redeploys
@@ -9,7 +14,7 @@
  *   3. Env   XAI_OAUTH_TOKENS | XAI_OAUTH_JSON | XAI_OAUTH_B64
  *   4. Local Hermes/Grok auth files (dev)
  *
- * After every successful refresh:
+ * After every successful refresh / device-code approval:
  *   memory + env · file · Redis · optional Railway env mirror (RAILWAY_API_TOKEN + skipDeploys)
  *
  * NOTE: Railway *project* tokens (RAILWAY_TOKEN) often 403 on variableUpsert.
@@ -25,18 +30,31 @@ import {
   isOAuthRedisAvailable,
   readOAuthTokensFromRedis,
   writeOAuthTokensToRedis,
+  deleteOAuthTokensFromRedis,
 } from './xai-oauth-redis.mjs'
 
-export const XAI_TOKEN_URL = 'https://auth.x.ai/oauth2/token'
+const XAI_AUTH_SERVER = 'https://auth.x.ai'
+export const XAI_TOKEN_URL = `${XAI_AUTH_SERVER}/oauth2/token`
+export const XAI_DEVICE_CODE_URL = `${XAI_AUTH_SERVER}/oauth2/device/code`
 /** Public PKCE / device-code client (Hermes · Grok CLI · Postalocity MCP). */
 export const XAI_CLIENT_ID = 'b1a00492-073a-47ea-816f-4c329264a828'
+export const XAI_OAUTH_SCOPES = 'openid profile email offline_access grok-cli:access api:access'
+export const XAI_OAUTH_RAILWAY_ENV_VAR = 'XAI_OAUTH_TOKENS'
 
 /** Proactive refresh window (Postalocity default 5 min). */
-const HEADROOM_MS = Number(process.env.XAI_OAUTH_REFRESH_BUFFER_MS || 5 * 60 * 1000)
+const HEADROOM_MS = Number(
+  process.env.XAI_OAUTH_REFRESH_BUFFER_MS ||
+    (Number(process.env.XAI_OAUTH_REFRESH_BUFFER_SECS || 300) * 1000),
+)
+const REFRESH_BUFFER_SECS = Math.floor(HEADROOM_MS / 1000)
 const REFRESH_INTERVAL_MS = Number(process.env.XAI_OAUTH_REFRESH_INTERVAL_MS || 60 * 1000)
 const REFRESH_MAX_ATTEMPTS = 3
 const RAILWAY_GRAPHQL = 'https://backboard.railway.com/graphql/v2'
 const RAILWAY_DEBOUNCE_MS = 3_000
+const DEVICE_CODE_PARAMS = {
+  plan: 'generic',
+  referrer: process.env.XAI_OAUTH_REFERRER?.trim() || 'bedrock',
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DEFAULT_TOKEN_FILE = join(__dirname, '..', 'data', 'xai-oauth-tokens.json')
@@ -63,6 +81,8 @@ let refreshQuarantined = false
 /** @type {ReturnType<typeof setTimeout> | null} */
 let railwayDebounce = null
 let lastRailwaySyncJson = null
+/** @type {DeviceCodeInfo | null} */
+let pendingDeviceCode = null
 
 // ── JWT / normalize ──────────────────────────────────────────────────────────
 
@@ -310,8 +330,15 @@ async function persistTokensToRailway(next) {
   const environmentId = process.env.RAILWAY_ENVIRONMENT_ID.trim()
   const serviceId = process.env.RAILWAY_SERVICE_ID.trim()
 
-  // Prefer JSON blob (Postalocity) + keep B64 for Bedrock login script compatibility
-  const json = JSON.stringify(next)
+  // Postalocity: single env var XAI_OAUTH_TOKENS (JSON). Keep B64 for older scripts.
+  const json = JSON.stringify({
+    access_token: next.access_token,
+    refresh_token: next.refresh_token || '',
+    token_type: next.token_type || 'Bearer',
+    expires_in: next.expires_in || Math.max(60, (next.expires_at || 0) - (next.obtained_at || 0)),
+    scope: next.scope || XAI_OAUTH_SCOPES,
+    obtained_at: next.obtained_at || Math.floor(Date.now() / 1000),
+  })
   if (json === lastRailwaySyncJson) return true
 
   const mutation = `mutation variableUpsert($input: VariableUpsertInput!) {
@@ -347,10 +374,10 @@ async function persistTokensToRailway(next) {
   }
 
   try {
-    await upsert('XAI_OAUTH_TOKENS', json)
+    await upsert(XAI_OAUTH_RAILWAY_ENV_VAR, json)
     await upsert('XAI_OAUTH_B64', Buffer.from(json, 'utf8').toString('base64'))
     lastRailwaySyncJson = json
-    console.log('[xai-oauth] synced to Railway env (skipDeploys) · XAI_OAUTH_TOKENS + XAI_OAUTH_B64')
+    console.log('[xai-oauth] synced to Railway env (skipDeploys) · XAI_OAUTH_TOKENS')
     return true
   } catch (err) {
     console.warn(
@@ -461,10 +488,12 @@ export async function refreshOAuthTokens() {
         console.error('[xai-oauth] refresh failed', res.status, lastText.slice(0, 200))
         if (errCode === 'invalid_grant' || res.status === 401) {
           refreshQuarantined = true
-          tokens = tokens
-            ? { ...tokens, refresh_token: undefined, expires_at: Math.floor(Date.now() / 1000) - 1 }
-            : null
-          console.error('[xai-oauth] REAUTH REQUIRED — npm run xai:login && set env / Redis')
+          tokens = null
+          // Drop revoked blob so redeploys do not rehydrate invalid_grant (Postalocity re-auth overwrites via device-code)
+          void deleteOAuthTokensFromRedis()
+          console.error(
+            '[xai-oauth] REAUTH REQUIRED — POST /oauth/initiate (device-code on production) or npm run xai:login -- --device',
+          )
         }
         return tokens
       }
@@ -676,4 +705,179 @@ export function writeHermesAuthFile(t) {
   }
   writeFileSync(path, JSON.stringify(authData, null, 2), { mode: 0o600 })
   return path
+}
+
+// ── Device-code flow (Postalocity MCP verbatim) ──────────────────────────────
+
+/**
+ * @typedef {{
+ *   device_code: string,
+ *   user_code: string,
+ *   verification_uri: string,
+ *   verification_uri_complete: string,
+ *   expires_in: number,
+ *   interval: number,
+ * }} DeviceCodeInfo
+ */
+
+export function hasOAuthTokens() {
+  const t = tokens || loadOAuthTokensFromEnv()
+  return Boolean(t?.refresh_token) && !refreshQuarantined
+}
+
+/**
+ * Export current tokens for Railway env (never log the value).
+ * @returns {{ envVar: string, value: string, expiresAt: string | null } | null}
+ */
+export function exportTokensForRailway() {
+  const t = tokens || loadOAuthTokensFromEnv()
+  if (!t?.refresh_token || refreshQuarantined) return null
+  const obtained_at = t.obtained_at || Math.floor(Date.now() / 1000)
+  const expires_in =
+    t.expires_in || Math.max(60, (t.expires_at || obtained_at + 3600) - obtained_at)
+  const value = JSON.stringify({
+    access_token: t.access_token,
+    refresh_token: t.refresh_token,
+    token_type: t.token_type || 'Bearer',
+    expires_in,
+    scope: t.scope || XAI_OAUTH_SCOPES,
+    obtained_at,
+  })
+  return {
+    envVar: XAI_OAUTH_RAILWAY_ENV_VAR,
+    value,
+    expiresAt: t.expires_at ? new Date(t.expires_at * 1000).toISOString() : null,
+  }
+}
+
+/**
+ * @returns {Promise<DeviceCodeInfo>}
+ */
+export async function requestDeviceCode() {
+  const params = new URLSearchParams({
+    client_id: XAI_CLIENT_ID,
+    scope: XAI_OAUTH_SCOPES,
+    ...DEVICE_CODE_PARAMS,
+  })
+  const res = await fetch(XAI_DEVICE_CODE_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString(),
+  })
+  if (!res.ok) {
+    const text = await res.text()
+    throw new Error(`Device code request failed (${res.status}): ${text}`)
+  }
+  return /** @type {DeviceCodeInfo} */ (await res.json())
+}
+
+/**
+ * @param {DeviceCodeInfo} deviceCode
+ */
+function pollDeviceCodeInBackground(deviceCode) {
+  let interval = deviceCode.interval || 5
+  const expiresAt = Date.now() + (deviceCode.expires_in || 900) * 1000
+
+  const poll = async () => {
+    while (Date.now() < expiresAt) {
+      await new Promise((r) => setTimeout(r, interval * 1000))
+      try {
+        const params = new URLSearchParams({
+          grant_type: 'urn:ietf:params:oauth:grant-type:device_code',
+          client_id: XAI_CLIENT_ID,
+          device_code: deviceCode.device_code,
+        })
+        const res = await fetch(XAI_TOKEN_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: params.toString(),
+        })
+        const data = /** @type {Record<string, unknown>} */ (await res.json())
+
+        if (res.ok && typeof data.access_token === 'string') {
+          const next = normalizeTokenBlob({
+            access_token: data.access_token,
+            refresh_token: String(data.refresh_token || ''),
+            token_type: String(data.token_type || 'Bearer'),
+            expires_in: Number(data.expires_in) || 3600,
+            scope: String(data.scope || XAI_OAUTH_SCOPES),
+            obtained_at: Math.floor(Date.now() / 1000),
+          })
+          if (next) {
+            await saveTokens(next)
+            console.log(
+              '[xai-oauth] device-code authentication successful · expires',
+              new Date(next.expires_at * 1000).toISOString(),
+            )
+          }
+          pendingDeviceCode = null
+          return
+        }
+
+        if (data.error === 'authorization_pending') continue
+        if (data.error === 'slow_down') {
+          interval += 5
+          continue
+        }
+        if (data.error === 'expired_token') {
+          console.warn('[xai-oauth] device code expired')
+          pendingDeviceCode = null
+          return
+        }
+        if (data.error === 'access_denied') {
+          console.warn('[xai-oauth] device code access denied by user')
+          pendingDeviceCode = null
+          return
+        }
+        console.warn('[xai-oauth] device poll error', String(data.error || res.status))
+        pendingDeviceCode = null
+        return
+      } catch (err) {
+        console.warn(
+          '[xai-oauth] device poll network error, retrying:',
+          err instanceof Error ? err.message : err,
+        )
+      }
+    }
+    console.warn('[xai-oauth] device code timed out')
+    pendingDeviceCode = null
+  }
+
+  void poll()
+}
+
+/**
+ * Start device-code OAuth on this process (Postalocity pattern).
+ * Production polls and writes Redis + Railway — no localhost callback.
+ * @returns {Promise<DeviceCodeInfo & { polling: boolean }>}
+ */
+export async function startDeviceCodeFlow() {
+  console.log('[xai-oauth] requesting device code')
+  const deviceCode = await requestDeviceCode()
+  pendingDeviceCode = deviceCode
+  const verificationUrl = deviceCode.verification_uri_complete || deviceCode.verification_uri
+  console.log('[xai-oauth] device-code flow started')
+  console.log(`[xai-oauth] Open to authorize: ${verificationUrl}`)
+  if (deviceCode.user_code) {
+    console.log(`[xai-oauth] user_code: ${deviceCode.user_code}`)
+  }
+  pollDeviceCodeInBackground(deviceCode)
+  return { ...deviceCode, polling: true }
+}
+
+export function getOAuthFlowStatus() {
+  const st = oauthStatus()
+  return {
+    pendingApproval: pendingDeviceCode !== null,
+    userCode: pendingDeviceCode?.user_code || null,
+    verificationUrl:
+      pendingDeviceCode?.verification_uri_complete ||
+      pendingDeviceCode?.verification_uri ||
+      null,
+    authenticated: Boolean(tokens?.refresh_token || tokens?.access_token) && !refreshQuarantined,
+    tokenValid: Boolean(tokens?.access_token) && !isAccessExpired(tokens, 0) && !refreshQuarantined,
+    refreshQuarantined: st.refreshQuarantined,
+    expiresAt: st.expiresAt,
+    refreshBufferSecs: REFRESH_BUFFER_SECS,
+  }
 }

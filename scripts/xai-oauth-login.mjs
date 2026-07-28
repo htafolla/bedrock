@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 /**
- * One-time local xAI OAuth (PKCE) → save tokens → push XAI_OAUTH_B64 to Railway.
+ * xAI OAuth login for Bedrock.
  *
- * Pattern from ~/dev/xray/scripts/node/setup-xai-oauth.mjs
+ * Preferred (Postalocity MCP pattern) — device-code ON the production server:
+ *   npm run xai:login -- --device
+ *   BEDROCK_URL=https://bedrock.rippel.ai OAUTH_ADMIN_KEY=... npm run xai:login -- --device
  *
- * Usage (from repo root, with railway linked to bedrock):
- *   node scripts/xai-oauth-login.mjs
- *   node scripts/xai-oauth-login.mjs --no-railway   # local ~/.hermes/auth.json only
+ * Production polls xAI, then writes Redis + Railway env (skipDeploys). No localhost callback.
  *
- * Then restart the Railway service (or railway up) so the runtime loads XAI_OAUTH_B64.
- * The server auto-refreshes access tokens; if RAILWAY_TOKEN is set on the service,
- * refreshed blobs are written back to Railway variables.
+ * Legacy local PKCE (dev only — does not run on the Railway process):
+ *   npm run xai:login
+ *   npm run xai:login -- --no-railway
  */
 
 import { randomBytes, createHash } from 'node:crypto'
-import { writeFileSync, readFileSync, unlinkSync, existsSync, mkdirSync } from 'node:fs'
+import { writeFileSync, unlinkSync, existsSync, mkdirSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -25,6 +25,7 @@ import {
   XAI_TOKEN_URL,
   serializeTokensForEnv,
   writeHermesAuthFile,
+  normalizeTokenBlob,
 } from '../server/xai-oauth.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -32,7 +33,18 @@ const PORT = 56121
 const XAI_AUTH_URL = 'https://auth.x.ai/oauth2/authorize'
 const REDIRECT_URI = `http://127.0.0.1:${PORT}/callback`
 const VERIFIER_PATH = join(tmpdir(), 'bedrock-xai-oauth-verifier.txt')
-const noRailway = process.argv.includes('--no-railway')
+const args = new Set(process.argv.slice(2))
+const noRailway = args.has('--no-railway')
+const useDevice = args.has('--device') || args.has('--device-code') || process.env.XAI_OAUTH_DEVICE === '1'
+const BEDROCK_URL = (process.env.BEDROCK_URL || process.env.BEDROCK_API_URL || 'https://bedrock.rippel.ai').replace(
+  /\/$/,
+  '',
+)
+const ADMIN_KEY =
+  process.env.OAUTH_ADMIN_KEY?.trim() ||
+  process.env.BEDROCK_ADMIN_KEY?.trim() ||
+  process.env.MCP_API_KEY?.trim() ||
+  ''
 
 function generateVerifier() {
   return randomBytes(32)
@@ -50,6 +62,71 @@ function challenge(verifier) {
     .replace(/\+/g, '-')
     .replace(/\//g, '_')
     .replace(/=/g, '')
+}
+
+function wrapHtml(body) {
+  return `<html><head><style>body{font-family:system-ui,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#0c0a09;color:#f0e6d6;text-align:center;padding:2rem}h1{color:#e8a050}</style></head><body>${body}</body></html>`
+}
+
+async function runDeviceCodeOnServer() {
+  console.log('\n========================================')
+  console.log('  Bedrock · xAI OAuth (device-code)')
+  console.log('  Postalocity MCP pattern — production poll')
+  console.log('========================================\n')
+  console.log(`Server: ${BEDROCK_URL}`)
+
+  const headers = { 'Content-Type': 'application/json', Accept: 'application/json' }
+  if (ADMIN_KEY) headers['X-API-Key'] = ADMIN_KEY
+
+  const initRes = await fetch(`${BEDROCK_URL}/oauth/initiate`, {
+    method: 'POST',
+    headers,
+  })
+  const initBody = await initRes.json().catch(() => ({}))
+  if (!initRes.ok) {
+    console.error('Initiate failed:', initRes.status, initBody)
+    process.exit(1)
+  }
+
+  if (initBody.message?.includes('Already authenticated')) {
+    console.log('Already authenticated:', initBody.status)
+    process.exit(0)
+  }
+
+  const url = initBody.verification_uri_complete || initBody.verification_uri
+  console.log('\nOpen this URL in your browser (any device):\n')
+  console.log(`   ${url}\n`)
+  if (initBody.user_code) console.log(`User code: ${initBody.user_code}\n`)
+  console.log('Production server is polling. Tokens → Redis + Railway when you approve.')
+  console.log('Waiting for authentication (status poll)...\n')
+
+  try {
+    spawnSync('open', [url], { stdio: 'ignore' })
+  } catch {
+    /* ignore */
+  }
+
+  const deadline = Date.now() + (Number(initBody.expires_in) || 900) * 1000
+  while (Date.now() < deadline) {
+    await new Promise((r) => setTimeout(r, 4000))
+    const stRes = await fetch(`${BEDROCK_URL}/oauth/status`, { headers: { Accept: 'application/json' } })
+    const st = await stRes.json().catch(() => ({}))
+    if (st.tokenValid || (st.authenticated && st.hasRefresh !== false && !st.needsReauth)) {
+      console.log('✅ Authenticated on production')
+      console.log('   expiresAt:', st.expiresAt)
+      console.log('   persist:', JSON.stringify(st.persist || st))
+      const health = await fetch(`${BEDROCK_URL}/api/health`).then((r) => r.json()).catch(() => ({}))
+      console.log('   chatConfigured:', health.chatConfigured)
+      process.exit(0)
+    }
+    if (st.pendingApproval) {
+      process.stdout.write('.')
+    } else if (!st.authenticated) {
+      process.stdout.write('?')
+    }
+  }
+  console.error('\nTimed out waiting for approval. Check Railway logs for [xai-oauth] device-code.')
+  process.exit(1)
 }
 
 function printUrl(verifier) {
@@ -70,21 +147,18 @@ function printUrl(verifier) {
   }).toString()
 
   console.log('\n========================================')
-  console.log('  Bedrock · xAI OAuth (SuperGrok)')
+  console.log('  Bedrock · xAI OAuth (local PKCE — legacy)')
   console.log('========================================')
-  console.log('\nOpen this URL in your browser:\n')
+  console.log('\nPrefer production device-code: npm run xai:login -- --device\n')
+  console.log('Open this URL in your browser:\n')
   console.log(`   ${XAI_AUTH_URL}?${params}\n`)
   console.log('Authorize → callback saves tokens → Railway env updated.')
   console.log('Close the tab when it says ✅ Authorized.\n')
 }
 
-function wrapHtml(body) {
-  return `<html><head><style>body{font-family:system-ui,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:#0c0a09;color:#f0e6d6;text-align:center;padding:2rem}h1{color:#e8a050}</style></head><body>${body}</body></html>`
-}
-
 function startServer(verifier) {
   return new Promise((resolve, reject) => {
-    const server = http.createServer((req, res) => {
+    const server = http.createServer(async (req, res) => {
       const url = new URL(req.url || '/', `http://127.0.0.1:${PORT}`)
       if (url.pathname === '/callback' && url.searchParams.has('code')) {
         const code = url.searchParams.get('code')
@@ -99,29 +173,21 @@ function startServer(verifier) {
         } catch {
           /* ignore */
         }
-        setTimeout(() => {
-          server.close()
-          resolve(code)
-        }, 100)
-        return
-      }
-      if (url.pathname === '/callback') {
-        res.writeHead(400)
-        res.end('Missing code')
+        server.close()
+        resolve(code)
         return
       }
       res.writeHead(404)
       res.end('Not found')
     })
-
+    server.on('error', reject)
     server.listen(PORT, '127.0.0.1', () => {
-      writeFileSync(VERIFIER_PATH, verifier, 'utf8')
-    })
-    server.on('error', (err) => {
-      if (/** @type {NodeJS.ErrnoException} */ (err).code === 'EADDRINUSE') {
-        console.error(`Port ${PORT} in use — close other OAuth helpers and retry.`)
+      printUrl(verifier)
+      try {
+        spawnSync('open', [`file://${VERIFIER_PATH}`], { stdio: 'ignore' })
+      } catch {
+        /* ignore */
       }
-      reject(err)
     })
   })
 }
@@ -129,101 +195,67 @@ function startServer(verifier) {
 async function exchangeCode(code, verifier) {
   const body = new URLSearchParams({
     grant_type: 'authorization_code',
+    client_id: XAI_CLIENT_ID,
     code,
     redirect_uri: REDIRECT_URI,
     code_verifier: verifier,
-    client_id: XAI_CLIENT_ID,
   })
-  const response = await fetch(XAI_TOKEN_URL, {
+  const res = await fetch(XAI_TOKEN_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: body.toString(),
   })
-  if (!response.ok) {
-    throw new Error(`Token exchange failed (${response.status}): ${await response.text()}`)
-  }
-  return response.json()
+  const text = await res.text()
+  if (!res.ok) throw new Error(`token exchange ${res.status}: ${text}`)
+  return JSON.parse(text)
 }
 
-function toStoredTokens(data) {
+function pushRailway(stored) {
+  const { b64, json } = serializeTokensForEnv(stored)
+  for (const pair of [`XAI_OAUTH_TOKENS=${json}`, `XAI_OAUTH_B64=${b64}`]) {
+    const r = spawnSync('railway', ['variables', '-s', 'bedrock', '--set', pair], {
+      encoding: 'utf8',
+      cwd: join(__dirname, '..'),
+    })
+    console.log(pair.split('=')[0], r.status === 0 ? 'ok' : 'fail', (r.stderr || '').slice(0, 120))
+  }
+}
+
+async function runLocalPkce() {
+  const verifier = generateVerifier()
+  writeFileSync(VERIFIER_PATH, verifier, { mode: 0o600 })
+  const code = await startServer(verifier)
+  const data = await exchangeCode(code, verifier)
   const obtained_at = Math.floor(Date.now() / 1000)
-  const expires_in = Number(data.expires_in) || 86400
-  return {
+  const stored = normalizeTokenBlob({
     access_token: data.access_token,
     refresh_token: data.refresh_token,
-    expires_in,
+    expires_in: data.expires_in || 3600,
     obtained_at,
-    expires_at: obtained_at + expires_in,
     token_type: data.token_type || 'Bearer',
-    scope: data.scope || 'openid profile email offline_access grok-cli:access api:access',
+    scope: data.scope,
+  })
+  if (!stored) throw new Error('normalize failed')
+  mkdirSync(join(__dirname, '..', 'data'), { recursive: true })
+  writeFileSync(join(__dirname, '..', 'data', 'xai-oauth-tokens.json'), JSON.stringify(stored, null, 2), {
+    mode: 0o600,
+  })
+  writeHermesAuthFile(stored)
+  console.log('Saved local · expires', new Date(stored.expires_at * 1000).toISOString())
+  if (!noRailway) {
+    pushRailway(stored)
+    console.log('OAuth vars set on Railway. Redeploy so process loads env (or use --device next time).')
   }
 }
 
-function pushToRailway(b64, json) {
-  console.log('Setting Railway variables XAI_OAUTH_B64 + XAI_OAUTH_TOKENS …')
-  const cwd = join(__dirname, '..')
-  for (const pair of [`XAI_OAUTH_B64=${b64}`, `XAI_OAUTH_TOKENS=${json}`]) {
-    let r = spawnSync('railway', ['variables', '--set', pair], { encoding: 'utf8', cwd })
-    if (r.status !== 0) {
-      r = spawnSync('railway', ['variables', 'set', pair], { encoding: 'utf8', cwd })
-    }
-    if (r.status !== 0) {
-      console.error(r.stderr || r.stdout || 'railway variables set failed')
-      console.error('\nSet manually:')
-      console.error('  railway variables --set XAI_OAUTH_B64=<b64>')
-      console.error('  railway variables --set XAI_OAUTH_TOKENS=<json>')
-      return false
-    }
-  }
-  console.log('✅ OAuth vars set on Railway')
-  console.log('   Optional durable: add REDIS_URL (Railway Redis) and/or RAILWAY_API_TOKEN (account token).')
-  console.log('   Restart the service (or railway up) so the process loads tokens.')
-  return true
-}
-
-async function main() {
-  const existingCode = process.argv[2] && !process.argv[2].startsWith('-') ? process.argv[2] : null
-  let verifier
-  if (existingCode) {
-    if (!existsSync(VERIFIER_PATH)) {
-      console.error('No saved verifier — run without code first')
-      process.exit(1)
-    }
-    verifier = readFileSync(VERIFIER_PATH, 'utf8').trim()
-  } else {
-    verifier = generateVerifier()
-    printUrl(verifier)
-  }
-
-  try {
-    const code = existingCode || (await startServer(verifier))
-    console.log('Exchanging code…')
-    const data = await exchangeCode(code, verifier)
-    const stored = toStoredTokens(data)
-    const path = writeHermesAuthFile(stored)
-    console.log(`✅ Saved local ${path}`)
-    console.log(`   Expires ${new Date(stored.expires_at * 1000).toISOString()}`)
-
-    const { b64, json } = serializeTokensForEnv(stored)
-    // Local file SSOT (same path server uses by default)
-    try {
-      const dataPath = join(__dirname, '..', 'data', 'xai-oauth-tokens.json')
-      mkdirSync(join(__dirname, '..', 'data'), { recursive: true })
-      writeFileSync(dataPath, JSON.stringify(stored, null, 2), { mode: 0o600 })
-      console.log(`✅ Saved ${dataPath}`)
-    } catch (e) {
-      console.warn('Could not write data/xai-oauth-tokens.json', e)
-    }
-    if (!noRailway) {
-      pushToRailway(b64, json)
-    } else {
-      process.stdout.write(`\nXAI_OAUTH_B64=${b64}\n`)
-      process.stdout.write(`XAI_OAUTH_TOKENS=${json}\n`)
-    }
-  } catch (err) {
-    console.error('❌', err instanceof Error ? err.message : err)
+if (useDevice) {
+  runDeviceCodeOnServer().catch((err) => {
+    console.error(err)
     process.exit(1)
-  }
+  })
+} else {
+  runLocalPkce().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
 }
-
-main()
