@@ -477,7 +477,7 @@ const FIELD_AIDS = {
   wounded: {
     hacks: [
       'You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.',
-      'Their leaving does not cancel whose you are — and does not own your emotional state. You are His; cry Abba, Father.',
+      'Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. You are His; cry Abba, Father.',
       'Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains. Hold the adult position: love without handing them the remote.',
     ],
     prayers: [
