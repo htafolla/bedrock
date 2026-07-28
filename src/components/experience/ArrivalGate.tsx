@@ -7,6 +7,8 @@ interface ArrivalGateProps {
   mission?: string
   prologue?: string[]
   onEnter: () => void
+  /** Optional sealed word / about (after enter chrome would show footer About) */
+  onAbout?: () => void
 }
 
 export function ArrivalGate({
@@ -16,6 +18,7 @@ export function ArrivalGate({
   mission,
   prologue,
   onEnter,
+  onAbout,
 }: ArrivalGateProps) {
   return (
     <div className="arrival-gate">
@@ -29,6 +32,11 @@ export function ArrivalGate({
         <button type="button" className="arrival-enter" onClick={onEnter}>
           Enter
         </button>
+        {onAbout ? (
+          <button type="button" className="arrival-about" onClick={onAbout}>
+            About · sealed word
+          </button>
+        ) : null}
         {prologue?.length ? (
           <div className="arrival-under-enter" aria-label="Prologue">
             {prologue.map((line) => (

@@ -1,7 +1,8 @@
 import type { ThemeMode } from '../../lib/theme-preference'
 import { ThemeToggle } from './ThemeToggle'
 
-export type NavMode = 'keys' | 'journeys' | 'map' | 'toc'
+/** map kept for DNA/legacy; about is footer-only (not in header chrome). */
+export type NavMode = 'keys' | 'journeys' | 'map' | 'toc' | 'about'
 
 interface NavModesProps {
   mode: NavMode

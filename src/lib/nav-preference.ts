@@ -3,7 +3,7 @@ import type { NavMode } from '../components/experience/NavModes'
 export const NAV_MODE_STORAGE_KEY = 'bedrock.navMode'
 export const DEFAULT_NAV_MODE: NavMode = 'keys'
 
-const VALID: ReadonlySet<string> = new Set(['keys', 'journeys', 'map', 'toc'])
+const VALID: ReadonlySet<string> = new Set(['keys', 'journeys', 'map', 'toc', 'about'])
 
 export function isNavMode(value: unknown): value is NavMode {
   return typeof value === 'string' && VALID.has(value)

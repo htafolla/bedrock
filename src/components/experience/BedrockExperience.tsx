@@ -19,6 +19,7 @@ import { ChamberFocus } from './ChamberFocus'
 import { GuideChat } from './GuideChat'
 import { KeyChips } from './KeyChips'
 import { JourneyPanel } from './JourneyPanel'
+import { AboutPanel } from './AboutPanel'
 import { TableOfContents } from './TableOfContents'
 import { NavModes, type NavMode } from './NavModes'
 import { ThemeToggle } from './ThemeToggle'
@@ -259,6 +260,12 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 trackEvent('enter', { source: 'arrival' })
                 enterNave()
               }}
+              onAbout={() => {
+                trackEvent('nav', { nav: 'about', source: 'arrival' })
+                setNavMode('about')
+                enterNave()
+                scrollExperienceToTop()
+              }}
             />
           </>
         ) : null}
@@ -308,6 +315,10 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 />
               ) : null}
 
+              {state.mode === 'constellation' && navMode === 'about' ? (
+                <AboutPanel document={document} />
+              ) : null}
+
               {state.mode === 'chamber' && activeChamber ? (
                 <ChamberFocus
                   document={document}
@@ -328,12 +339,24 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         ) : null}
 
         {/* Viewport-fixed footer — outside nested chrome so mobile always pins bottom */}
-        {state.mode === 'constellation' &&
-        (navMode === 'keys' || navMode === 'journeys' || navMode === 'map') ? (
+        {state.mode === 'constellation' ? (
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
               <p>Standing on something solid.</p>
               <p className="site-footer-meta">
+                <button
+                  type="button"
+                  className="site-footer-about"
+                  onClick={() => {
+                    trackEvent('nav', { nav: 'about', source: 'footer' })
+                    setNavMode('about')
+                    if (state.mode === 'chamber') backToMap()
+                    scrollExperienceToTop()
+                  }}
+                >
+                  About
+                </button>
+                {' · '}
                 Public beta · v{document.meta.version} · revised {document.meta.revised}
               </p>
             </footer>

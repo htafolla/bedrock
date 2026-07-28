@@ -1231,6 +1231,111 @@ body {
   /* inherits .chamber */
 }
 
+/* —— About panel (footer entry; sealed word lives here) —— */
+.mode-constellation.nav-about .about-panel {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: min(70dvh, 40rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0.85rem 0.9rem 1rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 0 0 1px rgba(232, 160, 80, 0.06),
+    0 12px 40px var(--shadow-card);
+}
+
+.mode-constellation.nav-about .about-panel .nav-panel-header {
+  background: transparent;
+  border: none;
+  margin-bottom: 0.65rem;
+  padding: 0.15rem 0.25rem 0.55rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.about-mission {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+.about-motto {
+  margin: 0.45rem 0 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--beam, #e8a050);
+}
+
+.about-prologue {
+  margin: 0.75rem 0 1rem;
+  padding: 0.65rem 0.75rem;
+  border-left: 2px solid rgba(232, 160, 80, 0.4);
+}
+
+.about-prologue-line {
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  opacity: 0.9;
+}
+
+.about-sealed-lead {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+.about-meta {
+  margin: 1rem 0 0;
+  font-size: 0.72rem;
+  opacity: 0.6;
+  letter-spacing: 0.03em;
+}
+
+.site-footer-about {
+  font: inherit;
+  color: var(--beam, #e8a050);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer-about:hover,
+.site-footer-about:focus-visible {
+  color: var(--ember, #f0b060);
+  outline: none;
+}
+
+.arrival-about {
+  display: block;
+  margin: 0.75rem auto 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.arrival-about:hover,
+.arrival-about:focus-visible {
+  color: var(--beam, #e8a050);
+  outline: none;
+}
+
 /* True footer — fixed to viewport bottom (not mid-page under Keys/Map chrome) */
 .experience-footer-stack {
   position: fixed;
