@@ -14,7 +14,6 @@ import { getJourney } from '../../lib/journeys'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
 import { trackEvent, trackPageview } from '../../lib/analytics'
 import { ArrivalGate } from './ArrivalGate'
-import { ConstellationHud } from './ConstellationHud'
 import { ChamberFocus } from './ChamberFocus'
 import { GuideChat } from './GuideChat'
 import { KeyChips } from './KeyChips'
@@ -96,10 +95,9 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   }, [state.mode, state.activeChamberId, activeJourneyId])
 
   const showScene = allow3d && state.mode !== 'arrival'
-  // DNA interactive on Keys / Journeys / Map. Contents stays list-first.
+  // DNA interactive on Keys / Journeys. Contents stays list-first.
   const sceneInteractive =
-    state.mode === 'constellation' &&
-    (navMode === 'map' || navMode === 'keys' || navMode === 'journeys')
+    state.mode === 'constellation' && (navMode === 'keys' || navMode === 'journeys' || navMode === 'map')
 
   const selectChamber = useCallback(
     (id: string, source: string = 'ui', journeyId?: string | null) => {
@@ -203,9 +201,9 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
         {state.mode !== 'arrival' ? (
           <div className="experience-main-with-nav">
-            {/* Top: Keys · Journeys · Map · Contents */}
+            {/* Top: Keys · Journeys · Contents (Map hidden — same surface as Keys) */}
             <NavModes
-              mode={navMode}
+              mode={navMode === 'map' ? 'keys' : navMode}
               onChange={onNavChange}
               theme={theme}
               onToggleTheme={toggleTheme}
@@ -213,7 +211,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
             />
 
             <div className="experience-main">
-              {state.mode === 'constellation' && navMode === 'keys' ? (
+              {state.mode === 'constellation' && (navMode === 'keys' || navMode === 'map') ? (
                 <KeyChips
                   activeChamberId={state.activeChamberId}
                   onSelect={(id, journeyId) => selectChamber(id, 'keys', journeyId)}
@@ -235,15 +233,6 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                     openChamber(chamberId)
                     scrollExperienceToTop()
                   }}
-                />
-              ) : null}
-
-              {state.mode === 'constellation' && navMode === 'map' ? (
-                <ConstellationHud
-                  chambers={document.chambers}
-                  activeChamberId={state.activeChamberId}
-                  onSelect={selectChamber}
-                  fallbackList={!allow3d}
                 />
               ) : null}
 

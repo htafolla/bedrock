@@ -14,8 +14,8 @@ export function readNavModePreference(): NavMode {
   if (typeof window === 'undefined') return DEFAULT_NAV_MODE
   try {
     const raw = window.localStorage.getItem(NAV_MODE_STORAGE_KEY)
-    // Legacy: Backstory was briefly a header tab — map it off the chrome.
-    if (raw === 'backstory') return DEFAULT_NAV_MODE
+    // Legacy tabs no longer in chrome
+    if (raw === 'backstory' || raw === 'map') return DEFAULT_NAV_MODE
     if (isNavMode(raw)) return raw
   } catch {
     // ignore quota / privacy mode
@@ -23,7 +23,7 @@ export function readNavModePreference(): NavMode {
   return DEFAULT_NAV_MODE
 }
 
-/** Persist preferred nav mode (Keys · Journeys · Map · Contents). */
+/** Persist preferred nav mode (Keys · Journeys · Contents). Map kept in type for DNA code only. */
 export function writeNavModePreference(mode: NavMode): void {
   if (typeof window === 'undefined') return
   try {

@@ -12,14 +12,14 @@ interface NavModesProps {
   onHome: () => void
 }
 
+/** Header chrome only — Map hidden (nearly same as Keys; keeps menu from wrapping). */
 const MODES: Array<{ id: NavMode; label: string }> = [
   { id: 'keys', label: 'Keys' },
   { id: 'journeys', label: 'Journeys' },
-  { id: 'map', label: 'Map' },
   { id: 'toc', label: 'Contents' },
 ]
 
-/** Mobile-first top chrome: Bedrock · Keys/Journeys/Map/Contents · theme far right. */
+/** Mobile-first top chrome: Bedrock · Keys/Journeys/Contents · theme far right. */
 export function NavModes({ mode, onChange, theme, onToggleTheme, onHome }: NavModesProps) {
   return (
     <header className="nav-modes" role="banner">

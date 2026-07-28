@@ -23,10 +23,17 @@ describe('nav-preference', () => {
     expect(isNavMode(null)).toBe(false)
   })
 
-  it('migrates legacy backstory tab to default keys', () => {
+  it('migrates legacy backstory and map tabs to default keys', () => {
     vi.stubGlobal('window', {
       localStorage: {
         getItem: () => 'backstory',
+        setItem: vi.fn(),
+      },
+    })
+    expect(readNavModePreference()).toBe(DEFAULT_NAV_MODE)
+    vi.stubGlobal('window', {
+      localStorage: {
+        getItem: () => 'map',
         setItem: vi.fn(),
       },
     })
