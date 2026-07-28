@@ -11,6 +11,9 @@ export interface ChatContext {
   chamberId?: string
   chamberTitle?: string
   chamberSummary?: string
+  /** Core journey id when visitor entered via Keys / ?j= */
+  journeyId?: string
+  journeyTitle?: string
 }
 
 export interface StreamChatOptions {

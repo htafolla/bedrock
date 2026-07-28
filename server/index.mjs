@@ -232,20 +232,26 @@ export function normalizeChatBody(body) {
   /** @type {string | null} */
   let chamberId = null
   const ctx = raw.context
+  /** @type {string | null} */
+  let journeyIdFromCtx = null
   if (ctx && typeof ctx === 'object') {
-    const c = /** @type {{ chamberTitle?: unknown, chamberSummary?: unknown, chamberId?: unknown }} */ (ctx)
+    const c = /** @type {{ chamberTitle?: unknown, chamberSummary?: unknown, chamberId?: unknown, journeyId?: unknown, journeyTitle?: unknown }} */ (ctx)
     const title = typeof c.chamberTitle === 'string' ? c.chamberTitle.trim() : ''
     const summary = typeof c.chamberSummary === 'string' ? c.chamberSummary.trim() : ''
     const id = typeof c.chamberId === 'string' ? c.chamberId.trim() : ''
     if (id) chamberId = id
+    if (typeof c.journeyId === 'string' && c.journeyId.trim()) {
+      journeyIdFromCtx = c.journeyId.trim()
+    }
     if (title || id) {
       contextLine = `Visitor is currently in chamber${title ? ` "${title}"` : ''}${id ? ` (${id})` : ''}${summary ? `: ${summary}` : ''}.`
     }
   }
 
-  // Core journey detection: last user turn plain speech, else chamber-linked journey
+  // Core journey: explicit context → plain speech → chamber-linked
   const lastUser = messages[messages.length - 1]?.content || ''
-  let journey = matchJourneyFromText(lastUser)
+  let journey = journeyIdFromCtx ? getJourney(journeyIdFromCtx) : null
+  if (!journey) journey = matchJourneyFromText(lastUser)
   if (!journey && chamberId) {
     const linked = journeysForChamber(chamberId)
     journey = linked[0] || null

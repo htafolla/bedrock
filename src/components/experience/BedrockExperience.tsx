@@ -1,11 +1,16 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import type { BedrockDocument } from '../../types/content'
 import { useExperience } from '../../hooks/useExperience'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
 import { useNavModePreference } from '../../hooks/useNavModePreference'
 import { useThemePreference } from '../../hooks/useThemePreference'
 import { DEFAULT_NAV_MODE } from '../../lib/nav-preference'
-import { parseChamberFromLocation, setChamberQuery } from '../../lib/path-routing'
+import {
+  parseChamberFromLocation,
+  parseJourneyFromLocation,
+  setChamberQuery,
+} from '../../lib/path-routing'
+import { getJourney } from '../../lib/journeys'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
 import { trackEvent, trackPageview } from '../../lib/analytics'
 import { ArrivalGate } from './ArrivalGate'
@@ -31,15 +36,31 @@ interface BedrockExperienceProps {
 export function BedrockExperience({ document }: BedrockExperienceProps) {
   const { allow3d, reducedMotion } = useMediaCapability()
 
-  const deepLinkId = useMemo(() => {
-    if (typeof window === 'undefined') return null
-    const raw = parseChamberFromLocation()
-    if (!raw) return null
-    return document.chambers.some((c) => c.id === raw) ? raw : null
+  const deepLink = useMemo(() => {
+    if (typeof window === 'undefined') {
+      return { chamberId: null as string | null, journeyId: null as string | null }
+    }
+    const journeyRaw = parseJourneyFromLocation()
+    const journey = journeyRaw ? getJourney(journeyRaw) : null
+    const chamberRaw = parseChamberFromLocation()
+    const chamberFromQuery =
+      chamberRaw && document.chambers.some((c) => c.id === chamberRaw) ? chamberRaw : null
+    // ?j= opens the journey door when ?c= is absent or invalid
+    const chamberId =
+      chamberFromQuery ||
+      (journey && document.chambers.some((c) => c.id === journey.doorChamberId)
+        ? journey.doorChamberId
+        : null)
+    return {
+      chamberId,
+      journeyId: journey?.id ?? null,
+    }
   }, [document.chambers])
 
+  const [activeJourneyId, setActiveJourneyId] = useState<string | null>(deepLink.journeyId)
+
   const { state, enterNave, openChamber, backToMap, spineStep } = useExperience({
-    initialChamberId: deepLinkId,
+    initialChamberId: deepLink.chamberId,
   })
   /** Preferred Keys · Map · Contents — localStorage-backed. */
   const { navMode, setNavMode } = useNavModePreference()
@@ -51,15 +72,24 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     return document.chambers.find((c) => c.id === state.activeChamberId) ?? null
   }, [document.chambers, state.activeChamberId])
 
-  // Keep shareable ?c= in sync with open chamber (canonical /c/:id is static HTML for AI/SEO)
+  const activeJourney = useMemo(
+    () => (activeJourneyId ? getJourney(activeJourneyId) : null),
+    [activeJourneyId],
+  )
+
+  // Keep shareable ?c= / ?j= in sync with open chamber + journey
   useEffect(() => {
     if (state.mode === 'chamber' && state.activeChamberId) {
-      setChamberQuery(state.activeChamberId)
-      trackPageview(`/?c=${state.activeChamberId}`)
+      setChamberQuery(state.activeChamberId, { journeyId: activeJourneyId })
+      const path = activeJourneyId
+        ? `/?j=${activeJourneyId}&c=${state.activeChamberId}`
+        : `/?c=${state.activeChamberId}`
+      trackPageview(path)
     } else if (state.mode === 'constellation' || state.mode === 'arrival') {
-      setChamberQuery(null)
+      setChamberQuery(null, { journeyId: null })
+      setActiveJourneyId(null)
     }
-  }, [state.mode, state.activeChamberId])
+  }, [state.mode, state.activeChamberId, activeJourneyId])
 
   const showScene = allow3d && state.mode !== 'arrival'
   // DNA interactive on Keys and Map (same orbit/click). Contents stays list-first.
@@ -67,12 +97,18 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     state.mode === 'constellation' && (navMode === 'map' || navMode === 'keys')
 
   const selectChamber = useCallback(
-    (id: string, source: string = 'ui') => {
+    (id: string, source: string = 'ui', journeyId?: string | null) => {
       trackEvent(source === 'keys' ? 'key_tap' : 'open_chamber', {
         chamberId: id,
         source,
         nav: navMode,
+        journeyId: journeyId || undefined,
       })
+      if (journeyId) setActiveJourneyId(journeyId)
+      else if (source === 'keys' || source === 'ui') {
+        // Opening a door without journey id clears path context
+        setActiveJourneyId(null)
+      }
       openChamber(id)
       // Do not override preferred nav mode — chamber focus always shows while reading.
       scrollExperienceToTop()
@@ -82,7 +118,8 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   /** Leave chamber; keep user’s preferred header tab. */
   const leaveChamber = useCallback(() => {
-    setChamberQuery(null)
+    setChamberQuery(null, { journeyId: null })
+    setActiveJourneyId(null)
     backToMap()
   }, [backToMap])
 
@@ -173,7 +210,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               {state.mode === 'constellation' && navMode === 'keys' ? (
                 <KeyChips
                   activeChamberId={state.activeChamberId}
-                  onSelect={(id) => selectChamber(id, 'keys')}
+                  onSelect={(id, journeyId) => selectChamber(id, 'keys', journeyId)}
                 />
               ) : null}
 
@@ -229,11 +266,18 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                   chamberId: activeChamber.id,
                   chamberTitle: activeChamber.title,
                   chamberSummary: activeChamber.summary,
+                  journeyId: activeJourney?.id,
+                  journeyTitle: activeJourney?.title,
                 }
-              : undefined
+              : activeJourney
+                ? {
+                    journeyId: activeJourney.id,
+                    journeyTitle: activeJourney.title,
+                  }
+                : undefined
           }
           chambers={document.chambers.map((c) => ({ id: c.id, title: c.title }))}
-          onOpenChamber={selectChamber}
+          onOpenChamber={(id) => selectChamber(id, 'guide', activeJourneyId)}
         />
       ) : null}
     </div>

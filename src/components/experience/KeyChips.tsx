@@ -11,7 +11,8 @@ import { useMediaCapability } from '../../hooks/useMediaCapability'
 
 interface KeyChipsProps {
   activeChamberId: string | null
-  onSelect: (chamberId: string) => void
+  /** chamberId, optional journeyId from key entry */
+  onSelect: (chamberId: string, journeyId?: string) => void
 }
 
 /** Mobile carousel page size — one row so DNA stays usable. */
@@ -24,13 +25,14 @@ function ChipButton({
 }: {
   entry: (typeof KEY_ENTRIES)[number]
   active: boolean
-  onSelect: (id: string) => void
+  onSelect: (chamberId: string, journeyId?: string) => void
 }) {
   return (
     <button
       type="button"
       className={active ? 'key-chip active' : 'key-chip'}
-      onClick={() => onSelect(entry.chamberId)}
+      onClick={() => onSelect(entry.chamberId, entry.journeyId)}
+      title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
     >
       <span className="key-chip-label">{entry.label}</span>
       <span className="key-chip-hint">{entry.hint}</span>

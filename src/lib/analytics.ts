@@ -108,7 +108,7 @@ export function trackPageview(path?: string): void {
 
 export function trackEvent(
   event: AnalyticsEvent,
-  props?: { chamberId?: string; source?: string; nav?: string },
+  props?: { chamberId?: string; source?: string; nav?: string; journeyId?: string },
 ): void {
   if (typeof window === 'undefined') return
 
@@ -129,6 +129,7 @@ export function trackEvent(
     if (props?.chamberId) propsOut.chamber = props.chamberId
     if (props?.source) propsOut.source = props.source
     if (props?.nav) propsOut.nav = props.nav
+    if (props?.journeyId) propsOut.journey = props.journeyId
     w.plausible?.(event, Object.keys(propsOut).length ? { props: propsOut } : undefined)
   } catch {
     /* ignore */

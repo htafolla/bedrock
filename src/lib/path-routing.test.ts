@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest'
 import {
   chamberAppHref,
   chamberPath,
+  journeyAppHref,
   parseChamberFromLocation,
+  parseJourneyFromLocation,
 } from './path-routing'
 
 describe('path-routing', () => {
@@ -11,9 +13,20 @@ describe('path-routing', () => {
     expect(chamberAppHref('god-first')).toBe('/?c=god-first')
   })
 
+  it('builds journey app hrefs', () => {
+    expect(journeyAppHref('spouse-left')).toBe('/?j=spouse-left')
+    expect(journeyAppHref('spouse-left', 'wounded')).toBe('/?j=spouse-left&c=wounded')
+  })
+
   it('parses ?c= query', () => {
     expect(parseChamberFromLocation('?c=addiction', '/')).toBe('addiction')
     expect(parseChamberFromLocation('?c=God-First', '/')).toBe('god-first')
+  })
+
+  it('parses ?j= journey query', () => {
+    expect(parseJourneyFromLocation('?j=spouse-left')).toBe('spouse-left')
+    expect(parseJourneyFromLocation('?j=death-of-loved-one&c=loss')).toBe('death-of-loved-one')
+    expect(parseJourneyFromLocation('?j=../x')).toBeNull()
   })
 
   it('parses /c/:id path', () => {
