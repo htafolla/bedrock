@@ -13,12 +13,7 @@
  */
 import 'dotenv/config'
 import path from 'node:path'
-import {
-  appendFileSync,
-  existsSync,
-  mkdirSync,
-  readFileSync,
-} from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
 import OpenAI from 'openai'
@@ -28,6 +23,14 @@ import {
   oauthStatus,
   invalidateCachedAccessToken,
 } from './xai-oauth.mjs'
+import {
+  initTelemetryStore,
+  isTelemetryRedisReady,
+  hydrateFromJsonl,
+  recordTelemetryEvent,
+  getTelemetrySummary,
+  validateVid,
+} from './telemetry-store.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -219,64 +222,6 @@ function loadDocument() {
   return null
 }
 
-function dayKey(ts = Date.now()) {
-  return new Date(ts).toISOString().slice(0, 10)
-}
-
-function loadTelemetryFromDisk(doorHits, recentEvents, pathHits, uniquesAll, uniquesByDay) {
-  if (!existsSync(telemetryPath)) return { total: 0, pageviews: 0 }
-  let total = 0
-  let pageviews = 0
-  try {
-    const lines = readFileSync(telemetryPath, 'utf8').split('\n').filter(Boolean)
-    // Bound memory — last 20k lines for unique reconstruction
-    const slice = lines.slice(-20_000)
-    for (const line of slice) {
-      try {
-        const row = JSON.parse(line)
-        total += 1
-        if (row.event === 'pageview') pageviews += 1
-        if (row.chamberId && (row.event === 'open_chamber' || row.event === 'key_tap')) {
-          doorHits.set(row.chamberId, (doorHits.get(row.chamberId) || 0) + 1)
-        }
-        if (row.path && row.event === 'pageview') {
-          pathHits.set(row.path, (pathHits.get(row.path) || 0) + 1)
-        }
-        if (typeof row.vid === 'string' && row.vid.length >= 8) {
-          uniquesAll.add(row.vid)
-          const d = dayKey(row.t || Date.now())
-          if (!uniquesByDay.has(d)) uniquesByDay.set(d, new Set())
-          uniquesByDay.get(d).add(row.vid)
-        }
-        recentEvents.push({
-          t: row.t || Date.now(),
-          event: row.event,
-          chamberId: row.chamberId,
-          source: row.source,
-          nav: row.nav,
-          path: row.path,
-          vid: row.vid ? `${String(row.vid).slice(0, 8)}…` : undefined,
-        })
-      } catch {
-        /* skip bad line */
-      }
-    }
-    while (recentEvents.length > 400) recentEvents.shift()
-  } catch (err) {
-    console.warn('[telemetry] load failed', err instanceof Error ? err.message : err)
-  }
-  return { total, pageviews }
-}
-
-function persistTelemetryRow(row) {
-  try {
-    mkdirSync(dataDir, { recursive: true })
-    appendFileSync(telemetryPath, JSON.stringify(row) + '\n', { mode: 0o600 })
-  } catch (err) {
-    console.warn('[telemetry] append failed', err instanceof Error ? err.message : err)
-  }
-}
-
 function createApp() {
   const app = express()
   app.disable('x-powered-by')
@@ -299,6 +244,11 @@ function createApp() {
       oauthPersist: oauth.persist ?? null,
       oauthRefreshQuarantined: oauth.refreshQuarantined ?? false,
       oauthAuthMethod: oauth.authMethod ?? null,
+      redis: {
+        urlConfigured: Boolean(process.env.REDIS_URL?.trim()),
+        oauth: Boolean(oauth.persist?.redis),
+        telemetry: isTelemetryRedisReady(),
+      },
       model: MODEL,
       version: process.env.npm_package_version || '0.2.0-beta',
       beta: true,
@@ -345,25 +295,13 @@ function createApp() {
     })
   })
 
-  // Privacy-first analytics — memory + durable JSONL (no IP/PII names)
-  /** @type {Map<string, number>} */
-  const doorHits = new Map()
-  /** @type {Map<string, number>} */
-  const pathHits = new Map()
-  /** @type {Set<string>} */
-  const uniquesAll = new Set()
-  /** @type {Map<string, Set<string>>} */
-  const uniquesByDay = new Map()
-  /** @type {Array<Record<string, unknown>>} */
-  const recentEvents = []
-  const MAX_RECENT = 400
-  const loaded = loadTelemetryFromDisk(doorHits, recentEvents, pathHits, uniquesAll, uniquesByDay)
-  let telemetryTotal = loaded.total
-  let pageviews = loaded.pageviews
+  // Privacy-first analytics — Redis SSOT when REDIS_URL set (+ JSONL audit)
+  // Seed memory from disk when Redis is empty (first boot after enabling Redis)
+  if (!isTelemetryRedisReady()) {
+    hydrateFromJsonl(telemetryPath)
+  }
 
-  const VID_RE = /^[a-zA-Z0-9_-]{8,80}$/
-
-  app.post('/api/telemetry', (req, res) => {
+  app.post('/api/telemetry', async (req, res) => {
     const body = req.body && typeof req.body === 'object' ? req.body : {}
     const event = typeof body.event === 'string' ? body.event.trim().slice(0, 40) : ''
     const allowed = new Set([
@@ -386,74 +324,30 @@ function createApp() {
       typeof body.path === 'string' ? body.path.trim().slice(0, 200) : undefined
     const referrer =
       typeof body.referrer === 'string' ? body.referrer.trim().slice(0, 200) : undefined
-    const rawVid = typeof body.vid === 'string' ? body.vid.trim() : ''
-    const vid = VID_RE.test(rawVid) ? rawVid : undefined
+    const vid = validateVid(typeof body.vid === 'string' ? body.vid : '')
 
-    const t = Date.now()
-    const row = { t, event, chamberId, source, nav, path: pathVal, referrer, vid }
-    telemetryTotal += 1
-    if (event === 'pageview') pageviews += 1
-    if (chamberId && (event === 'open_chamber' || event === 'key_tap')) {
-      doorHits.set(chamberId, (doorHits.get(chamberId) || 0) + 1)
-    }
-    if (pathVal && event === 'pageview') {
-      pathHits.set(pathVal, (pathHits.get(pathVal) || 0) + 1)
-    }
-    if (vid) {
-      uniquesAll.add(vid)
-      const d = dayKey(t)
-      if (!uniquesByDay.has(d)) uniquesByDay.set(d, new Set())
-      uniquesByDay.get(d).add(vid)
-    }
-    recentEvents.push({
-      t,
+    const row = {
+      t: Date.now(),
       event,
       chamberId,
       source,
       nav,
       path: pathVal,
-      vid: vid ? `${vid.slice(0, 8)}…` : undefined,
-    })
-    if (recentEvents.length > MAX_RECENT) recentEvents.shift()
-    persistTelemetryRow(row)
-
+      referrer,
+      vid,
+    }
+    await recordTelemetryEvent(row, telemetryPath)
     res.status(204).end()
   })
 
-  app.get('/api/telemetry/summary', (req, res) => {
+  app.get('/api/telemetry/summary', async (req, res) => {
     const need = process.env.TELEMETRY_KEY?.trim()
     if (need && req.query.key !== need) {
       res.status(401).json({ error: 'unauthorized' })
       return
     }
-    const today = dayKey()
-    const topDoors = [...doorHits.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 30)
-      .map(([chamberId, count]) => ({ chamberId, count }))
-    const topPaths = [...pathHits.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 30)
-      .map(([path, count]) => ({ path, count }))
-    // last 7 days uniques
-    const last7 = []
-    for (let i = 6; i >= 0; i--) {
-      const d = dayKey(Date.now() - i * 86_400_000)
-      last7.push({ day: d, uniques: uniquesByDay.get(d)?.size || 0 })
-    }
-    res.json({
-      total: telemetryTotal,
-      pageviews,
-      uniqueVisitors: uniquesAll.size,
-      uniqueVisitorsToday: uniquesByDay.get(today)?.size || 0,
-      uniqueDoors: doorHits.size,
-      topDoors,
-      topPaths,
-      uniquesLast7Days: last7,
-      recent: recentEvents.slice(-40),
-      durable: existsSync(telemetryPath),
-      note: 'Privacy-first: anonymous localStorage vid only · no IP · no names · JSONL on disk',
-    })
+    const summary = await getTelemetrySummary()
+    res.json(summary)
   })
 
   app.post('/api/chat', async (req, res) => {
@@ -611,6 +505,7 @@ const isMain =
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 
 if (isMain) {
+  await initTelemetryStore()
   await startOAuthRefreshLoop()
   const app = createApp()
   app.listen(PORT, '0.0.0.0', () => {
@@ -620,10 +515,10 @@ if (isMain) {
         ? 'off (oauth login or XAI_API_KEY)'
         : `on (${st.mode})`
     const persist = st.persist
-      ? `redis=${st.persist.redis} railway=${st.persist.railwayGraphQl}`
-      : 'persist=?'
+      ? `oauthRedis=${st.persist.redis} railway=${st.persist.railwayGraphQl}`
+      : 'oauth=?'
     console.log(
-      `Bedrock listening on http://0.0.0.0:${PORT} · chat ${chat} · model ${MODEL} · ${persist}`,
+      `Bedrock listening on http://0.0.0.0:${PORT} · chat ${chat} · model ${MODEL} · ${persist} · telemetryRedis=${isTelemetryRedisReady()}`,
     )
   })
 }
