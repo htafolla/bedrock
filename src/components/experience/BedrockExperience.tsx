@@ -194,12 +194,17 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   const onNavChange = useCallback(
     (mode: NavMode) => {
       trackEvent('nav', { nav: mode, source: 'header' })
-      setNavMode(mode)
+      // Never land on about via header; About is footer/landing only
+      if (mode === 'about') {
+        leaveAbout()
+      } else {
+        setNavMode(mode)
+      }
       if (state.mode === 'chamber') {
         backToMap()
       }
     },
-    [setNavMode, state.mode, backToMap],
+    [setNavMode, leaveAbout, state.mode, backToMap],
   )
 
   /** Brand mark → home: default Keys surface, leave chamber/about, clear journey. */
@@ -320,10 +325,6 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 />
               ) : null}
 
-              {state.mode === 'constellation' && navMode === 'about' ? (
-                <AboutPanel document={document} onClose={exitAbout} />
-              ) : null}
-
               {state.mode === 'chamber' && activeChamber ? (
                 <ChamberFocus
                   document={document}
@@ -344,29 +345,23 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         ) : null}
 
         {/* Viewport-fixed footer — outside nested chrome so mobile always pins bottom */}
-        {state.mode === 'constellation' ? (
+        {state.mode === 'constellation' && navMode !== 'about' ? (
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
               <p>Truth under fire.</p>
               <p className="site-footer-meta">
-                {navMode === 'about' ? (
-                  <button type="button" className="site-footer-about" onClick={exitAbout}>
-                    Close About
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    className="site-footer-about"
-                    onClick={() => {
-                      trackEvent('nav', { nav: 'about', source: 'footer' })
-                      setNavMode('about')
-                      if (state.mode === 'chamber') backToMap()
-                      scrollExperienceToTop()
-                    }}
-                  >
-                    About
-                  </button>
-                )}
+                <button
+                  type="button"
+                  className="site-footer-about"
+                  onClick={() => {
+                    trackEvent('nav', { nav: 'about', source: 'footer' })
+                    setNavMode('about')
+                    if (state.mode === 'chamber') backToMap()
+                    scrollExperienceToTop()
+                  }}
+                >
+                  About
+                </button>
                 {' · '}
                 Public beta · v{document.meta.version} · revised {document.meta.revised}
               </p>
@@ -375,7 +370,12 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         ) : null}
       </div>
 
-      {state.mode !== 'arrival' ? (
+      {/* About above experience-ui stacking (DNA click-through + chat FAB) */}
+      {state.mode === 'constellation' && navMode === 'about' ? (
+        <AboutPanel document={document} onClose={exitAbout} />
+      ) : null}
+
+      {state.mode !== 'arrival' && navMode !== 'about' ? (
         <GuideChat
           context={
             activeChamber

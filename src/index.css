@@ -1257,14 +1257,43 @@ body {
   /* inherits .chamber */
 }
 
-/* —— About panel (footer entry; sealed word lives here) —— */
-.mode-constellation.nav-about .about-panel {
+/* —— About overlay (footer / landing entry; above DNA click-through maze) —— */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: calc(4.25rem + env(safe-area-inset-top, 0px)) 0.85rem
+    calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+
+.about-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: rgba(8, 6, 5, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: auto;
+}
+
+.about-overlay .about-panel {
   position: relative;
-  z-index: 40;
+  z-index: 1;
+  width: 100%;
   max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: min(70dvh, 40rem);
+  margin: 0 auto;
+  max-height: min(78dvh, 44rem);
   overflow-y: auto;
   scrollbar-width: thin;
   padding: 0.85rem 0.9rem 1rem;
@@ -1279,7 +1308,7 @@ body {
   pointer-events: auto;
 }
 
-.mode-constellation.nav-about .about-toolbar {
+.about-overlay .about-toolbar {
   position: sticky;
   top: 0;
   z-index: 5;
@@ -1288,21 +1317,37 @@ body {
   background: var(--glass);
   border-bottom: 1px solid var(--glass-border);
   pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
-.mode-constellation.nav-about .about-toolbar .focus-btn {
+.about-overlay .about-toolbar .focus-btn,
+.about-overlay .about-footer-actions .focus-btn {
   pointer-events: auto;
   cursor: pointer;
-  min-height: 2.5rem;
-  padding: 0.5rem 0.9rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem;
+  touch-action: manipulation;
 }
 
-.mode-constellation.nav-about .about-panel .nav-panel-header {
+.about-overlay .about-panel .nav-panel-header {
   background: transparent;
   border: none;
   margin-bottom: 0.65rem;
   padding: 0.15rem 0.25rem 0.55rem;
   border-bottom: 1px solid var(--glass-border);
+}
+
+/* Keep header chrome above About dim so Keys · Journeys · Contents still exit */
+.mode-constellation.nav-about .experience-ui {
+  z-index: 85;
+}
+.mode-constellation.nav-about .nav-modes {
+  z-index: 90;
+  pointer-events: auto;
 }
 
 .about-mission {
