@@ -107,7 +107,7 @@
       "title": "Spouse left / marriage under fire",
       "family": "body",
       "wave": 1,
-      "summary": "You were wounded. Their leaving does not cancel whose you are. Critical to healing: your emotional state is your own — not dependent on them. Love and pursue reconciliation if God leads — and still refuse them the remote to your internal state. Adult position. Hold it.",
+      "summary": "You were wounded. Their leaving does not cancel whose you are. Critical to healing: your emotional state is your own — not dependent on them. Operational standard: Kill the Flesh. Walk in the Spirit. — return to your side of the street; refuse the remote. Adult position. Hold it.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -203,6 +203,13 @@
           "label": "Release the outcome",
           "chamberId": "trust-in-the-lord",
           "note": "You cannot grip the outcome."
+        },
+        {
+          "id": "rubric",
+          "role": "remain",
+          "label": "The Rubric",
+          "chamberId": "kill-the-flesh-walk-in-the-spirit",
+          "note": "Operational standard under fire: refuse the flesh; walk in the Spirit; your side of the street."
         },
         {
           "id": "hope",
@@ -513,7 +520,7 @@
       "title": "Control grip",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Critical to healing: your emotional state is your own — not dependent on them. Refuse them the remote. Adult position. Hold it.",
+      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Critical: emotional state is your own; refuse the remote. Operational standard: Kill the Flesh. Walk in the Spirit. — return to your side of the street.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
@@ -523,7 +530,9 @@
         "i grip the outcome",
         "open hand",
         "my emotional state",
-        "not dependent on them"
+        "not dependent on them",
+        "return to your side of the street",
+        "kill the flesh"
       ],
       "doorChamberId": "control",
       "keyIds": [
@@ -571,10 +580,17 @@
         },
         {
           "id": "spirit",
-          "role": "remain",
+          "role": "fork",
           "label": "Walk by the Spirit",
           "chamberId": "walk-by-the-spirit",
           "note": "Flesh wants the last word over another life."
+        },
+        {
+          "id": "rubric",
+          "role": "remain",
+          "label": "The Rubric",
+          "chamberId": "kill-the-flesh-walk-in-the-spirit",
+          "note": "Full operational standard: refuse the flesh; side of the street; success without their response."
         }
       ]
     },

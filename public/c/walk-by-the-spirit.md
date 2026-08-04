@@ -28,6 +28,7 @@ Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Am
 
 ## Connected truth
 
+- [kill-the-flesh-walk-in-the-spirit](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [deny-yourself](https://bedrock.rippel.ai/c/deny-yourself)
 - [holy-spirit](https://bedrock.rippel.ai/c/holy-spirit)
 - [love](https://bedrock.rippel.ai/c/love)

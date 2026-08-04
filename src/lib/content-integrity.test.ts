@@ -22,8 +22,13 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(75)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(75)
+    expect(chambers.length).toBe(76)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(76)
+    expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
+    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
+    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
+      /side of the street|shield of faith/,
+    )
     expect(byId.has('persecution')).toBe(true)
     expect(byId.get('persecution')!.title).toBe('Persecution')
     expect(byId.has('addiction')).toBe(true)

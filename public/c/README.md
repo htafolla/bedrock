@@ -13,6 +13,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [The Meaning of Life](https://bedrock.rippel.ai/c/the-meaning-of-life) — The greatest commandments.
 - [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself) — Cross daily. Follow Me.
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit) — Walk by the Spirit, and you will not gratify the desires of the flesh.
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit) — Operational rubric under fire — refuse the flesh; walk in the Spirit. This is the path.
 - [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit) — Jesus gave the Helper — Spirit of truth with you, to testify and empower.
 - [Love](https://bedrock.rippel.ai/c/love) — Spirit fruit: love.
 - [Joy](https://bedrock.rippel.ai/c/joy) — Spirit fruit: joy.

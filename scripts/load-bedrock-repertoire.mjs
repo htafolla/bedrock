@@ -229,6 +229,29 @@ function buildBedrockSignals() {
     }),
   )
 
+  out.push(
+    signal({
+      name: 'bedrock-rubric-kill-flesh-walk-spirit',
+      definition:
+        'Bedrock operational rubric: Kill the Flesh. Walk in the Spirit. Thought capture; combat fear with Peace + Shield of Faith; refuse works of the flesh; self-control; love without self-erasure; honest trust assessment; contact boundaries; return to your side of the street; redirect statements; success is staying in the Spirit — not their return. Emotional state is your own — not dependent on them. Chamber id: kill-the-flesh-walk-in-the-spirit.',
+      tags: [
+        'bedrock',
+        'rubric',
+        'walk-by-the-spirit',
+        'works-of-the-flesh',
+        'side-of-the-street',
+        'healing',
+        'under-fire',
+      ],
+      priority: 'high',
+      example_inference_snippet:
+        'return to your side of the street · kill the flesh · refuse the remote · shield of faith · no contact is protection',
+      evaluation_criteria:
+        'User under fire in marriage/limbo/jealousy/control/fear needs a forged rule-set, not only abstract truth.',
+      master_index_integration: '/c/kill-the-flesh-walk-in-the-spirit · journeys spouse-left + control-grip',
+    }),
+  )
+
   return out
 }
 

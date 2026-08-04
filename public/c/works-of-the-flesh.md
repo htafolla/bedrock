@@ -16,7 +16,7 @@
 
 - Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”
 - Those who practice such things will not inherit the kingdom — this is warning, not a joke.
-- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate.
+- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See: Kill the Flesh. Walk in the Spirit. (the Rubric).
 
 ## Prayer
 
@@ -30,6 +30,7 @@ Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your
 
 ## Connected truth
 
+- [kill-the-flesh-walk-in-the-spirit](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [adultery](https://bedrock.rippel.ai/c/adultery)
