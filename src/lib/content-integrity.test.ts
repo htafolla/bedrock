@@ -37,8 +37,8 @@ describe('bedrock content integrity', () => {
     expect(rubric.body.some((b) => b.type === 'list')).toBe(true)
     const rubricText = rubric.body
       .map((b) => {
-        if (b.type === 'list') return (b.items ?? []).join(' ')
-        if (b.type === 'paragraph' || b.type === 'heading' || b.type === 'quote') return b.text
+        if (b.type === 'list' && Array.isArray(b.items)) return b.items.join(' ')
+        if ('text' in b && typeof b.text === 'string') return b.text
         return ''
       })
       .join(' ')

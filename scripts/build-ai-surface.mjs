@@ -213,10 +213,12 @@ function chamberHtml(c, meta) {
     .card p, .card li { margin:.4rem 0; color:var(--ink); }
     .card ul { padding-left:1.1rem; margin:.35rem 0; }
     .body-head { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); margin:1.15rem 0 .4rem; line-height:1.25; }
-    h3.body-head { font-size:1.15rem; letter-spacing:.03em; border-bottom:1px solid var(--border); padding-bottom:.35rem; }
-    h4.body-head { font-size:1rem; margin-top:.9rem; color:var(--ember); }
-    .body-list { margin:.35rem 0 .75rem; padding-left:1.2rem; }
-    .body-list li { margin:.3rem 0; line-height:1.45; }
+    h3.body-head { font-size:1.2rem; letter-spacing:.03em; border-bottom:1px solid var(--border); padding-bottom:.35rem; margin-top:1.35rem; }
+    h3.body-head:first-of-type { margin-top:.35rem; }
+    h4.body-head { font-size:1.02rem; margin:1rem 0 .35rem; color:var(--ember); font-family: system-ui, sans-serif; font-weight:600; letter-spacing:.02em; }
+    .body-list { margin:.2rem 0 .85rem; padding-left:1.35rem; list-style: disc; }
+    .body-list li { margin:.35rem 0; line-height:1.5; padding-left:.15rem; }
+    .card p { margin:.45rem 0 .65rem; line-height:1.55; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }

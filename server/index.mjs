@@ -666,8 +666,16 @@ function createApp() {
     await streamAttempt(false)
   })
 
-  // Canonical AI/SEO chamber pages: prefer dist (prod), fall back to public (dev)
-  const staticRoots = [dist, publicDir].filter((p) => existsSync(p))
+  // Chamber pages: prefer public/ (prebuild SSOT) over dist/ so content deploys
+  // never stick to a stale vite copy when public was regenerated.
+  const staticRoots = [publicDir, dist].filter((p) => existsSync(p))
+
+  /** Content pages must revalidate after every deploy (not sticky for an hour). */
+  function setContentNoStore(res) {
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
+    res.setHeader('Pragma', 'no-cache')
+    res.setHeader('Expires', '0')
+  }
 
   // Clean /c/:id → .html ; /c/:id.md → markdown
   app.get('/c/:id.md', (req, res, next) => {
@@ -680,7 +688,7 @@ function createApp() {
       const file = path.join(base, 'c', `${id}.md`)
       if (existsSync(file)) {
         res.type('text/markdown; charset=utf-8')
-        res.setHeader('Cache-Control', 'public, max-age=3600')
+        setContentNoStore(res)
         res.sendFile(file)
         return
       }
@@ -697,7 +705,7 @@ function createApp() {
     for (const base of staticRoots) {
       const file = path.join(base, 'c', `${id}.html`)
       if (existsSync(file)) {
-        res.setHeader('Cache-Control', 'public, max-age=3600')
+        setContentNoStore(res)
         res.sendFile(file)
         return
       }
@@ -716,7 +724,7 @@ function createApp() {
         fallthrough: false,
       }),
     )
-    // Other dist files (favicon, robots, chamber html, etc.)
+    // Other dist files (favicon, robots, chamber html, export, etc.)
     app.use(
       express.static(dist, {
         index: false,
@@ -725,8 +733,19 @@ function createApp() {
         setHeaders(res, filePath) {
           // Never cache the SPA shell — deploys must show immediately
           if (filePath.endsWith(`${path.sep}index.html`) || filePath.endsWith('/index.html')) {
-            res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
-            res.setHeader('Pragma', 'no-cache')
+            setContentNoStore(res)
+            return
+          }
+          // Chamber / export content revalidates (content deploys often)
+          const norm = filePath.replace(/\\/g, '/')
+          if (
+            norm.includes('/c/') ||
+            norm.includes('/export/') ||
+            norm.endsWith('llms.txt') ||
+            norm.endsWith('llms-full.txt') ||
+            norm.endsWith('sitemap.xml')
+          ) {
+            setContentNoStore(res)
           }
         },
       }),
