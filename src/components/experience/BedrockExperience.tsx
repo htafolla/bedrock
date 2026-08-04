@@ -203,7 +203,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     [setNavMode, state.mode, backToMap],
   )
 
-  /** Brand mark → home: default Keys surface, leave chamber, clear journey. */
+  /** Brand mark → home: default Keys surface, leave chamber/about, clear journey. */
   const goHome = useCallback(() => {
     setNavMode(DEFAULT_NAV_MODE)
     setActiveJourneyId(null)
@@ -316,7 +316,14 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               ) : null}
 
               {state.mode === 'constellation' && navMode === 'about' ? (
-                <AboutPanel document={document} />
+                <AboutPanel
+                  document={document}
+                  onClose={() => {
+                    trackEvent('nav', { nav: 'keys', source: 'about-close' })
+                    setNavMode(DEFAULT_NAV_MODE)
+                    scrollExperienceToTop()
+                  }}
+                />
               ) : null}
 
               {state.mode === 'chamber' && activeChamber ? (
@@ -344,18 +351,32 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
             <footer className="site-footer compact">
               <p>Standing on something solid.</p>
               <p className="site-footer-meta">
-                <button
-                  type="button"
-                  className="site-footer-about"
-                  onClick={() => {
-                    trackEvent('nav', { nav: 'about', source: 'footer' })
-                    setNavMode('about')
-                    if (state.mode === 'chamber') backToMap()
-                    scrollExperienceToTop()
-                  }}
-                >
-                  About
-                </button>
+                {navMode === 'about' ? (
+                  <button
+                    type="button"
+                    className="site-footer-about"
+                    onClick={() => {
+                      trackEvent('nav', { nav: 'keys', source: 'footer-close-about' })
+                      setNavMode(DEFAULT_NAV_MODE)
+                      scrollExperienceToTop()
+                    }}
+                  >
+                    Close About
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    className="site-footer-about"
+                    onClick={() => {
+                      trackEvent('nav', { nav: 'about', source: 'footer' })
+                      setNavMode('about')
+                      if (state.mode === 'chamber') backToMap()
+                      scrollExperienceToTop()
+                    }}
+                  >
+                    About
+                  </button>
+                )}
                 {' · '}
                 Public beta · v{document.meta.version} · revised {document.meta.revised}
               </p>

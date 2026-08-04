@@ -1,19 +1,39 @@
+import { useEffect } from 'react'
 import type { BedrockDocument } from '../../types/content'
 import { SealedTestimony } from '../SealedTestimony'
 
 interface AboutPanelProps {
   document: BedrockDocument
+  /** Leave About → field guide (Keys) */
+  onClose: () => void
 }
 
 /**
  * About · sealed word — optional origin, not the field-guide product pitch.
- * Reached from footer (not header chrome — keeps Keys · Journeys · Contents unwrapped).
+ * Reached from footer / arrival (not header chrome).
  */
-export function AboutPanel({ document }: AboutPanelProps) {
+export function AboutPanel({ document, onClose }: AboutPanelProps) {
   const { meta, prologue, testimony } = document
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
 
   return (
     <div className="about-panel key-chips-panel">
+      <div className="about-toolbar">
+        <button type="button" className="focus-btn ghost" onClick={onClose}>
+          ← Back to Keys
+        </button>
+        <button type="button" className="focus-btn" onClick={onClose}>
+          Close
+        </button>
+      </div>
+
       <header className="nav-panel-header">
         <p className="constellation-kicker">About · Origin</p>
         <h2 className="constellation-title">{meta.title}</h2>
@@ -45,6 +65,12 @@ export function AboutPanel({ document }: AboutPanelProps) {
         Public beta · v{meta.version}
         {meta.revised ? ` · revised ${meta.revised}` : ''}
       </p>
+
+      <div className="about-footer-actions">
+        <button type="button" className="focus-btn" onClick={onClose}>
+          Enter the field guide →
+        </button>
+      </div>
     </div>
   )
 }
