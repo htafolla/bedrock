@@ -144,7 +144,10 @@ body {
 }
 
 .mode-constellation.nav-keys .experience-ui,
-.mode-constellation.nav-map .experience-ui {
+.mode-constellation.nav-map .experience-ui,
+.mode-constellation.nav-journeys .experience-ui,
+.mode-constellation.nav-toc .experience-ui,
+.mode-constellation.nav-about .experience-ui {
   z-index: 2;
 }
 
@@ -1256,6 +1259,8 @@ body {
 
 /* —— About panel (footer entry; sealed word lives here) —— */
 .mode-constellation.nav-about .about-panel {
+  position: relative;
+  z-index: 40;
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
@@ -1271,6 +1276,25 @@ body {
   box-shadow:
     0 0 0 1px rgba(232, 160, 80, 0.06),
     0 12px 40px var(--shadow-card);
+  pointer-events: auto;
+}
+
+.mode-constellation.nav-about .about-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  margin: -0.25rem 0 0.75rem;
+  padding: 0.45rem 0.35rem 0.55rem;
+  background: var(--glass);
+  border-bottom: 1px solid var(--glass-border);
+  pointer-events: auto;
+}
+
+.mode-constellation.nav-about .about-toolbar .focus-btn {
+  pointer-events: auto;
+  cursor: pointer;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.9rem;
 }
 
 .mode-constellation.nav-about .about-panel .nav-panel-header {

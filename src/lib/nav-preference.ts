@@ -14,18 +14,22 @@ export function readNavModePreference(): NavMode {
   if (typeof window === 'undefined') return DEFAULT_NAV_MODE
   try {
     const raw = window.localStorage.getItem(NAV_MODE_STORAGE_KEY)
-    // Legacy tabs no longer in chrome
-    if (raw === 'backstory' || raw === 'map') return DEFAULT_NAV_MODE
-    if (isNavMode(raw)) return raw
+    // Ephemeral / legacy — never restore these as home surface
+    if (raw === 'backstory' || raw === 'map' || raw === 'about') return DEFAULT_NAV_MODE
+    if (isNavMode(raw) && raw !== 'about') return raw
   } catch {
     // ignore quota / privacy mode
   }
   return DEFAULT_NAV_MODE
 }
 
-/** Persist preferred nav mode (Keys · Journeys · Contents). Map kept in type for DNA code only. */
+/**
+ * Persist preferred nav mode (Keys · Journeys · Contents only).
+ * About is ephemeral — never sticky-trap visitors on About after open.
+ */
 export function writeNavModePreference(mode: NavMode): void {
   if (typeof window === 'undefined') return
+  if (mode === 'about' || mode === 'map') return
   try {
     window.localStorage.setItem(NAV_MODE_STORAGE_KEY, mode)
   } catch {

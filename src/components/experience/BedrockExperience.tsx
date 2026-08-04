@@ -4,7 +4,6 @@ import { useExperience } from '../../hooks/useExperience'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
 import { useNavModePreference } from '../../hooks/useNavModePreference'
 import { useThemePreference } from '../../hooks/useThemePreference'
-import { DEFAULT_NAV_MODE } from '../../lib/nav-preference'
 import {
   parseChamberFromLocation,
   parseJourneyFromLocation,
@@ -64,8 +63,8 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   const { state, enterNave, openChamber, backToMap, spineStep, restore } = useExperience({
     initialChamberId: deepLink.chamberId,
   })
-  /** Preferred Keys · Journeys · Contents — localStorage-backed. */
-  const { navMode, setNavMode } = useNavModePreference()
+  /** Preferred Keys · Journeys · Contents — localStorage-backed (About is session-only). */
+  const { navMode, setNavMode, leaveAbout } = useNavModePreference()
   /** Dark default; light available — localStorage-backed. */
   const { theme, toggleTheme } = useThemePreference()
 
@@ -191,7 +190,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     backToMap()
   }, [backToMap])
 
-  /** Tab switch: persist preference; if reading, return to that surface. */
+  /** Tab switch: leave About/chamber and open that surface. */
   const onNavChange = useCallback(
     (mode: NavMode) => {
       trackEvent('nav', { nav: mode, source: 'header' })
@@ -205,13 +204,19 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   /** Brand mark → home: default Keys surface, leave chamber/about, clear journey. */
   const goHome = useCallback(() => {
-    setNavMode(DEFAULT_NAV_MODE)
+    leaveAbout()
     setActiveJourneyId(null)
     if (state.mode === 'chamber') {
       backToMap()
     }
     scrollExperienceToTop()
-  }, [setNavMode, state.mode, backToMap])
+  }, [leaveAbout, state.mode, backToMap])
+
+  const exitAbout = useCallback(() => {
+    trackEvent('nav', { nav: 'keys', source: 'about-close' })
+    leaveAbout()
+    scrollExperienceToTop()
+  }, [leaveAbout])
 
   return (
     <div className={`experience mode-${state.mode} nav-${navMode}`}>
@@ -316,14 +321,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               ) : null}
 
               {state.mode === 'constellation' && navMode === 'about' ? (
-                <AboutPanel
-                  document={document}
-                  onClose={() => {
-                    trackEvent('nav', { nav: 'keys', source: 'about-close' })
-                    setNavMode(DEFAULT_NAV_MODE)
-                    scrollExperienceToTop()
-                  }}
-                />
+                <AboutPanel document={document} onClose={exitAbout} />
               ) : null}
 
               {state.mode === 'chamber' && activeChamber ? (
@@ -352,15 +350,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               <p>Truth under fire.</p>
               <p className="site-footer-meta">
                 {navMode === 'about' ? (
-                  <button
-                    type="button"
-                    className="site-footer-about"
-                    onClick={() => {
-                      trackEvent('nav', { nav: 'keys', source: 'footer-close-about' })
-                      setNavMode(DEFAULT_NAV_MODE)
-                      scrollExperienceToTop()
-                    }}
-                  >
+                  <button type="button" className="site-footer-about" onClick={exitAbout}>
                     Close About
                   </button>
                 ) : (

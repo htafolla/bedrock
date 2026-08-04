@@ -23,7 +23,7 @@ describe('nav-preference', () => {
     expect(isNavMode(null)).toBe(false)
   })
 
-  it('migrates legacy backstory and map tabs to default keys', () => {
+  it('migrates legacy backstory, map, and about tabs to default keys', () => {
     vi.stubGlobal('window', {
       localStorage: {
         getItem: () => 'backstory',
@@ -38,6 +38,29 @@ describe('nav-preference', () => {
       },
     })
     expect(readNavModePreference()).toBe(DEFAULT_NAV_MODE)
+    vi.stubGlobal('window', {
+      localStorage: {
+        getItem: () => 'about',
+        setItem: vi.fn(),
+      },
+    })
+    expect(readNavModePreference()).toBe(DEFAULT_NAV_MODE)
+  })
+
+  it('does not persist about (ephemeral surface)', () => {
+    const store = new Map<string, string>()
+    vi.stubGlobal('window', {
+      localStorage: {
+        getItem: (k: string) => store.get(k) ?? null,
+        setItem: (k: string, v: string) => {
+          store.set(k, v)
+        },
+      },
+    })
+    writeNavModePreference('about')
+    expect(store.has(NAV_MODE_STORAGE_KEY)).toBe(false)
+    writeNavModePreference('journeys')
+    expect(store.get(NAV_MODE_STORAGE_KEY)).toBe('journeys')
   })
 
   it('reads stored preference', () => {
@@ -73,7 +96,7 @@ describe('nav-preference', () => {
         },
       },
     })
-    writeNavModePreference('map')
-    expect(store.get(NAV_MODE_STORAGE_KEY)).toBe('map')
+    writeNavModePreference('keys')
+    expect(store.get(NAV_MODE_STORAGE_KEY)).toBe('keys')
   })
 })

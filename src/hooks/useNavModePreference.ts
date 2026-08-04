@@ -18,8 +18,15 @@ export function useNavModePreference() {
 
   const setNavMode = useCallback((mode: NavMode) => {
     setNavModeState(mode)
+    // About is session-only; still persist Keys/Journeys/Contents
     writeNavModePreference(mode)
   }, [])
 
-  return { navMode, setNavMode } as const
+  /** Explicit leave About / force Keys (does not depend on panel mount). */
+  const leaveAbout = useCallback(() => {
+    setNavModeState(DEFAULT_NAV_MODE)
+    writeNavModePreference(DEFAULT_NAV_MODE)
+  }, [])
+
+  return { navMode, setNavMode, leaveAbout } as const
 }
