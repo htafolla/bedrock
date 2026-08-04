@@ -1412,7 +1412,7 @@ const document = {
       'Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.',
     workingTitle: "The Hitchhiker's Guild · Love · Living · Enduring",
     version: '0.2.0-beta',
-    revised: '2026-07-26',
+    revised: '2026-08-04',
     contentHash: null,
     ipfsCid: null,
     baseAnchorTx: null,

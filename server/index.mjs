@@ -706,18 +706,39 @@ function createApp() {
   })
 
   if (existsSync(dist)) {
+    // Hashed /assets/* — long cache. index.html never via this middleware.
+    app.use(
+      '/assets',
+      express.static(path.join(dist, 'assets'), {
+        index: false,
+        maxAge: '365d',
+        immutable: true,
+        fallthrough: false,
+      }),
+    )
+    // Other dist files (favicon, robots, chamber html, etc.)
     app.use(
       express.static(dist, {
         index: false,
         maxAge: '1h',
-        // Don't treat missing /c/ as SPA yet
         fallthrough: true,
+        setHeaders(res, filePath) {
+          // Never cache the SPA shell — deploys must show immediately
+          if (filePath.endsWith(`${path.sep}index.html`) || filePath.endsWith('/index.html')) {
+            res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
+            res.setHeader('Pragma', 'no-cache')
+          }
+        },
       }),
     )
-    // SPA shell for app routes (home, ?c=, etc.) — not /api or missing static
+    // SPA shell for app routes (home, ?c=, etc.) — not /api, not missing assets
     app.get(/^(?!\/api(?:\/|$)).*/, (req, res, next) => {
-      // Let express.static 404s that are under known asset dirs fail cleanly
-      if (req.path.startsWith('/c/')) {
+      // Never SPA-fallback hashed assets or chamber static — real 404s
+      if (
+        req.path.startsWith('/assets/') ||
+        req.path.startsWith('/c/') ||
+        req.path.startsWith('/export/')
+      ) {
         res.status(404).type('text').send('Not found')
         return
       }
@@ -726,6 +747,9 @@ function createApp() {
         next()
         return
       }
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
+      res.setHeader('Pragma', 'no-cache')
+      res.setHeader('Expires', '0')
       res.sendFile(index)
     })
   } else if (existsSync(publicDir)) {
