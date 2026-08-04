@@ -1570,27 +1570,27 @@ const document = {
       'Kill the Flesh. Walk in the Spirit.',
       'Operational rubric under fire — refuse the flesh; walk in the Spirit. This is the path.',
       [
-        // Structured SOP — every rule is a bullet under its hold (scannable under fire)
+        // Structured SOP: intro/closing = paragraph; only true items = bullets
         h2('Core mission'),
-        list(
-          'Kill the acts of the flesh. Walk in the Spirit.',
-          'This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.',
+        p(
+          'Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.',
         ),
         h2('Daily standards'),
         h3('1. Thought capture'),
-        list(
-          'The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ.',
-          'Do not feed it.',
+        p(
+          'The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ. Do not feed it.',
         ),
         h3('2. Combat fear'),
+        p('Fear is fought with specific weapons from the Spirit and the Armor of God:'),
         list(
-          'Fear is fought with specific weapons from the Spirit and the Armor of God.',
           'Peace (fruit of the Spirit) — guards heart and mind.',
           'Faith — trusts God’s character and timing instead of the worst-case outcome.',
           'Self-control — takes racing, fearful thoughts captive.',
           'Shield of Faith — extinguishes flaming arrows of fear, accusation, and spirals.',
           'Shoes of the Gospel of Peace — stability from peace, not panic.',
           'Helmet of Salvation — protects the mind about identity and future.',
+        ),
+        p(
           'When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.',
         ),
         h3('3. Refuse the acts of the flesh'),
@@ -1608,13 +1608,14 @@ const document = {
           'Accept seasons when desire must wait under God.',
         ),
         h3('5. Love without self-erasure'),
+        p('Keep loving without turning that love into:'),
         list(
-          'Keep loving without turning that love into self-erasure.',
-          'No over-functioning.',
-          'No endless waiting as identity.',
-          'Do not manage another person’s emotional state.',
-          'Your emotional state is your own — not dependent on them.',
+          'Self-erasure',
+          'Over-functioning',
+          'Endless waiting',
+          'Managing another person’s emotional state',
         ),
+        p('Your emotional state is your own — not dependent on them.'),
         h3('6. Honest assessment'),
         list(
           'If you do not fully trust someone right now, do not pretend otherwise.',
@@ -1630,22 +1631,24 @@ const document = {
           'Distance can be protection, not punishment.',
         ),
         h3('8. Return to your side of the street'),
-        list(
-          'Your side of the street is the only ground you control: thoughts, mouth, actions, obedience, standards.',
-          'Other people’s replies, timing, choices, and plans are their side.',
-          'When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street.',
-          'This is self-control and refusing the flesh in practice.',
+        p(
+          'Your side of the street is the only ground you control: your thoughts, your mouth, your actions, your obedience, and your standards.',
+        ),
+        p('Other people’s replies, timing, choices, and plans are their side.'),
+        p(
+          'When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street. This is self-control and refusing the flesh in practice.',
         ),
         h3('9. External pressure and comparison'),
+        p(
+          'When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance. Do not organize your life around competing for emotional space.',
+        ),
         list(
-          'When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance.',
-          'Do not organize your life around competing for emotional space.',
           'Capture those thoughts like any other destructive thought.',
           'Obedience is measured by whether you refuse the flesh — not by whether you win the comparison.',
         ),
         h3('10. Redirect'),
+        p('Every captured thought is replaced with a clean, true statement:'),
         list(
-          'Every captured thought is replaced with a clean, true statement.',
           '“I take this thought captive and submit it to the obedience of Christ.”',
           '“I choose to bless and not curse.”',
           '“I release them to You.”',
@@ -1657,11 +1660,11 @@ const document = {
           '“God has not given me a spirit of fear, but of power, love, and a sound mind.”',
         ),
         h2('Success measure'),
-        list(
-          'Not whether they return, apologize, or change on your timeline.',
+        p('Not whether they return, apologize, or change on your timeline.'),
+        p(
           'Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time.',
-          'Do better. Be better. Trust God.',
         ),
+        p('Do better. Be better. Trust God.'),
       ],
       'Galatians 5:16-24 · 2 Corinthians 10:5 · Philippians 4:6-7 · Ephesians 6:14-17 · 2 Timothy 1:7 · 1 Corinthians 13:4-5 · Romans 12:19 · Galatians 5:19-21',
     ),
