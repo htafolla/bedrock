@@ -40,6 +40,13 @@ function ChipButton({
   )
 }
 
+/** Shared header copy — keep desktop + mobile aligned. */
+export const KEYS_BLURB =
+  'Tap what hits hardest. Opens one first principle under fire. Need a multi-step path (they left, death, addiction)? Use the Journeys tab.'
+
+const KEYS_BLURB_MOBILE =
+  'Three doors at a time — swipe or use arrows. Tap a door to open it. Paths: Journeys. Full list: Contents.'
+
 /** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
   const { isNarrow } = useMediaCapability()
@@ -48,13 +55,9 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
     return (
       <div className="key-chips-panel key-chips-grid-panel">
         <header className="nav-panel-header">
-          <p className="constellation-kicker">Keys · Storm triage</p>
+          <p className="constellation-kicker">Keys</p>
           <h2 className="constellation-title">What are you facing?</h2>
-          <p className="constellation-blurb">
-            God and marriage first — then the fire, named plainly — then love, still the way. Tap a
-            door. For multi-step walks (they left, death, addiction…), open the{' '}
-            <strong>Journeys</strong> tab.
-          </p>
+          <p className="constellation-blurb">{KEYS_BLURB}</p>
         </header>
         <ul className="key-chips key-chips-grid" aria-label="Storm triage doors">
           {KEY_ENTRIES.map((entry) => (
@@ -118,12 +121,9 @@ function KeyChipsCarousel({ activeChamberId, onSelect }: KeyChipsProps) {
   return (
     <div className="key-chips-panel key-chips-carousel-panel">
       <header className="nav-panel-header">
-        <p className="constellation-kicker">Keys · Storm triage</p>
+        <p className="constellation-kicker">Keys</p>
         <h2 className="constellation-title">What are you facing?</h2>
-        <p className="constellation-blurb">
-          Three doors at a time — swipe or use arrows. DNA below is live: drag, zoom, tap a node.
-          Map holds the full path. Contents is the full list.
-        </p>
+        <p className="constellation-blurb">{KEYS_BLURB_MOBILE}</p>
       </header>
 
       <div

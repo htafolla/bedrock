@@ -183,8 +183,8 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Same steel as the atlas — denser form by design: forged word, then the living standard
-              you stand on when the storm is active. Not a temporary hack.
+              Rubric — denser than a first principle on purpose. Forged word, then the standard under
+              fire. Not a temporary hack.
             </p>
           ) : null}
         </header>
@@ -194,9 +194,7 @@ export function ChamberFocus({
             {isRubric ? 'The standard' : 'Truth'}
           </h3>
           {isRubric ? (
-            <p className="field-layer-hint">
-              Origin story, then operational doctrine. Longer than a first-principle card on purpose.
-            </p>
+            <p className="field-layer-hint">Story first, then the full rule-set.</p>
           ) : null}
           <div className="chamber-body">
             {chamber.body.map((block, i) => renderBlock(block, i))}
@@ -209,9 +207,7 @@ export function ChamberFocus({
               Under fire
             </h3>
             <p className="field-layer-hint">
-              {isRubric
-                ? 'The three holds when fog is worst — still max three.'
-                : 'Scripture under pressure — how to walk this hour.'}
+              {isRubric ? 'Three holds when fog is worst.' : 'How to walk this hour.'}
             </p>
             <ul className="field-list">
               {chamber.hacks.map((hack) => (
@@ -252,7 +248,7 @@ export function ChamberFocus({
         {related.length > 0 ? (
           <nav className="related-web" aria-label="Related first principles">
             <h3 className="verses-heading">Connected truth</h3>
-            <p className="field-layer-hint">Leave the spine briefly — the web still holds.</p>
+            <p className="field-layer-hint">Related chambers — tap to open.</p>
             <ul className="related-list">
               {related.map((rel) => (
                 <li key={rel.id}>

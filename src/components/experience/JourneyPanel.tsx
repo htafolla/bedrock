@@ -57,11 +57,11 @@ export function JourneyPanel({
   return (
     <div className="journey-panel key-chips-panel">
       <header className="nav-panel-header">
-        <p className="constellation-kicker">Journeys · Ground-shaking paths</p>
+        <p className="constellation-kicker">Journeys</p>
         <h2 className="constellation-title">What path are you on?</h2>
         <p className="constellation-blurb">
-          Not one door — a walk: blow → near → spiral → long middle → remain. Death is not leave.
-          Tap a journey to open its first station. Keys are still storm triage; this is the full path.
+          Multi-step walks when one door is not enough. Tap a journey to start. Death and leave are
+          different paths. The Rubric lives near the end of several walks.
         </p>
       </header>
 

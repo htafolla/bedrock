@@ -343,15 +343,16 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
             </div>
             {context?.chamberTitle ? (
               <p className="guide-chat-context">In: {context.chamberTitle}</p>
+            ) : context?.journeyTitle ? (
+              <p className="guide-chat-context">Path: {context.journeyTitle}</p>
             ) : (
-              <p className="guide-chat-context">SpaceXAI · grok-4.5</p>
+              <p className="guide-chat-context">Companion under fire</p>
             )}
           </header>
 
           {configured === false ? (
             <p className="guide-chat-banner" role="status">
-              Chat needs server auth: <code>npm run xai:login</code> (OAuth) or{' '}
-              <code>XAI_API_KEY</code>. Secrets never ship to the browser.
+              Guide chat is offline right now. Try again later.
             </p>
           ) : null}
 
@@ -359,8 +360,8 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
             {messages.length === 0 ? (
               <div className="guide-chat-empty">
                 <p>
-                  Say hi, or ask under pressure. For multi-step walks (leave, death, addiction), use
-                  the <strong>Journeys</strong> tab — or starters below.
+                  Say hi, or ask what you are facing. Long paths (they left, death, addiction): use{' '}
+                  <strong>Journeys</strong>. Or pick a starter below.
                 </p>
                 <ul className="guide-chat-starters">
                   {STARTERS.map((s) => (

@@ -1,13 +1,8 @@
 /**
- * Keys = storm triage only (short list).
- * Full atlas lives on Map · Contents — not on the first screen.
- *
- * Two solid doors first: God · Marriage.
- * Then the fire — chip labels lead with positives / plain speech people recognize.
- * Desktop: 4-column grid · Mobile: carousel of 3.
- * Close: Sexual sin · Witchcraft · Persecution · Love.
- * Regret stays Map / Contents (past act; Addiction owns the first-screen bondage door).
- * Hope of glory stays Map terminus. Faith ≈ Trust already.
+ * Keys = short storm triage on home (not the full atlas).
+ * Order: God · Marriage · storm doors · close with Sexual sin · Witchcraft · Persecution · Love.
+ * Multi-step paths: Journeys tab. Full list: Contents. Rubric: Contents or journey stations.
+ * Desktop: grid · Mobile: carousel of 3.
  */
 export interface KeyEntry {
   id: string

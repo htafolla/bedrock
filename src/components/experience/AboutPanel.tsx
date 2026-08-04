@@ -56,7 +56,7 @@ export function AboutPanel({ document, onClose }: AboutPanelProps) {
 
       <div className="about-sealed">
         <p className="about-sealed-lead">
-          The product is the map. The sealed word is optional — open only if you choose.
+          The guide is the map. The sealed word is optional — open only if you choose.
         </p>
         <SealedTestimony testimony={testimony} />
       </div>
@@ -68,7 +68,7 @@ export function AboutPanel({ document, onClose }: AboutPanelProps) {
 
       <div className="about-footer-actions">
         <button type="button" className="focus-btn" onClick={onClose}>
-          Enter the field guide →
+          Back to Keys →
         </button>
       </div>
     </div>

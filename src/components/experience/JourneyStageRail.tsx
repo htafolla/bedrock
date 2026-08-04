@@ -33,7 +33,7 @@ export function JourneyStageRail({
             Station {hereIdx + 1} / {journey.stages.length}
           </p>
         ) : (
-          <p className="journey-stage-rail-progress">Off path · return via a station</p>
+          <p className="journey-stage-rail-progress">Not on this path — tap a station</p>
         )}
       </div>
       <ol className="journey-stage-rail">

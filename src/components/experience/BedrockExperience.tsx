@@ -349,7 +349,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         {state.mode === 'constellation' ? (
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
-              <p>Standing on something solid.</p>
+              <p>Truth under fire.</p>
               <p className="site-footer-meta">
                 {navMode === 'about' ? (
                   <button

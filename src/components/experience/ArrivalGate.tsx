@@ -34,7 +34,7 @@ export function ArrivalGate({
         </button>
         {onAbout ? (
           <button type="button" className="arrival-about" onClick={onAbout}>
-            About · sealed word
+            About
           </button>
         ) : null}
         {prologue?.length ? (

@@ -19,9 +19,9 @@ export function TableOfContents({
     <div className="toc-panel">
       <header className="nav-panel-header">
         <p className="constellation-kicker">Contents</p>
-        <h2 className="constellation-title">All first principles</h2>
+        <h2 className="constellation-title">Full atlas</h2>
         <p className="constellation-blurb">
-          Full table of contents in pilgrimage order. {ordered.length} chambers.
+          Every chamber and the Rubric, in order. {ordered.length} nodes. Tap a title to open it.
         </p>
       </header>
       <ol className="toc-list" aria-label="Table of contents">

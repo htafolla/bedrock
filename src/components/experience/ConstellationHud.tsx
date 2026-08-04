@@ -31,12 +31,12 @@ export function ConstellationHud({
       className={`constellation-hud map-chrome ${fallbackList ? 'constellation-hud-fallback' : ''}`}
     >
       <header className="nav-panel-header map-chrome-header">
-        <p className="constellation-kicker">Map · Hubs</p>
-        <h2 className="constellation-title">The path · joints</h2>
+        <p className="constellation-kicker">Map</p>
+        <h2 className="constellation-title">Main joints</h2>
         <p className="constellation-blurb">
           {fallbackList
-            ? `${hubs.length} hubs. On phones, Contents is often easier — full list in order.`
-            : `${hubs.length} hubs on the DNA (overview, not triage). Keys = storm doors · Contents = full list. Auto-spin · drag · zoom · tap a node.`}
+            ? `${hubs.length} main hubs. Prefer Contents for the full list.`
+            : `${hubs.length} main hubs. Tap a name to open. Keys = one door. Journeys = multi-step path. Contents = full list.`}
         </p>
       </header>
 
@@ -71,15 +71,13 @@ export function ConstellationHud({
 
       {!fallbackList ? (
         <p className="constellation-focus-hint map-hint">
-          DNA below · empty space orbits · every node opens a chamber
+          Scene below — drag, zoom, tap a node
           {activeChamberId && spineIndexOf(activeChamberId) >= 0
             ? ` · now: ${String(spineIndexOf(activeChamberId) + 1).padStart(2, '0')}`
             : ''}
         </p>
       ) : (
-        <p className="constellation-focus-hint">
-          Hubs listed above. Contents is the full pilgrimage order.
-        </p>
+        <p className="constellation-focus-hint">Hubs above. Contents has every chamber in order.</p>
       )}
     </div>
   )
