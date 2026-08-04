@@ -6,6 +6,10 @@
 
 ## Truth
 
+- I have been wandering in the dark, trying to find my way — the result of grave errors I made.
+- He is with me, yet He allows me to wander.
+- I listen and hold His word close to my ear and inscribed on my heart.
+- Through the cries, the tears, and the begging for mercy, He hears and instructs me: Kill the Flesh. Walk in the Spirit.
 - Core mission: kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.
 - Thought capture: the moment a destructive thought appears — name-calling, suspicion loops, rage, control, worst-case spirals, comparison, fear — take it captive and submit it to the obedience of Christ. Do not feed it.
 - Combat fear with specific weapons: Peace (fruit of the Spirit) that guards heart and mind; Faithfulness / Faith that trusts God’s character and timing; Self-control that captures racing thoughts; Shield of Faith that extinguishes flaming arrows of fear and accusation; Shoes of the Gospel of Peace for stability instead of panic; Helmet of Salvation that protects the mind about identity and future. When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.
