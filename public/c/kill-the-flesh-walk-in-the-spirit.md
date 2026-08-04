@@ -8,26 +8,26 @@
 
 ## Core mission
 
-Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.
+- Kill the acts of the flesh. Walk in the Spirit.
+- This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.
 
 ## Daily standards
 
 ### 1. Thought capture
 
-The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ. Do not feed it.
+- The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ.
+- Do not feed it.
 
 ### 2. Combat fear
 
-Fear is fought with specific weapons from the Spirit and the Armor of God:
-
+- Fear is fought with specific weapons from the Spirit and the Armor of God.
 - Peace (fruit of the Spirit) — guards heart and mind.
 - Faith — trusts God’s character and timing instead of the worst-case outcome.
 - Self-control — takes racing, fearful thoughts captive.
 - Shield of Faith — extinguishes flaming arrows of fear, accusation, and spirals.
 - Shoes of the Gospel of Peace — stability from peace, not panic.
 - Helmet of Salvation — protects the mind about identity and future.
-
-When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.
+- When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.
 
 ### 3. Refuse the acts of the flesh
 
@@ -39,39 +39,49 @@ When fear rises: raise the shield of faith, walk in the peace of the Spirit, cap
 
 ### 4. Self-control around desire
 
-Do not push, pressure, guilt, or negotiate for what is not freely given. Guard eyes, thoughts, and body. Accept seasons when desire must wait under God.
+- Do not push, pressure, guilt, or negotiate for what is not freely given.
+- Guard eyes, thoughts, and body.
+- Accept seasons when desire must wait under God.
 
 ### 5. Love without self-erasure
 
-Keep loving without turning that love into:
-
-- Self-erasure
-- Over-functioning
-- Endless waiting
-- Managing another person’s emotional state
-
-Your emotional state is your own — not dependent on them.
+- Keep loving without turning that love into self-erasure.
+- No over-functioning.
+- No endless waiting as identity.
+- Do not manage another person’s emotional state.
+- Your emotional state is your own — not dependent on them.
 
 ### 6. Honest assessment
 
-If you do not fully trust someone right now, do not pretend otherwise. Trust is not required for obedience. Hold the lack of trust and still refuse the flesh.
+- If you do not fully trust someone right now, do not pretend otherwise.
+- Trust is not required for obedience.
+- Hold the lack of trust and still refuse the flesh.
 
 ### 7. Contact and boundaries
 
-When contact, conversation, or access fuels the flesh, step back. Do not reach out only to regulate their feelings or your anxiety. If they engage: pause, regulate, then respond only to what you are truly willing to engage. Keep words short, clear, and low-drama when needed. Distance can be protection, not punishment.
+- When contact, conversation, or access fuels the flesh, step back.
+- Do not reach out only to regulate their feelings or your anxiety.
+- If they engage: pause, regulate, then respond only to what you are truly willing to engage.
+- Keep words short, clear, and low-drama when needed.
+- Distance can be protection, not punishment.
 
 ### 8. Return to your side of the street
 
-Your side of the street is the only ground you control: your thoughts, your mouth, your actions, your obedience, and your standards. Other people’s replies, timing, choices, and plans are their side. When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street. This is self-control and refusing the flesh in practice.
+- Your side of the street is the only ground you control: thoughts, mouth, actions, obedience, standards.
+- Other people’s replies, timing, choices, and plans are their side.
+- When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street.
+- This is self-control and refusing the flesh in practice.
 
 ### 9. External pressure and comparison
 
-When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance. Do not organize your life around competing for emotional space. Capture those thoughts like any other destructive thought. Obedience is measured by whether you refuse the flesh — not by whether you win the comparison.
+- When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance.
+- Do not organize your life around competing for emotional space.
+- Capture those thoughts like any other destructive thought.
+- Obedience is measured by whether you refuse the flesh — not by whether you win the comparison.
 
 ### 10. Redirect
 
-Every captured thought is replaced with a clean, true statement:
-
+- Every captured thought is replaced with a clean, true statement.
 - “I take this thought captive and submit it to the obedience of Christ.”
 - “I choose to bless and not curse.”
 - “I release them to You.”
@@ -84,9 +94,9 @@ Every captured thought is replaced with a clean, true statement:
 
 ## Success measure
 
-Not whether they return, apologize, or change on your timeline. Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time.
-
-Do better. Be better. Trust God.
+- Not whether they return, apologize, or change on your timeline.
+- Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time.
+- Do better. Be better. Trust God.
 
 ## Under fire
 
