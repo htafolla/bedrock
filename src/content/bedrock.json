@@ -110,7 +110,8 @@
         "trust-in-the-lord",
         "do-not-fear",
         "the-lords-prayer"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "his-power-and-beauty",
@@ -184,7 +185,8 @@
         "god-first",
         "his-promises",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "his-promises",
@@ -259,7 +261,8 @@
         "he-is-for-you",
         "trust-in-the-lord",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "his-provision",
@@ -316,7 +319,8 @@
         "the-lords-prayer",
         "trust-in-the-lord",
         "god-first"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-lords-prayer",
@@ -361,7 +365,8 @@
         "forgive-as-you-have-been-forgiven",
         "god-first",
         "prayer"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-cross-and-our-justification",
@@ -432,7 +437,8 @@
         "his-grace-is-sufficient",
         "the-righteous-fall",
         "confess-and-be-cleansed"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "he-is-for-you",
@@ -495,7 +501,8 @@
         "the-cross-and-our-justification",
         "his-promises",
         "do-not-fear"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "his-grace-is-sufficient",
@@ -547,7 +554,8 @@
         "the-righteous-fall",
         "walk-by-the-spirit",
         "the-cross-and-our-justification"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-meaning-of-life",
@@ -600,7 +608,8 @@
         "love-and-patience",
         "choose-selfless-love",
         "god-first"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "deny-yourself",
@@ -645,7 +654,8 @@
         "the-cross-and-our-justification",
         "count-the-trial-as-joy",
         "self-control"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "walk-by-the-spirit",
@@ -720,7 +730,8 @@
         "spiritual-warfare",
         "the-righteous-fall",
         "the-full-armor-of-god"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "kill-the-flesh-walk-in-the-spirit",
@@ -867,7 +878,8 @@
         "wounded",
         "he-is-for-you",
         "rumination"
-      ]
+      ],
+      "kind": "rubric"
     },
     {
       "id": "holy-spirit",
@@ -997,7 +1009,8 @@
         "prayer",
         "god-first",
         "love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "love",
@@ -1076,7 +1089,8 @@
         "marriage-covenant",
         "joy",
         "jealousy"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "joy",
@@ -1152,7 +1166,8 @@
         "loss",
         "peace",
         "love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "peace",
@@ -1228,7 +1243,8 @@
         "trust-in-the-lord",
         "take-every-thought-captive",
         "patience"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "patience",
@@ -1304,7 +1320,8 @@
         "trust-in-the-lord",
         "peace",
         "self-control"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "kindness",
@@ -1379,7 +1396,8 @@
         "restore-gently-and-give-time",
         "goodness",
         "gentleness"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "goodness",
@@ -1454,7 +1472,8 @@
         "the-full-armor-of-god",
         "kindness",
         "faithfulness"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "faithfulness",
@@ -1531,7 +1550,8 @@
         "his-promises",
         "goodness",
         "gentleness"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "gentleness",
@@ -1607,7 +1627,8 @@
         "leave-vengeance-to-the-lord",
         "kindness",
         "self-control"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "self-control",
@@ -1684,7 +1705,8 @@
         "rumination",
         "wait-on-the-lord",
         "patience"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "god-on-marriage",
@@ -1744,7 +1766,8 @@
         "marriage-covenant",
         "love-and-patience",
         "forgive-as-you-have-been-forgiven"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "marriage-covenant",
@@ -1854,7 +1877,8 @@
         "leave-vengeance-to-the-lord",
         "faithfulness",
         "love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "love-and-patience",
@@ -1892,7 +1916,8 @@
         "be-quick-to-listen",
         "love",
         "patience"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "count-the-trial-as-joy",
@@ -1936,7 +1961,8 @@
         "hope-of-glory",
         "lament-and-pour-out-your-heart",
         "joy"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "wait-on-the-lord",
@@ -2000,7 +2026,8 @@
         "do-not-fear",
         "patience",
         "self-control"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "lament-and-pour-out-your-heart",
@@ -2058,7 +2085,8 @@
         "wait-on-the-lord",
         "he-is-for-you",
         "loss"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "a-broken-and-contrite-heart",
@@ -2106,7 +2134,8 @@
         "confess-and-be-cleansed",
         "the-righteous-fall",
         "loss"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "guard-your-heart-and-mouth",
@@ -2157,7 +2186,8 @@
         "be-quick-to-listen",
         "walk-in-honesty-and-truth",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "be-quick-to-listen",
@@ -2190,7 +2220,8 @@
         "guard-your-heart-and-mouth",
         "love-and-patience",
         "restore-gently-and-give-time"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "restore-gently-and-give-time",
@@ -2232,7 +2263,8 @@
         "love-and-patience",
         "one-another-in-the-body",
         "gentleness"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "confess-and-be-cleansed",
@@ -2284,7 +2316,8 @@
         "a-broken-and-contrite-heart",
         "his-grace-is-sufficient",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "walk-in-honesty-and-truth",
@@ -2336,7 +2369,8 @@
         "confess-and-be-cleansed",
         "guard-your-heart-and-mouth",
         "the-full-armor-of-god"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "choose-selfless-love",
@@ -2376,7 +2410,8 @@
         "deny-yourself",
         "marriage-covenant",
         "love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "do-not-repay-evil-with-evil",
@@ -2407,7 +2442,8 @@
         "leave-vengeance-to-the-lord",
         "forgive-as-you-have-been-forgiven",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "leave-vengeance-to-the-lord",
@@ -2497,7 +2533,8 @@
         "love",
         "gentleness",
         "wounded"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "forgive-as-you-have-been-forgiven",
@@ -2545,7 +2582,8 @@
         "the-cross-and-our-justification",
         "leave-vengeance-to-the-lord",
         "love-and-patience"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "one-another-in-the-body",
@@ -2603,7 +2641,8 @@
         "restore-gently-and-give-time",
         "confess-and-be-cleansed",
         "choose-selfless-love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "trust-in-the-lord",
@@ -2671,7 +2710,8 @@
         "faithfulness",
         "patience",
         "control"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "do-not-fear",
@@ -2731,7 +2771,8 @@
         "trust-in-the-lord",
         "his-promises",
         "take-every-thought-captive"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "fear",
@@ -2814,7 +2855,8 @@
         "he-is-for-you",
         "his-grace-is-sufficient",
         "peace"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "loss",
@@ -2891,7 +2933,8 @@
         "fear",
         "wounded",
         "rumination"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "wounded",
@@ -2977,7 +3020,8 @@
         "he-is-for-you",
         "fear",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "rumination",
@@ -3061,7 +3105,8 @@
         "peace",
         "spiritual-warfare",
         "the-adversary"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "regret",
@@ -3137,7 +3182,8 @@
         "rumination",
         "addiction",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "addiction",
@@ -3228,7 +3274,8 @@
         "jealousy",
         "pharmakeia",
         "adultery"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "jealousy",
@@ -3299,7 +3346,8 @@
         "addiction",
         "fear",
         "trust-in-the-lord"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "control",
@@ -3378,7 +3426,8 @@
         "god-first",
         "take-every-thought-captive",
         "peace"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "renew-your-mind",
@@ -3421,7 +3470,8 @@
         "walk-by-the-spirit",
         "spiritual-warfare",
         "the-full-armor-of-god"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "take-every-thought-captive",
@@ -3482,7 +3532,8 @@
         "the-full-armor-of-god",
         "walk-by-the-spirit",
         "do-not-fear"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-word",
@@ -3623,7 +3674,8 @@
         "prayer",
         "walk-by-the-spirit",
         "falsehood"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-adversary",
@@ -3755,7 +3807,8 @@
         "the-cross-and-our-justification",
         "do-not-fear",
         "take-every-thought-captive"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "spiritual-warfare",
@@ -3871,7 +3924,8 @@
         "walk-by-the-spirit",
         "do-not-fear",
         "the-cross-and-our-justification"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "wheat-and-tares",
@@ -3927,7 +3981,8 @@
         "walk-by-the-spirit",
         "hope-of-glory",
         "god-first"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "persecution",
@@ -4007,7 +4062,8 @@
         "the-full-armor-of-god",
         "hope-of-glory",
         "leave-vengeance-to-the-lord"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "works-of-the-flesh",
@@ -4078,7 +4134,8 @@
         "falsehood",
         "wheat-and-tares",
         "confess-and-be-cleansed"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "adultery",
@@ -4149,7 +4206,8 @@
         "walk-by-the-spirit",
         "self-control",
         "addiction"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "pharmakeia",
@@ -4226,7 +4284,8 @@
         "walk-by-the-spirit",
         "self-control",
         "confess-and-be-cleansed"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "murder",
@@ -4298,7 +4357,8 @@
         "malice",
         "spiritual-warfare",
         "confess-and-be-cleansed"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "malice",
@@ -4363,7 +4423,8 @@
         "forgive-as-you-have-been-forgiven",
         "kindness",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "falsehood",
@@ -4437,7 +4498,8 @@
         "confess-and-be-cleansed",
         "the-full-armor-of-god",
         "spiritual-warfare"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-full-armor-of-god",
@@ -4485,7 +4547,8 @@
         "walk-by-the-spirit",
         "watch-and-be-ready",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "watch-and-be-ready",
@@ -4571,7 +4634,8 @@
         "wheat-and-tares",
         "wait-on-the-lord",
         "spiritual-warfare"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "ten-virgins",
@@ -4626,7 +4690,8 @@
         "hope-of-glory",
         "one-taken-one-left",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-faithful-servant",
@@ -4691,7 +4756,8 @@
         "deny-yourself",
         "love-and-patience",
         "hope-of-glory"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "one-taken-one-left",
@@ -4764,7 +4830,8 @@
         "treasure-in-heaven",
         "wheat-and-tares",
         "do-not-fear"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "treasure-in-heaven",
@@ -4836,7 +4903,8 @@
         "god-first",
         "his-provision",
         "watch-and-be-ready"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "prayer",
@@ -4933,7 +5001,8 @@
         "walk-by-the-spirit",
         "spiritual-gifts",
         "god-first"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "fasting",
@@ -5021,7 +5090,8 @@
         "healing",
         "wait-on-the-lord",
         "walk-by-the-spirit"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "sabbath",
@@ -5141,7 +5211,8 @@
         "wait-on-the-lord",
         "peace",
         "the-lords-prayer"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "healing",
@@ -5231,7 +5302,8 @@
         "faithfulness",
         "hope-of-glory",
         "spiritual-gifts"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "laying-on-of-hands",
@@ -5316,7 +5388,8 @@
         "one-another-in-the-body",
         "walk-by-the-spirit",
         "his-power-and-beauty"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "spiritual-gifts",
@@ -5413,7 +5486,8 @@
         "one-another-in-the-body",
         "walk-by-the-spirit",
         "love"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "hope-of-glory",
@@ -5523,7 +5597,8 @@
         "spiritual-gifts",
         "healing",
         "prayer"
-      ]
+      ],
+      "kind": "chamber"
     },
     {
       "id": "the-righteous-fall",
@@ -5588,7 +5663,8 @@
         "hope-of-glory",
         "a-broken-and-contrite-heart",
         "regret"
-      ]
+      ],
+      "kind": "chamber"
     }
   ],
   "testimony": {

@@ -2396,6 +2396,12 @@ for (const c of document.chambers) {
     c.hacks = aids.hacks ?? []
     c.prayers = aids.prayers ?? []
   }
+  // Artifact kinds: most nodes are first-principle chambers; rubrics are denser SOP under fire
+  if (c.id === 'kill-the-flesh-walk-in-the-spirit') {
+    c.kind = 'rubric'
+  } else if (!c.kind) {
+    c.kind = 'chamber'
+  }
   c.related = RELATED[c.id] ?? []
 }
 

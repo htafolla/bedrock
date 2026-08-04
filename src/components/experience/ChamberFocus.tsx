@@ -62,6 +62,7 @@ export function ChamberFocus({
   const stageIdx = journey?.stages.findIndex((s) => s.chamberId === chamber.id) ?? -1
   const onPath = stageIdx >= 0
   const showJourneyRail = Boolean(journey && onSelectJourneyStage)
+  const isRubric = chamber.kind === 'rubric'
   const journeyPrev =
     journey && stageIdx > 0 ? journey.stages[stageIdx - 1]?.chamberId ?? null : null
   const journeyNext =
@@ -87,7 +88,10 @@ export function ChamberFocus({
   }, [onBack, onSpineStep])
 
   return (
-    <div className={`chamber-focus${showJourneyRail ? ' has-journey-path' : ''}`} ref={rootRef}>
+    <div
+      className={`chamber-focus${showJourneyRail ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}`}
+      ref={rootRef}
+    >
       <div className="chamber-focus-toolbar">
         <button type="button" className="focus-btn ghost" onClick={onBack}>
           ← Back
@@ -100,11 +104,13 @@ export function ChamberFocus({
           Plain
         </a>
         <p className="focus-spine-meta">
-          {journey && onPath
-            ? `${journey.title}`
-            : idx >= 0
-              ? `${idx + 1} / ${SPINE_ORDER.length} · spine`
-              : '—'}
+          {isRubric
+            ? 'Operational standard'
+            : journey && onPath
+              ? `${journey.title}`
+              : idx >= 0
+                ? `${idx + 1} / ${SPINE_ORDER.length} · spine`
+                : '—'}
         </p>
         <div className="focus-spine-nav">
           {showJourneyRail && onPath && onSelectJourneyStage ? (
@@ -158,10 +164,14 @@ export function ChamberFocus({
         />
       ) : null}
 
-      <article className="chamber chamber-in-focus" id={chamber.id}>
+      <article className={`chamber chamber-in-focus${isRubric ? ' chamber-rubric' : ''}`} id={chamber.id}>
         <header className="chamber-header">
           <p className="chamber-kicker">
-            {journey && onPath ? 'Journey station · First principle' : 'First principle'}
+            {isRubric
+              ? 'Operational rubric · SOP under fire'
+              : journey && onPath
+                ? 'Journey station · First principle'
+                : 'First principle'}
           </p>
           <h2
             className="chamber-title"
@@ -171,12 +181,23 @@ export function ChamberFocus({
             {chamber.title}
           </h2>
           <p className="chamber-summary">{chamber.summary}</p>
+          {isRubric ? (
+            <p className="chamber-kind-note">
+              Same steel as the atlas — denser form by design: forged word, then the living standard
+              you stand on when the storm is active. Not a temporary hack.
+            </p>
+          ) : null}
         </header>
 
         <section className="field-layer" aria-labelledby={`${chamber.id}-truth`}>
           <h3 id={`${chamber.id}-truth`} className="field-layer-label">
-            Truth
+            {isRubric ? 'The standard' : 'Truth'}
           </h3>
+          {isRubric ? (
+            <p className="field-layer-hint">
+              Origin story, then operational doctrine. Longer than a first-principle card on purpose.
+            </p>
+          ) : null}
           <div className="chamber-body">
             {chamber.body.map((block, i) => renderBlock(block, i))}
           </div>
@@ -187,7 +208,11 @@ export function ChamberFocus({
             <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
               Under fire
             </h3>
-            <p className="field-layer-hint">Scripture under pressure — how to walk this hour.</p>
+            <p className="field-layer-hint">
+              {isRubric
+                ? 'The three holds when fog is worst — still max three.'
+                : 'Scripture under pressure — how to walk this hour.'}
+            </p>
             <ul className="field-list">
               {chamber.hacks.map((hack) => (
                 <li key={hack}>{hack}</li>

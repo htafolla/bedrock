@@ -1092,6 +1092,29 @@ body {
   padding-bottom: 1.25rem;
 }
 
+/* Rubric artifact — align steel; denser SOP form (not a thin first-principle card) */
+.chamber-focus.is-rubric .chamber-in-focus {
+  border-color: rgba(232, 160, 80, 0.28);
+}
+
+.chamber-kind-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.8;
+  color: var(--muted);
+  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  padding-left: 0.75rem;
+}
+
+.chamber-rubric .field-layer-label {
+  letter-spacing: 0.06em;
+}
+
+.chamber-rubric .chamber-body p {
+  margin-bottom: 0.85rem;
+}
+
 /* Journey path on every station card — sticky top + bottom */
 .journey-stage-rail-bar {
   border: 1px solid rgba(232, 160, 80, 0.35);

@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 76,
-    "exportedAt": "2026-08-04T17:52:51.094Z",
+    "exportedAt": "2026-08-04T17:56:30.845Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -109,6 +109,7 @@
         "do-not-fear",
         "the-lords-prayer"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/god-first",
       "markdownUrl": "https://bedrock.rippel.ai/c/god-first.md"
     },
@@ -185,6 +186,7 @@
         "his-promises",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-power-and-beauty",
       "markdownUrl": "https://bedrock.rippel.ai/c/his-power-and-beauty.md"
     },
@@ -262,6 +264,7 @@
         "trust-in-the-lord",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-promises",
       "markdownUrl": "https://bedrock.rippel.ai/c/his-promises.md"
     },
@@ -321,6 +324,7 @@
         "trust-in-the-lord",
         "god-first"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-provision",
       "markdownUrl": "https://bedrock.rippel.ai/c/his-provision.md"
     },
@@ -368,6 +372,7 @@
         "god-first",
         "prayer"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-lords-prayer",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-lords-prayer.md"
     },
@@ -441,6 +446,7 @@
         "the-righteous-fall",
         "confess-and-be-cleansed"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-cross-and-our-justification",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-cross-and-our-justification.md"
     },
@@ -506,6 +512,7 @@
         "his-promises",
         "do-not-fear"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/he-is-for-you",
       "markdownUrl": "https://bedrock.rippel.ai/c/he-is-for-you.md"
     },
@@ -560,6 +567,7 @@
         "walk-by-the-spirit",
         "the-cross-and-our-justification"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-grace-is-sufficient",
       "markdownUrl": "https://bedrock.rippel.ai/c/his-grace-is-sufficient.md"
     },
@@ -615,6 +623,7 @@
         "choose-selfless-love",
         "god-first"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-meaning-of-life",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-meaning-of-life.md"
     },
@@ -662,6 +671,7 @@
         "count-the-trial-as-joy",
         "self-control"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/deny-yourself",
       "markdownUrl": "https://bedrock.rippel.ai/c/deny-yourself.md"
     },
@@ -739,6 +749,7 @@
         "the-righteous-fall",
         "the-full-armor-of-god"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/walk-by-the-spirit",
       "markdownUrl": "https://bedrock.rippel.ai/c/walk-by-the-spirit.md"
     },
@@ -888,6 +899,7 @@
         "he-is-for-you",
         "rumination"
       ],
+      "kind": "rubric",
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit",
       "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md"
     },
@@ -1020,6 +1032,7 @@
         "god-first",
         "love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/holy-spirit",
       "markdownUrl": "https://bedrock.rippel.ai/c/holy-spirit.md"
     },
@@ -1101,6 +1114,7 @@
         "joy",
         "jealousy"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/love",
       "markdownUrl": "https://bedrock.rippel.ai/c/love.md"
     },
@@ -1179,6 +1193,7 @@
         "peace",
         "love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/joy",
       "markdownUrl": "https://bedrock.rippel.ai/c/joy.md"
     },
@@ -1257,6 +1272,7 @@
         "take-every-thought-captive",
         "patience"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/peace",
       "markdownUrl": "https://bedrock.rippel.ai/c/peace.md"
     },
@@ -1335,6 +1351,7 @@
         "peace",
         "self-control"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/patience",
       "markdownUrl": "https://bedrock.rippel.ai/c/patience.md"
     },
@@ -1412,6 +1429,7 @@
         "goodness",
         "gentleness"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/kindness",
       "markdownUrl": "https://bedrock.rippel.ai/c/kindness.md"
     },
@@ -1489,6 +1507,7 @@
         "kindness",
         "faithfulness"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/goodness",
       "markdownUrl": "https://bedrock.rippel.ai/c/goodness.md"
     },
@@ -1568,6 +1587,7 @@
         "goodness",
         "gentleness"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/faithfulness",
       "markdownUrl": "https://bedrock.rippel.ai/c/faithfulness.md"
     },
@@ -1646,6 +1666,7 @@
         "kindness",
         "self-control"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/gentleness",
       "markdownUrl": "https://bedrock.rippel.ai/c/gentleness.md"
     },
@@ -1725,6 +1746,7 @@
         "wait-on-the-lord",
         "patience"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/self-control",
       "markdownUrl": "https://bedrock.rippel.ai/c/self-control.md"
     },
@@ -1787,6 +1809,7 @@
         "love-and-patience",
         "forgive-as-you-have-been-forgiven"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/god-on-marriage",
       "markdownUrl": "https://bedrock.rippel.ai/c/god-on-marriage.md"
     },
@@ -1899,6 +1922,7 @@
         "faithfulness",
         "love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/marriage-covenant",
       "markdownUrl": "https://bedrock.rippel.ai/c/marriage-covenant.md"
     },
@@ -1939,6 +1963,7 @@
         "love",
         "patience"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/love-and-patience",
       "markdownUrl": "https://bedrock.rippel.ai/c/love-and-patience.md"
     },
@@ -1985,6 +2010,7 @@
         "lament-and-pour-out-your-heart",
         "joy"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/count-the-trial-as-joy",
       "markdownUrl": "https://bedrock.rippel.ai/c/count-the-trial-as-joy.md"
     },
@@ -2051,6 +2077,7 @@
         "patience",
         "self-control"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wait-on-the-lord",
       "markdownUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord.md"
     },
@@ -2111,6 +2138,7 @@
         "he-is-for-you",
         "loss"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart",
       "markdownUrl": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md"
     },
@@ -2161,6 +2189,7 @@
         "the-righteous-fall",
         "loss"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart",
       "markdownUrl": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md"
     },
@@ -2214,6 +2243,7 @@
         "walk-in-honesty-and-truth",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth",
       "markdownUrl": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md"
     },
@@ -2249,6 +2279,7 @@
         "love-and-patience",
         "restore-gently-and-give-time"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/be-quick-to-listen",
       "markdownUrl": "https://bedrock.rippel.ai/c/be-quick-to-listen.md"
     },
@@ -2293,6 +2324,7 @@
         "one-another-in-the-body",
         "gentleness"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/restore-gently-and-give-time",
       "markdownUrl": "https://bedrock.rippel.ai/c/restore-gently-and-give-time.md"
     },
@@ -2347,6 +2379,7 @@
         "his-grace-is-sufficient",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/confess-and-be-cleansed",
       "markdownUrl": "https://bedrock.rippel.ai/c/confess-and-be-cleansed.md"
     },
@@ -2401,6 +2434,7 @@
         "guard-your-heart-and-mouth",
         "the-full-armor-of-god"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth",
       "markdownUrl": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md"
     },
@@ -2443,6 +2477,7 @@
         "marriage-covenant",
         "love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/choose-selfless-love",
       "markdownUrl": "https://bedrock.rippel.ai/c/choose-selfless-love.md"
     },
@@ -2476,6 +2511,7 @@
         "forgive-as-you-have-been-forgiven",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil",
       "markdownUrl": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md"
     },
@@ -2568,6 +2604,7 @@
         "gentleness",
         "wounded"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord",
       "markdownUrl": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md"
     },
@@ -2618,6 +2655,7 @@
         "leave-vengeance-to-the-lord",
         "love-and-patience"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven",
       "markdownUrl": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md"
     },
@@ -2678,6 +2716,7 @@
         "confess-and-be-cleansed",
         "choose-selfless-love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/one-another-in-the-body",
       "markdownUrl": "https://bedrock.rippel.ai/c/one-another-in-the-body.md"
     },
@@ -2748,6 +2787,7 @@
         "patience",
         "control"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/trust-in-the-lord",
       "markdownUrl": "https://bedrock.rippel.ai/c/trust-in-the-lord.md"
     },
@@ -2810,6 +2850,7 @@
         "his-promises",
         "take-every-thought-captive"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/do-not-fear",
       "markdownUrl": "https://bedrock.rippel.ai/c/do-not-fear.md"
     },
@@ -2895,6 +2936,7 @@
         "his-grace-is-sufficient",
         "peace"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/fear",
       "markdownUrl": "https://bedrock.rippel.ai/c/fear.md"
     },
@@ -2974,6 +3016,7 @@
         "wounded",
         "rumination"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/loss",
       "markdownUrl": "https://bedrock.rippel.ai/c/loss.md"
     },
@@ -3062,6 +3105,7 @@
         "fear",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wounded",
       "markdownUrl": "https://bedrock.rippel.ai/c/wounded.md"
     },
@@ -3148,6 +3192,7 @@
         "spiritual-warfare",
         "the-adversary"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/rumination",
       "markdownUrl": "https://bedrock.rippel.ai/c/rumination.md"
     },
@@ -3226,6 +3271,7 @@
         "addiction",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/regret",
       "markdownUrl": "https://bedrock.rippel.ai/c/regret.md"
     },
@@ -3319,6 +3365,7 @@
         "pharmakeia",
         "adultery"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/addiction",
       "markdownUrl": "https://bedrock.rippel.ai/c/addiction.md"
     },
@@ -3392,6 +3439,7 @@
         "fear",
         "trust-in-the-lord"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/jealousy",
       "markdownUrl": "https://bedrock.rippel.ai/c/jealousy.md"
     },
@@ -3473,6 +3521,7 @@
         "take-every-thought-captive",
         "peace"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/control",
       "markdownUrl": "https://bedrock.rippel.ai/c/control.md"
     },
@@ -3518,6 +3567,7 @@
         "spiritual-warfare",
         "the-full-armor-of-god"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/renew-your-mind",
       "markdownUrl": "https://bedrock.rippel.ai/c/renew-your-mind.md"
     },
@@ -3581,6 +3631,7 @@
         "walk-by-the-spirit",
         "do-not-fear"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/take-every-thought-captive",
       "markdownUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive.md"
     },
@@ -3724,6 +3775,7 @@
         "walk-by-the-spirit",
         "falsehood"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-word",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-word.md"
     },
@@ -3858,6 +3910,7 @@
         "do-not-fear",
         "take-every-thought-captive"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-adversary",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-adversary.md"
     },
@@ -3976,6 +4029,7 @@
         "do-not-fear",
         "the-cross-and-our-justification"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/spiritual-warfare",
       "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-warfare.md"
     },
@@ -4034,6 +4088,7 @@
         "hope-of-glory",
         "god-first"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wheat-and-tares",
       "markdownUrl": "https://bedrock.rippel.ai/c/wheat-and-tares.md"
     },
@@ -4116,6 +4171,7 @@
         "hope-of-glory",
         "leave-vengeance-to-the-lord"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/persecution",
       "markdownUrl": "https://bedrock.rippel.ai/c/persecution.md"
     },
@@ -4189,6 +4245,7 @@
         "wheat-and-tares",
         "confess-and-be-cleansed"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/works-of-the-flesh",
       "markdownUrl": "https://bedrock.rippel.ai/c/works-of-the-flesh.md"
     },
@@ -4262,6 +4319,7 @@
         "self-control",
         "addiction"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/adultery",
       "markdownUrl": "https://bedrock.rippel.ai/c/adultery.md"
     },
@@ -4341,6 +4399,7 @@
         "self-control",
         "confess-and-be-cleansed"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/pharmakeia",
       "markdownUrl": "https://bedrock.rippel.ai/c/pharmakeia.md"
     },
@@ -4415,6 +4474,7 @@
         "spiritual-warfare",
         "confess-and-be-cleansed"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/murder",
       "markdownUrl": "https://bedrock.rippel.ai/c/murder.md"
     },
@@ -4482,6 +4542,7 @@
         "kindness",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/malice",
       "markdownUrl": "https://bedrock.rippel.ai/c/malice.md"
     },
@@ -4558,6 +4619,7 @@
         "the-full-armor-of-god",
         "spiritual-warfare"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/falsehood",
       "markdownUrl": "https://bedrock.rippel.ai/c/falsehood.md"
     },
@@ -4608,6 +4670,7 @@
         "watch-and-be-ready",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-full-armor-of-god",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-full-armor-of-god.md"
     },
@@ -4696,6 +4759,7 @@
         "wait-on-the-lord",
         "spiritual-warfare"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/watch-and-be-ready",
       "markdownUrl": "https://bedrock.rippel.ai/c/watch-and-be-ready.md"
     },
@@ -4753,6 +4817,7 @@
         "one-taken-one-left",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/ten-virgins",
       "markdownUrl": "https://bedrock.rippel.ai/c/ten-virgins.md"
     },
@@ -4820,6 +4885,7 @@
         "love-and-patience",
         "hope-of-glory"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-faithful-servant",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-faithful-servant.md"
     },
@@ -4895,6 +4961,7 @@
         "wheat-and-tares",
         "do-not-fear"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/one-taken-one-left",
       "markdownUrl": "https://bedrock.rippel.ai/c/one-taken-one-left.md"
     },
@@ -4969,6 +5036,7 @@
         "his-provision",
         "watch-and-be-ready"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/treasure-in-heaven",
       "markdownUrl": "https://bedrock.rippel.ai/c/treasure-in-heaven.md"
     },
@@ -5068,6 +5136,7 @@
         "spiritual-gifts",
         "god-first"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/prayer",
       "markdownUrl": "https://bedrock.rippel.ai/c/prayer.md"
     },
@@ -5158,6 +5227,7 @@
         "wait-on-the-lord",
         "walk-by-the-spirit"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/fasting",
       "markdownUrl": "https://bedrock.rippel.ai/c/fasting.md"
     },
@@ -5280,6 +5350,7 @@
         "peace",
         "the-lords-prayer"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/sabbath",
       "markdownUrl": "https://bedrock.rippel.ai/c/sabbath.md"
     },
@@ -5372,6 +5443,7 @@
         "hope-of-glory",
         "spiritual-gifts"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/healing",
       "markdownUrl": "https://bedrock.rippel.ai/c/healing.md"
     },
@@ -5459,6 +5531,7 @@
         "walk-by-the-spirit",
         "his-power-and-beauty"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/laying-on-of-hands",
       "markdownUrl": "https://bedrock.rippel.ai/c/laying-on-of-hands.md"
     },
@@ -5558,6 +5631,7 @@
         "walk-by-the-spirit",
         "love"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/spiritual-gifts",
       "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-gifts.md"
     },
@@ -5670,6 +5744,7 @@
         "healing",
         "prayer"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/hope-of-glory",
       "markdownUrl": "https://bedrock.rippel.ai/c/hope-of-glory.md"
     },
@@ -5737,6 +5812,7 @@
         "a-broken-and-contrite-heart",
         "regret"
       ],
+      "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-righteous-fall",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-righteous-fall.md"
     }

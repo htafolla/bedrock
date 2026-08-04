@@ -17,15 +17,25 @@ export interface ScriptureRef {
 }
 
 /**
- * Field-guide chamber: one node in the navigable web of truth.
- * Dichotomy in use: Truth (body + verses) | Hack (pressure reframe) | Prayer (when words fail).
+ * Artifact kind on the spine:
+ * - chamber — first-principle card (Scripture-led Truth · short Under fire · Prayer)
+ * - rubric — operational SOP under fire (forged word + denser standard; same steel, different form)
+ */
+export type ChamberKind = 'chamber' | 'rubric'
+
+/**
+ * Field-guide node on the navigable web of truth.
+ * Chambers: Truth (body + verses) | Hack | Prayer.
+ * Rubrics: Forged word + Standard (body) | Under fire (≤3) | Prayer — intentionally denser SOP.
  */
 export interface Chamber {
   id: string
   title: string
   /** Short subtitle shown in nav / chamber map */
   summary: string
-  /** First principles — the solid truth */
+  /** Default chamber; rubric = operational standard (align voice, different form) */
+  kind?: ChamberKind
+  /** First principles (chamber) or forged word + operational standard (rubric) */
   body: BodyBlock[]
   /** Supporting verses etched at the chamber */
   verses: ScriptureRef[]
