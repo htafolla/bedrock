@@ -1110,12 +1110,61 @@ body {
   padding-left: 0.75rem;
 }
 
-.chamber-rubric .field-layer-label {
+.chamber-focus.is-rubric .field-layer-label {
   letter-spacing: 0.06em;
 }
 
-.chamber-rubric .chamber-body p {
-  margin-bottom: 0.85rem;
+/* Rubric SOP — scannable headings + lists (not a wall of paragraphs) */
+.chamber-body-rubric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.chamber-body-rubric .chamber-subhead-h2 {
+  margin: 1.15rem 0 0.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--glass-border);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: var(--beam);
+}
+
+.chamber-body-rubric .chamber-subhead-h2:first-child {
+  margin-top: 0.25rem;
+}
+
+.chamber-body-rubric .chamber-subhead-h3 {
+  margin: 0.95rem 0 0.35rem;
+  font-size: 0.98rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ember, #e8a050);
+  opacity: 0.95;
+}
+
+.chamber-body-rubric .chamber-paragraph {
+  margin: 0.25rem 0 0.55rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.chamber-list {
+  list-style: disc;
+  margin: 0.2rem 0 0.7rem;
+  padding-left: 1.25rem;
+}
+
+.chamber-list li {
+  margin: 0.3rem 0;
+  line-height: 1.45;
+  font-size: 0.92rem;
+  color: var(--ink, inherit);
+}
+
+.chamber-body-rubric .chamber-list li {
+  opacity: 0.92;
 }
 
 /* Journey path on every station card — sticky top + bottom */

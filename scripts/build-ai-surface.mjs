@@ -23,24 +23,46 @@ function esc(s) {
     .replace(/"/g, '&quot;')
 }
 
+/** Render body blocks as readable markdown (headings, lists, paragraphs). */
+function bodyToMarkdown(body) {
+  const lines = []
+  for (const b of body || []) {
+    if (b.type === 'heading') {
+      const hashes = b.level === 2 ? '##' : '###'
+      lines.push('', `${hashes} ${b.text}`, '')
+    } else if (b.type === 'list') {
+      for (const item of b.items || []) lines.push(`- ${item}`)
+      lines.push('')
+    } else if (b.type === 'quote') {
+      lines.push(`> ${b.text}`, '')
+    } else if (b.type === 'paragraph') {
+      lines.push(b.text, '')
+    }
+  }
+  return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim()
+}
+
 function chamberMarkdown(c) {
-  const truth = c.body
-    .filter((b) => b.type === 'paragraph' || b.type === 'quote')
-    .map((b) => (b.type === 'quote' ? `> ${b.text}` : b.text))
+  const isRubric = c.kind === 'rubric'
+  const truth = bodyToMarkdown(c.body)
   const verses = c.verses.map((v) => `- ${v.display}`).join('\n')
   const hacks = c.hacks.map((h) => `- ${h}`).join('\n')
   const prayers = c.prayers.map((p) => p).join('\n\n')
   const related = c.related.map((id) => `- [${id}](${ORIGIN}/c/${id})`).join('\n')
+  const kicker = isRubric
+    ? `*Rubric · operational standard · Bedrock · ${ORIGIN}/c/${c.id}*`
+    : `*First principle · Bedrock field guide · ${ORIGIN}/c/${c.id}*`
+  const truthHeading = isRubric ? 'The standard' : 'Truth'
 
-  return `# ${c.title}
+  return `# ${isRubric ? `Rubric: ${c.title}` : c.title}
 
 > ${c.summary}
 
-*First principle · Bedrock field guide · ${ORIGIN}/c/${c.id}*
+${kicker}
 
-## Truth
+## ${truthHeading}
 
-${truth.map((t) => (t.startsWith('>') ? t : `- ${t}`)).join('\n')}
+${truth}
 
 ## Under fire
 
@@ -96,16 +118,32 @@ function analyticsHeadSnippet(pagePath) {
   return parts.join('\n  ')
 }
 
-function chamberHtml(c, meta) {
-  const truth = c.body
-    .filter((b) => b.type === 'paragraph' || b.type === 'quote')
+function bodyToHtml(body) {
+  return (body || [])
     .map((b) => {
+      if (b.type === 'heading') {
+        const tag = b.level === 2 ? 'h3' : 'h4'
+        return `<${tag} class="body-head">${esc(b.text)}</${tag}>`
+      }
+      if (b.type === 'list') {
+        const items = (b.items || []).map((item) => `<li>${esc(item)}</li>`).join('\n')
+        return `<ul class="body-list">\n${items}\n</ul>`
+      }
       if (b.type === 'quote') {
         return `<blockquote><p>${esc(b.text)}</p></blockquote>`
       }
-      return `<p>${esc(b.text)}</p>`
+      if (b.type === 'paragraph') {
+        return `<p>${esc(b.text)}</p>`
+      }
+      return ''
     })
+    .filter(Boolean)
     .join('\n')
+}
+
+function chamberHtml(c, meta) {
+  const isRubric = c.kind === 'rubric'
+  const truth = bodyToHtml(c.body)
   const hacks = c.hacks.map((h) => `<li>${esc(h)}</li>`).join('\n')
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
   const verses = c.verses
@@ -117,6 +155,8 @@ function chamberHtml(c, meta) {
   const related = c.related
     .map((id) => `<li><a href="/c/${esc(id)}">${esc(id)}</a></li>`)
     .join('\n')
+  const kicker = isRubric ? 'Rubric · operational standard · Bedrock' : 'First principle · Bedrock'
+  const truthHeading = isRubric ? 'The standard' : 'Truth'
 
   const title = `${esc(c.title)} — Bedrock`
   const desc = esc(
@@ -172,6 +212,11 @@ function chamberHtml(c, meta) {
     h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
     .card p, .card li { margin:.4rem 0; color:var(--ink); }
     .card ul { padding-left:1.1rem; margin:.35rem 0; }
+    .body-head { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); margin:1.15rem 0 .4rem; line-height:1.25; }
+    h3.body-head { font-size:1.15rem; letter-spacing:.03em; border-bottom:1px solid var(--border); padding-bottom:.35rem; }
+    h4.body-head { font-size:1rem; margin-top:.9rem; color:var(--ember); }
+    .body-list { margin:.35rem 0 .75rem; padding-left:1.2rem; }
+    .body-list li { margin:.3rem 0; line-height:1.45; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
@@ -182,7 +227,7 @@ function chamberHtml(c, meta) {
 </head>
 <body>
   <main class="wrap">
-    <p class="kicker">First principle · Bedrock</p>
+    <p class="kicker">${esc(kicker)}</p>
     <h1>${esc(c.title)}</h1>
     <p class="summary">${esc(c.summary)}</p>
     <nav class="nav" aria-label="Chamber actions">
@@ -192,7 +237,7 @@ function chamberHtml(c, meta) {
       <a href="/llms.txt">llms.txt</a>
     </nav>
     <section class="card" aria-labelledby="truth">
-      <h2 id="truth">Truth</h2>
+      <h2 id="truth">${esc(truthHeading)}</h2>
       ${truth}
     </section>
     <section class="card" aria-labelledby="fire">

@@ -49,12 +49,35 @@ function paragraphs(...lines) {
   return lines.map((text) => ({ type: 'paragraph', text }))
 }
 
+/** Body block helpers — structured SOP (rubrics) and plain chambers */
+function h2(text) {
+  return { type: 'heading', level: 2, text }
+}
+function h3(text) {
+  return { type: 'heading', level: 3, text }
+}
+function p(text) {
+  return { type: 'paragraph', text }
+}
+function list(...items) {
+  return { type: 'list', items: items.flat() }
+}
+
+/**
+ * @param {string} title
+ * @param {string} summary
+ * @param {(string | { type: string })[]} bodyLines strings → paragraphs; objects pass through
+ * @param {string} verseLine
+ */
 function chamber(title, summary, bodyLines, verseLine) {
+  const body = bodyLines.map((line) =>
+    typeof line === 'string' ? { type: 'paragraph', text: line } : line,
+  )
   return {
     id: slug(title),
     title,
     summary,
-    body: paragraphs(...bodyLines),
+    body,
     verses: parseVerseList(verseLine),
     hacks: [],
     prayers: [],
@@ -1547,19 +1570,84 @@ const document = {
       'Kill the Flesh. Walk in the Spirit.',
       'Operational rubric under fire — refuse the flesh; walk in the Spirit. This is the path.',
       [
-        // General standard — forged under fire; written for anyone in the storm
-        'Core mission: kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.',
-        'Thought capture: the moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ. Do not feed it.',
-        'Combat fear with specific weapons: Peace (fruit of the Spirit) that guards heart and mind; Faith that trusts God’s character and timing; Self-control that captures racing thoughts; Shield of Faith that extinguishes flaming arrows of fear and accusation; Shoes of the Gospel of Peace for stability instead of panic; Helmet of Salvation that protects the mind about identity and future. When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.',
-        'Refuse the acts of the flesh: no name-calling or degrading labels; no rage; no control, stalking, or monitoring; no bitterness as a settled posture; no using suspicion or pain as permission to return to the flesh.',
-        'Self-control around desire: do not push, pressure, guilt, or negotiate for what is not freely given. Guard eyes, thoughts, and body. Accept seasons when desire must wait under God.',
-        'Love without self-erasure: keep loving without turning love into self-erasure, over-functioning, endless waiting, or managing another person’s emotional state. Your emotional state is your own — not dependent on them.',
-        'Honest assessment: if you do not fully trust someone right now, do not pretend otherwise. Trust is not required for obedience. Hold the lack of trust and still refuse the flesh.',
-        'Boundaries: when contact, conversation, or access fuels the flesh, step back. Do not reach out only to regulate their feelings or your anxiety. If they engage: pause, regulate, then respond only to what you are truly willing to engage. Keep words short, clear, and low-drama when needed. Distance can be protection, not punishment.',
-        'Return to your side of the street: the only ground you control is your thoughts, your mouth, your actions, your obedience, and your standards. Other people’s replies, timing, choices, and plans are their side. When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street. This is self-control and refusing the flesh in practice.',
-        'External pressure and comparison: when jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance. Do not organize your life around competing for emotional space. Capture those thoughts like any other destructive thought. Obedience is measured by whether you refuse the flesh — not by whether you win the comparison.',
-        'Redirect every captured thought with a clean true statement: “I take this thought captive and submit it to the obedience of Christ.” “I choose to bless and not curse.” “I release them to You.” “Love keeps no record of wrongs.” “I will not over-function or self-erase.” “Distance can be protection, not punishment.” “Return to your side of the street.” “I raise the shield of faith and walk in the peace of the Spirit.” “God has not given me a spirit of fear, but of power, love, and a sound mind.”',
-        'Success measure: not whether they return, apologize, or change on your timeline. Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time. Do better. Be better. Trust God.',
+        // Structured SOP — general language for anyone under fire (not one private case)
+        h2('Core mission'),
+        p(
+          'Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active.',
+        ),
+        h2('Daily standards'),
+        h3('1. Thought capture'),
+        p(
+          'The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ. Do not feed it.',
+        ),
+        h3('2. Combat fear'),
+        p('Fear is fought with specific weapons from the Spirit and the Armor of God:'),
+        list(
+          'Peace (fruit of the Spirit) — guards heart and mind.',
+          'Faith — trusts God’s character and timing instead of the worst-case outcome.',
+          'Self-control — takes racing, fearful thoughts captive.',
+          'Shield of Faith — extinguishes flaming arrows of fear, accusation, and spirals.',
+          'Shoes of the Gospel of Peace — stability from peace, not panic.',
+          'Helmet of Salvation — protects the mind about identity and future.',
+        ),
+        p(
+          'When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street.',
+        ),
+        h3('3. Refuse the acts of the flesh'),
+        list(
+          'No name-calling or degrading labels',
+          'No rage',
+          'No control, stalking, or monitoring',
+          'No bitterness as a settled posture',
+          'No using suspicion or pain as permission to return to the flesh',
+        ),
+        h3('4. Self-control around desire'),
+        p(
+          'Do not push, pressure, guilt, or negotiate for what is not freely given. Guard eyes, thoughts, and body. Accept seasons when desire must wait under God.',
+        ),
+        h3('5. Love without self-erasure'),
+        p('Keep loving without turning that love into:'),
+        list(
+          'Self-erasure',
+          'Over-functioning',
+          'Endless waiting',
+          'Managing another person’s emotional state',
+        ),
+        p('Your emotional state is your own — not dependent on them.'),
+        h3('6. Honest assessment'),
+        p(
+          'If you do not fully trust someone right now, do not pretend otherwise. Trust is not required for obedience. Hold the lack of trust and still refuse the flesh.',
+        ),
+        h3('7. Contact and boundaries'),
+        p(
+          'When contact, conversation, or access fuels the flesh, step back. Do not reach out only to regulate their feelings or your anxiety. If they engage: pause, regulate, then respond only to what you are truly willing to engage. Keep words short, clear, and low-drama when needed. Distance can be protection, not punishment.',
+        ),
+        h3('8. Return to your side of the street'),
+        p(
+          'Your side of the street is the only ground you control: your thoughts, your mouth, your actions, your obedience, and your standards. Other people’s replies, timing, choices, and plans are their side. When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street. This is self-control and refusing the flesh in practice.',
+        ),
+        h3('9. External pressure and comparison'),
+        p(
+          'When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance. Do not organize your life around competing for emotional space. Capture those thoughts like any other destructive thought. Obedience is measured by whether you refuse the flesh — not by whether you win the comparison.',
+        ),
+        h3('10. Redirect'),
+        p('Every captured thought is replaced with a clean, true statement:'),
+        list(
+          '“I take this thought captive and submit it to the obedience of Christ.”',
+          '“I choose to bless and not curse.”',
+          '“I release them to You.”',
+          '“Love keeps no record of wrongs.”',
+          '“I will not over-function or self-erase.”',
+          '“Distance can be protection, not punishment.”',
+          '“Return to your side of the street.”',
+          '“I raise the shield of faith and walk in the peace of the Spirit.”',
+          '“God has not given me a spirit of fear, but of power, love, and a sound mind.”',
+        ),
+        h2('Success measure'),
+        p(
+          'Not whether they return, apologize, or change on your timeline. Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time.',
+        ),
+        p('Do better. Be better. Trust God.'),
       ],
       'Galatians 5:16-24 · 2 Corinthians 10:5 · Philippians 4:6-7 · Ephesians 6:14-17 · 2 Timothy 1:7 · 1 Corinthians 13:4-5 · Romans 12:19 · Galatians 5:19-21',
     ),

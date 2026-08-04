@@ -3,6 +3,7 @@
 export type BodyBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; level: 2 | 3; text: string }
+  | { type: 'list'; items: string[] }
   | { type: 'quote'; text: string; attribution?: string }
 
 export interface ScriptureRef {

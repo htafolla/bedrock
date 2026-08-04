@@ -22,9 +22,21 @@ function renderBlock(block: BodyBlock, key: number) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
     return (
-      <Tag key={key} className="chamber-subhead">
+      <Tag
+        key={key}
+        className={block.level === 2 ? 'chamber-subhead chamber-subhead-h2' : 'chamber-subhead chamber-subhead-h3'}
+      >
         {block.text}
       </Tag>
+    )
+  }
+  if (block.type === 'list') {
+    return (
+      <ul key={key} className="chamber-list">
+        {block.items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
     )
   }
   if (block.type === 'quote') {
@@ -183,8 +195,8 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Rubric — denser than a first principle on purpose. Forged word, then the standard under
-              fire. Not a temporary hack.
+              Rubric — operational standard under fire. Denser than a first principle on purpose. Not
+              a temporary hack.
             </p>
           ) : null}
         </header>
@@ -194,9 +206,9 @@ export function ChamberFocus({
             {isRubric ? 'The standard' : 'Truth'}
           </h3>
           {isRubric ? (
-            <p className="field-layer-hint">Story first, then the full rule-set.</p>
+            <p className="field-layer-hint">Daily rules. Scan the numbered holds.</p>
           ) : null}
-          <div className="chamber-body">
+          <div className={`chamber-body${isRubric ? ' chamber-body-rubric' : ''}`}>
             {chamber.body.map((block, i) => renderBlock(block, i))}
           </div>
         </section>

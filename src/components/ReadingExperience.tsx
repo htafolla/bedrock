@@ -19,6 +19,15 @@ function renderBlock(block: BodyBlock, key: number) {
       </Tag>
     )
   }
+  if (block.type === 'list') {
+    return (
+      <ul key={key} className="chamber-list">
+        {block.items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    )
+  }
   if (block.type === 'quote') {
     return (
       <blockquote key={key} className="chamber-quote">

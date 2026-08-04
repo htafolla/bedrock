@@ -30,8 +30,21 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
       /side of the street|shield of faith/,
     )
-    // Rubrics are denser by design (SOP); ordinary chambers stay card-length
-    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.body.length).toBeGreaterThan(8)
+    // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
+    const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
+    expect(rubric.body.length).toBeGreaterThan(8)
+    expect(rubric.body.some((b) => b.type === 'heading')).toBe(true)
+    expect(rubric.body.some((b) => b.type === 'list')).toBe(true)
+    const rubricText = rubric.body
+      .map((b) => {
+        if (b.type === 'list') return (b.items ?? []).join(' ')
+        if (b.type === 'paragraph' || b.type === 'heading' || b.type === 'quote') return b.text
+        return ''
+      })
+      .join(' ')
+      .toLowerCase()
+    expect(rubricText).not.toMatch(/\b(her|she|wife|open rates)\b/)
+    expect(rubricText).toMatch(/thought capture|side of the street|trust is not required/)
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
     expect(byId.get('persecution')!.title).toBe('Persecution')
@@ -175,9 +188,15 @@ describe('bedrock content integrity', () => {
         .replace(/\s+/g, ' ')
         .trim()
     for (const c of chambers) {
-      const first = c.body[0]?.text
+      const firstBlock = c.body.find(
+        (b) => b.type === 'paragraph' || b.type === 'heading' || b.type === 'quote',
+      )
+      const first =
+        firstBlock && (firstBlock.type === 'paragraph' || firstBlock.type === 'heading' || firstBlock.type === 'quote')
+          ? firstBlock.text
+          : undefined
       expect(first, c.id).toBeTruthy()
-      expect(normalize(first), c.id).not.toBe(normalize(c.summary))
+      expect(normalize(first ?? ''), c.id).not.toBe(normalize(c.summary))
     }
   })
 
