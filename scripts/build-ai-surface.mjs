@@ -196,50 +196,122 @@ function analyticsHeadSnippet(pagePath) {
   return parts.join('\n  ')
 }
 
+function renderBodyBlockHtml(b) {
+  if (b.type === 'heading') {
+    const tag = b.level === 2 ? 'h3' : 'h4'
+    return `<${tag} class="body-head">${esc(b.text)}</${tag}>`
+  }
+  if (b.type === 'list') {
+    const items = (b.items || []).map((item) => `<li>${esc(item)}</li>`).join('\n')
+    return `<ul class="body-list rubric-list">\n${items}\n</ul>`
+  }
+  if (b.type === 'quote') {
+    return `<blockquote><p>${esc(b.text)}</p></blockquote>`
+  }
+  if (b.type === 'paragraph') {
+    if (isScriptureCitationLine(b.text)) {
+      const refs = parseScriptureCitationLine(b.text)
+      if (refs.length) {
+        const chips = refs
+          .map(
+            (r) =>
+              `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
+          )
+          .join('\n')
+        return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
+      }
+    }
+    if (/^Prayer:\s*/i.test(b.text)) {
+      const body = b.text.replace(/^Prayer:\s*/i, '').trim()
+      return `<aside class="rubric-prayer" aria-label="Prayer"><span class="rubric-prayer-label">Prayer</span><p class="rubric-prayer-text">${esc(body)}</p></aside>`
+    }
+    if (/^When .+:\s*$/i.test(b.text)) {
+      return `<p class="rubric-when">${esc(b.text.replace(/:\s*$/, ''))}</p>`
+    }
+    return `<p>${esc(b.text)}</p>`
+  }
+  return ''
+}
+
+/** Flat body (ordinary chambers). */
 function bodyToHtml(body) {
-  return (body || [])
-    .map((b) => {
-      if (b.type === 'heading') {
-        const tag = b.level === 2 ? 'h3' : 'h4'
-        return `<${tag} class="body-head">${esc(b.text)}</${tag}>`
-      }
-      if (b.type === 'list') {
-        const items = (b.items || []).map((item) => `<li>${esc(item)}</li>`).join('\n')
-        return `<ul class="body-list">\n${items}\n</ul>`
-      }
-      if (b.type === 'quote') {
-        return `<blockquote><p>${esc(b.text)}</p></blockquote>`
-      }
-      if (b.type === 'paragraph') {
-        if (isScriptureCitationLine(b.text)) {
-          const refs = parseScriptureCitationLine(b.text)
-          if (refs.length) {
-            const chips = refs
-              .map(
-                (r) =>
-                  `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
-              )
-              .join('\n')
-            return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
-          }
-        }
-        return `<p>${esc(b.text)}</p>`
-      }
-      return ''
+  return (body || []).map(renderBodyBlockHtml).filter(Boolean).join('\n')
+}
+
+/**
+ * Rubric: major bands (h2) + numbered standard cards (h3) for scannability.
+ */
+function rubricBodyToHtml(body) {
+  const bands = []
+  let band = { title: null, intro: [], cards: [] }
+  let card = null
+
+  const flushCard = () => {
+    if (card) {
+      band.cards.push(card)
+      card = null
+    }
+  }
+  const flushBand = () => {
+    flushCard()
+    if (band.title != null || band.intro.length || band.cards.length) bands.push(band)
+    band = { title: null, intro: [], cards: [] }
+  }
+
+  for (const b of body || []) {
+    if (b.type === 'heading' && b.level === 2) {
+      flushBand()
+      band = { title: b.text, intro: [], cards: [] }
+      continue
+    }
+    if (b.type === 'heading' && b.level === 3) {
+      flushCard()
+      card = { title: b.text, blocks: [] }
+      continue
+    }
+    if (card) card.blocks.push(b)
+    else band.intro.push(b)
+  }
+  flushBand()
+
+  return bands
+    .map((sec) => {
+      const intro = sec.intro.map(renderBodyBlockHtml).filter(Boolean).join('\n')
+      const cards = sec.cards
+        .map((c) => {
+          const m = String(c.title || '')
+            .trim()
+            .match(/^(\d+)\.\s+(.+)$/)
+          const num = m ? m[1] : null
+          const label = m ? m[2] : c.title
+          const numHtml = num
+            ? `<span class="rubric-num" aria-hidden="true">${esc(num)}</span>`
+            : ''
+          const body = c.blocks.map(renderBodyBlockHtml).filter(Boolean).join('\n')
+          return `<article class="rubric-standard">
+<header class="rubric-standard-head">${numHtml}<h4 class="rubric-standard-title">${esc(label)}</h4></header>
+<div class="rubric-standard-body">${body}</div>
+</article>`
+        })
+        .join('\n')
+      const title = sec.title
+        ? `<h3 class="rubric-band-title">${esc(sec.title)}</h3>`
+        : ''
+      const introWrap = intro ? `<div class="rubric-band-intro">${intro}</div>` : ''
+      return `<section class="rubric-band">${title}${introWrap}${cards}</section>`
     })
-    .filter(Boolean)
     .join('\n')
 }
 
 function chamberHtml(c, meta) {
   const isRubric = c.kind === 'rubric'
-  const truth = bodyToHtml(c.body)
+  const truth = isRubric ? rubricBodyToHtml(c.body) : bodyToHtml(c.body)
   const hacks = c.hacks.map((h) => `<li>${esc(h)}</li>`).join('\n')
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
   const verses = c.verses
     .map(
       (v) =>
-        `<li><a href="https://www.biblegateway.com/passage/?search=${encodeURIComponent(v.display)}&version=ESV" rel="noopener noreferrer">${esc(v.display)}</a></li>`,
+        `<li><a href="https://www.biblegateway.com/passage/?search=${encodeURIComponent(v.display)}&version=NIV" target="_blank" rel="noopener noreferrer">${esc(v.display)}</a></li>`,
     )
     .join('\n')
   const related = c.related
@@ -247,6 +319,7 @@ function chamberHtml(c, meta) {
     .join('\n')
   const kicker = isRubric ? 'Rubric · operational standard · Bedrock' : 'First principle · Bedrock'
   const truthHeading = isRubric ? 'The standard' : 'Truth'
+  const truthClass = isRubric ? 'card card-rubric' : 'card'
 
   const title = `${esc(c.title)} — Bedrock`
   const desc = esc(
@@ -309,8 +382,26 @@ function chamberHtml(c, meta) {
     .body-list { margin:.2rem 0 .85rem; padding-left:1.35rem; list-style: disc; }
     .body-list li { margin:.35rem 0; line-height:1.5; padding-left:.15rem; }
     .card p { margin:.45rem 0 .65rem; line-height:1.55; }
-    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.45rem; margin:.35rem 0 .85rem; }
-    .verse-chip { display:inline-flex; align-items:center; padding:.35rem .7rem; border-radius:999px; border:1px solid var(--border); background:rgba(0,0,0,.28); color:var(--beam); text-decoration:none; font-size:.88rem; line-height:1.2; }
+    .card-rubric { padding:.85rem .85rem 1rem; }
+    .rubric-band { display:flex; flex-direction:column; gap:.75rem; margin:0 0 1.25rem; }
+    .rubric-band:last-child { margin-bottom:0; }
+    .rubric-band-title { font-family:"Cormorant Garamond", Georgia, serif; font-size:clamp(1.2rem,3.5vw,1.45rem); font-weight:600; color:var(--beam); margin:.2rem 0 .15rem; padding:0 0 .4rem; border-bottom:1px solid rgba(196,165,116,.28); letter-spacing:.03em; }
+    .rubric-band-intro { display:flex; flex-direction:column; gap:.35rem; }
+    .rubric-standard { border:1px solid rgba(196,165,116,.22); border-radius:14px; background:linear-gradient(165deg,rgba(28,22,18,.72),rgba(14,11,9,.55)); padding:.9rem .95rem 1rem; display:flex; flex-direction:column; gap:.55rem; }
+    .rubric-standard-head { display:flex; align-items:center; gap:.7rem; padding-bottom:.5rem; border-bottom:1px solid rgba(196,165,116,.14); }
+    .rubric-num { flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; min-width:2rem; height:2rem; border-radius:999px; background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; font-size:.85rem; font-weight:700; font-variant-numeric:tabular-nums; }
+    .rubric-standard-title { margin:0; font-family:"Cormorant Garamond", Georgia, serif; font-size:clamp(1.08rem,2.8vw,1.22rem); font-weight:600; color:var(--beam); line-height:1.25; }
+    .rubric-standard-body { display:flex; flex-direction:column; gap:.45rem; }
+    .rubric-standard-body > p { margin:0; font-size:.95rem; line-height:1.5; }
+    .rubric-when { margin:.25rem 0 0 !important; font-size:.72rem; font-weight:650; letter-spacing:.1em; text-transform:uppercase; color:var(--ember); }
+    .rubric-list { list-style:none; margin:.1rem 0; padding:0; display:flex; flex-direction:column; gap:.35rem; }
+    .rubric-list li { position:relative; margin:0; padding:.4rem .55rem .4rem 1.85rem; border-radius:8px; background:rgba(0,0,0,.18); border:1px solid rgba(196,165,116,.08); line-height:1.45; font-size:.92rem; }
+    .rubric-list li::before { content:""; position:absolute; left:.65rem; top:.7rem; width:.45rem; height:.45rem; border-radius:999px; background:var(--ember); box-shadow:0 0 0 3px rgba(196,165,116,.15); }
+    .rubric-prayer { margin:.25rem 0; padding:.7rem .85rem .8rem; border-radius:12px; border:1px solid rgba(196,165,116,.32); border-left:3px solid var(--ember); background:linear-gradient(90deg,rgba(196,165,116,.1),rgba(18,14,12,.45) 55%); }
+    .rubric-prayer-label { display:block; margin:0 0 .3rem; font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--ember); }
+    .rubric-prayer-text { margin:0; font-family:"Cormorant Garamond", Georgia, serif; font-size:1.05rem; font-style:italic; line-height:1.4; color:var(--beam); }
+    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.45rem; margin:.25rem 0 .15rem; }
+    .verse-chip { display:inline-flex; align-items:center; padding:.35rem .7rem; border-radius:999px; border:1px solid var(--border); background:rgba(0,0,0,.28); color:var(--beam); text-decoration:none; font-size:.86rem; line-height:1.2; }
     .verse-chip:hover { border-color:var(--ember); color:#fff6e6; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
@@ -331,7 +422,7 @@ function chamberHtml(c, meta) {
       <a href="/">Home</a>
       <a href="/llms.txt">llms.txt</a>
     </nav>
-    <section class="card" aria-labelledby="truth">
+    <section class="${truthClass}" aria-labelledby="truth">
       <h2 id="truth">${esc(truthHeading)}</h2>
       ${truth}
     </section>
