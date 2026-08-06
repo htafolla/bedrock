@@ -6,7 +6,7 @@
     "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.",
     "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
     "version": "0.2.0-beta",
-    "revised": "2026-08-04",
+    "revised": "2026-08-06",
     "contentHash": null,
     "ipfsCid": null,
     "baseAnchorTx": null
@@ -745,7 +745,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood, not a temporary hack. A living standard you can stand on when the storm is active."
+          "text": "Kill the acts of the flesh. Walk in the Spirit. This is the path."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Galatians 5:16, 5:24-25)"
         },
         {
           "type": "heading",
@@ -759,7 +763,24 @@
         },
         {
           "type": "paragraph",
-          "text": "The moment a destructive thought appears — rage, control, suspicion loops, worst-case spirals, comparison, name-calling, fear, envy, lust — take it captive and submit it to the obedience of Christ. Do not feed it."
+          "text": "The moment a destructive thought appears — name-calling, suspicion, rage, control, worst-case spirals, fear — take it captive."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stop.",
+            "Name the thought.",
+            "Refuse to feed it.",
+            "Submit it to the obedience of Christ."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “No. I release this to You, Lord.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2 Corinthians 10:5, Colossians 3:2)"
         },
         {
           "type": "heading",
@@ -768,22 +789,27 @@
         },
         {
           "type": "paragraph",
-          "text": "Fear is fought with specific weapons from the Spirit and the Armor of God:"
+          "text": "Fight fear with the weapons of the Spirit: power, love, and a sound mind."
+        },
+        {
+          "type": "paragraph",
+          "text": "When fear rises:"
         },
         {
           "type": "list",
           "items": [
-            "Peace (fruit of the Spirit) — guards heart and mind.",
-            "Faith — trusts God’s character and timing instead of the worst-case outcome.",
-            "Self-control — takes racing, fearful thoughts captive.",
-            "Shield of Faith — extinguishes flaming arrows of fear, accusation, and spirals.",
-            "Shoes of the Gospel of Peace — stability from peace, not panic.",
-            "Helmet of Salvation — protects the mind about identity and future."
+            "Name the fear.",
+            "Refuse to agree with it.",
+            "Hand the outcome to God."
           ]
         },
         {
           "type": "paragraph",
-          "text": "When fear rises: raise the shield of faith, walk in the peace of the Spirit, capture the thought, and return to your side of the street."
+          "text": "Prayer: “God has not given me a spirit of fear, but of power, love, and a sound mind. I hand this to You.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2 Timothy 1:7, Ephesians 6:16, Philippians 4:6-7)"
         },
         {
           "type": "heading",
@@ -791,133 +817,424 @@
           "text": "3. Refuse the acts of the flesh"
         },
         {
-          "type": "list",
-          "items": [
-            "No name-calling or degrading labels",
-            "No rage",
-            "No control, stalking, or monitoring",
-            "No bitterness as a settled posture",
-            "No using suspicion or pain as permission to return to the flesh"
-          ]
+          "type": "paragraph",
+          "text": "No name-calling. No yelling or rage. No control or monitoring. No revenge. No settled bitterness. No using suspicion as permission to return to the flesh."
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "4. Self-control around desire"
+          "type": "paragraph",
+          "text": "When the flesh rises:"
         },
         {
           "type": "list",
           "items": [
-            "Do not push, pressure, guilt, or negotiate for what is not freely given.",
-            "Guard eyes, thoughts, and body.",
-            "Accept seasons when desire must wait under God."
+            "Name the act.",
+            "Refuse it.",
+            "Stop and return to obedience."
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “I refuse this. I will walk in Love.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Galatians 5:19-21, Ephesians 4:29, 4:31)"
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "5. Love without self-erasure"
+          "text": "4. Forgiveness"
         },
         {
           "type": "paragraph",
-          "text": "Keep loving without turning that love into:"
+          "text": "Forgiveness is how you refuse to keep score and stay free from bitterness."
         },
         {
           "type": "list",
           "items": [
-            "Self-erasure",
-            "Over-functioning",
-            "Endless waiting",
-            "Managing another person’s emotional state"
+            "Release the debt.",
+            "Refuse to rehearse the offense.",
+            "Hand the person and the injustice to God."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Your emotional state is your own — not dependent on them."
+          "text": "Prayer: “I forgive. I release this to You, Lord.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Matthew 6:14-15, Ephesians 4:32, Colossians 3:13)"
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "6. Honest assessment"
+          "text": "5. Self-control"
+        },
+        {
+          "type": "paragraph",
+          "text": "Refuse self-gratification."
+        },
+        {
+          "type": "paragraph",
+          "text": "Guard eyes, thoughts, and body."
+        },
+        {
+          "type": "paragraph",
+          "text": "Avoid emotional and physical affairs or attachments."
+        },
+        {
+          "type": "paragraph",
+          "text": "Respect boundaries. Do not push for intimacy or emotional processing."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the urge rises:"
         },
         {
           "type": "list",
           "items": [
-            "If you do not fully trust someone right now, do not pretend otherwise.",
-            "Trust is not required for obedience.",
-            "Hold the lack of trust and still refuse the flesh."
+            "Stop.",
+            "Do not pursue self-gratification.",
+            "Submit the thought or action to Christ."
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “My body is the temple of the Holy Spirit. I choose self-control. Strengthen me.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1 Corinthians 6:19-20, Galatians 5:22-23, 1 Corinthians 6:18)"
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "7. Contact and boundaries"
+          "text": "6. Presence and independent self"
+        },
+        {
+          "type": "paragraph",
+          "text": "You are a whole person under God. Your identity, emotional regulation, and worth do not come from the other person."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love without disappearing, over-functioning, or managing another person’s emotional state."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the pull to disappear rises:"
         },
         {
           "type": "list",
           "items": [
-            "When contact, conversation, or access fuels the flesh, step back.",
-            "Do not reach out only to regulate their feelings or your anxiety.",
-            "If they engage: pause, regulate, then respond only to what you are truly willing to engage.",
-            "Keep words short, clear, and low-drama when needed.",
-            "Distance can be protection, not punishment."
+            "No over-functioning or managing their emotions.",
+            "Focus on the people and work God has put in front of you.",
+            "Your emotional state is not dependent on them."
           ]
         },
         {
-          "type": "heading",
-          "level": 3,
-          "text": "8. Return to your side of the street"
+          "type": "paragraph",
+          "text": "Prayer: “Lord, this is where You have me. Help me be present where I am.”"
         },
         {
           "type": "paragraph",
-          "text": "Your side of the street is the only ground you control: your thoughts, your mouth, your actions, your obedience, and your standards."
-        },
-        {
-          "type": "paragraph",
-          "text": "Other people’s replies, timing, choices, and plans are their side."
-        },
-        {
-          "type": "paragraph",
-          "text": "When you drift into reading them, scoring exchanges, tracking gaps, or building narratives — stop and return to your side of the street. This is self-control and refusing the flesh in practice."
+          "text": "(Colossians 3:23, Galatians 6:4-5, Psalm 16:8, Philippians 2:3-4)"
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "9. External pressure and comparison"
+          "text": "7. Honest assessment"
         },
         {
           "type": "paragraph",
-          "text": "When jealousy, rivalry, or a third party fills the mind, do not answer with more control, monitoring, or performance. Do not organize your life around competing for emotional space."
+          "text": "You may not fully trust the other person. Do not pretend otherwise."
+        },
+        {
+          "type": "paragraph",
+          "text": "When distrust rises:"
         },
         {
           "type": "list",
           "items": [
-            "Capture those thoughts like any other destructive thought.",
-            "Obedience is measured by whether you refuse the flesh — not by whether you win the comparison."
+            "Admit it honestly.",
+            "Do not overcommit or blindly give trust.",
+            "Do not use the lack of trust as permission for the flesh."
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “Lord, I do not trust them. Give me peace.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Proverbs 4:23, Proverbs 12:22, Ephesians 4:15)"
         },
         {
           "type": "heading",
           "level": 3,
-          "text": "10. Redirect"
+          "text": "8. Contact and boundaries"
         },
         {
           "type": "paragraph",
-          "text": "Every captured thought is replaced with a clean, true statement:"
+          "text": "Default to low or no contact when the relationship is unstable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep all contact logistical and unemotional."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not message to regulate their feelings, reduce your own anxiety, process the relationship, or seek reassurance."
+        },
+        {
+          "type": "paragraph",
+          "text": "When contact happens:"
         },
         {
           "type": "list",
           "items": [
-            "“I take this thought captive and submit it to the obedience of Christ.”",
-            "“I choose to bless and not curse.”",
-            "“I release them to You.”",
-            "“Love keeps no record of wrongs.”",
-            "“I will not over-function or self-erase.”",
-            "“Distance can be protection, not punishment.”",
-            "“Return to your side of the street.”",
-            "“I raise the shield of faith and walk in the peace of the Spirit.”",
-            "“God has not given me a spirit of fear, but of power, love, and a sound mind.”"
+            "Keep it short and clear.",
+            "Stay on logistics only (kids, pets, house, money, schedules).",
+            "Do not bring up the relationship, feelings, forgiveness, or the future, or push for emotional connection unless they open it.",
+            "If they message, pause, regulate, then respond only to what is necessary."
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "When the urge to reach out rises:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pause.",
+            "Ask: Am I trying to regulate them or myself?",
+            "If it is not logistical and necessary, do not send it."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “I will not use contact to manage pain. Give me restraint.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Matthew 5:37, Ecclesiastes 3:1)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "9. Return to your side of the street"
+        },
+        {
+          "type": "paragraph",
+          "text": "Your side of the street is the only ground you control: thoughts, mouth, actions, obedience, standards."
+        },
+        {
+          "type": "paragraph",
+          "text": "Their replies, timing, tone, location, and plans are their side."
+        },
+        {
+          "type": "paragraph",
+          "text": "When you drift:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Notice the drift.",
+            "Stop reading them or building narratives.",
+            "Return to your side of the street."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “Lord, You know what they are doing and what they are thinking. I give them to You.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(1 Thessalonians 4:11, Galatians 6:4-5, Matthew 7:3)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "10. Recurring external pressure"
+        },
+        {
+          "type": "paragraph",
+          "text": "Past patterns and third parties will reappear."
+        },
+        {
+          "type": "paragraph",
+          "text": "When they do:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Notice the pull to monitor, perform, or compete.",
+            "Do not increase contact or surveillance.",
+            "Stay on your side of the street.",
+            "Hand the situation to God."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “Lord, protect my spouse and return their heart to me. I will not compete.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Romans 12:17-19)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "11. Operate from strength, not need"
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not initiate from anxiety or the need to be reassured."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not measure your worth by their availability or tone."
+        },
+        {
+          "type": "paragraph",
+          "text": "When pain or need rises:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stop initiating from anxiety.",
+            "Bring the raw sentence to the Lord. Do not clean it up.",
+            "Measure yourself by obedience, not their response."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “My emotional state is mine to manage. It is not dependent on them.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Psalm 46:10, Exodus 14:14, 1 Peter 5:7)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "12. Trust over understanding"
+        },
+        {
+          "type": "paragraph",
+          "text": "Trust in the Lord with all your heart. Lean not on your own understanding."
+        },
+        {
+          "type": "paragraph",
+          "text": "He is with you."
+        },
+        {
+          "type": "paragraph",
+          "text": "When questions and mixed signals rise:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Refuse the demand to figure it all out.",
+            "Hand the unanswered questions, mixed signals, and future to Him.",
+            "Return to your side of the street."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “Lord, You know the plans You have for me. Help me trust You.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Proverbs 3:5-6, Proverbs 16:9, Jeremiah 29:11)"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "For men: strength, courage, and leadership"
+        },
+        {
+          "type": "paragraph",
+          "text": "A man is called to lead himself first."
+        },
+        {
+          "type": "paragraph",
+          "text": "(1 Corinthians 16:13)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Emotional self-responsibility"
+        },
+        {
+          "type": "paragraph",
+          "text": "No one else is responsible for managing or stabilizing your emotional state."
+        },
+        {
+          "type": "paragraph",
+          "text": "Vulnerability that requires another person to regulate you is not strength."
+        },
+        {
+          "type": "paragraph",
+          "text": "True strength feels the full weight of loss or desire and still governs mouth, actions, and decisions."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Proverbs 25:28)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Courage"
+        },
+        {
+          "type": "paragraph",
+          "text": "Courage is not the absence of pain."
+        },
+        {
+          "type": "paragraph",
+          "text": "It is staying steady when the outcome is uncertain and refusing to use pressure or emotional need to force closeness."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Joshua 1:9)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Leadership in practice"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lead by governing yourself, not by managing her."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consistency under pressure is more persuasive than repeated claims of change."
+        },
+        {
+          "type": "paragraph",
+          "text": "A man who carries his own emotional load becomes safer to be around."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Ephesians 5:25, Colossians 3:19)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Strength that serves"
+        },
+        {
+          "type": "paragraph",
+          "text": "Strength is the capacity to remain kind, clear, and boundaried at the same time."
+        },
+        {
+          "type": "paragraph",
+          "text": "It refuses both passive waiting and aggressive pursuit."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Matthew 23:11, 1 Corinthians 16:13-14)"
         },
         {
           "type": "heading",
@@ -926,11 +1243,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Not whether they return, apologize, or change on your timeline."
+          "text": "Not whether the other person returns or chooses you."
         },
         {
           "type": "paragraph",
-          "text": "Success is staying in the Spirit, protecting yourself under God, and refusing the flesh — one decision at a time."
+          "text": "Success is staying in the Spirit and refusing the flesh — one decision at a time."
+        },
+        {
+          "type": "paragraph",
+          "text": "(Galatians 6:9, James 1:12)"
         },
         {
           "type": "paragraph",
@@ -939,17 +1260,41 @@
       ],
       "verses": [
         {
-          "display": "Galatians 5:16–24",
+          "display": "Galatians 5:16",
           "book": "Galatians",
           "chapter": 5,
-          "verseStart": 16,
-          "verseEnd": 24
+          "verseStart": 16
+        },
+        {
+          "display": "Galatians 5:24–25",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 24,
+          "verseEnd": 25
         },
         {
           "display": "2 Corinthians 10:5",
           "book": "2 Corinthians",
           "chapter": 10,
           "verseStart": 5
+        },
+        {
+          "display": "Colossians 3:2",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 2
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "Ephesians 6:16",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 16
         },
         {
           "display": "Philippians 4:6–7",
@@ -959,59 +1304,237 @@
           "verseEnd": 7
         },
         {
-          "display": "Ephesians 6:14–17",
-          "book": "Ephesians",
-          "chapter": 6,
-          "verseStart": 14,
-          "verseEnd": 17
-        },
-        {
-          "display": "2 Timothy 1:7",
-          "book": "2 Timothy",
-          "chapter": 1,
-          "verseStart": 7
-        },
-        {
-          "display": "1 Corinthians 13:4–5",
-          "book": "1 Corinthians",
-          "chapter": 13,
-          "verseStart": 4,
-          "verseEnd": 5
-        },
-        {
-          "display": "Romans 12:19",
-          "book": "Romans",
-          "chapter": 12,
-          "verseStart": 19
-        },
-        {
           "display": "Galatians 5:19–21",
           "book": "Galatians",
           "chapter": 5,
           "verseStart": 19,
           "verseEnd": 21
+        },
+        {
+          "display": "Ephesians 4:29",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 29
+        },
+        {
+          "display": "Ephesians 4:31–32",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 31,
+          "verseEnd": 32
+        },
+        {
+          "display": "Matthew 6:14–15",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 14,
+          "verseEnd": 15
+        },
+        {
+          "display": "Colossians 3:13",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 13
+        },
+        {
+          "display": "1 Corinthians 6:18–20",
+          "book": "1 Corinthians",
+          "chapter": 6,
+          "verseStart": 18,
+          "verseEnd": 20
+        },
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
+        },
+        {
+          "display": "Colossians 3:23",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 23
+        },
+        {
+          "display": "Galatians 6:4–5",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "Psalm 16:8",
+          "book": "Psalm",
+          "chapter": 16,
+          "verseStart": 8
+        },
+        {
+          "display": "Philippians 2:3–4",
+          "book": "Philippians",
+          "chapter": 2,
+          "verseStart": 3,
+          "verseEnd": 4
+        },
+        {
+          "display": "Proverbs 4:23",
+          "book": "Proverbs",
+          "chapter": 4,
+          "verseStart": 23
+        },
+        {
+          "display": "Proverbs 12:22",
+          "book": "Proverbs",
+          "chapter": 12,
+          "verseStart": 22
+        },
+        {
+          "display": "Ephesians 4:15",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 15
+        },
+        {
+          "display": "Matthew 5:37",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 37
+        },
+        {
+          "display": "Ecclesiastes 3:1",
+          "book": "Ecclesiastes",
+          "chapter": 3,
+          "verseStart": 1
+        },
+        {
+          "display": "1 Thessalonians 4:11",
+          "book": "1 Thessalonians",
+          "chapter": 4,
+          "verseStart": 11
+        },
+        {
+          "display": "Matthew 7:3",
+          "book": "Matthew",
+          "chapter": 7,
+          "verseStart": 3
+        },
+        {
+          "display": "Romans 12:17–19",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 17,
+          "verseEnd": 19
+        },
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        },
+        {
+          "display": "Exodus 14:14",
+          "book": "Exodus",
+          "chapter": 14,
+          "verseStart": 14
+        },
+        {
+          "display": "1 Peter 5:7",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 7
+        },
+        {
+          "display": "Proverbs 3:5–6",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5,
+          "verseEnd": 6
+        },
+        {
+          "display": "Proverbs 16:9",
+          "book": "Proverbs",
+          "chapter": 16,
+          "verseStart": 9
+        },
+        {
+          "display": "Jeremiah 29:11",
+          "book": "Jeremiah",
+          "chapter": 29,
+          "verseStart": 11
+        },
+        {
+          "display": "1 Corinthians 16:13–14",
+          "book": "1 Corinthians",
+          "chapter": 16,
+          "verseStart": 13,
+          "verseEnd": 14
+        },
+        {
+          "display": "Proverbs 25:28",
+          "book": "Proverbs",
+          "chapter": 25,
+          "verseStart": 28
+        },
+        {
+          "display": "Joshua 1:9",
+          "book": "Joshua",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "Ephesians 5:25",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 25
+        },
+        {
+          "display": "Colossians 3:19",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 19
+        },
+        {
+          "display": "Matthew 23:11",
+          "book": "Matthew",
+          "chapter": 23,
+          "verseStart": 11
+        },
+        {
+          "display": "Galatians 6:9",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 9
+        },
+        {
+          "display": "James 1:12",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 12
         }
       ],
       "hacks": [
-        "Return to your side of the street — your thoughts, mouth, actions, obedience, standards. Other people’s replies, timing, and choices are theirs. When you drift into reading them or building narratives: stop.",
-        "Combat fear: raise the shield of faith, walk in the peace of the Spirit, capture the thought, refuse the flesh. Success is not their change — success is staying in the Spirit, one decision at a time.",
-        "Your emotional state is your own — not dependent on another person. Love without self-erasure. When contact fuels the flesh, step back. Redirect every captured thought with a clean true statement."
+        "Thought capture: stop, name it, refuse to feed it, submit it to Christ. “No. I release this to You, Lord.”",
+        "Return to your side of the street — thoughts, mouth, actions, obedience, standards. Their replies and plans are their side. When you drift into reading them: stop.",
+        "Success is not whether they return or choose you. Success is staying in the Spirit and refusing the flesh — one decision at a time."
       ],
       "prayers": [
-        "Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I raise the shield of faith and walk in Your peace. I return to my side of the street. Amen."
+        "Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I hand fear, contact, and outcomes to You. I return to my side of the street. Amen."
       ],
       "related": [
         "walk-by-the-spirit",
         "works-of-the-flesh",
         "take-every-thought-captive",
+        "forgive-as-you-have-been-forgiven",
         "self-control",
         "control",
         "fear",
+        "trust-in-the-lord",
         "peace",
         "the-full-armor-of-god",
         "wounded",
         "he-is-for-you",
-        "rumination"
+        "rumination",
+        "leave-vengeance-to-the-lord"
       ],
       "kind": "rubric"
     },

@@ -233,7 +233,7 @@ function buildBedrockSignals() {
     signal({
       name: 'bedrock-rubric-kill-flesh-walk-spirit',
       definition:
-        'Bedrock operational rubric (general, for anyone under fire): Kill the Flesh. Walk in the Spirit. Thought capture; combat fear with Peace + Shield of Faith; refuse works of the flesh; self-control; love without self-erasure; honest trust assessment; boundaries when contact fuels the flesh; return to your side of the street; redirect statements; success is staying in the Spirit — not whether others change. Emotional state is your own. Chamber id: kill-the-flesh-walk-in-the-spirit.',
+        'Bedrock operational rubric: Kill the Flesh. Walk in the Spirit. Twelve daily standards — thought capture; combat fear; refuse flesh; forgiveness; self-control; presence & independent self; honest assessment; contact & boundaries; side of the street; external pressure; strength not need; trust over understanding. Men’s self-leadership section. Success = Spirit not outcomes. Chamber id: kill-the-flesh-walk-in-the-spirit.',
       tags: [
         'bedrock',
         'rubric',

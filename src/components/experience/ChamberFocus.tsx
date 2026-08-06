@@ -195,8 +195,8 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Rubric — operational standard under fire. Denser than a first principle on purpose. Not
-              a temporary hack.
+              Rubric — twelve daily standards under fire, each with a prayer. Denser than a first
+              principle on purpose. Not a temporary hack.
             </p>
           ) : null}
         </header>
@@ -206,7 +206,9 @@ export function ChamberFocus({
             {isRubric ? 'The standard' : 'Truth'}
           </h3>
           {isRubric ? (
-            <p className="field-layer-hint">Daily rules. Scan the numbered holds.</p>
+            <p className="field-layer-hint">
+              Core mission · daily standards 1–12 · for men · success measure.
+            </p>
           ) : null}
           <div className={`chamber-body${isRubric ? ' chamber-body-rubric' : ''}`}>
             {chamber.body.map((block, i) => renderBlock(block, i))}
