@@ -7,7 +7,7 @@ export const DEFAULT_THEME: ThemeMode = 'dark'
 
 export const THEME_COLORS = {
   dark: '#0c0a09',
-  light: '#f6f0e6',
+  light: '#f7f1e7',
 } as const
 
 export function isThemeMode(value: unknown): value is ThemeMode {

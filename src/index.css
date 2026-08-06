@@ -14,6 +14,7 @@
   --ember: #e8a050;
   --ember-soft: #c4a574;
   --beam: #f5e6c8;
+  --beam-hot: #fff6e6;
   --ink: #f7f1e8;
   --muted: #a89884;
   --glass: rgba(18, 14, 12, 0.72);
@@ -35,43 +36,91 @@
   --atmosphere-bot: #0c0a09;
   --atmosphere-glow: rgba(232, 160, 80, 0.12);
   --atmosphere-ember: rgba(90, 60, 30, 0.25);
+  /* Semantic surfaces (theme-aware — use these instead of raw black) */
+  --surface-inset: rgba(0, 0, 0, 0.2);
+  --surface-inset-strong: rgba(0, 0, 0, 0.28);
+  --surface-row: rgba(0, 0, 0, 0.18);
+  --surface-chip: rgba(0, 0, 0, 0.25);
+  --surface-code: rgba(0, 0, 0, 0.25);
+  --surface-chat-card: rgba(12, 10, 9, 0.45);
+  --surface-rail: rgba(12, 10, 9, 0.82);
+  --overlay-scrim: rgba(8, 6, 5, 0.72);
+  --ember-border: rgba(232, 160, 80, 0.2);
+  --ember-border-mid: rgba(232, 160, 80, 0.32);
+  --ember-border-strong: rgba(232, 160, 80, 0.55);
+  --ember-wash: rgba(232, 160, 80, 0.1);
+  --ember-ring: rgba(232, 160, 80, 0.15);
+  --rubric-card-from: rgba(28, 22, 18, 0.72);
+  --rubric-card-to: rgba(14, 11, 9, 0.55);
+  --prayer-fill-from: rgba(232, 160, 80, 0.1);
+  --prayer-fill-to: rgba(18, 14, 12, 0.45);
+  --prayer-inset: rgba(255, 246, 230, 0.04);
+  --num-grad-from: #f0d9a8;
+  --num-grad-to: #c4a574;
+  --cta-grad-from: #f0d9a8;
+  --cta-grad-to: #c4a574;
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
 }
 
 [data-theme='light'] {
   color-scheme: light;
-  --stone-950: #f6f0e6;
-  --stone-900: #ebe3d4;
-  --stone-800: #d9cfc0;
-  --stone-600: #7a6b5a;
-  --stone-400: #6b5c4c;
-  --stone-200: #3d342a;
-  --stone-100: #1f1a15;
-  --ember: #b86a1a;
-  --ember-soft: #8a6240;
-  --beam: #2a2018;
-  --ink: #1c1612;
-  --muted: #6a5c4e;
-  --glass: rgba(255, 250, 242, 0.86);
-  --glass-border: rgba(90, 70, 40, 0.2);
-  --panel-fill: rgba(255, 250, 242, 0.9);
-  --panel-fill-strong: rgba(255, 250, 242, 0.96);
-  --panel-fill-soft: rgba(255, 250, 242, 0.72);
-  --chrome-scrim-top: rgba(246, 240, 230, 0.96);
-  --chrome-scrim-mid: rgba(246, 240, 230, 0.88);
-  --footer-scrim-bot: rgba(246, 240, 230, 0.94);
-  --footer-scrim-mid: rgba(246, 240, 230, 0.6);
-  --shadow-card: rgba(40, 30, 20, 0.12);
-  --on-ember: #0c0a09;
-  --dna-label-bg: rgba(255, 250, 242, 0.94);
+  /* Warm parchment field — readable ink, bronze accent (WCAG AA body) */
+  --stone-950: #f7f1e7;
+  --stone-900: #efe6d8;
+  --stone-800: #e0d4c2;
+  --stone-600: #6f6154;
+  --stone-400: #5c4f42;
+  --stone-200: #3a3128;
+  --stone-100: #1a1511;
+  --ember: #a35a12;
+  --ember-soft: #7a5230;
+  --beam: #1f1812;
+  --beam-hot: #0c0907;
+  --ink: #1a1511;
+  --muted: #5c4f42;
+  --glass: rgba(255, 252, 247, 0.92);
+  --glass-border: rgba(90, 70, 40, 0.18);
+  --panel-fill: rgba(255, 252, 247, 0.94);
+  --panel-fill-strong: rgba(255, 253, 249, 0.98);
+  --panel-fill-soft: rgba(255, 248, 238, 0.88);
+  --chrome-scrim-top: rgba(247, 241, 231, 0.97);
+  --chrome-scrim-mid: rgba(247, 241, 231, 0.9);
+  --footer-scrim-bot: rgba(247, 241, 231, 0.96);
+  --footer-scrim-mid: rgba(247, 241, 231, 0.72);
+  --shadow-card: rgba(60, 42, 24, 0.1);
+  --on-ember: #fffaf3;
+  --dna-label-bg: rgba(255, 252, 247, 0.96);
   --dna-label-fg: #3d2e1c;
-  --dna-label-active-bg: rgba(255, 240, 220, 0.98);
-  --dna-label-active-fg: #2a1a0c;
-  --atmosphere-top: #efe6d6;
-  --atmosphere-bot: #f6f0e6;
-  --atmosphere-glow: rgba(184, 106, 26, 0.1);
-  --atmosphere-ember: rgba(140, 100, 50, 0.12);
+  --dna-label-active-bg: rgba(255, 244, 226, 0.98);
+  --dna-label-active-fg: #1f140c;
+  --atmosphere-top: #f0e6d6;
+  --atmosphere-bot: #f7f1e7;
+  --atmosphere-glow: rgba(163, 90, 18, 0.09);
+  --atmosphere-ember: rgba(140, 100, 50, 0.1);
+  /* Light surfaces: soft parchment insets, not black smudges */
+  --surface-inset: rgba(90, 70, 40, 0.07);
+  --surface-inset-strong: rgba(90, 70, 40, 0.11);
+  --surface-row: rgba(90, 70, 40, 0.06);
+  --surface-chip: rgba(90, 70, 40, 0.08);
+  --surface-code: rgba(90, 70, 40, 0.1);
+  --surface-chat-card: rgba(255, 250, 242, 0.95);
+  --surface-rail: rgba(255, 252, 247, 0.94);
+  --overlay-scrim: rgba(40, 30, 20, 0.45);
+  --ember-border: rgba(163, 90, 18, 0.22);
+  --ember-border-mid: rgba(163, 90, 18, 0.32);
+  --ember-border-strong: rgba(163, 90, 18, 0.5);
+  --ember-wash: rgba(163, 90, 18, 0.08);
+  --ember-ring: rgba(163, 90, 18, 0.14);
+  --rubric-card-from: rgba(255, 252, 247, 0.98);
+  --rubric-card-to: rgba(248, 240, 228, 0.92);
+  --prayer-fill-from: rgba(163, 90, 18, 0.08);
+  --prayer-fill-to: rgba(255, 248, 238, 0.95);
+  --prayer-inset: rgba(255, 255, 255, 0.5);
+  --num-grad-from: #d4a85c;
+  --num-grad-to: #a35a12;
+  --cta-grad-from: #d4a85c;
+  --cta-grad-to: #a35a12;
 }
 
 *,
@@ -219,7 +268,7 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--on-ember);
-  background: linear-gradient(180deg, #f0d9a8 0%, #c4a574 100%);
+  background: linear-gradient(180deg, var(--cta-grad-from) 0%, var(--cta-grad-to) 100%);
   border: none;
   border-radius: 999px;
   padding: 0.75rem 1.5rem;
@@ -326,7 +375,7 @@ body {
 
 .theme-toggle:hover {
   color: var(--beam);
-  border-color: rgba(232, 160, 80, 0.45);
+  border-color: var(--ember-border-mid);
 }
 
 .theme-toggle:focus-visible {
@@ -426,8 +475,9 @@ body {
 }
 
 .nav-mode-btn.active {
-  background: rgba(232, 160, 80, 0.18);
+  background: var(--ember-wash);
   color: var(--beam);
+  border-color: var(--ember-border-mid);
 }
 
 .nav-mode-btn:active {
@@ -456,7 +506,7 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow:
-    0 0 0 1px rgba(232, 160, 80, 0.06),
+    0 0 0 1px var(--ember-ring),
     0 12px 40px var(--shadow-card);
 }
 
@@ -539,7 +589,7 @@ body {
   padding: 0.7rem 0.85rem;
   border-radius: 12px;
   border: 1px solid var(--glass-border);
-  background: rgba(0, 0, 0, 0.18);
+  background: var(--surface-row);
   color: inherit;
   cursor: pointer;
   display: flex;
@@ -552,13 +602,13 @@ body {
 
 .journey-card:hover,
 .journey-card:focus-visible {
-  border-color: rgba(232, 160, 80, 0.55);
+  border-color: var(--ember-border-strong);
   outline: none;
 }
 
 .journey-card.active {
-  border-color: rgba(232, 160, 80, 0.8);
-  background: rgba(232, 160, 80, 0.08);
+  border-color: var(--ember-border-strong);
+  background: var(--ember-wash);
 }
 
 .journey-card-top {
@@ -597,8 +647,8 @@ body {
   margin: 0 0 1rem;
   padding: 0.65rem 0.75rem 0.75rem;
   border-radius: 12px;
-  border: 1px solid rgba(232, 160, 80, 0.35);
-  background: rgba(232, 160, 80, 0.06);
+  border: 1px solid var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 .journey-active-label {
@@ -633,7 +683,7 @@ body {
   padding: 0.35rem 0.55rem;
   border-radius: 8px;
   border: 1px solid var(--glass-border);
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--surface-inset);
   color: inherit;
   cursor: pointer;
   max-width: 9.5rem;
@@ -642,7 +692,7 @@ body {
 .journey-stage-chip.active,
 .journey-stage-chip:hover,
 .journey-stage-chip:focus-visible {
-  border-color: rgba(232, 160, 80, 0.7);
+  border-color: var(--ember-border-strong);
   outline: none;
 }
 
@@ -690,14 +740,14 @@ body {
 
 .dna-node-label.active,
 .dna-node-label.entering {
-  border-color: rgba(232, 160, 80, 0.75);
+  border-color: var(--ember-border-strong);
   color: var(--dna-label-active-fg);
   background: var(--dna-label-active-bg);
 }
 
 /* Hub topics — slightly stronger chrome so anchors read as path joints */
 .dna-node-label.anchor {
-  border-color: rgba(232, 160, 80, 0.4);
+  border-color: var(--ember-border-mid);
   font-size: 12px;
   letter-spacing: 0.05em;
   opacity: 0.92;
@@ -773,8 +823,8 @@ body {
 }
 
 .key-chips-arrow:hover:not(:disabled) {
-  border-color: rgba(232, 160, 80, 0.45);
-  background: rgba(232, 160, 80, 0.12);
+  border-color: var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 .key-chips-arrow:disabled {
@@ -822,8 +872,8 @@ body {
 
 .key-chip.active,
 .key-chip:hover {
-  border-color: rgba(232, 160, 80, 0.5);
-  background: rgba(232, 160, 80, 0.1);
+  border-color: var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 .key-chip-label {
@@ -948,8 +998,8 @@ body {
 
 .toc-item:hover,
 .toc-item.active {
-  border-color: rgba(232, 160, 80, 0.4);
-  background: rgba(232, 160, 80, 0.08);
+  border-color: var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 .toc-num {
@@ -1044,13 +1094,13 @@ body {
 
 .spine-chip:hover {
   color: var(--stone-100);
-  border-color: rgba(232, 160, 80, 0.35);
+  border-color: var(--ember-border-mid);
 }
 
 .spine-chip.active {
   color: var(--beam);
-  border-color: rgba(232, 160, 80, 0.55);
-  background: rgba(232, 160, 80, 0.1);
+  border-color: var(--ember-border-strong);
+  background: var(--ember-wash);
 }
 
 .spine-chip-index {
@@ -1097,7 +1147,7 @@ body {
 
 /* Rubric artifact — align steel; denser SOP form (not a thin first-principle card) */
 .chamber-focus.is-rubric .chamber-in-focus {
-  border-color: rgba(232, 160, 80, 0.28);
+  border-color: var(--ember-border);
 }
 
 .chamber-kind-note {
@@ -1106,7 +1156,7 @@ body {
   line-height: 1.45;
   opacity: 0.8;
   color: var(--muted);
-  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  border-left: 2px solid var(--ember-border-mid);
   padding-left: 0.75rem;
 }
 
@@ -1130,7 +1180,7 @@ body {
 .rubric-band-title {
   margin: 0.35rem 0 0.15rem;
   padding: 0 0 0.45rem;
-  border-bottom: 1px solid rgba(232, 160, 80, 0.28);
+  border-bottom: 1px solid var(--ember-border);
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 3.5vw, 1.45rem);
   font-weight: 600;
@@ -1155,14 +1205,10 @@ body {
 
 /* One standard = one card */
 .rubric-standard {
-  border: 1px solid rgba(232, 160, 80, 0.2);
+  border: 1px solid var(--ember-border);
   border-radius: 14px;
-  background: linear-gradient(
-    165deg,
-    rgba(28, 22, 18, 0.72) 0%,
-    rgba(14, 11, 9, 0.55) 100%
-  );
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(165deg, var(--rubric-card-from) 0%, var(--rubric-card-to) 100%);
+  box-shadow: 0 8px 28px var(--shadow-card);
   padding: 0.9rem 0.95rem 1rem;
   display: flex;
   flex-direction: column;
@@ -1175,7 +1221,7 @@ body {
   gap: 0.7rem;
   margin: 0 0 0.15rem;
   padding-bottom: 0.55rem;
-  border-bottom: 1px solid rgba(232, 160, 80, 0.14);
+  border-bottom: 1px solid var(--ember-border);
 }
 
 .rubric-num {
@@ -1187,14 +1233,14 @@ body {
   height: 2rem;
   padding: 0 0.4rem;
   border-radius: 999px;
-  background: linear-gradient(180deg, #f0d9a8, #c4a574);
-  color: #0c0a09;
+  background: linear-gradient(180deg, var(--num-grad-from), var(--num-grad-to));
+  color: var(--on-ember);
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
-  box-shadow: 0 2px 8px rgba(196, 165, 116, 0.35);
+  box-shadow: 0 2px 8px var(--ember-ring);
 }
 
 .rubric-standard-title {
@@ -1228,8 +1274,8 @@ body {
   font-weight: 650;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ember, #e8a050);
-  opacity: 0.9;
+  color: var(--ember);
+  opacity: 0.95;
 }
 
 .chamber-list,
@@ -1249,10 +1295,10 @@ body {
   padding: 0.4rem 0.55rem 0.4rem 1.85rem;
   line-height: 1.45;
   font-size: 0.92rem;
-  color: var(--ink, inherit);
+  color: var(--ink);
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(232, 160, 80, 0.08);
+  background: var(--surface-row);
+  border: 1px solid var(--ember-border);
 }
 
 .rubric-list li::before {
@@ -1263,8 +1309,8 @@ body {
   width: 0.45rem;
   height: 0.45rem;
   border-radius: 999px;
-  background: var(--ember, #e8a050);
-  box-shadow: 0 0 0 3px rgba(232, 160, 80, 0.15);
+  background: var(--ember);
+  box-shadow: 0 0 0 3px var(--ember-ring);
 }
 
 /* Prayer — boxed hold, not another paragraph */
@@ -1272,14 +1318,10 @@ body {
   margin: 0.35rem 0 0.15rem;
   padding: 0.7rem 0.85rem 0.8rem;
   border-radius: 12px;
-  border: 1px solid rgba(232, 160, 80, 0.32);
-  border-left: 3px solid var(--ember, #e8a050);
-  background: linear-gradient(
-    90deg,
-    rgba(232, 160, 80, 0.1) 0%,
-    rgba(18, 14, 12, 0.45) 55%
-  );
-  box-shadow: inset 0 1px 0 rgba(255, 246, 230, 0.04);
+  border: 1px solid var(--ember-border-mid);
+  border-left: 3px solid var(--ember);
+  background: linear-gradient(90deg, var(--prayer-fill-from) 0%, var(--prayer-fill-to) 55%);
+  box-shadow: inset 0 1px 0 var(--prayer-inset);
 }
 
 .rubric-prayer-label {
@@ -1290,7 +1332,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ember, #e8a050);
+  color: var(--ember);
 }
 
 .rubric-prayer-text {
@@ -1299,7 +1341,7 @@ body {
   font-size: 1.05rem;
   font-style: italic;
   line-height: 1.4;
-  color: var(--beam, #f5e6c8);
+  color: var(--beam);
 }
 
 /* Section verse lines → Bible Gateway chips under each hold */
@@ -1335,14 +1377,14 @@ body {
 
 /* Journey path on every station card — sticky top + bottom */
 .journey-stage-rail-bar {
-  border: 1px solid rgba(232, 160, 80, 0.35);
+  border: 1px solid var(--ember-border-mid);
   border-radius: 12px;
-  background: rgba(12, 10, 9, 0.82);
+  background: var(--surface-rail);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   padding: 0.55rem 0.65rem 0.65rem;
   margin: 0 0 0.85rem;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 28px var(--shadow-card);
 }
 
 .journey-stage-rail-bar-top {
@@ -1408,7 +1450,7 @@ body {
 }
 
 .chamber-title:focus-visible {
-  outline: 2px solid rgba(232, 160, 80, 0.55);
+  outline: 2px solid var(--ember-border-strong);
   outline-offset: 4px;
   border-radius: 4px;
 }
@@ -1446,7 +1488,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.04em;
   color: var(--beam);
-  background: rgba(232, 160, 80, 0.08);
+  background: var(--ember-wash);
   border: 1px solid rgba(196, 165, 116, 0.3);
   border-radius: 999px;
   padding: 0.4rem 0.75rem;
@@ -1496,7 +1538,7 @@ body {
   padding: 0;
   border: none;
   cursor: pointer;
-  background: rgba(8, 6, 5, 0.72);
+  background: var(--overlay-scrim);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   pointer-events: auto;
@@ -1518,7 +1560,7 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow:
-    0 0 0 1px rgba(232, 160, 80, 0.06),
+    0 0 0 1px var(--ember-ring),
     0 12px 40px var(--shadow-card);
   pointer-events: auto;
 }
@@ -1582,7 +1624,7 @@ body {
 .about-prologue {
   margin: 0.75rem 0 1rem;
   padding: 0.65rem 0.75rem;
-  border-left: 2px solid rgba(232, 160, 80, 0.4);
+  border-left: 2px solid var(--ember-border-mid);
 }
 
 .about-prologue-line {
@@ -1728,7 +1770,7 @@ body {
 
 .spine-chip-leaf {
   border-style: dashed;
-  border-color: rgba(232, 160, 80, 0.35);
+  border-color: var(--ember-border-mid);
 }
 
 @media (max-width: 768px) {
@@ -1938,7 +1980,7 @@ body {
 
 .chamber-nav-item.active {
   color: var(--beam);
-  background: rgba(232, 160, 80, 0.08);
+  background: var(--ember-wash);
 }
 
 .chamber-index {
@@ -1966,7 +2008,7 @@ body {
   border-radius: 16px;
   padding: clamp(1.5rem, 4vw, 2.5rem);
   backdrop-filter: blur(14px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 60px var(--shadow-card);
 }
 
 .chamber-kicker {
@@ -2010,7 +2052,7 @@ body {
 .chamber-quote {
   margin: 1.5rem 0;
   padding: 1rem 0 1rem 1.25rem;
-  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  border-left: 2px solid var(--ember-border-mid);
   color: var(--stone-200);
 }
 
@@ -2064,22 +2106,22 @@ body {
   padding: 0.75rem 0.9rem;
   border-radius: 10px;
   border: 1px solid var(--glass-border);
-  background: rgba(0, 0, 0, 0.22);
+  background: var(--surface-inset);
   font-size: 1rem;
   line-height: 1.55;
-  color: var(--stone-100);
+  color: var(--ink);
 }
 
 .field-hacks li {
-  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  border-left: 2px solid var(--ember-border-strong);
 }
 
 .prayer-list li {
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.1rem;
-  border-left: 2px solid rgba(196, 165, 116, 0.35);
-  color: var(--stone-200);
+  border-left: 2px solid var(--ember-border-mid);
+  color: var(--beam);
 }
 
 .chamber-verses {
@@ -2107,7 +2149,7 @@ body {
   font-family: var(--font-display);
   font-size: 1rem;
   color: var(--beam);
-  background: rgba(232, 160, 80, 0.06);
+  background: var(--ember-wash);
   border: 1px solid rgba(196, 165, 116, 0.28);
   border-radius: 999px;
   padding: 0.4rem 0.85rem;
@@ -2116,7 +2158,7 @@ body {
 }
 
 .related-link:hover {
-  background: rgba(232, 160, 80, 0.14);
+  background: var(--ember-wash);
   border-color: var(--ember);
 }
 
@@ -2147,14 +2189,14 @@ body {
 .verse-primary {
   color: var(--beam);
   text-decoration: none;
-  border-bottom: 1px solid rgba(240, 217, 168, 0.35);
+  border-bottom: 1px solid var(--ember-border-mid);
   font-family: var(--font-display);
   font-size: 1.05rem;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .verse-primary:hover {
-  color: #fff6e6;
+  color: var(--beam-hot);
   border-bottom-color: var(--ember);
 }
 
@@ -2174,7 +2216,7 @@ body {
 }
 
 .verse-permanent:hover {
-  background: rgba(232, 160, 80, 0.15);
+  background: var(--ember-wash);
   border-color: var(--ember);
   color: var(--ember);
 }
@@ -2182,8 +2224,8 @@ body {
 .verse-etched {
   padding: 0.35rem 0.55rem 0.35rem 0.75rem;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(196, 165, 116, 0.15);
+  background: var(--surface-chip);
+  border: 1px solid var(--glass-border);
 }
 
 .testimony {
@@ -2387,7 +2429,7 @@ body {
 }
 
 .guide-chat-fab {
-  border: 1px solid rgba(232, 160, 80, 0.45);
+  border: 1px solid var(--ember-border-mid);
   background: var(--panel-fill-strong);
   color: var(--beam);
   font-family: var(--font-display);
@@ -2401,8 +2443,8 @@ body {
 }
 
 .guide-chat-fab:hover {
-  border-color: rgba(232, 160, 80, 0.75);
-  background: rgba(232, 160, 80, 0.12);
+  border-color: var(--ember-border-strong);
+  background: var(--ember-wash);
 }
 
 .guide-chat-panel {
@@ -2414,7 +2456,7 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: 14px;
   backdrop-filter: blur(14px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 48px var(--shadow-card);
   overflow: hidden;
 }
 
@@ -2461,7 +2503,7 @@ body {
 }
 
 .guide-chat-banner {
-  background: rgba(232, 160, 80, 0.1);
+  background: var(--ember-wash);
   color: var(--stone-200);
   border-bottom: 1px solid var(--glass-border);
 }
@@ -2516,8 +2558,8 @@ body {
 }
 
 .guide-chat-starters button:hover:not(:disabled) {
-  border-color: rgba(232, 160, 80, 0.45);
-  background: rgba(232, 160, 80, 0.08);
+  border-color: var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 .guide-chat-starters button:disabled {
@@ -2598,7 +2640,7 @@ body {
   padding: 0.75rem 0.85rem 0.85rem;
   border-radius: 12px;
   border: 1px solid var(--glass-border);
-  background: rgba(12, 10, 9, 0.45);
+  background: var(--surface-chat-card);
 }
 
 .guide-mini-card > *:first-child {
@@ -2731,8 +2773,8 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.02em;
   color: var(--beam);
-  background: rgba(232, 160, 80, 0.08);
-  border-color: rgba(232, 160, 80, 0.28);
+  background: var(--ember-wash);
+  border-color: var(--ember-border);
 }
 
 /* Clickable Scripture (external) + Connected truth (open spine, chat stays open) */
@@ -2764,8 +2806,8 @@ a.guide-card-chip-action {
 
 .guide-card-item.is-clickable:hover,
 .guide-card-item.is-clickable:focus-within {
-  border-color: rgba(232, 160, 80, 0.55);
-  background: rgba(232, 160, 80, 0.16);
+  border-color: var(--ember-border-strong);
+  background: var(--ember-wash);
 }
 
 .guide-card-chip-action:focus-visible {
@@ -2776,7 +2818,7 @@ a.guide-card-chip-action {
 .guide-mini-card blockquote {
   margin: 0.45rem 0;
   padding: 0.3rem 0 0.3rem 0.65rem;
-  border-left: 2px solid rgba(232, 160, 80, 0.45);
+  border-left: 2px solid var(--ember-border-mid);
   color: var(--stone-200);
   font-style: italic;
 }
@@ -2796,7 +2838,7 @@ a.guide-card-chip-action {
 .guide-mini-card code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.82em;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--surface-code);
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
@@ -2823,13 +2865,13 @@ a.guide-card-chip-action {
 }
 
 .guide-chat-form textarea:focus {
-  outline: 1px solid rgba(232, 160, 80, 0.55);
-  border-color: rgba(232, 160, 80, 0.4);
+  outline: 1px solid var(--ember-border-strong);
+  border-color: var(--ember-border-mid);
 }
 
 .guide-chat-form button[type='submit'] {
-  border: 1px solid rgba(232, 160, 80, 0.5);
-  background: rgba(232, 160, 80, 0.15);
+  border: 1px solid var(--ember-border-mid);
+  background: var(--ember-wash);
   color: var(--beam);
   font-family: var(--font-display);
   font-size: 1rem;
@@ -2853,4 +2895,90 @@ a.guide-card-chip-action {
   .guide-chat-panel {
     max-height: min(70dvh, calc(100dvh - 4.5rem));
   }
+}
+
+/* —— Light theme quality pass (readability + surface polish) —— */
+[data-theme='light'] body {
+  -webkit-font-smoothing: auto;
+}
+
+[data-theme='light'] .arrival-card,
+[data-theme='light'] .chamber,
+[data-theme='light'] .key-chips-panel,
+[data-theme='light'] .toc-panel,
+[data-theme='light'] .journey-panel,
+[data-theme='light'] .about-overlay .about-panel {
+  box-shadow: 0 12px 36px var(--shadow-card);
+  border-color: var(--glass-border);
+}
+
+[data-theme='light'] .nav-modes {
+  border-bottom: 1px solid var(--glass-border);
+}
+
+[data-theme='light'] .guide-chat-fab {
+  box-shadow: 0 10px 28px var(--shadow-card);
+  border-color: var(--ember-border-mid);
+  background: var(--panel-fill-strong);
+  color: var(--ember);
+}
+
+[data-theme='light'] .guide-chat-panel {
+  background: var(--panel-fill-strong);
+  box-shadow: 0 16px 40px var(--shadow-card);
+}
+
+[data-theme='light'] .guide-chat-md,
+[data-theme='light'] .guide-mini-card {
+  color: var(--ink);
+  box-shadow: 0 2px 10px var(--shadow-card);
+}
+
+[data-theme='light'] .rubric-standard {
+  box-shadow: 0 4px 18px var(--shadow-card);
+}
+
+[data-theme='light'] .rubric-prayer {
+  box-shadow: 0 2px 12px var(--shadow-card);
+}
+
+[data-theme='light'] .verse-etched {
+  background: var(--surface-chip);
+  border-color: var(--ember-border);
+}
+
+[data-theme='light'] .verse-primary {
+  color: var(--ember);
+  border-bottom-color: var(--ember-border-mid);
+}
+
+[data-theme='light'] .verse-primary:hover {
+  color: var(--beam-hot);
+}
+
+[data-theme='light'] .chamber-title,
+[data-theme='light'] .constellation-title,
+[data-theme='light'] .site-title {
+  color: var(--beam);
+}
+
+[data-theme='light'] .site-footer,
+[data-theme='light'] .site-footer-meta {
+  color: var(--muted);
+  opacity: 1;
+}
+
+[data-theme='light'] .experience-footer-stack {
+  background: linear-gradient(
+    0deg,
+    var(--footer-scrim-bot) 0%,
+    var(--footer-scrim-mid) 55%,
+    transparent 100%
+  );
+}
+
+[data-theme='light'] .fallback-atmosphere,
+[data-theme='light'] .scene-root {
+  /* keep DNA soft under parchment */
+  opacity: 0.92;
 }
