@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest'
 import {
   bibleGatewaySearchUrl,
   formatVerseRange,
+  isScriptureCitationLine,
   normalizeRefKey,
+  parseScriptureCitationLine,
   parseScriptureDisplay,
   parseVerseList,
   permanentVerseUrl,
@@ -105,6 +107,38 @@ describe('parseVerseList', () => {
       'Galatians 5:22–23',
       'Galatians 5:25',
     ])
+  })
+})
+
+describe('parseScriptureCitationLine', () => {
+  it('parses parenthetical multi-ref with chapter shorthand', () => {
+    const refs = parseScriptureCitationLine('(Galatians 5:16, 5:24-25)')
+    expect(refs.map((r) => r.display)).toEqual(['Galatians 5:16', 'Galatians 5:24–25'])
+  })
+
+  it('parses mixed books and same-chapter shorthand', () => {
+    const refs = parseScriptureCitationLine('(Ephesians 4:29, 4:31)')
+    expect(refs.map((r) => r.display)).toEqual(['Ephesians 4:29', 'Ephesians 4:31'])
+  })
+
+  it('parses comma-separated full books', () => {
+    const line = '(2 Timothy 1:7, Ephesians 6:16, Philippians 4:6-7)'
+    expect(isScriptureCitationLine(line)).toBe(true)
+    const refs = parseScriptureCitationLine(line)
+    expect(refs.map((r) => r.display)).toEqual([
+      '2 Timothy 1:7',
+      'Ephesians 6:16',
+      'Philippians 4:6–7',
+    ])
+  })
+
+  it('does not treat ordinary prose as a citation line', () => {
+    expect(isScriptureCitationLine('When fear rises:')).toBe(false)
+    expect(
+      isScriptureCitationLine(
+        'Kill the acts of the flesh. Walk in the Spirit. This is the path.',
+      ),
+    ).toBe(false)
   })
 })
 

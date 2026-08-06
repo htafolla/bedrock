@@ -1167,6 +1167,23 @@ body {
   opacity: 0.92;
 }
 
+/* Section verse lines → Bible Gateway chips under each hold */
+.chamber-verse-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0.85rem !important;
+  align-items: center;
+}
+
+.chamber-verse-chips .verse-etched {
+  font-size: 0.88rem;
+}
+
+.chamber-verse-chips .verse-primary {
+  font-size: 0.9rem;
+}
+
 /* Journey path on every station card — sticky top + bottom */
 .journey-stage-rail-bar {
   border: 1px solid rgba(232, 160, 80, 0.35);

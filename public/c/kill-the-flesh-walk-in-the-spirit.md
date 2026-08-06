@@ -10,7 +10,7 @@
 
 Kill the acts of the flesh. Walk in the Spirit. This is the path.
 
-(Galatians 5:16, 5:24-25)
+[Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV) · [Galatians 5:24–25](https://www.biblegateway.com/passage/?search=Galatians+5%3A24-25&version=NIV)
 
 ## Daily standards
 
@@ -25,7 +25,7 @@ The moment a destructive thought appears — name-calling, suspicion, rage, cont
 
 Prayer: “No. I release this to You, Lord.”
 
-(2 Corinthians 10:5, Colossians 3:2)
+[2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Colossians 3:2](https://www.biblegateway.com/passage/?search=Colossians+3%3A2&version=NIV)
 
 ### 2. Combat fear
 
@@ -39,7 +39,7 @@ When fear rises:
 
 Prayer: “God has not given me a spirit of fear, but of power, love, and a sound mind. I hand this to You.”
 
-(2 Timothy 1:7, Ephesians 6:16, Philippians 4:6-7)
+[2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV) · [Ephesians 6:16](https://www.biblegateway.com/passage/?search=Ephesians+6%3A16&version=NIV) · [Philippians 4:6–7](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=NIV)
 
 ### 3. Refuse the acts of the flesh
 
@@ -53,7 +53,7 @@ When the flesh rises:
 
 Prayer: “I refuse this. I will walk in Love.”
 
-(Galatians 5:19-21, Ephesians 4:29, 4:31)
+[Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV) · [Ephesians 4:29](https://www.biblegateway.com/passage/?search=Ephesians+4%3A29&version=NIV) · [Ephesians 4:31](https://www.biblegateway.com/passage/?search=Ephesians+4%3A31&version=NIV)
 
 ### 4. Forgiveness
 
@@ -65,7 +65,7 @@ Forgiveness is how you refuse to keep score and stay free from bitterness.
 
 Prayer: “I forgive. I release this to You, Lord.”
 
-(Matthew 6:14-15, Ephesians 4:32, Colossians 3:13)
+[Matthew 6:14–15](https://www.biblegateway.com/passage/?search=Matthew+6%3A14-15&version=NIV) · [Ephesians 4:32](https://www.biblegateway.com/passage/?search=Ephesians+4%3A32&version=NIV) · [Colossians 3:13](https://www.biblegateway.com/passage/?search=Colossians+3%3A13&version=NIV)
 
 ### 5. Self-control
 
@@ -85,7 +85,7 @@ When the urge rises:
 
 Prayer: “My body is the temple of the Holy Spirit. I choose self-control. Strengthen me.”
 
-(1 Corinthians 6:19-20, Galatians 5:22-23, 1 Corinthians 6:18)
+[1 Corinthians 6:19–20](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A19-20&version=NIV) · [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV) · [1 Corinthians 6:18](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A18&version=NIV)
 
 ### 6. Presence and independent self
 
@@ -101,7 +101,7 @@ When the pull to disappear rises:
 
 Prayer: “Lord, this is where You have me. Help me be present where I am.”
 
-(Colossians 3:23, Galatians 6:4-5, Psalm 16:8, Philippians 2:3-4)
+[Colossians 3:23](https://www.biblegateway.com/passage/?search=Colossians+3%3A23&version=NIV) · [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV) · [Psalm 16:8](https://www.biblegateway.com/passage/?search=Psalm+16%3A8&version=NIV) · [Philippians 2:3–4](https://www.biblegateway.com/passage/?search=Philippians+2%3A3-4&version=NIV)
 
 ### 7. Honest assessment
 
@@ -115,7 +115,7 @@ When distrust rises:
 
 Prayer: “Lord, I do not trust them. Give me peace.”
 
-(Proverbs 4:23, Proverbs 12:22, Ephesians 4:15)
+[Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&version=NIV) · [Proverbs 12:22](https://www.biblegateway.com/passage/?search=Proverbs+12%3A22&version=NIV) · [Ephesians 4:15](https://www.biblegateway.com/passage/?search=Ephesians+4%3A15&version=NIV)
 
 ### 8. Contact and boundaries
 
@@ -140,7 +140,7 @@ When the urge to reach out rises:
 
 Prayer: “I will not use contact to manage pain. Give me restraint.”
 
-(Matthew 5:37, Ecclesiastes 3:1)
+[Matthew 5:37](https://www.biblegateway.com/passage/?search=Matthew+5%3A37&version=NIV) · [Ecclesiastes 3:1](https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A1&version=NIV)
 
 ### 9. Return to your side of the street
 
@@ -156,7 +156,7 @@ When you drift:
 
 Prayer: “Lord, You know what they are doing and what they are thinking. I give them to You.”
 
-(1 Thessalonians 4:11, Galatians 6:4-5, Matthew 7:3)
+[1 Thessalonians 4:11](https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A11&version=NIV) · [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV) · [Matthew 7:3](https://www.biblegateway.com/passage/?search=Matthew+7%3A3&version=NIV)
 
 ### 10. Recurring external pressure
 
@@ -171,7 +171,7 @@ When they do:
 
 Prayer: “Lord, protect my spouse and return their heart to me. I will not compete.”
 
-(Romans 12:17-19)
+[Romans 12:17–19](https://www.biblegateway.com/passage/?search=Romans+12%3A17-19&version=NIV)
 
 ### 11. Operate from strength, not need
 
@@ -187,7 +187,7 @@ When pain or need rises:
 
 Prayer: “My emotional state is mine to manage. It is not dependent on them.”
 
-(Psalm 46:10, Exodus 14:14, 1 Peter 5:7)
+[Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV) · [Exodus 14:14](https://www.biblegateway.com/passage/?search=Exodus+14%3A14&version=NIV) · [1 Peter 5:7](https://www.biblegateway.com/passage/?search=1+Peter+5%3A7&version=NIV)
 
 ### 12. Trust over understanding
 
@@ -203,13 +203,13 @@ When questions and mixed signals rise:
 
 Prayer: “Lord, You know the plans You have for me. Help me trust You.”
 
-(Proverbs 3:5-6, Proverbs 16:9, Jeremiah 29:11)
+[Proverbs 3:5–6](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5-6&version=NIV) · [Proverbs 16:9](https://www.biblegateway.com/passage/?search=Proverbs+16%3A9&version=NIV) · [Jeremiah 29:11](https://www.biblegateway.com/passage/?search=Jeremiah+29%3A11&version=NIV)
 
 ## For men: strength, courage, and leadership
 
 A man is called to lead himself first.
 
-(1 Corinthians 16:13)
+[1 Corinthians 16:13](https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A13&version=NIV)
 
 ### Emotional self-responsibility
 
@@ -219,7 +219,7 @@ Vulnerability that requires another person to regulate you is not strength.
 
 True strength feels the full weight of loss or desire and still governs mouth, actions, and decisions.
 
-(Proverbs 25:28)
+[Proverbs 25:28](https://www.biblegateway.com/passage/?search=Proverbs+25%3A28&version=NIV)
 
 ### Courage
 
@@ -227,7 +227,7 @@ Courage is not the absence of pain.
 
 It is staying steady when the outcome is uncertain and refusing to use pressure or emotional need to force closeness.
 
-(Joshua 1:9)
+[Joshua 1:9](https://www.biblegateway.com/passage/?search=Joshua+1%3A9&version=NIV)
 
 ### Leadership in practice
 
@@ -237,7 +237,7 @@ Consistency under pressure is more persuasive than repeated claims of change.
 
 A man who carries his own emotional load becomes safer to be around.
 
-(Ephesians 5:25, Colossians 3:19)
+[Ephesians 5:25](https://www.biblegateway.com/passage/?search=Ephesians+5%3A25&version=NIV) · [Colossians 3:19](https://www.biblegateway.com/passage/?search=Colossians+3%3A19&version=NIV)
 
 ### Strength that serves
 
@@ -245,7 +245,7 @@ Strength is the capacity to remain kind, clear, and boundaried at the same time.
 
 It refuses both passive waiting and aggressive pursuit.
 
-(Matthew 23:11, 1 Corinthians 16:13-14)
+[Matthew 23:11](https://www.biblegateway.com/passage/?search=Matthew+23%3A11&version=NIV) · [1 Corinthians 16:13–14](https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A13-14&version=NIV)
 
 ## Success measure
 
@@ -253,7 +253,7 @@ Not whether the other person returns or chooses you.
 
 Success is staying in the Spirit and refusing the flesh — one decision at a time.
 
-(Galatians 6:9, James 1:12)
+[Galatians 6:9](https://www.biblegateway.com/passage/?search=Galatians+6%3A9&version=NIV) · [James 1:12](https://www.biblegateway.com/passage/?search=James+1%3A12&version=NIV)
 
 Do better. Be better. Trust God.
 

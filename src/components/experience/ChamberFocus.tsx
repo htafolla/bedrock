@@ -5,6 +5,10 @@ import { VerseLink } from '../VerseLink'
 import { spineNeighbor, spineIndexOf, SPINE_ORDER } from '../../lib/spine'
 import { chamberPath } from '../../lib/path-routing'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
+import {
+  isScriptureCitationLine,
+  parseScriptureCitationLine,
+} from '../../lib/verses'
 import { JourneyStageRail } from './JourneyStageRail'
 
 interface ChamberFocusProps {
@@ -18,7 +22,7 @@ interface ChamberFocusProps {
   onSelectJourneyStage?: (chamberId: string) => void
 }
 
-function renderBlock(block: BodyBlock, key: number) {
+function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
     return (
@@ -46,6 +50,19 @@ function renderBlock(block: BodyBlock, key: number) {
         {block.attribution ? <cite>{block.attribution}</cite> : null}
       </blockquote>
     )
+  }
+  // Rubric section verses: "(Galatians 5:16, 5:24-25)" → Bible Gateway chips
+  if (block.type === 'paragraph' && isScriptureCitationLine(block.text)) {
+    const refs = parseScriptureCitationLine(block.text)
+    if (refs.length > 0) {
+      return (
+        <p key={key} className="chamber-paragraph chamber-verse-chips" aria-label="Scripture">
+          {refs.map((v) => (
+            <VerseLink key={v.display} verse={v} variant="etched" ipfsCid={ipfsCid} />
+          ))}
+        </p>
+      )
+    }
   }
   return (
     <p key={key} className="chamber-paragraph">
@@ -211,7 +228,9 @@ export function ChamberFocus({
             </p>
           ) : null}
           <div className={`chamber-body${isRubric ? ' chamber-body-rubric' : ''}`}>
-            {chamber.body.map((block, i) => renderBlock(block, i))}
+            {chamber.body.map((block, i) =>
+              renderBlock(block, i, document.meta.ipfsCid),
+            )}
           </div>
         </section>
 

@@ -143,3 +143,92 @@ export function formatVerseRange(ref: ScriptureRef): string {
   }
   return `${ref.book} ${ref.chapter}:${ref.verseStart}`
 }
+
+/**
+ * Parse a parenthetical or free-form citation line used under Rubric sections, e.g.
+ * "(Galatians 5:16, 5:24-25)", "(Ephesians 4:29, 4:31)",
+ * "(2 Timothy 1:7, Ephesians 6:16, Philippians 4:6-7)".
+ * Continues book/chapter across comma-separated shorthand.
+ */
+export function parseScriptureCitationLine(raw: string): ScriptureRef[] {
+  let s = raw.trim().replace(/[–—]/g, '-')
+  if (s.startsWith('(') && s.endsWith(')')) {
+    s = s.slice(1, -1).trim()
+  }
+  if (!s) return []
+
+  const refs: ScriptureRef[] = []
+  let book = ''
+  let chapter = 0
+
+  // Tokens: "1 Corinthians 6:19-20" | "Galatians 5:16" | "5:24-25" | "31" (same chapter)
+  const tokenRe =
+    /((?:\d\s*)?[A-Za-z]+(?:\s+[A-Za-z]+)?)\s+(\d+):(\d+(?:-\d+)?)|(\d+):(\d+(?:-\d+)?)|(\d+(?:-\d+)?)/g
+
+  let m: RegExpExecArray | null
+  while ((m = tokenRe.exec(s)) !== null) {
+    let verseStart: number
+    let verseEnd: number | undefined
+
+    if (m[1] != null) {
+      book = m[1].replace(/\s+/g, ' ').trim()
+      chapter = Number(m[2])
+      const range = m[3]
+      const rm = range.match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm || !book) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else if (m[4] != null) {
+      if (!book) continue
+      chapter = Number(m[4])
+      const range = m[5]
+      const rm = range.match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else if (m[6] != null) {
+      if (!book || !chapter) continue
+      const range = m[6]
+      const rm = range.match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else {
+      continue
+    }
+
+    refs.push({
+      display: formatVerseRange({
+        display: '',
+        book,
+        chapter,
+        verseStart,
+        verseEnd,
+      }),
+      book,
+      chapter,
+      verseStart,
+      verseEnd,
+    })
+  }
+
+  return refs
+}
+
+/** True when a body paragraph is only a scripture citation line (optional parens). */
+export function isScriptureCitationLine(text: string): boolean {
+  const t = text.trim()
+  if (!t) return false
+  // Whole line is parenthetical, or bare multi-ref without other prose
+  if (!/^\(.+\)$/.test(t) && !/^(?:(?:\d\s*)?[A-Za-z]|\d)/.test(t)) return false
+  const refs = parseScriptureCitationLine(t)
+  if (refs.length === 0) return false
+  // Reject long prose that happens to contain a verse-like token
+  if (t.length > 160 && refs.length < 2) return false
+  if (/^[A-Za-z]/.test(t.replace(/^\(/, '')) && !/^\(/.test(t) && refs.length === 1) {
+    // Bare "John 3:16" alone is a citation; sentences starting with capital words are not
+    const withoutParens = t.replace(/^\(|\)$/g, '').trim()
+    if (withoutParens.length > refs[0]!.display.length + 8) return false
+  }
+  return true
+}

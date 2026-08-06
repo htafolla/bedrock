@@ -23,6 +23,74 @@ function esc(s) {
     .replace(/"/g, '&quot;')
 }
 
+const BG_PASSAGE = 'https://www.biblegateway.com/passage/'
+const BG_VERSION = 'NIV'
+
+/** Parse parenthetical / multi-ref citation lines (same rules as src/lib/verses.ts). */
+function parseScriptureCitationLine(raw) {
+  let s = String(raw || '')
+    .trim()
+    .replace(/[–—]/g, '-')
+  if (s.startsWith('(') && s.endsWith(')')) s = s.slice(1, -1).trim()
+  if (!s) return []
+  const refs = []
+  let book = ''
+  let chapter = 0
+  const tokenRe =
+    /((?:\d\s*)?[A-Za-z]+(?:\s+[A-Za-z]+)?)\s+(\d+):(\d+(?:-\d+)?)|(\d+):(\d+(?:-\d+)?)|(\d+(?:-\d+)?)/g
+  let m
+  while ((m = tokenRe.exec(s)) !== null) {
+    let verseStart
+    let verseEnd
+    if (m[1] != null) {
+      book = m[1].replace(/\s+/g, ' ').trim()
+      chapter = Number(m[2])
+      const rm = m[3].match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm || !book) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else if (m[4] != null) {
+      if (!book) continue
+      chapter = Number(m[4])
+      const rm = m[5].match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else if (m[6] != null) {
+      if (!book || !chapter) continue
+      const rm = m[6].match(/^(\d+)(?:-(\d+))?$/)
+      if (!rm) continue
+      verseStart = Number(rm[1])
+      verseEnd = rm[2] != null ? Number(rm[2]) : undefined
+    } else continue
+    const display =
+      verseEnd != null
+        ? `${book} ${chapter}:${verseStart}–${verseEnd}`
+        : `${book} ${chapter}:${verseStart}`
+    refs.push({ display, book, chapter, verseStart, verseEnd })
+  }
+  return refs
+}
+
+function isScriptureCitationLine(text) {
+  const t = String(text || '').trim()
+  if (!t) return false
+  if (!/^\(.+\)$/.test(t) && !/^(?:(?:\d\s*)?[A-Za-z]|\d)/.test(t)) return false
+  const refs = parseScriptureCitationLine(t)
+  if (refs.length === 0) return false
+  if (t.length > 160 && refs.length < 2) return false
+  return true
+}
+
+function bibleGatewayHref(ref) {
+  const search =
+    ref.verseEnd != null && ref.verseEnd !== ref.verseStart
+      ? `${ref.book} ${ref.chapter}:${ref.verseStart}-${ref.verseEnd}`
+      : `${ref.book} ${ref.chapter}:${ref.verseStart}`
+  const params = new URLSearchParams({ search, version: BG_VERSION })
+  return `${BG_PASSAGE}?${params.toString()}`
+}
+
 /** Render body blocks as readable markdown (headings, lists, paragraphs). */
 function bodyToMarkdown(body) {
   const lines = []
@@ -36,6 +104,16 @@ function bodyToMarkdown(body) {
     } else if (b.type === 'quote') {
       lines.push(`> ${b.text}`, '')
     } else if (b.type === 'paragraph') {
+      if (isScriptureCitationLine(b.text)) {
+        const refs = parseScriptureCitationLine(b.text)
+        if (refs.length) {
+          lines.push(
+            refs.map((r) => `[${r.display}](${bibleGatewayHref(r)})`).join(' · '),
+            '',
+          )
+          continue
+        }
+      }
       lines.push(b.text, '')
     }
   }
@@ -133,6 +211,18 @@ function bodyToHtml(body) {
         return `<blockquote><p>${esc(b.text)}</p></blockquote>`
       }
       if (b.type === 'paragraph') {
+        if (isScriptureCitationLine(b.text)) {
+          const refs = parseScriptureCitationLine(b.text)
+          if (refs.length) {
+            const chips = refs
+              .map(
+                (r) =>
+                  `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
+              )
+              .join('\n')
+            return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
+          }
+        }
         return `<p>${esc(b.text)}</p>`
       }
       return ''
@@ -219,6 +309,9 @@ function chamberHtml(c, meta) {
     .body-list { margin:.2rem 0 .85rem; padding-left:1.35rem; list-style: disc; }
     .body-list li { margin:.35rem 0; line-height:1.5; padding-left:.15rem; }
     .card p { margin:.45rem 0 .65rem; line-height:1.55; }
+    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.45rem; margin:.35rem 0 .85rem; }
+    .verse-chip { display:inline-flex; align-items:center; padding:.35rem .7rem; border-radius:999px; border:1px solid var(--border); background:rgba(0,0,0,.28); color:var(--beam); text-decoration:none; font-size:.88rem; line-height:1.2; }
+    .verse-chip:hover { border-color:var(--ember); color:#fff6e6; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }

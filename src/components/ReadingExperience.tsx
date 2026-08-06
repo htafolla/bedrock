@@ -4,13 +4,16 @@ import { scrollExperienceToTop } from '../lib/scroll-top'
 import { ChamberNav } from './ChamberNav'
 import { VerseLink } from './VerseLink'
 import { SealedTestimony } from './SealedTestimony'
-
+import {
+  isScriptureCitationLine,
+  parseScriptureCitationLine,
+} from '../lib/verses'
 
 interface ReadingExperienceProps {
   document: BedrockDocument
 }
 
-function renderBlock(block: BodyBlock, key: number) {
+function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
     return (
@@ -35,6 +38,18 @@ function renderBlock(block: BodyBlock, key: number) {
         {block.attribution ? <cite>{block.attribution}</cite> : null}
       </blockquote>
     )
+  }
+  if (block.type === 'paragraph' && isScriptureCitationLine(block.text)) {
+    const refs = parseScriptureCitationLine(block.text)
+    if (refs.length > 0) {
+      return (
+        <p key={key} className="chamber-paragraph chamber-verse-chips" aria-label="Scripture">
+          {refs.map((v) => (
+            <VerseLink key={v.display} verse={v} variant="etched" ipfsCid={ipfsCid} />
+          ))}
+        </p>
+      )
+    }
   }
   return (
     <p key={key} className="chamber-paragraph">
@@ -71,7 +86,7 @@ function ChamberView({
           Truth
         </h3>
         <div className="chamber-body">
-          {chamber.body.map((block, i) => renderBlock(block, i))}
+          {chamber.body.map((block, i) => renderBlock(block, i, ipfsCid))}
         </div>
       </section>
 
