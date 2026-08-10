@@ -366,11 +366,14 @@ function chamberHtml(c, meta) {
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
-  <meta property="og:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;title=${encodeURIComponent(c.title).replace(/'/g, '%27')}&amp;subtitle=${encodeURIComponent(c.summary).replace(/'/g, '%27')}" />
+  <meta property="og:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;v=3" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-  <meta name="twitter:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;title=${encodeURIComponent(c.title).replace(/'/g, '%27')}&amp;subtitle=${encodeURIComponent(c.summary).replace(/'/g, '%27')}" />
+  <meta name="twitter:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;v=3" />
   <link rel="alternate" type="text/markdown" href="${ORIGIN}/c/${esc(c.id)}.md" title="Markdown" />
   <script type="application/ld+json">
   ${JSON.stringify({
@@ -381,7 +384,7 @@ function chamberHtml(c, meta) {
     url: `${ORIGIN}/c/${c.id}`,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
-    image: `${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&id=${encodeURIComponent(c.id)}`,
+    image: `${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&id=${encodeURIComponent(c.id)}&v=3`,
     inLanguage: 'en',
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
   })}
@@ -548,24 +551,13 @@ function buildLlmsFull(doc) {
   return parts.join('\n')
 }
 
+/** Short stable OG URL — server resolves title; PNG for X/Facebook. */
 function journeyOgImageUrl(j) {
-  const q = new URLSearchParams({
-    layer: 'path',
-    id: j.id,
-    title: String(j.title || '').slice(0, 120),
-    subtitle: String(j.summary || '').slice(0, 160),
-  })
-  return `${ORIGIN}/api/og?${q.toString()}`
+  return `${ORIGIN}/api/og?layer=path&id=${encodeURIComponent(j.id)}&v=3`
 }
 
 function doorOgImageUrl(k) {
-  const q = new URLSearchParams({
-    layer: 'door',
-    id: k.id,
-    title: String(k.label || '').slice(0, 120),
-    subtitle: String(k.hint || '').slice(0, 160),
-  })
-  return `${ORIGIN}/api/og?${q.toString()}`
+  return `${ORIGIN}/api/og?layer=door&id=${encodeURIComponent(k.id)}&v=3`
 }
 
 function doorHtml(k) {
@@ -599,6 +591,7 @@ function doorHtml(k) {
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/k/${esc(k.id)}" />
   <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -706,6 +699,7 @@ function journeyHtml(j) {
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/j/${esc(j.id)}" />
   <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />

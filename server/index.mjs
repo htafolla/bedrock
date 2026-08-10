@@ -41,6 +41,7 @@ import {
   formatJourneyContextLine,
   journeysForChamber,
 } from './journeys.mjs'
+import sharp from 'sharp'
 import { buildOgSvg } from './og-card.mjs'
 import {
   initTelemetryStore,
@@ -301,11 +302,11 @@ function createApp() {
   const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
 
   /**
-   * Dynamic social / Open Graph card (SVG 1200×630).
-   * ?layer=door|station|path|standard&id=&title=&subtitle=
-   * Resolves title/summary from chambers / journeys when id is known.
+   * Dynamic social / Open Graph card (1200×630 PNG — X/Facebook reject SVG).
+   * ?layer=door|station|path|standard&id=  (title/subtitle resolved server-side)
+   * ?format=svg for debug. &v= cache-bust.
    */
-  app.get('/api/og', (req, res) => {
+  app.get('/api/og', async (req, res) => {
     const layerRaw = String(req.query.layer || 'station').toLowerCase()
     const layer = ['door', 'station', 'path', 'standard'].includes(layerRaw)
       ? layerRaw
@@ -313,6 +314,7 @@ function createApp() {
     const id = String(req.query.id || '').trim()
     let title = String(req.query.title || '').trim()
     let subtitle = String(req.query.subtitle || '').trim()
+    const format = String(req.query.format || 'png').toLowerCase()
 
     if (layer === 'path' && id) {
       const j = getJourney(id)
@@ -326,8 +328,10 @@ function createApp() {
         if (!title) title = c.title
         if (!subtitle) subtitle = c.summary
       }
-    } else if (layer === 'door' && !title) {
-      title = id ? id.replace(/^key-/, '').replace(/-/g, ' ') : 'Keys'
+    } else if (layer === 'door' && id) {
+      // Prefer title/subtitle from query; id alone → readable label
+      if (!title) title = id.replace(/^key-/, '').replace(/-/g, ' ')
+      if (!subtitle) subtitle = 'Storm key · Bedrock'
     }
 
     if (!title) {
@@ -337,7 +341,7 @@ function createApp() {
           : layer === 'path'
             ? 'Bedrock Path'
             : layer === 'door'
-              ? 'Bedrock Door'
+              ? 'Bedrock Key'
               : 'Bedrock'
     }
     if (!subtitle) {
@@ -352,9 +356,29 @@ function createApp() {
       subtitle,
       motto: 'Do Better. Be Better. Trust God.',
     })
-    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
-    res.setHeader('Cache-Control', 'public, max-age=3600')
-    res.send(svg)
+
+    res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800')
+
+    if (format === 'svg') {
+      res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
+      res.send(svg)
+      return
+    }
+
+    // X (Twitter) + Facebook require raster images (PNG/JPEG/WebP) — not SVG
+    try {
+      const png = await sharp(Buffer.from(svg))
+        .resize(1200, 630, { fit: 'fill' })
+        .png({ compressionLevel: 8 })
+        .toBuffer()
+      res.setHeader('Content-Type', 'image/png')
+      res.setHeader('Content-Length', String(png.length))
+      res.send(png)
+    } catch (err) {
+      console.error('[og] PNG render failed — falling back to SVG', err)
+      res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
+      res.send(svg)
+    }
   })
 
   app.get('/api/health', (_req, res) => {

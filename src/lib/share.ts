@@ -49,7 +49,10 @@ export function layerLabel(layer: ShareLayer): string {
   }
 }
 
-/** Content-specific OG card (server SVG). */
+/**
+ * Content-specific OG card (server PNG — X/Facebook do not show SVG).
+ * Short id-only URL when possible so crawlers get a stable image URL.
+ */
 export function ogImageUrl(params: {
   layer: ShareLayer
   id?: string
@@ -58,9 +61,14 @@ export function ogImageUrl(params: {
 }): string {
   const q = new URLSearchParams()
   q.set('layer', params.layer)
-  if (params.id) q.set('id', params.id)
-  if (params.title) q.set('title', params.title.slice(0, 120))
-  if (params.subtitle) q.set('subtitle', params.subtitle.slice(0, 160))
+  if (params.id) {
+    q.set('id', params.id)
+  } else {
+    if (params.title) q.set('title', params.title.slice(0, 120))
+    if (params.subtitle) q.set('subtitle', params.subtitle.slice(0, 160))
+  }
+  // Bump when card format changes (SVG→PNG) so X re-fetches
+  q.set('v', '3')
   return `${SITE_ORIGIN}/api/og?${q.toString()}`
 }
 

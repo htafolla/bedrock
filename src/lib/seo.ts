@@ -27,31 +27,19 @@ export function doorCanonicalUrl(keyId: string): string {
 /** Path layer OG card for social previews. */
 export function journeyOgImageUrl(input: {
   journeyId: string
-  title: string
-  summary: string
+  title?: string
+  summary?: string
 }): string {
-  const q = new URLSearchParams({
-    layer: 'path',
-    id: input.journeyId,
-    title: input.title.slice(0, 120),
-    subtitle: input.summary.slice(0, 160),
-  })
-  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+  return contentOgImageUrl('path', input.journeyId)
 }
 
 /** Door (Keys) layer OG card for social previews. */
 export function doorOgImageUrl(input: {
   keyId: string
-  label: string
-  hint: string
+  label?: string
+  hint?: string
 }): string {
-  const q = new URLSearchParams({
-    layer: 'door',
-    id: input.keyId,
-    title: input.label.slice(0, 120),
-    subtitle: input.hint.slice(0, 160),
-  })
-  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+  return contentOgImageUrl('door', input.keyId)
 }
 
 export const DEFAULT_TITLE = 'Bedrock — Do Better. Be Better. Trust God.'
@@ -194,16 +182,22 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
   }
 }
 
+/**
+ * Content OG card URL (PNG via /api/og — X/Facebook do not unfurl SVG).
+ * Prefer short id-only query so crawlers get a stable, short image URL.
+ * Bump `v` when card format changes so X re-fetches.
+ */
+export const OG_CARD_VERSION = '3'
+
+export function contentOgImageUrl(layer: 'door' | 'station' | 'path' | 'standard', id: string): string {
+  const q = new URLSearchParams({ layer, id, v: OG_CARD_VERSION })
+  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+}
+
 /** Per-station / standard OG card for social previews. */
 export function chamberOgImageUrl(chamber: Chamber): string {
   const layer = chamber.kind === 'rubric' ? 'standard' : 'station'
-  const q = new URLSearchParams({
-    layer,
-    id: chamber.id,
-    title: chamber.title.slice(0, 120),
-    subtitle: chamber.summary.slice(0, 160),
-  })
-  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+  return contentOgImageUrl(layer, chamber.id)
 }
 
 export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayload {
@@ -310,7 +304,13 @@ export function applySeo(payload: SeoPayload): void {
     'og:image:alt',
     "Bedrock — Do Better. Be Better. Trust God. A hitchhiker's guide for the storm.",
   )
-  upsertMeta('property', 'og:image:type', 'image/jpeg')
+  // Content cards are PNG from /api/og; home hero is JPEG
+  const ogType = payload.ogImage.includes('/api/og')
+    ? 'image/png'
+    : payload.ogImage.includes('.png')
+      ? 'image/png'
+      : 'image/jpeg'
+  upsertMeta('property', 'og:image:type', ogType)
   upsertMeta('property', 'og:image:width', '1200')
   upsertMeta('property', 'og:image:height', '630')
 
