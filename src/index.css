@@ -1164,6 +1164,78 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* Depth ladder: Door · Station · Path · Standard */
+.depth-ladder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.45rem;
+  margin: 0;
+  padding: 0.35rem 0.75rem 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.depth-step {
+  opacity: 0.55;
+  font-weight: 600;
+}
+
+.depth-step.active {
+  opacity: 1;
+  color: var(--ember);
+}
+
+.depth-sep {
+  opacity: 0.35;
+  font-weight: 400;
+}
+
+/* Rubric depth controls — Field card first; holds opt-in */
+.rubric-depth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.15rem 0 0.35rem;
+  justify-content: center;
+}
+
+.rubric-depth-btn {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--surface-row);
+  color: var(--beam);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.rubric-depth-btn.primary {
+  border-color: var(--ember-border-mid);
+  background: linear-gradient(180deg, var(--cta-grad-from), var(--cta-grad-to));
+  color: var(--on-ember);
+  font-weight: 600;
+}
+
+.rubric-depth-btn:hover,
+.rubric-depth-btn:focus-visible {
+  border-color: var(--ember);
+  outline: none;
+}
+
+.rubric-depth-btn.primary:hover,
+.rubric-depth-btn.primary:focus-visible {
+  filter: brightness(1.05);
+}
+
 /* —— Rubric SOP: scannable bands + numbered cards + boxed prayer —— */
 .chamber-body-rubric {
   display: flex;

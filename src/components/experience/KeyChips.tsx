@@ -42,10 +42,10 @@ function ChipButton({
 
 /** Shared header copy — keep desktop + mobile aligned. */
 export const KEYS_BLURB =
-  'Tap what hits hardest. Opens one first principle under fire. Need a multi-step path (they left, death, addiction)? Use the Journeys tab.'
+  'Door: tap what hits hardest → one station under fire. Path (multi-step): Journeys. Full atlas: Contents. Standard: Kill the Flesh (Contents or mind-war path).'
 
 const KEYS_BLURB_MOBILE =
-  'Three doors at a time — swipe or use arrows. Tap a door to open it. Paths: Journeys. Full list: Contents.'
+  'Door: three at a time. Tap to open a station. Path: Journeys. Atlas: Contents.'
 
 /** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {

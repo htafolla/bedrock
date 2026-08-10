@@ -223,6 +223,39 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     scrollExperienceToTop()
   }, [leaveAbout])
 
+  /** Rubric Field card → Battlefield of the mind journey (depth ladder: Path). */
+  const openMindPath = useCallback(() => {
+    const j = getJourney('battlefield-of-the-mind')
+    if (!j) return
+    trackEvent('open_chamber', {
+      chamberId: j.doorChamberId,
+      source: 'rubric-mind-path',
+      nav: 'journeys',
+      journeyId: j.id,
+    })
+    setActiveJourneyId(j.id)
+    setNavMode('journeys')
+    openChamber(j.doorChamberId)
+    scrollExperienceToTop()
+  }, [openChamber, setNavMode])
+
+  const isRubricOpen =
+    state.mode === 'chamber' && activeChamber?.kind === 'rubric'
+  const depthLayer: 'door' | 'station' | 'path' | 'standard' | null =
+    state.mode === 'arrival' || navMode === 'about'
+      ? null
+      : isRubricOpen
+        ? 'standard'
+        : state.mode === 'chamber'
+          ? activeJourney
+            ? 'path'
+            : 'station'
+          : navMode === 'journeys'
+            ? 'path'
+            : navMode === 'toc'
+              ? 'station'
+              : 'door'
+
   return (
     <div className={`experience mode-${state.mode} nav-${navMode}`}>
       <SeoHead document={document} chamber={state.mode === 'chamber' ? activeChamber : null} />
@@ -290,6 +323,31 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               onToggleTheme={toggleTheme}
               onHome={goHome}
             />
+            {depthLayer ? (
+              <p className="depth-ladder" aria-label="How Bedrock is layered">
+                <span className={depthLayer === 'door' ? 'depth-step active' : 'depth-step'}>
+                  Door
+                </span>
+                <span className="depth-sep" aria-hidden>
+                  ·
+                </span>
+                <span className={depthLayer === 'station' ? 'depth-step active' : 'depth-step'}>
+                  Station
+                </span>
+                <span className="depth-sep" aria-hidden>
+                  ·
+                </span>
+                <span className={depthLayer === 'path' ? 'depth-step active' : 'depth-step'}>
+                  Path
+                </span>
+                <span className="depth-sep" aria-hidden>
+                  ·
+                </span>
+                <span className={depthLayer === 'standard' ? 'depth-step active' : 'depth-step'}>
+                  Standard
+                </span>
+              </p>
+            ) : null}
 
             <div className="experience-main">
               {state.mode === 'constellation' && (navMode === 'keys' || navMode === 'map') ? (
@@ -337,6 +395,9 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                     activeJourney
                       ? (chamberId) => selectChamber(chamberId, 'journey-stage', activeJourney.id)
                       : undefined
+                  }
+                  onOpenMindPath={
+                    activeChamber.kind === 'rubric' ? openMindPath : undefined
                   }
                 />
               ) : null}

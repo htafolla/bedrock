@@ -60,8 +60,8 @@ export function JourneyPanel({
         <p className="constellation-kicker">Journeys</p>
         <h2 className="constellation-title">What path are you on?</h2>
         <p className="constellation-blurb">
-          Multi-step walks when one door is not enough. Tap a journey to start. Death and leave are
-          different paths. The Rubric lives near the end of several walks.
+          Path: multi-step walks when one door is not enough. Death and leave are different. Mind
+          war: Battlefield of the mind. Steel SOP: Kill the Flesh on that path and on Contents.
         </p>
       </header>
 

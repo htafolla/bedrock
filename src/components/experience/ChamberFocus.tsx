@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../../types/content'
 import type { Journey } from '../../types/journey'
 import { VerseLink } from '../VerseLink'
@@ -20,6 +20,8 @@ interface ChamberFocusProps {
   /** When set, path rail sticks to top + bottom of this station card */
   journey?: Journey | null
   onSelectJourneyStage?: (chamberId: string) => void
+  /** Rubric Field card → Battlefield of the mind journey */
+  onOpenMindPath?: () => void
 }
 
 const PRAYER_RE = /^Prayer:\s*/i
@@ -97,23 +99,13 @@ function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
   )
 }
 
-/**
- * Group flat body blocks into scannable major sections + numbered standard cards.
- * h2 = major band; h3 = standard card; prayer/list/verse styled inside.
- */
-function RubricBody({
-  blocks,
-  ipfsCid,
-}: {
-  blocks: BodyBlock[]
-  ipfsCid?: string | null
-}) {
-  type Card = { title: string; blocks: BodyBlock[] }
-  type Band = { title: string | null; intro: BodyBlock[]; cards: Card[] }
+type RubricCard = { title: string; blocks: BodyBlock[] }
+type RubricBand = { title: string | null; intro: BodyBlock[]; cards: RubricCard[] }
 
-  const bands: Band[] = []
-  let band: Band = { title: null, intro: [], cards: [] }
-  let card: Card | null = null
+function parseRubricBands(blocks: BodyBlock[]): RubricBand[] {
+  const bands: RubricBand[] = []
+  let band: RubricBand = { title: null, intro: [], cards: [] }
+  let card: RubricCard | null = null
 
   const flushCard = () => {
     if (card) {
@@ -144,43 +136,99 @@ function RubricBody({
     else band.intro.push(b)
   }
   flushBand()
+  return bands
+}
+
+function isFieldCardBand(title: string | null): boolean {
+  return (title ?? '').trim().toLowerCase() === 'field card'
+}
+
+function renderRubricBand(
+  sec: RubricBand,
+  si: number,
+  ipfsCid?: string | null,
+) {
+  return (
+    <section key={`band-${si}-${sec.title ?? 'open'}`} className="rubric-band">
+      {sec.title ? <h2 className="rubric-band-title">{sec.title}</h2> : null}
+      {sec.intro.length > 0 ? (
+        <div className="rubric-band-intro">
+          {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid))}
+        </div>
+      ) : null}
+      {sec.cards.map((c, ci) => {
+        const { num, label } = splitNumberedTitle(c.title)
+        return (
+          <article
+            key={`card-${ci}-${c.title}`}
+            className="rubric-standard"
+            aria-labelledby={`rubric-std-${si}-${ci}`}
+          >
+            <header className="rubric-standard-head">
+              {num ? (
+                <span className="rubric-num" aria-hidden>
+                  {num}
+                </span>
+              ) : null}
+              <h3 id={`rubric-std-${si}-${ci}`} className="rubric-standard-title">
+                {label}
+              </h3>
+            </header>
+            <div className="rubric-standard-body">
+              {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid))}
+            </div>
+          </article>
+        )
+      })}
+    </section>
+  )
+}
+
+/**
+ * Field card always open (common steel).
+ * Holds / For men / Success collapsed by default — depth is opt-in.
+ */
+function RubricBody({
+  blocks,
+  ipfsCid,
+  onOpenMindPath,
+}: {
+  blocks: BodyBlock[]
+  ipfsCid?: string | null
+  onOpenMindPath?: () => void
+}) {
+  const [showDepth, setShowDepth] = useState(false)
+  const bands = useMemo(() => parseRubricBands(blocks), [blocks])
+  const fieldBands = bands.filter((b) => isFieldCardBand(b.title))
+  const depthBands = bands.filter((b) => !isFieldCardBand(b.title))
+  const surface = fieldBands.length > 0 ? fieldBands : bands.slice(0, 1)
+  const depth = fieldBands.length > 0 ? depthBands : bands.slice(1)
 
   return (
     <div className="chamber-body chamber-body-rubric">
-      {bands.map((sec, si) => (
-        <section key={`band-${si}-${sec.title ?? 'open'}`} className="rubric-band">
-          {sec.title ? <h2 className="rubric-band-title">{sec.title}</h2> : null}
-          {sec.intro.length > 0 ? (
-            <div className="rubric-band-intro">
-              {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid))}
-            </div>
-          ) : null}
-          {sec.cards.map((c, ci) => {
-            const { num, label } = splitNumberedTitle(c.title)
-            return (
-              <article
-                key={`card-${ci}-${c.title}`}
-                className="rubric-standard"
-                aria-labelledby={`rubric-std-${si}-${ci}`}
-              >
-                <header className="rubric-standard-head">
-                  {num ? (
-                    <span className="rubric-num" aria-hidden>
-                      {num}
-                    </span>
-                  ) : null}
-                  <h3 id={`rubric-std-${si}-${ci}`} className="rubric-standard-title">
-                    {label}
-                  </h3>
-                </header>
-                <div className="rubric-standard-body">
-                  {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid))}
-                </div>
-              </article>
-            )
-          })}
-        </section>
-      ))}
+      {surface.map((sec, si) => renderRubricBand(sec, si, ipfsCid))}
+
+      <div className="rubric-depth-actions">
+        {onOpenMindPath ? (
+          <button type="button" className="rubric-depth-btn primary" onClick={onOpenMindPath}>
+            Mind war path →
+          </button>
+        ) : null}
+        {depth.length > 0 ? (
+          <button
+            type="button"
+            className="rubric-depth-btn"
+            aria-expanded={showDepth}
+            onClick={() => setShowDepth((v) => !v)}
+          >
+            {showDepth ? 'Hide full holds' : 'Show full holds'}
+          </button>
+        ) : null}
+      </div>
+
+      {showDepth
+        ? depth.map((sec, si) => renderRubricBand(sec, si + surface.length, ipfsCid))
+        : null}
     </div>
   )
 }
@@ -193,6 +241,7 @@ export function ChamberFocus({
   onSpineStep,
   journey = null,
   onSelectJourneyStage,
+  onOpenMindPath,
 }: ChamberFocusProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -326,8 +375,8 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Rubric — field card first (common steel), then holds when you need the map. Mind war
-              depth: Journeys → Battlefield of the mind.
+              Standard — field card first. Full holds on demand. Mind war path when the battle is
+              inside.
             </p>
           ) : null}
         </header>
@@ -338,11 +387,15 @@ export function ChamberFocus({
           </h3>
           {isRubric ? (
             <p className="field-layer-hint">
-              Field card · holds 1–14 · for men · success. Read the card; open holds under fire.
+              Read the field card. Open full holds only if you need the map.
             </p>
           ) : null}
           {isRubric ? (
-            <RubricBody blocks={chamber.body} ipfsCid={document.meta.ipfsCid} />
+            <RubricBody
+              blocks={chamber.body}
+              ipfsCid={document.meta.ipfsCid}
+              onOpenMindPath={onOpenMindPath}
+            />
           ) : (
             <div className="chamber-body">
               {chamber.body.map((block, i) =>
