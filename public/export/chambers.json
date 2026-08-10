@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 76,
-    "exportedAt": "2026-08-10T12:04:58.124Z",
+    "exportedAt": "2026-08-10T12:16:24.499Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -805,7 +805,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "2. Refuse investigation mode"
+          "text": "2. Refuse investigation"
         },
         {
           "type": "paragraph",
@@ -813,17 +813,17 @@
         },
         {
           "type": "paragraph",
-          "text": "This mode feels like protection. It rarely produces peace. It keeps the body and mind on high alert."
+          "text": "Investigation feels like protection. It rarely produces peace. It keeps the body and mind on high alert."
         },
         {
           "type": "paragraph",
-          "text": "When Investigation Mode starts:"
+          "text": "When investigation starts:"
         },
         {
           "type": "list",
           "items": [
             "Notice it.",
-            "Name it: “This is investigation mode.”",
+            "Name it: “This is investigation.”",
             "Refuse to follow every lead.",
             "Do not turn every open question into a case that must be solved right now."
           ]
@@ -839,7 +839,41 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "3. Combat fear"
+          "text": "3. Refuse condemnation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Another battle of the mind is the condemning voice — the permanent prosecutor inside. It stacks shame, rehearses failure, and calls self-hate holiness. It freezes instead of freeing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Conviction from the Spirit is specific and leads to life: name what is true, confess, change. Condemnation is vague or endless; it keeps you under a sentence with no open door."
+        },
+        {
+          "type": "paragraph",
+          "text": "When condemnation rises:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Notice it.",
+            "Name it: “This is condemnation — not the Holy Spirit.”",
+            "Own what is real once. Do not camp in the loop.",
+            "Receive cleansing and take one free, obedient step."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “There is no condemnation in Christ Jesus. I refuse the accuser’s voice. Cleanse me and raise me.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(Romans 8:1, Revelation 12:10, 1 John 1:9, 2 Corinthians 7:10)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "4. Combat fear"
         },
         {
           "type": "paragraph",
@@ -868,7 +902,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "4. Refuse the acts of the flesh"
+          "text": "5. Refuse the acts of the flesh"
         },
         {
           "type": "paragraph",
@@ -897,7 +931,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "5. Forgiveness"
+          "text": "6. Forgiveness"
         },
         {
           "type": "paragraph",
@@ -922,7 +956,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "6. Self-control"
+          "text": "7. Self-control"
         },
         {
           "type": "paragraph",
@@ -963,7 +997,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "7. Presence and independent self"
+          "text": "8. Presence and independent self"
         },
         {
           "type": "paragraph",
@@ -996,7 +1030,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "8. Honest assessment"
+          "text": "9. Honest assessment"
         },
         {
           "type": "paragraph",
@@ -1025,7 +1059,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "9. Contact and boundaries"
+          "text": "10. Contact and boundaries"
         },
         {
           "type": "paragraph",
@@ -1075,7 +1109,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "10. Return to your side of the street"
+          "text": "11. Return to your side of the street"
         },
         {
           "type": "paragraph",
@@ -1108,7 +1142,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "11. Recurring external pressure"
+          "text": "12. Recurring external pressure"
         },
         {
           "type": "paragraph",
@@ -1138,7 +1172,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "12. Operate from strength, not need"
+          "text": "13. Operate from strength, not need"
         },
         {
           "type": "paragraph",
@@ -1171,7 +1205,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "13. Trust over understanding"
+          "text": "14. Trust over understanding"
         },
         {
           "type": "paragraph",
@@ -1349,6 +1383,30 @@
           "book": "Romans",
           "chapter": 12,
           "verseStart": 2
+        },
+        {
+          "display": "Romans 8:1",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 1
+        },
+        {
+          "display": "Revelation 12:10",
+          "book": "Revelation",
+          "chapter": 12,
+          "verseStart": 10
+        },
+        {
+          "display": "1 John 1:9",
+          "book": "1 John",
+          "chapter": 1,
+          "verseStart": 9
+        },
+        {
+          "display": "2 Corinthians 7:10",
+          "book": "2 Corinthians",
+          "chapter": 7,
+          "verseStart": 10
         },
         {
           "display": "2 Timothy 1:7",
@@ -1580,11 +1638,11 @@
       ],
       "hacks": [
         "Thought capture: stop, name it, refuse to feed it, submit it to Christ. “No. I release this to You, Lord.”",
-        "Refuse investigation mode: notice it, name it, refuse every lead. Do not turn every open question into a case that must be solved right now.",
-        "Success is not whether they return or choose you. Success is staying in the Spirit and refusing the flesh — one decision at a time."
+        "Refuse investigation: notice the evidence-hunt, name it, refuse every lead. Do not turn every open question into a case that must be solved right now.",
+        "Refuse condemnation: name the accuser’s voice. Conviction leads to life; condemnation freezes. Own what is real once, receive cleansing, take one free step."
       ],
       "prayers": [
-        "Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I refuse investigation mode. I hand fear, contact, and outcomes to You. Amen."
+        "Father, I take every thought captive. I refuse investigation and condemnation. I release uncertainty and shame into Your hands. Amen."
       ],
       "related": [
         "walk-by-the-spirit",
