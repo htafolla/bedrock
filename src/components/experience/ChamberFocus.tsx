@@ -11,7 +11,7 @@ import {
 } from '../../lib/verses'
 import { JourneyStageRail } from './JourneyStageRail'
 import { ShareMenu } from '../ShareMenu'
-import { buildStationShare } from '../../lib/share'
+import { buildPathShare, buildStationShare } from '../../lib/share'
 
 interface ChamberFocusProps {
   document: BedrockDocument
@@ -257,12 +257,14 @@ export function ChamberFocus({
   const onPath = stageIdx >= 0
   const showJourneyRail = Boolean(journey && onSelectJourneyStage)
   const isRubric = chamber.kind === 'rubric'
-  const journeyPrev =
-    journey && stageIdx > 0 ? journey.stages[stageIdx - 1]?.chamberId ?? null : null
-  const journeyNext =
+  const journeyPrevStage =
+    journey && stageIdx > 0 ? journey.stages[stageIdx - 1] ?? null : null
+  const journeyNextStage =
     journey && stageIdx >= 0 && stageIdx < journey.stages.length - 1
-      ? journey.stages[stageIdx + 1]?.chamberId ?? null
+      ? journey.stages[stageIdx + 1] ?? null
       : null
+  const journeyPrev = journeyPrevStage?.chamberId ?? null
+  const journeyNext = journeyNextStage?.chamberId ?? null
 
   // Connected truth · spine prev/next · any chamber swap: pin to top (mobile-first).
   useEffect(() => {
@@ -390,6 +392,18 @@ export function ChamberFocus({
                 kind: chamber.kind,
               })}
             />
+            {journey && onPath ? (
+              <ShareMenu
+                compact
+                className="chamber-share-path"
+                triggerLabel="Share path"
+                payload={buildPathShare({
+                  journeyId: journey.id,
+                  title: journey.title,
+                  summary: journey.summary,
+                })}
+              />
+            ) : null}
           </div>
         </header>
 
@@ -474,6 +488,49 @@ export function ChamberFocus({
                 </li>
               ))}
             </ul>
+          </nav>
+        ) : null}
+
+        {/* End-of-card path step — primary way forward after reading */}
+        {showJourneyRail && journey && onPath && onSelectJourneyStage ? (
+          <nav className="journey-card-step" aria-label="Continue this journey">
+            <p className="journey-card-step-meta">
+              Station {stageIdx + 1} of {journey.stages.length}
+              <span className="journey-card-step-path"> · {journey.title}</span>
+            </p>
+            <div className="journey-card-step-actions">
+              {journeyPrev && journeyPrevStage ? (
+                <button
+                  type="button"
+                  className="journey-card-step-btn journey-card-step-prev"
+                  onClick={() => onSelectJourneyStage(journeyPrev)}
+                >
+                  <span className="journey-card-step-dir">← Prev</span>
+                  <span className="journey-card-step-label">{journeyPrevStage.label}</span>
+                </button>
+              ) : (
+                <span className="journey-card-step-spacer" aria-hidden />
+              )}
+              {journeyNext && journeyNextStage ? (
+                <button
+                  type="button"
+                  className="journey-card-step-btn journey-card-step-next"
+                  onClick={() => onSelectJourneyStage(journeyNext)}
+                >
+                  <span className="journey-card-step-dir">Next station →</span>
+                  <span className="journey-card-step-label">{journeyNextStage.label}</span>
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className="journey-card-step-btn journey-card-step-next journey-card-step-done"
+                  onClick={onBack}
+                >
+                  <span className="journey-card-step-dir">Path complete</span>
+                  <span className="journey-card-step-label">Back to map</span>
+                </button>
+              )}
+            </div>
           </nav>
         ) : null}
       </article>

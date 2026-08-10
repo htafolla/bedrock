@@ -24,6 +24,8 @@ interface ShareMenuProps {
   /** Compact icon-style trigger */
   compact?: boolean
   className?: string
+  /** Override the trigger button label (default: "Share") */
+  triggerLabel?: string
 }
 
 interface PopoverPos {
@@ -41,7 +43,12 @@ interface PopoverPos {
  * Popover is portaled to document.body so sticky rails / glass stacking
  * contexts never bury the menu.
  */
-export function ShareMenu({ payload, compact = false, className = '' }: ShareMenuProps) {
+export function ShareMenu({
+  payload,
+  compact = false,
+  className = '',
+  triggerLabel = 'Share',
+}: ShareMenuProps) {
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -350,7 +357,7 @@ export function ShareMenu({ payload, compact = false, className = '' }: ShareMen
               <path d="M8.59 13.51 15.42 17.49" />
               <path d="m15.41 6.51-6.82 3.98" />
             </svg>
-            <span className="share-trigger-label">Share</span>
+            <span className="share-trigger-label">{triggerLabel}</span>
           </>
         )}
       </button>

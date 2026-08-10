@@ -1298,7 +1298,7 @@ body {
   margin-left: auto;
 }
 
-/* One Share under the station title */
+/* Station + optional path share under the title */
 .chamber-header-share {
   display: flex;
   flex-wrap: wrap;
@@ -1312,6 +1312,13 @@ body {
   padding: 0.5rem 1rem;
   font-size: 0.88rem;
   box-shadow: 0 4px 16px var(--shadow-card);
+}
+
+.chamber-header-share .chamber-share-path .share-trigger {
+  min-height: 2.5rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  box-shadow: none;
 }
 
 /*
@@ -1737,6 +1744,131 @@ body {
   bottom: 0.5rem;
   z-index: 12;
   margin: 0.85rem 0 0;
+}
+
+/* End-of-card next step (primary after reading the station) */
+.journey-card-step {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ember-border-mid);
+}
+
+.journey-card-step-meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.journey-card-step-path {
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--ember-soft);
+}
+
+.journey-card-step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: stretch;
+}
+
+.journey-card-step-spacer {
+  flex: 1 1 6rem;
+  min-width: 0;
+}
+
+.journey-card-step-btn {
+  flex: 1 1 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  min-height: 3.25rem;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--ember-border-mid);
+  background: var(--ember-wash);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  touch-action: manipulation;
+  transition: border-color 0.15s ease, background 0.15s ease, filter 0.15s ease;
+}
+
+.journey-card-step-prev {
+  flex: 0 1 auto;
+  max-width: 12rem;
+  background: transparent;
+  color: var(--muted);
+}
+
+.journey-card-step-next {
+  flex: 1 1 14rem;
+  border-color: var(--ember);
+  background: linear-gradient(180deg, var(--cta-grad-from), var(--cta-grad-to));
+  color: var(--on-ember);
+  box-shadow: 0 6px 20px var(--shadow-card);
+}
+
+.journey-card-step-done {
+  background: var(--ember-wash);
+  color: var(--ember);
+  border-color: var(--ember-border-mid);
+  box-shadow: none;
+}
+
+.journey-card-step-dir {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.journey-card-step-next .journey-card-step-dir {
+  opacity: 1;
+}
+
+.journey-card-step-label {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.journey-card-step-btn:hover,
+.journey-card-step-btn:focus-visible {
+  filter: brightness(1.05);
+  outline: none;
+  border-color: var(--ember);
+}
+
+.journey-card-step-prev:hover,
+.journey-card-step-prev:focus-visible {
+  color: var(--beam);
+  background: var(--ember-wash);
+}
+
+@media (max-width: 420px) {
+  .journey-card-step-actions {
+    flex-direction: column;
+  }
+
+  .journey-card-step-prev,
+  .journey-card-step-next,
+  .journey-card-step-spacer {
+    max-width: none;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  /* Next first on mobile so the forward path is thumb-ready */
+  .journey-card-step-next {
+    order: -1;
+  }
 }
 
 .journey-stage-rail-head {
