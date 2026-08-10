@@ -8,6 +8,7 @@
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { buildAllOgCards } from './build-og-cards.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
@@ -366,14 +367,14 @@ function chamberHtml(c, meta) {
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
-  <meta property="og:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;v=3" />
+  <meta property="og:image" content="${ORIGIN}/og/c/${esc(c.id)}.png?v=4" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-  <meta name="twitter:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;v=3" />
+  <meta name="twitter:image" content="${ORIGIN}/og/c/${esc(c.id)}.png?v=4" />
   <link rel="alternate" type="text/markdown" href="${ORIGIN}/c/${esc(c.id)}.md" title="Markdown" />
   <script type="application/ld+json">
   ${JSON.stringify({
@@ -384,7 +385,7 @@ function chamberHtml(c, meta) {
     url: `${ORIGIN}/c/${c.id}`,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
-    image: `${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&id=${encodeURIComponent(c.id)}&v=3`,
+    image: `${ORIGIN}/og/c/${c.id}.png?v=4`,
     inLanguage: 'en',
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
   })}
@@ -551,13 +552,13 @@ function buildLlmsFull(doc) {
   return parts.join('\n')
 }
 
-/** Short stable OG URL — server resolves title; PNG for X/Facebook. */
+/** Static PNG OG cards (built in build-og-cards.mjs on every content build). */
 function journeyOgImageUrl(j) {
-  return `${ORIGIN}/api/og?layer=path&id=${encodeURIComponent(j.id)}&v=3`
+  return `${ORIGIN}/og/j/${j.id}.png?v=4`
 }
 
 function doorOgImageUrl(k) {
-  return `${ORIGIN}/api/og?layer=door&id=${encodeURIComponent(k.id)}&v=3`
+  return `${ORIGIN}/og/k/${k.id}.png?v=4`
 }
 
 function doorHtml(k) {
@@ -814,7 +815,7 @@ ${urls
 `
 }
 
-export function buildAiSurface(doc) {
+export async function buildAiSurface(doc) {
   const cDir = join(publicDir, 'c')
   const jDir = join(publicDir, 'j')
   const kDir = join(publicDir, 'k')
@@ -850,6 +851,7 @@ export function buildAiSurface(doc) {
       ...c,
       url: `${ORIGIN}/c/${c.id}`,
       markdownUrl: `${ORIGIN}/c/${c.id}.md`,
+      ogImage: `${ORIGIN}/og/c/${c.id}.png`,
     })),
   }
   writeFileSync(join(exportDir, 'chambers.json'), JSON.stringify(exportPayload, null, 2) + '\n')
@@ -887,6 +889,13 @@ export function buildAiSurface(doc) {
     }
   }
 
+  // Static PNG cards for every page — regenerated when content builds
+  const og = await buildAllOgCards({
+    chambers: doc.chambers,
+    journeys,
+    keys,
+  })
+
   writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))
   writeFileSync(join(publicDir, 'llms-full.txt'), buildLlmsFull(doc))
   writeFileSync(join(publicDir, 'sitemap.xml'), buildSitemap(doc, journeys, keys) + '\n')
@@ -895,7 +904,8 @@ export function buildAiSurface(doc) {
     chambers: doc.chambers.length,
     journeys: journeys.length,
     keys: keys.length,
-    files: doc.chambers.length * 2 + journeys.length + keys.length + 4 + (journeys.length ? 1 : 0),
+    ogCards: og.count,
+    files: doc.chambers.length * 2 + journeys.length + keys.length + og.count + 4,
   }
 }
 
@@ -906,8 +916,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     process.exit(1)
   }
   const doc = JSON.parse(readFileSync(contentPath, 'utf8'))
-  const r = buildAiSurface(doc)
+  const r = await buildAiSurface(doc)
   console.log(
-    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys · ${r.keys || 0} keys → public/c, public/j, public/k, llms.txt, export/, sitemap`,
+    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys · ${r.keys || 0} keys · ${r.ogCards || 0} OG PNGs → public/c, public/j, public/k, public/og`,
   )
 }

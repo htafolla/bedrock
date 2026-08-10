@@ -2684,10 +2684,12 @@ const withPrayers = document.chambers.filter((c) => c.prayers.length > 0).length
 
 writeFileSync(out, JSON.stringify(document, null, 2) + '\n')
 
-// AI / AEO surface: /c/:id HTML+MD, llms.txt, llms-full, export JSON, sitemap
-const ai = buildAiSurface(document)
+// AI / AEO surface: /c/:id HTML+MD, /j, /k, static OG PNGs, llms, export, sitemap
+const ai = await buildAiSurface(document)
 
 console.log(
   `Wrote ${document.chambers.length} chambers, ${totalVerses} verse refs, ${withHacks} with hacks, ${withPrayers} with prayers, ${dedupedLeads} lead dedupes → ${out}`,
 )
-console.log(`AI surface: ${ai.chambers} chamber pages + llms + export + sitemap → public/`)
+console.log(
+  `AI surface: ${ai.chambers} chambers · ${ai.journeys || 0} journeys · ${ai.keys || 0} keys · ${ai.ogCards || 0} OG PNGs → public/`,
+)

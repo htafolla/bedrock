@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 76,
-    "exportedAt": "2026-08-10T17:58:49.375Z",
+    "exportedAt": "2026-08-10T18:02:04.452Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -111,7 +111,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/god-first",
-      "markdownUrl": "https://bedrock.rippel.ai/c/god-first.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/god-first.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/god-first.png"
     },
     {
       "id": "his-power-and-beauty",
@@ -188,7 +189,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-power-and-beauty",
-      "markdownUrl": "https://bedrock.rippel.ai/c/his-power-and-beauty.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-power-and-beauty.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/his-power-and-beauty.png"
     },
     {
       "id": "his-promises",
@@ -266,7 +268,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-promises",
-      "markdownUrl": "https://bedrock.rippel.ai/c/his-promises.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-promises.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/his-promises.png"
     },
     {
       "id": "his-provision",
@@ -326,7 +329,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-provision",
-      "markdownUrl": "https://bedrock.rippel.ai/c/his-provision.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-provision.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/his-provision.png"
     },
     {
       "id": "the-lords-prayer",
@@ -374,7 +378,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-lords-prayer",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-lords-prayer.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-lords-prayer.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-lords-prayer.png"
     },
     {
       "id": "the-cross-and-our-justification",
@@ -448,7 +453,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-cross-and-our-justification",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-cross-and-our-justification.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-cross-and-our-justification.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-cross-and-our-justification.png"
     },
     {
       "id": "he-is-for-you",
@@ -514,7 +520,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/he-is-for-you",
-      "markdownUrl": "https://bedrock.rippel.ai/c/he-is-for-you.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/he-is-for-you.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/he-is-for-you.png"
     },
     {
       "id": "his-grace-is-sufficient",
@@ -569,7 +576,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/his-grace-is-sufficient",
-      "markdownUrl": "https://bedrock.rippel.ai/c/his-grace-is-sufficient.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/his-grace-is-sufficient.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/his-grace-is-sufficient.png"
     },
     {
       "id": "the-meaning-of-life",
@@ -625,7 +633,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-meaning-of-life",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-meaning-of-life.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-meaning-of-life.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-meaning-of-life.png"
     },
     {
       "id": "deny-yourself",
@@ -673,7 +682,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/deny-yourself",
-      "markdownUrl": "https://bedrock.rippel.ai/c/deny-yourself.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/deny-yourself.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/deny-yourself.png"
     },
     {
       "id": "walk-by-the-spirit",
@@ -751,7 +761,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/walk-by-the-spirit",
-      "markdownUrl": "https://bedrock.rippel.ai/c/walk-by-the-spirit.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/walk-by-the-spirit.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/walk-by-the-spirit.png"
     },
     {
       "id": "kill-the-flesh-walk-in-the-spirit",
@@ -1478,7 +1489,8 @@
       ],
       "kind": "rubric",
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit",
-      "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.png"
     },
     {
       "id": "holy-spirit",
@@ -1611,7 +1623,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/holy-spirit",
-      "markdownUrl": "https://bedrock.rippel.ai/c/holy-spirit.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/holy-spirit.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/holy-spirit.png"
     },
     {
       "id": "love",
@@ -1693,7 +1706,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/love",
-      "markdownUrl": "https://bedrock.rippel.ai/c/love.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/love.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/love.png"
     },
     {
       "id": "joy",
@@ -1772,7 +1786,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/joy",
-      "markdownUrl": "https://bedrock.rippel.ai/c/joy.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/joy.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/joy.png"
     },
     {
       "id": "peace",
@@ -1851,7 +1866,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/peace",
-      "markdownUrl": "https://bedrock.rippel.ai/c/peace.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/peace.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/peace.png"
     },
     {
       "id": "patience",
@@ -1930,7 +1946,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/patience",
-      "markdownUrl": "https://bedrock.rippel.ai/c/patience.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/patience.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/patience.png"
     },
     {
       "id": "kindness",
@@ -2008,7 +2025,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/kindness",
-      "markdownUrl": "https://bedrock.rippel.ai/c/kindness.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/kindness.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/kindness.png"
     },
     {
       "id": "goodness",
@@ -2086,7 +2104,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/goodness",
-      "markdownUrl": "https://bedrock.rippel.ai/c/goodness.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/goodness.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/goodness.png"
     },
     {
       "id": "faithfulness",
@@ -2166,7 +2185,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/faithfulness",
-      "markdownUrl": "https://bedrock.rippel.ai/c/faithfulness.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/faithfulness.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/faithfulness.png"
     },
     {
       "id": "gentleness",
@@ -2245,7 +2265,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/gentleness",
-      "markdownUrl": "https://bedrock.rippel.ai/c/gentleness.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/gentleness.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/gentleness.png"
     },
     {
       "id": "self-control",
@@ -2325,7 +2346,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/self-control",
-      "markdownUrl": "https://bedrock.rippel.ai/c/self-control.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/self-control.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/self-control.png"
     },
     {
       "id": "god-on-marriage",
@@ -2388,7 +2410,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/god-on-marriage",
-      "markdownUrl": "https://bedrock.rippel.ai/c/god-on-marriage.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/god-on-marriage.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/god-on-marriage.png"
     },
     {
       "id": "marriage-covenant",
@@ -2501,7 +2524,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/marriage-covenant",
-      "markdownUrl": "https://bedrock.rippel.ai/c/marriage-covenant.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/marriage-covenant.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/marriage-covenant.png"
     },
     {
       "id": "love-and-patience",
@@ -2542,7 +2566,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/love-and-patience",
-      "markdownUrl": "https://bedrock.rippel.ai/c/love-and-patience.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/love-and-patience.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/love-and-patience.png"
     },
     {
       "id": "count-the-trial-as-joy",
@@ -2589,7 +2614,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/count-the-trial-as-joy",
-      "markdownUrl": "https://bedrock.rippel.ai/c/count-the-trial-as-joy.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/count-the-trial-as-joy.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/count-the-trial-as-joy.png"
     },
     {
       "id": "wait-on-the-lord",
@@ -2656,7 +2682,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wait-on-the-lord",
-      "markdownUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/wait-on-the-lord.png"
     },
     {
       "id": "lament-and-pour-out-your-heart",
@@ -2717,7 +2744,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart",
-      "markdownUrl": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/lament-and-pour-out-your-heart.png"
     },
     {
       "id": "a-broken-and-contrite-heart",
@@ -2768,7 +2796,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart",
-      "markdownUrl": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/a-broken-and-contrite-heart.png"
     },
     {
       "id": "guard-your-heart-and-mouth",
@@ -2822,7 +2851,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth",
-      "markdownUrl": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/guard-your-heart-and-mouth.png"
     },
     {
       "id": "be-quick-to-listen",
@@ -2858,7 +2888,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/be-quick-to-listen",
-      "markdownUrl": "https://bedrock.rippel.ai/c/be-quick-to-listen.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/be-quick-to-listen.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/be-quick-to-listen.png"
     },
     {
       "id": "restore-gently-and-give-time",
@@ -2903,7 +2934,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/restore-gently-and-give-time",
-      "markdownUrl": "https://bedrock.rippel.ai/c/restore-gently-and-give-time.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/restore-gently-and-give-time.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/restore-gently-and-give-time.png"
     },
     {
       "id": "confess-and-be-cleansed",
@@ -2958,7 +2990,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/confess-and-be-cleansed",
-      "markdownUrl": "https://bedrock.rippel.ai/c/confess-and-be-cleansed.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/confess-and-be-cleansed.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/confess-and-be-cleansed.png"
     },
     {
       "id": "walk-in-honesty-and-truth",
@@ -3013,7 +3046,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth",
-      "markdownUrl": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/walk-in-honesty-and-truth.png"
     },
     {
       "id": "choose-selfless-love",
@@ -3056,7 +3090,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/choose-selfless-love",
-      "markdownUrl": "https://bedrock.rippel.ai/c/choose-selfless-love.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/choose-selfless-love.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/choose-selfless-love.png"
     },
     {
       "id": "do-not-repay-evil-with-evil",
@@ -3090,7 +3125,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil",
-      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/do-not-repay-evil-with-evil.png"
     },
     {
       "id": "leave-vengeance-to-the-lord",
@@ -3183,7 +3219,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord",
-      "markdownUrl": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/leave-vengeance-to-the-lord.png"
     },
     {
       "id": "forgive-as-you-have-been-forgiven",
@@ -3234,7 +3271,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven",
-      "markdownUrl": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/forgive-as-you-have-been-forgiven.png"
     },
     {
       "id": "one-another-in-the-body",
@@ -3295,7 +3333,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/one-another-in-the-body",
-      "markdownUrl": "https://bedrock.rippel.ai/c/one-another-in-the-body.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/one-another-in-the-body.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/one-another-in-the-body.png"
     },
     {
       "id": "trust-in-the-lord",
@@ -3366,7 +3405,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/trust-in-the-lord",
-      "markdownUrl": "https://bedrock.rippel.ai/c/trust-in-the-lord.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/trust-in-the-lord.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/trust-in-the-lord.png"
     },
     {
       "id": "do-not-fear",
@@ -3429,7 +3469,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/do-not-fear",
-      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-fear.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/do-not-fear.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/do-not-fear.png"
     },
     {
       "id": "fear",
@@ -3515,7 +3556,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/fear",
-      "markdownUrl": "https://bedrock.rippel.ai/c/fear.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/fear.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/fear.png"
     },
     {
       "id": "loss",
@@ -3595,7 +3637,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/loss",
-      "markdownUrl": "https://bedrock.rippel.ai/c/loss.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/loss.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/loss.png"
     },
     {
       "id": "wounded",
@@ -3684,7 +3727,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wounded",
-      "markdownUrl": "https://bedrock.rippel.ai/c/wounded.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/wounded.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/wounded.png"
     },
     {
       "id": "rumination",
@@ -3771,7 +3815,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/rumination",
-      "markdownUrl": "https://bedrock.rippel.ai/c/rumination.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/rumination.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/rumination.png"
     },
     {
       "id": "regret",
@@ -3850,7 +3895,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/regret",
-      "markdownUrl": "https://bedrock.rippel.ai/c/regret.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/regret.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/regret.png"
     },
     {
       "id": "addiction",
@@ -3944,7 +3990,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/addiction",
-      "markdownUrl": "https://bedrock.rippel.ai/c/addiction.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/addiction.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/addiction.png"
     },
     {
       "id": "jealousy",
@@ -4018,7 +4065,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/jealousy",
-      "markdownUrl": "https://bedrock.rippel.ai/c/jealousy.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/jealousy.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/jealousy.png"
     },
     {
       "id": "control",
@@ -4100,7 +4148,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/control",
-      "markdownUrl": "https://bedrock.rippel.ai/c/control.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/control.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/control.png"
     },
     {
       "id": "renew-your-mind",
@@ -4146,7 +4195,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/renew-your-mind",
-      "markdownUrl": "https://bedrock.rippel.ai/c/renew-your-mind.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/renew-your-mind.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/renew-your-mind.png"
     },
     {
       "id": "take-every-thought-captive",
@@ -4210,7 +4260,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/take-every-thought-captive",
-      "markdownUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/take-every-thought-captive.png"
     },
     {
       "id": "the-word",
@@ -4354,7 +4405,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-word",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-word.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-word.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-word.png"
     },
     {
       "id": "the-adversary",
@@ -4489,7 +4541,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-adversary",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-adversary.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-adversary.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-adversary.png"
     },
     {
       "id": "spiritual-warfare",
@@ -4608,7 +4661,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/spiritual-warfare",
-      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-warfare.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-warfare.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/spiritual-warfare.png"
     },
     {
       "id": "wheat-and-tares",
@@ -4667,7 +4721,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/wheat-and-tares",
-      "markdownUrl": "https://bedrock.rippel.ai/c/wheat-and-tares.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/wheat-and-tares.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/wheat-and-tares.png"
     },
     {
       "id": "persecution",
@@ -4750,7 +4805,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/persecution",
-      "markdownUrl": "https://bedrock.rippel.ai/c/persecution.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/persecution.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/persecution.png"
     },
     {
       "id": "works-of-the-flesh",
@@ -4824,7 +4880,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/works-of-the-flesh",
-      "markdownUrl": "https://bedrock.rippel.ai/c/works-of-the-flesh.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/works-of-the-flesh.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/works-of-the-flesh.png"
     },
     {
       "id": "adultery",
@@ -4898,7 +4955,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/adultery",
-      "markdownUrl": "https://bedrock.rippel.ai/c/adultery.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/adultery.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/adultery.png"
     },
     {
       "id": "pharmakeia",
@@ -4978,7 +5036,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/pharmakeia",
-      "markdownUrl": "https://bedrock.rippel.ai/c/pharmakeia.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/pharmakeia.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/pharmakeia.png"
     },
     {
       "id": "murder",
@@ -5053,7 +5112,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/murder",
-      "markdownUrl": "https://bedrock.rippel.ai/c/murder.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/murder.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/murder.png"
     },
     {
       "id": "malice",
@@ -5121,7 +5181,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/malice",
-      "markdownUrl": "https://bedrock.rippel.ai/c/malice.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/malice.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/malice.png"
     },
     {
       "id": "falsehood",
@@ -5198,7 +5259,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/falsehood",
-      "markdownUrl": "https://bedrock.rippel.ai/c/falsehood.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/falsehood.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/falsehood.png"
     },
     {
       "id": "the-full-armor-of-god",
@@ -5249,7 +5311,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-full-armor-of-god",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-full-armor-of-god.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-full-armor-of-god.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-full-armor-of-god.png"
     },
     {
       "id": "watch-and-be-ready",
@@ -5338,7 +5401,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/watch-and-be-ready",
-      "markdownUrl": "https://bedrock.rippel.ai/c/watch-and-be-ready.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/watch-and-be-ready.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/watch-and-be-ready.png"
     },
     {
       "id": "ten-virgins",
@@ -5396,7 +5460,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/ten-virgins",
-      "markdownUrl": "https://bedrock.rippel.ai/c/ten-virgins.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/ten-virgins.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/ten-virgins.png"
     },
     {
       "id": "the-faithful-servant",
@@ -5464,7 +5529,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-faithful-servant",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-faithful-servant.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-faithful-servant.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-faithful-servant.png"
     },
     {
       "id": "one-taken-one-left",
@@ -5540,7 +5606,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/one-taken-one-left",
-      "markdownUrl": "https://bedrock.rippel.ai/c/one-taken-one-left.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/one-taken-one-left.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/one-taken-one-left.png"
     },
     {
       "id": "treasure-in-heaven",
@@ -5615,7 +5682,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/treasure-in-heaven",
-      "markdownUrl": "https://bedrock.rippel.ai/c/treasure-in-heaven.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/treasure-in-heaven.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/treasure-in-heaven.png"
     },
     {
       "id": "prayer",
@@ -5715,7 +5783,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/prayer",
-      "markdownUrl": "https://bedrock.rippel.ai/c/prayer.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/prayer.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/prayer.png"
     },
     {
       "id": "fasting",
@@ -5806,7 +5875,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/fasting",
-      "markdownUrl": "https://bedrock.rippel.ai/c/fasting.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/fasting.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/fasting.png"
     },
     {
       "id": "sabbath",
@@ -5929,7 +5999,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/sabbath",
-      "markdownUrl": "https://bedrock.rippel.ai/c/sabbath.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/sabbath.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/sabbath.png"
     },
     {
       "id": "healing",
@@ -6022,7 +6093,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/healing",
-      "markdownUrl": "https://bedrock.rippel.ai/c/healing.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/healing.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/healing.png"
     },
     {
       "id": "laying-on-of-hands",
@@ -6110,7 +6182,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/laying-on-of-hands",
-      "markdownUrl": "https://bedrock.rippel.ai/c/laying-on-of-hands.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/laying-on-of-hands.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/laying-on-of-hands.png"
     },
     {
       "id": "spiritual-gifts",
@@ -6210,7 +6283,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/spiritual-gifts",
-      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-gifts.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/spiritual-gifts.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/spiritual-gifts.png"
     },
     {
       "id": "hope-of-glory",
@@ -6323,7 +6397,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/hope-of-glory",
-      "markdownUrl": "https://bedrock.rippel.ai/c/hope-of-glory.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/hope-of-glory.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/hope-of-glory.png"
     },
     {
       "id": "the-righteous-fall",
@@ -6391,7 +6466,8 @@
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/the-righteous-fall",
-      "markdownUrl": "https://bedrock.rippel.ai/c/the-righteous-fall.md"
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-righteous-fall.md",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-righteous-fall.png"
     }
   ]
 }

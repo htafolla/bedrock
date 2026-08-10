@@ -302,9 +302,9 @@ function createApp() {
   const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
 
   /**
-   * Dynamic social / Open Graph card (1200×630 PNG — X/Facebook reject SVG).
-   * ?layer=door|station|path|standard&id=  (title/subtitle resolved server-side)
-   * ?format=svg for debug. &v= cache-bust.
+   * Dynamic OG card fallback (PNG). Prefer static files built at content time:
+   *   /og/c/{id}.png · /og/j/{id}.png · /og/k/{id}.png
+   * This endpoint remains for ad-hoc title/subtitle cards and local dev.
    */
   app.get('/api/og', async (req, res) => {
     const layerRaw = String(req.query.layer || 'station').toLowerCase()
@@ -842,7 +842,7 @@ function createApp() {
         title: String(j.title || '').slice(0, 120),
         subtitle: desc,
       })
-      const og = `https://bedrock.rippel.ai/api/og?${ogQ.toString()}`
+      const og = `https://bedrock.rippel.ai/og/j/${encodeURIComponent(j.id)}.png?v=4`
       const esc = (s) =>
         String(s)
           .replace(/&/g, '&amp;')
@@ -909,6 +909,11 @@ function createApp() {
             norm.endsWith('sitemap.xml')
           ) {
             setContentNoStore(res)
+          }
+          // Static OG PNGs: long cache; URL ?v= bumps when art changes
+          if (norm.includes('/og/') && norm.endsWith('.png')) {
+            res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800')
+            res.setHeader('Content-Type', 'image/png')
           }
         },
       }),

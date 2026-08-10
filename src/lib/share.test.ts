@@ -19,9 +19,7 @@ describe('share payloads', () => {
     })
     expect(p.layer).toBe('station')
     expect(p.url).toBe(`${SITE_ORIGIN}/c/wounded`)
-    expect(p.ogImage).toContain('/api/og?')
-    expect(p.ogImage).toContain('layer=station')
-    expect(p.ogImage).toContain('id=wounded')
+    expect(p.ogImage).toContain('/og/c/wounded.png')
   })
 
   it('rubric chamber is standard layer', () => {
@@ -43,9 +41,7 @@ describe('share payloads', () => {
     })
     expect(p.layer).toBe('path')
     expect(p.url).toBe(`${SITE_ORIGIN}/j/battlefield-of-the-mind`)
-    expect(p.ogImage).toContain('/api/og?')
-    expect(p.ogImage).toContain('layer=path')
-    expect(p.ogImage).toContain('id=battlefield-of-the-mind')
+    expect(p.ogImage).toContain('/og/j/battlefield-of-the-mind.png')
   })
 
   it('door share uses canonical /k/ url and door og', () => {
@@ -59,8 +55,7 @@ describe('share payloads', () => {
     expect(p.layer).toBe('door')
     expect(p.layerLabel).toBe('Key')
     expect(p.url).toBe(`${SITE_ORIGIN}/k/key-wounded`)
-    expect(p.ogImage).toContain('layer=door')
-    expect(p.ogImage).toContain('id=key-wounded')
+    expect(p.ogImage).toContain('/og/k/key-wounded.png')
   })
 
   it('x and facebook intents encode url', () => {
@@ -72,7 +67,7 @@ describe('share payloads', () => {
     expect(xIntentUrl(p)).toContain('twitter.com/intent/tweet')
     expect(xIntentUrl(p)).toContain(encodeURIComponent(p.url).slice(0, 20))
     expect(facebookShareUrl(p)).toContain('facebook.com/sharer')
-    expect(ogImageUrl({ layer: 'door', id: 'key-god' })).toContain('layer=door')
+    expect(ogImageUrl({ layer: 'door', id: 'key-god' })).toContain('/og/k/key-god.png')
   })
 })
 

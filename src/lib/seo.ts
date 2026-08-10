@@ -30,7 +30,7 @@ export function journeyOgImageUrl(input: {
   title?: string
   summary?: string
 }): string {
-  return contentOgImageUrl('path', input.journeyId)
+  return staticOgImageUrl('j', input.journeyId)
 }
 
 /** Door (Keys) layer OG card for social previews. */
@@ -39,7 +39,7 @@ export function doorOgImageUrl(input: {
   label?: string
   hint?: string
 }): string {
-  return contentOgImageUrl('door', input.keyId)
+  return staticOgImageUrl('k', input.keyId)
 }
 
 export const DEFAULT_TITLE = 'Bedrock — Do Better. Be Better. Trust God.'
@@ -183,21 +183,27 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
 }
 
 /**
- * Content OG card URL (PNG via /api/og — X/Facebook do not unfurl SVG).
- * Prefer short id-only query so crawlers get a stable, short image URL.
- * Bump `v` when card format changes so X re-fetches.
+ * Static PNG OG cards built on content change (public/og/…).
+ * Real image files — X, Facebook, LinkedIn, iMessage all accept them.
+ * Bump when card art changes so platforms re-fetch.
  */
-export const OG_CARD_VERSION = '3'
+export const OG_CARD_VERSION = '4'
 
+/** @param kind c = chamber, j = journey/path, k = key */
+export function staticOgImageUrl(kind: 'c' | 'j' | 'k', id: string): string {
+  return `${SITE_ORIGIN}/og/${kind}/${id}.png?v=${OG_CARD_VERSION}`
+}
+
+/** @deprecated use static paths; kept for ad-hoc /api/og fallback */
 export function contentOgImageUrl(layer: 'door' | 'station' | 'path' | 'standard', id: string): string {
-  const q = new URLSearchParams({ layer, id, v: OG_CARD_VERSION })
-  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+  if (layer === 'path') return staticOgImageUrl('j', id)
+  if (layer === 'door') return staticOgImageUrl('k', id)
+  return staticOgImageUrl('c', id)
 }
 
 /** Per-station / standard OG card for social previews. */
 export function chamberOgImageUrl(chamber: Chamber): string {
-  const layer = chamber.kind === 'rubric' ? 'standard' : 'station'
-  return contentOgImageUrl(layer, chamber.id)
+  return staticOgImageUrl('c', chamber.id)
 }
 
 export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayload {
@@ -304,10 +310,9 @@ export function applySeo(payload: SeoPayload): void {
     'og:image:alt',
     "Bedrock — Do Better. Be Better. Trust God. A hitchhiker's guide for the storm.",
   )
-  // Content cards are PNG from /api/og; home hero is JPEG
-  const ogType = payload.ogImage.includes('/api/og')
-    ? 'image/png'
-    : payload.ogImage.includes('.png')
+  // Content cards are static PNG under /og/; home hero is JPEG
+  const ogType =
+    payload.ogImage.includes('.png') || payload.ogImage.includes('/api/og')
       ? 'image/png'
       : 'image/jpeg'
   upsertMeta('property', 'og:image:type', ogType)
