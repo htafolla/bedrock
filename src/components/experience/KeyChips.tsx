@@ -57,10 +57,10 @@ function ChipButton({
 
 /** Shared header copy — keep desktop + mobile aligned. */
 export const KEYS_BLURB =
-  'Door: tap what hits hardest → one station under fire. Path (multi-step): Journeys. Full atlas: Contents. Standard: Kill the Flesh (Contents or mind-war path).'
+  '30 seconds: tap the door that hits → Under fire is the hold. Prayer if you need words. Truth when you can read. Path: Journeys. Atlas: Contents. Standard: Kill the Flesh.'
 
 const KEYS_BLURB_MOBILE =
-  'Door: three at a time. Tap to open a station. Path: Journeys. Atlas: Contents.'
+  'Tap a door → Under fire first (the hold). Prayer next. Path: Journeys. Atlas: Contents.'
 
 /** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {

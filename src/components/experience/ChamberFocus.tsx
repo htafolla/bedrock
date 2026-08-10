@@ -360,14 +360,17 @@ export function ChamberFocus({
         />
       ) : null}
 
-      <article className={`chamber chamber-in-focus${isRubric ? ' chamber-rubric' : ''}`} id={chamber.id}>
+      <article
+        className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}`}
+        id={chamber.id}
+      >
         <header className="chamber-header">
           <p className="chamber-kicker">
             {isRubric
               ? 'Operational rubric · SOP under fire'
               : journey && onPath
-                ? 'Journey station · First principle'
-                : 'First principle'}
+                ? 'Journey station · Hold first'
+                : 'Hold first · First principle'}
           </p>
           <h2
             className="chamber-title"
@@ -379,43 +382,84 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Standard — field card first. Full holds on demand. Mind war path when the battle is
-              inside.
+              Hold first (Under fire). Field card and full map when you can read. Mind war path when
+              the battle is inside.
             </p>
           ) : null}
-          <div className="chamber-header-share">
-            <ShareMenu
-              payload={buildStationShare({
-                chamberId: chamber.id,
-                title: chamber.title,
-                summary: chamber.summary,
-                kind: chamber.kind,
-              })}
-            />
-            {journey && onPath ? (
-              <ShareMenu
-                compact
-                className="chamber-share-path"
-                triggerLabel="Share path"
-                payload={buildPathShare({
-                  journeyId: journey.id,
-                  title: journey.title,
-                  summary: journey.summary,
-                })}
-              />
-            ) : null}
-          </div>
         </header>
 
-        <section className="field-layer" aria-labelledby={`${chamber.id}-truth`}>
+        {/*
+          30-second path: title → Under fire → Prayer.
+          Truth / Standard body / Scripture / Related come after capacity returns.
+        */}
+        <div className="hold-block" id={`${chamber.id}-hold`}>
+          <p className="hold-block-kicker">This hour</p>
+          {chamber.hacks.length > 0 ? (
+            <section className="field-layer field-hacks hold-layer" aria-labelledby={`${chamber.id}-hacks`}>
+              <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
+                Under fire
+              </h3>
+              <p className="field-layer-hint">
+                {isRubric ? 'Three holds when fog is worst.' : 'The next right hold — walk this hour.'}
+              </p>
+              <ul className="field-list">
+                {chamber.hacks.map((hack) => (
+                  <li key={hack}>{hack}</li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
+          {chamber.prayers.length > 0 ? (
+            <section
+              className="field-layer field-prayers hold-layer"
+              aria-labelledby={`${chamber.id}-prayers`}
+            >
+              <h3 id={`${chamber.id}-prayers`} className="field-layer-label">
+                Prayer
+              </h3>
+              <p className="field-layer-hint">When you do not have the words.</p>
+              <ul className="field-list prayer-list">
+                {chamber.prayers.map((prayer) => (
+                  <li key={prayer}>{prayer}</li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+        </div>
+
+        <div className="chamber-header-share chamber-after-hold-share">
+          <ShareMenu
+            payload={buildStationShare({
+              chamberId: chamber.id,
+              title: chamber.title,
+              summary: chamber.summary,
+              kind: chamber.kind,
+            })}
+          />
+          {journey && onPath ? (
+            <ShareMenu
+              compact
+              className="chamber-share-path"
+              triggerLabel="Share path"
+              payload={buildPathShare({
+                journeyId: journey.id,
+                title: journey.title,
+                summary: journey.summary,
+              })}
+            />
+          ) : null}
+        </div>
+
+        <section className="field-layer field-truth-depth" aria-labelledby={`${chamber.id}-truth`}>
           <h3 id={`${chamber.id}-truth`} className="field-layer-label">
             {isRubric ? 'The standard' : 'Truth'}
           </h3>
-          {isRubric ? (
-            <p className="field-layer-hint">
-              Read the field card. Open full holds only if you need the map.
-            </p>
-          ) : null}
+          <p className="field-layer-hint">
+            {isRubric
+              ? 'Field card first. Open full holds only if you need the map.'
+              : 'When you can read deeper — Scripture-rooted steel.'}
+          </p>
           {isRubric ? (
             <RubricBody
               blocks={chamber.body}
@@ -430,36 +474,6 @@ export function ChamberFocus({
             </div>
           )}
         </section>
-
-        {chamber.hacks.length > 0 ? (
-          <section className="field-layer field-hacks" aria-labelledby={`${chamber.id}-hacks`}>
-            <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
-              Under fire
-            </h3>
-            <p className="field-layer-hint">
-              {isRubric ? 'Three holds when fog is worst.' : 'How to walk this hour.'}
-            </p>
-            <ul className="field-list">
-              {chamber.hacks.map((hack) => (
-                <li key={hack}>{hack}</li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
-
-        {chamber.prayers.length > 0 ? (
-          <section className="field-layer field-prayers" aria-labelledby={`${chamber.id}-prayers`}>
-            <h3 id={`${chamber.id}-prayers`} className="field-layer-label">
-              Prayer
-            </h3>
-            <p className="field-layer-hint">When you do not have the words.</p>
-            <ul className="field-list prayer-list">
-              {chamber.prayers.map((prayer) => (
-                <li key={prayer}>{prayer}</li>
-              ))}
-            </ul>
-          </section>
-        ) : null}
 
         {chamber.verses.length > 0 ? (
           <footer className="chamber-verses">
