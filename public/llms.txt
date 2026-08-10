@@ -22,6 +22,7 @@ Bedrock is a free Christian field guide for people in the **storm**: grief, obse
 - Chamber pages (canonical, crawlable): https://bedrock.rippel.ai/c/{id}
 - Chamber markdown: https://bedrock.rippel.ai/c/{id}.md
 - Journey / path pages (share + OG): https://bedrock.rippel.ai/j/{id}
+- Key / door pages (share + OG): https://bedrock.rippel.ai/k/{id}
 - Full atlas JSON: https://bedrock.rippel.ai/export/chambers.json
 - Core journeys JSON: https://bedrock.rippel.ai/export/journeys.json
 - Full text for models: https://bedrock.rippel.ai/llms-full.txt

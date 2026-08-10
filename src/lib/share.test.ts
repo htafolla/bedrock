@@ -48,7 +48,7 @@ describe('share payloads', () => {
     expect(p.ogImage).toContain('id=battlefield-of-the-mind')
   })
 
-  it('door share carries door + chamber + journey', () => {
+  it('door share uses canonical /k/ url and door og', () => {
     const p = buildDoorShare({
       keyId: 'key-wounded',
       label: 'Wounded',
@@ -57,9 +57,10 @@ describe('share payloads', () => {
       journeyId: 'spouse-left',
     })
     expect(p.layer).toBe('door')
-    expect(p.url).toContain('c=wounded')
-    expect(p.url).toContain('j=spouse-left')
-    expect(p.url).toContain('door=key-wounded')
+    expect(p.layerLabel).toBe('Key')
+    expect(p.url).toBe(`${SITE_ORIGIN}/k/key-wounded`)
+    expect(p.ogImage).toContain('layer=door')
+    expect(p.ogImage).toContain('id=key-wounded')
   })
 
   it('x and facebook intents encode url', () => {

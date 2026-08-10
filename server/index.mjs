@@ -388,6 +388,7 @@ function createApp() {
         chamberPages: '/c/{id}',
         markdown: '/c/{id}.md',
         journeyPages: '/j/{id}',
+        keyPages: '/k/{id}',
         export: '/export/chambers.json',
         journeys: '/export/journeys.json',
         llms: '/llms.txt',
@@ -772,6 +773,25 @@ function createApp() {
     res.status(404).type('text').send('Chamber not found')
   })
 
+  // Key / door pages — static HTML with door OG
+  app.get('/k/:id', (req, res, next) => {
+    const id = String(req.params.id || '').toLowerCase()
+    // keys are key-god style, or bare slug
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+      next()
+      return
+    }
+    for (const base of staticRoots) {
+      const file = path.join(base, 'k', `${id}.html`)
+      if (existsSync(file)) {
+        setContentNoStore(res)
+        res.sendFile(file)
+        return
+      }
+    }
+    res.status(404).type('text').send('Key not found')
+  })
+
   // Journey / path pages — static HTML with path OG (social crawlers do not run SPA JS)
   app.get('/j/:id', (req, res, next) => {
     const id = String(req.params.id || '').toLowerCase()
@@ -858,6 +878,7 @@ function createApp() {
           if (
             norm.includes('/c/') ||
             norm.includes('/j/') ||
+            norm.includes('/k/') ||
             norm.includes('/export/') ||
             norm.endsWith('llms.txt') ||
             norm.endsWith('llms-full.txt') ||
@@ -875,6 +896,7 @@ function createApp() {
         req.path.startsWith('/assets/') ||
         req.path.startsWith('/c/') ||
         req.path.startsWith('/j/') ||
+        req.path.startsWith('/k/') ||
         req.path.startsWith('/export/')
       ) {
         res.status(404).type('text').send('Not found')

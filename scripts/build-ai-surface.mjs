@@ -14,7 +14,31 @@ const root = join(__dirname, '..')
 const publicDir = join(root, 'public')
 const contentPath = join(root, 'src/content/bedrock.json')
 const journeysPath = join(root, 'src/content/journeys.json')
+const keyEntriesPath = join(root, 'src/lib/key-entries.ts')
 const ORIGIN = 'https://bedrock.rippel.ai'
+
+/** Parse KEY_ENTRIES from key-entries.ts (same pattern as repertoire loader). */
+function loadKeyEntries() {
+  if (!existsSync(keyEntriesPath)) return []
+  const tsSource = readFileSync(keyEntriesPath, 'utf8')
+  /** @type {{ id: string, label: string, hint: string, chamberId: string, journeyId?: string }[]} */
+  const entries = []
+  const block = tsSource.match(/export const KEY_ENTRIES[^=]*=\s*\[([\s\S]*?)\]\s*$/m)
+  if (!block) return entries
+  const re =
+    /\{\s*id:\s*'([^']+)',\s*label:\s*'([^']+)',\s*hint:\s*((?:'[^']*')|(?:"[^"]*")),\s*chamberId:\s*'([^']+)',(?:\s*journeyId:\s*'([^']+)',)?/g
+  let m
+  while ((m = re.exec(block[1]))) {
+    entries.push({
+      id: m[1],
+      label: m[2],
+      hint: m[3].replace(/^['"]|['"]$/g, ''),
+      chamberId: m[4],
+      journeyId: m[5],
+    })
+  }
+  return entries
+}
 
 function esc(s) {
   return String(s)
@@ -482,6 +506,7 @@ Bedrock is a free Christian field guide for people in the **storm**: grief, obse
 - Chamber pages (canonical, crawlable): ${ORIGIN}/c/{id}
 - Chamber markdown: ${ORIGIN}/c/{id}.md
 - Journey / path pages (share + OG): ${ORIGIN}/j/{id}
+- Key / door pages (share + OG): ${ORIGIN}/k/{id}
 - Full atlas JSON: ${ORIGIN}/export/chambers.json
 - Core journeys JSON: ${ORIGIN}/export/journeys.json
 - Full text for models: ${ORIGIN}/llms-full.txt
@@ -531,6 +556,119 @@ function journeyOgImageUrl(j) {
     subtitle: String(j.summary || '').slice(0, 160),
   })
   return `${ORIGIN}/api/og?${q.toString()}`
+}
+
+function doorOgImageUrl(k) {
+  const q = new URLSearchParams({
+    layer: 'door',
+    id: k.id,
+    title: String(k.label || '').slice(0, 120),
+    subtitle: String(k.hint || '').slice(0, 160),
+  })
+  return `${ORIGIN}/api/og?${q.toString()}`
+}
+
+function doorHtml(k) {
+  const title = `${esc(k.label)} — Bedrock Key`
+  const desc = esc(
+    `${k.hint}. Storm door in Bedrock. Do Better. Be Better. Trust God.`,
+  ).slice(0, 160)
+  const ogImage = esc(doorOgImageUrl(k))
+  const pagePath = `/k/${k.id}`
+  const analytics = analyticsHeadSnippet(pagePath)
+  const spa = new URLSearchParams()
+  spa.set('c', k.chamberId)
+  spa.set('door', k.id)
+  if (k.journeyId) spa.set('j', k.journeyId)
+  const spaHref = `/?${spa.toString()}`
+  const chamberHref = `/c/${esc(k.chamberId)}`
+  const pathHref = k.journeyId ? `/j/${esc(k.journeyId)}` : null
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${title}</title>
+  <meta name="description" content="${desc}" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="${ORIGIN}/k/${esc(k.id)}" />
+  <meta property="og:site_name" content="Bedrock" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${title}" />
+  <meta property="og:description" content="${desc}" />
+  <meta property="og:url" content="${ORIGIN}/k/${esc(k.id)}" />
+  <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${title}" />
+  <meta name="twitter:description" content="${desc}" />
+  <meta name="twitter:image" content="${ogImage}" />
+  <script type="application/ld+json">
+  ${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: k.label,
+    description: k.hint,
+    url: `${ORIGIN}/k/${k.id}`,
+    author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
+    publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
+    image: doorOgImageUrl(k),
+    inLanguage: 'en',
+    isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
+    articleSection: 'Door · Key',
+  })}
+  </script>
+  ${analytics}
+  <style>
+    :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Source Sans 3", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+    a { color:var(--ember); }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 1.25rem 1.15rem 3rem; }
+    .kicker { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ember); margin:0 0 .4rem; }
+    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; font-size:clamp(2rem,6vw,2.75rem); color:var(--beam); margin:.2rem 0; line-height:1.1; }
+    .summary { color:var(--muted); margin:.5rem 0 1.25rem; font-size:1.05rem; }
+    .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
+    h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
+    .card p { margin:.4rem 0; color:var(--ink); }
+    .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
+    .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
+    .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
+    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="kicker">Key · Door · Bedrock</p>
+    <h1>${esc(k.label)}</h1>
+    <p class="summary">${esc(k.hint)}</p>
+    <nav class="nav" aria-label="Key actions">
+      <a class="primary" href="${spaHref}">Open this key</a>
+      <a href="${chamberHref}">Station</a>
+      ${pathHref ? `<a href="${pathHref}">Path</a>` : ''}
+      <a href="/">Home</a>
+    </nav>
+    <section class="card">
+      <h2>What this is</h2>
+      <p>A storm door into Bedrock — one first principle under fire${
+        k.journeyId ? ', with a multi-station path when life needs a walk.' : '.'
+      }</p>
+      <p>Station: <a href="${chamberHref}">${esc(k.chamberId.replace(/-/g, ' '))}</a>${
+        k.journeyId
+          ? ` · Path: <a href="${pathHref}">${esc(k.journeyId.replace(/-/g, ' '))}</a>`
+          : ''
+      }</p>
+    </section>
+    <footer>
+      <p>Do better. Be better. Trust God.</p>
+      <p>Public beta · Not a crisis hotline.</p>
+    </footer>
+  </main>
+</body>
+</html>
+`
 }
 
 function journeyHtml(j) {
@@ -636,7 +774,7 @@ function journeyHtml(j) {
 `
 }
 
-function buildSitemap(doc, journeys = []) {
+function buildSitemap(doc, journeys = [], keys = []) {
   const today = new Date().toISOString().slice(0, 10)
   const urls = [
     { loc: `${ORIGIN}/`, priority: '1.0' },
@@ -651,6 +789,10 @@ function buildSitemap(doc, journeys = []) {
     ...journeys.map((j) => ({
       loc: `${ORIGIN}/j/${j.id}`,
       priority: '0.85',
+    })),
+    ...keys.map((k) => ({
+      loc: `${ORIGIN}/k/${k.id}`,
+      priority: '0.8',
     })),
   ]
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -681,9 +823,11 @@ ${urls
 export function buildAiSurface(doc) {
   const cDir = join(publicDir, 'c')
   const jDir = join(publicDir, 'j')
+  const kDir = join(publicDir, 'k')
   const exportDir = join(publicDir, 'export')
   mkdirSync(cDir, { recursive: true })
   mkdirSync(jDir, { recursive: true })
+  mkdirSync(kDir, { recursive: true })
   mkdirSync(exportDir, { recursive: true })
 
   // Index of chambers for /c/
@@ -734,14 +878,30 @@ export function buildAiSurface(doc) {
     }
   }
 
+  // Storm keys (doors) — shareable OG pages
+  const keys = loadKeyEntries()
+  if (keys.length) {
+    const kIndex = keys
+      .map((k) => `- [${k.label}](${ORIGIN}/k/${k.id}) — ${k.hint}`)
+      .join('\n')
+    writeFileSync(
+      join(kDir, 'README.md'),
+      `# Bedrock keys (doors)\n\nStorm triage doors for crawlers and social share.\n\n${kIndex}\n`,
+    )
+    for (const k of keys) {
+      writeFileSync(join(kDir, `${k.id}.html`), doorHtml(k))
+    }
+  }
+
   writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))
   writeFileSync(join(publicDir, 'llms-full.txt'), buildLlmsFull(doc))
-  writeFileSync(join(publicDir, 'sitemap.xml'), buildSitemap(doc, journeys) + '\n')
+  writeFileSync(join(publicDir, 'sitemap.xml'), buildSitemap(doc, journeys, keys) + '\n')
 
   return {
     chambers: doc.chambers.length,
     journeys: journeys.length,
-    files: doc.chambers.length * 2 + journeys.length + 4 + (journeys.length ? 1 : 0),
+    keys: keys.length,
+    files: doc.chambers.length * 2 + journeys.length + keys.length + 4 + (journeys.length ? 1 : 0),
   }
 }
 
@@ -754,6 +914,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const doc = JSON.parse(readFileSync(contentPath, 'utf8'))
   const r = buildAiSurface(doc)
   console.log(
-    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys → public/c, public/j, llms.txt, export/, sitemap`,
+    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys · ${r.keys || 0} keys → public/c, public/j, public/k, llms.txt, export/, sitemap`,
   )
 }

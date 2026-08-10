@@ -19,6 +19,11 @@ export function journeyCanonicalUrl(id: string): string {
   return `${SITE_ORIGIN}/j/${id}`
 }
 
+/** Canonical crawlable key/door URL (static HTML with door OG card). */
+export function doorCanonicalUrl(keyId: string): string {
+  return `${SITE_ORIGIN}/k/${keyId}`
+}
+
 /** Path layer OG card for social previews. */
 export function journeyOgImageUrl(input: {
   journeyId: string
@@ -30,6 +35,21 @@ export function journeyOgImageUrl(input: {
     id: input.journeyId,
     title: input.title.slice(0, 120),
     subtitle: input.summary.slice(0, 160),
+  })
+  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+}
+
+/** Door (Keys) layer OG card for social previews. */
+export function doorOgImageUrl(input: {
+  keyId: string
+  label: string
+  hint: string
+}): string {
+  const q = new URLSearchParams({
+    layer: 'door',
+    id: input.keyId,
+    title: input.label.slice(0, 120),
+    subtitle: input.hint.slice(0, 160),
   })
   return `${SITE_ORIGIN}/api/og?${q.toString()}`
 }

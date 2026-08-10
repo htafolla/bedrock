@@ -8,7 +8,14 @@
  * - Always prefer a canonical URL + content-specific OG image.
  */
 
-import { SITE_ORIGIN, chamberCanonicalUrl, journeyCanonicalUrl, journeyOgImageUrl } from './seo'
+import {
+  SITE_ORIGIN,
+  chamberCanonicalUrl,
+  doorCanonicalUrl,
+  doorOgImageUrl,
+  journeyCanonicalUrl,
+  journeyOgImageUrl,
+} from './seo'
 
 export type ShareLayer = 'door' | 'station' | 'path' | 'standard'
 
@@ -116,25 +123,20 @@ export function buildDoorShare(input: {
   chamberId: string
   journeyId?: string
 }): SharePayload {
-  // Door deep-links to the station (and journey when present) — shareable SPA URL
-  const u = new URL(SITE_ORIGIN)
-  u.searchParams.set('c', input.chamberId)
-  if (input.journeyId) u.searchParams.set('j', input.journeyId)
-  u.searchParams.set('door', input.keyId)
-  const url = u.toString()
-  const title = `${input.label} — Bedrock Door`
+  // Canonical /k/:id has static OG tags; page CTA opens SPA with door + chamber (+ journey).
+  const url = doorCanonicalUrl(input.keyId)
+  const title = `${input.label} — Bedrock Key`
   const text = input.hint
   return {
     layer: 'door',
-    layerLabel: 'Door',
+    layerLabel: 'Key',
     title,
     text,
     url,
-    ogImage: ogImageUrl({
-      layer: 'door',
-      id: input.keyId,
-      title: input.label,
-      subtitle: input.hint,
+    ogImage: doorOgImageUrl({
+      keyId: input.keyId,
+      label: input.label,
+      hint: input.hint,
     }),
     shareLine: `${title}\n${text}\n${url}`,
   }
