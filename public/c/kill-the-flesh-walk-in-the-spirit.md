@@ -27,7 +27,24 @@ Prayer: “No. I release this to You, Lord.”
 
 [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Colossians 3:2](https://www.biblegateway.com/passage/?search=Colossians+3%3A2&version=NIV)
 
-### 2. Combat fear
+### 2. Refuse investigation mode
+
+When something is uncertain or missing, the mind moves to gather evidence. Small gaps become possible proof of larger deception. Answers are heard but not received. New theories form and the search continues.
+
+This mode feels like protection. It rarely produces peace. It keeps the body and mind on high alert.
+
+When Investigation Mode starts:
+
+- Notice it.
+- Name it: “This is investigation mode.”
+- Refuse to follow every lead.
+- Do not turn every open question into a case that must be solved right now.
+
+Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”
+
+[2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Philippians 4:8](https://www.biblegateway.com/passage/?search=Philippians+4%3A8&version=NIV) · [Romans 12:2](https://www.biblegateway.com/passage/?search=Romans+12%3A2&version=NIV)
+
+### 3. Combat fear
 
 Fight fear with the weapons of the Spirit: power, love, and a sound mind.
 
@@ -41,7 +58,7 @@ Prayer: “God has not given me a spirit of fear, but of power, love, and a soun
 
 [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV) · [Ephesians 6:16](https://www.biblegateway.com/passage/?search=Ephesians+6%3A16&version=NIV) · [Philippians 4:6–7](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=NIV)
 
-### 3. Refuse the acts of the flesh
+### 4. Refuse the acts of the flesh
 
 No name-calling. No yelling or rage. No control or monitoring. No revenge. No settled bitterness. No using suspicion as permission to return to the flesh.
 
@@ -55,7 +72,7 @@ Prayer: “I refuse this. I will walk in Love.”
 
 [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV) · [Ephesians 4:29](https://www.biblegateway.com/passage/?search=Ephesians+4%3A29&version=NIV) · [Ephesians 4:31](https://www.biblegateway.com/passage/?search=Ephesians+4%3A31&version=NIV)
 
-### 4. Forgiveness
+### 5. Forgiveness
 
 Forgiveness is how you refuse to keep score and stay free from bitterness.
 
@@ -67,7 +84,7 @@ Prayer: “I forgive. I release this to You, Lord.”
 
 [Matthew 6:14–15](https://www.biblegateway.com/passage/?search=Matthew+6%3A14-15&version=NIV) · [Ephesians 4:32](https://www.biblegateway.com/passage/?search=Ephesians+4%3A32&version=NIV) · [Colossians 3:13](https://www.biblegateway.com/passage/?search=Colossians+3%3A13&version=NIV)
 
-### 5. Self-control
+### 6. Self-control
 
 Refuse self-gratification.
 
@@ -87,7 +104,7 @@ Prayer: “My body is the temple of the Holy Spirit. I choose self-control. Stre
 
 [1 Corinthians 6:19–20](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A19-20&version=NIV) · [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV) · [1 Corinthians 6:18](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A18&version=NIV)
 
-### 6. Presence and independent self
+### 7. Presence and independent self
 
 You are a whole person under God. Your identity, emotional regulation, and worth do not come from the other person.
 
@@ -103,7 +120,7 @@ Prayer: “Lord, this is where You have me. Help me be present where I am.”
 
 [Colossians 3:23](https://www.biblegateway.com/passage/?search=Colossians+3%3A23&version=NIV) · [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV) · [Psalm 16:8](https://www.biblegateway.com/passage/?search=Psalm+16%3A8&version=NIV) · [Philippians 2:3–4](https://www.biblegateway.com/passage/?search=Philippians+2%3A3-4&version=NIV)
 
-### 7. Honest assessment
+### 8. Honest assessment
 
 You may not fully trust the other person. Do not pretend otherwise.
 
@@ -117,7 +134,7 @@ Prayer: “Lord, I do not trust them. Give me peace.”
 
 [Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&version=NIV) · [Proverbs 12:22](https://www.biblegateway.com/passage/?search=Proverbs+12%3A22&version=NIV) · [Ephesians 4:15](https://www.biblegateway.com/passage/?search=Ephesians+4%3A15&version=NIV)
 
-### 8. Contact and boundaries
+### 9. Contact and boundaries
 
 Default to low or no contact when the relationship is unstable.
 
@@ -142,7 +159,7 @@ Prayer: “I will not use contact to manage pain. Give me restraint.”
 
 [Matthew 5:37](https://www.biblegateway.com/passage/?search=Matthew+5%3A37&version=NIV) · [Ecclesiastes 3:1](https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A1&version=NIV)
 
-### 9. Return to your side of the street
+### 10. Return to your side of the street
 
 Your side of the street is the only ground you control: thoughts, mouth, actions, obedience, standards.
 
@@ -158,7 +175,7 @@ Prayer: “Lord, You know what they are doing and what they are thinking. I give
 
 [1 Thessalonians 4:11](https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A11&version=NIV) · [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV) · [Matthew 7:3](https://www.biblegateway.com/passage/?search=Matthew+7%3A3&version=NIV)
 
-### 10. Recurring external pressure
+### 11. Recurring external pressure
 
 Past patterns and third parties will reappear.
 
@@ -173,7 +190,7 @@ Prayer: “Lord, protect my spouse and return their heart to me. I will not comp
 
 [Romans 12:17–19](https://www.biblegateway.com/passage/?search=Romans+12%3A17-19&version=NIV)
 
-### 11. Operate from strength, not need
+### 12. Operate from strength, not need
 
 Do not initiate from anxiety or the need to be reassured.
 
@@ -189,7 +206,7 @@ Prayer: “My emotional state is mine to manage. It is not dependent on them.”
 
 [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV) · [Exodus 14:14](https://www.biblegateway.com/passage/?search=Exodus+14%3A14&version=NIV) · [1 Peter 5:7](https://www.biblegateway.com/passage/?search=1+Peter+5%3A7&version=NIV)
 
-### 12. Trust over understanding
+### 13. Trust over understanding
 
 Trust in the Lord with all your heart. Lean not on your own understanding.
 
@@ -260,12 +277,12 @@ Do better. Be better. Trust God.
 ## Under fire
 
 - Thought capture: stop, name it, refuse to feed it, submit it to Christ. “No. I release this to You, Lord.”
-- Return to your side of the street — thoughts, mouth, actions, obedience, standards. Their replies and plans are their side. When you drift into reading them: stop.
+- Refuse investigation mode: notice it, name it, refuse every lead. Do not turn every open question into a case that must be solved right now.
 - Success is not whether they return or choose you. Success is staying in the Spirit and refusing the flesh — one decision at a time.
 
 ## Prayer
 
-Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I hand fear, contact, and outcomes to You. I return to my side of the street. Amen.
+Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I refuse investigation mode. I hand fear, contact, and outcomes to You. Amen.
 
 ## Scripture
 
@@ -273,6 +290,8 @@ Father, I release the flesh and the loop. By Your Spirit I take every thought ca
 - Galatians 5:24–25
 - 2 Corinthians 10:5
 - Colossians 3:2
+- Philippians 4:8
+- Romans 12:2
 - 2 Timothy 1:7
 - Ephesians 6:16
 - Philippians 4:6–7

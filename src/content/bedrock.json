@@ -785,7 +785,41 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "2. Combat fear"
+          "text": "2. Refuse investigation mode"
+        },
+        {
+          "type": "paragraph",
+          "text": "When something is uncertain or missing, the mind moves to gather evidence. Small gaps become possible proof of larger deception. Answers are heard but not received. New theories form and the search continues."
+        },
+        {
+          "type": "paragraph",
+          "text": "This mode feels like protection. It rarely produces peace. It keeps the body and mind on high alert."
+        },
+        {
+          "type": "paragraph",
+          "text": "When Investigation Mode starts:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Notice it.",
+            "Name it: “This is investigation mode.”",
+            "Refuse to follow every lead.",
+            "Do not turn every open question into a case that must be solved right now."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2 Corinthians 10:5, Philippians 4:8, Romans 12:2)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "3. Combat fear"
         },
         {
           "type": "paragraph",
@@ -814,7 +848,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "3. Refuse the acts of the flesh"
+          "text": "4. Refuse the acts of the flesh"
         },
         {
           "type": "paragraph",
@@ -843,7 +877,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "4. Forgiveness"
+          "text": "5. Forgiveness"
         },
         {
           "type": "paragraph",
@@ -868,7 +902,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "5. Self-control"
+          "text": "6. Self-control"
         },
         {
           "type": "paragraph",
@@ -909,7 +943,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "6. Presence and independent self"
+          "text": "7. Presence and independent self"
         },
         {
           "type": "paragraph",
@@ -942,7 +976,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "7. Honest assessment"
+          "text": "8. Honest assessment"
         },
         {
           "type": "paragraph",
@@ -971,7 +1005,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "8. Contact and boundaries"
+          "text": "9. Contact and boundaries"
         },
         {
           "type": "paragraph",
@@ -1021,7 +1055,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "9. Return to your side of the street"
+          "text": "10. Return to your side of the street"
         },
         {
           "type": "paragraph",
@@ -1054,7 +1088,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "10. Recurring external pressure"
+          "text": "11. Recurring external pressure"
         },
         {
           "type": "paragraph",
@@ -1084,7 +1118,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "11. Operate from strength, not need"
+          "text": "12. Operate from strength, not need"
         },
         {
           "type": "paragraph",
@@ -1117,7 +1151,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "12. Trust over understanding"
+          "text": "13. Trust over understanding"
         },
         {
           "type": "paragraph",
@@ -1282,6 +1316,18 @@
           "display": "Colossians 3:2",
           "book": "Colossians",
           "chapter": 3,
+          "verseStart": 2
+        },
+        {
+          "display": "Philippians 4:8",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 8
+        },
+        {
+          "display": "Romans 12:2",
+          "book": "Romans",
+          "chapter": 12,
           "verseStart": 2
         },
         {
@@ -1514,11 +1560,11 @@
       ],
       "hacks": [
         "Thought capture: stop, name it, refuse to feed it, submit it to Christ. “No. I release this to You, Lord.”",
-        "Return to your side of the street — thoughts, mouth, actions, obedience, standards. Their replies and plans are their side. When you drift into reading them: stop.",
+        "Refuse investigation mode: notice it, name it, refuse every lead. Do not turn every open question into a case that must be solved right now.",
         "Success is not whether they return or choose you. Success is staying in the Spirit and refusing the flesh — one decision at a time."
       ],
       "prayers": [
-        "Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I hand fear, contact, and outcomes to You. I return to my side of the street. Amen."
+        "Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I refuse investigation mode. I hand fear, contact, and outcomes to You. Amen."
       ],
       "related": [
         "walk-by-the-spirit",

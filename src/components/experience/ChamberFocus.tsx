@@ -326,7 +326,7 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Rubric — twelve daily standards under fire, each with a prayer. Denser than a first
+              Rubric — thirteen daily standards under fire, each with a prayer. Denser than a first
               principle on purpose. Not a temporary hack.
             </p>
           ) : null}
@@ -338,7 +338,7 @@ export function ChamberFocus({
           </h3>
           {isRubric ? (
             <p className="field-layer-hint">
-              Core mission · daily standards 1–12 · for men · success measure.
+              Core mission · daily standards 1–13 · for men · success measure.
             </p>
           ) : null}
           {isRubric ? (

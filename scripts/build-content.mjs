@@ -632,11 +632,11 @@ const FIELD_AIDS = {
   'kill-the-flesh-walk-in-the-spirit': {
     hacks: [
       'Thought capture: stop, name it, refuse to feed it, submit it to Christ. “No. I release this to You, Lord.”',
-      'Return to your side of the street — thoughts, mouth, actions, obedience, standards. Their replies and plans are their side. When you drift into reading them: stop.',
+      'Refuse investigation mode: notice it, name it, refuse every lead. Do not turn every open question into a case that must be solved right now.',
       'Success is not whether they return or choose you. Success is staying in the Spirit and refusing the flesh — one decision at a time.',
     ],
     prayers: [
-      'Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I hand fear, contact, and outcomes to You. I return to my side of the street. Amen.',
+      'Father, I release the flesh and the loop. By Your Spirit I take every thought captive. I refuse investigation mode. I hand fear, contact, and outcomes to You. Amen.',
     ],
   },
   adultery: {
@@ -1585,7 +1585,25 @@ const document = {
         list('Stop.', 'Name the thought.', 'Refuse to feed it.', 'Submit it to the obedience of Christ.'),
         p('Prayer: “No. I release this to You, Lord.”'),
         p('(2 Corinthians 10:5, Colossians 3:2)'),
-        h3('2. Combat fear'),
+        h3('2. Refuse investigation mode'),
+        p(
+          'When something is uncertain or missing, the mind moves to gather evidence. Small gaps become possible proof of larger deception. Answers are heard but not received. New theories form and the search continues.',
+        ),
+        p(
+          'This mode feels like protection. It rarely produces peace. It keeps the body and mind on high alert.',
+        ),
+        p('When Investigation Mode starts:'),
+        list(
+          'Notice it.',
+          'Name it: “This is investigation mode.”',
+          'Refuse to follow every lead.',
+          'Do not turn every open question into a case that must be solved right now.',
+        ),
+        p(
+          'Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”',
+        ),
+        p('(2 Corinthians 10:5, Philippians 4:8, Romans 12:2)'),
+        h3('3. Combat fear'),
         p('Fight fear with the weapons of the Spirit: power, love, and a sound mind.'),
         p('When fear rises:'),
         list('Name the fear.', 'Refuse to agree with it.', 'Hand the outcome to God.'),
@@ -1593,7 +1611,7 @@ const document = {
           'Prayer: “God has not given me a spirit of fear, but of power, love, and a sound mind. I hand this to You.”',
         ),
         p('(2 Timothy 1:7, Ephesians 6:16, Philippians 4:6-7)'),
-        h3('3. Refuse the acts of the flesh'),
+        h3('4. Refuse the acts of the flesh'),
         p(
           'No name-calling. No yelling or rage. No control or monitoring. No revenge. No settled bitterness. No using suspicion as permission to return to the flesh.',
         ),
@@ -1601,12 +1619,12 @@ const document = {
         list('Name the act.', 'Refuse it.', 'Stop and return to obedience.'),
         p('Prayer: “I refuse this. I will walk in Love.”'),
         p('(Galatians 5:19-21, Ephesians 4:29, 4:31)'),
-        h3('4. Forgiveness'),
+        h3('5. Forgiveness'),
         p('Forgiveness is how you refuse to keep score and stay free from bitterness.'),
         list('Release the debt.', 'Refuse to rehearse the offense.', 'Hand the person and the injustice to God.'),
         p('Prayer: “I forgive. I release this to You, Lord.”'),
         p('(Matthew 6:14-15, Ephesians 4:32, Colossians 3:13)'),
-        h3('5. Self-control'),
+        h3('6. Self-control'),
         p('Refuse self-gratification.'),
         p('Guard eyes, thoughts, and body.'),
         p('Avoid emotional and physical affairs or attachments.'),
@@ -1617,7 +1635,7 @@ const document = {
           'Prayer: “My body is the temple of the Holy Spirit. I choose self-control. Strengthen me.”',
         ),
         p('(1 Corinthians 6:19-20, Galatians 5:22-23, 1 Corinthians 6:18)'),
-        h3('6. Presence and independent self'),
+        h3('7. Presence and independent self'),
         p(
           'You are a whole person under God. Your identity, emotional regulation, and worth do not come from the other person.',
         ),
@@ -1630,7 +1648,7 @@ const document = {
         ),
         p('Prayer: “Lord, this is where You have me. Help me be present where I am.”'),
         p('(Colossians 3:23, Galatians 6:4-5, Psalm 16:8, Philippians 2:3-4)'),
-        h3('7. Honest assessment'),
+        h3('8. Honest assessment'),
         p('You may not fully trust the other person. Do not pretend otherwise.'),
         p('When distrust rises:'),
         list(
@@ -1640,7 +1658,7 @@ const document = {
         ),
         p('Prayer: “Lord, I do not trust them. Give me peace.”'),
         p('(Proverbs 4:23, Proverbs 12:22, Ephesians 4:15)'),
-        h3('8. Contact and boundaries'),
+        h3('9. Contact and boundaries'),
         p('Default to low or no contact when the relationship is unstable.'),
         p('Keep all contact logistical and unemotional.'),
         p(
@@ -1661,7 +1679,7 @@ const document = {
         ),
         p('Prayer: “I will not use contact to manage pain. Give me restraint.”'),
         p('(Matthew 5:37, Ecclesiastes 3:1)'),
-        h3('9. Return to your side of the street'),
+        h3('10. Return to your side of the street'),
         p(
           'Your side of the street is the only ground you control: thoughts, mouth, actions, obedience, standards.',
         ),
@@ -1676,7 +1694,7 @@ const document = {
           'Prayer: “Lord, You know what they are doing and what they are thinking. I give them to You.”',
         ),
         p('(1 Thessalonians 4:11, Galatians 6:4-5, Matthew 7:3)'),
-        h3('10. Recurring external pressure'),
+        h3('11. Recurring external pressure'),
         p('Past patterns and third parties will reappear.'),
         p('When they do:'),
         list(
@@ -1687,7 +1705,7 @@ const document = {
         ),
         p('Prayer: “Lord, protect my spouse and return their heart to me. I will not compete.”'),
         p('(Romans 12:17-19)'),
-        h3('11. Operate from strength, not need'),
+        h3('12. Operate from strength, not need'),
         p('Do not initiate from anxiety or the need to be reassured.'),
         p('Do not measure your worth by their availability or tone.'),
         p('When pain or need rises:'),
@@ -1698,7 +1716,7 @@ const document = {
         ),
         p('Prayer: “My emotional state is mine to manage. It is not dependent on them.”'),
         p('(Psalm 46:10, Exodus 14:14, 1 Peter 5:7)'),
-        h3('12. Trust over understanding'),
+        h3('13. Trust over understanding'),
         p('Trust in the Lord with all your heart. Lean not on your own understanding.'),
         p('He is with you.'),
         p('When questions and mixed signals rise:'),
@@ -1740,7 +1758,7 @@ const document = {
         p('(Galatians 6:9, James 1:12)'),
         p('Do better. Be better. Trust God.'),
       ],
-      'Galatians 5:16, 24-25 · 2 Corinthians 10:5 · Colossians 3:2 · 2 Timothy 1:7 · Ephesians 6:16 · Philippians 4:6-7 · Galatians 5:19-21 · Ephesians 4:29, 31-32 · Matthew 6:14-15 · Colossians 3:13 · 1 Corinthians 6:18-20 · Galatians 5:22-23 · Colossians 3:23 · Galatians 6:4-5 · Psalm 16:8 · Philippians 2:3-4 · Proverbs 4:23 · Proverbs 12:22 · Ephesians 4:15 · Matthew 5:37 · Ecclesiastes 3:1 · 1 Thessalonians 4:11 · Matthew 7:3 · Romans 12:17-19 · Psalm 46:10 · Exodus 14:14 · 1 Peter 5:7 · Proverbs 3:5-6 · Proverbs 16:9 · Jeremiah 29:11 · 1 Corinthians 16:13-14 · Proverbs 25:28 · Joshua 1:9 · Ephesians 5:25 · Colossians 3:19 · Matthew 23:11 · Galatians 6:9 · James 1:12',
+      'Galatians 5:16, 24-25 · 2 Corinthians 10:5 · Colossians 3:2 · Philippians 4:8 · Romans 12:2 · 2 Timothy 1:7 · Ephesians 6:16 · Philippians 4:6-7 · Galatians 5:19-21 · Ephesians 4:29, 31-32 · Matthew 6:14-15 · Colossians 3:13 · 1 Corinthians 6:18-20 · Galatians 5:22-23 · Colossians 3:23 · Galatians 6:4-5 · Psalm 16:8 · Philippians 2:3-4 · Proverbs 4:23 · Proverbs 12:22 · Ephesians 4:15 · Matthew 5:37 · Ecclesiastes 3:1 · 1 Thessalonians 4:11 · Matthew 7:3 · Romans 12:17-19 · Psalm 46:10 · Exodus 14:14 · 1 Peter 5:7 · Proverbs 3:5-6 · Proverbs 16:9 · Jeremiah 29:11 · 1 Corinthians 16:13-14 · Proverbs 25:28 · Joshua 1:9 · Ephesians 5:25 · Colossians 3:19 · Matthew 23:11 · Galatians 6:9 · James 1:12',
     ),
     chamber(
       'Holy Spirit',

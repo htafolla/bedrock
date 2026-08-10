@@ -28,7 +28,7 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.kind).toBe('rubric')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
-      /side of the street|shield of faith/,
+      /thought capture|investigation mode|staying in the spirit/,
     )
     // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
     const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
@@ -44,6 +44,7 @@ describe('bedrock content integrity', () => {
       .join(' ')
       .toLowerCase()
     expect(rubricText).toMatch(/thought capture|side of the street|forgiveness|trust over understanding/)
+    expect(rubricText).toMatch(/investigation mode|permanent investigator/)
     expect(rubricText).toMatch(/for men|strength, courage/)
     expect(rubricText).toMatch(/release this to you|sound mind/)
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
