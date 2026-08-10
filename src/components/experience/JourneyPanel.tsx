@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
 import { listJourneys } from '../../lib/journeys'
+import { ShareMenu } from '../ShareMenu'
+import { buildPathShare } from '../../lib/share'
 import type { Journey, JourneyFamily } from '../../types/journey'
 import { JourneyStageRail } from './JourneyStageRail'
 
@@ -90,7 +92,7 @@ export function JourneyPanel({
                 {list.map((j) => {
                   const isActive = j.id === activeJourneyId
                   return (
-                    <li key={j.id}>
+                    <li key={j.id} className="journey-card-row">
                       <button
                         type="button"
                         className={isActive ? 'journey-card active' : 'journey-card'}
@@ -105,6 +107,15 @@ export function JourneyPanel({
                           {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
                         </span>
                       </button>
+                      <ShareMenu
+                        compact
+                        className="journey-card-share"
+                        payload={buildPathShare({
+                          journeyId: j.id,
+                          title: j.title,
+                          summary: j.summary,
+                        })}
+                      />
                     </li>
                   )
                 })}

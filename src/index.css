@@ -1164,6 +1164,153 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* —— Share menu (Door / Station / Path / Standard) —— */
+.share-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.share-trigger {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  min-height: 2.35rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--surface-row);
+  color: var(--beam);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.share-trigger.compact {
+  min-height: 2.15rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+}
+
+.share-trigger:hover,
+.share-trigger:focus-visible {
+  border-color: var(--ember);
+  outline: none;
+}
+
+.share-popover {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 60;
+  min-width: 15rem;
+  max-width: min(18rem, 90vw);
+  padding: 0.65rem 0.55rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-strong);
+  box-shadow: 0 12px 36px var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.share-popover-kicker {
+  margin: 0 0.4rem 0.15rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ember);
+  font-weight: 700;
+}
+
+.share-popover-title {
+  margin: 0 0.4rem 0.45rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: var(--beam);
+  font-weight: 600;
+}
+
+.share-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.45rem;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.5rem 0.55rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.share-item:hover,
+.share-item:focus-visible {
+  background: var(--ember-wash);
+  outline: none;
+}
+
+.share-item-hint {
+  font-size: 0.68rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.share-popover-note {
+  margin: 0.4rem 0.4rem 0.15rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.share-status {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.25rem);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.7rem;
+  color: var(--ember);
+  pointer-events: none;
+}
+
+.key-chip-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: stretch;
+}
+
+.key-chip-wrap .key-chip {
+  width: 100%;
+}
+
+.key-chip-share {
+  align-self: flex-end;
+}
+
+.journey-card-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  position: relative;
+}
+
+.journey-card-share {
+  align-self: flex-end;
+  margin-top: -0.15rem;
+}
+
+.chamber-share {
+  flex-shrink: 0;
+}
+
 /* Depth ladder: Door · Station · Path · Standard */
 .depth-ladder {
   display: flex;

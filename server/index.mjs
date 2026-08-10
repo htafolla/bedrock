@@ -41,6 +41,7 @@ import {
   formatJourneyContextLine,
   journeysForChamber,
 } from './journeys.mjs'
+import { buildOgSvg } from './og-card.mjs'
 import {
   initTelemetryStore,
   isTelemetryRedisReady,
@@ -298,6 +299,63 @@ function createApp() {
 
   const doc = loadDocument()
   const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
+
+  /**
+   * Dynamic social / Open Graph card (SVG 1200×630).
+   * ?layer=door|station|path|standard&id=&title=&subtitle=
+   * Resolves title/summary from chambers / journeys when id is known.
+   */
+  app.get('/api/og', (req, res) => {
+    const layerRaw = String(req.query.layer || 'station').toLowerCase()
+    const layer = ['door', 'station', 'path', 'standard'].includes(layerRaw)
+      ? layerRaw
+      : 'station'
+    const id = String(req.query.id || '').trim()
+    let title = String(req.query.title || '').trim()
+    let subtitle = String(req.query.subtitle || '').trim()
+
+    if (layer === 'path' && id) {
+      const j = getJourney(id)
+      if (j) {
+        if (!title) title = j.title
+        if (!subtitle) subtitle = j.summary
+      }
+    } else if ((layer === 'station' || layer === 'standard') && id) {
+      const c = chamberById.get(id)
+      if (c) {
+        if (!title) title = c.title
+        if (!subtitle) subtitle = c.summary
+      }
+    } else if (layer === 'door' && !title) {
+      title = id ? id.replace(/^key-/, '').replace(/-/g, ' ') : 'Keys'
+    }
+
+    if (!title) {
+      title =
+        layer === 'standard'
+          ? 'Kill the Flesh. Walk in the Spirit.'
+          : layer === 'path'
+            ? 'Bedrock Path'
+            : layer === 'door'
+              ? 'Bedrock Door'
+              : 'Bedrock'
+    }
+    if (!subtitle) {
+      subtitle = 'Do Better. Be Better. Trust God.'
+    }
+
+    const svg = buildOgSvg({
+      layer: layer === 'standard' || (layer === 'station' && id === 'kill-the-flesh-walk-in-the-spirit')
+        ? 'standard'
+        : layer,
+      title,
+      subtitle,
+      motto: 'Do Better. Be Better. Trust God.',
+    })
+    res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
+    res.setHeader('Cache-Control', 'public, max-age=3600')
+    res.send(svg)
+  })
 
   app.get('/api/health', (_req, res) => {
     const oauth = oauthStatus()

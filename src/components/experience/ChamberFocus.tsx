@@ -10,6 +10,8 @@ import {
   parseScriptureCitationLine,
 } from '../../lib/verses'
 import { JourneyStageRail } from './JourneyStageRail'
+import { ShareMenu } from '../ShareMenu'
+import { buildStationShare } from '../../lib/share'
 
 interface ChamberFocusProps {
   document: BedrockDocument
@@ -295,6 +297,16 @@ export function ChamberFocus({
         >
           Plain
         </a>
+        <ShareMenu
+          compact
+          className="chamber-share"
+          payload={buildStationShare({
+            chamberId: chamber.id,
+            title: chamber.title,
+            summary: chamber.summary,
+            kind: chamber.kind,
+          })}
+        />
         <p className="focus-spine-meta">
           {isRubric
             ? 'Operational standard'

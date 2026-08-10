@@ -1,0 +1,74 @@
+import { describe, expect, it } from 'vitest'
+import {
+  buildDoorShare,
+  buildPathShare,
+  buildStationShare,
+  facebookShareUrl,
+  layerLabel,
+  ogImageUrl,
+  xIntentUrl,
+} from './share'
+import { SITE_ORIGIN } from './seo'
+
+describe('share payloads', () => {
+  it('station share uses canonical /c/ url and station og', () => {
+    const p = buildStationShare({
+      chamberId: 'wounded',
+      title: 'Wounded',
+      summary: 'You were harmed.',
+    })
+    expect(p.layer).toBe('station')
+    expect(p.url).toBe(`${SITE_ORIGIN}/c/wounded`)
+    expect(p.ogImage).toContain('/api/og?')
+    expect(p.ogImage).toContain('layer=station')
+    expect(p.ogImage).toContain('id=wounded')
+  })
+
+  it('rubric chamber is standard layer', () => {
+    const p = buildStationShare({
+      chamberId: 'kill-the-flesh-walk-in-the-spirit',
+      title: 'Kill the Flesh. Walk in the Spirit.',
+      summary: 'Steel under fire.',
+      kind: 'rubric',
+    })
+    expect(p.layer).toBe('standard')
+    expect(layerLabel(p.layer)).toBe('Standard')
+  })
+
+  it('path share uses ?j=', () => {
+    const p = buildPathShare({
+      journeyId: 'battlefield-of-the-mind',
+      title: 'Battlefield of the mind',
+      summary: 'The war is often inside.',
+    })
+    expect(p.layer).toBe('path')
+    expect(p.url).toContain('j=battlefield-of-the-mind')
+    expect(p.ogImage).toContain('layer=path')
+  })
+
+  it('door share carries door + chamber + journey', () => {
+    const p = buildDoorShare({
+      keyId: 'key-wounded',
+      label: 'Wounded',
+      hint: 'I was hurt',
+      chamberId: 'wounded',
+      journeyId: 'spouse-left',
+    })
+    expect(p.layer).toBe('door')
+    expect(p.url).toContain('c=wounded')
+    expect(p.url).toContain('j=spouse-left')
+    expect(p.url).toContain('door=key-wounded')
+  })
+
+  it('x and facebook intents encode url', () => {
+    const p = buildStationShare({
+      chamberId: 'peace',
+      title: 'Peace',
+      summary: 'Spirit fruit.',
+    })
+    expect(xIntentUrl(p)).toContain('twitter.com/intent/tweet')
+    expect(xIntentUrl(p)).toContain(encodeURIComponent(p.url).slice(0, 20))
+    expect(facebookShareUrl(p)).toContain('facebook.com/sharer')
+    expect(ogImageUrl({ layer: 'door', id: 'key-god' })).toContain('layer=door')
+  })
+})

@@ -341,11 +341,11 @@ function chamberHtml(c, meta) {
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
-  <meta property="og:image" content="${ORIGIN}/og-hero.jpg?v=2" />
+  <meta property="og:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;title=${encodeURIComponent(c.title).replace(/'/g, '%27')}&amp;subtitle=${encodeURIComponent(c.summary).replace(/'/g, '%27')}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-  <meta name="twitter:image" content="${ORIGIN}/og-hero.jpg?v=2" />
+  <meta name="twitter:image" content="${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&amp;id=${esc(c.id)}&amp;title=${encodeURIComponent(c.title).replace(/'/g, '%27')}&amp;subtitle=${encodeURIComponent(c.summary).replace(/'/g, '%27')}" />
   <link rel="alternate" type="text/markdown" href="${ORIGIN}/c/${esc(c.id)}.md" title="Markdown" />
   <script type="application/ld+json">
   ${JSON.stringify({
@@ -356,7 +356,7 @@ function chamberHtml(c, meta) {
     url: `${ORIGIN}/c/${c.id}`,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
-    image: `${ORIGIN}/og-hero.jpg`,
+    image: `${ORIGIN}/api/og?layer=${isRubric ? 'standard' : 'station'}&id=${encodeURIComponent(c.id)}`,
     inLanguage: 'en',
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
   })}

@@ -8,6 +8,8 @@ import {
 } from 'react'
 import { KEY_ENTRIES } from '../../lib/key-entries'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
+import { ShareMenu } from '../ShareMenu'
+import { buildDoorShare } from '../../lib/share'
 
 interface KeyChipsProps {
   activeChamberId: string | null
@@ -28,15 +30,28 @@ function ChipButton({
   onSelect: (chamberId: string, journeyId?: string) => void
 }) {
   return (
-    <button
-      type="button"
-      className={active ? 'key-chip active' : 'key-chip'}
-      onClick={() => onSelect(entry.chamberId, entry.journeyId)}
-      title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
-    >
-      <span className="key-chip-label">{entry.label}</span>
-      <span className="key-chip-hint">{entry.hint}</span>
-    </button>
+    <div className={active ? 'key-chip-wrap active' : 'key-chip-wrap'}>
+      <button
+        type="button"
+        className={active ? 'key-chip active' : 'key-chip'}
+        onClick={() => onSelect(entry.chamberId, entry.journeyId)}
+        title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
+      >
+        <span className="key-chip-label">{entry.label}</span>
+        <span className="key-chip-hint">{entry.hint}</span>
+      </button>
+      <ShareMenu
+        compact
+        className="key-chip-share"
+        payload={buildDoorShare({
+          keyId: entry.id,
+          label: entry.label,
+          hint: entry.hint,
+          chamberId: entry.chamberId,
+          journeyId: entry.journeyId,
+        })}
+      />
+    </div>
   )
 }
 

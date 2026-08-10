@@ -154,12 +154,25 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
   }
 }
 
+/** Per-station / standard OG card for social previews. */
+export function chamberOgImageUrl(chamber: Chamber): string {
+  const layer = chamber.kind === 'rubric' ? 'standard' : 'station'
+  const q = new URLSearchParams({
+    layer,
+    id: chamber.id,
+    title: chamber.title.slice(0, 120),
+    subtitle: chamber.summary.slice(0, 160),
+  })
+  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+}
+
 export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayload {
   const title = `${chamber.title} — Bedrock | ${doc.meta.subtitle}`
   const description =
     chamber.summary.length >= 50
       ? `${chamber.summary} Scripture, under-fire hacks, and prayer in Bedrock.`
       : `${chamber.title}: ${chamber.summary} Truth, hacks, and prayer — Do Better. Be Better. Trust God.`
+  const ogImage = chamberOgImageUrl(chamber)
 
   const jsonLd: Record<string, unknown>[] = [
     {
@@ -169,11 +182,11 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
       description: chamber.summary,
       author: { '@type': 'Organization', name: 'Bedrock' },
       publisher: { '@type': 'Organization', name: 'Bedrock', url: CANONICAL_URL },
-      image: OG_IMAGE_URL,
+      image: ogImage,
       mainEntityOfPage: chamberCanonicalUrl(chamber.id),
       url: chamberCanonicalUrl(chamber.id),
       keywords: [chamber.title, ...chamber.verses.map((v) => v.display)].join(', '),
-      articleSection: 'First principles',
+      articleSection: chamber.kind === 'rubric' ? 'Operational standard' : 'First principles',
       inLanguage: 'en',
     },
     {
@@ -196,7 +209,7 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
     title,
     description: description.slice(0, 160),
     canonical: chamberCanonicalUrl(chamber.id),
-    ogImage: OG_IMAGE_URL,
+    ogImage,
     ogType: 'article',
     keywords: [chamber.title, chamber.summary, 'Bedrock', 'Bible', 'prayer'].join(', '),
     jsonLd,
