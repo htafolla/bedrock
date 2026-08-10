@@ -367,14 +367,17 @@ function chamberHtml(c, meta) {
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
-  <meta property="og:image" content="${ORIGIN}/og/c/${esc(c.id)}.png?v=4" />
+  <meta property="og:image" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
+  <meta property="og:image:secure_url" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${title}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-  <meta name="twitter:image" content="${ORIGIN}/og/c/${esc(c.id)}.png?v=4" />
+  <meta name="twitter:image" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
+  <meta name="twitter:image:alt" content="${title}" />
   <link rel="alternate" type="text/markdown" href="${ORIGIN}/c/${esc(c.id)}.md" title="Markdown" />
   <script type="application/ld+json">
   ${JSON.stringify({
@@ -385,7 +388,7 @@ function chamberHtml(c, meta) {
     url: `${ORIGIN}/c/${c.id}`,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
-    image: `${ORIGIN}/og/c/${c.id}.png?v=4`,
+    image: `${ORIGIN}/og/c/${c.id}.png`,
     inLanguage: 'en',
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
   })}
@@ -554,11 +557,11 @@ function buildLlmsFull(doc) {
 
 /** Static PNG OG cards (built in build-og-cards.mjs on every content build). */
 function journeyOgImageUrl(j) {
-  return `${ORIGIN}/og/j/${j.id}.png?v=4`
+  return `${ORIGIN}/og/j/${j.id}.png`
 }
 
 function doorOgImageUrl(k) {
-  return `${ORIGIN}/og/k/${k.id}.png?v=4`
+  return `${ORIGIN}/og/k/${k.id}.png`
 }
 
 function doorHtml(k) {
@@ -592,13 +595,16 @@ function doorHtml(k) {
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/k/${esc(k.id)}" />
   <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:secure_url" content="${ogImage}" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${title}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
   <meta name="twitter:image" content="${ogImage}" />
+  <meta name="twitter:image:alt" content="${title}" />
   <script type="application/ld+json">
   ${JSON.stringify({
     '@context': 'https://schema.org',
@@ -700,13 +706,16 @@ function journeyHtml(j) {
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/j/${esc(j.id)}" />
   <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:secure_url" content="${ogImage}" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${title}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
   <meta name="twitter:image" content="${ogImage}" />
+  <meta name="twitter:image:alt" content="${title}" />
   <script type="application/ld+json">
   ${JSON.stringify({
     '@context': 'https://schema.org',

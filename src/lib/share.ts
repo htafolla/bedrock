@@ -64,13 +64,13 @@ export function ogImageUrl(params: {
 }): string {
   if (params.id) {
     const kind = params.layer === 'path' ? 'j' : params.layer === 'door' ? 'k' : 'c'
-    return `${SITE_ORIGIN}/og/${kind}/${params.id}.png?v=4`
+    // Clean PNG path — no query string (X card crawler is picky)
+    return `${SITE_ORIGIN}/og/${kind}/${params.id}.png`
   }
   const q = new URLSearchParams()
   q.set('layer', params.layer)
   if (params.title) q.set('title', params.title.slice(0, 120))
   if (params.subtitle) q.set('subtitle', params.subtitle.slice(0, 160))
-  q.set('v', '4')
   return `${SITE_ORIGIN}/api/og?${q.toString()}`
 }
 

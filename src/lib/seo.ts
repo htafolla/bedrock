@@ -187,11 +187,16 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
  * Real image files — X, Facebook, LinkedIn, iMessage all accept them.
  * Bump when card art changes so platforms re-fetch.
  */
-export const OG_CARD_VERSION = '4'
+/**
+ * Bump when card art pipeline changes. Prefer clean PNG paths (no query string) —
+ * X/Twitter card crawler is unreliable with image URLs that include ?v=.
+ * Cache-bust by regenerating files on content build (ETag / last-modified).
+ */
+export const OG_CARD_VERSION = '5'
 
 /** @param kind c = chamber, j = journey/path, k = key */
 export function staticOgImageUrl(kind: 'c' | 'j' | 'k', id: string): string {
-  return `${SITE_ORIGIN}/og/${kind}/${id}.png?v=${OG_CARD_VERSION}`
+  return `${SITE_ORIGIN}/og/${kind}/${id}.png`
 }
 
 /** @deprecated use static paths; kept for ad-hoc /api/og fallback */

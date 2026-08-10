@@ -842,7 +842,7 @@ function createApp() {
         title: String(j.title || '').slice(0, 120),
         subtitle: desc,
       })
-      const og = `https://bedrock.rippel.ai/og/j/${encodeURIComponent(j.id)}.png?v=4`
+      const og = `https://bedrock.rippel.ai/og/j/${encodeURIComponent(j.id)}.png`
       const esc = (s) =>
         String(s)
           .replace(/&/g, '&amp;')
@@ -885,6 +885,37 @@ function createApp() {
         fallthrough: false,
       }),
     )
+
+    // OG share PNGs — real files only. Never SPA-fallback (X would scrape HTML as the image).
+    // Prefer public/ (fresh content build) over dist/ copy.
+    const ogRoots = [path.join(publicDir, 'og'), path.join(dist, 'og')].filter((p) =>
+      existsSync(p),
+    )
+    app.use(
+      '/og',
+      (req, res, next) => {
+        // Clean crawler-friendly headers (do not inherit no-store from /c/ path quirks)
+        res.removeHeader('Pragma')
+        res.removeHeader('Expires')
+        next()
+      },
+      ...ogRoots.map((root) =>
+        express.static(root, {
+          index: false,
+          maxAge: '7d',
+          fallthrough: true,
+          setHeaders(res) {
+            res.setHeader('Content-Type', 'image/png')
+            res.setHeader('Cache-Control', 'public, max-age=604800, immutable')
+            res.setHeader('X-Content-Type-Options', 'nosniff')
+          },
+        }),
+      ),
+    )
+    app.get(/^\/og\//, (_req, res) => {
+      res.status(404).type('text').send('OG image not found')
+    })
+
     // Other dist files (favicon, robots, chamber html, export, etc.)
     app.use(
       express.static(dist, {
@@ -897,12 +928,14 @@ function createApp() {
             setContentNoStore(res)
             return
           }
-          // Chamber / export content revalidates (content deploys often)
+          // Chamber / journey / key HTML + export revalidate (not /og — handled above)
           const norm = filePath.replace(/\\/g, '/')
+          if (norm.includes('/og/')) return
+          // Match path segments carefully: /c/page not /og/c/
           if (
-            norm.includes('/c/') ||
-            norm.includes('/j/') ||
-            norm.includes('/k/') ||
+            /\/c\/[^/]+\.(html|md)$/.test(norm) ||
+            /\/j\/[^/]+\.html$/.test(norm) ||
+            /\/k\/[^/]+\.html$/.test(norm) ||
             norm.includes('/export/') ||
             norm.endsWith('llms.txt') ||
             norm.endsWith('llms-full.txt') ||
@@ -910,22 +943,18 @@ function createApp() {
           ) {
             setContentNoStore(res)
           }
-          // Static OG PNGs: long cache; URL ?v= bumps when art changes
-          if (norm.includes('/og/') && norm.endsWith('.png')) {
-            res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800')
-            res.setHeader('Content-Type', 'image/png')
-          }
         },
       }),
     )
     // SPA shell for app routes (home, ?c=, etc.) — not /api, not missing assets
     app.get(/^(?!\/api(?:\/|$)).*/, (req, res, next) => {
-      // Never SPA-fallback hashed assets or chamber static — real 404s
+      // Never SPA-fallback hashed assets, content pages, or OG images — real 404s
       if (
         req.path.startsWith('/assets/') ||
         req.path.startsWith('/c/') ||
         req.path.startsWith('/j/') ||
         req.path.startsWith('/k/') ||
+        req.path.startsWith('/og/') ||
         req.path.startsWith('/export/')
       ) {
         res.status(404).type('text').send('Not found')
