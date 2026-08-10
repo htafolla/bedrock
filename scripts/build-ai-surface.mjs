@@ -1,6 +1,7 @@
 /**
- * AI / AEO surface from content SSOT (bedrock.json).
- * Generates: llms.txt, llms-full.txt, export/chambers.json, /c/:id.html + .md, sitemap.
+ * AI / AEO surface from content SSOT (bedrock.json + journeys.json).
+ * Generates: llms.txt, llms-full.txt, export/chambers.json, /c/:id.html + .md,
+ * /j/:id.html (path OG for social), sitemap.
  *
  * Called at end of build-content.mjs or: node scripts/build-ai-surface.mjs
  */
@@ -480,11 +481,12 @@ Bedrock is a free Christian field guide for people in the **storm**: grief, obse
 - Home: ${ORIGIN}/
 - Chamber pages (canonical, crawlable): ${ORIGIN}/c/{id}
 - Chamber markdown: ${ORIGIN}/c/{id}.md
+- Journey / path pages (share + OG): ${ORIGIN}/j/{id}
 - Full atlas JSON: ${ORIGIN}/export/chambers.json
 - Core journeys JSON: ${ORIGIN}/export/journeys.json
 - Full text for models: ${ORIGIN}/llms-full.txt
 - Sitemap: ${ORIGIN}/sitemap.xml
-- Open Graph: ${ORIGIN}/og-hero.jpg
+- Open Graph home: ${ORIGIN}/og-hero.jpg · content cards: ${ORIGIN}/api/og
 
 ## How to cite
 
@@ -521,7 +523,120 @@ function buildLlmsFull(doc) {
   return parts.join('\n')
 }
 
-function buildSitemap(doc) {
+function journeyOgImageUrl(j) {
+  const q = new URLSearchParams({
+    layer: 'path',
+    id: j.id,
+    title: String(j.title || '').slice(0, 120),
+    subtitle: String(j.summary || '').slice(0, 160),
+  })
+  return `${ORIGIN}/api/og?${q.toString()}`
+}
+
+function journeyHtml(j) {
+  const stages = Array.isArray(j.stages) ? j.stages : []
+  const stageList = stages
+    .map(
+      (s, i) =>
+        `<li><span class="stage-num">${i + 1}</span> <a href="/c/${esc(s.chamberId)}">${esc(s.label)}</a>${
+          s.note ? ` <span class="stage-note">— ${esc(s.note)}</span>` : ''
+        }</li>`,
+    )
+    .join('\n')
+  const title = `${esc(j.title)} — Bedrock Path`
+  const desc = esc(
+    `${j.summary} Multi-station journey in Bedrock. Do Better. Be Better. Trust God.`,
+  ).slice(0, 160)
+  const ogImage = esc(journeyOgImageUrl(j))
+  const pagePath = `/j/${j.id}`
+  const analytics = analyticsHeadSnippet(pagePath)
+  const spaHref = `/?j=${encodeURIComponent(j.id)}`
+  const doorHref = j.doorChamberId ? `/c/${esc(j.doorChamberId)}` : '/'
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${title}</title>
+  <meta name="description" content="${desc}" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="${ORIGIN}/j/${esc(j.id)}" />
+  <meta property="og:site_name" content="Bedrock" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${title}" />
+  <meta property="og:description" content="${desc}" />
+  <meta property="og:url" content="${ORIGIN}/j/${esc(j.id)}" />
+  <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${title}" />
+  <meta name="twitter:description" content="${desc}" />
+  <meta name="twitter:image" content="${ogImage}" />
+  <script type="application/ld+json">
+  ${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: j.title,
+    description: j.summary,
+    url: `${ORIGIN}/j/${j.id}`,
+    author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
+    publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
+    image: journeyOgImageUrl(j),
+    inLanguage: 'en',
+    isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
+    articleSection: 'Path · Journey',
+  })}
+  </script>
+  ${analytics}
+  <style>
+    :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Source Sans 3", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+    a { color:var(--ember); }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 1.25rem 1.15rem 3rem; }
+    .kicker { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ember); margin:0 0 .4rem; }
+    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; font-size:clamp(2rem,6vw,2.75rem); color:var(--beam); margin:.2rem 0; line-height:1.1; }
+    .summary { color:var(--muted); margin:.5rem 0 1.25rem; font-size:1.05rem; }
+    .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
+    h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
+    .card ol { margin:.35rem 0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:.55rem; }
+    .card li { margin:0; padding:.45rem .55rem; border-radius:8px; background:rgba(0,0,0,.18); border:1px solid rgba(196,165,116,.08); line-height:1.4; }
+    .stage-num { display:inline-flex; align-items:center; justify-content:center; min-width:1.5rem; height:1.5rem; margin-right:.35rem; border-radius:999px; background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; font-size:.75rem; font-weight:700; }
+    .stage-note { color:var(--muted); font-size:.88rem; }
+    .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
+    .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
+    .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
+    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="kicker">Path · Journey · Bedrock</p>
+    <h1>${esc(j.title)}</h1>
+    <p class="summary">${esc(j.summary)}</p>
+    <nav class="nav" aria-label="Path actions">
+      <a class="primary" href="${spaHref}">Open this path</a>
+      <a href="${doorHref}">Door station</a>
+      <a href="/">Home</a>
+      <a href="${ORIGIN}/export/journeys.json">Journeys JSON</a>
+    </nav>
+    <section class="card" aria-labelledby="stations">
+      <h2 id="stations">${stages.length} stations</h2>
+      <ol>${stageList}</ol>
+    </section>
+    <footer>
+      <p>Do better. Be better. Trust God.</p>
+      <p>Public beta · Not a crisis hotline.</p>
+    </footer>
+  </main>
+</body>
+</html>
+`
+}
+
+function buildSitemap(doc, journeys = []) {
   const today = new Date().toISOString().slice(0, 10)
   const urls = [
     { loc: `${ORIGIN}/`, priority: '1.0' },
@@ -532,6 +647,10 @@ function buildSitemap(doc) {
     ...doc.chambers.map((c) => ({
       loc: `${ORIGIN}/c/${c.id}`,
       priority: '0.8',
+    })),
+    ...journeys.map((j) => ({
+      loc: `${ORIGIN}/j/${j.id}`,
+      priority: '0.85',
     })),
   ]
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -561,8 +680,10 @@ ${urls
 
 export function buildAiSurface(doc) {
   const cDir = join(publicDir, 'c')
+  const jDir = join(publicDir, 'j')
   const exportDir = join(publicDir, 'export')
   mkdirSync(cDir, { recursive: true })
+  mkdirSync(jDir, { recursive: true })
   mkdirSync(exportDir, { recursive: true })
 
   // Index of chambers for /c/
@@ -595,23 +716,32 @@ export function buildAiSurface(doc) {
   }
   writeFileSync(join(exportDir, 'chambers.json'), JSON.stringify(exportPayload, null, 2) + '\n')
 
-  writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))
-  writeFileSync(join(publicDir, 'llms-full.txt'), buildLlmsFull(doc))
-  writeFileSync(join(publicDir, 'sitemap.xml'), buildSitemap(doc) + '\n')
-
-  // Core journeys SSOT → public export for AI / tools
-  let journeysCount = 0
+  // Core journeys SSOT → public export + /j/:id share pages (OG for X/FB)
+  let journeys = []
   if (existsSync(journeysPath)) {
     const journeysDoc = JSON.parse(readFileSync(journeysPath, 'utf8'))
-    mkdirSync(join(publicDir, 'export'), { recursive: true })
-    writeFileSync(join(publicDir, 'export/journeys.json'), JSON.stringify(journeysDoc, null, 2) + '\n')
-    journeysCount = Array.isArray(journeysDoc.journeys) ? journeysDoc.journeys.length : 0
+    journeys = Array.isArray(journeysDoc.journeys) ? journeysDoc.journeys : []
+    writeFileSync(join(exportDir, 'journeys.json'), JSON.stringify(journeysDoc, null, 2) + '\n')
+    const jIndex = journeys
+      .map((j) => `- [${j.title}](${ORIGIN}/j/${j.id}) — ${j.summary}`)
+      .join('\n')
+    writeFileSync(
+      join(jDir, 'README.md'),
+      `# Bedrock paths (journeys)\n\nCanonical multi-station paths for crawlers and social share.\n\n${jIndex}\n`,
+    )
+    for (const j of journeys) {
+      writeFileSync(join(jDir, `${j.id}.html`), journeyHtml(j))
+    }
   }
+
+  writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))
+  writeFileSync(join(publicDir, 'llms-full.txt'), buildLlmsFull(doc))
+  writeFileSync(join(publicDir, 'sitemap.xml'), buildSitemap(doc, journeys) + '\n')
 
   return {
     chambers: doc.chambers.length,
-    journeys: journeysCount,
-    files: doc.chambers.length * 2 + 4 + (journeysCount ? 1 : 0),
+    journeys: journeys.length,
+    files: doc.chambers.length * 2 + journeys.length + 4 + (journeys.length ? 1 : 0),
   }
 }
 
@@ -624,6 +754,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const doc = JSON.parse(readFileSync(contentPath, 'utf8'))
   const r = buildAiSurface(doc)
   console.log(
-    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys → public/c, llms.txt, export/, sitemap`,
+    `AI surface: ${r.chambers} chambers · ${r.journeys || 0} journeys → public/c, public/j, llms.txt, export/, sitemap`,
   )
 }

@@ -1,6 +1,7 @@
 /**
  * SPA deep links for chambers and core journeys.
  * SEO/AI canonical pages live at /c/:id (static HTML).
+ * Journey/path pages (share + OG) live at /j/:id (static HTML).
  * Interactive field guide opens via /?c=:id (SPA).
  * Journeys: /?j=:journeyId opens the door chamber and keeps journey context.
  *
@@ -23,6 +24,11 @@ export function chamberPath(id: string): string {
 
 export function chamberAppHref(id: string): string {
   return `/?${CHAMBER_QUERY}=${encodeURIComponent(id)}`
+}
+
+/** Canonical crawlable journey page (static OG for social share). */
+export function journeyPath(id: string): string {
+  return `/j/${id}`
 }
 
 /** Shareable SPA link into a core journey (opens door chamber). */

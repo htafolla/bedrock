@@ -8,7 +8,7 @@
  * - Always prefer a canonical URL + content-specific OG image.
  */
 
-import { SITE_ORIGIN, chamberCanonicalUrl } from './seo'
+import { SITE_ORIGIN, chamberCanonicalUrl, journeyCanonicalUrl, journeyOgImageUrl } from './seo'
 
 export type ShareLayer = 'door' | 'station' | 'path' | 'standard'
 
@@ -91,7 +91,8 @@ export function buildPathShare(input: {
   title: string
   summary: string
 }): SharePayload {
-  const url = `${SITE_ORIGIN}/?j=${encodeURIComponent(input.journeyId)}`
+  // Canonical /j/:id has static OG tags for crawlers (SPA ?j= only has homepage meta).
+  const url = journeyCanonicalUrl(input.journeyId)
   const title = `${input.title} — Bedrock Path`
   return {
     layer: 'path',
@@ -99,11 +100,10 @@ export function buildPathShare(input: {
     title,
     text: input.summary,
     url,
-    ogImage: ogImageUrl({
-      layer: 'path',
-      id: input.journeyId,
+    ogImage: journeyOgImageUrl({
+      journeyId: input.journeyId,
       title: input.title,
-      subtitle: input.summary,
+      summary: input.summary,
     }),
     shareLine: `${title}\n${input.summary}\n${url}`,
   }

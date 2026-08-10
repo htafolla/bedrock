@@ -14,6 +14,26 @@ export function chamberCanonicalUrl(id: string): string {
   return `${SITE_ORIGIN}/c/${id}`
 }
 
+/** Canonical crawlable journey/path URL (static HTML with path OG card). */
+export function journeyCanonicalUrl(id: string): string {
+  return `${SITE_ORIGIN}/j/${id}`
+}
+
+/** Path layer OG card for social previews. */
+export function journeyOgImageUrl(input: {
+  journeyId: string
+  title: string
+  summary: string
+}): string {
+  const q = new URLSearchParams({
+    layer: 'path',
+    id: input.journeyId,
+    title: input.title.slice(0, 120),
+    subtitle: input.summary.slice(0, 160),
+  })
+  return `${SITE_ORIGIN}/api/og?${q.toString()}`
+}
+
 export const DEFAULT_TITLE = 'Bedrock — Do Better. Be Better. Trust God.'
 export const DEFAULT_DESCRIPTION =
   "Bedrock is a Hitchhiker's field guide for the storm (public beta): biblical first principles, short under-fire hacks, and prayer for grief, obsession, addiction, jealousy, control, fear, spiritual warfare, and readiness. Max-cope. Grow. Trust God."

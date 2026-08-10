@@ -35,15 +35,17 @@ describe('share payloads', () => {
     expect(layerLabel(p.layer)).toBe('Standard')
   })
 
-  it('path share uses ?j=', () => {
+  it('path share uses canonical /j/ url and path og', () => {
     const p = buildPathShare({
       journeyId: 'battlefield-of-the-mind',
       title: 'Battlefield of the mind',
       summary: 'The war is often inside.',
     })
     expect(p.layer).toBe('path')
-    expect(p.url).toContain('j=battlefield-of-the-mind')
+    expect(p.url).toBe(`${SITE_ORIGIN}/j/battlefield-of-the-mind`)
+    expect(p.ogImage).toContain('/api/og?')
     expect(p.ogImage).toContain('layer=path')
+    expect(p.ogImage).toContain('id=battlefield-of-the-mind')
   })
 
   it('door share carries door + chamber + journey', () => {

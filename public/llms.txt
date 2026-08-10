@@ -21,11 +21,12 @@ Bedrock is a free Christian field guide for people in the **storm**: grief, obse
 - Home: https://bedrock.rippel.ai/
 - Chamber pages (canonical, crawlable): https://bedrock.rippel.ai/c/{id}
 - Chamber markdown: https://bedrock.rippel.ai/c/{id}.md
+- Journey / path pages (share + OG): https://bedrock.rippel.ai/j/{id}
 - Full atlas JSON: https://bedrock.rippel.ai/export/chambers.json
 - Core journeys JSON: https://bedrock.rippel.ai/export/journeys.json
 - Full text for models: https://bedrock.rippel.ai/llms-full.txt
 - Sitemap: https://bedrock.rippel.ai/sitemap.xml
-- Open Graph: https://bedrock.rippel.ai/og-hero.jpg
+- Open Graph home: https://bedrock.rippel.ai/og-hero.jpg · content cards: https://bedrock.rippel.ai/api/og
 
 ## How to cite
 

@@ -387,6 +387,7 @@ function createApp() {
       aiSurface: {
         chamberPages: '/c/{id}',
         markdown: '/c/{id}.md',
+        journeyPages: '/j/{id}',
         export: '/export/chambers.json',
         journeys: '/export/journeys.json',
         llms: '/llms.txt',
@@ -771,6 +772,64 @@ function createApp() {
     res.status(404).type('text').send('Chamber not found')
   })
 
+  // Journey / path pages — static HTML with path OG (social crawlers do not run SPA JS)
+  app.get('/j/:id', (req, res, next) => {
+    const id = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+      next()
+      return
+    }
+    for (const base of staticRoots) {
+      const file = path.join(base, 'j', `${id}.html`)
+      if (existsSync(file)) {
+        setContentNoStore(res)
+        res.sendFile(file)
+        return
+      }
+    }
+    // Fallback: resolve journey live and emit minimal OG HTML if static missing
+    const j = getJourney(id)
+    if (j) {
+      const title = `${j.title} — Bedrock Path`
+      const desc = String(j.summary || '').slice(0, 160)
+      const ogQ = new URLSearchParams({
+        layer: 'path',
+        id: j.id,
+        title: String(j.title || '').slice(0, 120),
+        subtitle: desc,
+      })
+      const og = `https://bedrock.rippel.ai/api/og?${ogQ.toString()}`
+      const esc = (s) =>
+        String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+      setContentNoStore(res)
+      res.type('html').send(`<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc)}"/>
+<link rel="canonical" href="https://bedrock.rippel.ai/j/${esc(j.id)}"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="${esc(title)}"/>
+<meta property="og:description" content="${esc(desc)}"/>
+<meta property="og:url" content="https://bedrock.rippel.ai/j/${esc(j.id)}"/>
+<meta property="og:image" content="${esc(og)}"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="${esc(title)}"/>
+<meta name="twitter:description" content="${esc(desc)}"/>
+<meta name="twitter:image" content="${esc(og)}"/>
+<meta http-equiv="refresh" content="0;url=/?j=${encodeURIComponent(j.id)}"/>
+</head><body>
+<p><a href="/?j=${encodeURIComponent(j.id)}">Open ${esc(j.title)}</a></p>
+</body></html>`)
+      return
+    }
+    res.status(404).type('text').send('Journey not found')
+  })
+
   if (existsSync(dist)) {
     // Hashed /assets/* — long cache. index.html never via this middleware.
     app.use(
@@ -798,6 +857,7 @@ function createApp() {
           const norm = filePath.replace(/\\/g, '/')
           if (
             norm.includes('/c/') ||
+            norm.includes('/j/') ||
             norm.includes('/export/') ||
             norm.endsWith('llms.txt') ||
             norm.endsWith('llms-full.txt') ||
@@ -814,6 +874,7 @@ function createApp() {
       if (
         req.path.startsWith('/assets/') ||
         req.path.startsWith('/c/') ||
+        req.path.startsWith('/j/') ||
         req.path.startsWith('/export/')
       ) {
         res.status(404).type('text').send('Not found')
