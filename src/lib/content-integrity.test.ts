@@ -44,10 +44,12 @@ describe('bedrock content integrity', () => {
       .join(' ')
       .toLowerCase()
     expect(rubricText).toMatch(/thought capture|side of the street|forgiveness|trust over understanding/)
+    expect(rubricText).toMatch(/field card/)
     expect(rubricText).toMatch(/refuse investigation|permanent investigator/)
     expect(rubricText).toMatch(/refuse condemnation|no condemnation|accuser/)
+    expect(rubricText).toMatch(/battlefield of the mind|sticky words|fiery darts/)
     expect(rubricText).not.toMatch(/investigation mode|condemnation mode/)
-    expect(rubricText).toMatch(/for men|strength, courage/)
+    expect(rubricText).toMatch(/for men/)
     expect(rubricText).toMatch(/release this to you|sound mind/)
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
@@ -270,9 +272,9 @@ describe('bedrock content integrity', () => {
     expect(c!.body.map((b) => b.text).join(' ').toLowerCase()).toMatch(/thought captive|renewal of your mind/)
   })
 
-  it('core journeys SSOT is 14 arcs and every station is a real chamber', () => {
-    expect(journeysDoc.meta.count).toBe(14)
-    expect(listJourneys()).toHaveLength(14)
+  it('core journeys SSOT is 15 arcs and every station is a real chamber', () => {
+    expect(journeysDoc.meta.count).toBe(15)
+    expect(listJourneys()).toHaveLength(15)
     for (const j of listJourneys()) {
       expect(byId.has(j.doorChamberId), `missing door ${j.doorChamberId}`).toBe(true)
       for (const s of j.stages) {

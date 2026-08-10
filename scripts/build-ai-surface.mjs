@@ -496,7 +496,7 @@ Ground-shaking life is a **journey** (multi-stage path), not one chamber: spouse
 
 - GET ${ORIGIN}/api/chambers — list id, title, summary
 - GET ${ORIGIN}/api/chambers/{id} — full chamber JSON
-- GET ${ORIGIN}/api/journeys — 14 core journeys + stages
+- GET ${ORIGIN}/api/journeys — 15 core journeys + stages
 - GET ${ORIGIN}/api/journeys/{id} — one journey with station titles
 - GET ${ORIGIN}/api/health — chat + version status
 

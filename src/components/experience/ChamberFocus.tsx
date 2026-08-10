@@ -326,8 +326,8 @@ export function ChamberFocus({
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Rubric — fourteen daily standards under fire, each with a prayer. Denser than a first
-              principle on purpose. Not a temporary hack.
+              Rubric — field card first (common steel), then holds when you need the map. Mind war
+              depth: Journeys → Battlefield of the mind.
             </p>
           ) : null}
         </header>
@@ -338,7 +338,7 @@ export function ChamberFocus({
           </h3>
           {isRubric ? (
             <p className="field-layer-hint">
-              Core mission · daily standards 1–14 · for men · success measure.
+              Field card · holds 1–14 · for men · success. Read the card; open holds under fire.
             </p>
           ) : null}
           {isRubric ? (

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "revised": "2026-07-28",
+    "revised": "2026-08-10",
     "title": "Bedrock core journeys",
     "description": "Ordered multi-stage walks through the chamber atlas for ground-shaking life. Chambers are stations; journeys are paths. Shared spine: blow → near → spiral → fork → long_middle → remain. People loop spiral↔fork↔long_middle; the path is to keep walking, not complete a checklist.",
     "stageRoles": [
@@ -14,11 +14,11 @@
     ],
     "families": {
       "body": "Blow to the body — loss, wound, abandonment",
-      "will": "Blow to the will — bondage, loops, grip",
+      "will": "Blow to the will — bondage, loops, grip, mind war",
       "conscience": "Blow to the conscience — fall, return, regret",
       "world": "Blow to the world — persecution, warfare, forced wait"
     },
-    "count": 14
+    "count": 15
   },
   "journeys": [
     {
@@ -1077,6 +1077,116 @@
           "label": "Remain",
           "chamberId": "hope-of-glory",
           "note": "Keep remaining today."
+        }
+      ]
+    },
+    {
+      "id": "battlefield-of-the-mind",
+      "title": "Battlefield of the mind",
+      "family": "will",
+      "wave": 1,
+      "summary": "The war is often inside: investigation (evidence-hunt), condemnation (accuser — self-tape, sticky words, fiery darts), loops that are not the Spirit. Capture. Refuse. Renew. Stand. Field card: Kill the Flesh. Walk in the Spirit. Depth lives on this path.",
+      "plainSpeech": [
+        "battlefield of the mind",
+        "mind won't stop",
+        "i can't stop thinking",
+        "condemning myself",
+        "self condemnation",
+        "accusation in my head",
+        "sticky words",
+        "what they said won't leave",
+        "fiery darts",
+        "enemy attacking my mind",
+        "i can't forgive myself",
+        "investigation",
+        "i keep building a case",
+        "the accuser",
+        "shame spiral",
+        "thoughts won't stop"
+      ],
+      "doorChamberId": "take-every-thought-captive",
+      "distinctFrom": [
+        "stuck-regret",
+        "obsession"
+      ],
+      "keyIds": [
+        "key-obsession"
+      ],
+      "loopStageIds": [
+        "spiral-loop",
+        "spiral-shame",
+        "long-renew"
+      ],
+      "stages": [
+        {
+          "id": "blow",
+          "role": "blow",
+          "label": "Name the war",
+          "chamberId": "take-every-thought-captive",
+          "note": "The blow is a thought. Capture it. Weapons demolish strongholds."
+        },
+        {
+          "id": "near-sop",
+          "role": "near",
+          "label": "Field card / SOP",
+          "chamberId": "kill-the-flesh-walk-in-the-spirit",
+          "note": "Boiled steel first. Investigation and condemnation named. Full holds when needed."
+        },
+        {
+          "id": "spiral-loop",
+          "role": "spiral",
+          "label": "The loop",
+          "chamberId": "rumination",
+          "note": "Replay and investigation are not the Holy Spirit. Capture → replace."
+        },
+        {
+          "id": "fork-accuser",
+          "role": "fork",
+          "label": "Accuser / darts",
+          "chamberId": "the-adversary",
+          "note": "Fiery darts and schemes. Do not give him the microphone of your mind."
+        },
+        {
+          "id": "spiral-shame",
+          "role": "spiral",
+          "label": "Condemnation vs life",
+          "chamberId": "regret",
+          "note": "Self-tape and unforgiveness of self. Godly grief → life; worldly grief → death. No self-hate holiness."
+        },
+        {
+          "id": "near-wound",
+          "role": "near",
+          "label": "Sticky words",
+          "chamberId": "wounded",
+          "note": "What they said can lodge. God near the crushed; do not make hatred your shelter."
+        },
+        {
+          "id": "long-renew",
+          "role": "long_middle",
+          "label": "Renew the mind",
+          "chamberId": "renew-your-mind",
+          "note": "One thought at a time. Word over the spiral."
+        },
+        {
+          "id": "long-fear",
+          "role": "long_middle",
+          "label": "Fear of punishment",
+          "chamberId": "fear",
+          "note": "Perfect love casts out fear. Sound mind."
+        },
+        {
+          "id": "remain-peace",
+          "role": "remain",
+          "label": "Guard",
+          "chamberId": "peace",
+          "note": "Peace given — not earned by solving every case."
+        },
+        {
+          "id": "remain-armor",
+          "role": "remain",
+          "label": "Stand",
+          "chamberId": "the-full-armor-of-god",
+          "note": "Shield of faith extinguishes darts. Stand."
         }
       ]
     }

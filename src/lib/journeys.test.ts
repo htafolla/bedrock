@@ -28,10 +28,22 @@ describe('core journeys SSOT', () => {
   const chamberIds = new Set(document.chambers.map((c) => c.id))
   const journeys = listJourneys()
 
-  it('ships exactly 14 core journeys matching meta.count', () => {
-    expect(journeys.length).toBe(14)
-    expect(journeysDoc.meta.count).toBe(14)
-    expect(new Set(journeys.map((j) => j.id)).size).toBe(14)
+  it('ships exactly 15 core journeys matching meta.count', () => {
+    expect(journeys.length).toBe(15)
+    expect(journeysDoc.meta.count).toBe(15)
+    expect(new Set(journeys.map((j) => j.id)).size).toBe(15)
+  })
+
+  it('battlefield of the mind is distinct and walks capture → SOP → accuser → renew → stand', () => {
+    const j = getJourney('battlefield-of-the-mind')!
+    expect(j).toBeTruthy()
+    expect(j.doorChamberId).toBe('take-every-thought-captive')
+    expect(j.stages.map((s) => s.chamberId)).toContain('kill-the-flesh-walk-in-the-spirit')
+    expect(j.stages.map((s) => s.chamberId)).toContain('the-adversary')
+    expect(j.stages.map((s) => s.chamberId)).toContain('regret')
+    expect(j.stages.map((s) => s.chamberId)).toContain('wounded')
+    expect(matchJourneyFromText('condemning myself')?.id).toBe('battlefield-of-the-mind')
+    expect(matchJourneyFromText('fiery darts')?.id).toBe('battlefield-of-the-mind')
   })
 
   it('every door and stage chamberId exists in the atlas', () => {
@@ -123,6 +135,7 @@ describe('core journeys SSOT', () => {
     expect(wave1).toEqual(
       [
         'addiction',
+        'battlefield-of-the-mind',
         'death-of-loved-one',
         'forced-waiting',
         'i-fell',
