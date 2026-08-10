@@ -6,8 +6,9 @@
 
 ## Truth
 
-- Do not fear, for He is with you.
-- You cannot add a single hour to your life. Even the hairs of your head are all numbered.
+Do not fear, for He is with you.
+
+You cannot add a single hour to your life. Even the hairs of your head are all numbered.
 
 ## Under fire
 

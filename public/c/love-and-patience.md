@@ -6,8 +6,9 @@
 
 ## Truth
 
-- Love does not envy, boast, or act proudly. It is not self-seeking or easily angered.
-- It always protects, trusts, hopes, and perseveres.
+Love does not envy, boast, or act proudly. It is not self-seeking or easily angered.
+
+It always protects, trusts, hopes, and perseveres.
 
 ## Under fire
 

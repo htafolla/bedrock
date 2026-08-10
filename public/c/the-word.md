@@ -6,17 +6,27 @@
 
 ## Truth
 
-- The unfolding of Your words gives light; it imparts understanding to the simple.
-- For this commandment that I command you today is not too hard for you, neither is it far off… But the word is very near you. It is in your mouth and in your heart, so that you can do it.
-- All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.
-- If you abide in My word, you are truly My disciples, and you will know the truth, and the truth will set you free.
-- When the Spirit of truth comes, He will guide you into all the truth.
-- Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God.
-- For the word of God is living and active, sharper than any two-edged sword.
-- My people are destroyed for lack of knowledge.
-- Man shall not live by bread alone, but by every word that comes from the mouth of God.
-- And take the helmet of salvation, and the sword of the Spirit, which is the word of God.
-- But I am afraid that as the serpent deceived Eve by his cunning, your thoughts will be led astray from a sincere and pure devotion to Christ.
+The unfolding of Your words gives light; it imparts understanding to the simple.
+
+For this commandment that I command you today is not too hard for you, neither is it far off… But the word is very near you. It is in your mouth and in your heart, so that you can do it.
+
+All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.
+
+If you abide in My word, you are truly My disciples, and you will know the truth, and the truth will set you free.
+
+When the Spirit of truth comes, He will guide you into all the truth.
+
+Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God.
+
+For the word of God is living and active, sharper than any two-edged sword.
+
+My people are destroyed for lack of knowledge.
+
+Man shall not live by bread alone, but by every word that comes from the mouth of God.
+
+And take the helmet of salvation, and the sword of the Spirit, which is the word of God.
+
+But I am afraid that as the serpent deceived Eve by his cunning, your thoughts will be led astray from a sincere and pure devotion to Christ.
 
 ## Under fire
 

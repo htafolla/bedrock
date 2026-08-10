@@ -6,9 +6,11 @@
 
 ## Truth
 
-- My grace is sufficient for you, for My power is made perfect in weakness.
-- The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
-- We love because He first loved us.
+My grace is sufficient for you, for My power is made perfect in weakness.
+
+The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
+
+We love because He first loved us.
 
 ## Under fire
 

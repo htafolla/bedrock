@@ -6,9 +6,11 @@
 
 ## Truth
 
-- How long, O Lord? Will You forget me forever?
-- The Lord is near to the brokenhearted and saves the crushed in spirit.
-- Trust in Him at all times… pour out your heart before Him.
+How long, O Lord? Will You forget me forever?
+
+The Lord is near to the brokenhearted and saves the crushed in spirit.
+
+Trust in Him at all times… pour out your heart before Him.
 
 ## Under fire
 

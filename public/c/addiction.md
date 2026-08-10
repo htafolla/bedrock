@@ -6,12 +6,17 @@
 
 ## Truth
 
-- “All things are lawful for me,” but not all things are helpful. “All things are lawful for me,” but I will not be dominated by anything.
-- And do not get drunk with wine, for that is debauchery, but be filled with the Spirit.
-- But I say, walk by the Spirit, and you will not gratify the desires of the flesh.
-- Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.
-- For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
-- And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.
+“All things are lawful for me,” but not all things are helpful. “All things are lawful for me,” but I will not be dominated by anything.
+
+And do not get drunk with wine, for that is debauchery, but be filled with the Spirit.
+
+But I say, walk by the Spirit, and you will not gratify the desires of the flesh.
+
+Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.
+
+For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
+
+And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.
 
 ## Under fire
 

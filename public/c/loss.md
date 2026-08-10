@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The Lord is near to the brokenhearted and saves the crushed in spirit.
-- Blessed are those who mourn, for they shall be comforted.
-- But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope.
-- The Lord gave, and the Lord has taken away; blessed be the name of the Lord.
-- He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.
+The Lord is near to the brokenhearted and saves the crushed in spirit.
+
+Blessed are those who mourn, for they shall be comforted.
+
+But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope.
+
+The Lord gave, and the Lord has taken away; blessed be the name of the Lord.
+
+He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.
 
 ## Under fire
 

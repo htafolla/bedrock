@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is peace.
-- Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
-- Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
-- And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
-- You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
+The fruit of the Spirit is peace.
+
+Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
+
+And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
+
+You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
 
 ## Under fire
 

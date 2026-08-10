@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal.
-- For where your treasure is, there your heart will be also.
-- But seek first the kingdom of God and His righteousness, and all these things will be added to you.
-- Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail.
-- As for the rich in this present age, charge them not to be haughty, nor to set their hopes on the uncertainty of riches, but on God… They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation for the future.
+Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal.
+
+For where your treasure is, there your heart will be also.
+
+But seek first the kingdom of God and His righteousness, and all these things will be added to you.
+
+Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail.
+
+As for the rich in this present age, charge them not to be haughty, nor to set their hopes on the uncertainty of riches, but on God… They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation for the future.
 
 ## Under fire
 

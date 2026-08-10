@@ -6,9 +6,11 @@
 
 ## Truth
 
-- By His wounds you have been healed. There is therefore now no condemnation for those who are in Christ Jesus.
-- We have been justified by faith and have peace with God through our Lord Jesus Christ.
-- It is finished.
+By His wounds you have been healed. There is therefore now no condemnation for those who are in Christ Jesus.
+
+We have been justified by faith and have peace with God through our Lord Jesus Christ.
+
+It is finished.
 
 ## Under fire
 

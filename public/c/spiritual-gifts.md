@@ -6,13 +6,19 @@
 
 ## Truth
 
-- Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of activities, but it is the same God who empowers them all in everyone. To each is given the manifestation of the Spirit for the common good.
-- For to one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge… to another faith… to another gifts of healing… to another the working of miracles, to another prophecy, to another the ability to distinguish between spirits, to another various kinds of tongues, to another the interpretation of tongues.
-- Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts, in his exhortation; the one who contributes, in generosity; the one who leads, with zeal; the one who does acts of mercy, with cheerfulness.
-- As each has received a gift, use it to serve one another, as good stewards of God’s varied grace… in order that in everything God may be glorified through Jesus Christ.
-- And He gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.
-- Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy.
-- If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
+Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of activities, but it is the same God who empowers them all in everyone. To each is given the manifestation of the Spirit for the common good.
+
+For to one is given through the Spirit the utterance of wisdom, and to another the utterance of knowledge… to another faith… to another gifts of healing… to another the working of miracles, to another prophecy, to another the ability to distinguish between spirits, to another various kinds of tongues, to another the interpretation of tongues.
+
+Having gifts that differ according to the grace given to us, let us use them: if prophecy, in proportion to our faith; if service, in our serving; the one who teaches, in his teaching; the one who exhorts, in his exhortation; the one who contributes, in generosity; the one who leads, with zeal; the one who does acts of mercy, with cheerfulness.
+
+As each has received a gift, use it to serve one another, as good stewards of God’s varied grace… in order that in everything God may be glorified through Jesus Christ.
+
+And He gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.
+
+Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy.
+
+If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
 
 ## Under fire
 

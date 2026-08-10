@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is self-control; against such things there is no law.
-- For God gave us a spirit not of fear but of power and love and self-control.
-- A man without self-control is like a city broken into and left without walls.
-- Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable.
-- For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
+The fruit of the Spirit is self-control; against such things there is no law.
+
+For God gave us a spirit not of fear but of power and love and self-control.
+
+A man without self-control is like a city broken into and left without walls.
+
+Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable.
+
+For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
 
 ## Under fire
 

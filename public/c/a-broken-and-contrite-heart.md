@@ -6,8 +6,9 @@
 
 ## Truth
 
-- This is the one to whom I will look: he who is humble and contrite in spirit and trembles at My word.
-- The sacrifices of God are a broken spirit; a broken and contrite heart, O God, You will not despise.
+This is the one to whom I will look: he who is humble and contrite in spirit and trembles at My word.
+
+The sacrifices of God are a broken spirit; a broken and contrite heart, O God, You will not despise.
 
 ## Under fire
 

@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is love.
-- Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love.
-- If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.
-- Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth.
-- God’s love has been poured into our hearts through the Holy Spirit who has been given to us.
+The fruit of the Spirit is love.
+
+Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love.
+
+If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.
+
+Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth.
+
+God’s love has been poured into our hearts through the Holy Spirit who has been given to us.
 
 ## Under fire
 

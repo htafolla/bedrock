@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Then two men will be in the field; one will be taken and one left. Two women will be grinding at the mill; one will be taken and one left.
-- I tell you, in that night there will be two in one bed. One will be taken and the other left. There will be two women grinding together. One will be taken and the other left.
-- As were the days of Noah, so will be the coming of the Son of Man. For as in those days before the flood they were eating and drinking, marrying and giving in marriage, until the day when Noah entered the ark, and they were unaware until the flood came and swept them all away, so will be the coming of the Son of Man.
-- Therefore, stay awake, for you do not know on what day your Lord is coming.
-- See, I have told you beforehand.
+Then two men will be in the field; one will be taken and one left. Two women will be grinding at the mill; one will be taken and one left.
+
+I tell you, in that night there will be two in one bed. One will be taken and the other left. There will be two women grinding together. One will be taken and the other left.
+
+As were the days of Noah, so will be the coming of the Son of Man. For as in those days before the flood they were eating and drinking, marrying and giving in marriage, until the day when Noah entered the ark, and they were unaware until the flood came and swept them all away, so will be the coming of the Son of Man.
+
+Therefore, stay awake, for you do not know on what day your Lord is coming.
+
+See, I have told you beforehand.
 
 ## Under fire
 

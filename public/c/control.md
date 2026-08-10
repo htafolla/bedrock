@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
-- Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
-- The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.
-- Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
-- Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.
+Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
+
+Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
+
+The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.
 
 ## Under fire
 

@@ -6,9 +6,11 @@
 
 ## Truth
 
-- You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.
-- You shall love your neighbor as yourself.
-- On these two commandments depend all the Law and the Prophets.
+You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.
+
+You shall love your neighbor as yourself.
+
+On these two commandments depend all the Law and the Prophets.
 
 ## Under fire
 

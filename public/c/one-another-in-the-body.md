@@ -6,9 +6,11 @@
 
 ## Truth
 
-- Encourage one another daily… that none of you may be hardened by the deceitfulness of sin.
-- Confess your sins to one another and pray for one another.
-- Let us consider how to stir up one another to love and good works, not neglecting to meet together.
+Encourage one another daily… that none of you may be hardened by the deceitfulness of sin.
+
+Confess your sins to one another and pray for one another.
+
+Let us consider how to stir up one another to love and good works, not neglecting to meet together.
 
 ## Under fire
 

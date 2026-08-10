@@ -6,16 +6,25 @@
 
 ## Truth
 
-- And I will ask the Father, and He will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees Him nor knows Him. You know Him, for He dwells with you and will be in you.
-- But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things and bring to your remembrance all that I have said to you.
-- But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, He will bear witness about Me.
-- Nevertheless, I tell you the truth: it is to your advantage that I go away, for if I do not go away, the Helper will not come to you. But if I go, I will send Him to you.
-- When the Spirit of truth comes, He will guide you into all the truth.
-- But you will receive power when the Holy Spirit has come upon you, and you will be My witnesses.
-- God’s love has been poured into our hearts through the Holy Spirit who has been given to us.
-- Now there are varieties of gifts, but the same Spirit… To each is given the manifestation of the Spirit for the common good.
-- For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
-- Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
+And I will ask the Father, and He will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees Him nor knows Him. You know Him, for He dwells with you and will be in you.
+
+But the Helper, the Holy Spirit, whom the Father will send in My name, He will teach you all things and bring to your remembrance all that I have said to you.
+
+But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, He will bear witness about Me.
+
+Nevertheless, I tell you the truth: it is to your advantage that I go away, for if I do not go away, the Helper will not come to you. But if I go, I will send Him to you.
+
+When the Spirit of truth comes, He will guide you into all the truth.
+
+But you will receive power when the Holy Spirit has come upon you, and you will be My witnesses.
+
+God’s love has been poured into our hearts through the Holy Spirit who has been given to us.
+
+Now there are varieties of gifts, but the same Spirit… To each is given the manifestation of the Spirit for the common good.
+
+For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
+
+Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
 
 ## Under fire
 

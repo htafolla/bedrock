@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is kindness.
-- Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.
-- Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience.
-- Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart.
-- Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God’s kindness is meant to lead you to repentance?
+The fruit of the Spirit is kindness.
+
+Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.
+
+Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience.
+
+Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart.
+
+Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God’s kindness is meant to lead you to repentance?
 
 ## Under fire
 

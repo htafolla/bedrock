@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is gentleness.
-- Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.
-- Take My yoke upon you, and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls.
-- Let your reasonableness be known to everyone. The Lord is at hand.
-- Always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect.
+The fruit of the Spirit is gentleness.
+
+Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.
+
+Take My yoke upon you, and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls.
+
+Let your reasonableness be known to everyone. The Lord is at hand.
+
+Always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect.
 
 ## Under fire
 

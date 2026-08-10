@@ -6,10 +6,13 @@
 
 ## Truth
 
-- He holds all things together by the word of His power.
-- From Him and through Him and to Him are all things.
-- The heavens declare the glory of God, and the sky above proclaims His handiwork.
-- Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are His judgments and how inscrutable His ways!
+He holds all things together by the word of His power.
+
+From Him and through Him and to Him are all things.
+
+The heavens declare the glory of God, and the sky above proclaims His handiwork.
+
+Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are His judgments and how inscrutable His ways!
 
 ## Under fire
 

@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
-- You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment.
-- But as for … murderers… their portion will be in the lake that burns with fire and sulfur.
-- Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
+Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
+
+You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment.
+
+But as for … murderers… their portion will be in the lake that burns with fire and sulfur.
+
+Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
 
 ## Under fire
 

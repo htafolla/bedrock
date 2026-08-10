@@ -6,7 +6,7 @@
 
 ## Truth
 
-- Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.
+Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.
 
 ## Under fire
 

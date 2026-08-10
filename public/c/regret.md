@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death.
-- If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
-- There is therefore now no condemnation for those who are in Christ Jesus.
-- Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.
-- Create in me a clean heart, O God, and renew a right spirit within me.
+Godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death.
+
+If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
+
+There is therefore now no condemnation for those who are in Christ Jesus.
+
+Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.
+
+Create in me a clean heart, O God, and renew a right spirit within me.
 
 ## Under fire
 

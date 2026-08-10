@@ -6,8 +6,9 @@
 
 ## Truth
 
-- If anyone would come after Me, let him deny himself and take up his cross daily and follow Me.
-- For whoever would save his life will lose it, but whoever loses his life for My sake will save it.
+If anyone would come after Me, let him deny himself and take up his cross daily and follow Me.
+
+For whoever would save his life will lose it, but whoever loses his life for My sake will save it.
 
 ## Under fire
 

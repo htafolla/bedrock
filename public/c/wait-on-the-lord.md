@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Wait for the Lord; be strong, and let your heart take courage; wait for the Lord.
-- Those who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.
-- The Lord is good to those who wait for Him, to the soul who seeks Him.
-- Be still before the Lord and wait patiently for Him; fret not yourself over the one who prospers in his way.
+Wait for the Lord; be strong, and let your heart take courage; wait for the Lord.
+
+Those who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.
+
+The Lord is good to those who wait for Him, to the soul who seeks Him.
+
+Be still before the Lord and wait patiently for Him; fret not yourself over the one who prospers in his way.
 
 ## Under fire
 

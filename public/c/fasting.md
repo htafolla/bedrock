@@ -6,12 +6,17 @@
 
 ## Truth
 
-- And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others… But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret.
-- Then I turned my face to the Lord God, seeking Him by prayer and pleas for mercy with fasting and sackcloth and ashes.
-- Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free… Is it not to share your bread with the hungry…?
-- And Jesus said to them, “Can the wedding guests mourn as long as the bridegroom is with them? The days will come when the bridegroom is taken away from them, and then they will fast.”
-- While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.”
-- So we fasted and implored our God for this, and He listened to our entreaty.
+And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others… But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret.
+
+Then I turned my face to the Lord God, seeking Him by prayer and pleas for mercy with fasting and sackcloth and ashes.
+
+Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free… Is it not to share your bread with the hungry…?
+
+And Jesus said to them, “Can the wedding guests mourn as long as the bridegroom is with them? The days will come when the bridegroom is taken away from them, and then they will fast.”
+
+While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.”
+
+So we fasted and implored our God for this, and He listened to our entreaty.
 
 ## Under fire
 

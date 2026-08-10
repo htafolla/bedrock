@@ -6,12 +6,17 @@
 
 ## Truth
 
-- The Lord is near to the brokenhearted and saves the crushed in spirit.
-- He heals the brokenhearted and binds up their wounds.
-- Do not repay evil for evil or reviling for reviling, but on the contrary, bless, for to this you were called, that you may obtain a blessing.
-- Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
-- Fear not, for I have redeemed you; I have called you by name, you are Mine.
-- For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
+The Lord is near to the brokenhearted and saves the crushed in spirit.
+
+He heals the brokenhearted and binds up their wounds.
+
+Do not repay evil for evil or reviling for reviling, but on the contrary, bless, for to this you were called, that you may obtain a blessing.
+
+Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
+
+Fear not, for I have redeemed you; I have called you by name, you are Mine.
+
+For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
 
 ## Under fire
 

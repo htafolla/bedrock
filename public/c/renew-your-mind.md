@@ -6,8 +6,9 @@
 
 ## Truth
 
-- Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
-- Have this mind among yourselves, which is yours in Christ Jesus.
+Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
+
+Have this mind among yourselves, which is yours in Christ Jesus.
 
 ## Under fire
 

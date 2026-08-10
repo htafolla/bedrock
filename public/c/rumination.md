@@ -6,12 +6,17 @@
 
 ## Truth
 
-- We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
-- Do not be conformed to this world, but be transformed by the renewal of your mind.
-- Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
-- Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable… think about these things.
-- When the cares of my heart are many, Your consolations cheer my soul.
-- You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
+We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
+
+Do not be conformed to this world, but be transformed by the renewal of your mind.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable… think about these things.
+
+When the cares of my heart are many, Your consolations cheer my soul.
+
+You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
 
 ## Under fire
 

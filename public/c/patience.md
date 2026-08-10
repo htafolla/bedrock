@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is patience.
-- Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. You also, be patient. Establish your hearts, for the coming of the Lord is at hand.
-- Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!
-- Rejoice in hope, be patient in tribulation, be constant in prayer.
-- Love is patient and kind.
+The fruit of the Spirit is patience.
+
+Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. You also, be patient. Establish your hearts, for the coming of the Lord is at hand.
+
+Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!
+
+Rejoice in hope, be patient in tribulation, be constant in prayer.
+
+Love is patient and kind.
 
 ## Under fire
 

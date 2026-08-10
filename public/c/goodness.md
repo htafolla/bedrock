@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is goodness.
-- Let love be genuine. Abhor what is evil; hold fast to what is good.
-- He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?
-- For the fruit of light is found in all that is good and right and true.
-- Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever.
+The fruit of the Spirit is goodness.
+
+Let love be genuine. Abhor what is evil; hold fast to what is good.
+
+He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?
+
+For the fruit of light is found in all that is good and right and true.
+
+Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever.
 
 ## Under fire
 

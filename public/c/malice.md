@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.
-- So put away all malice and all deceit and hypocrisy and envy and all slander.
-- Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.
-- Now the works of the flesh are evident: … enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy…
-- Those who do such things will not inherit the kingdom of God.
+Let all bitterness and wrath and anger and clamor and slander be put away from you, along with all malice.
+
+So put away all malice and all deceit and hypocrisy and envy and all slander.
+
+Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.
+
+Now the works of the flesh are evident: … enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy…
+
+Those who do such things will not inherit the kingdom of God.
 
 ## Under fire
 

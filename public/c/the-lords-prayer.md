@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Your kingdom come, Your will be done, on earth as it is in heaven.
-- Give us this day our daily bread.
-- And forgive us our debts, as we also have forgiven our debtors.
-- And lead us not into temptation, but deliver us from evil.
+Your kingdom come, Your will be done, on earth as it is in heaven.
+
+Give us this day our daily bread.
+
+And forgive us our debts, as we also have forgiven our debtors.
+
+And lead us not into temptation, but deliver us from evil.
 
 ## Under fire
 

@@ -6,8 +6,9 @@
 
 ## Truth
 
-- Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.
-- For everything there is a season, and a time for every matter under heaven.
+Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted.
+
+For everything there is a season, and a time for every matter under heaven.
 
 ## Under fire
 

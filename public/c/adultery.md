@@ -6,11 +6,15 @@
 
 ## Truth
 
-- You shall not commit adultery.
-- But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart.
-- Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body.
-- Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.
-- Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous.
+You shall not commit adultery.
+
+But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart.
+
+Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body.
+
+Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.
+
+Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous.
 
 ## Under fire
 

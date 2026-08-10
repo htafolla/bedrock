@@ -6,12 +6,17 @@
 
 ## Truth
 
-- Then the kingdom of heaven will be like ten virgins who took their lamps and went to meet the bridegroom. Five of them were foolish, and five were wise.
-- For when the foolish took their lamps, they took no oil with them, but the wise took flasks of oil with their lamps.
-- As the bridegroom was delayed, they all became drowsy and slept. But at midnight there was a cry, “Here is the bridegroom! Come out to meet him.”
-- And the foolish said to the wise, “Give us some of your oil, for our lamps are going out.” But the wise answered, saying, “Since there will not be enough for us and for you, go rather to the dealers and buy for yourselves.”
-- And while they were going to buy, the bridegroom came, and those who were ready went in with him to the marriage feast, and the door was shut.
-- Afterward the other virgins came also, saying, “Lord, lord, open to us.” But he answered, “Truly, I say to you, I do not know you.” Watch therefore, for you know neither the day nor the hour.
+Then the kingdom of heaven will be like ten virgins who took their lamps and went to meet the bridegroom. Five of them were foolish, and five were wise.
+
+For when the foolish took their lamps, they took no oil with them, but the wise took flasks of oil with their lamps.
+
+As the bridegroom was delayed, they all became drowsy and slept. But at midnight there was a cry, “Here is the bridegroom! Come out to meet him.”
+
+And the foolish said to the wise, “Give us some of your oil, for our lamps are going out.” But the wise answered, saying, “Since there will not be enough for us and for you, go rather to the dealers and buy for yourselves.”
+
+And while they were going to buy, the bridegroom came, and those who were ready went in with him to the marriage feast, and the door was shut.
+
+Afterward the other virgins came also, saying, “Lord, lord, open to us.” But he answered, “Truly, I say to you, I do not know you.” Watch therefore, for you know neither the day nor the hour.
 
 ## Under fire
 

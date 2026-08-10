@@ -2,7 +2,7 @@
 
 > A Hitchhiker's Guide to Love · Living · Enduring.
 > Motto: Do Better. Be Better. Trust God.
-> Version: 0.2.0-beta (public beta) · revised 2026-07-26
+> Version: 0.2.0-beta (public beta) · revised 2026-08-10
 
 Bedrock is a free Christian field guide for people in the **storm**: grief, obsession (looping thoughts), addiction, jealousy, fear, control, marriage fracture, spiritual warfare, works of the flesh, readiness for Christ's return, treasure in heaven, spiritual gifts, and hope of glory.
 
@@ -37,7 +37,7 @@ Ground-shaking life is a **journey** (multi-stage path), not one chamber: spouse
 
 - GET https://bedrock.rippel.ai/api/chambers — list id, title, summary
 - GET https://bedrock.rippel.ai/api/chambers/{id} — full chamber JSON
-- GET https://bedrock.rippel.ai/api/journeys — 14 core journeys + stages
+- GET https://bedrock.rippel.ai/api/journeys — 15 core journeys + stages
 - GET https://bedrock.rippel.ai/api/journeys/{id} — one journey with station titles
 - GET https://bedrock.rippel.ai/api/health — chat + version status
 

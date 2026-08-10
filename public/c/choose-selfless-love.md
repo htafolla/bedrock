@@ -6,7 +6,7 @@
 
 ## Truth
 
-- Look not only to your own interests, but also to the interests of others.
+Look not only to your own interests, but also to the interests of others.
 
 ## Under fire
 

@@ -6,8 +6,9 @@
 
 ## Truth
 
-- If you do not forgive others their trespasses, neither will your Father forgive your trespasses.
-- Be kind to one another, tenderhearted, forgiving one another.
+If you do not forgive others their trespasses, neither will your Father forgive your trespasses.
+
+Be kind to one another, tenderhearted, forgiving one another.
 
 ## Under fire
 

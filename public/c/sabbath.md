@@ -6,15 +6,23 @@
 
 ## Truth
 
-- So God blessed the seventh day and made it holy, because on it God rested from all His work that He had done in creation.
-- Remember the Sabbath day, to keep it holy. Six days you shall labor, and do all your work, but the seventh day is a Sabbath to the Lord your God. On it you shall not do any work.
-- You shall keep My Sabbaths, for this is a sign between Me and you throughout your generations, that you may know that I, the Lord, sanctify you.
-- Moreover, I gave them My Sabbaths as a sign between Me and them, that they might know that I am the Lord who sanctifies them.
-- And keep My Sabbaths holy that they may be a sign between Me and you, that you may know that I am the Lord your God.
-- If you turn back your foot from the Sabbath, from doing your pleasure on My holy day, and call the Sabbath a delight and the holy day of the Lord honorable… then you shall take delight in the Lord.
-- And He said to them, “The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath.”
-- There remains a Sabbath rest for the people of God, for whoever has entered God’s rest has also rested from his works as God did from His.
-- Be still, and know that I am God.
+So God blessed the seventh day and made it holy, because on it God rested from all His work that He had done in creation.
+
+Remember the Sabbath day, to keep it holy. Six days you shall labor, and do all your work, but the seventh day is a Sabbath to the Lord your God. On it you shall not do any work.
+
+You shall keep My Sabbaths, for this is a sign between Me and you throughout your generations, that you may know that I, the Lord, sanctify you.
+
+Moreover, I gave them My Sabbaths as a sign between Me and them, that they might know that I am the Lord who sanctifies them.
+
+And keep My Sabbaths holy that they may be a sign between Me and you, that you may know that I am the Lord your God.
+
+If you turn back your foot from the Sabbath, from doing your pleasure on My holy day, and call the Sabbath a delight and the holy day of the Lord honorable… then you shall take delight in the Lord.
+
+And He said to them, “The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath.”
+
+There remains a Sabbath rest for the people of God, for whoever has entered God’s rest has also rested from his works as God did from His.
+
+Be still, and know that I am God.
 
 ## Under fire
 

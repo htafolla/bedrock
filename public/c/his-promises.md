@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Once you are in His hand, no one can snatch you out.
-- The work of God is this: to believe in the One He has sent.
-- Abide in Me, and I will abide in you.
-- He is faithful. His word is true. He never breaks His promises.
+Once you are in His hand, no one can snatch you out.
+
+The work of God is this: to believe in the One He has sent.
+
+Abide in Me, and I will abide in you.
+
+He is faithful. His word is true. He never breaks His promises.
 
 ## Under fire
 

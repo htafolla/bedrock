@@ -6,14 +6,21 @@
 
 ## Truth
 
-- The sufferings of this present time are not worth comparing with the glory that is to be revealed to us.
-- Christ in you, the hope of glory.
-- We wait for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ.
-- Behold, the dwelling place of God is with man… He will wipe away every tear from their eyes.
-- Behold, I am coming soon, bringing My recompense with Me, to repay each one for what he has done.
-- Blessed is the one who remains steadfast under trial, for when he has stood the test he will receive the crown of life.
-- There is laid up for me the crown of righteousness, which the Lord will award on that day.
-- When the Chief Shepherd appears, you will receive the unfading crown of glory.
+The sufferings of this present time are not worth comparing with the glory that is to be revealed to us.
+
+Christ in you, the hope of glory.
+
+We wait for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ.
+
+Behold, the dwelling place of God is with man… He will wipe away every tear from their eyes.
+
+Behold, I am coming soon, bringing My recompense with Me, to repay each one for what he has done.
+
+Blessed is the one who remains steadfast under trial, for when he has stood the test he will receive the crown of life.
+
+There is laid up for me the crown of righteousness, which the Lord will award on that day.
+
+When the Chief Shepherd appears, you will receive the unfading crown of glory.
 
 ## Under fire
 

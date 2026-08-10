@@ -6,12 +6,17 @@
 
 ## Truth
 
-- Then they laid their hands on them and they received the Holy Spirit.
-- Do not neglect the gift you have, which was given you by prophecy when the council of elders laid their hands on you.
-- And He could do no mighty work there, except that He laid His hands on a few sick people and healed them.
-- They will lay their hands on the sick, and they will recover.
-- And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying.
-- And God was doing extraordinary miracles by the hands of Paul.
+Then they laid their hands on them and they received the Holy Spirit.
+
+Do not neglect the gift you have, which was given you by prophecy when the council of elders laid their hands on you.
+
+And He could do no mighty work there, except that He laid His hands on a few sick people and healed them.
+
+They will lay their hands on the sick, and they will recover.
+
+And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying.
+
+And God was doing extraordinary miracles by the hands of Paul.
 
 ## Under fire
 

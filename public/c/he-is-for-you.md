@@ -6,10 +6,13 @@
 
 ## Truth
 
-- If God is for us, who can be against us?
-- He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?
-- He casts your sins behind His back and remembers them no more.
-- Cast all your cares on Him, because He cares for you.
+If God is for us, who can be against us?
+
+He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?
+
+He casts your sins behind His back and remembers them no more.
+
+Cast all your cares on Him, because He cares for you.
 
 ## Under fire
 

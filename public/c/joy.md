@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is joy.
-- Do not be grieved, for the joy of the Lord is your strength.
-- Rejoice in the Lord always; again I will say, rejoice.
-- These things I have spoken to you, that My joy may be in you, and that your joy may be full.
-- Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
+The fruit of the Spirit is joy.
+
+Do not be grieved, for the joy of the Lord is your strength.
+
+Rejoice in the Lord always; again I will say, rejoice.
+
+These things I have spoken to you, that My joy may be in you, and that your joy may be full.
+
+Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
 
 ## Under fire
 

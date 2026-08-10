@@ -6,7 +6,7 @@
 
 ## Truth
 
-- On the contrary, repay evil with blessing.
+On the contrary, repay evil with blessing.
 
 ## Under fire
 

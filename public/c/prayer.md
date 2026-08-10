@@ -6,13 +6,19 @@
 
 ## Truth
 
-- Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.
-- And He told them a parable to the effect that they ought always to pray and not lose heart.
-- Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
-- Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit Himself intercedes for us with groanings too deep for words.
-- Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
-- If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.
-- The prayer of a righteous person has great power as it is working.
+Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.
+
+And He told them a parable to the effect that they ought always to pray and not lose heart.
+
+Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
+
+Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit Himself intercedes for us with groanings too deep for words.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.
+
+The prayer of a righteous person has great power as it is working.
 
 ## Under fire
 

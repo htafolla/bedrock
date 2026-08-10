@@ -6,12 +6,17 @@
 
 ## Truth
 
-- The Lord will fight for you; you need only be still.
-- Never avenge yourselves. Leave it to the wrath of God. Vengeance belongs to Him; He will repay.
-- If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.
-- Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
-- You shall not take vengeance or bear a grudge… but you shall love your neighbor as yourself.
-- Love your enemies and pray for those who persecute you.
+The Lord will fight for you; you need only be still.
+
+Never avenge yourselves. Leave it to the wrath of God. Vengeance belongs to Him; He will repay.
+
+If anyone says, “I love God,” and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen.
+
+Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
+
+You shall not take vengeance or bear a grudge… but you shall love your neighbor as yourself.
+
+Love your enemies and pray for those who persecute you.
 
 ## Under fire
 

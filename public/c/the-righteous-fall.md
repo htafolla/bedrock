@@ -6,10 +6,13 @@
 
 ## Truth
 
-- For the righteous falls seven times and rises again, but the wicked stumble in times of calamity.
-- For all have sinned and fall short of the glory of God.
-- If we say we have no sin, we deceive ourselves, and the truth is not in us.
-- As it is written: “None is righteous, no, not one.”
+For the righteous falls seven times and rises again, but the wicked stumble in times of calamity.
+
+For all have sinned and fall short of the glory of God.
+
+If we say we have no sin, we deceive ourselves, and the truth is not in us.
+
+As it is written: “None is righteous, no, not one.”
 
 ## Under fire
 

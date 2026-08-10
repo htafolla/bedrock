@@ -6,16 +6,25 @@
 
 ## Truth
 
-- Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.
-- You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.
-- The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil.
-- By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother.
-- Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.
-- If the world hates you, know that it has hated Me before it hated you… If they persecuted Me, they will also persecute you.
-- Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.
-- Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you.
-- And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death.
-- The God of peace will soon crush Satan under your feet.
+Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.
+
+You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.
+
+The field is the world, and the good seed is the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil.
+
+By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother.
+
+Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.
+
+If the world hates you, know that it has hated Me before it hated you… If they persecuted Me, they will also persecute you.
+
+Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.
+
+Submit yourselves therefore to God. Resist the devil, and he will flee from you. Draw near to God, and He will draw near to you.
+
+And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death.
+
+The God of peace will soon crush Satan under your feet.
 
 ## Under fire
 

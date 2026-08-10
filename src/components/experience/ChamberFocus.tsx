@@ -11,7 +11,7 @@ import {
 } from '../../lib/verses'
 import { JourneyStageRail } from './JourneyStageRail'
 import { ShareMenu } from '../ShareMenu'
-import { buildPathShare, buildStationShare } from '../../lib/share'
+import { buildStationShare } from '../../lib/share'
 
 interface ChamberFocusProps {
   document: BedrockDocument
@@ -306,28 +306,6 @@ export function ChamberFocus({
                 ? `${idx + 1} / ${SPINE_ORDER.length} · spine`
                 : '—'}
         </p>
-        <div className="focus-toolbar-share">
-          <ShareMenu
-            className="chamber-share"
-            payload={buildStationShare({
-              chamberId: chamber.id,
-              title: chamber.title,
-              summary: chamber.summary,
-              kind: chamber.kind,
-            })}
-          />
-          {journey && onPath ? (
-            <ShareMenu
-              compact
-              className="chamber-share-path"
-              payload={buildPathShare({
-                journeyId: journey.id,
-                title: journey.title,
-                summary: journey.summary,
-              })}
-            />
-          ) : null}
-        </div>
         <div className="focus-spine-nav">
           {showJourneyRail && onPath && onSelectJourneyStage ? (
             <>
@@ -412,16 +390,6 @@ export function ChamberFocus({
                 kind: chamber.kind,
               })}
             />
-            {journey && onPath ? (
-              <ShareMenu
-                compact
-                payload={buildPathShare({
-                  journeyId: journey.id,
-                  title: journey.title,
-                  summary: journey.summary,
-                })}
-              />
-            ) : null}
           </div>
         </header>
 

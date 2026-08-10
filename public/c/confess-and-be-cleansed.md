@@ -6,9 +6,11 @@
 
 ## Truth
 
-- If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
-- Therefore, confess your sins to one another and pray for one another, that you may be healed.
-- Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.
+If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
+
+Therefore, confess your sins to one another and pray for one another, that you may be healed.
+
+Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.
 
 ## Under fire
 

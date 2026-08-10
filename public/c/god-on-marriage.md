@@ -6,9 +6,11 @@
 
 ## Truth
 
-- God is the witness between a man and the wife of his youth.
-- What He has joined, no one should separate.
-- Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring.
+God is the witness between a man and the wife of his youth.
+
+What He has joined, no one should separate.
+
+Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring.
 
 ## Under fire
 

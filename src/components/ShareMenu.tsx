@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useId, useRef, useState } from 'react'
+import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import type { ShareNetwork, SharePayload } from '../lib/share'
 import {
   canShareFiles,
@@ -25,35 +26,84 @@ interface ShareMenuProps {
   className?: string
 }
 
+interface PopoverPos {
+  top: number
+  left: number
+  maxWidth: number
+}
+
 /**
  * Share Door / Station / Path / Standard.
  * Image: html-to-image (bubble-blast-retro toPng) of ShareCard.
  * X / Facebook: link intents (OG unfurl from URL).
  * Instagram / TikTok: system share with PNG when possible.
+ *
+ * Popover is portaled to document.body so sticky rails / glass stacking
+ * contexts never bury the menu.
  */
 export function ShareMenu({ payload, compact = false, className = '' }: ShareMenuProps) {
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
+  const [pos, setPos] = useState<PopoverPos | null>(null)
   const rootRef = useRef<HTMLDivElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const popoverRef = useRef<HTMLDivElement>(null)
   const cardRef = useRef<HTMLDivElement>(null)
   const menuId = useId()
+
+  const updatePosition = useCallback(() => {
+    const trigger = triggerRef.current
+    if (!trigger) return
+    const rect = trigger.getBoundingClientRect()
+    const gap = 8
+    const maxWidth = Math.min(304, window.innerWidth - 24)
+    let left = rect.left
+    // Prefer opening below; if near bottom of viewport, still open below
+    // (scrollable page) but clamp left so the panel stays on-screen.
+    if (left + maxWidth > window.innerWidth - 12) {
+      left = Math.max(12, window.innerWidth - 12 - maxWidth)
+    }
+    if (left < 12) left = 12
+    setPos({
+      top: rect.bottom + gap,
+      left,
+      maxWidth,
+    })
+  }, [])
+
+  useLayoutEffect(() => {
+    if (!open) {
+      setPos(null)
+      return
+    }
+    updatePosition()
+  }, [open, updatePosition])
 
   useEffect(() => {
     if (!open) return
     const onDoc = (e: MouseEvent) => {
-      if (!rootRef.current?.contains(e.target as Node)) setOpen(false)
+      const t = e.target as Node
+      if (rootRef.current?.contains(t)) return
+      if (popoverRef.current?.contains(t)) return
+      setOpen(false)
     }
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setOpen(false)
     }
+    const onReposition = () => updatePosition()
     document.addEventListener('mousedown', onDoc)
     window.addEventListener('keydown', onKey)
+    window.addEventListener('resize', onReposition)
+    // Capture scroll from any nested scroller (experience main, etc.)
+    window.addEventListener('scroll', onReposition, true)
     return () => {
       document.removeEventListener('mousedown', onDoc)
       window.removeEventListener('keydown', onKey)
+      window.removeEventListener('resize', onReposition)
+      window.removeEventListener('scroll', onReposition, true)
     }
-  }, [open])
+  }, [open, updatePosition])
 
   const flash = useCallback((msg: string) => {
     setStatus(msg)
@@ -151,12 +201,119 @@ export function ShareMenu({ payload, compact = false, className = '' }: ShareMen
     [payload, flash, capturePng, shareWithImage],
   )
 
+  const popover =
+    open && pos && typeof document !== 'undefined'
+      ? createPortal(
+          <div
+            ref={popoverRef}
+            className="share-popover share-popover-portal"
+            id={menuId}
+            role="menu"
+            style={{
+              top: pos.top,
+              left: pos.left,
+              maxWidth: pos.maxWidth,
+            }}
+          >
+            <p className="share-popover-kicker">Share {payload.layerLabel}</p>
+            <p className="share-popover-title">{payload.title}</p>
+            {canSystemShare() ? (
+              <button
+                type="button"
+                role="menuitem"
+                className="share-item"
+                disabled={busy}
+                onClick={() => void act('system')}
+              >
+                Share with image…
+                <span className="share-item-hint">card PNG</span>
+              </button>
+            ) : null}
+            <button
+              type="button"
+              role="menuitem"
+              className="share-item"
+              disabled={busy}
+              onClick={() => void act('image')}
+            >
+              Save card image
+            </button>
+            <a
+              role="menuitem"
+              className="share-item"
+              href={xIntentUrl(payload)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                trackEvent('nav', { nav: payload.layer, source: 'share-x' })
+                setOpen(false)
+              }}
+            >
+              X (Twitter)
+              <span className="share-item-hint">link + OG card</span>
+            </a>
+            <a
+              role="menuitem"
+              className="share-item"
+              href={facebookShareUrl(payload)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                trackEvent('nav', { nav: payload.layer, source: 'share-facebook' })
+                setOpen(false)
+              }}
+            >
+              Facebook
+              <span className="share-item-hint">link + OG card</span>
+            </a>
+            <button
+              type="button"
+              role="menuitem"
+              className="share-item"
+              disabled={busy}
+              onClick={() => void act('instagram')}
+            >
+              Instagram
+              <span className="share-item-hint">image + share sheet</span>
+            </button>
+            <button
+              type="button"
+              role="menuitem"
+              className="share-item"
+              disabled={busy}
+              onClick={() => void act('tiktok')}
+            >
+              TikTok
+              <span className="share-item-hint">image + share sheet</span>
+            </button>
+            <button
+              type="button"
+              role="menuitem"
+              className="share-item"
+              disabled={busy}
+              onClick={() => void act('copy')}
+            >
+              Copy link
+            </button>
+            <p className="share-popover-note">
+              Card image is captured from this screen (html-to-image). X/Facebook previews also use
+              the link&apos;s OG image.
+            </p>
+          </div>,
+          document.body,
+        )
+      : null
+
   return (
-    <div className={`share-menu ${className}`.trim()} ref={rootRef}>
+    <div
+      className={`share-menu${open ? ' is-open' : ''} ${className}`.trim()}
+      ref={rootRef}
+    >
       {/* Off-screen card for html-to-image (same technique as bubble-blast-retro) */}
       <ShareCard ref={cardRef} payload={payload} />
 
       <button
+        ref={triggerRef}
         type="button"
         className={
           compact ? 'share-trigger compact share-trigger-icon' : 'share-trigger share-trigger-icon'
@@ -197,94 +354,7 @@ export function ShareMenu({ payload, compact = false, className = '' }: ShareMen
           </>
         )}
       </button>
-      {open ? (
-        <div className="share-popover" id={menuId} role="menu">
-          <p className="share-popover-kicker">Share {payload.layerLabel}</p>
-          <p className="share-popover-title">{payload.title}</p>
-          {canSystemShare() ? (
-            <button
-              type="button"
-              role="menuitem"
-              className="share-item"
-              disabled={busy}
-              onClick={() => void act('system')}
-            >
-              Share with image…
-              <span className="share-item-hint">card PNG</span>
-            </button>
-          ) : null}
-          <button
-            type="button"
-            role="menuitem"
-            className="share-item"
-            disabled={busy}
-            onClick={() => void act('image')}
-          >
-            Save card image
-          </button>
-          <a
-            role="menuitem"
-            className="share-item"
-            href={xIntentUrl(payload)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => {
-              trackEvent('nav', { nav: payload.layer, source: 'share-x' })
-              setOpen(false)
-            }}
-          >
-            X (Twitter)
-            <span className="share-item-hint">link + OG card</span>
-          </a>
-          <a
-            role="menuitem"
-            className="share-item"
-            href={facebookShareUrl(payload)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => {
-              trackEvent('nav', { nav: payload.layer, source: 'share-facebook' })
-              setOpen(false)
-            }}
-          >
-            Facebook
-            <span className="share-item-hint">link + OG card</span>
-          </a>
-          <button
-            type="button"
-            role="menuitem"
-            className="share-item"
-            disabled={busy}
-            onClick={() => void act('instagram')}
-          >
-            Instagram
-            <span className="share-item-hint">image + share sheet</span>
-          </button>
-          <button
-            type="button"
-            role="menuitem"
-            className="share-item"
-            disabled={busy}
-            onClick={() => void act('tiktok')}
-          >
-            TikTok
-            <span className="share-item-hint">image + share sheet</span>
-          </button>
-          <button
-            type="button"
-            role="menuitem"
-            className="share-item"
-            disabled={busy}
-            onClick={() => void act('copy')}
-          >
-            Copy link
-          </button>
-          <p className="share-popover-note">
-            Card image is captured from this screen (html-to-image). X/Facebook previews also use
-            the link&apos;s OG image.
-          </p>
-        </div>
-      ) : null}
+      {popover}
       {status ? (
         <span className="share-status" role="status">
           {status}

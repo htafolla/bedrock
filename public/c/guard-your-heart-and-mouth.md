@@ -6,9 +6,11 @@
 
 ## Truth
 
-- Keep your heart with all vigilance, for from it flow the springs of life.
-- Set a guard, O Lord, over my mouth; keep watch over the door of my lips!
-- Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.
+Keep your heart with all vigilance, for from it flow the springs of life.
+
+Set a guard, O Lord, over my mouth; keep watch over the door of my lips!
+
+Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.
 
 ## Under fire
 

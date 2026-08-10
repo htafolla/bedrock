@@ -6,9 +6,11 @@
 
 ## Truth
 
-- Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
-- Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
-- Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
+Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
+
+Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
+
+Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
 
 ## Under fire
 

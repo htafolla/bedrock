@@ -6,11 +6,15 @@
 
 ## Truth
 
-- When I am afraid, I put my trust in You.
-- The fear of man lays a snare, but whoever trusts in the Lord is safe.
-- Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
-- Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.
-- For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
+When I am afraid, I put my trust in You.
+
+The fear of man lays a snare, but whoever trusts in the Lord is safe.
+
+Peace I leave with you; My peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+
+Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.
+
+For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
 
 ## Under fire
 

@@ -1281,14 +1281,6 @@ body {
   line-height: 1;
 }
 
-/* Icon-only on very narrow toolbars; keep label when room */
-@media (max-width: 420px) {
-  .chamber-focus-toolbar .share-trigger-label {
-    /* keep label — user couldn't find icon-only */
-    display: inline;
-  }
-}
-
 .share-trigger:hover,
 .share-trigger:focus-visible {
   border-color: var(--ember);
@@ -1302,34 +1294,11 @@ body {
   cursor: wait;
 }
 
-.focus-toolbar-share {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-  order: 3;
-}
-
 .chamber-focus-toolbar .focus-spine-nav {
-  order: 4;
   margin-left: auto;
 }
 
-.chamber-focus-toolbar .focus-spine-meta {
-  order: 2;
-  min-width: 0;
-}
-
-.chamber-focus-toolbar .focus-btn.ghost:first-child {
-  order: 0;
-}
-
-.chamber-focus-toolbar .focus-plain-link {
-  order: 1;
-}
-
-/* Sticky share FAB when reading a station (always visible on mobile) */
+/* One Share under the station title */
 .chamber-header-share {
   display: flex;
   flex-wrap: wrap;
@@ -1345,21 +1314,25 @@ body {
   box-shadow: 0 4px 16px var(--shadow-card);
 }
 
-.share-popover {
-  position: absolute;
-  top: calc(100% + 0.35rem);
-  right: 0;
-  z-index: 60;
-  min-width: 15rem;
-  max-width: min(18rem, 90vw);
+/*
+ * Popover is portaled to document.body (fixed) so sticky journey rails,
+ * glass backdrop-filter stacking, and field layers never bury it.
+ * Above nav (50), about (80), footer (35), guide FAB (40).
+ */
+.share-popover.share-popover-portal {
+  position: fixed;
+  z-index: 200;
+  min-width: 16rem;
+  width: max-content;
   padding: 0.65rem 0.55rem 0.55rem;
   border-radius: 12px;
   border: 1px solid var(--glass-border);
   background: var(--panel-fill-strong);
-  box-shadow: 0 12px 36px var(--shadow-card);
+  box-shadow: 0 16px 48px var(--shadow-card);
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+  pointer-events: auto;
 }
 
 .share-popover-kicker {

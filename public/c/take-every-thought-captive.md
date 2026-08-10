@@ -6,10 +6,13 @@
 
 ## Truth
 
-- For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
-- We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
-- Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.
-- Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
+For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
+
+We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
+
+Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.
+
+Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
 
 ## Under fire
 

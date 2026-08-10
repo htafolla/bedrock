@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
-- Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
-- But as for … all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.
-- Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.
-- Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
+Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
+
+Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
+
+But as for … all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.
+
+Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.
+
+Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
 
 ## Under fire
 

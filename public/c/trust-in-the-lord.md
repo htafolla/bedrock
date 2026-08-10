@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
-- Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
-- And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
-- Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
+Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
+
+Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
 
 ## Under fire
 

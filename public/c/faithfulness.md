@@ -6,11 +6,15 @@
 
 ## Truth
 
-- The fruit of the Spirit is faithfulness.
-- Moreover, it is required of stewards that they be found faithful.
-- The steadfast love of the Lord never ceases; His mercies never come to an end; they are new every morning; great is Your faithfulness.
-- Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man.
-- If we are faithless, He remains faithful—for He cannot deny Himself.
+The fruit of the Spirit is faithfulness.
+
+Moreover, it is required of stewards that they be found faithful.
+
+The steadfast love of the Lord never ceases; His mercies never come to an end; they are new every morning; great is Your faithfulness.
+
+Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man.
+
+If we are faithless, He remains faithful—for He cannot deny Himself.
 
 ## Under fire
 

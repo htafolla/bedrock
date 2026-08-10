@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Now the works of the flesh are evident: … idolatry, sorcery… and things like these. I warn you… that those who do such things will not inherit the kingdom of God.
-- But as for … sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur.
-- Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.
-- Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.
-- Submit yourselves therefore to God. Resist the devil, and he will flee from you.
+Now the works of the flesh are evident: … idolatry, sorcery… and things like these. I warn you… that those who do such things will not inherit the kingdom of God.
+
+But as for … sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur.
+
+Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.
+
+Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.
+
+Submit yourselves therefore to God. Resist the devil, and he will flee from you.
 
 ## Under fire
 

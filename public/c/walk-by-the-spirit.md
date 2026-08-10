@@ -6,8 +6,9 @@
 
 ## Truth
 
-- The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.
-- If we live by the Spirit, let us also keep in step with the Spirit.
+The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.
+
+If we live by the Spirit, let us also keep in step with the Spirit.
 
 ## Under fire
 

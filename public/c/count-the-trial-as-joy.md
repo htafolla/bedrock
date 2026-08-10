@@ -6,8 +6,9 @@
 
 ## Truth
 
-- The testing of your faith produces perseverance that makes you mature and complete.
-- Suffering produces perseverance; perseverance, character; and character, hope.
+The testing of your faith produces perseverance that makes you mature and complete.
+
+Suffering produces perseverance; perseverance, character; and character, hope.
 
 ## Under fire
 

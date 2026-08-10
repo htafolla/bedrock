@@ -6,10 +6,13 @@
 
 ## Truth
 
-- Be strong in the Lord and in the strength of His might.
-- Put on the whole armor of God, that you may be able to stand against the schemes of the devil.
-- Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, and as shoes for your feet, having put on the readiness given by the gospel of peace.
-- In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one; and take the helmet of salvation, and the sword of the Spirit, which is the word of God, praying at all times in the Spirit.
+Be strong in the Lord and in the strength of His might.
+
+Put on the whole armor of God, that you may be able to stand against the schemes of the devil.
+
+Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, and as shoes for your feet, having put on the readiness given by the gospel of peace.
+
+In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one; and take the helmet of salvation, and the sword of the Spirit, which is the word of God, praying at all times in the Spirit.
 
 ## Under fire
 

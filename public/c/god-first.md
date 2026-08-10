@@ -6,9 +6,11 @@
 
 ## Truth
 
-- He goes before you, guards behind you, stays close when you are brokenhearted, and fights for you.
-- Be still and know that He is God.
-- Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. Keep His commandments and follow Him.
+He goes before you, guards behind you, stays close when you are brokenhearted, and fights for you.
+
+Be still and know that He is God.
+
+Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. Keep His commandments and follow Him.
 
 ## Under fire
 

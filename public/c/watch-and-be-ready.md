@@ -6,12 +6,17 @@
 
 ## Truth
 
-- Watch therefore, for you know neither the day nor the hour.
-- Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect.
-- See, I have told you beforehand.
-- But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man.
-- Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and eat with him, and he with Me.
-- I have said these things to you, that when their hour comes you may remember that I told them to you.
+Watch therefore, for you know neither the day nor the hour.
+
+Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect.
+
+See, I have told you beforehand.
+
+But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man.
+
+Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and eat with him, and he with Me.
+
+I have said these things to you, that when their hour comes you may remember that I told them to you.
 
 ## Under fire
 

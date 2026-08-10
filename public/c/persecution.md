@@ -6,11 +6,15 @@
 
 ## Truth
 
-- Blessed are those who are persecuted for righteousness’ sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on My account.
-- Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.
-- But I say to you, Love your enemies and pray for those who persecute you.
-- Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings.
-- If the world hates you, know that it has hated Me before it hated you.
+Blessed are those who are persecuted for righteousness’ sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on My account.
+
+Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.
+
+But I say to you, Love your enemies and pray for those who persecute you.
+
+Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings.
+
+If the world hates you, know that it has hated Me before it hated you.
 
 ## Under fire
 
