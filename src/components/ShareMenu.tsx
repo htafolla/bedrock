@@ -158,15 +158,44 @@ export function ShareMenu({ payload, compact = false, className = '' }: ShareMen
 
       <button
         type="button"
-        className={compact ? 'share-trigger compact' : 'share-trigger'}
+        className={
+          compact ? 'share-trigger compact share-trigger-icon' : 'share-trigger share-trigger-icon'
+        }
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={menuId}
         disabled={busy}
         onClick={() => setOpen((v) => !v)}
         title={`Share this ${payload.layerLabel.toLowerCase()}`}
+        aria-label={`Share this ${payload.layerLabel.toLowerCase()}`}
       >
-        {busy ? '…' : 'Share'}
+        {busy ? (
+          <span className="share-trigger-busy" aria-hidden>
+            …
+          </span>
+        ) : (
+          <>
+            <svg
+              className="share-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <path d="M8.59 13.51 15.42 17.49" />
+              <path d="m15.41 6.51-6.82 3.98" />
+            </svg>
+            <span className="share-trigger-label">Share</span>
+          </>
+        )}
       </button>
       {open ? (
         <div className="share-popover" id={menuId} role="menu">

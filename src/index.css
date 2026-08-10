@@ -1249,26 +1249,100 @@ body {
   font-family: var(--font-body);
   font-size: 0.8rem;
   letter-spacing: 0.04em;
-  min-height: 2.35rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
   padding: 0.4rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid var(--glass-border);
-  background: var(--surface-row);
-  color: var(--beam);
+  border: 1px solid var(--ember-border-mid);
+  background: var(--ember-wash);
+  color: var(--ember);
   cursor: pointer;
   touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 600;
 }
 
 .share-trigger.compact {
-  min-height: 2.15rem;
-  padding: 0.35rem 0.7rem;
+  min-height: 2.35rem;
+  min-width: 2.35rem;
+  padding: 0.35rem 0.65rem;
   font-size: 0.75rem;
+}
+
+.share-trigger-icon .share-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.share-trigger-label {
+  line-height: 1;
+}
+
+/* Icon-only on very narrow toolbars; keep label when room */
+@media (max-width: 420px) {
+  .chamber-focus-toolbar .share-trigger-label {
+    /* keep label — user couldn't find icon-only */
+    display: inline;
+  }
 }
 
 .share-trigger:hover,
 .share-trigger:focus-visible {
   border-color: var(--ember);
+  background: linear-gradient(180deg, var(--cta-grad-from), var(--cta-grad-to));
+  color: var(--on-ember);
   outline: none;
+}
+
+.share-trigger:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.focus-toolbar-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  order: 3;
+}
+
+.chamber-focus-toolbar .focus-spine-nav {
+  order: 4;
+  margin-left: auto;
+}
+
+.chamber-focus-toolbar .focus-spine-meta {
+  order: 2;
+  min-width: 0;
+}
+
+.chamber-focus-toolbar .focus-btn.ghost:first-child {
+  order: 0;
+}
+
+.chamber-focus-toolbar .focus-plain-link {
+  order: 1;
+}
+
+/* Sticky share FAB when reading a station (always visible on mobile) */
+.chamber-header-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.chamber-header-share .share-trigger {
+  min-height: 2.65rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+  box-shadow: 0 4px 16px var(--shadow-card);
 }
 
 .share-popover {
