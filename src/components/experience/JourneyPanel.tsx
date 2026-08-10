@@ -1,7 +1,5 @@
 import { useMemo } from 'react'
 import { listJourneys } from '../../lib/journeys'
-import { ShareMenu } from '../ShareMenu'
-import { buildPathShare } from '../../lib/share'
 import type { Journey, JourneyFamily } from '../../types/journey'
 import { JourneyStageRail } from './JourneyStageRail'
 
@@ -62,8 +60,8 @@ export function JourneyPanel({
         <p className="constellation-kicker">Journeys</p>
         <h2 className="constellation-title">What path are you on?</h2>
         <p className="constellation-blurb">
-          Path: multi-step walks when one door is not enough. Death and leave are different. Mind
-          war: Battlefield of the mind. Steel SOP: Kill the Flesh on that path and on Contents.
+          Path: multi-step walks when one key is not enough. Death and leave are different. Mind
+          war: Battlefield of the mind. Share the path from a station card once you open it.
         </p>
       </header>
 
@@ -91,45 +89,22 @@ export function JourneyPanel({
               <ul className="journey-list" aria-label={FAMILY_LABEL[family]}>
                 {list.map((j) => {
                   const isActive = j.id === activeJourneyId
-                  const pathPayload = buildPathShare({
-                    journeyId: j.id,
-                    title: j.title,
-                    summary: j.summary,
-                  })
                   return (
-                    <li key={j.id} className="journey-card-row">
-                      <div className="journey-card-shell">
-                        <div className="journey-card-share-bar journey-card-share-header">
-                          <ShareMenu
-                            compact
-                            className="journey-card-share"
-                            triggerLabel="Share path"
-                            payload={pathPayload}
-                          />
-                        </div>
-                        <button
-                          type="button"
-                          className={isActive ? 'journey-card active' : 'journey-card'}
-                          onClick={() => onSelectJourney(j.id, j.doorChamberId)}
-                        >
-                          <span className="journey-card-top">
-                            <span className="journey-card-title">{j.title}</span>
-                            <span className="journey-card-wave">W{j.wave}</span>
-                          </span>
-                          <span className="journey-card-summary">{j.summary}</span>
-                          <span className="journey-card-meta">
-                            {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
-                          </span>
-                        </button>
-                        <div className="journey-card-share-bar journey-card-share-footer">
-                          <ShareMenu
-                            compact
-                            className="journey-card-share"
-                            triggerLabel="Share path"
-                            payload={pathPayload}
-                          />
-                        </div>
-                      </div>
+                    <li key={j.id}>
+                      <button
+                        type="button"
+                        className={isActive ? 'journey-card active' : 'journey-card'}
+                        onClick={() => onSelectJourney(j.id, j.doorChamberId)}
+                      >
+                        <span className="journey-card-top">
+                          <span className="journey-card-title">{j.title}</span>
+                          <span className="journey-card-wave">W{j.wave}</span>
+                        </span>
+                        <span className="journey-card-summary">{j.summary}</span>
+                        <span className="journey-card-meta">
+                          {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
+                        </span>
+                      </button>
                     </li>
                   )
                 })}

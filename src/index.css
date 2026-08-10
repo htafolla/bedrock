@@ -1416,33 +1416,6 @@ body {
   pointer-events: none;
 }
 
-.journey-card-row {
-  position: relative;
-}
-
-.journey-card-shell {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.journey-card-share-bar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.journey-card-share-header {
-  margin-bottom: -0.1rem;
-}
-
-.journey-card-share-footer {
-  margin-top: -0.1rem;
-}
-
-.journey-card-share .share-trigger {
-  min-height: 2.25rem;
-}
-
 .chamber-share {
   flex-shrink: 0;
 }
