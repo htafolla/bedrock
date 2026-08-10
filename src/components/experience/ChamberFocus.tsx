@@ -283,6 +283,40 @@ export function ChamberFocus({
     return () => window.removeEventListener('keydown', onKey)
   }, [onBack, onSpineStep])
 
+  /** One station share (+ path when on a journey) — header and footer of the card. */
+  const cardShare = (
+    placement: 'header' | 'footer',
+  ) => (
+    <div
+      className={
+        placement === 'header'
+          ? 'chamber-card-share chamber-card-share-header'
+          : 'chamber-card-share chamber-card-share-footer'
+      }
+    >
+      <ShareMenu
+        payload={buildStationShare({
+          chamberId: chamber.id,
+          title: chamber.title,
+          summary: chamber.summary,
+          kind: chamber.kind,
+        })}
+      />
+      {journey && onPath ? (
+        <ShareMenu
+          compact
+          className="chamber-share-path"
+          triggerLabel="Share path"
+          payload={buildPathShare({
+            journeyId: journey.id,
+            title: journey.title,
+            summary: journey.summary,
+          })}
+        />
+      ) : null}
+    </div>
+  )
+
   return (
     <div
       className={`chamber-focus${showJourneyRail ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}`}
@@ -386,6 +420,7 @@ export function ChamberFocus({
               the battle is inside.
             </p>
           ) : null}
+          {cardShare('header')}
         </header>
 
         {/*
@@ -425,29 +460,6 @@ export function ChamberFocus({
                 ))}
               </ul>
             </section>
-          ) : null}
-        </div>
-
-        <div className="chamber-header-share chamber-after-hold-share">
-          <ShareMenu
-            payload={buildStationShare({
-              chamberId: chamber.id,
-              title: chamber.title,
-              summary: chamber.summary,
-              kind: chamber.kind,
-            })}
-          />
-          {journey && onPath ? (
-            <ShareMenu
-              compact
-              className="chamber-share-path"
-              triggerLabel="Share path"
-              payload={buildPathShare({
-                journeyId: journey.id,
-                title: journey.title,
-                summary: journey.summary,
-              })}
-            />
           ) : null}
         </div>
 
@@ -547,6 +559,8 @@ export function ChamberFocus({
             </div>
           </nav>
         ) : null}
+
+        {cardShare('footer')}
       </article>
 
       {showJourneyRail && journey && onSelectJourneyStage ? (

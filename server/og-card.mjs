@@ -41,7 +41,7 @@ function wrapLines(text, maxChars, maxLines) {
 }
 
 const LAYER_KICKER = {
-  door: 'DOOR · KEYS',
+  door: 'KEY · DOOR',
   station: 'STATION · CHAMBER',
   path: 'PATH · JOURNEY',
   standard: 'STANDARD · RUBRIC',

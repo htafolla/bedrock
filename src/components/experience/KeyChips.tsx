@@ -8,8 +8,6 @@ import {
 } from 'react'
 import { KEY_ENTRIES } from '../../lib/key-entries'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
-import { ShareMenu } from '../ShareMenu'
-import { buildDoorShare } from '../../lib/share'
 
 interface KeyChipsProps {
   activeChamberId: string | null
@@ -30,37 +28,24 @@ function ChipButton({
   onSelect: (chamberId: string, journeyId?: string) => void
 }) {
   return (
-    <div className={active ? 'key-chip-wrap active' : 'key-chip-wrap'}>
-      <button
-        type="button"
-        className={active ? 'key-chip active' : 'key-chip'}
-        onClick={() => onSelect(entry.chamberId, entry.journeyId)}
-        title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
-      >
-        <span className="key-chip-label">{entry.label}</span>
-        <span className="key-chip-hint">{entry.hint}</span>
-      </button>
-      <ShareMenu
-        compact
-        className="key-chip-share"
-        payload={buildDoorShare({
-          keyId: entry.id,
-          label: entry.label,
-          hint: entry.hint,
-          chamberId: entry.chamberId,
-          journeyId: entry.journeyId,
-        })}
-      />
-    </div>
+    <button
+      type="button"
+      className={active ? 'key-chip active' : 'key-chip'}
+      onClick={() => onSelect(entry.chamberId, entry.journeyId)}
+      title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
+    >
+      <span className="key-chip-label">{entry.label}</span>
+      <span className="key-chip-hint">{entry.hint}</span>
+    </button>
   )
 }
 
 /** Shared header copy — keep desktop + mobile aligned. */
 export const KEYS_BLURB =
-  '30 seconds: tap the door that hits → Under fire is the hold. Prayer if you need words. Truth when you can read. Path: Journeys. Atlas: Contents. Standard: Kill the Flesh.'
+  '30 seconds: tap the key that hits → Under fire is the hold. Prayer if you need words. Truth when you can read. Share lives on the station card. Path: Journeys. Atlas: Contents. Standard: Kill the Flesh.'
 
 const KEYS_BLURB_MOBILE =
-  'Tap a door → Under fire first (the hold). Prayer next. Path: Journeys. Atlas: Contents.'
+  'Tap a key → Under fire first (the hold). Prayer next. Share on the card. Path: Journeys. Atlas: Contents.'
 
 /** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {

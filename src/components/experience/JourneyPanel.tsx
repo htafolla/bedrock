@@ -91,31 +91,45 @@ export function JourneyPanel({
               <ul className="journey-list" aria-label={FAMILY_LABEL[family]}>
                 {list.map((j) => {
                   const isActive = j.id === activeJourneyId
+                  const pathPayload = buildPathShare({
+                    journeyId: j.id,
+                    title: j.title,
+                    summary: j.summary,
+                  })
                   return (
                     <li key={j.id} className="journey-card-row">
-                      <button
-                        type="button"
-                        className={isActive ? 'journey-card active' : 'journey-card'}
-                        onClick={() => onSelectJourney(j.id, j.doorChamberId)}
-                      >
-                        <span className="journey-card-top">
-                          <span className="journey-card-title">{j.title}</span>
-                          <span className="journey-card-wave">W{j.wave}</span>
-                        </span>
-                        <span className="journey-card-summary">{j.summary}</span>
-                        <span className="journey-card-meta">
-                          {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
-                        </span>
-                      </button>
-                      <ShareMenu
-                        compact
-                        className="journey-card-share"
-                        payload={buildPathShare({
-                          journeyId: j.id,
-                          title: j.title,
-                          summary: j.summary,
-                        })}
-                      />
+                      <div className="journey-card-shell">
+                        <div className="journey-card-share-bar journey-card-share-header">
+                          <ShareMenu
+                            compact
+                            className="journey-card-share"
+                            triggerLabel="Share path"
+                            payload={pathPayload}
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          className={isActive ? 'journey-card active' : 'journey-card'}
+                          onClick={() => onSelectJourney(j.id, j.doorChamberId)}
+                        >
+                          <span className="journey-card-top">
+                            <span className="journey-card-title">{j.title}</span>
+                            <span className="journey-card-wave">W{j.wave}</span>
+                          </span>
+                          <span className="journey-card-summary">{j.summary}</span>
+                          <span className="journey-card-meta">
+                            {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
+                          </span>
+                        </button>
+                        <div className="journey-card-share-bar journey-card-share-footer">
+                          <ShareMenu
+                            compact
+                            className="journey-card-share"
+                            triggerLabel="Share path"
+                            payload={pathPayload}
+                          />
+                        </div>
+                      </div>
                     </li>
                   )
                 })}

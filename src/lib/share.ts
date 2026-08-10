@@ -1,5 +1,5 @@
 /**
- * Social share for Door · Station · Path · Standard.
+ * Social share for Key · Station · Path · Standard.
  *
  * Platform reality:
  * - X / Facebook: share a URL; previews use Open Graph (og:image).
@@ -39,7 +39,7 @@ const STANDARD_CHAMBER_ID = 'kill-the-flesh-walk-in-the-spirit'
 export function layerLabel(layer: ShareLayer): string {
   switch (layer) {
     case 'door':
-      return 'Door'
+      return 'Key'
     case 'station':
       return 'Station'
     case 'path':
@@ -129,7 +129,7 @@ export function buildDoorShare(input: {
   const text = input.hint
   return {
     layer: 'door',
-    layerLabel: 'Key',
+    layerLabel: layerLabel('door'),
     title,
     text,
     url,

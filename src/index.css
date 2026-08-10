@@ -1298,23 +1298,32 @@ body {
   margin-left: auto;
 }
 
-/* Station + optional path share under the title */
-.chamber-header-share {
+/* Station (+ path) share: card header top + card footer */
+.chamber-card-share {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+}
+
+.chamber-card-share-header {
   margin-top: 0.85rem;
 }
 
-.chamber-header-share .share-trigger {
+.chamber-card-share-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.chamber-card-share .share-trigger {
   min-height: 2.65rem;
   padding: 0.5rem 1rem;
   font-size: 0.88rem;
   box-shadow: 0 4px 16px var(--shadow-card);
 }
 
-.chamber-header-share .chamber-share-path .share-trigger {
+.chamber-card-share .chamber-share-path .share-trigger {
   min-height: 2.5rem;
   padding: 0.45rem 0.85rem;
   font-size: 0.8rem;
@@ -1407,31 +1416,31 @@ body {
   pointer-events: none;
 }
 
-.key-chip-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  align-items: stretch;
-}
-
-.key-chip-wrap .key-chip {
-  width: 100%;
-}
-
-.key-chip-share {
-  align-self: flex-end;
-}
-
 .journey-card-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
   position: relative;
 }
 
-.journey-card-share {
-  align-self: flex-end;
-  margin-top: -0.15rem;
+.journey-card-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.journey-card-share-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.journey-card-share-header {
+  margin-bottom: -0.1rem;
+}
+
+.journey-card-share-footer {
+  margin-top: -0.1rem;
+}
+
+.journey-card-share .share-trigger {
+  min-height: 2.25rem;
 }
 
 .chamber-share {
@@ -2546,11 +2555,6 @@ body {
 .hold-block .field-hacks li {
   border-left-width: 3px;
   background: color-mix(in srgb, var(--panel-fill-strong, var(--glass)) 88%, transparent);
-}
-
-.chamber-after-hold-share {
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
 }
 
 .field-truth-depth {
