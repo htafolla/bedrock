@@ -1164,6 +1164,79 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* —— Share card (off-screen capture for html-to-image / toPng) —— */
+.share-card-shot {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 600px;
+  height: 315px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.share-card {
+  width: 600px;
+  height: 315px;
+  box-sizing: border-box;
+  padding: 1.75rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(165deg, #241c16 0%, #0c0a09 55%, #120e0b 100%);
+  border: 1px solid rgba(196, 165, 116, 0.28);
+  border-left: 6px solid #e8a050;
+  color: #f7f1e8;
+  font-family: var(--font-body);
+}
+
+.share-card-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c4a574;
+  font-weight: 600;
+}
+
+.share-card-title {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.85rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #f5e6c8;
+  max-height: 4.4rem;
+  overflow: hidden;
+}
+
+.share-card-text {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #a89884;
+  max-height: 4.2rem;
+  overflow: hidden;
+  flex: 1;
+}
+
+.share-card-motto {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: #f5e6c8;
+}
+
+.share-card-url {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: #6a5c4e;
+}
+
 /* —— Share menu (Door / Station / Path / Standard) —— */
 .share-menu {
   position: relative;

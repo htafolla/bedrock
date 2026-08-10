@@ -72,3 +72,15 @@ describe('share payloads', () => {
     expect(ogImageUrl({ layer: 'door', id: 'key-god' })).toContain('layer=door')
   })
 })
+
+describe('share filename helper', () => {
+  it('builds a stable png name', async () => {
+    const { shareFilename } = await import('./capture-share-image')
+    const p = buildStationShare({
+      chamberId: 'wounded',
+      title: 'Wounded',
+      summary: 'You were harmed.',
+    })
+    expect(shareFilename(p)).toMatch(/^bedrock-station-wounded.*\.png$/)
+  })
+})

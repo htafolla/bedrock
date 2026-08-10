@@ -12,7 +12,7 @@ import { SITE_ORIGIN, chamberCanonicalUrl } from './seo'
 
 export type ShareLayer = 'door' | 'station' | 'path' | 'standard'
 
-export type ShareNetwork = 'system' | 'x' | 'facebook' | 'copy' | 'instagram' | 'tiktok'
+export type ShareNetwork = 'system' | 'x' | 'facebook' | 'copy' | 'instagram' | 'tiktok' | 'image'
 
 export interface SharePayload {
   layer: ShareLayer
@@ -229,6 +229,8 @@ export function openShareNetwork(network: ShareNetwork, payload: SharePayload): 
     window.open(facebookShareUrl(payload), '_blank', 'noopener,noreferrer')
     return
   }
-  // Instagram / TikTok: no web post intent — copy + instruct
-  void copyText(payload.shareLine)
+  // Instagram / TikTok / image: handled in ShareMenu (capture or copy)
+  if (network === 'instagram' || network === 'tiktok' || network === 'image') {
+    void copyText(payload.shareLine)
+  }
 }
