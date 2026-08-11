@@ -727,7 +727,7 @@
         {
           "id": "covenant",
           "role": "long_middle",
-          "label": "Covenant / faithfulness",
+          "label": "Faithfulness",
           "chamberId": "marriage-covenant",
           "note": "When marriage is in view — faithfulness, not fantasy."
         },
@@ -1042,7 +1042,7 @@
         {
           "id": "near-sop",
           "role": "near",
-          "label": "Field card / SOP",
+          "label": "Field card",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
           "note": "Boiled steel first. Investigation and condemnation named. Full holds when needed."
         },
@@ -1056,14 +1056,14 @@
         {
           "id": "fork-accuser",
           "role": "fork",
-          "label": "Accuser / darts",
+          "label": "Fiery darts",
           "chamberId": "the-adversary",
           "note": "Fiery darts and schemes. Do not give him the microphone of your mind."
         },
         {
           "id": "spiral-shame",
           "role": "spiral",
-          "label": "Condemnation vs life",
+          "label": "Condemnation",
           "chamberId": "regret",
           "note": "Self-tape and unforgiveness of self. Godly grief → life; worldly grief → death. No self-hate holiness."
         },
