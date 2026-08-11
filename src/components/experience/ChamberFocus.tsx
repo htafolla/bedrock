@@ -525,7 +525,6 @@ export function ChamberFocus({
           <nav className="journey-card-step" aria-label="Continue this journey">
             <p className="journey-card-step-meta">
               Station {stageIdx + 1} of {journey.stages.length}
-              <span className="journey-card-step-path"> · {journey.title}</span>
             </p>
             <div className="journey-card-step-actions">
               {journeyPrev && journeyPrevStage ? (

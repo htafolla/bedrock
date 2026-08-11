@@ -9,8 +9,9 @@ interface JourneyStageRailProps {
 }
 
 /**
- * Horizontal path of a core journey — stays with the chamber card
- * so the visitor always sees where they are on the walk.
+ * Horizontal path chips for a journey.
+ * On a station: progress only (toolbar already names the path).
+ * Chips show station titles only — spine roles stay out of the human UI.
  */
 export function JourneyStageRail({
   journey,
@@ -19,6 +20,7 @@ export function JourneyStageRail({
   onSelectStage,
 }: JourneyStageRailProps) {
   const hereIdx = journey.stages.findIndex((s) => s.chamberId === activeChamberId)
+  const onPath = hereIdx >= 0
 
   return (
     <nav
@@ -26,14 +28,16 @@ export function JourneyStageRail({
       aria-label={`${journey.title} path`}
     >
       <div className="journey-stage-rail-head">
-        <p className="journey-stage-rail-kicker">Journey</p>
-        <p className="journey-stage-rail-title">{journey.title}</p>
-        {hereIdx >= 0 ? (
-          <p className="journey-stage-rail-progress">
+        {onPath ? (
+          <p className="journey-stage-rail-progress journey-stage-rail-progress-solo">
             Station {hereIdx + 1} of {journey.stages.length}
           </p>
         ) : (
-          <p className="journey-stage-rail-progress">Not on this path — tap a station</p>
+          <>
+            <p className="journey-stage-rail-kicker">Path</p>
+            <p className="journey-stage-rail-title">{journey.title}</p>
+            <p className="journey-stage-rail-progress">Tap a station</p>
+          </>
         )}
       </div>
       <ol className="journey-stage-rail">
@@ -54,8 +58,8 @@ export function JourneyStageRail({
                 onClick={() => onSelectStage(s.chamberId)}
                 title={s.note || s.label}
                 aria-current={here ? 'step' : undefined}
+                aria-label={`${s.label}${s.note ? `: ${s.note}` : ''}`}
               >
-                <span className="journey-stage-role">{s.role.replace(/_/g, ' ')}</span>
                 <span className="journey-stage-name">{s.label}</span>
               </button>
             </li>

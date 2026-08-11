@@ -688,16 +688,17 @@ body {
 
 .journey-stage-chip {
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.1rem;
-  padding: 0.35rem 0.55rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.6rem;
   border-radius: 8px;
   border: 1px solid var(--glass-border);
   background: var(--surface-inset);
   color: inherit;
   cursor: pointer;
-  max-width: 9.5rem;
+  touch-action: manipulation;
+  max-width: 10rem;
+  min-height: 2.35rem;
 }
 
 .journey-stage-chip.active,
@@ -707,16 +708,19 @@ body {
   outline: none;
 }
 
-.journey-stage-role {
-  font-size: 0.62rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  opacity: 0.65;
+.journey-stage-name {
+  font-size: 0.8rem;
+  line-height: 1.25;
+  font-weight: 600;
 }
 
-.journey-stage-name {
+.journey-stage-rail-progress-solo {
+  margin: 0;
   font-size: 0.78rem;
-  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ember);
+  font-weight: 650;
 }
 
 /* Four nav tabs — slightly tighter on narrow screens */
