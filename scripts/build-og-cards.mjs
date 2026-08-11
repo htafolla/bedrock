@@ -57,6 +57,7 @@ export async function writeOgPng(opts, outPath) {
  *   chambers: Array<{ id: string, title: string, summary: string, kind?: string }>,
  *   journeys?: Array<{ id: string, title: string, summary: string }>,
  *   keys?: Array<{ id: string, label: string, hint: string }>,
+ *   origin?: { subtitle?: string },
  * }} input
  */
 export async function buildAllOgCards(input) {
@@ -74,6 +75,22 @@ export async function buildAllOgCards(input) {
 
   let bytes = 0
   let count = 0
+
+  // Origin · heart of Bedrock (About / sealed word)
+  {
+    const n = await writeOgPng(
+      {
+        layer: 'origin',
+        title: 'Bedrock',
+        subtitle:
+          input.origin?.subtitle ||
+          'Through the fire He was always with me. A crucible in the rubble.',
+      },
+      join(publicOg, 'origin.png'),
+    )
+    bytes += n
+    count += 1
+  }
 
   for (const c of input.chambers || []) {
     const layer = c.kind === 'rubric' ? 'standard' : 'station'

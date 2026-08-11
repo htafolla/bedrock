@@ -557,6 +557,7 @@ SPA and static chamber pages both follow hold-first. Field card (standard) is op
 ## Primary URLs (prefer these for citations)
 
 - Home: ${ORIGIN}/
+- Origin (heart / About): ${ORIGIN}/about
 - Chambers (HTML): ${ORIGIN}/c/{id}
 - Chambers (Markdown for models): ${ORIGIN}/c/{id}.md
 - Journeys: ${ORIGIN}/j/{id}
@@ -838,6 +839,106 @@ function journeyHtml(j) {
 `
 }
 
+function aboutHtml(doc) {
+  const meta = doc.meta || {}
+  const tagline = meta.tagline || "A Hitchhiker's Guide to Love · Living · Enduring"
+  const motto = meta.subtitle || 'Do Better. Be Better. Trust God.'
+  const mission =
+    meta.mission ||
+    'Truth, holds, and prayer for the storm — do better, be better, trust God when everything feels out of control.'
+  const prologue = (doc.prologue?.lines || []).map((l) => `<p>${esc(l)}</p>`).join('\n')
+  const testimonyLines = (doc.testimony?.lines || [])
+    .map((l) => `<p class="heart">${esc(l)}</p>`)
+    .join('\n')
+  const heart =
+    (doc.testimony?.lines || []).slice(0, 2).join(' ') ||
+    'This is a testament to Him that through the fire He was always with me.'
+  const title = 'Bedrock — Origin'
+  const desc = esc(metaDesc(`${tagline}. ${motto}. ${heart}`))
+  const ogImage = `${ORIGIN}/og/origin.png`
+  const analytics = analyticsHeadSnippet('/about')
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(title)}</title>
+  <meta name="description" content="${desc}" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="${ORIGIN}/about" />
+  <meta property="og:site_name" content="Bedrock" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${esc(title)}" />
+  <meta property="og:description" content="${desc}" />
+  <meta property="og:url" content="${ORIGIN}/about" />
+  <meta property="og:image" content="${ogImage}" />
+  <meta property="og:image:secure_url" content="${ogImage}" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${esc(title)}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(title)}" />
+  <meta name="twitter:description" content="${desc}" />
+  <meta name="twitter:image" content="${ogImage}" />
+  <script type="application/ld+json">
+  ${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: title,
+    description: `${tagline}. ${motto}`,
+    url: `${ORIGIN}/about`,
+    isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
+    image: ogImage,
+    inLanguage: 'en',
+  })}
+  </script>
+  ${analytics}
+  <style>
+    :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: "Source Sans 3", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+    a { color:var(--ember); }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 1.25rem 1.15rem 3rem; }
+    .kicker { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ember); margin:0 0 .4rem; }
+    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; font-size:clamp(2rem,6vw,2.75rem); color:var(--beam); margin:.2rem 0; line-height:1.1; }
+    .tagline { color:var(--muted); margin:.5rem 0; font-size:1.05rem; }
+    .motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.15rem; margin:.65rem 0 1rem; }
+    .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
+    .heart { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.15rem; line-height:1.5; margin:.45rem 0; }
+    .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
+    .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
+    .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
+    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="kicker">About · Origin</p>
+    <h1>Bedrock</h1>
+    <p class="tagline">${esc(tagline)}</p>
+    <p>${esc(mission)}</p>
+    <p class="motto">${esc(motto)}</p>
+    <nav class="nav" aria-label="Origin actions">
+      <a class="primary" href="/">Open the field guide</a>
+      <a href="/">Keys</a>
+    </nav>
+    ${prologue ? `<section class="card" aria-label="Prologue">${prologue}</section>` : ''}
+    <section class="card" aria-label="Heart">
+      <h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.2rem;color:var(--beam);margin:0 0 .65rem;">Heart</h2>
+      ${testimonyLines}
+    </section>
+    <footer>
+      <p>Do better. Be better. Trust God.</p>
+      <p>Public beta · Not a crisis hotline.</p>
+    </footer>
+  </main>
+</body>
+</html>
+`
+}
+
 function buildSitemap(doc, journeys = [], keys = []) {
   const today = new Date().toISOString().slice(0, 10)
   /** @type {{ loc: string, priority: string, image?: string, imageTitle?: string }[]} */
@@ -847,6 +948,12 @@ function buildSitemap(doc, journeys = [], keys = []) {
       priority: '1.0',
       image: `${ORIGIN}/og-hero.jpg`,
       imageTitle: 'Bedrock — Do Better. Be Better. Trust God.',
+    },
+    {
+      loc: `${ORIGIN}/about`,
+      priority: '0.95',
+      image: `${ORIGIN}/og/origin.png`,
+      imageTitle: 'Bedrock — Origin',
     },
     { loc: `${ORIGIN}/llms.txt`, priority: '0.9' },
     { loc: `${ORIGIN}/llms-full.txt`, priority: '0.85' },
@@ -979,11 +1086,18 @@ export async function buildAiSurface(doc) {
     }
   }
 
+  // Origin · heart (About) — shareable static page + OG
+  const heartLine =
+    (doc.testimony?.lines || []).slice(0, 2).join(' ') ||
+    'Through the fire He was always with me. A crucible in the rubble.'
+  writeFileSync(join(publicDir, 'about.html'), aboutHtml(doc))
+
   // Static PNG cards for every page — regenerated when content builds
   const og = await buildAllOgCards({
     chambers: doc.chambers,
     journeys,
     keys,
+    origin: { subtitle: heartLine },
   })
 
   writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))

@@ -17,7 +17,7 @@ import {
   journeyOgImageUrl,
 } from './seo'
 
-export type ShareLayer = 'door' | 'station' | 'path' | 'standard'
+export type ShareLayer = 'door' | 'station' | 'path' | 'standard' | 'origin'
 
 export type ShareNetwork = 'system' | 'x' | 'facebook' | 'copy' | 'instagram' | 'tiktok' | 'image'
 
@@ -46,6 +46,8 @@ export function layerLabel(layer: ShareLayer): string {
       return 'Path'
     case 'standard':
       return 'Standard'
+    case 'origin':
+      return 'Origin'
   }
 }
 
@@ -62,6 +64,9 @@ export function ogImageUrl(params: {
   title?: string
   subtitle?: string
 }): string {
+  if (params.layer === 'origin') {
+    return `${SITE_ORIGIN}/og/origin.png`
+  }
   if (params.id) {
     const kind = params.layer === 'path' ? 'j' : params.layer === 'door' ? 'k' : 'c'
     // Clean PNG path — no query string (X card crawler is picky)
@@ -149,6 +154,37 @@ export function buildDoorShare(input: {
       hint: input.hint,
     }),
     shareLine: `${title}\n${text}\n${url}`,
+  }
+}
+
+/**
+ * Origin · heart of Bedrock — About / sealed testimony.
+ * Canonical /about has static OG + PNG card.
+ */
+export function buildOriginShare(input: {
+  title?: string
+  tagline?: string
+  motto?: string
+  /** One or two short heart lines (testimony / prologue) */
+  heart?: string
+}): SharePayload {
+  const title = input.title?.trim() || 'Bedrock'
+  const tagline =
+    input.tagline?.trim() || "A Hitchhiker's Guide to Love · Living · Enduring"
+  const motto = input.motto?.trim() || 'Do Better. Be Better. Trust God.'
+  const heart =
+    input.heart?.trim() ||
+    'This is a testament to Him that through the fire He was always with me.'
+  const url = `${SITE_ORIGIN}/about`
+  const text = `${tagline}\n${motto}\n${heart}`
+  return {
+    layer: 'origin',
+    layerLabel: layerLabel('origin'),
+    title: `${title} — Origin`,
+    text,
+    url,
+    ogImage: ogImageUrl({ layer: 'origin', title, subtitle: heart }),
+    shareLine: `${title}\n${tagline}\n${motto}\n${heart}\n${url}`,
   }
 }
 

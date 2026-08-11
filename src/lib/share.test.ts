@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   buildDoorShare,
+  buildOriginShare,
   buildPathShare,
   buildStationShare,
   facebookShareUrl,
@@ -56,6 +57,20 @@ describe('share payloads', () => {
     expect(p.layerLabel).toBe('Key')
     expect(p.url).toBe(`${SITE_ORIGIN}/k/key-wounded`)
     expect(p.ogImage).toContain('/og/k/key-wounded.png')
+  })
+
+  it('origin share uses /about and origin og (heart of Bedrock)', () => {
+    const p = buildOriginShare({
+      title: 'Bedrock',
+      tagline: "A Hitchhiker's Guide to Love · Living · Enduring",
+      motto: 'Do Better. Be Better. Trust God.',
+      heart: 'Through the fire He was always with me.',
+    })
+    expect(p.layer).toBe('origin')
+    expect(p.layerLabel).toBe('Origin')
+    expect(p.url).toBe(`${SITE_ORIGIN}/about`)
+    expect(p.ogImage).toBe(`${SITE_ORIGIN}/og/origin.png`)
+    expect(p.shareLine).toContain('Through the fire')
   })
 
   it('x and facebook intents encode url', () => {

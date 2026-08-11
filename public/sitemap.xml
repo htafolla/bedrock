@@ -12,6 +12,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://bedrock.rippel.ai/about</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://bedrock.rippel.ai/og/origin.png</image:loc>
+      <image:title>Bedrock — Origin</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://bedrock.rippel.ai/llms.txt</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>

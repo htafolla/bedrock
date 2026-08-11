@@ -39,6 +39,7 @@ SPA and static chamber pages both follow hold-first. Field card (standard) is op
 ## Primary URLs (prefer these for citations)
 
 - Home: https://bedrock.rippel.ai/
+- Origin (heart / About): https://bedrock.rippel.ai/about
 - Chambers (HTML): https://bedrock.rippel.ai/c/{id}
 - Chambers (Markdown for models): https://bedrock.rippel.ai/c/{id}.md
 - Journeys: https://bedrock.rippel.ai/j/{id}

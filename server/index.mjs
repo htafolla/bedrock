@@ -797,6 +797,19 @@ function createApp() {
     res.status(404).type('text').send('Chamber not found')
   })
 
+  // Origin · heart of Bedrock (About / sealed testimony)
+  app.get('/about', (req, res, next) => {
+    for (const base of staticRoots) {
+      const file = path.join(base, 'about.html')
+      if (existsSync(file)) {
+        setContentNoStore(res)
+        res.sendFile(file)
+        return
+      }
+    }
+    next()
+  })
+
   // Key / door pages — static HTML with door OG
   app.get('/k/:id', (req, res, next) => {
     const id = String(req.params.id || '').toLowerCase()

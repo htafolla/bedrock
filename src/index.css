@@ -2267,6 +2267,35 @@ body {
   border-bottom: 1px solid var(--glass-border);
 }
 
+/* Origin heart: title left, Share right */
+.about-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.about-title-block {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.about-title-block .constellation-title {
+  margin: 0.15rem 0 0;
+}
+
+.about-title-share {
+  flex: 0 0 auto;
+  padding-top: 0.35rem;
+}
+
+.about-title-share .share-trigger {
+  min-height: 2.35rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+}
+
 /* Keep header chrome above About dim so Keys · Journeys · Contents still exit */
 .mode-constellation.nav-about .experience-ui {
   z-index: 85;
@@ -2331,7 +2360,10 @@ body {
   padding-top: 0.85rem;
   border-top: 1px solid var(--glass-border);
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
 }
 
 .site-footer-about {
