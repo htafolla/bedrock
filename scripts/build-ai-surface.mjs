@@ -49,6 +49,18 @@ function esc(s) {
     .replace(/"/g, '&quot;')
 }
 
+/** Meta / OG description: never mid-word chop. */
+function metaDesc(text, max = 155) {
+  const t = String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  const sp = cut.lastIndexOf(' ')
+  const base = sp > 40 ? cut.slice(0, sp) : cut
+  return `${base.replace(/[.,;:–—-]+$/, '')}…`
+}
+
 const BG_PASSAGE = 'https://www.biblegateway.com/passage/'
 const BG_VERSION = 'NIV'
 
@@ -349,8 +361,10 @@ function chamberHtml(c, meta) {
 
   const title = `${esc(c.title)} — Bedrock`
   const desc = esc(
-    `${c.summary} Scripture, under-fire steps, and prayer. Do Better. Be Better. Trust God.`,
-  ).slice(0, 160)
+    metaDesc(
+      `${c.summary} Hold first: Under fire, prayer, then Truth. Do Better. Be Better. Trust God.`,
+    ),
+  )
   const pagePath = `/c/${c.id}`
   const analytics = analyticsHeadSnippet(pagePath)
 
@@ -613,8 +627,8 @@ function doorOgImageUrl(k) {
 function doorHtml(k) {
   const title = `${esc(k.label)} — Bedrock Key`
   const desc = esc(
-    `${k.hint}. Storm door in Bedrock. Do Better. Be Better. Trust God.`,
-  ).slice(0, 160)
+    metaDesc(`${k.hint}. Storm key in Bedrock. Do Better. Be Better. Trust God.`),
+  )
   const ogImage = esc(doorOgImageUrl(k))
   const pagePath = `/k/${k.id}`
   const analytics = analyticsHeadSnippet(pagePath)
@@ -729,8 +743,8 @@ function journeyHtml(j) {
     .join('\n')
   const title = `${esc(j.title)} — Bedrock Path`
   const desc = esc(
-    `${j.summary} Multi-station journey in Bedrock. Do Better. Be Better. Trust God.`,
-  ).slice(0, 160)
+    metaDesc(`${j.summary} Multi-station path in Bedrock. Do Better. Be Better. Trust God.`),
+  )
   const ogImage = esc(journeyOgImageUrl(j))
   const pagePath = `/j/${j.id}`
   const analytics = analyticsHeadSnippet(pagePath)

@@ -24,11 +24,23 @@ const MOTTO = 'Do Better. Be Better. Trust God.'
  * @param {{ layer: string, title: string, subtitle?: string }} opts
  * @param {string} outPath absolute path to .png
  */
+/** Prefer full sentences on the card; soft-cap so wrapLines does not feel chopped. */
+function ogSubtitle(text, max = 140) {
+  const t = String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  const sp = cut.lastIndexOf(' ')
+  const base = sp > 40 ? cut.slice(0, sp) : cut
+  return `${base.replace(/[.,;:–—-]+$/, '')}…`
+}
+
 export async function writeOgPng(opts, outPath) {
   const svg = buildOgSvg({
     layer: opts.layer,
     title: opts.title,
-    subtitle: opts.subtitle || MOTTO,
+    subtitle: ogSubtitle(opts.subtitle || MOTTO),
     motto: MOTTO,
   })
   const png = await sharp(Buffer.from(svg))

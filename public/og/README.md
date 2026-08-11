@@ -6,4 +6,4 @@ Generated on content build for social share (X, Facebook, LinkedIn, etc.).
 - Paths (journeys): `/og/j/{id}.png`
 - Keys: `/og/k/{id}.png`
 
-Cards: 106 · ~5788 KB total
+Cards: 106 · ~5789 KB total
