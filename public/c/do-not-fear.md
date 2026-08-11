@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Fear is a spirit-claim. Counter it: power, love, sound mind — then take the next obedient step.
-- You cannot add an hour by worry. So put the hour into prayer and duty instead.
+- Fear is a claim. Answer with power, love, and a sound mind. Then take the next step.
+- Worry will not add an hour. Put the hour into prayer and duty.
 
 ## Prayer
 
-Lord, I release the spirit of fear. Be with me. Steady my mind. Amen.
+Lord, I release fear. Be with me. Amen.
 
 ## Truth
 

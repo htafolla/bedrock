@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- You were harmed. Name it. Do not take on total blame that is not yours. Do not make hatred your shelter.
-- What they did does not cancel whose you are. You are His; cry Abba, Father.
-- Do not repay evil with evil. Leave judgment to God. Keep wise boundaries while you grieve. Love without needing them to fix how you feel inside.
+- You were harmed. Name it. Not all of it is your fault. Do not hide in hate.
+- What they did does not cancel whose you are. You are His.
+- Do not repay evil. Leave judgment to God. Keep wise boundaries. Grieve. Love without needing them to fix you inside.
 
 ## Prayer
 
-Father, You see what was done to me. I release hatred. Heal me and hold me. Amen.
+Father, You see what was done to me. Heal me and hold me. Amen.
 
 ## Truth
 

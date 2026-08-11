@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Be strong. Take courage. Wait for the Lord — not for your timeline to bend.
-- Those who wait renew strength. Force is flesh; waiting is faith with open hands.
-- Stop forcing outcomes you cannot rule. Obey today; leave the harvest to Him.
+- Be strong. Wait for the Lord, not for your timeline.
+- Force is flesh. Waiting is faith with open hands.
+- Obey today. Leave the harvest to Him.
 
 ## Prayer
 
-Lord, I wait for You. I release forced outcomes. Renew my strength. Amen.
+Lord, I wait for You. Renew my strength. Amen.
 
 ## Truth
 

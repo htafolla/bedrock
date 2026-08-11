@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Take every thought captive to obey Christ. Obsession is not revelation.
-- When cares are many, bring them to God. Pray. Do not feed the loop.
-- Keep your mind on Him. Capture the thought, replace it with what is true, then take the next obedient step.
+- Take the thought captive. Obsession is not revelation.
+- Bring the cares to God. Pray. Do not feed the loop.
+- Capture. Replace with truth. Take the next obedient step.
 
 ## Prayer
 
-Lord, I release the replaying mind. I take every thought captive to You. Amen.
+Lord, I release the replaying mind. Amen.
 
 ## Truth
 

@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- You do not need to win the argument in your head. The Lord fights; you stand.
-- If the urge is to repay, that is flesh. Bless, leave judgment to God, do the next right thing.
-- Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin.
+- You do not need to win the argument in your head. The Lord fights. You stand.
+- If you want to repay, that is flesh. Bless. Leave judgment to God.
+- Hatred and love of God cannot share a heart. Put the hate down.
 
 ## Prayer
 
-Father, vengeance is Yours. I release judgment to You. Soften hatred in me. Amen.
+Father, vengeance is Yours. Soften hatred in me. Amen.
 
 ## Truth
 

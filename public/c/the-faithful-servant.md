@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Faithful is ordinary obedience while the Master delays — not performance when He is watching.
-- Beating others, eating and drinking with drunkards — that is the wicked servant’s path.
-- Blessed is the one the Master finds doing the assignment when He comes.
+- Faithful is ordinary obedience while the Master delays.
+- Beating others and living loose is the wicked servant’s path.
+- Blessed is the one found doing the assignment when He comes.
 
 ## Prayer
 
-Lord, I release the wicked servant’s ease. Find me faithful when You come. Amen.
+Lord, find me faithful when You come. Amen.
 
 ## Truth
 

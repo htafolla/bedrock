@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- When chaos feels big, look up: the heavens declare His glory — your crisis is not the largest thing in the room.
-- Worship is a weapon. Name one true thing about who He is before you name one more fear.
+- Look up. His glory is bigger than this chaos.
+- Name one true thing about God before you name one more fear.
 
 ## Prayer
 
-Lord of all power and beauty, I worship You. I release this chaos into Your hands. Amen.
+Lord of power and beauty, I worship You. I release this chaos. Amen.
 
 ## Truth
 

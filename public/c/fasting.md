@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Fast to seek God, not to twist His arm or impress people. Secret, sincere, humbled.
-- Hunger can sharpen prayer — or harden pride. Pair the fast with the Word and mercy.
-- If health forbids a food fast, fast something that costs you: noise, scroll, appetite for control.
+- Fast to seek God, not to impress people.
+- Pair the fast with the Word and mercy. Hunger can feed pride.
+- If you cannot fast food, fast noise or the scroll.
 
 ## Prayer
 
-Lord, I set this aside to seek You. I release appetite for control. Humble me. Amen.
+Lord, I set this aside to seek You. Amen.
 
 ## Truth
 

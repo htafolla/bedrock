@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Happiness rented from circumstances turns to bitterness when the rent comes due.
-- When joy dies with the outcome, speak one true thing about God that does not depend on them.
-- Grief is allowed; bitterness as identity is not. Rejoice in the Lord. His joy is your strength.
+- Joy that dies with the outcome was never rooted in God.
+- Speak one true thing about God that does not depend on them.
+- Grief is allowed. Bitterness as identity is not.
 
 ## Prayer
 
-Lord, I release joy rented from outcomes. Be my strength and restore Your joy. Amen.
+Lord, restore Your joy. Be my strength. Amen.
 
 ## Truth
 

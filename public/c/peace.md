@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Numbness, avoiding conflict, or peace that only arrives when you control the timeline is not Christ’s peace.
-- Stop negotiating every what-if. Pray, thank Him, and receive the guard over heart and mind.
-- Peace is given, not earned. Receive it. Let the peace of Christ rule this hour.
+- Peace that only comes when you control everything is not His peace.
+- Stop the what-ifs. Pray. Thank Him. Receive His guard over your mind.
+- Peace is given, not earned. Receive it.
 
 ## Prayer
 
-Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Amen.
+Jesus, give Your peace and guard my mind. Amen.
 
 ## Truth
 

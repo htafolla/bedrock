@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- When you do not know what to pray, the Spirit helps — groan, wait, then one true sentence.
-- Ask, seek, knock — persistence is faith, not nagging God into a corner.
-- Pray without ceasing means stay turned toward Him all day, not only at crisis.
+- When you have no words, the Spirit helps. One true sentence is enough.
+- Ask. Seek. Knock. Persistence is faith.
+- Stay turned toward Him all day, not only in crisis.
 
 ## Prayer
 
-Father, I bring this need and I wait. I release the need to control the answer. Amen.
+Father, I bring this need and I wait. Amen.
 
 ## Truth
 

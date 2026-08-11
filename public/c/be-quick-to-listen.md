@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Count to three before you answer. Listening is not losing; it is refusing to let anger drive.
-- Anger is fast flesh. Listening is love under pressure — hear fully before you defend, explain, or strike.
-- Slow to speak is spiritual warfare when the flesh wants the last word.
+- Count to three before you answer.
+- Hear fully before you defend or strike.
+- Slow to speak when the flesh wants the last word.
 
 ## Prayer
 
-Lord, I release the need for the last word. Make me quick to listen. Amen.
+Lord, make me quick to listen. Amen.
 
 ## Truth
 

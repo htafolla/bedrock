@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Gifts of the Spirit are for the common good — not a stage name. Use what He gave.
-- Steward the gift as one who will give account. Do not bury the talent in fear.
-- Desire the greater gifts, and still walk in love — without love, gifts are noise.
+- Gifts are for the common good, not a stage name.
+- Steward the gift. Do not bury it in fear.
+- Desire the gifts. Walk in love. Without love, gifts are noise.
 
 ## Prayer
 
-Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen.
+Holy Spirit, use the gift for Your body. Amen.
 
 ## Truth
 

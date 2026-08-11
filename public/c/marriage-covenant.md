@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Covenant is not a contract of feelings. Lead by sacrifice, not by winning the argument.
-- If separation exists: do not invent a new story. Remain faithful to what God still calls true.
+- Covenant is not a contract of feelings. Lead by sacrifice.
+- If separation exists, do not invent a new story. Stay true to what God still calls true.
 
 ## Prayer
 
-Lord of the covenant, I release winning the argument. Make me faithful. Amen.
+Lord of the covenant, make me faithful. Amen.
 
 ## Truth
 

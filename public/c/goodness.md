@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Performative virtue and evil for a “good reason” are not goodness.
-- Ask: is this good, or only useful for my case? Choose light over managed darkness.
-- One honest yes, one honest no. Half-truths are full lies with better manners.
+- Evil for a “good reason” is still evil.
+- Is this good, or only useful for my case?
+- One honest yes. One honest no.
 
 ## Prayer
 
-Lord, I release useful darkness. Keep me clinging to what is good. Amen.
+Lord, keep me clinging to what is good. Amen.
 
 ## Truth
 

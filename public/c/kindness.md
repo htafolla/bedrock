@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Niceness to manage image, or harshness excused as “just being honest,” is not kindness.
-- Replace the sharp text with one true, clean sentence, or silence if silence is love.
-- Do one kind act without announcement. Kindness that needs credit is still flesh.
+- Harsh “honesty” is not kindness.
+- One true, clean sentence—or silence if silence is love.
+- Do one kind act without needing credit.
 
 ## Prayer
 
-Lord, I release the sharp edge. Soften what is hard in me. Amen.
+Lord, soften what is hard in me. Amen.
 
 ## Truth
 

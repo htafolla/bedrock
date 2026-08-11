@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Let your yes be yes. Half-truths are full lies with better manners.
-- Put off falsehood even when truth costs status. Light is safer than managed darkness.
+- Let your yes be yes. Half-truths are still lies.
+- Tell the truth even when it costs status.
 
 ## Prayer
 
-Lord, I release managed darkness. Keep me in the light with straight words. Amen.
+Lord, keep me in the light with straight words. Amen.
 
 ## Truth
 

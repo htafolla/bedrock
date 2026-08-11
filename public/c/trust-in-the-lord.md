@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Trust in the Lord with all your heart — lean not on panic as if it were wisdom.
-- In all your ways acknowledge Him; take only the next straight step He shows.
-- Release the outcome you cannot rule. He still holds the path.
+- Trust the Lord with all your heart. Panic is not wisdom.
+- Take only the next step He shows.
+- Release the outcome you cannot rule.
 
 ## Prayer
 
-Lord, I trust You with all my heart. I release control. Direct my path. Amen.
+Lord, I trust You. Direct my path. Amen.
 
 ## Truth
 

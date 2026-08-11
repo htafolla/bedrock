@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Ask for daily bread, not a five-year fortress. Today’s obedience + today’s trust.
-- Your Father knows what you need. Anxiety is not a provision strategy.
+- Ask for today’s bread, not a five-year fortress.
+- Your Father knows what you need. Anxiety is not a plan.
 
 ## Prayer
 
-Father, give us this day our daily bread. I release tomorrow into Your knowing. Amen.
+Father, give us this day our daily bread. Amen.
 
 ## Truth
 

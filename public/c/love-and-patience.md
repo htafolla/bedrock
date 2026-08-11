@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Love keeps no record of wrongs. Stop replaying the list of their failures.
-- Patience is love under pressure. Slow the reply. Soften the tone. Protect, trust, hope, persevere.
+- Love keeps no record of wrongs. Stop replaying their failures.
+- Slow the reply. Soften the tone. Love is patient.
 
 ## Prayer
 
-Lord, I release the ledger of wrongs. Soften me to love and wait as You love. Amen.
+Lord, I release the list of wrongs. Soften me. Amen.
 
 ## Truth
 

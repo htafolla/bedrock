@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Confession is specific. Vague sorrow keeps the sin warm. Name it, release it, receive cleansing.
-- Draw near with confidence — not swagger. Mercy is for need, not for performance.
+- Name the sin. Vague sorrow keeps it warm.
+- Draw near for mercy. Mercy is for need, not performance.
 
 ## Prayer
 
-Father, I confess. I release this sin into Your light. Cleanse me. Amen.
+Father, I confess. Cleanse me. Amen.
 
 ## Truth
 

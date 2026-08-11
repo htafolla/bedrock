@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Lust, scorekeeping, or “love” that needs them to change so you feel safe is not the Spirit’s fruit.
-- Before you act “for love,” ask: does this serve their good under God, or my appetite, my image, my control?
-- If hatred rises, name it. Put it down. Bless once. Leave judgment to God. Hatred and love of God cannot share a heart.
+- Lust and scorekeeping are not love.
+- Does this serve their good under God—or my control?
+- If hatred rises, put it down. Bless once. Leave judgment to God.
 
 ## Prayer
 
-Holy Spirit, I release cold love and scorekeeping. Pour Your love into this heart. Amen.
+Holy Spirit, pour Your love into this heart. Amen.
 
 ## Truth
 

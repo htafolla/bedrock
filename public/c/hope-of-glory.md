@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Present pain is real. Future glory is more real. Hold both without denying either.
-- Steadfast under trial is not glamorous. Crowns are for those who remain — keep remaining today.
+- Present pain is real. Future glory is more real. Hold both.
+- Crowns are for those who remain. Remain today.
 
 ## Prayer
 
-Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen.
+Father, I remain under trial. Anchor me in hope. Amen.
 
 ## Truth
 

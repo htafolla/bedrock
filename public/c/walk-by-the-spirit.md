@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Before you speak, check the fruit: is this love, patience, self-control — or flesh wanting control?
-- Flesh wants the last word. Spirit keeps in step. Delay the reaction; choose the next right fruit.
+- Before you speak: love, patience, self-control—or flesh wanting control?
+- Delay the reaction. Choose the next right fruit.
 
 ## Prayer
 
-Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Amen.
+Holy Spirit, keep me in step with You. Amen.
 
 ## Truth
 

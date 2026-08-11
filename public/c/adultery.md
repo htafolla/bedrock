@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Flee sexual immorality. Your body is not a private playground — it is a temple of the Holy Spirit.
-- Adultery starts in the heart before the bed. Guard the look, the chat, the fantasy.
-- Confess, forsake, be cleansed. Do not call darkness a new identity.
+- Flee sexual immorality. Your body is a temple of the Holy Spirit.
+- Adultery starts in the heart. Guard the look, the chat, the fantasy.
+- Confess. Forsake. Be cleansed. Do not call darkness a new identity.
 
 ## Prayer
 
-Father, I release every false intimacy. Cleanse me. Keep me pure. Amen.
+Father, cleanse me. Keep me pure. Amen.
 
 ## Truth
 

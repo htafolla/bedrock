@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Murder is not only the knife — hatred of a brother is already death in the heart.
-- Do not avenge. Leave wrath to God. Put down the wish that they would be erased.
-- If blood is on your hands in truth, run to confession and the Cross — not deeper dark.
+- Hatred of a brother is already death in the heart.
+- Do not avenge. Leave wrath to God. Put down the wish that they be erased.
+- If blood is truly on your hands, run to confession and the Cross.
 
 ## Prayer
 
-Father, I release hatred and the wish to erase. Have mercy. Soften my heart. Amen.
+Father, I release hatred. Have mercy. Amen.
 
 ## Truth
 

@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- If God is for you, stop rehearsing every face that seems against you.
-- Cast your care on Him. Do not polish it or keep replaying it. He cares for you.
-- Your peace is not rented to another person. Love them, and keep your heart under God.
+- If God is for you, stop replaying every face against you.
+- Cast your care on Him. He cares for you.
+- Love them. Keep your heart under God. Your peace is not theirs to rule.
 
 ## Prayer
 
-Lord, You are for me. I cast my cares on You. Remember mercy over my sin. Amen.
+Lord, You are for me. I cast my cares on You. Amen.
 
 ## Truth
 

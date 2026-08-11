@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Your peace is not rented to them. You can love them, want reconciliation, and still refuse to let their choices rule your spirit.
-- Name the grip: outcomes, people, image, timeline. If you must hold it, it has become a god. Open the hand.
-- Self-control rules you, not them. Trust is not passivity: take the next obedient step and leave the rest to Him.
+- Love them. Do not let their choices rule your spirit.
+- Name the grip. If you must hold it, it has become a god. Open the hand.
+- Self-control rules you, not them. Take the next obedient step. Leave the rest to Him.
 
 ## Prayer
 
-Lord, I trust You with all my heart. I release control. Direct my path. Amen.
+Lord, I release control. Direct my path. Amen.
 
 ## Truth
 

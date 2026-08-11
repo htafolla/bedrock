@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- God’s design does not change when feelings collapse. Hold the standard; entrust the outcome.
-- He is witness between a man and the wife of his youth. Speak as if He is in the room.
+- God’s design does not change when feelings collapse. Hold the standard.
+- He is witness. Speak as if He is in the room.
 
 ## Prayer
 
-Father of the covenant, I release my grip on the outcome. Make me faithful under Your eye. Amen.
+Father of the covenant, make me faithful under Your eye. Amen.
 
 ## Truth
 

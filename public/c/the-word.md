@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- The enemy says you cannot understand the Bible. God says His words give light to the simple. Open it.
-- People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line.
-- Do not wait to feel smart. Abide in His Word. The truth sets free, not secondhand summaries alone.
+- God’s words give light to the simple. Open the Bible.
+- Read a short passage. Ask the Spirit. Obey the next clear line.
+- Abide in His Word. Truth sets free.
 
 ## Prayer
 
-Father, Your Word is for me. I release the lie that I cannot understand. Give light. Teach me. Amen.
+Father, give light. Teach me. Amen.
 
 ## Truth
 

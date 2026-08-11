@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Conditional loyalty and “I need to be true to myself” as an exit ramp are not faithfulness.
-- Covenant is not a contract of feelings. Keep the next faithful act you already know is right.
-- When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true.
+- “True to myself” is not a door out of covenant.
+- Keep the next faithful act you already know is right.
+- When you want to rewrite the story to exit: stop. Tell the truth.
 
 ## Prayer
 
-Lord, You are faithful. I release exit stories. Keep me true. Amen.
+Lord, You are faithful. Keep me true. Amen.
 
 ## Truth
 

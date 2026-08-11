@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Name the work of the flesh without soft labels. What God named, do not rename as “self-care.”
-- Those who practice such things will not inherit the kingdom. This is warning, not a joke.
-- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See Kill the Flesh. Walk in the Spirit.
+- Name the flesh without soft labels. Do not rename sin as “self-care.”
+- Those who practice these things will not inherit the kingdom. Take the warning.
+- Walk by the Spirit. Put the flesh to death. Do not negotiate.
 
 ## Prayer
 
-Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen.
+Father, I renounce the flesh. Lead me by Your Spirit. Amen.
 
 ## Truth
 

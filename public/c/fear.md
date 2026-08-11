@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Perfect love casts out fear — run toward His love, not toward control.
-- When I am afraid, I put my trust in You. Name the fear; then trust.
-- Fear of man lays a snare. Put that face down. You cry Abba, Father — not slave to terror.
+- Perfect love casts out fear. Run toward His love, not toward control.
+- When I am afraid, I put my trust in You.
+- Fear of man is a snare. You cry Abba, Father.
 
 ## Prayer
 
-Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen.
+Father, I cast this fear on You. Hold me. Amen.
 
 ## Truth
 

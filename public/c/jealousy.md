@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Name it when it rises: this is jealousy. It is not love. It is a demand that another person secure you.
-- Do not investigate, accuse, or punish. Capture the thought, pray, then take one free step.
-- Love does not envy. Walk by the Spirit; put the flesh to death.
+- Name it: this is jealousy. It is not love.
+- Do not investigate or punish. Capture the thought. Pray. Take one free step.
+- Love does not envy. Walk by the Spirit.
 
 ## Prayer
 
-Father, I release this jealousy. I will not demand control of another. Fill me with Your Spirit and teach me to love without grasping. Amen.
+Father, I release this jealousy. Teach me to love without grasping. Amen.
 
 ## Truth
 

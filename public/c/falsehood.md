@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Liars have no place in the city of God. Half-truths are still lies with manners.
-- Let your yes be yes. Put off falsehood even when truth costs status.
+- Half-truths are still lies.
+- Let your yes be yes. Tell the truth even when it costs.
 - Walk in light. Managed darkness is still darkness.
 
 ## Prayer
 
-Lord, I release managed darkness. Keep me in the light with straight words. Amen.
+Lord, keep me in the light. Amen.
 
 ## Truth
 

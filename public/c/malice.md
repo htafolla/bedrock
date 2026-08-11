@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Malice is the quiet wish to harm. Name it. Put it off with the old self.
-- Bitterness, rage, slander — these are not “just honesty.” They are flesh.
-- Be kind and tenderhearted. Forgive as you were forgiven — or malice will keep the ledger.
+- Malice is the quiet wish to harm. Name it. Put it off.
+- Bitterness, rage, and slander are flesh—not “honesty.”
+- Be kind. Forgive as you were forgiven.
 
 ## Prayer
 
-Father, I release the quiet wish to harm. Put away malice from me. Amen.
+Father, put away malice from me. Amen.
 
 ## Truth
 

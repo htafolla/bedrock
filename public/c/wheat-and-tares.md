@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- The field is mixed. Do not assume every plant is the Master’s sowing.
-- The enemy sows while people sleep — stay awake; do not let night cover what you know is seed.
-- Judgment is the Lord’s at harvest. Your work today: plant good seed and refuse the weed’s root in you.
+- The field is mixed. Not every plant is the Master’s.
+- Stay awake. The enemy sows while people sleep.
+- Judgment is the Lord’s. Plant good seed. Refuse the weed in you.
 
 ## Prayer
 
-Lord of the harvest, I release premature judgment. Keep me awake and wheat. Amen.
+Lord of the harvest, keep me awake and wheat. Amen.
 
 ## Truth
 

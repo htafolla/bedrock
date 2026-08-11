@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Where your treasure is, your heart follows — audit the vault, not only the feelings.
-- Earth rusts and thieves break in. Lay up what the fire cannot touch.
-- Fight for the lasting: obedience, love, souls, the kingdom — not the applause of a week.
+- Where your treasure is, your heart follows. Audit the vault.
+- Earth rusts. Lay up what fire cannot touch.
+- Fight for the lasting: obedience, love, souls, the kingdom.
 
 ## Prayer
 
-Father, I release rust and moth. Set my treasure in heaven. Amen.
+Father, set my treasure in heaven. Amen.
 
 ## Truth
 

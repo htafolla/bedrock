@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Harsh correction to feel powerful, or limp avoidance labeled “gentleness,” is still flesh.
-- If you must correct, restore gently, and check your pride first. Contempt is not courage.
-- Soft answer to a hard moment. Truth without the knife. No venom.
+- Contempt is not courage.
+- If you must correct, restore gently. Check your pride first.
+- Soft answer. Truth without the knife.
 
 ## Prayer
 
-Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Amen.
+Jesus, form Your gentleness in me. Amen.
 
 ## Truth
 

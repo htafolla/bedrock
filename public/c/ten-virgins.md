@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Oil is not borrowed at the door. What you store with Him now is what you have then.
-- Both groups waited — only the wise were ready when the cry came.
-- Do not delay repentance until the wedding feast is shut.
+- Oil is not borrowed at the door. Store with Him now.
+- Both waited. Only the wise were ready when the cry came.
+- Do not delay repentance until the door is shut.
 
 ## Prayer
 
-Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen.
+Lord, fill my lamp. Keep me Yours. Amen.
 
 ## Truth
 

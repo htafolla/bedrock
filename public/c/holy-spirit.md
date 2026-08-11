@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Jesus did not leave you alone. The Helper is with you and in you — Spirit of truth, not a vague feeling.
-- He testifies to the truth. When lies press in, ask Him to bear witness and open the Word.
-- Power is for witness and warfare under God — demolish strongholds, stand in authority — not for show or self-glory.
+- Jesus did not leave you alone. The Helper is with you.
+- When lies press in, ask Him to open the Word.
+- Power is for witness and warfare under God, not for show.
 
 ## Prayer
 
-Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen.
+Holy Spirit, fill me. Testify to the truth. Amen.
 
 ## Truth
 

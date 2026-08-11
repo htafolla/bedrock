@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Everything flows from the heart — so gate the inputs and the words. Silence is sometimes love.
-- Before you speak: does this build up according to need, or does it only relieve my pressure?
+- Everything flows from the heart. Guard what you take in and what you say.
+- Before you speak: does this build up, or only vent pressure?
 
 ## Prayer
 
-Lord, I release the sharp word. Guard my mouth and keep my heart. Amen.
+Lord, guard my mouth and keep my heart. Amen.
 
 ## Truth
 

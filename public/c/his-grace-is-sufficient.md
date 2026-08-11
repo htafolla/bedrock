@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Weakness is not the end of usefulness — it is where His power is perfected. Stop performing strength.
-- Grace trains you; it does not excuse you. Receive mercy, then renounce the flesh habit.
+- Weakness is where His power is perfected. Stop performing strength.
+- Receive mercy. Then renounce the flesh habit.
 
 ## Prayer
 
-Lord, Your grace is enough. I release performed strength. Meet me in weakness. Amen.
+Lord, Your grace is enough. Meet me in weakness. Amen.
 
 ## Truth
 

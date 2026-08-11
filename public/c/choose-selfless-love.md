@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- In humility count others more significant. Ask: what serves them, not what wins for me?
-- Selfish ambition feels like clarity and is often poison. Check the motive before the move.
+- Count others more significant. What serves them, not what wins for me?
+- Check the motive before the move.
 
 ## Prayer
 
-Lord, I release selfish ambition. Open my hands to serve in love. Amen.
+Lord, open my hands to serve in love. Amen.
 
 ## Truth
 

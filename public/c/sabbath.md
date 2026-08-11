@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- The Sabbath is the seventh day — Saturday — still holy to the Lord. He made it holy; you do not rename it.
-- He knows His people as they obey: keep His Sabbaths as a sign that He is the Lord who sanctifies you.
-- Rest is not laziness. Stop the grind, delight in His day, and remember He is God.
+- The Sabbath is the seventh day, Saturday, holy to the Lord.
+- Keep His Sabbath as a sign that He sanctifies you.
+- Stop the grind. Delight in His day. He is God.
 
 ## Prayer
 
-Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it holy. Amen.
+Lord of the Sabbath, this day is Yours. Amen.
 
 ## Truth
 

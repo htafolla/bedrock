@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.
-- Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.
-- Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God.
+- Pressure for Christ’s name is expected. It is not a license to hate.
+- Bless those who curse you. Do not repay evil. Stand or flee with a clear conscience.
+- Rejoice that you are counted worthy. Then take the next free step.
 
 ## Prayer
 
-Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen.
+Father, strengthen me to bless and stay faithful. Amen.
 
 ## Truth
 

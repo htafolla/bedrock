@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Replace “what if they never…” with “what has He already promised that does not depend on them.”
-- Once you are in His hand, no one snatches you out — including your own shame narrative.
+- Trade “what if they never…” for what He already promised.
+- No one snatches you from His hand. Not even your shame.
 
 ## Prayer
 
-Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen.
+Lord, You are faithful. Anchor me to Your word. Amen.
 
 ## Truth
 

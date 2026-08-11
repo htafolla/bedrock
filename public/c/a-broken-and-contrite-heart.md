@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Broken is not useless. God looks to the humble and contrite — not the polished performance.
-- Do not rush past conviction. Sit with a clean sorrow that leads to life, not a toxic shame that freezes you.
+- Broken is not useless. God looks to the humble, not the polished.
+- Do not rush past conviction. Let sorrow lead to life, not freeze in shame.
 
 ## Prayer
 
-Father, I bring a broken heart. I release pride. Look upon me in mercy. Amen.
+Father, I bring a broken heart. Look on me in mercy. Amen.
 
 ## Truth
 

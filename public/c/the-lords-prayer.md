@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Pray it slowly as a reset: Name → Kingdom → Will → Bread → Forgive → Deliver.
-- If you cannot form words, pray the Lord’s Prayer until your spirit steadies.
+- Pray it slowly: Name, Kingdom, Will, Bread, Forgive, Deliver.
+- If you have no words, pray the Lord’s Prayer until you steady.
 
 ## Prayer
 

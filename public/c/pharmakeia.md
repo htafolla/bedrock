@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Pharmakeia is not neutral “help” when it is sorcery, occult power, or numbing the soul against God.
-- Do not open doors to spirits through what promises control of mood, fate, or power without the Lord.
-- Be sober-minded. If it owns you, renounce it. Draw near to God; resist the devil.
+- Sorcery and occult “help” are not neutral. Close those doors.
+- Do not buy power or mood control apart from the Lord.
+- If it owns you, renounce it. Draw near to God. Resist the devil.
 
 ## Prayer
 
-Father, I release every counterfeit power. I belong to You. Make me sober. Amen.
+Father, I release every counterfeit power. I belong to You. Amen.
 
 ## Truth
 

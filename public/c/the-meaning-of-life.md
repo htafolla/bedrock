@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Simplify the assignment: love God fully; love people as yourself. Everything else is secondary.
-- When overwhelmed, ask only: what does love require of me in the next hour?
+- Love God. Love people. The rest is secondary.
+- What does love require of me in the next hour?
 
 ## Prayer
 
-Jesus, You are the aim. I release lesser gods. Teach me to love You and my neighbor. Amen.
+Jesus, You are the aim. Teach me to love You and my neighbor. Amen.
 
 ## Truth
 

@@ -6,13 +6,12 @@
 
 ## Under fire
 
-- The cross is daily. Ask: what must I lay down right now — ego, argument, appetite, control?
-- Losing your life for His sake is not self-hatred; it is refusing to make self the god of this hour.
-- Self-control is Spirit fruit for *you* — deny the flesh once more; do not try to deny them into compliance.
+- The cross is daily. What must you lay down right now?
+- Deny the flesh once more. Do not try to deny them into change.
 
 ## Prayer
 
-Lord, I lay self down. I take up my cross. I release the need to be god of this hour. Amen.
+Lord, I lay self down. I take up my cross. Amen.
 
 ## Truth
 

@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- When panic rises, stop and name who is first: God — not outcome, not reputation, not control.
-- Seek first the kingdom in the next five minutes: one obedient act, not a full recovery plan.
+- Stop. Name who is first: God, not the outcome.
+- Seek the kingdom in the next five minutes. One clear act of obedience.
 
 ## Prayer
 
-Father, You are first. I am not God. Be still my heart and lead me in Your will. Amen.
+Father, You are first. Lead me in Your will. Amen.
 
 ## Truth
 

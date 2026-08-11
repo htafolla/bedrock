@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Do not force the outcome, rage at the clock, or punish them for not moving on your schedule.
-- When urgency screams “fix them,” wait for the Lord. Do the one duty you own today.
-- Slow the reply. Soften the tone. Love is patient. You do not control their will.
+- Do not force the outcome or punish them for the clock.
+- Wait for the Lord. Do the one duty you own today.
+- Slow the reply. Soften the tone. You do not control their will.
 
 ## Prayer
 
-Father, I release outcomes I cannot rule. Grow patience while I wait on You. Amen.
+Father, grow patience while I wait on You. Amen.
 
 ## Truth
 

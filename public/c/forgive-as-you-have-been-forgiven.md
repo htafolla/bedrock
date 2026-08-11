@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Forgiveness is not saying it did not hurt. It is releasing vengeance to God and refusing the debt ledger.
-- Unforgiveness chains you to the wound. Forgiveness frees you to obey — even while grief remains.
+- Forgiveness is not saying it did not hurt. It is releasing vengeance to God.
+- Unforgiveness chains you to the wound. Forgive and obey while grief remains.
 
 ## Prayer
 
-Lord, as You forgave me, I release this debt. Soften my heart. Amen.
+Lord, as You forgave me, I release this debt. Amen.
 
 ## Truth
 

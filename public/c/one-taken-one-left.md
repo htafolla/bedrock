@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Two side by side — only readiness separates them. Proximity is not salvation.
-- As in the days of Noah: life looked normal until the door shut.
-- Watch. You do not know which hour. Live ready, not guessing the calendar.
+- Proximity is not salvation. Readiness is.
+- As in Noah’s days: life looked normal until the door shut.
+- Watch. Live ready. Do not guess the calendar.
 
 ## Prayer
 
-Lord, I release presumption. Keep me watching for You. Amen.
+Lord, keep me watching for You. Amen.
 
 ## Truth
 

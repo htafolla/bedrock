@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Lament is allowed. Stuffing is not holiness. Pour it out to God, not onto people as weapons.
-- “How long, O Lord?” is Scripture language. Use it instead of bitterness monologue.
+- Lament is allowed. Stuffing is not holiness. Pour it out to God.
+- “How long, O Lord?” is Scripture. Use it.
 
 ## Prayer
 
-Lord, I pour out my heart. I release the need to hold it alone. Stay near. Amen.
+Lord, I pour out my heart. Stay near. Amen.
 
 ## Truth
 

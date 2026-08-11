@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Condemnation says “you are finished.” The cross says “it is finished.” Choose the finished work.
-- Your standing is not your streak of good days. You are justified by faith in Christ.
+- Condemnation says you are finished. The cross says it is finished.
+- You are justified by faith in Christ, not by a streak of good days.
 
 ## Prayer
 
-Jesus, it is finished. I release condemnation. Keep me under Your blood. Amen.
+Jesus, it is finished. I release condemnation. Amen.
 
 ## Truth
 

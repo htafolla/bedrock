@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Catch the thought early: is it true, pure, lovely — or accusation, fantasy, revenge, despair?
-- Weapons are not fleshly — they have divine power to destroy strongholds. Capture the thought; demolish the lie.
-- Take it captive to obey Christ. Replace with what is true. Then act.
+- Catch the thought early. Is it true and pure—or accusation and despair?
+- God’s weapons demolish strongholds. Capture the thought. Break the lie.
+- Take it captive to Christ. Replace it with what is true. Then act.
 
 ## Prayer
 
-Jesus, I release this loop into Your hands. Destroy the stronghold. I take the thought captive to You. Amen.
+Jesus, I take this thought captive to You. Amen.
 
 ## Truth
 

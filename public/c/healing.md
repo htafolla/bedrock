@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Ask boldly for healing. Receive His will either way — miracle, medicine, or mercy in the wait.
-- Do not shame the sick for “lack of faith.” Jesus healed the weak who came.
-- Pray, anoint, and also use wise means. God is not against doctors or against prayer.
+- Ask boldly for healing. Receive His will—miracle, medicine, or mercy in the wait.
+- Do not shame the sick for “lack of faith.”
+- Pray and use wise means. God is not against doctors or prayer.
 
 ## Prayer
 
-Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Amen.
+Jesus, You are the Healer. Have mercy. Amen.
 
 ## Truth
 

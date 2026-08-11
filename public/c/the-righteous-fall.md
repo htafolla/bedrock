@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Name the fall without lying: I sinned. I am not finished. Rising is obedience, not self-pity.
-- Do not claim sinlessness. Do not camp in shame. Confess, rise, walk by the Spirit again.
-- Your fall does not cancel the crucible. Get up. The righteous man rises again.
+- Name the fall: I sinned. I am not finished.
+- Do not camp in shame. Confess. Rise. Walk by the Spirit again.
+- Get up. The righteous man rises again.
 
 ## Prayer
 
-Father, I fell. I release the lie that I am finished. Cleanse me by Your mercy. Amen.
+Father, I fell. Cleanse me. I rise. Amen.
 
 ## Truth
 

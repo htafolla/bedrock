@@ -6,12 +6,13 @@
 
 ## Under fire
 
-- The world pattern will reassert itself by default. Choose Word and prayer over the spiral.
-- Transformation is renewed thinking practiced daily — the mind of Christ, one thought at a time.
+- The world pattern reasserts by default. Choose Word and prayer over the spiral.
+- Renew the mind daily. One thought at a time.
+- Put on the mind of Christ. Refuse the old loop.
 
 ## Prayer
 
-Lord, I release the world’s pattern. Renew my mind in this trial. Amen.
+Lord, renew my mind. Amen.
 
 ## Truth
 

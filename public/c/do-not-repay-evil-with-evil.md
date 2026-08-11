@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Blessing is the counter-move. Evil repaid with evil multiplies darkness.
-- When insult rises, answer with a blessing — out loud if you can, in prayer if you cannot yet.
+- Bless. Evil repaid multiplies darkness.
+- When insult rises, answer with a blessing—or pray one if you cannot speak it yet.
 
 ## Prayer
 
-Lord, I release repayment. Teach me to bless and entrust the rest to You. Amen.
+Lord, I release repayment. Teach me to bless. Amen.
 
 ## Truth
 

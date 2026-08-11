@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Stay awake. The hour is unknown — readiness is oil, not panic.
+- Stay awake. Readiness is oil, not panic.
 - He told you beforehand. Do not sleep through the warning.
-- When He knocks, open. Do not assume tomorrow is yours.
+- When He knocks, open. Tomorrow is not yours to assume.
 
 ## Prayer
 
-Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen.
+Lord, keep me awake and ready. Amen.
 
 ## Truth
 

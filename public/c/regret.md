@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Godly grief leads to life and change. Worldly grief only kills. Refuse grief that never rises.
-- Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.
-- There is now no condemnation in Christ Jesus. Self-hate is not holiness. Own what is yours; then rise.
+- Godly grief leads to life. Worldly grief only kills. Rise.
+- Name the sin. Confess. Change. Concealment will not prosper.
+- No condemnation in Christ. Self-hate is not holiness. Own yours. Rise.
 
 ## Prayer
 
-Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy. Amen.
+Father, cleanse me by Your mercy. I rise. Amen.
 
 ## Truth
 

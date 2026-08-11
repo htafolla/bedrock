@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Your peace is not rented to them. You can love them and still refuse to let their choices rule your spirit.
-- Impulse is not master: rage, lust, the check-again loop, or controlling them because you cannot rule yourself.
-- Name the impulse. Delay. Capture the thought. Self-control rules you — not them. Keep in step with the Spirit.
+- Love them. Do not let their choices rule your spirit.
+- Rage, lust, and the check-again loop are not masters.
+- Name the impulse. Delay. Capture the thought. Keep in step with the Spirit.
 
 ## Prayer
 
-Holy Spirit, I release the impulse to master others — and myself in rage. Keep me in step. Amen.
+Holy Spirit, keep me in step. Amen.
 
 ## Truth
 

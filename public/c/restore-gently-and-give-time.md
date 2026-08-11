@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Gentleness is not weakness. Restore with care — and watch yourself so you do not fall the same way.
-- There is a time for everything. Do not force a harvest in a winter season.
+- Restore with care. Watch yourself so you do not fall the same way.
+- Do not force a harvest in winter.
 
 ## Prayer
 
-Father, I release forced harvests. Teach me gentle timing under Your hand. Amen.
+Father, teach me gentle timing under Your hand. Amen.
 
 ## Truth
 

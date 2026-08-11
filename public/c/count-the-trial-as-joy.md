@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- Joy here is not denial. It is trusting that testing is producing endurance, not random cruelty.
-- Name the fruit goal: perseverance → character → hope. Ask which of the three is forming today.
+- Joy here is not denial. Testing produces endurance.
+- Ask: is this forming perseverance, character, or hope today?
 
 ## Prayer
 
-Father, I do not love this fire. I release the demand that it stop on my terms. Use it. Amen.
+Father, use this fire. I release my demand for its end. Amen.
 
 ## Truth
 

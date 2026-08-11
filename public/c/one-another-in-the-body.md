@@ -6,12 +6,12 @@
 
 ## Under fire
 
-- You were not designed to carry this alone. Bear burdens — and let trusted saints bear yours.
-- Encourage daily. Isolation hardens the heart; presence softens deceit.
+- You were not made to carry this alone. Let trusted saints help.
+- Encourage daily. Isolation hardens the heart.
 
 ## Prayer
 
-Father, I release isolation. Place me in Your body to give and receive. Amen.
+Father, place me in Your body to give and receive. Amen.
 
 ## Truth
 

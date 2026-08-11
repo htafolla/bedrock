@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- The Lord is near the brokenhearted — mourning is not unbelief.
-- Do not grieve as those without hope. Hope does not erase tears; it frames them.
-- The Lord gave and the Lord has taken away — bless His name with empty hands.
+- The Lord is near the brokenhearted. Mourning is not unbelief.
+- Do not grieve as those without hope. Tears and hope can share a room.
+- The Lord gave and the Lord has taken away. Bless His name with empty hands.
 
 ## Prayer
 
-Father, my hands are empty. I release what I cannot keep. Be near the broken place. Amen.
+Father, my hands are empty. Be near. Amen.
 
 ## Truth
 

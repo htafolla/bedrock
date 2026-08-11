@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Hands are not magic — they are obedient faith under the name of Jesus.
-- Invite mature believers. Avoid spectacle and pressure. Let the Spirit lead the moment.
-- If you are the one prayed for: receive without performing. God sees the heart.
+- Hands are obedient faith under Jesus’ name, not magic.
+- Invite mature believers. Avoid spectacle.
+- If you are prayed for: receive without performing.
 
 ## Prayer
 
-Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen.
+Lord Jesus, let Your power and peace rest here. Amen.
 
 ## Truth
 

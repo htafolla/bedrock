@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Name the war: this is not only circumstance. Schemes are real — stay sober and watchful.
-- A chief lie: “You cannot know or understand the Word.” That is the serpent’s fog. Open Scripture; fight with the sword of the Spirit.
-- Weapons have divine power to destroy strongholds. Authority is given to trample the enemy — under Christ, not in flesh bravado. Resist; stand.
+- This is not only circumstance. Stay sober and watchful.
+- The lie says you cannot understand the Word. Open Scripture. Fight with it.
+- Stand under Christ. Resist. Do not fight in the flesh.
 
 ## Prayer
 
-Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your strength and Your Word. Amen.
+Father, I stand in Your strength and Your Word. Amen.
 
 ## Truth
 
