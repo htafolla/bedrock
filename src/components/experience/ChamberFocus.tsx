@@ -328,8 +328,7 @@ export function ChamberFocus({
       ref={rootRef}
     >
       {/*
-        ONE chrome bar on path — not toolbar + journey header + depth ladder.
-        App nav stays above. This bar: leave · path + progress · prev/next.
+        ONE path chrome: tools · title · station chips. No second section under it.
       */}
       {onJourney && journey && onSelectJourneyStage ? (
         <div className="path-chrome" aria-label={`${journey.title} path`}>
@@ -338,7 +337,7 @@ export function ChamberFocus({
               ← Paths
             </button>
             <p className="path-chrome-progress">
-              Station {stageIdx + 1} of {journey.stages.length}
+              {stageIdx + 1} / {journey.stages.length}
             </p>
             <div className="path-chrome-nav">
               <button
@@ -369,6 +368,12 @@ export function ChamberFocus({
             </a>
           </div>
           <h1 className="path-chrome-title">{journey.title}</h1>
+          <JourneyStageRail
+            journey={journey}
+            activeChamberId={chamber.id}
+            placement="chips"
+            onSelectStage={onSelectJourneyStage}
+          />
         </div>
       ) : (
         <div className="chamber-focus-toolbar">
@@ -410,38 +415,27 @@ export function ChamberFocus({
         </div>
       )}
 
-      {onJourney && journey && onSelectJourneyStage ? (
-        <JourneyStageRail
-          journey={journey}
-          activeChamberId={chamber.id}
-          placement="chips"
-          onSelectStage={onSelectJourneyStage}
-        />
-      ) : null}
-
       <article
         className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}`}
         id={chamber.id}
       >
         <header className="chamber-header">
-          <p className="chamber-kicker">
-            {isRubric ? 'Standard' : 'Hold first'}
-          </p>
-          <h2
-            className="chamber-title"
-            ref={titleRef}
-            tabIndex={-1}
-          >
-            {chamber.title}
-          </h2>
+          <div className="chamber-title-row">
+            <h2
+              className="chamber-title"
+              ref={titleRef}
+              tabIndex={-1}
+            >
+              {chamber.title}
+            </h2>
+            {cardShare('header')}
+          </div>
           <p className="chamber-summary">{chamber.summary}</p>
           {isRubric ? (
             <p className="chamber-kind-note">
-              Hold first (Under fire). Field card and full map when you can read. Mind war path when
-              the battle is inside.
+              Under fire first. Field card and full map when you can read.
             </p>
           ) : null}
-          {cardShare('header')}
         </header>
 
         {/*
@@ -538,21 +532,18 @@ export function ChamberFocus({
           </nav>
         ) : null}
 
-        {/* End-of-card path step — primary way forward after reading */}
+        {/* End-of-card: compact left / right station nav */}
         {showJourneyRail && journey && onPath && onSelectJourneyStage ? (
           <nav className="journey-card-step" aria-label="Continue this journey">
-            <p className="journey-card-step-meta">
-              Station {stageIdx + 1} of {journey.stages.length}
-            </p>
             <div className="journey-card-step-actions">
               {journeyPrev && journeyPrevStage ? (
                 <button
                   type="button"
                   className="journey-card-step-btn journey-card-step-prev"
                   onClick={() => onSelectJourneyStage(journeyPrev)}
+                  aria-label={`Previous: ${journeyPrevStage.label}`}
                 >
-                  <span className="journey-card-step-dir">← Prev</span>
-                  <span className="journey-card-step-label">{journeyPrevStage.label}</span>
+                  ← {journeyPrevStage.label}
                 </button>
               ) : (
                 <span className="journey-card-step-spacer" aria-hidden />
@@ -562,18 +553,18 @@ export function ChamberFocus({
                   type="button"
                   className="journey-card-step-btn journey-card-step-next"
                   onClick={() => onSelectJourneyStage(journeyNext)}
+                  aria-label={`Next: ${journeyNextStage.label}`}
                 >
-                  <span className="journey-card-step-dir">Next station →</span>
-                  <span className="journey-card-step-label">{journeyNextStage.label}</span>
+                  {journeyNextStage.label} →
                 </button>
               ) : (
                 <button
                   type="button"
                   className="journey-card-step-btn journey-card-step-next journey-card-step-done"
                   onClick={onBack}
+                  aria-label="Path complete. Back to map"
                 >
-                  <span className="journey-card-step-dir">Path complete</span>
-                  <span className="journey-card-step-label">Back to map</span>
+                  Map →
                 </button>
               )}
             </div>
