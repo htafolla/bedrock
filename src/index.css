@@ -156,10 +156,19 @@ body {
   border: 0;
 }
 
+/*
+ * Mobile-first tokens (document only — CSS media queries can't use vars reliably).
+ *  420  — small phone / SE
+ *  640  — large phone
+ *  768  — isNarrow JS + tablet
+ *  900  — wide grid
+ * Default styles = phone. Enhance with min-width where possible.
+ */
 .app-shell,
 .experience {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
 }
 
@@ -327,11 +336,13 @@ body {
 }
 
 .experience-main .key-chips-panel,
+.experience-main .journey-panel,
 .experience-main .constellation-hud,
 .experience-main .toc-panel,
 .experience-main .nav-panel-header,
 .experience-main .key-chips,
 .experience-main .key-chip,
+.experience-main .journey-card,
 .experience-main .spine-strip,
 .experience-main .spine-chip,
 .experience-main .constellation-focus-hint,
@@ -1132,17 +1143,27 @@ body {
   margin-top: 0.35rem;
 }
 
-/* —— Chamber focus —— */
+/* —— Chamber focus (phone base → widen) —— */
 .chamber-focus {
   max-width: 720px;
   margin: 0 auto;
-  padding: 1rem 1rem 1.5rem;
-  /* Anchor for scroll-to-top after Connected truth / spine nav (mobile). */
+  /* Room for sticky nav + fixed Guide FAB */
+  padding: 0.75rem 0.85rem calc(5.5rem + env(safe-area-inset-bottom, 0px));
   scroll-margin-top: 4.5rem;
 }
 
 .chamber-focus.has-journey-path {
-  padding-bottom: 1.25rem;
+  padding-bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 769px) {
+  .chamber-focus {
+    padding: 1rem 1rem calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .chamber-focus.has-journey-path {
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 /* Rubric artifact — align steel; denser SOP form (not a thin first-principle card) */
@@ -1314,6 +1335,36 @@ body {
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid var(--glass-border);
+}
+
+/* Phone: one share row (header). Footer share is long-card chrome on larger screens. */
+@media (max-width: 640px) {
+  .chamber-card-share-footer {
+    display: none;
+  }
+
+  .chamber-card-share-header {
+    margin-top: 0.65rem;
+  }
+
+  .chamber-card-share .share-trigger {
+    min-height: 2.5rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  .depth-ladder {
+    display: none;
+  }
+
+  .chamber-kind-note {
+    font-size: 0.78rem;
+    margin-top: 0.45rem;
+  }
+
+  .hold-block {
+    padding: 0.75rem 0.75rem 0.85rem;
+  }
 }
 
 .chamber-card-share .share-trigger {
@@ -1732,8 +1783,21 @@ body {
 
 .journey-stage-rail-bar-top {
   position: sticky;
-  top: 0.35rem;
+  /* Sit under sticky nav (safe-area + chrome) */
+  top: calc(0.35rem + env(safe-area-inset-top, 0px));
   z-index: 12;
+}
+
+@media (max-width: 768px) {
+  .journey-stage-rail-bar-top {
+    top: calc(4.25rem + env(safe-area-inset-top, 0px));
+  }
+
+  .journey-stage-rail {
+    gap: 0.35rem;
+    padding-bottom: 0.15rem;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .journey-stage-rail-bar-bottom {
@@ -1927,28 +1991,36 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.65rem;
-  margin-bottom: 0.85rem;
+  gap: 0.45rem 0.55rem;
+  margin-bottom: 0.75rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
-  padding: 0.55rem 0.75rem;
+  padding: 0.45rem 0.55rem;
   backdrop-filter: blur(12px);
 }
 
 .focus-spine-meta {
   margin: 0;
-  flex: 1;
-  font-size: 0.75rem;
+  flex: 1 1 100%;
+  order: 3;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
   text-align: center;
+  /* One line under fog — full title lives on the card */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .focus-spine-nav {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .focus-btn {
@@ -1959,8 +2031,24 @@ body {
   background: var(--ember-wash);
   border: 1px solid rgba(196, 165, 116, 0.3);
   border-radius: 999px;
-  padding: 0.4rem 0.75rem;
+  padding: 0.45rem 0.7rem;
+  min-height: 2.5rem;
   cursor: pointer;
+  touch-action: manipulation;
+}
+
+@media (min-width: 641px) {
+  .chamber-focus-toolbar {
+    gap: 0.65rem;
+    padding: 0.55rem 0.75rem;
+  }
+
+  .focus-spine-meta {
+    flex: 1 1 auto;
+    order: 0;
+    font-size: 0.75rem;
+    white-space: normal;
+  }
 }
 
 .focus-btn:disabled {
@@ -2211,10 +2299,16 @@ body {
   border: none;
 }
 
-/* Keys / Map: room so fixed footer doesn't cover chips on short phones */
+/* Fixed footer + Guide FAB clearance (all main surfaces) */
 .mode-constellation.nav-keys .experience-main,
-.mode-constellation.nav-map .experience-main {
+.mode-constellation.nav-map .experience-main,
+.mode-constellation.nav-journeys .experience-main,
+.mode-constellation.nav-toc .experience-main {
   padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.mode-chamber .experience-main {
+  padding-bottom: 0; /* chamber-focus owns FAB clearance */
 }
 
 /* Map: keep chrome short so DNA remains the usable surface */
@@ -2933,14 +3027,14 @@ body {
 /* —— Guide chat (SpaceXAI / xAI proxy) —— */
 .guide-chat {
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  right: max(0.75rem, env(safe-area-inset-right, 0px));
+  bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
   z-index: 40;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 0.65rem;
-  max-width: min(24rem, calc(100vw - 1.5rem));
+  max-width: min(24rem, calc(100vw - 1.25rem));
   pointer-events: none;
 }
 
@@ -2956,8 +3050,11 @@ body {
   font-size: 1.05rem;
   letter-spacing: 0.04em;
   padding: 0.65rem 1.15rem;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
   border-radius: 999px;
   cursor: pointer;
+  touch-action: manipulation;
   box-shadow: 0 8px 28px var(--shadow-card);
   backdrop-filter: blur(10px);
 }
