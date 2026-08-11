@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { Testimony } from '../types/content'
+import { buildTestimonyPoemShare } from '../lib/share'
+import { ShareMenu } from './ShareMenu'
 
 interface SealedTestimonyProps {
   testimony: Testimony
@@ -7,10 +9,19 @@ interface SealedTestimonyProps {
 
 /**
  * Sealed by default. Short word first; poem behind a deeper-understanding link.
+ * Poem view includes shareable tall image of the full sealed word.
  */
 export function SealedTestimony({ testimony }: SealedTestimonyProps) {
   const [open, setOpen] = useState(false)
   const [showPoem, setShowPoem] = useState(false)
+
+  const poemShare = useMemo(() => {
+    if (!testimony.poem?.lines?.length) return null
+    return buildTestimonyPoemShare({
+      title: testimony.poem.title || 'Backstory',
+      lines: testimony.poem.lines,
+    })
+  }, [testimony.poem])
 
   const close = () => {
     setOpen(false)
@@ -57,7 +68,12 @@ export function SealedTestimony({ testimony }: SealedTestimonyProps) {
             </>
           ) : (
             <>
-              <h3 className="testimony-title">{testimony.poem?.title ?? 'Backstory'}</h3>
+              <div className="testimony-poem-head">
+                <h3 className="testimony-title">{testimony.poem?.title ?? 'Backstory'}</h3>
+                {poemShare ? (
+                  <ShareMenu payload={poemShare} triggerLabel="Share image" />
+                ) : null}
+              </div>
               <div className="testimony-poem">
                 {(testimony.poem?.lines ?? []).map((line, i) => (
                   <p key={`${i}-${line.slice(0, 24)}`} className="testimony-text">
@@ -65,6 +81,11 @@ export function SealedTestimony({ testimony }: SealedTestimonyProps) {
                   </p>
                 ))}
               </div>
+              {poemShare ? (
+                <div className="testimony-poem-share">
+                  <ShareMenu payload={poemShare} triggerLabel="Share poem image" />
+                </div>
+              ) : null}
               <button
                 type="button"
                 className="testimony-deeper ghost"

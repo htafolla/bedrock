@@ -4,6 +4,7 @@ import {
   buildOriginShare,
   buildPathShare,
   buildStationShare,
+  buildTestimonyPoemShare,
   facebookShareUrl,
   layerLabel,
   ogImageUrl,
@@ -71,6 +72,21 @@ describe('share payloads', () => {
     expect(p.url).toBe(`${SITE_ORIGIN}/about`)
     expect(p.ogImage).toBe(`${SITE_ORIGIN}/og/origin.png`)
     expect(p.shareLine).toContain('Through the fire')
+  })
+
+  it('testimony poem share carries full lines for tall image capture', () => {
+    const lines = [
+      'I made a grave error.',
+      'Travesty has beset me.',
+      'that we are forgiven, restored, and saved.',
+    ]
+    const p = buildTestimonyPoemShare({ title: 'Backstory', lines })
+    expect(p.layer).toBe('testimony')
+    expect(p.layerLabel).toBe('Sealed word')
+    expect(p.lines).toEqual(lines)
+    expect(p.url).toBe(`${SITE_ORIGIN}/about`)
+    expect(p.shareLine).toContain('I made a grave error.')
+    expect(p.shareLine).toContain('forgiven, restored, and saved')
   })
 
   it('x and facebook intents encode url', () => {

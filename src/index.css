@@ -1391,6 +1391,105 @@ body {
   color: #6a5c4e;
 }
 
+/* —— Tall poem share card (sealed word / Backstory) —— */
+.share-poem-shot {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 720px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.share-poem-card {
+  width: 720px;
+  box-sizing: border-box;
+  padding: 2.75rem 2.85rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(165deg, #241c16 0%, #0c0a09 48%, #120e0b 100%);
+  border: 1px solid rgba(196, 165, 116, 0.28);
+  border-left: 6px solid #e8a050;
+  color: #f7f1e8;
+  font-family: var(--font-body);
+}
+
+.share-poem-kicker {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c4a574;
+  font-weight: 600;
+}
+
+.share-poem-title {
+  margin: 0.55rem 0 1.15rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: #f5e6c8;
+}
+
+.share-poem-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.share-poem-line {
+  margin: 0 0 0.42rem;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  line-height: 1.42;
+  font-weight: 500;
+  color: #f0e6d8;
+  letter-spacing: 0.01em;
+}
+
+/* Visual breathing every couplet (odd index after first pair) */
+.share-poem-line:nth-child(2n) {
+  margin-bottom: 0.85rem;
+}
+
+.share-poem-motto {
+  margin: 1.35rem 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #f5e6c8;
+}
+
+.share-poem-url {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: #6a5c4e;
+}
+
+.testimony-poem-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-bottom: 0.35rem;
+}
+
+.testimony-poem-head .testimony-title {
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.testimony-poem-share {
+  margin: 0.85rem 0 0.35rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
 /* —— Share menu (Door / Station / Path / Standard) —— */
 .share-menu {
   position: relative;

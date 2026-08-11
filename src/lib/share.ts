@@ -17,7 +17,7 @@ import {
   journeyOgImageUrl,
 } from './seo'
 
-export type ShareLayer = 'door' | 'station' | 'path' | 'standard' | 'origin'
+export type ShareLayer = 'door' | 'station' | 'path' | 'standard' | 'origin' | 'testimony'
 
 export type ShareNetwork = 'system' | 'x' | 'facebook' | 'copy' | 'instagram' | 'tiktok' | 'image'
 
@@ -32,6 +32,11 @@ export interface SharePayload {
   ogImage: string
   /** Short line for tweet / clipboard */
   shareLine: string
+  /**
+   * Full poem / sealed word lines — when set, ShareMenu captures a tall
+   * poem image (not the landscape OG card).
+   */
+  lines?: string[]
 }
 
 const STANDARD_CHAMBER_ID = 'kill-the-flesh-walk-in-the-spirit'
@@ -48,6 +53,8 @@ export function layerLabel(layer: ShareLayer): string {
       return 'Standard'
     case 'origin':
       return 'Origin'
+    case 'testimony':
+      return 'Sealed word'
   }
 }
 
@@ -64,7 +71,7 @@ export function ogImageUrl(params: {
   title?: string
   subtitle?: string
 }): string {
-  if (params.layer === 'origin') {
+  if (params.layer === 'origin' || params.layer === 'testimony') {
     return `${SITE_ORIGIN}/og/origin.png`
   }
   if (params.id) {
@@ -185,6 +192,30 @@ export function buildOriginShare(input: {
     url,
     ogImage: ogImageUrl({ layer: 'origin', title, subtitle: heart }),
     shareLine: `${title}\n${tagline}\n${motto}\n${heart}\n${url}`,
+  }
+}
+
+/**
+ * Full sealed poem as a tall shareable image (runtime capture).
+ * Link still points at /about for context.
+ */
+export function buildTestimonyPoemShare(input: {
+  title?: string
+  lines: string[]
+}): SharePayload {
+  const lines = input.lines.map((l) => String(l).trim()).filter(Boolean)
+  const title = input.title?.trim() || 'Backstory'
+  const url = `${SITE_ORIGIN}/about`
+  const preview = lines.slice(0, 2).join(' ')
+  return {
+    layer: 'testimony',
+    layerLabel: layerLabel('testimony'),
+    title,
+    text: preview,
+    lines,
+    url,
+    ogImage: ogImageUrl({ layer: 'testimony', title, subtitle: preview }),
+    shareLine: `${title}\n\n${lines.join('\n')}\n\n${url}`,
   }
 }
 

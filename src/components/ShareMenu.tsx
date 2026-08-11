@@ -18,6 +18,7 @@ import {
 } from '../lib/capture-share-image'
 import { trackEvent } from '../lib/analytics'
 import { ShareCard } from './ShareCard'
+import { PoemShareCard } from './PoemShareCard'
 
 interface ShareMenuProps {
   payload: SharePayload
@@ -58,6 +59,7 @@ export function ShareMenu({
   const popoverRef = useRef<HTMLDivElement>(null)
   const cardRef = useRef<HTMLDivElement>(null)
   const menuId = useId()
+  const isPoem = Boolean(payload.lines && payload.lines.length > 0)
 
   const updatePosition = useCallback(() => {
     const trigger = triggerRef.current
@@ -224,6 +226,16 @@ export function ShareMenu({
           >
             <p className="share-popover-kicker">Share {payload.layerLabel}</p>
             <p className="share-popover-title">{payload.title}</p>
+            {/* Poem / sealed word: image is primary */}
+            <button
+              type="button"
+              role="menuitem"
+              className="share-item"
+              disabled={busy}
+              onClick={() => void act('image')}
+            >
+              {isPoem ? 'Save poem image' : 'Save card image'}
+            </button>
             {canSystemShare() ? (
               <button
                 type="button"
@@ -235,15 +247,6 @@ export function ShareMenu({
                 Share with image…
               </button>
             ) : null}
-            <button
-              type="button"
-              role="menuitem"
-              className="share-item"
-              disabled={busy}
-              onClick={() => void act('image')}
-            >
-              Save card image
-            </button>
             <a
               role="menuitem"
               className="share-item"
@@ -307,8 +310,12 @@ export function ShareMenu({
       className={`share-menu${open ? ' is-open' : ''} ${className}`.trim()}
       ref={rootRef}
     >
-      {/* Off-screen card for html-to-image (same technique as bubble-blast-retro) */}
-      <ShareCard ref={cardRef} payload={payload} />
+      {/* Off-screen card for html-to-image — tall poem card when lines present */}
+      {isPoem ? (
+        <PoemShareCard ref={cardRef} payload={payload} />
+      ) : (
+        <ShareCard ref={cardRef} payload={payload} />
+      )}
 
       <button
         ref={triggerRef}
