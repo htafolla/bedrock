@@ -423,9 +423,9 @@ export const FIELD_AIDS = {
   },
   'kill-the-flesh-walk-in-the-spirit': {
     hacks: [
-      'Capture the thought. Refuse the case-hunt and the accuser. Conviction leads to life.',
+      'Stop the thought. Name it. Do not feed it. Give it to Christ.',
       'Do your part. Their replies are theirs. Success is Spirit, not outcomes.',
-      'Deeper mind war: Journeys → Battlefield of the mind. Field card first.',
+      'No rage, monitoring, revenge, or bitterness. One free step in the Spirit now.',
     ],
     prayers: ['Father, I release every thought to You. I refuse the accuser. Amen.'],
   },

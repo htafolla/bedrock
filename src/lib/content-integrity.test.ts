@@ -28,7 +28,7 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.kind).toBe('rubric')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
-      /capture the thought|case-hunt|accuser|condemnation/,
+      /stop the thought|do your part|spirit, not outcomes|one free step/,
     )
     // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
     const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
