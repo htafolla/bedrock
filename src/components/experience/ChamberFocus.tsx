@@ -332,43 +332,43 @@ export function ChamberFocus({
         App nav stays above. This bar: leave · path + progress · prev/next.
       */}
       {onJourney && journey && onSelectJourneyStage ? (
-        <div className="path-chrome">
-          <button type="button" className="focus-btn ghost path-chrome-back" onClick={onBack}>
-            ← Paths
-          </button>
-          <div className="path-chrome-center">
-            <p className="path-chrome-title">{journey.title}</p>
+        <div className="path-chrome" aria-label={`${journey.title} path`}>
+          <div className="path-chrome-row">
+            <button type="button" className="focus-btn ghost path-chrome-back" onClick={onBack}>
+              ← Paths
+            </button>
             <p className="path-chrome-progress">
-              {stageIdx + 1} of {journey.stages.length}
+              Station {stageIdx + 1} of {journey.stages.length}
             </p>
-          </div>
-          <div className="path-chrome-nav">
-            <button
-              type="button"
-              className="focus-btn"
-              disabled={!journeyPrev}
-              onClick={() => journeyPrev && onSelectJourneyStage(journeyPrev)}
-              aria-label="Previous station"
+            <div className="path-chrome-nav">
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!journeyPrev}
+                onClick={() => journeyPrev && onSelectJourneyStage(journeyPrev)}
+                aria-label="Previous station"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                className="focus-btn"
+                disabled={!journeyNext}
+                onClick={() => journeyNext && onSelectJourneyStage(journeyNext)}
+                aria-label="Next station"
+              >
+                →
+              </button>
+            </div>
+            <a
+              className="focus-btn ghost path-chrome-plain"
+              href={chamberPath(chamber.id)}
+              title="Plain page for citation"
             >
-              ←
-            </button>
-            <button
-              type="button"
-              className="focus-btn"
-              disabled={!journeyNext}
-              onClick={() => journeyNext && onSelectJourneyStage(journeyNext)}
-              aria-label="Next station"
-            >
-              →
-            </button>
+              Plain
+            </a>
           </div>
-          <a
-            className="focus-btn ghost path-chrome-plain"
-            href={chamberPath(chamber.id)}
-            title="Plain page for citation"
-          >
-            Plain
-          </a>
+          <h1 className="path-chrome-title">{journey.title}</h1>
         </div>
       ) : (
         <div className="chamber-focus-toolbar">
