@@ -7,7 +7,7 @@
 ## Under fire
 
 - Name it: this is jealousy. It is not love.
-- Do not investigate or punish. Capture the thought. Pray. Take one free step.
+- Do not spy or punish. Capture the thought. Pray. Take one free step.
 - Love does not envy. Walk by the Spirit.
 
 ## Prayer

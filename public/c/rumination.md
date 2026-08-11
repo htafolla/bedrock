@@ -8,7 +8,7 @@
 
 - Take the thought captive. Obsession is not revelation.
 - Bring the cares to God. Pray. Do not feed the loop.
-- Capture. Replace with truth. Take the next obedient step.
+- Capture it. Replace it with truth. Take the next right step.
 
 ## Prayer
 

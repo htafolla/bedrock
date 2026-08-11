@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- “True to myself” is not a door out of covenant.
+- “Being true to myself” is not a way out of covenant.
 - Keep the next faithful act you already know is right.
 - When you want to rewrite the story to exit: stop. Tell the truth.
 

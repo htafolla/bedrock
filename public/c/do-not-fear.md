@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Fear is a claim. Answer with power, love, and a sound mind. Then take the next step.
+- Fear makes a claim. Answer with power, love, and a sound mind. Then take the next step.
 - Worry will not add an hour. Put the hour into prayer and duty.
 
 ## Prayer

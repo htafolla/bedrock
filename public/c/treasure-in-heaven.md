@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Where your treasure is, your heart follows. Audit the vault.
+- Where your treasure is, your heart follows. Check what you chase.
 - Earth rusts. Lay up what fire cannot touch.
 - Fight for the lasting: obedience, love, souls, the kingdom.
 

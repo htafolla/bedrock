@@ -1,6 +1,6 @@
 # Standard: Kill the Flesh. Walk in the Spirit.
 
-> Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.
+> Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.
 
 *Standard · Field card first · Hold first · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit*
 
@@ -22,20 +22,20 @@ Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood.
 
 [Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV) · [Galatians 5:24–25](https://www.biblegateway.com/passage/?search=Galatians+5%3A24-25&version=NIV)
 
-- Capture every destructive thought. Stop. Name it. Refuse to feed it. Submit it to Christ.
-- Refuse the case-hunt. Small gaps are not a case you must solve now.
+- Capture every destructive thought. Stop. Name it. Do not feed it. Give it to Christ.
+- Refuse building a case. Small gaps are not proof you must solve now.
 - Refuse condemnation — the accuser’s voice. Conviction leads to life; condemnation freezes. Own once, cleanse, rise.
 - Fight fear with power, love, and a sound mind. Hand the outcome to God.
 - Refuse the flesh: no rage, control, monitoring, revenge, or settled bitterness.
 - Forgive. Release the debt. Do your part.
-- Guard body and desire. Love without disappearing. Do not let their choices rule your peace.
+- Guard body and desire. Love without vanishing. Do not let their choices rule your peace.
 - Low contact when the bond is unstable. Logistics only. Strength, not need. Trust God over understanding.
 
-Prayer: “Father, I take every thought captive. I refuse the case-hunt and condemnation. I walk in the Spirit. Amen.”
+Prayer: “Father, I take every thought captive. I refuse building a case and condemnation. I walk in the Spirit. Amen.”
 
 Success: not whether they return or choose you. Success is staying in the Spirit — one decision at a time. Do better. Be better. Trust God.
 
-Mind war runs deeper than one card. Journeys → Battlefield of the mind (case-hunt, sticky words, fiery darts, renew, armor). Holds below when fog needs a map.
+Mind war goes deeper than one card. Path: Battlefield of the mind. Full holds below when fog needs a map.
 
 ## Holds
 
@@ -46,27 +46,27 @@ Destructive thought appears — capture it.
 - Stop.
 - Name it.
 - Do not feed it.
-- Submit it to Christ.
+- Give it to Christ.
 
 Prayer: “No. I release this to You, Lord.”
 
 [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Colossians 3:2](https://www.biblegateway.com/passage/?search=Colossians+3%3A2&version=NIV)
 
-### 2. Refuse the case-hunt
+### 2. Refuse building a case
 
 The mind hunts evidence. Gaps become “proof.” Peace rarely follows.
 
-- Name it: “This is a case-hunt.”
+- Name it: “I am building a case.”
 - Refuse every lead.
 - Do not turn open questions into a case right now.
 
-Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”
+Prayer: “I refuse to live as the detective of every gap. I hand this uncertainty to You.”
 
 [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Philippians 4:8](https://www.biblegateway.com/passage/?search=Philippians+4%3A8&version=NIV) · [Romans 12:2](https://www.biblegateway.com/passage/?search=Romans+12%3A2&version=NIV)
 
 ### 3. Refuse condemnation
 
-The accuser’s voice: self-hate loops, sticky words of others, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes.
+The accuser’s voice: self-hate loops, harsh words that stick, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes.
 
 - Name it: “This is condemnation — not the Holy Spirit.”
 - Own what is real once.
@@ -126,7 +126,7 @@ Prayer: “My body is the temple of the Holy Spirit. I choose self-control. Stre
 
 ### 8. Presence
 
-You are whole under God. Love without disappearing or managing their feelings.
+You are whole under God. Love without vanishing or managing their feelings.
 
 - Do not over-function.
 - Be present where God has you.

@@ -233,7 +233,7 @@ function buildBedrockSignals() {
     signal({
       name: 'bedrock-rubric-kill-flesh-walk-spirit',
       definition:
-        'Bedrock daily standard: Kill the Flesh. Walk in the Spirit. Field card first, then holds 1–14 including refuse the case-hunt and refuse condemnation. Success = Spirit not outcomes. Deeper mind war journey: battlefield-of-the-mind. Chamber id: kill-the-flesh-walk-in-the-spirit.',
+        'Bedrock daily standard: Kill the Flesh. Walk in the Spirit. Short card first, then holds 1–14 including refuse building a case and refuse condemnation. Success = Spirit not outcomes. Deeper mind war journey: battlefield-of-the-mind. Chamber id: kill-the-flesh-walk-in-the-spirit.',
       tags: [
         'bedrock',
         'rubric',

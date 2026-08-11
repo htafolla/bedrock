@@ -45,9 +45,9 @@ describe('bedrock content integrity', () => {
       .toLowerCase()
     expect(rubricText).toMatch(/thought capture|do your part|forgiveness|trust over understanding/)
     expect(rubricText).toMatch(/field card/)
-    expect(rubricText).toMatch(/case-hunt|permanent investigator/)
+    expect(rubricText).toMatch(/building a case|detective of every gap/)
     expect(rubricText).toMatch(/refuse condemnation|no condemnation|accuser/)
-    expect(rubricText).toMatch(/battlefield of the mind|sticky words|fiery darts/)
+    expect(rubricText).toMatch(/battlefield of the mind|fiery darts|harsh words/)
     expect(rubricText).not.toMatch(/investigation mode|condemnation mode/)
     expect(rubricText).toMatch(/for men/)
     expect(rubricText).toMatch(/release this to you|sound mind/)
@@ -80,11 +80,11 @@ describe('bedrock content integrity', () => {
     expect(byId.get('the-word')!.summary.toLowerCase()).toMatch(/enemy|understand|word|simple/)
     expect(byId.get('the-word')!.hacks.join(' ').toLowerCase()).toMatch(/cannot understand|enemy/)
     expect(byId.has('the-adversary')).toBe(true)
-    expect(byId.get('the-adversary')!.summary.toLowerCase()).toMatch(/real|fixate|resist|stand/)
+    expect(byId.get('the-adversary')!.summary.toLowerCase()).toMatch(/real|resist|stand|devil|eyes/)
     expect(byId.get('the-adversary')!.body.map((b) => b.text).join(' ').toLowerCase()).toMatch(
       /devil|adversary|weeds|evil one|persecut/,
     )
-    expect(byId.get('the-adversary')!.hacks.join(' ').toLowerCase()).toMatch(/fixate|fascinat|resist/)
+    expect(byId.get('the-adversary')!.hacks.join(' ').toLowerCase()).toMatch(/stare|fixate|fascinat|resist/)
     expect(byId.has('spiritual-warfare')).toBe(true)
     expect(byId.has('works-of-the-flesh')).toBe(true)
     expect(byId.has('wheat-and-tares')).toBe(true)
@@ -223,7 +223,7 @@ describe('bedrock content integrity', () => {
       // Counterfeit / application lives Under fire — plain, not jargon labels
       expect(c!.hacks.length, id).toBeGreaterThan(0)
       expect(c!.hacks.join(' ').toLowerCase(), id).toMatch(
-        /not love|not his|not masters|not kindness|not courage|not a door|not earned|not denial|scorekeeping|bitterness|contempt|check-again|true to myself|useful for my case|control/,
+        /not love|not his|not masters|not kindness|not courage|not a door|not earned|not denial|keeping score|bitterness|contempt|checking again|true to myself|useful for my case|control/,
       )
       expect(c!.related).toContain('walk-by-the-spirit')
     }

@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Gifts are for the common good, not a stage name.
-- Steward the gift. Do not bury it in fear.
+- Gifts are for the body, not for your name.
+- Use the gift. Do not bury it in fear.
 - Desire the gifts. Walk in love. Without love, gifts are noise.
 
 ## Prayer

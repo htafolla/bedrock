@@ -26,7 +26,7 @@
       "title": "Death of a loved one",
       "family": "body",
       "wave": 1,
-      "summary": "Mourning is not unbelief. Hope does not erase tears; it frames them. Empty hands; remain today.",
+      "summary": "Mourning is not unbelief. Hope does not erase tears. Empty hands. Remain today.",
       "plainSpeech": [
         "they died",
         "my loved one died",
@@ -107,7 +107,7 @@
       "title": "Marriage under fire",
       "family": "body",
       "wave": 1,
-      "summary": "You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God. Kill the flesh. Walk in the Spirit.",
+      "summary": "You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -260,7 +260,7 @@
           "role": "near",
           "label": "For you",
           "chamberId": "he-is-for-you",
-          "note": "Cast the care on Him. Do not polish it."
+          "note": "Cast the care on Him. Do not dress it up."
         },
         {
           "id": "fork-repay",
@@ -409,7 +409,7 @@
           "role": "spiral",
           "label": "Renew",
           "chamberId": "renew-your-mind",
-          "note": "World pattern reasserts by default."
+          "note": "The world pattern comes back. Renew."
         },
         {
           "id": "spirit",
@@ -430,7 +430,7 @@
           "role": "long_middle",
           "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
-          "note": "Willpower alone is not enough. Get real help."
+          "note": "Trying alone is not enough. Get real help."
         },
         {
           "id": "grace",
@@ -520,7 +520,7 @@
       "title": "Control",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Trust is not laziness. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Kill the flesh. Walk in the Spirit.",
+      "summary": "Open the hand. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Trust God with the rest.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
@@ -548,7 +548,7 @@
           "role": "blow",
           "label": "Grip",
           "chamberId": "control",
-          "note": "Do not let their choices rule your peace. If you must force the outcome, it has become a god. Open the hand."
+          "note": "If you must force the outcome, it has become a god. Open the hand."
         },
         {
           "id": "trust",
@@ -659,7 +659,7 @@
       "title": "I fell",
       "family": "conscience",
       "wave": 1,
-      "summary": "Name the fall. Confess. Grace is enough. Rise. The righteous man falls and gets up again. Hub path after any journey’s failure.",
+      "summary": "Name the fall. Confess. Grace is enough. Rise. The righteous man falls and gets up again.",
       "plainSpeech": [
         "i fell",
         "i blew it",
@@ -806,7 +806,7 @@
       "title": "Stuck regret",
       "family": "conscience",
       "wave": 3,
-      "summary": "Godly grief leads to life; worldly grief leads to death. Own what is yours; refuse self-hate as god; rise.",
+      "summary": "Godly grief leads to life. Worldly grief only kills. Own what is yours. Self-hate is not holiness. Rise.",
       "plainSpeech": [
         "i can't undo it",
         "regret",
@@ -905,7 +905,7 @@
           "role": "spiral",
           "label": "Warfare",
           "chamberId": "spiritual-warfare",
-          "note": "Not against flesh and blood. Do not fixate on the devil."
+          "note": "Not against flesh and blood. Do not stare at the devil."
         },
         {
           "id": "fork",
@@ -985,7 +985,7 @@
           "role": "fork",
           "label": "Prayer",
           "chamberId": "prayer",
-          "note": "Pray; do not spiral into fascination."
+          "note": "Pray. Do not spiral into staring at the enemy."
         },
         {
           "id": "captive",
@@ -1069,7 +1069,7 @@
           "role": "fork",
           "label": "Prayer",
           "chamberId": "prayer",
-          "note": "Cast cares on Him. Do not polish them."
+          "note": "Cast cares on Him. Do not dress them up."
         },
         {
           "id": "hope",
@@ -1085,7 +1085,7 @@
       "title": "Battlefield of the mind",
       "family": "will",
       "wave": 1,
-      "summary": "The war is often inside — the case-hunt, condemnation, sticky words, fiery darts. Capture the thought. Refuse the accuser. Renew the mind. Stand in the armor of God. Field card: Kill the Flesh. Walk in the Spirit.",
+      "summary": "The war is often inside. Capture the thought. Refuse the accuser. Renew the mind. Stand in the armor of God.",
       "plainSpeech": [
         "battlefield of the mind",
         "mind won't stop",
@@ -1128,16 +1128,16 @@
         {
           "id": "near-sop",
           "role": "near",
-          "label": "Field card",
+          "label": "Standard",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
-          "note": "Field card first. Full holds when you need them."
+          "note": "Kill the flesh. Walk in the Spirit. Use the full holds when needed."
         },
         {
           "id": "spiral-loop",
           "role": "spiral",
           "label": "Loop",
           "chamberId": "rumination",
-          "note": "Replay and the case-hunt are not the Holy Spirit. Capture. Replace."
+          "note": "Replay and building a case are not the Holy Spirit. Capture. Replace."
         },
         {
           "id": "fork-accuser",
@@ -1158,7 +1158,7 @@
           "role": "near",
           "label": "Wounds",
           "chamberId": "wounded",
-          "note": "Sticky words lodge. God is near the crushed. Do not hide in hate."
+          "note": "Harsh words stick. God is near the crushed. Do not hide in hate."
         },
         {
           "id": "long-renew",
@@ -1179,7 +1179,7 @@
           "role": "remain",
           "label": "Peace",
           "chamberId": "peace",
-          "note": "Peace is given — not earned by solving every case."
+          "note": "Peace is given — not earned by solving every open question."
         },
         {
           "id": "remain-armor",

@@ -8,7 +8,7 @@
 
 - Jesus did not leave you alone. The Helper is with you.
 - When lies press in, ask Him to open the Word.
-- Power is for witness and warfare under God, not for show.
+- Power is for witness and war under God, not for display.
 
 ## Prayer
 

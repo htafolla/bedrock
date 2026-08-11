@@ -833,50 +833,50 @@ const document = {
     ),
     chamber(
       'Kill the Flesh. Walk in the Spirit.',
-      'Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.',
+      'Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.',
       [
-        // —— Common-person field card (brother-readable) ——
+        // —— Common-person field card ——
         h2('Field card'),
         p('Kill the acts of the flesh. Walk in the Spirit. This is the path — not a mood.'),
         p('(Galatians 5:16, 5:24-25)'),
         list(
-          'Capture every destructive thought. Stop. Name it. Refuse to feed it. Submit it to Christ.',
-          'Refuse the case-hunt. Small gaps are not a case you must solve now.',
+          'Capture every destructive thought. Stop. Name it. Do not feed it. Give it to Christ.',
+          'Refuse building a case. Small gaps are not proof you must solve now.',
           'Refuse condemnation — the accuser’s voice. Conviction leads to life; condemnation freezes. Own once, cleanse, rise.',
           'Fight fear with power, love, and a sound mind. Hand the outcome to God.',
           'Refuse the flesh: no rage, control, monitoring, revenge, or settled bitterness.',
           'Forgive. Release the debt. Do your part.',
-          'Guard body and desire. Love without disappearing. Do not let their choices rule your peace.',
+          'Guard body and desire. Love without vanishing. Do not let their choices rule your peace.',
           'Low contact when the bond is unstable. Logistics only. Strength, not need. Trust God over understanding.',
         ),
         p(
-          'Prayer: “Father, I take every thought captive. I refuse the case-hunt and condemnation. I walk in the Spirit. Amen.”',
+          'Prayer: “Father, I take every thought captive. I refuse building a case and condemnation. I walk in the Spirit. Amen.”',
         ),
         p(
           'Success: not whether they return or choose you. Success is staying in the Spirit — one decision at a time. Do better. Be better. Trust God.',
         ),
         p(
-          'Mind war runs deeper than one card. Journeys → Battlefield of the mind (case-hunt, sticky words, fiery darts, renew, armor). Holds below when fog needs a map.',
+          'Mind war goes deeper than one card. Path: Battlefield of the mind. Full holds below when fog needs a map.',
         ),
         // —— Full holds (same order) ——
         h2('Holds'),
         h3('1. Thought capture'),
         p('Destructive thought appears — capture it.'),
-        list('Stop.', 'Name it.', 'Do not feed it.', 'Submit it to Christ.'),
+        list('Stop.', 'Name it.', 'Do not feed it.', 'Give it to Christ.'),
         p('Prayer: “No. I release this to You, Lord.”'),
         p('(2 Corinthians 10:5, Colossians 3:2)'),
-        h3('2. Refuse the case-hunt'),
+        h3('2. Refuse building a case'),
         p('The mind hunts evidence. Gaps become “proof.” Peace rarely follows.'),
         list(
-          'Name it: “This is a case-hunt.”',
+          'Name it: “I am building a case.”',
           'Refuse every lead.',
           'Do not turn open questions into a case right now.',
         ),
-        p('Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”'),
+        p('Prayer: “I refuse to live as the detective of every gap. I hand this uncertainty to You.”'),
         p('(2 Corinthians 10:5, Philippians 4:8, Romans 12:2)'),
         h3('3. Refuse condemnation'),
         p(
-          'The accuser’s voice: self-hate loops, sticky words of others, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes.',
+          'The accuser’s voice: self-hate loops, harsh words that stick, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes.',
         ),
         list(
           'Name it: “This is condemnation — not the Holy Spirit.”',
@@ -912,7 +912,7 @@ const document = {
         ),
         p('(1 Corinthians 6:18-20, Galatians 5:22-23)'),
         h3('8. Presence'),
-        p('You are whole under God. Love without disappearing or managing their feelings.'),
+        p('You are whole under God. Love without vanishing or managing their feelings.'),
         list(
           'Do not over-function.',
           'Be present where God has you.',
@@ -1445,7 +1445,7 @@ const document = {
     ),
     chamber(
       'The Adversary',
-      'He is real. Do not fixate. Name him, resist him, stand with God.',
+      'He is real. Do not stare at him. Name him, resist him, stand with God.',
       [
         'Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.',
         'You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.',

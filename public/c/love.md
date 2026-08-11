@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Lust and scorekeeping are not love.
+- Lust and keeping score are not love.
 - Does this serve their good under God—or my control?
 - If hatred rises, put it down. Bless once. Leave judgment to God.
 

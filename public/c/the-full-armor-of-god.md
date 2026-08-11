@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer.
-- Flaming darts are expected. Raise the shield of faith.
+- Put on the armor daily: truth, righteousness, peace, faith, salvation, Word, prayer.
+- Fiery darts will come. Raise the shield of faith.
 - Armor is for standing. Stay dressed. Stay praying.
 
 ## Prayer

@@ -7,7 +7,7 @@
 ## Under fire
 
 - Love them. Do not let their choices rule your peace.
-- Rage, lust, and the check-again loop are not masters.
+- Rage, lust, and checking again are not masters.
 - Name the urge. Wait. Capture the thought. Keep in step with the Spirit.
 
 ## Prayer

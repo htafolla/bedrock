@@ -167,13 +167,13 @@ export const FIELD_AIDS = {
     hacks: [
       'Jesus did not leave you alone. The Helper is with you.',
       'When lies press in, ask Him to open the Word.',
-      'Power is for witness and warfare under God, not for show.',
+      'Power is for witness and war under God, not for display.',
     ],
     prayers: ['Holy Spirit, fill me. Testify to the truth. Amen.'],
   },
   love: {
     hacks: [
-      'Lust and scorekeeping are not love.',
+      'Lust and keeping score are not love.',
       'Does this serve their good under God—or my control?',
       'If hatred rises, put it down. Bless once. Leave judgment to God.',
     ],
@@ -221,7 +221,7 @@ export const FIELD_AIDS = {
   },
   faithfulness: {
     hacks: [
-      '“True to myself” is not a door out of covenant.',
+      '“Being true to myself” is not a way out of covenant.',
       'Keep the next faithful act you already know is right.',
       'When you want to rewrite the story to exit: stop. Tell the truth.',
     ],
@@ -238,7 +238,7 @@ export const FIELD_AIDS = {
   'self-control': {
     hacks: [
       'Love them. Do not let their choices rule your peace.',
-      'Rage, lust, and the check-again loop are not masters.',
+      'Rage, lust, and checking again are not masters.',
       'Name the urge. Wait. Capture the thought. Keep in step with the Spirit.',
     ],
     prayers: ['Holy Spirit, keep me in step. Amen.'],
@@ -296,7 +296,7 @@ export const FIELD_AIDS = {
   },
   'do-not-fear': {
     hacks: [
-      'Fear is a claim. Answer with power, love, and a sound mind. Then take the next step.',
+      'Fear makes a claim. Answer with power, love, and a sound mind. Then take the next step.',
       'Worry will not add an hour. Put the hour into prayer and duty.',
     ],
     prayers: ['Lord, I release fear. Be with me. Amen.'],
@@ -328,7 +328,7 @@ export const FIELD_AIDS = {
   'take-every-thought-captive': {
     hacks: [
       'Catch the thought early. Is it true and pure—or accusation and despair?',
-      'God’s weapons demolish strongholds. Capture the thought. Break the lie.',
+      'God’s weapons break strongholds. Capture the thought. Break the lie.',
       'Take it captive to Christ. Replace it with what is true. Then act.',
     ],
     prayers: ['Jesus, I take this thought captive to You. Amen.'],
@@ -337,7 +337,7 @@ export const FIELD_AIDS = {
     hacks: [
       'Take the thought captive. Obsession is not revelation.',
       'Bring the cares to God. Pray. Do not feed the loop.',
-      'Capture. Replace with truth. Take the next obedient step.',
+      'Capture it. Replace it with truth. Take the next right step.',
     ],
     prayers: ['Lord, I release the replaying mind. Amen.'],
   },
@@ -360,7 +360,7 @@ export const FIELD_AIDS = {
   jealousy: {
     hacks: [
       'Name it: this is jealousy. It is not love.',
-      'Do not investigate or punish. Capture the thought. Pray. Take one free step.',
+      'Do not spy or punish. Capture the thought. Pray. Take one free step.',
       'Love does not envy. Walk by the Spirit.',
     ],
     prayers: ['Father, I release this jealousy. Teach me to love without grasping. Amen.'],
@@ -392,7 +392,7 @@ export const FIELD_AIDS = {
   'the-adversary': {
     hacks: [
       'He is real. Name him when Scripture does. Then fix your eyes on Jesus.',
-      'Discern fruit. Do not fixate on the devil.',
+      'Judge by fruit. Do not stare at the devil.',
       'Submit to God. Resist the devil. Stand in the Word.',
     ],
     prayers: ['Father, I stand with You. Amen.'],
@@ -471,8 +471,8 @@ export const FIELD_AIDS = {
   },
   'the-full-armor-of-god': {
     hacks: [
-      'Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer.',
-      'Flaming darts are expected. Raise the shield of faith.',
+      'Put on the armor daily: truth, righteousness, peace, faith, salvation, Word, prayer.',
+      'Fiery darts will come. Raise the shield of faith.',
       'Armor is for standing. Stay dressed. Stay praying.',
     ],
     prayers: ['Lord, I put on Your armor and stand. Amen.'],
@@ -511,7 +511,7 @@ export const FIELD_AIDS = {
   },
   'treasure-in-heaven': {
     hacks: [
-      'Where your treasure is, your heart follows. Audit the vault.',
+      'Where your treasure is, your heart follows. Check what you chase.',
       'Earth rusts. Lay up what fire cannot touch.',
       'Fight for the lasting: obedience, love, souls, the kingdom.',
     ],
@@ -551,16 +551,16 @@ export const FIELD_AIDS = {
   },
   'laying-on-of-hands': {
     hacks: [
-      'Hands are obedient faith under Jesus’ name, not magic.',
-      'Invite mature believers. Avoid spectacle.',
-      'If you are prayed for: receive without performing.',
+      'Hands under Jesus’ name are faith, not magic.',
+      'Invite mature believers. Avoid show.',
+      'If you are prayed for: receive. Do not perform.',
     ],
     prayers: ['Lord Jesus, let Your power and peace rest here. Amen.'],
   },
   'spiritual-gifts': {
     hacks: [
-      'Gifts are for the common good, not a stage name.',
-      'Steward the gift. Do not bury it in fear.',
+      'Gifts are for the body, not for your name.',
+      'Use the gift. Do not bury it in fear.',
       'Desire the gifts. Walk in love. Without love, gifts are noise.',
     ],
     prayers: ['Holy Spirit, use the gift for Your body. Amen.'],
@@ -582,7 +582,7 @@ export const FIELD_AIDS = {
   },
   'renew-your-mind': {
     hacks: [
-      'The world pattern reasserts by default. Choose Word and prayer over the spiral.',
+      'The world pattern comes back. Choose Word and prayer over the spiral.',
       'Renew the mind daily. One thought at a time.',
       'Put on the mind of Christ. Refuse the old loop.',
     ],

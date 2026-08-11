@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Hands are obedient faith under Jesus’ name, not magic.
-- Invite mature believers. Avoid spectacle.
-- If you are prayed for: receive without performing.
+- Hands under Jesus’ name are faith, not magic.
+- Invite mature believers. Avoid show.
+- If you are prayed for: receive. Do not perform.
 
 ## Prayer
 

@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- The world pattern reasserts by default. Choose Word and prayer over the spiral.
+- The world pattern comes back. Choose Word and prayer over the spiral.
 - Renew the mind daily. One thought at a time.
 - Put on the mind of Christ. Refuse the old loop.
 

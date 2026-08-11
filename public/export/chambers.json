@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 76,
-    "exportedAt": "2026-08-11T11:08:04.585Z",
+    "exportedAt": "2026-08-11T11:13:52.856Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -766,7 +766,7 @@
     {
       "id": "kill-the-flesh-walk-in-the-spirit",
       "title": "Kill the Flesh. Walk in the Spirit.",
-      "summary": "Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.",
+      "summary": "Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.",
       "body": [
         {
           "type": "heading",
@@ -784,19 +784,19 @@
         {
           "type": "list",
           "items": [
-            "Capture every destructive thought. Stop. Name it. Refuse to feed it. Submit it to Christ.",
-            "Refuse the case-hunt. Small gaps are not a case you must solve now.",
+            "Capture every destructive thought. Stop. Name it. Do not feed it. Give it to Christ.",
+            "Refuse building a case. Small gaps are not proof you must solve now.",
             "Refuse condemnation — the accuser’s voice. Conviction leads to life; condemnation freezes. Own once, cleanse, rise.",
             "Fight fear with power, love, and a sound mind. Hand the outcome to God.",
             "Refuse the flesh: no rage, control, monitoring, revenge, or settled bitterness.",
             "Forgive. Release the debt. Do your part.",
-            "Guard body and desire. Love without disappearing. Do not let their choices rule your peace.",
+            "Guard body and desire. Love without vanishing. Do not let their choices rule your peace.",
             "Low contact when the bond is unstable. Logistics only. Strength, not need. Trust God over understanding."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Prayer: “Father, I take every thought captive. I refuse the case-hunt and condemnation. I walk in the Spirit. Amen.”"
+          "text": "Prayer: “Father, I take every thought captive. I refuse building a case and condemnation. I walk in the Spirit. Amen.”"
         },
         {
           "type": "paragraph",
@@ -804,7 +804,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Mind war runs deeper than one card. Journeys → Battlefield of the mind (case-hunt, sticky words, fiery darts, renew, armor). Holds below when fog needs a map."
+          "text": "Mind war goes deeper than one card. Path: Battlefield of the mind. Full holds below when fog needs a map."
         },
         {
           "type": "heading",
@@ -826,7 +826,7 @@
             "Stop.",
             "Name it.",
             "Do not feed it.",
-            "Submit it to Christ."
+            "Give it to Christ."
           ]
         },
         {
@@ -840,7 +840,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "2. Refuse the case-hunt"
+          "text": "2. Refuse building a case"
         },
         {
           "type": "paragraph",
@@ -849,14 +849,14 @@
         {
           "type": "list",
           "items": [
-            "Name it: “This is a case-hunt.”",
+            "Name it: “I am building a case.”",
             "Refuse every lead.",
             "Do not turn open questions into a case right now."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Prayer: “I refuse to live as the permanent investigator. I hand this uncertainty to You.”"
+          "text": "Prayer: “I refuse to live as the detective of every gap. I hand this uncertainty to You.”"
         },
         {
           "type": "paragraph",
@@ -869,7 +869,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The accuser’s voice: self-hate loops, sticky words of others, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes."
+          "text": "The accuser’s voice: self-hate loops, harsh words that stick, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes."
         },
         {
           "type": "list",
@@ -994,7 +994,7 @@
         },
         {
           "type": "paragraph",
-          "text": "You are whole under God. Love without disappearing or managing their feelings."
+          "text": "You are whole under God. Love without vanishing or managing their feelings."
         },
         {
           "type": "list",
@@ -1604,7 +1604,7 @@
       "hacks": [
         "Jesus did not leave you alone. The Helper is with you.",
         "When lies press in, ask Him to open the Word.",
-        "Power is for witness and warfare under God, not for show."
+        "Power is for witness and war under God, not for display."
       ],
       "prayers": [
         "Holy Spirit, fill me. Testify to the truth. Amen."
@@ -1686,7 +1686,7 @@
         }
       ],
       "hacks": [
-        "Lust and scorekeeping are not love.",
+        "Lust and keeping score are not love.",
         "Does this serve their good under God—or my control?",
         "If hatred rises, put it down. Bless once. Leave judgment to God."
       ],
@@ -2167,7 +2167,7 @@
         }
       ],
       "hacks": [
-        "“True to myself” is not a door out of covenant.",
+        "“Being true to myself” is not a way out of covenant.",
         "Keep the next faithful act you already know is right.",
         "When you want to rewrite the story to exit: stop. Tell the truth."
       ],
@@ -2329,7 +2329,7 @@
       ],
       "hacks": [
         "Love them. Do not let their choices rule your peace.",
-        "Rage, lust, and the check-again loop are not masters.",
+        "Rage, lust, and checking again are not masters.",
         "Name the urge. Wait. Capture the thought. Keep in step with the Spirit."
       ],
       "prayers": [
@@ -3454,7 +3454,7 @@
         }
       ],
       "hacks": [
-        "Fear is a claim. Answer with power, love, and a sound mind. Then take the next step.",
+        "Fear makes a claim. Answer with power, love, and a sound mind. Then take the next step.",
         "Worry will not add an hour. Put the hour into prayer and duty."
       ],
       "prayers": [
@@ -3795,7 +3795,7 @@
       "hacks": [
         "Take the thought captive. Obsession is not revelation.",
         "Bring the cares to God. Pray. Do not feed the loop.",
-        "Capture. Replace with truth. Take the next obedient step."
+        "Capture it. Replace it with truth. Take the next right step."
       ],
       "prayers": [
         "Lord, I release the replaying mind. Amen."
@@ -4045,7 +4045,7 @@
       ],
       "hacks": [
         "Name it: this is jealousy. It is not love.",
-        "Do not investigate or punish. Capture the thought. Pray. Take one free step.",
+        "Do not spy or punish. Capture the thought. Pray. Take one free step.",
         "Love does not envy. Walk by the Spirit."
       ],
       "prayers": [
@@ -4179,7 +4179,7 @@
         }
       ],
       "hacks": [
-        "The world pattern reasserts by default. Choose Word and prayer over the spiral.",
+        "The world pattern comes back. Choose Word and prayer over the spiral.",
         "Renew the mind daily. One thought at a time.",
         "Put on the mind of Christ. Refuse the old loop."
       ],
@@ -4243,7 +4243,7 @@
       ],
       "hacks": [
         "Catch the thought early. Is it true and pure—or accusation and despair?",
-        "God’s weapons demolish strongholds. Capture the thought. Break the lie.",
+        "God’s weapons break strongholds. Capture the thought. Break the lie.",
         "Take it captive to Christ. Replace it with what is true. Then act."
       ],
       "prayers": [
@@ -4411,7 +4411,7 @@
     {
       "id": "the-adversary",
       "title": "The Adversary",
-      "summary": "He is real. Do not fixate. Name him, resist him, stand with God.",
+      "summary": "He is real. Do not stare at him. Name him, resist him, stand with God.",
       "body": [
         {
           "type": "paragraph",
@@ -4523,7 +4523,7 @@
       ],
       "hacks": [
         "He is real. Name him when Scripture does. Then fix your eyes on Jesus.",
-        "Discern fruit. Do not fixate on the devil.",
+        "Judge by fruit. Do not stare at the devil.",
         "Submit to God. Resist the devil. Stand in the Word."
       ],
       "prayers": [
@@ -5294,8 +5294,8 @@
         }
       ],
       "hacks": [
-        "Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer.",
-        "Flaming darts are expected. Raise the shield of faith.",
+        "Put on the armor daily: truth, righteousness, peace, faith, salvation, Word, prayer.",
+        "Fiery darts will come. Raise the shield of faith.",
         "Armor is for standing. Stay dressed. Stay praying."
       ],
       "prayers": [
@@ -5664,7 +5664,7 @@
         }
       ],
       "hacks": [
-        "Where your treasure is, your heart follows. Audit the vault.",
+        "Where your treasure is, your heart follows. Check what you chase.",
         "Earth rusts. Lay up what fire cannot touch.",
         "Fight for the lasting: obedience, love, souls, the kingdom."
       ],
@@ -6165,9 +6165,9 @@
         }
       ],
       "hacks": [
-        "Hands are obedient faith under Jesus’ name, not magic.",
-        "Invite mature believers. Avoid spectacle.",
-        "If you are prayed for: receive without performing."
+        "Hands under Jesus’ name are faith, not magic.",
+        "Invite mature believers. Avoid show.",
+        "If you are prayed for: receive. Do not perform."
       ],
       "prayers": [
         "Lord Jesus, let Your power and peace rest here. Amen."
@@ -6262,8 +6262,8 @@
         }
       ],
       "hacks": [
-        "Gifts are for the common good, not a stage name.",
-        "Steward the gift. Do not bury it in fear.",
+        "Gifts are for the body, not for your name.",
+        "Use the gift. Do not bury it in fear.",
         "Desire the gifts. Walk in love. Without love, gifts are noise."
       ],
       "prayers": [

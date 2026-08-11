@@ -7,7 +7,7 @@
 ## Under fire
 
 - Catch the thought early. Is it true and pure—or accusation and despair?
-- God’s weapons demolish strongholds. Capture the thought. Break the lie.
+- God’s weapons break strongholds. Capture the thought. Break the lie.
 - Take it captive to Christ. Replace it with what is true. Then act.
 
 ## Prayer

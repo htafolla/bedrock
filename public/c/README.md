@@ -13,7 +13,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [The Meaning of Life](https://bedrock.rippel.ai/c/the-meaning-of-life) — The greatest commandments.
 - [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself) — Cross daily. Follow Me.
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit) — Walk by the Spirit, and you will not gratify the desires of the flesh.
-- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit) — Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit) — Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.
 - [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit) — Jesus gave the Helper — Spirit of truth with you, to testify and empower.
 - [Love](https://bedrock.rippel.ai/c/love) — Spirit fruit: love.
 - [Joy](https://bedrock.rippel.ai/c/joy) — Spirit fruit: joy.
@@ -54,7 +54,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
 - [The Word](https://bedrock.rippel.ai/c/the-word) — The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
-- [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — He is real. Do not fixate. Name him, resist him, stand with God.
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — He is real. Do not stare at him. Name him, resist him, stand with God.
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare) — We are at war — not against flesh and blood.
 - [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares) — A good farmer sowed wheat; an enemy sowed weeds at night.
 - [Persecution](https://bedrock.rippel.ai/c/persecution) — Blessed when they revile you for His name — stand, bless, do not repay evil.
