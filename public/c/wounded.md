@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.
-- Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. You are His; cry Abba, Father.
-- Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains. Hold the adult position: love without handing them the remote.
+- You were harmed. Name it. Do not take on total blame that is not yours — and do not make hatred your shelter.
+- What they did does not cancel whose you are. You are His; cry Abba, Father. Your emotional state is your own — not dependent on them.
+- Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains. Love without handing them the remote.
 
 ## Prayer
 

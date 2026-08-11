@@ -253,7 +253,7 @@
           "role": "blow",
           "label": "Wound",
           "chamberId": "wounded",
-          "note": "Name harm without false total blame."
+          "note": "Name the harm. Do not take on total blame that is not yours."
         },
         {
           "id": "near",

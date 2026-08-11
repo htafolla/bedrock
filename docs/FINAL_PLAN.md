@@ -61,7 +61,7 @@ Do **not** pack both sides into one chamber. They are different altogether.
 | Path | Primary doors | Job |
 |------|----------------|-----|
 | **I blew it** (aggressor / repentance) | Regret · I fell · Confess · Cross · Grace | Own sin → confess → forsake → rise; no self-hate as god |
-| **I was hurt** (wounded) | Wounded · Hatred / Leave vengeance · Do not repay · Forgive · He is for you | Grieve harm; refuse false total blame; no vengeance; wise boundaries; worth in God |
+| **I was hurt** (wounded) | Wounded · Leave vengeance · Do not repay · Forgive · He is for you | Grieve harm; do not take on total blame that is not yours; no vengeance; wise boundaries; worth in God |
 | **Shared storm** (not dual-labeled) | Grief · Loops · Fear · Wait · Trust | Loss, rumination, fear, out-of-control — one path each; no “if aggressor / if victim” in the same Truth or Under fire |
 
 **Never:** excuse abuse, spiritualize away safety, or erase real sin.
