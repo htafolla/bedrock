@@ -323,7 +323,8 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               onToggleTheme={toggleTheme}
               onHome={goHome}
             />
-            {depthLayer ? (
+            {/* Depth ladder only on browse surfaces — not on station (adds a third header) */}
+            {depthLayer && state.mode !== 'chamber' ? (
               <p className="depth-ladder" aria-label="How Bedrock is layered">
                 <span className={depthLayer === 'door' ? 'depth-step active' : 'depth-step'}>
                   Door

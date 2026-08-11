@@ -714,6 +714,15 @@ body {
   font-weight: 600;
 }
 
+.journey-stage-num {
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ember);
+  opacity: 0.85;
+  margin-right: 0.3rem;
+}
+
 .journey-stage-rail-progress-solo {
   margin: 0;
   font-size: 0.78rem;
@@ -721,6 +730,84 @@ body {
   text-transform: uppercase;
   color: var(--ember);
   font-weight: 650;
+}
+
+/* Chips only — no second path header under path-chrome */
+.journey-stage-rail-chips {
+  margin: 0 0 0.75rem;
+  padding: 0.45rem 0.35rem 0.55rem;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.journey-stage-rail-chips .journey-stage-rail {
+  gap: 0.3rem;
+}
+
+/* ONE path chrome bar (replaces toolbar + journey title block) */
+.path-chrome {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin-bottom: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+}
+
+.path-chrome-center {
+  min-width: 0;
+  text-align: center;
+}
+
+.path-chrome-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--beam);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.path-chrome-progress {
+  margin: 0.1rem 0 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.path-chrome-nav {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.path-chrome-nav .focus-btn {
+  min-width: 2.5rem;
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+}
+
+.path-chrome-plain {
+  font-size: 0.75rem !important;
+}
+
+@media (max-width: 420px) {
+  .path-chrome {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .path-chrome-plain {
+    display: none;
+  }
 }
 
 /* Four nav tabs — slightly tighter on narrow screens */

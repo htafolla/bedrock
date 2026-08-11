@@ -320,79 +320,101 @@ export function ChamberFocus({
     </div>
   )
 
+  const onJourney = Boolean(showJourneyRail && journey && onPath && onSelectJourneyStage)
+
   return (
     <div
-      className={`chamber-focus${showJourneyRail ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}`}
+      className={`chamber-focus${onJourney ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}`}
       ref={rootRef}
     >
-      <div className="chamber-focus-toolbar">
-        <button type="button" className="focus-btn ghost" onClick={onBack}>
-          ← Back
-        </button>
-        <a
-          className="focus-btn ghost focus-plain-link"
-          href={chamberPath(chamber.id)}
-          title="Canonical plain page for sharing and AI citation"
-        >
-          Plain
-        </a>
-        <p className="focus-spine-meta">
-          {isRubric
-            ? 'Operational standard'
-            : journey && onPath
-              ? `${journey.title}`
-              : idx >= 0
-                ? `${idx + 1} / ${SPINE_ORDER.length} · spine`
-                : '—'}
-        </p>
-        <div className="focus-spine-nav">
-          {showJourneyRail && onPath && onSelectJourneyStage ? (
-            <>
-              <button
-                type="button"
-                className="focus-btn"
-                disabled={!journeyPrev}
-                onClick={() => journeyPrev && onSelectJourneyStage(journeyPrev)}
-              >
-                ← Prev station
-              </button>
-              <button
-                type="button"
-                className="focus-btn"
-                disabled={!journeyNext}
-                onClick={() => journeyNext && onSelectJourneyStage(journeyNext)}
-              >
-                Next station →
-              </button>
-            </>
-          ) : (
-            <>
-              <button
-                type="button"
-                className="focus-btn"
-                disabled={!prev}
-                onClick={() => onSpineStep(-1)}
-              >
-                ← Prev
-              </button>
-              <button
-                type="button"
-                className="focus-btn"
-                disabled={!next}
-                onClick={() => onSpineStep(1)}
-              >
-                Next →
-              </button>
-            </>
-          )}
+      {/*
+        ONE chrome bar on path — not toolbar + journey header + depth ladder.
+        App nav stays above. This bar: leave · path + progress · prev/next.
+      */}
+      {onJourney && journey && onSelectJourneyStage ? (
+        <div className="path-chrome">
+          <button type="button" className="focus-btn ghost path-chrome-back" onClick={onBack}>
+            ← Paths
+          </button>
+          <div className="path-chrome-center">
+            <p className="path-chrome-title">{journey.title}</p>
+            <p className="path-chrome-progress">
+              {stageIdx + 1} of {journey.stages.length}
+            </p>
+          </div>
+          <div className="path-chrome-nav">
+            <button
+              type="button"
+              className="focus-btn"
+              disabled={!journeyPrev}
+              onClick={() => journeyPrev && onSelectJourneyStage(journeyPrev)}
+              aria-label="Previous station"
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              className="focus-btn"
+              disabled={!journeyNext}
+              onClick={() => journeyNext && onSelectJourneyStage(journeyNext)}
+              aria-label="Next station"
+            >
+              →
+            </button>
+          </div>
+          <a
+            className="focus-btn ghost path-chrome-plain"
+            href={chamberPath(chamber.id)}
+            title="Plain page for citation"
+          >
+            Plain
+          </a>
         </div>
-      </div>
+      ) : (
+        <div className="chamber-focus-toolbar">
+          <button type="button" className="focus-btn ghost" onClick={onBack}>
+            ← Back
+          </button>
+          <a
+            className="focus-btn ghost focus-plain-link"
+            href={chamberPath(chamber.id)}
+            title="Canonical plain page for sharing and AI citation"
+          >
+            Plain
+          </a>
+          <p className="focus-spine-meta">
+            {isRubric
+              ? 'Standard'
+              : idx >= 0
+                ? `${idx + 1} of ${SPINE_ORDER.length}`
+                : '—'}
+          </p>
+          <div className="focus-spine-nav">
+            <button
+              type="button"
+              className="focus-btn"
+              disabled={!prev}
+              onClick={() => onSpineStep(-1)}
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              className="focus-btn"
+              disabled={!next}
+              onClick={() => onSpineStep(1)}
+            >
+              →
+            </button>
+          </div>
+        </div>
+      )}
 
-      {showJourneyRail && journey && onSelectJourneyStage ? (
+      {onJourney && journey && onSelectJourneyStage ? (
         <JourneyStageRail
           journey={journey}
           activeChamberId={chamber.id}
-          placement="top"
+          placement="chips"
           onSelectStage={onSelectJourneyStage}
         />
       ) : null}
@@ -403,11 +425,7 @@ export function ChamberFocus({
       >
         <header className="chamber-header">
           <p className="chamber-kicker">
-            {isRubric
-              ? 'Operational rubric · SOP under fire'
-              : journey && onPath
-                ? 'Journey station · Hold first'
-                : 'Hold first · First principle'}
+            {isRubric ? 'Standard' : 'Hold first'}
           </p>
           <h2
             className="chamber-title"
@@ -565,14 +583,7 @@ export function ChamberFocus({
         {cardShare('footer')}
       </article>
 
-      {showJourneyRail && journey && onSelectJourneyStage ? (
-        <JourneyStageRail
-          journey={journey}
-          activeChamberId={chamber.id}
-          placement="bottom"
-          onSelectStage={onSelectJourneyStage}
-        />
-      ) : null}
+      {/* Bottom path chips removed — one chip strip under path chrome is enough */}
     </div>
   )
 }
