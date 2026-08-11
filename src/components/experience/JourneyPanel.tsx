@@ -6,17 +6,17 @@ import { JourneyStageRail } from './JourneyStageRail'
 const FAMILY_ORDER: JourneyFamily[] = ['body', 'will', 'conscience', 'world']
 
 const FAMILY_LABEL: Record<JourneyFamily, string> = {
-  body: 'Body & wound',
-  will: 'Bondage & loops',
-  conscience: 'Fall & return',
-  world: 'War & wait',
+  body: 'Wound',
+  will: 'Bondage',
+  conscience: 'Fall',
+  world: 'War',
 }
 
 const FAMILY_HINT: Record<JourneyFamily, string> = {
-  body: 'Death, leave, betrayal, abandonment fear',
-  will: 'Addiction, obsession, control, jealousy',
-  conscience: 'I fell, sexual sin, stuck regret',
-  world: 'Persecution, warfare, forced waiting',
+  body: 'Death · leave · betrayal · fear',
+  will: 'Addiction · mind · control · jealousy',
+  conscience: 'I fell · sexual sin · regret',
+  world: 'Persecution · warfare · waiting',
 }
 
 interface JourneyPanelProps {
@@ -60,8 +60,7 @@ export function JourneyPanel({
         <p className="constellation-kicker">Journeys</p>
         <h2 className="constellation-title">What path are you on?</h2>
         <p className="constellation-blurb">
-          Path: multi-step walks when one key is not enough. Death and leave are different. Mind
-          war: Battlefield of the mind. Share the path from a station card once you open it.
+          Multi-step when one station is not enough. Death and leave are different paths.
         </p>
       </header>
 

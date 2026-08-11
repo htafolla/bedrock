@@ -90,7 +90,7 @@
     },
     {
       "id": "spouse-left",
-      "title": "Spouse left / marriage under fire",
+      "title": "Spouse left",
       "family": "body",
       "wave": 1,
       "summary": "You were wounded. Their leaving does not cancel whose you are. Critical to healing: your emotional state is your own — not dependent on them. Operational standard: Kill the Flesh. Walk in the Spirit. — return to your side of the street; refuse the remote. Adult position. Hold it.",
@@ -199,7 +199,7 @@
     },
     {
       "id": "deep-wound",
-      "title": "Deep wound / betrayal",
+      "title": "Betrayal",
       "family": "body",
       "wave": 2,
       "summary": "You were harmed. God sees. Do not repay evil; forgive over time; keep wise boundaries.",
@@ -263,7 +263,7 @@
     },
     {
       "id": "abandonment-fear",
-      "title": "Abandonment fear / free-fall alone",
+      "title": "Abandonment fear",
       "family": "body",
       "wave": 2,
       "summary": "Perfect love casts out fear. You cry Abba — not slave to terror. Trust when the face is gone.",
@@ -333,7 +333,7 @@
     },
     {
       "id": "addiction",
-      "title": "Addiction / mastery",
+      "title": "Addiction",
       "family": "will",
       "wave": 1,
       "summary": "If it masters you, it is not free. Name the master; walk by the Spirit one hour; get real help.",
@@ -410,7 +410,7 @@
     },
     {
       "id": "obsession",
-      "title": "Obsession / replaying mind",
+      "title": "Obsession",
       "family": "will",
       "wave": 1,
       "summary": "The stuck replaying mind is not the Holy Spirit. Capture → replace → next obedient step.",
@@ -547,7 +547,7 @@
     },
     {
       "id": "jealousy",
-      "title": "Jealousy / rivalry love",
+      "title": "Jealousy",
       "family": "will",
       "wave": 2,
       "summary": "Jealousy is not love. Capture the rivalry; choose selfless love; trust God with what is not yours to grip.",
@@ -602,7 +602,7 @@
     },
     {
       "id": "i-fell",
-      "title": "I fell — return path",
+      "title": "I fell",
       "family": "conscience",
       "wave": 1,
       "summary": "Name the fall. Confess. Grace is enough. Rise. The righteous man falls and gets up again. Hub path after any journey’s failure.",
@@ -672,7 +672,7 @@
     },
     {
       "id": "sexual-sin",
-      "title": "Sexual sin / covenant fracture",
+      "title": "Sexual sin",
       "family": "conscience",
       "wave": 2,
       "summary": "Confess, forsake, be cleansed. Do not call darkness a new identity. Deny yourself; walk by the Spirit.",
@@ -804,7 +804,7 @@
     },
     {
       "id": "persecution",
-      "title": "Persecution / hated for His name",
+      "title": "Persecution",
       "family": "world",
       "wave": 3,
       "summary": "Blessed when persecuted for righteousness. Armor on; do not repay; remain faithful; hope of glory.",
@@ -865,7 +865,7 @@
     },
     {
       "id": "spiritual-warfare-fog",
-      "title": "Spiritual warfare / oppression fog",
+      "title": "Spiritual warfare",
       "family": "world",
       "wave": 3,
       "summary": "The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not devil-fascination.",
@@ -934,7 +934,7 @@
     },
     {
       "id": "forced-waiting",
-      "title": "Forced waiting / life out of control",
+      "title": "Forced waiting",
       "family": "world",
       "wave": 1,
       "summary": "You cannot force the timeline. Wait on the Lord; trust; one duty today; provision for this day.",

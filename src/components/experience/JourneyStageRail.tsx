@@ -30,7 +30,7 @@ export function JourneyStageRail({
         <p className="journey-stage-rail-title">{journey.title}</p>
         {hereIdx >= 0 ? (
           <p className="journey-stage-rail-progress">
-            Station {hereIdx + 1} / {journey.stages.length}
+            Station {hereIdx + 1} of {journey.stages.length}
           </p>
         ) : (
           <p className="journey-stage-rail-progress">Not on this path — tap a station</p>
