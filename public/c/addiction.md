@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- If it masters you, it is not free. Name the master. Refuse its throne.
+- If it masters you, it is not free. Name the master. Walk free this hour.
 - Be filled with the Spirit. Put the flesh to death one hour at a time.
 - Confess. Get real help. One sober step now.
 

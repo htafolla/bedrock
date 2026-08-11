@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Broken is not useless. God looks to the humble, not the polished.
-- Do not rush past conviction. Let sorrow lead to life, not freeze in shame.
+- Broken is not useless. God looks to the humble, not the show.
+- Do not rush past conviction. Let sorrow lead to life, not stuck shame.
 
 ## Prayer
 

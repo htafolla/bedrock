@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Love God. Love people. The rest is secondary.
+- Love God. Love people. The rest comes after.
 - What does love require of me in the next hour?
 
 ## Prayer

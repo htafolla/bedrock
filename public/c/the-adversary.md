@@ -7,7 +7,7 @@
 ## Under fire
 
 - He is real. Name him when Scripture does. Then fix your eyes on Jesus.
-- Discern fruit. Do not chase the devil’s résumé.
+- Discern fruit. Do not fixate on the devil.
 - Submit to God. Resist the devil. Stand in the Word.
 
 ## Prayer

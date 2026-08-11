@@ -7,7 +7,7 @@
 ## Under fire
 
 - Everything flows from the heart. Guard what you take in and what you say.
-- Before you speak: does this build up, or only vent pressure?
+- Before you speak: does this build up, or only dump heat?
 
 ## Prayer
 

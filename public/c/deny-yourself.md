@@ -7,7 +7,7 @@
 ## Under fire
 
 - The cross is daily. What must you lay down right now?
-- Deny the flesh once more. Do not try to deny them into change.
+- Deny yourself once more. You cannot force them to change.
 
 ## Prayer
 

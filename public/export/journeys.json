@@ -77,7 +77,7 @@
           "role": "spiral",
           "label": "Lament",
           "chamberId": "lament-and-pour-out-your-heart",
-          "note": "Do not perform fine."
+          "note": "You do not have to act fine."
         },
         {
           "id": "hope",
@@ -98,7 +98,7 @@
           "role": "remain",
           "label": "Peace",
           "chamberId": "peace",
-          "note": "Peace given, not earned by gripping the timeline."
+          "note": "Peace is given, not earned by forcing the timeline."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/death-of-loved-one",
@@ -110,7 +110,7 @@
       "title": "Marriage under fire",
       "family": "body",
       "wave": 1,
-      "summary": "You were wounded. Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. Return to your side of the street; refuse the remote. Adult position. Hold it. Standard: Kill the Flesh. Walk in the Spirit.",
+      "summary": "You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God. Kill the flesh. Walk in the Spirit.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -142,56 +142,56 @@
           "role": "blow",
           "label": "Wound",
           "chamberId": "wounded",
-          "note": "Name harm. Do not make hatred your shelter."
+          "note": "Name the harm. Do not hide in hate."
         },
         {
           "id": "near",
           "role": "near",
           "label": "You are His",
           "chamberId": "he-is-for-you",
-          "note": "Their leaving does not cancel you are His. Your emotional state is your own — not dependent on them."
+          "note": "You are still His. Do not let their choices rule your peace."
         },
         {
           "id": "spiral",
           "role": "spiral",
           "label": "Replay",
           "chamberId": "rumination",
-          "note": "Obsession is not revelation. Do not hand the loop the remote to your insides."
+          "note": "Obsession is not revelation. Stop feeding the loop."
         },
         {
           "id": "fear",
           "role": "spiral",
           "label": "Fear",
           "chamberId": "fear",
-          "note": "Name the fear; then trust. Adult position: refuse fear the throne of your state."
+          "note": "Name the fear. Then trust God."
         },
         {
           "id": "fork-vengeance",
           "role": "fork",
           "label": "Vengeance",
           "chamberId": "leave-vengeance-to-the-lord",
-          "note": "Flesh wants repayment; entrust the scales."
+          "note": "Flesh wants payback. Leave the scales to God."
         },
         {
           "id": "fork-repay",
           "role": "fork",
           "label": "Do not repay",
           "chamberId": "do-not-repay-evil-with-evil",
-          "note": "Bless; do not multiply darkness."
+          "note": "Bless. Do not multiply darkness."
         },
         {
           "id": "covenant",
           "role": "long_middle",
           "label": "Covenant",
           "chamberId": "marriage-covenant",
-          "note": "Do not invent a new story. Faithful to what God still calls true — not self-erasure in harm."
+          "note": "Do not invent a new story. Stay true to what God still calls true."
         },
         {
           "id": "forgive",
           "role": "long_middle",
           "label": "Forgive",
           "chamberId": "forgive-as-you-have-been-forgiven",
-          "note": "Not saying it did not hurt. Release the ledger while grief remains."
+          "note": "Not saying it did not hurt. Release the debt. Grief may stay."
         },
         {
           "id": "endure",
@@ -205,21 +205,21 @@
           "role": "remain",
           "label": "Trust",
           "chamberId": "trust-in-the-lord",
-          "note": "You cannot grip the outcome."
+          "note": "You cannot force the outcome."
         },
         {
           "id": "rubric",
           "role": "remain",
           "label": "Standard",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
-          "note": "Operational standard under fire: refuse the flesh; walk in the Spirit; your side of the street."
+          "note": "Refuse the flesh. Walk in the Spirit. Do your part."
         },
         {
           "id": "hope",
           "role": "remain",
           "label": "Remain",
           "chamberId": "hope-of-glory",
-          "note": "Steadfast under trial."
+          "note": "Stand under trial."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/spouse-left",
@@ -259,14 +259,14 @@
           "role": "blow",
           "label": "Wound",
           "chamberId": "wounded",
-          "note": "Name the harm. Do not take on total blame that is not yours."
+          "note": "Name the harm. Not all of it is your fault."
         },
         {
           "id": "near",
           "role": "near",
           "label": "For you",
           "chamberId": "he-is-for-you",
-          "note": "Cast the care; do not decorate it."
+          "note": "Cast the care on Him. Do not polish it."
         },
         {
           "id": "fork-repay",
@@ -280,21 +280,21 @@
           "role": "fork",
           "label": "Vengeance",
           "chamberId": "leave-vengeance-to-the-lord",
-          "note": "Stillness is a weapon."
+          "note": "Be still. Leave wrath to God."
         },
         {
           "id": "forgive",
           "role": "long_middle",
           "label": "Forgive",
           "chamberId": "forgive-as-you-have-been-forgiven",
-          "note": "Frees you to obey while grief remains."
+          "note": "Release the debt. Grief may stay."
         },
         {
           "id": "peace",
           "role": "remain",
           "label": "Peace",
           "chamberId": "peace",
-          "note": "Receive the guard over heart and mind."
+          "note": "Receive His guard over heart and mind."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/deep-wound",
@@ -442,7 +442,7 @@
           "role": "long_middle",
           "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
-          "note": "Freedom is not alone-willpower theater."
+          "note": "Willpower alone is not enough. Get real help."
         },
         {
           "id": "grace",
@@ -468,7 +468,7 @@
       "title": "Obsession",
       "family": "will",
       "wave": 1,
-      "summary": "The stuck replaying mind is not the Holy Spirit. Capture → replace → next obedient step.",
+      "summary": "The stuck replaying mind is not the Holy Spirit. Capture the thought. Replace it with truth. Take the next right step.",
       "plainSpeech": [
         "i can't stop replaying",
         "stuck on loop",
@@ -538,7 +538,7 @@
       "title": "Control",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Your emotional state is your own; refuse the remote. Return to your side of the street. Standard: Kill the Flesh. Walk in the Spirit.",
+      "summary": "Open the hand. Trust is not laziness. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Kill the flesh. Walk in the Spirit.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
@@ -547,9 +547,9 @@
         "everything must go my way",
         "i grip the outcome",
         "open hand",
-        "my emotional state",
+        "my peace",
         "not dependent on them",
-        "return to your side of the street",
+        "do my part",
         "kill the flesh"
       ],
       "doorChamberId": "control",
@@ -566,7 +566,7 @@
           "role": "blow",
           "label": "Grip",
           "chamberId": "control",
-          "note": "Emotional state is your own — not dependent on them. Outcomes, people, image, timeline: if you must hold it, it has become a god. Open the hand."
+          "note": "Do not let their choices rule your peace. If you must force the outcome, it has become a god. Open the hand."
         },
         {
           "id": "trust",
@@ -580,7 +580,7 @@
           "role": "long_middle",
           "label": "Patience",
           "chamberId": "patience",
-          "note": "You are not the weather."
+          "note": "You do not control the weather."
         },
         {
           "id": "wait",
@@ -594,7 +594,7 @@
           "role": "fork",
           "label": "Self-control",
           "chamberId": "self-control",
-          "note": "Rules you, not them."
+          "note": "Rule yourself, not them."
         },
         {
           "id": "spirit",
@@ -608,7 +608,7 @@
           "role": "remain",
           "label": "Standard",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
-          "note": "Full operational standard: refuse the flesh; side of the street; success without their response."
+          "note": "Refuse the flesh. Do your part. Success is Spirit, not their response."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/control-grip",
@@ -620,7 +620,7 @@
       "title": "Jealousy",
       "family": "will",
       "wave": 2,
-      "summary": "Jealousy is not love. Capture the rivalry; choose selfless love; trust God with what is not yours to grip.",
+      "summary": "Jealousy is not love. Capture the thought. Choose selfless love. Trust God with what you cannot hold.",
       "plainSpeech": [
         "i'm jealous",
         "jealousy",
@@ -671,7 +671,7 @@
           "role": "remain",
           "label": "Trust",
           "chamberId": "trust-in-the-lord",
-          "note": "Release what is not yours to grip."
+          "note": "Release what you cannot hold."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/jealousy",
@@ -739,14 +739,14 @@
           "role": "spiral",
           "label": "Grief",
           "chamberId": "regret",
-          "note": "Refuse the death-tape of worldly grief."
+          "note": "Worldly grief only kills. Rise."
         },
         {
           "id": "remain",
           "role": "remain",
           "label": "Hope",
           "chamberId": "hope-of-glory",
-          "note": "Your fall does not cancel the crucible."
+          "note": "Your fall does not end the story."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/i-fell",
@@ -856,7 +856,7 @@
           "role": "blow",
           "label": "Regret",
           "chamberId": "regret",
-          "note": "Godly grief vs death-tape."
+          "note": "Godly grief leads to life. Worldly grief only kills."
         },
         {
           "id": "confess",
@@ -870,7 +870,7 @@
           "role": "near",
           "label": "Grace",
           "chamberId": "his-grace-is-sufficient",
-          "note": "No condemnation theater."
+          "note": "No condemnation in Christ. Stop performing shame."
         },
         {
           "id": "cross",
@@ -938,7 +938,7 @@
           "role": "spiral",
           "label": "Warfare",
           "chamberId": "spiritual-warfare",
-          "note": "Not against flesh and blood; no devil-fascination."
+          "note": "Not against flesh and blood. Do not fixate on the devil."
         },
         {
           "id": "fork",
@@ -971,7 +971,7 @@
       "title": "Spiritual warfare",
       "family": "world",
       "wave": 3,
-      "summary": "The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not devil-fascination.",
+      "summary": "The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not on the devil.",
       "plainSpeech": [
         "spiritual warfare",
         "under attack",
@@ -1108,7 +1108,7 @@
           "role": "fork",
           "label": "Prayer",
           "chamberId": "prayer",
-          "note": "Cast cares; do not decorate them."
+          "note": "Cast cares on Him. Do not polish them."
         },
         {
           "id": "hope",
@@ -1127,7 +1127,7 @@
       "title": "Battlefield of the mind",
       "family": "will",
       "wave": 1,
-      "summary": "The war is often inside — investigation, condemnation, sticky words, and fiery darts that are not the Spirit. Capture the thought. Refuse the accuser. Renew the mind. Stand in the armor of God. Field card: Kill the Flesh. Walk in the Spirit.",
+      "summary": "The war is often inside — the case-hunt, condemnation, sticky words, fiery darts. Capture the thought. Refuse the accuser. Renew the mind. Stand in the armor of God. Field card: Kill the Flesh. Walk in the Spirit.",
       "plainSpeech": [
         "battlefield of the mind",
         "mind won't stop",
@@ -1165,42 +1165,42 @@
           "role": "blow",
           "label": "War",
           "chamberId": "take-every-thought-captive",
-          "note": "The blow is a thought. Capture it. Weapons demolish strongholds."
+          "note": "The blow is a thought. Capture it."
         },
         {
           "id": "near-sop",
           "role": "near",
           "label": "Field card",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
-          "note": "Boiled steel first. Investigation and condemnation named. Full holds when needed."
+          "note": "Field card first. Full holds when you need them."
         },
         {
           "id": "spiral-loop",
           "role": "spiral",
           "label": "Loop",
           "chamberId": "rumination",
-          "note": "Replay and investigation are not the Holy Spirit. Capture → replace."
+          "note": "Replay and the case-hunt are not the Holy Spirit. Capture. Replace."
         },
         {
           "id": "fork-accuser",
           "role": "fork",
           "label": "Darts",
           "chamberId": "the-adversary",
-          "note": "Fiery darts and schemes. Do not give him the microphone of your mind."
+          "note": "Fiery darts are real. Do not give him your mind."
         },
         {
           "id": "spiral-shame",
           "role": "spiral",
           "label": "Condemnation",
           "chamberId": "regret",
-          "note": "Self-tape and unforgiveness of self. Godly grief → life; worldly grief → death. No self-hate holiness."
+          "note": "Godly grief leads to life. Worldly grief only kills. Self-hate is not holiness."
         },
         {
           "id": "near-wound",
           "role": "near",
           "label": "Wounds",
           "chamberId": "wounded",
-          "note": "Sticky words lodge. God near the crushed; do not make hatred your shelter."
+          "note": "Sticky words lodge. God is near the crushed. Do not hide in hate."
         },
         {
           "id": "long-renew",
@@ -1221,14 +1221,14 @@
           "role": "remain",
           "label": "Peace",
           "chamberId": "peace",
-          "note": "Peace given — not earned by solving every case."
+          "note": "Peace is given — not earned by solving every case."
         },
         {
           "id": "remain-armor",
           "role": "remain",
           "label": "Stand",
           "chamberId": "the-full-armor-of-god",
-          "note": "Shield of faith extinguishes darts. Stand."
+          "note": "Shield of faith. Stand."
         }
       ],
       "url": "https://bedrock.rippel.ai/j/battlefield-of-the-mind",

@@ -309,8 +309,8 @@
         }
       ],
       "hacks": [
-        "Ask for today’s bread, not a five-year fortress.",
-        "Your Father knows what you need. Anxiety is not a plan."
+        "Ask for today’s bread, not the whole future.",
+        "Your Father knows what you need. Worry is not a plan."
       ],
       "prayers": [
         "Father, give us this day our daily bread. Amen."
@@ -492,7 +492,7 @@
       "hacks": [
         "If God is for you, stop replaying every face against you.",
         "Cast your care on Him. He cares for you.",
-        "Love them. Keep your heart under God. Your peace is not theirs to rule."
+        "Love them. Keep your heart under God. Do not let their choices rule your peace."
       ],
       "prayers": [
         "Lord, You are for me. I cast my cares on You. Amen."
@@ -598,7 +598,7 @@
         }
       ],
       "hacks": [
-        "Love God. Love people. The rest is secondary.",
+        "Love God. Love people. The rest comes after.",
         "What does love require of me in the next hour?"
       ],
       "prayers": [
@@ -643,7 +643,7 @@
       ],
       "hacks": [
         "The cross is daily. What must you lay down right now?",
-        "Deny the flesh once more. Do not try to deny them into change."
+        "Deny yourself once more. You cannot force them to change."
       ],
       "prayers": [
         "Lord, I lay self down. I take up my cross. Amen."
@@ -754,18 +754,18 @@
           "type": "list",
           "items": [
             "Capture every destructive thought. Stop. Name it. Refuse to feed it. Submit it to Christ.",
-            "Refuse investigation — the evidence-hunt. Small gaps are not a case you must solve now.",
+            "Refuse the case-hunt. Small gaps are not a case you must solve now.",
             "Refuse condemnation — the accuser’s voice. Conviction leads to life; condemnation freezes. Own once, cleanse, rise.",
-            "Combat fear with power, love, and a sound mind. Hand the outcome to God.",
+            "Fight fear with power, love, and a sound mind. Hand the outcome to God.",
             "Refuse the flesh: no rage, control, monitoring, revenge, or settled bitterness.",
-            "Forgive. Release the debt. Stay on your side of the street.",
-            "Guard body and desire. Love without disappearing. Your emotional state is your own.",
+            "Forgive. Release the debt. Do your part.",
+            "Guard body and desire. Love without disappearing. Do not let their choices rule your peace.",
             "Low contact when the bond is unstable. Logistics only. Strength, not need. Trust God over understanding."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Prayer: “Father, I take every thought captive. I refuse investigation and condemnation. I walk in the Spirit. Amen.”"
+          "text": "Prayer: “Father, I take every thought captive. I refuse the case-hunt and condemnation. I walk in the Spirit. Amen.”"
         },
         {
           "type": "paragraph",
@@ -773,7 +773,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Mind war runs deeper than one card. Journeys → Battlefield of the mind (investigation, sticky words, fiery darts, renew, armor). Holds below when fog needs a map."
+          "text": "Mind war runs deeper than one card. Journeys → Battlefield of the mind (case-hunt, sticky words, fiery darts, renew, armor). Holds below when fog needs a map."
         },
         {
           "type": "heading",
@@ -809,7 +809,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "2. Refuse investigation"
+          "text": "2. Refuse the case-hunt"
         },
         {
           "type": "paragraph",
@@ -818,7 +818,7 @@
         {
           "type": "list",
           "items": [
-            "Name it: “This is investigation.”",
+            "Name it: “This is a case-hunt.”",
             "Refuse every lead.",
             "Do not turn open questions into a case right now."
           ]
@@ -838,7 +838,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The accuser’s voice: self-tape, sticky words of others, judgment, unforgiveness of self, fiery darts. Conviction is specific and leads to life. Condemnation freezes."
+          "text": "The accuser’s voice: self-hate loops, sticky words of others, judgment, fiery darts. Conviction is specific and leads to life. Condemnation freezes."
         },
         {
           "type": "list",
@@ -859,7 +859,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "4. Combat fear"
+          "text": "4. Fight fear"
         },
         {
           "type": "paragraph",
@@ -938,13 +938,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Guard eyes, thoughts, and body. Do not push for intimacy or emotional processing."
+          "text": "Guard eyes, thoughts, and body. Do not push for intimacy or force deep talks."
         },
         {
           "type": "list",
           "items": [
             "Stop the urge.",
-            "Do not pursue self-gratification.",
+            "Do not chase self-gratification.",
             "Submit the thought to Christ."
           ]
         },
@@ -963,14 +963,14 @@
         },
         {
           "type": "paragraph",
-          "text": "You are whole under God. Love without disappearing or managing their emotions."
+          "text": "You are whole under God. Love without disappearing or managing their feelings."
         },
         {
           "type": "list",
           "items": [
-            "No over-functioning.",
+            "Do not over-function.",
             "Be present where God has you.",
-            "Your emotional state is your own."
+            "Do not let their choices rule your peace."
           ]
         },
         {
@@ -1013,7 +1013,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When the bond is unstable: low contact. Logistics only. Not for regulation or reassurance."
+          "text": "When the bond is unstable: low contact. Logistics only. Not to calm your pain or force reassurance."
         },
         {
           "type": "list",
@@ -1034,7 +1034,7 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "11. Side of the street"
+          "text": "11. Do your part"
         },
         {
           "type": "paragraph",
@@ -1044,8 +1044,8 @@
           "type": "list",
           "items": [
             "Notice the drift.",
-            "Stop building narratives.",
-            "Return to your side."
+            "Stop building stories.",
+            "Return to your part."
           ]
         },
         {
@@ -1059,17 +1059,17 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "12. External pressure"
+          "text": "12. Outside pressure"
         },
         {
           "type": "paragraph",
-          "text": "Old patterns and third parties return. Do not compete or surveil."
+          "text": "Old patterns and third parties return. Do not compete or spy."
         },
         {
           "type": "list",
           "items": [
             "Notice the pull.",
-            "Stay on your side.",
+            "Do your part.",
             "Hand the situation to God."
           ]
         },
@@ -1088,19 +1088,19 @@
         },
         {
           "type": "paragraph",
-          "text": "Do not initiate from anxiety. Do not measure worth by their tone."
+          "text": "Do not reach out from anxiety. Do not measure worth by their tone."
         },
         {
           "type": "list",
           "items": [
-            "Stop initiating from need.",
+            "Stop reaching from need.",
             "Bring the raw sentence to the Lord.",
             "Measure by obedience, not their response."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Prayer: “My emotional state is mine to manage. It is not dependent on them.”"
+          "text": "Prayer: “My peace is not dependent on them. I hand this to You.”"
         },
         {
           "type": "paragraph",
@@ -1120,7 +1120,7 @@
           "items": [
             "Refuse the demand to figure it all out.",
             "Hand unanswered questions to Him.",
-            "Return to your side of the street."
+            "Do your part."
           ]
         },
         {
@@ -1143,7 +1143,7 @@
         {
           "type": "list",
           "items": [
-            "No one else stabilizes your emotions for you.",
+            "No one else steadies your peace for you.",
             "Courage stays steady without forcing closeness.",
             "Govern yourself; do not manage her."
           ]
@@ -1430,12 +1430,12 @@
         }
       ],
       "hacks": [
-        "Capture the thought. Refuse the evidence-hunt and the accuser. Conviction leads to life.",
-        "Obey what is yours. Their replies are theirs. Success is Spirit, not outcomes.",
-        "For deeper mind war: Journeys → Battlefield of the mind. Field card first."
+        "Capture the thought. Refuse the case-hunt and the accuser. Conviction leads to life.",
+        "Do your part. Their replies are theirs. Success is Spirit, not outcomes.",
+        "Deeper mind war: Journeys → Battlefield of the mind. Field card first."
       ],
       "prayers": [
-        "Father, I take every thought captive. I refuse the accuser. Amen."
+        "Father, I release every thought to You. I refuse the accuser. Amen."
       ],
       "related": [
         "walk-by-the-spirit",
@@ -2267,9 +2267,9 @@
         }
       ],
       "hacks": [
-        "Love them. Do not let their choices rule your spirit.",
+        "Love them. Do not let their choices rule your peace.",
         "Rage, lust, and the check-again loop are not masters.",
-        "Name the impulse. Delay. Capture the thought. Keep in step with the Spirit."
+        "Name the urge. Wait. Capture the thought. Keep in step with the Spirit."
       ],
       "prayers": [
         "Holy Spirit, keep me in step. Amen."
@@ -2699,8 +2699,8 @@
         }
       ],
       "hacks": [
-        "Broken is not useless. God looks to the humble, not the polished.",
-        "Do not rush past conviction. Let sorrow lead to life, not freeze in shame."
+        "Broken is not useless. God looks to the humble, not the show.",
+        "Do not rush past conviction. Let sorrow lead to life, not stuck shame."
       ],
       "prayers": [
         "Father, I bring a broken heart. Look on me in mercy. Amen."
@@ -2753,7 +2753,7 @@
       ],
       "hacks": [
         "Everything flows from the heart. Guard what you take in and what you say.",
-        "Before you speak: does this build up, or only vent pressure?"
+        "Before you speak: does this build up, or only dump heat?"
       ],
       "prayers": [
         "Lord, guard my mouth and keep my heart. Amen."
@@ -3581,9 +3581,9 @@
         }
       ],
       "hacks": [
-        "You were harmed. Name it. Not all of it is your fault. Do not hide in hate.",
-        "What they did does not cancel whose you are. You are His.",
-        "Do not repay evil. Leave judgment to God. Keep wise boundaries. Grieve. Love without needing them to fix you inside."
+        "You were harmed. Name it. Not all of it is your fault.",
+        "You are His. What they did does not change that. Do not let their choices rule your peace.",
+        "Do not repay evil. Leave judgment to God. Grieve. Keep wise bounds."
       ],
       "prayers": [
         "Father, You see what was done to me. Heal me and hold me. Amen."
@@ -3831,7 +3831,7 @@
         }
       ],
       "hacks": [
-        "If it masters you, it is not free. Name the master. Refuse its throne.",
+        "If it masters you, it is not free. Name the master. Walk free this hour.",
         "Be filled with the Spirit. Put the flesh to death one hour at a time.",
         "Confess. Get real help. One sober step now."
       ],
@@ -3986,9 +3986,9 @@
         }
       ],
       "hacks": [
-        "Love them. Do not let their choices rule your spirit.",
+        "Love them. Do not let their choices rule your peace.",
         "Name the grip. If you must hold it, it has become a god. Open the hand.",
-        "Self-control rules you, not them. Take the next obedient step. Leave the rest to Him."
+        "Rule yourself, not them. Do your part. Leave the rest to God."
       ],
       "prayers": [
         "Lord, I release control. Direct my path. Amen."
@@ -4234,7 +4234,7 @@
         }
       ],
       "hacks": [
-        "God’s words give light to the simple. Open the Bible.",
+        "The enemy says you cannot understand. Open the Bible anyway.",
         "Read a short passage. Ask the Spirit. Obey the next clear line.",
         "Abide in His Word. Truth sets free."
       ],
@@ -4369,7 +4369,7 @@
       ],
       "hacks": [
         "He is real. Name him when Scripture does. Then fix your eyes on Jesus.",
-        "Discern fruit. Do not chase the devil’s résumé.",
+        "Discern fruit. Do not fixate on the devil.",
         "Submit to God. Resist the devil. Stand in the Word."
       ],
       "prayers": [
@@ -4691,9 +4691,9 @@
         }
       ],
       "hacks": [
-        "Name the flesh without soft labels. Do not rename sin as “self-care.”",
+        "Name the sin. Do not rename it as “self-care.”",
         "Those who practice these things will not inherit the kingdom. Take the warning.",
-        "Walk by the Spirit. Put the flesh to death. Do not negotiate."
+        "Walk by the Spirit. Put the flesh to death. Do not bargain with it."
       ],
       "prayers": [
         "Father, I renounce the flesh. Lead me by Your Spirit. Amen."

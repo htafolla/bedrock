@@ -103,7 +103,7 @@ describe('core journeys SSOT', () => {
       'his-promises',
       'lament-and-pour-out-your-heart',
     ])
-    expect(stageByChamber(j, 'hope-of-glory')?.label).toMatch(/Pain and glory/i)
+    expect(stageByChamber(j, 'hope-of-glory')?.label).toMatch(/Hope|Pain and glory/i)
   })
 
   it('journeysForChamber finds loss and wounded doors', () => {

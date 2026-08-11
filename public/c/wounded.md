@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- You were harmed. Name it. Not all of it is your fault. Do not hide in hate.
-- What they did does not cancel whose you are. You are His.
-- Do not repay evil. Leave judgment to God. Keep wise boundaries. Grieve. Love without needing them to fix you inside.
+- You were harmed. Name it. Not all of it is your fault.
+- You are His. What they did does not change that. Do not let their choices rule your peace.
+- Do not repay evil. Leave judgment to God. Grieve. Keep wise bounds.
 
 ## Prayer
 

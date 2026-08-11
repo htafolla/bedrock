@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Love them. Do not let their choices rule your spirit.
+- Love them. Do not let their choices rule your peace.
 - Rage, lust, and the check-again loop are not masters.
-- Name the impulse. Delay. Capture the thought. Keep in step with the Spirit.
+- Name the urge. Wait. Capture the thought. Keep in step with the Spirit.
 
 ## Prayer
 

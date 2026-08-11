@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Love them. Do not let their choices rule your spirit.
+- Love them. Do not let their choices rule your peace.
 - Name the grip. If you must hold it, it has become a god. Open the hand.
-- Self-control rules you, not them. Take the next obedient step. Leave the rest to Him.
+- Rule yourself, not them. Do your part. Leave the rest to God.
 
 ## Prayer
 

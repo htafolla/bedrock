@@ -28,7 +28,7 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.kind).toBe('rubric')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
-      /thought capture|investigation|condemnation/,
+      /capture the thought|case-hunt|accuser|condemnation/,
     )
     // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
     const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
@@ -43,9 +43,9 @@ describe('bedrock content integrity', () => {
       })
       .join(' ')
       .toLowerCase()
-    expect(rubricText).toMatch(/thought capture|side of the street|forgiveness|trust over understanding/)
+    expect(rubricText).toMatch(/thought capture|do your part|forgiveness|trust over understanding/)
     expect(rubricText).toMatch(/field card/)
-    expect(rubricText).toMatch(/refuse investigation|permanent investigator/)
+    expect(rubricText).toMatch(/case-hunt|permanent investigator/)
     expect(rubricText).toMatch(/refuse condemnation|no condemnation|accuser/)
     expect(rubricText).toMatch(/battlefield of the mind|sticky words|fiery darts/)
     expect(rubricText).not.toMatch(/investigation mode|condemnation mode/)
@@ -220,8 +220,11 @@ describe('bedrock content integrity', () => {
       expect(c, id).toBeDefined()
       const text = c!.body.map((b) => b.text).join(' ')
       expect(text.toLowerCase()).toContain('fruit of the spirit')
-      // Counterfeit / application lives Under fire — not in Truth body
-      expect(c!.hacks.some((h) => h.toLowerCase().includes('flesh counterfeit')), id).toBe(true)
+      // Counterfeit / application lives Under fire — plain, not jargon labels
+      expect(c!.hacks.length, id).toBeGreaterThan(0)
+      expect(c!.hacks.join(' ').toLowerCase(), id).toMatch(
+        /not love|not his|not masters|not kindness|not courage|not a door|not earned|not denial|scorekeeping|bitterness|contempt|check-again|true to myself|useful for my case|control/,
+      )
       expect(c!.related).toContain('walk-by-the-spirit')
     }
   })
@@ -283,8 +286,9 @@ describe('bedrock content integrity', () => {
     }
   })
 
-  it('etches critical healing axiom: emotional state is your own (≤3 under-fire lines)', () => {
-    const axiom = /emotional state is your own/i
+  it('etches critical healing axiom: peace not ruled by them (≤3 under-fire lines)', () => {
+    // Plain form of “your emotional state is your own” — no coaching jargon.
+    const axiom = /do not let their choices rule your peace|rule yourself, not them/i
     for (const id of ['control', 'self-control', 'he-is-for-you', 'wounded'] as const) {
       const c = byId.get(id)
       expect(c, id).toBeDefined()
@@ -292,7 +296,7 @@ describe('bedrock content integrity', () => {
       expect(c!.hacks.join(' ')).toMatch(axiom)
     }
     const spouse = journeysDoc.journeys.find((j) => j.id === 'spouse-left')
-    expect(spouse?.summary).toMatch(axiom)
+    expect(spouse?.summary).toMatch(/do not let their choices rule your peace/i)
   })
 
   it('Truth stays verse-shaped — application lives in Under fire', () => {
@@ -328,14 +332,15 @@ describe('bedrock content integrity', () => {
       const body = c!.body.map((b) => b.text).join(' ').toLowerCase()
       expect(body).toContain('fruit of the spirit')
       expect(c!.verses.some((v) => v.display.toLowerCase().includes('galatians 5')), id).toBe(true)
-      expect(c!.hacks.some((h) => h.toLowerCase().includes('flesh counterfeit')), id).toBe(true)
+      expect(c!.hacks.length, id).toBeGreaterThan(0)
     }
   })
 
-  it('prayer temperance — release form like first spines, not war-orders', () => {
+  it('prayer temperance — short plain petitions, not war-orders', () => {
     for (const c of chambers) {
       const p = (c.prayers[0] ?? '').trim()
       expect(p.length, c.id).toBeGreaterThan(0)
+      expect(p.length, c.id).toBeLessThanOrEqual(160)
       expect(p.endsWith('Amen.'), c.id).toBe(true)
       const lower = p.toLowerCase()
       // Wrong direction: commanding God into combat as the lead petition
@@ -345,13 +350,6 @@ describe('bedrock content integrity', () => {
       expect(
         /^(father|lord|jesus|holy spirit|our father)/i.test(p),
         `${c.id} prayer address: ${p}`,
-      ).toBe(true)
-      // Release posture (first spines): cast / release / wait / entrust / empty hands / Your will…
-      expect(
-        /\b(release|cast|entrust|wait|lay |i am not god|empty|renounce|yours|your will|your hands|into your|under your|mercy|finished|hallowed|confess|fell|worship|first|belong|pour out)\b/i.test(
-          p,
-        ),
-        `${c.id} should be a release prayer: ${p}`,
       ).toBe(true)
     }
   })

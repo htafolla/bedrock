@@ -27,8 +27,8 @@ export const FIELD_AIDS = {
   },
   'his-provision': {
     hacks: [
-      'Ask for today’s bread, not a five-year fortress.',
-      'Your Father knows what you need. Anxiety is not a plan.',
+      'Ask for today’s bread, not the whole future.',
+      'Your Father knows what you need. Worry is not a plan.',
     ],
     prayers: ['Father, give us this day our daily bread. Amen.'],
   },
@@ -45,13 +45,13 @@ export const FIELD_AIDS = {
     hacks: [
       'If God is for you, stop replaying every face against you.',
       'Cast your care on Him. He cares for you.',
-      'Love them. Keep your heart under God. Your peace is not theirs to rule.',
+      'Love them. Keep your heart under God. Do not let their choices rule your peace.',
     ],
     prayers: ['Lord, You are for me. I cast my cares on You. Amen.'],
   },
   'the-meaning-of-life': {
     hacks: [
-      'Love God. Love people. The rest is secondary.',
+      'Love God. Love people. The rest comes after.',
       'What does love require of me in the next hour?',
     ],
     prayers: ['Jesus, You are the aim. Teach me to love You and my neighbor. Amen.'],
@@ -59,7 +59,7 @@ export const FIELD_AIDS = {
   'deny-yourself': {
     hacks: [
       'The cross is daily. What must you lay down right now?',
-      'Deny the flesh once more. Do not try to deny them into change.',
+      'Deny yourself once more. You cannot force them to change.',
     ],
     prayers: ['Lord, I lay self down. I take up my cross. Amen.'],
   },
@@ -79,15 +79,15 @@ export const FIELD_AIDS = {
   },
   'a-broken-and-contrite-heart': {
     hacks: [
-      'Broken is not useless. God looks to the humble, not the polished.',
-      'Do not rush past conviction. Let sorrow lead to life, not freeze in shame.',
+      'Broken is not useless. God looks to the humble, not the show.',
+      'Do not rush past conviction. Let sorrow lead to life, not stuck shame.',
     ],
     prayers: ['Father, I bring a broken heart. Look on me in mercy. Amen.'],
   },
   'guard-your-heart-and-mouth': {
     hacks: [
       'Everything flows from the heart. Guard what you take in and what you say.',
-      'Before you speak: does this build up, or only vent pressure?',
+      'Before you speak: does this build up, or only dump heat?',
     ],
     prayers: ['Lord, guard my mouth and keep my heart. Amen.'],
   },
@@ -237,9 +237,9 @@ export const FIELD_AIDS = {
   },
   'self-control': {
     hacks: [
-      'Love them. Do not let their choices rule your spirit.',
+      'Love them. Do not let their choices rule your peace.',
       'Rage, lust, and the check-again loop are not masters.',
-      'Name the impulse. Delay. Capture the thought. Keep in step with the Spirit.',
+      'Name the urge. Wait. Capture the thought. Keep in step with the Spirit.',
     ],
     prayers: ['Holy Spirit, keep me in step. Amen.'],
   },
@@ -319,9 +319,9 @@ export const FIELD_AIDS = {
   },
   wounded: {
     hacks: [
-      'You were harmed. Name it. Not all of it is your fault. Do not hide in hate.',
-      'What they did does not cancel whose you are. You are His.',
-      'Do not repay evil. Leave judgment to God. Keep wise boundaries. Grieve. Love without needing them to fix you inside.',
+      'You were harmed. Name it. Not all of it is your fault.',
+      'You are His. What they did does not change that. Do not let their choices rule your peace.',
+      'Do not repay evil. Leave judgment to God. Grieve. Keep wise bounds.',
     ],
     prayers: ['Father, You see what was done to me. Heal me and hold me. Amen.'],
   },
@@ -351,7 +351,7 @@ export const FIELD_AIDS = {
   },
   addiction: {
     hacks: [
-      'If it masters you, it is not free. Name the master. Refuse its throne.',
+      'If it masters you, it is not free. Name the master. Walk free this hour.',
       'Be filled with the Spirit. Put the flesh to death one hour at a time.',
       'Confess. Get real help. One sober step now.',
     ],
@@ -367,9 +367,9 @@ export const FIELD_AIDS = {
   },
   control: {
     hacks: [
-      'Love them. Do not let their choices rule your spirit.',
+      'Love them. Do not let their choices rule your peace.',
       'Name the grip. If you must hold it, it has become a god. Open the hand.',
-      'Self-control rules you, not them. Take the next obedient step. Leave the rest to Him.',
+      'Rule yourself, not them. Do your part. Leave the rest to God.',
     ],
     prayers: ['Lord, I release control. Direct my path. Amen.'],
   },
@@ -383,7 +383,7 @@ export const FIELD_AIDS = {
   },
   'the-word': {
     hacks: [
-      'God’s words give light to the simple. Open the Bible.',
+      'The enemy says you cannot understand. Open the Bible anyway.',
       'Read a short passage. Ask the Spirit. Obey the next clear line.',
       'Abide in His Word. Truth sets free.',
     ],
@@ -392,7 +392,7 @@ export const FIELD_AIDS = {
   'the-adversary': {
     hacks: [
       'He is real. Name him when Scripture does. Then fix your eyes on Jesus.',
-      'Discern fruit. Do not chase the devil’s résumé.',
+      'Discern fruit. Do not fixate on the devil.',
       'Submit to God. Resist the devil. Stand in the Word.',
     ],
     prayers: ['Father, I stand with You. Amen.'],
@@ -415,19 +415,19 @@ export const FIELD_AIDS = {
   },
   'works-of-the-flesh': {
     hacks: [
-      'Name the flesh without soft labels. Do not rename sin as “self-care.”',
+      'Name the sin. Do not rename it as “self-care.”',
       'Those who practice these things will not inherit the kingdom. Take the warning.',
-      'Walk by the Spirit. Put the flesh to death. Do not negotiate.',
+      'Walk by the Spirit. Put the flesh to death. Do not bargain with it.',
     ],
     prayers: ['Father, I renounce the flesh. Lead me by Your Spirit. Amen.'],
   },
   'kill-the-flesh-walk-in-the-spirit': {
     hacks: [
-      'Capture the thought. Refuse the evidence-hunt and the accuser. Conviction leads to life.',
-      'Obey what is yours. Their replies are theirs. Success is Spirit, not outcomes.',
-      'For deeper mind war: Journeys → Battlefield of the mind. Field card first.',
+      'Capture the thought. Refuse the case-hunt and the accuser. Conviction leads to life.',
+      'Do your part. Their replies are theirs. Success is Spirit, not outcomes.',
+      'Deeper mind war: Journeys → Battlefield of the mind. Field card first.',
     ],
-    prayers: ['Father, I take every thought captive. I refuse the accuser. Amen.'],
+    prayers: ['Father, I release every thought to You. I refuse the accuser. Amen.'],
   },
   adultery: {
     hacks: [

@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Name the flesh without soft labels. Do not rename sin as “self-care.”
+- Name the sin. Do not rename it as “self-care.”
 - Those who practice these things will not inherit the kingdom. Take the warning.
-- Walk by the Spirit. Put the flesh to death. Do not negotiate.
+- Walk by the Spirit. Put the flesh to death. Do not bargain with it.
 
 ## Prayer
 

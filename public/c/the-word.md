@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- God’s words give light to the simple. Open the Bible.
+- The enemy says you cannot understand. Open the Bible anyway.
 - Read a short passage. Ask the Spirit. Obey the next clear line.
 - Abide in His Word. Truth sets free.
 

@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Ask for today’s bread, not a five-year fortress.
-- Your Father knows what you need. Anxiety is not a plan.
+- Ask for today’s bread, not the whole future.
+- Your Father knows what you need. Worry is not a plan.
 
 ## Prayer
 

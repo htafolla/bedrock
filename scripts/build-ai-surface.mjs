@@ -355,7 +355,7 @@ function chamberHtml(c, meta) {
   const related = c.related
     .map((id) => `<li><a href="/c/${esc(id)}">${esc(id)}</a></li>`)
     .join('\n')
-  const kicker = isRubric ? 'Rubric · operational standard · Bedrock' : 'First principle · Bedrock'
+  const kicker = isRubric ? 'Rubric · daily standard · Bedrock' : 'First principle · Bedrock'
   const truthHeading = isRubric ? 'The standard' : 'Truth'
   const truthClass = isRubric ? 'card card-rubric' : 'card'
 

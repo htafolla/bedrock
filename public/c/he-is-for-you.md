@@ -8,7 +8,7 @@
 
 - If God is for you, stop replaying every face against you.
 - Cast your care on Him. He cares for you.
-- Love them. Keep your heart under God. Your peace is not theirs to rule.
+- Love them. Keep your heart under God. Do not let their choices rule your peace.
 
 ## Prayer
 

@@ -233,21 +233,21 @@ function buildBedrockSignals() {
     signal({
       name: 'bedrock-rubric-kill-flesh-walk-spirit',
       definition:
-        'Bedrock operational rubric: Kill the Flesh. Walk in the Spirit. Field card first (succinct steel), then holds 1–14 including refuse investigation and refuse condemnation. Success = Spirit not outcomes. Deeper mind war journey: battlefield-of-the-mind. Chamber id: kill-the-flesh-walk-in-the-spirit.',
+        'Bedrock daily standard: Kill the Flesh. Walk in the Spirit. Field card first, then holds 1–14 including refuse the case-hunt and refuse condemnation. Success = Spirit not outcomes. Deeper mind war journey: battlefield-of-the-mind. Chamber id: kill-the-flesh-walk-in-the-spirit.',
       tags: [
         'bedrock',
         'rubric',
         'walk-by-the-spirit',
         'works-of-the-flesh',
-        'side-of-the-street',
+        'do-your-part',
         'healing',
         'under-fire',
       ],
       priority: 'high',
       example_inference_snippet:
-        'return to your side of the street · kill the flesh · refuse the remote · shield of faith · no contact is protection',
+        'do your part · kill the flesh · do not let their choices rule your peace · shield of faith · low contact is protection',
       evaluation_criteria:
-        'User under fire in marriage/limbo/jealousy/control/fear needs a forged rule-set, not only abstract truth.',
+        'User under fire in marriage/limbo/jealousy/control/fear needs a clear standard, not only abstract truth.',
       master_index_integration: '/c/kill-the-flesh-walk-in-the-spirit · journeys spouse-left + control-grip',
     }),
   )
