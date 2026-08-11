@@ -40,14 +40,17 @@ function ChipButton({
   )
 }
 
-/** Shared header copy — keep desktop + mobile aligned. */
+/**
+ * Human copy under fog — short, mobile-first.
+ * Do not explain Share (obvious on the open card) or re-teach the whole product.
+ */
 export const KEYS_BLURB =
-  'Tap the key that hits → Under fire is the hold (seconds). Prayer if you need words. Truth when you can read. Share on the open card only. Paths: Journeys. Standard: Kill the Flesh.'
+  'Tap what hits. Under fire is the hold. Longer walk: Journeys.'
 
-const KEYS_BLURB_MOBILE =
-  'Tap a key → Under fire first. Prayer next. Share on the card. Paths: Journeys.'
+/** Even tighter on the carousel (two-line clamp). */
+const KEYS_BLURB_MOBILE = 'Tap what hits. Under fire is the hold.'
 
-/** Storm triage — full grid on desktop; 3-up carousel on mobile. */
+/** Storm triage — 3-up carousel on mobile; full grid on desktop. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
   const { isNarrow } = useMediaCapability()
 
