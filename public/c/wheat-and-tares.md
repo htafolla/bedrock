@@ -7,7 +7,7 @@
 ## Under fire
 
 - The field is mixed. Not every plant is the Master’s.
-- Stay awake. The enemy sows while people sleep.
+- Stay awake. Weeds grow while people sleep.
 - Judgment is the Lord’s. Plant good seed. Refuse the weed in you.
 
 ## Prayer

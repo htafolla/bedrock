@@ -108,7 +108,7 @@ export const SPINE_ANCHORS = [
   'forgive-as-you-have-been-forgiven',
   'renew-your-mind',
   'the-word', // combat the lie that people cannot know or understand Scripture
-  'the-adversary', // real; name him — do not fixate; stand with God
+  'the-adversary', // Christ has won — eyes on Jesus; stand with God
   'spiritual-warfare',
   'works-of-the-flesh',
   'the-full-armor-of-god',

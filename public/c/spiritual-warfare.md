@@ -7,8 +7,8 @@
 ## Under fire
 
 - This is not only circumstance. Stay sober and watchful.
-- The lie says you cannot understand the Word. Open Scripture. Fight with it.
-- Stand under Christ. Resist. Do not fight in the flesh.
+- The lie says you cannot understand the Word. Open Scripture. Obey it.
+- Stand under Christ. Do not fight in the flesh. Eyes on Him.
 
 ## Prayer
 

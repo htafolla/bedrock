@@ -8,7 +8,7 @@
 
 - Sorcery and occult “help” are not neutral. Close those doors.
 - Do not buy power or mood control apart from the Lord.
-- If it owns you, renounce it. Draw near to God. Resist the devil.
+- If it owns you, renounce it. Draw near to God. You are His.
 
 ## Prayer
 

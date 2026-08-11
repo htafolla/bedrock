@@ -14,6 +14,6 @@ Canonical multi-station paths for crawlers and social share.
 - [Sexual sin](https://bedrock.rippel.ai/j/sexual-sin) — Confess, forsake, be cleansed. Do not call darkness a new identity. Deny yourself; walk by the Spirit.
 - [Stuck regret](https://bedrock.rippel.ai/j/stuck-regret) — Godly grief leads to life. Worldly grief only kills. Own what is yours. Self-hate is not holiness. Rise.
 - [Persecution](https://bedrock.rippel.ai/j/persecution) — Blessed when persecuted for righteousness. Armor on; do not repay; remain faithful; hope of glory.
-- [Spiritual warfare](https://bedrock.rippel.ai/j/spiritual-warfare-fog) — The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not on the devil.
+- [Spiritual warfare](https://bedrock.rippel.ai/j/spiritual-warfare-fog) — Christ has already won. Fix your eyes on Jesus. Stand with God. Walk by the Spirit.
 - [Forced waiting](https://bedrock.rippel.ai/j/forced-waiting) — You cannot force the timeline. Wait on the Lord; trust; one duty today; provision for this day.
 - [Battlefield of the mind](https://bedrock.rippel.ai/j/battlefield-of-the-mind) — The war is often inside. Capture the thought. Refuse the accuser. Renew the mind. Stand in the armor of God.

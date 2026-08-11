@@ -1,12 +1,12 @@
 # The Word
 
-> The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
+> The lie says you cannot know or understand. God says His Word is for you — light to the simple.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-word*
 
 ## Under fire
 
-- The enemy says you cannot understand. Open the Bible anyway.
+- The lie says you cannot understand. God says His Word is for you. Open it.
 - Read a short passage. Ask the Spirit. Obey the next clear line.
 - Abide in His Word. Truth sets free.
 

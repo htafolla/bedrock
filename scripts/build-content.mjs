@@ -1427,7 +1427,7 @@ const document = {
     ),
     chamber(
       'The Word',
-      'The enemy says you cannot know or understand. God says His Word is for you — light to the simple.',
+      'The lie says you cannot know or understand. God says His Word is for you — light to the simple.',
       [
         'The unfolding of Your words gives light; it imparts understanding to the simple.',
         'For this commandment that I command you today is not too hard for you, neither is it far off… But the word is very near you. It is in your mouth and in your heart, so that you can do it.',
@@ -1445,7 +1445,7 @@ const document = {
     ),
     chamber(
       'The Adversary',
-      'He is real. Do not stare at him. Name him, resist him, stand with God.',
+      'Christ has already won. Fix your eyes on Jesus. Stand with God.',
       [
         'Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith.',
         'You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.',

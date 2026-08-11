@@ -77,14 +77,21 @@ describe('bedrock content integrity', () => {
       /serpents|strongholds/,
     )
     expect(byId.has('the-word')).toBe(true)
-    expect(byId.get('the-word')!.summary.toLowerCase()).toMatch(/enemy|understand|word|simple/)
-    expect(byId.get('the-word')!.hacks.join(' ').toLowerCase()).toMatch(/cannot understand|enemy/)
+    expect(byId.get('the-word')!.summary.toLowerCase()).toMatch(/lie|understand|word|simple|god/)
+    expect(byId.get('the-word')!.hacks.join(' ').toLowerCase()).toMatch(/cannot understand|lie|word/)
     expect(byId.has('the-adversary')).toBe(true)
-    expect(byId.get('the-adversary')!.summary.toLowerCase()).toMatch(/real|resist|stand|devil|eyes/)
+    // Application is Christ-centered (defeated foe); Truth body may quote Scripture that names him
+    expect(byId.get('the-adversary')!.summary.toLowerCase()).toMatch(/christ|jesus|won|eyes|stand/)
     expect(byId.get('the-adversary')!.body.map((b) => b.text).join(' ').toLowerCase()).toMatch(
-      /devil|adversary|weeds|evil one|persecut/,
+      /devil|adversary|weeds|evil one|persecut|crush satan|resist/,
     )
-    expect(byId.get('the-adversary')!.hacks.join(' ').toLowerCase()).toMatch(/stare|fixate|fascinat|resist/)
+    expect(byId.get('the-adversary')!.hacks.join(' ').toLowerCase()).toMatch(
+      /jesus|christ|stand|word|fruit/,
+    )
+    // Never teach staring / fixating on the adversary in holds
+    expect(byId.get('the-adversary')!.hacks.join(' ').toLowerCase()).not.toMatch(
+      /stare|fixate|fascinat/,
+    )
     expect(byId.has('spiritual-warfare')).toBe(true)
     expect(byId.has('works-of-the-flesh')).toBe(true)
     expect(byId.has('wheat-and-tares')).toBe(true)

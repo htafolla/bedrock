@@ -53,8 +53,8 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Control](https://bedrock.rippel.ai/c/control) — Open the hand — trust is not passivity; self-control rules you, not them.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
-- [The Word](https://bedrock.rippel.ai/c/the-word) — The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
-- [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — He is real. Do not stare at him. Name him, resist him, stand with God.
+- [The Word](https://bedrock.rippel.ai/c/the-word) — The lie says you cannot know or understand. God says His Word is for you — light to the simple.
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — Christ has already won. Fix your eyes on Jesus. Stand with God.
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare) — We are at war — not against flesh and blood.
 - [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares) — A good farmer sowed wheat; an enemy sowed weeds at night.
 - [Persecution](https://bedrock.rippel.ai/c/persecution) — Blessed when they revile you for His name — stand, bless, do not repay evil.

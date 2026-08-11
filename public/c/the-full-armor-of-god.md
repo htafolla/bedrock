@@ -7,7 +7,7 @@
 ## Under fire
 
 - Put on the armor daily: truth, righteousness, peace, faith, salvation, Word, prayer.
-- Fiery darts will come. Raise the shield of faith.
+- Fiery darts may come. Raise the shield of faith. Eyes on Christ.
 - Armor is for standing. Stay dressed. Stay praying.
 
 ## Prayer

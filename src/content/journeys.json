@@ -905,7 +905,7 @@
           "role": "spiral",
           "label": "Warfare",
           "chamberId": "spiritual-warfare",
-          "note": "Not against flesh and blood. Do not stare at the devil."
+          "note": "Not against flesh and blood. Stand under Christ."
         },
         {
           "id": "fork",
@@ -935,7 +935,7 @@
       "title": "Spiritual warfare",
       "family": "world",
       "wave": 3,
-      "summary": "The adversary is real. Name him, resist, stand with God. Fix eyes on Christ — not on the devil.",
+      "summary": "Christ has already won. Fix your eyes on Jesus. Stand with God. Walk by the Spirit.",
       "plainSpeech": [
         "spiritual warfare",
         "under attack",
@@ -964,7 +964,7 @@
           "role": "near",
           "label": "Adversary",
           "chamberId": "the-adversary",
-          "note": "Real; do not fixate."
+          "note": "Christ has won. Eyes on Jesus."
         },
         {
           "id": "armor",
@@ -978,14 +978,14 @@
           "role": "fork",
           "label": "Word",
           "chamberId": "the-word",
-          "note": "Sword of the Spirit; fight the lie you cannot understand."
+          "note": "Open Scripture. The lie says you cannot understand — God says you can."
         },
         {
           "id": "prayer",
           "role": "fork",
           "label": "Prayer",
           "chamberId": "prayer",
-          "note": "Pray. Do not spiral into staring at the enemy."
+          "note": "Pray. Keep your eyes on the Lord."
         },
         {
           "id": "captive",
@@ -1144,7 +1144,7 @@
           "role": "fork",
           "label": "Darts",
           "chamberId": "the-adversary",
-          "note": "Fiery darts are real. Do not give him your mind."
+          "note": "Fiery darts may come. Raise the shield of faith. Eyes on Jesus."
         },
         {
           "id": "spiral-shame",

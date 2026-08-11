@@ -1,18 +1,18 @@
 # The Adversary
 
-> He is real. Do not stare at him. Name him, resist him, stand with God.
+> Christ has already won. Fix your eyes on Jesus. Stand with God.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-adversary*
 
 ## Under fire
 
-- He is real. Name him when Scripture does. Then fix your eyes on Jesus.
-- Judge by fruit. Do not stare at the devil.
-- Submit to God. Resist the devil. Stand in the Word.
+- Christ has already won. Fix your eyes on Jesus.
+- Judge by fruit. Keep your mind on the Lord.
+- Submit to God. Stand in the Word. Draw near to Him.
 
 ## Prayer
 
-Father, I stand with You. Amen.
+Father, I stand with You in Christ. Amen.
 
 ## Truth
 

@@ -376,14 +376,14 @@ export const FIELD_AIDS = {
   'spiritual-warfare': {
     hacks: [
       'This is not only circumstance. Stay sober and watchful.',
-      'The lie says you cannot understand the Word. Open Scripture. Fight with it.',
-      'Stand under Christ. Resist. Do not fight in the flesh.',
+      'The lie says you cannot understand the Word. Open Scripture. Obey it.',
+      'Stand under Christ. Do not fight in the flesh. Eyes on Him.',
     ],
     prayers: ['Father, I stand in Your strength and Your Word. Amen.'],
   },
   'the-word': {
     hacks: [
-      'The enemy says you cannot understand. Open the Bible anyway.',
+      'The lie says you cannot understand. God says His Word is for you. Open it.',
       'Read a short passage. Ask the Spirit. Obey the next clear line.',
       'Abide in His Word. Truth sets free.',
     ],
@@ -391,16 +391,16 @@ export const FIELD_AIDS = {
   },
   'the-adversary': {
     hacks: [
-      'He is real. Name him when Scripture does. Then fix your eyes on Jesus.',
-      'Judge by fruit. Do not stare at the devil.',
-      'Submit to God. Resist the devil. Stand in the Word.',
+      'Christ has already won. Fix your eyes on Jesus.',
+      'Judge by fruit. Keep your mind on the Lord.',
+      'Submit to God. Stand in the Word. Draw near to Him.',
     ],
-    prayers: ['Father, I stand with You. Amen.'],
+    prayers: ['Father, I stand with You in Christ. Amen.'],
   },
   'wheat-and-tares': {
     hacks: [
       'The field is mixed. Not every plant is the Master’s.',
-      'Stay awake. The enemy sows while people sleep.',
+      'Stay awake. Weeds grow while people sleep.',
       'Judgment is the Lord’s. Plant good seed. Refuse the weed in you.',
     ],
     prayers: ['Lord of the harvest, keep me awake and wheat. Amen.'],
@@ -441,7 +441,7 @@ export const FIELD_AIDS = {
     hacks: [
       'Sorcery and occult “help” are not neutral. Close those doors.',
       'Do not buy power or mood control apart from the Lord.',
-      'If it owns you, renounce it. Draw near to God. Resist the devil.',
+      'If it owns you, renounce it. Draw near to God. You are His.',
     ],
     prayers: ['Father, I release every counterfeit power. I belong to You. Amen.'],
   },
@@ -472,7 +472,7 @@ export const FIELD_AIDS = {
   'the-full-armor-of-god': {
     hacks: [
       'Put on the armor daily: truth, righteousness, peace, faith, salvation, Word, prayer.',
-      'Fiery darts will come. Raise the shield of faith.',
+      'Fiery darts may come. Raise the shield of faith. Eyes on Christ.',
       'Armor is for standing. Stay dressed. Stay praying.',
     ],
     prayers: ['Lord, I put on Your armor and stand. Amen.'],
