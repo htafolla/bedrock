@@ -2,11 +2,7 @@
 
 > In humility value others above yourselves.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/choose-selfless-love*
-
-## Truth
-
-Look not only to your own interests, but also to the interests of others.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/choose-selfless-love · OG https://bedrock.rippel.ai/og/c/choose-selfless-love.png*
 
 ## Under fire
 
@@ -16,6 +12,10 @@ Look not only to your own interests, but also to the interests of others.
 ## Prayer
 
 Lord, I release selfish ambition. Open my hands to serve in love. Amen.
+
+## Truth
+
+Look not only to your own interests, but also to the interests of others.
 
 ## Scripture
 
@@ -30,4 +30,4 @@ Lord, I release selfish ambition. Open my hands to serve in love. Amen.
 - [love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/choose-selfless-love.md

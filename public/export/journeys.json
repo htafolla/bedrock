@@ -100,7 +100,10 @@
           "chamberId": "peace",
           "note": "Peace given, not earned by gripping the timeline."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/death-of-loved-one",
+      "ogImage": "https://bedrock.rippel.ai/og/j/death-of-loved-one.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/loss"
     },
     {
       "id": "spouse-left",
@@ -218,7 +221,10 @@
           "chamberId": "hope-of-glory",
           "note": "Steadfast under trial."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/spouse-left",
+      "ogImage": "https://bedrock.rippel.ai/og/j/spouse-left.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/wounded"
     },
     {
       "id": "deep-wound",
@@ -290,7 +296,10 @@
           "chamberId": "peace",
           "note": "Receive the guard over heart and mind."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/deep-wound",
+      "ogImage": "https://bedrock.rippel.ai/og/j/deep-wound.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/wounded"
     },
     {
       "id": "abandonment-fear",
@@ -364,7 +373,10 @@
           "chamberId": "peace",
           "note": "Let the peace of Christ rule this hour."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/abandonment-fear",
+      "ogImage": "https://bedrock.rippel.ai/og/j/abandonment-fear.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/fear"
     },
     {
       "id": "addiction",
@@ -446,7 +458,10 @@
           "chamberId": "hope-of-glory",
           "note": "One next sober step; real help when needed."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/addiction",
+      "ogImage": "https://bedrock.rippel.ai/og/j/addiction.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/addiction"
     },
     {
       "id": "obsession",
@@ -513,7 +528,10 @@
           "chamberId": "peace",
           "note": "Mind stayed on Him."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/obsession",
+      "ogImage": "https://bedrock.rippel.ai/og/j/obsession.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/rumination"
     },
     {
       "id": "control-grip",
@@ -592,7 +610,10 @@
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
           "note": "Full operational standard: refuse the flesh; side of the street; success without their response."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/control-grip",
+      "ogImage": "https://bedrock.rippel.ai/og/j/control-grip.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/control"
     },
     {
       "id": "jealousy",
@@ -652,7 +673,10 @@
           "chamberId": "trust-in-the-lord",
           "note": "Release what is not yours to grip."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/jealousy",
+      "ogImage": "https://bedrock.rippel.ai/og/j/jealousy.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/jealousy"
     },
     {
       "id": "i-fell",
@@ -724,7 +748,10 @@
           "chamberId": "hope-of-glory",
           "note": "Your fall does not cancel the crucible."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/i-fell",
+      "ogImage": "https://bedrock.rippel.ai/og/j/i-fell.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/the-righteous-fall"
     },
     {
       "id": "sexual-sin",
@@ -799,7 +826,10 @@
           "chamberId": "the-righteous-fall",
           "note": "Identity is not the sin."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/sexual-sin",
+      "ogImage": "https://bedrock.rippel.ai/og/j/sexual-sin.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/adultery"
     },
     {
       "id": "stuck-regret",
@@ -863,7 +893,10 @@
           "chamberId": "the-righteous-fall",
           "note": "Next obedience."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/stuck-regret",
+      "ogImage": "https://bedrock.rippel.ai/og/j/stuck-regret.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/regret"
     },
     {
       "id": "persecution",
@@ -928,7 +961,10 @@
           "chamberId": "hope-of-glory",
           "note": "Crowns for those who remain."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/persecution",
+      "ogImage": "https://bedrock.rippel.ai/og/j/persecution.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/persecution"
     },
     {
       "id": "spiritual-warfare-fog",
@@ -1001,7 +1037,10 @@
           "chamberId": "hope-of-glory",
           "note": "Eyes on Christ."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/spiritual-warfare-fog",
+      "ogImage": "https://bedrock.rippel.ai/og/j/spiritual-warfare-fog.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/spiritual-warfare"
     },
     {
       "id": "forced-waiting",
@@ -1078,7 +1117,10 @@
           "chamberId": "hope-of-glory",
           "note": "Keep remaining today."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/forced-waiting",
+      "ogImage": "https://bedrock.rippel.ai/og/j/forced-waiting.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/patience"
     },
     {
       "id": "battlefield-of-the-mind",
@@ -1188,7 +1230,10 @@
           "chamberId": "the-full-armor-of-god",
           "note": "Shield of faith extinguishes darts. Stand."
         }
-      ]
+      ],
+      "url": "https://bedrock.rippel.ai/j/battlefield-of-the-mind",
+      "ogImage": "https://bedrock.rippel.ai/og/j/battlefield-of-the-mind.png",
+      "doorUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive"
     }
   ]
 }

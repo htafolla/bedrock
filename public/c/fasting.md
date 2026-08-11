@@ -2,7 +2,17 @@
 
 > Humble yourself with fasting — seek God, not applause.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/fasting*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/fasting · OG https://bedrock.rippel.ai/og/c/fasting.png*
+
+## Under fire
+
+- Fast to seek God, not to twist His arm or impress people. Secret, sincere, humbled.
+- Hunger can sharpen prayer — or harden pride. Pair the fast with the Word and mercy.
+- If health forbids a food fast, fast something that costs you: noise, scroll, appetite for control.
+
+## Prayer
+
+Lord, I set this aside to seek You. I release appetite for control. Humble me. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ And Jesus said to them, “Can the wedding guests mourn as long as the bridegroo
 While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.”
 
 So we fasted and implored our God for this, and He listened to our entreaty.
-
-## Under fire
-
-- Fast to seek God, not to twist His arm or impress people. Secret, sincere, humbled.
-- Hunger can sharpen prayer — or harden pride. Pair the fast with the Word and mercy.
-- If health forbids a food fast, fast something that costs you: noise, scroll, appetite for control.
-
-## Prayer
-
-Lord, I set this aside to seek You. I release appetite for control. Humble me. Amen.
 
 ## Scripture
 
@@ -48,4 +48,4 @@ Lord, I set this aside to seek You. I release appetite for control. Humble me. A
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fasting.md

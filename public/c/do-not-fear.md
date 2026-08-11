@@ -2,13 +2,7 @@
 
 > God has not given you a spirit of fear, but of power, love, and a sound mind.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/do-not-fear*
-
-## Truth
-
-Do not fear, for He is with you.
-
-You cannot add a single hour to your life. Even the hairs of your head are all numbered.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-fear · OG https://bedrock.rippel.ai/og/c/do-not-fear.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ You cannot add a single hour to your life. Even the hairs of your head are all n
 ## Prayer
 
 Lord, I release the spirit of fear. Be with me. Steady my mind. Amen.
+
+## Truth
+
+Do not fear, for He is with you.
+
+You cannot add a single hour to your life. Even the hairs of your head are all numbered.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Lord, I release the spirit of fear. Be with me. Steady my mind. Amen.
 - [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-fear.md

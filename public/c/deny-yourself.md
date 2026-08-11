@@ -2,13 +2,7 @@
 
 > Cross daily. Follow Me.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/deny-yourself*
-
-## Truth
-
-If anyone would come after Me, let him deny himself and take up his cross daily and follow Me.
-
-For whoever would save his life will lose it, but whoever loses his life for My sake will save it.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/deny-yourself · OG https://bedrock.rippel.ai/og/c/deny-yourself.png*
 
 ## Under fire
 
@@ -19,6 +13,12 @@ For whoever would save his life will lose it, but whoever loses his life for My 
 ## Prayer
 
 Lord, I lay self down. I take up my cross. I release the need to be god of this hour. Amen.
+
+## Truth
+
+If anyone would come after Me, let him deny himself and take up his cross daily and follow Me.
+
+For whoever would save his life will lose it, but whoever loses his life for My sake will save it.
 
 ## Scripture
 
@@ -33,4 +33,4 @@ Lord, I lay self down. I take up my cross. I release the need to be god of this 
 - [self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/deny-yourself.md

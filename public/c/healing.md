@@ -2,7 +2,17 @@
 
 > Jesus heals — ask, trust, and do not lose heart.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/healing*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/healing · OG https://bedrock.rippel.ai/og/c/healing.png*
+
+## Under fire
+
+- Ask boldly for healing. Receive His will either way — miracle, medicine, or mercy in the wait.
+- Do not shame the sick for “lack of faith.” Jesus healed the weak who came.
+- Pray, anoint, and also use wise means. God is not against doctors or against prayer.
+
+## Prayer
+
+Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ And these signs will accompany those who believe: in My name they will cast out 
 Bless the Lord, O my soul, and forget not all His benefits, who forgives all your iniquity, who heals all your diseases.
 
 Heal me, O Lord, and I shall be healed; save me, and I shall be saved, for You are my praise.
-
-## Under fire
-
-- Ask boldly for healing. Receive His will either way — miracle, medicine, or mercy in the wait.
-- Do not shame the sick for “lack of faith.” Jesus healed the weak who came.
-- Pray, anoint, and also use wise means. God is not against doctors or against prayer.
-
-## Prayer
-
-Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Amen.
 
 ## Scripture
 
@@ -49,4 +49,4 @@ Jesus, You are the Healer. I release the outcome into Your will. Have mercy. Ame
 - [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/healing.md

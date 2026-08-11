@@ -2,17 +2,7 @@
 
 > If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/jealousy*
-
-## Truth
-
-For where jealousy and selfish ambition exist, there will be disorder and every vile practice.
-
-Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.
-
-Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.
-
-But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/jealousy · OG https://bedrock.rippel.ai/og/c/jealousy.png*
 
 ## Under fire
 
@@ -23,6 +13,16 @@ But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, f
 ## Prayer
 
 Father, I release this jealousy. I will not demand control of another. Fill me with Your Spirit and teach me to love without grasping. Amen.
+
+## Truth
+
+For where jealousy and selfish ambition exist, there will be disorder and every vile practice.
+
+Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.
+
+Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.
+
+But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Father, I release this jealousy. I will not demand control of another. Fill me w
 - [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/jealousy.md

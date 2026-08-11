@@ -2,15 +2,7 @@
 
 > The greatest commandments.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/the-meaning-of-life*
-
-## Truth
-
-You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.
-
-You shall love your neighbor as yourself.
-
-On these two commandments depend all the Law and the Prophets.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-meaning-of-life · OG https://bedrock.rippel.ai/og/c/the-meaning-of-life.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ On these two commandments depend all the Law and the Prophets.
 ## Prayer
 
 Jesus, You are the aim. I release lesser gods. Teach me to love You and my neighbor. Amen.
+
+## Truth
+
+You shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.
+
+You shall love your neighbor as yourself.
+
+On these two commandments depend all the Law and the Prophets.
 
 ## Scripture
 
@@ -34,4 +34,4 @@ Jesus, You are the aim. I release lesser gods. Teach me to love You and my neigh
 - [god-first](https://bedrock.rippel.ai/c/god-first)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-meaning-of-life.md

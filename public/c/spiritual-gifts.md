@@ -2,7 +2,17 @@
 
 > Varieties of gifts, one Spirit — for the common good.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/spiritual-gifts*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-gifts · OG https://bedrock.rippel.ai/og/c/spiritual-gifts.png*
+
+## Under fire
+
+- Gifts of the Spirit are for the common good — not a stage name. Use what He gave.
+- Steward the gift as one who will give account. Do not bury the talent in fear.
+- Desire the greater gifts, and still walk in love — without love, gifts are noise.
+
+## Prayer
+
+Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen.
 
 ## Truth
 
@@ -19,16 +29,6 @@ And He gave the apostles, the prophets, the evangelists, the shepherds and teach
 Pursue love, and earnestly desire the spiritual gifts, especially that you may prophesy.
 
 If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
-
-## Under fire
-
-- Gifts of the Spirit are for the common good — not a stage name. Use what He gave.
-- Steward the gift as one who will give account. Do not bury the talent in fear.
-- Desire the greater gifts, and still walk in love — without love, gifts are noise.
-
-## Prayer
-
-Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen.
 
 ## Scripture
 
@@ -53,4 +53,4 @@ Holy Spirit, I release the stage. Show the gift and use it for Your body. Amen.
 - [love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-gifts.md

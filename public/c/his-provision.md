@@ -2,15 +2,7 @@
 
 > Give us this day our daily bread.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/his-provision*
-
-## Truth
-
-Your Father knows what you need before you ask Him.
-
-If you then, who are evil, know how to give good gifts to your children, how much more will your Father in heaven give good things to those who ask Him.
-
-Seek first the kingdom of God and His righteousness, and all these things will be added to you.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-provision · OG https://bedrock.rippel.ai/og/c/his-provision.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Seek first the kingdom of God and His righteousness, and all these things will b
 ## Prayer
 
 Father, give us this day our daily bread. I release tomorrow into Your knowing. Amen.
+
+## Truth
+
+Your Father knows what you need before you ask Him.
+
+If you then, who are evil, know how to give good gifts to your children, how much more will your Father in heaven give good things to those who ask Him.
+
+Seek first the kingdom of God and His righteousness, and all these things will be added to you.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Father, give us this day our daily bread. I release tomorrow into Your knowing. 
 - [god-first](https://bedrock.rippel.ai/c/god-first)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-provision.md

@@ -1,8 +1,16 @@
 # Bedrock — https://bedrock.rippel.ai
+# Hold-first Christian field guide. Prefer llms.txt for answer engines.
 User-agent: *
 Allow: /
+Allow: /c/
+Allow: /j/
+Allow: /k/
+Allow: /og/
+Allow: /export/
+Allow: /llms.txt
+Allow: /llms-full.txt
 
-# Common AI / answer-engine crawlers
+# Common AI / answer-engine crawlers — full access
 User-agent: GPTBot
 Allow: /
 
@@ -27,4 +35,11 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 Sitemap: https://bedrock.rippel.ai/sitemap.xml
+# Machine surface: https://bedrock.rippel.ai/llms.txt

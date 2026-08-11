@@ -2,7 +2,17 @@
 
 > Grief for real loss and possible loss — He is near the brokenhearted.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/loss*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/loss · OG https://bedrock.rippel.ai/og/c/loss.png*
+
+## Under fire
+
+- The Lord is near the brokenhearted — mourning is not unbelief.
+- Do not grieve as those without hope. Hope does not erase tears; it frames them.
+- The Lord gave and the Lord has taken away — bless His name with empty hands.
+
+## Prayer
+
+Father, my hands are empty. I release what I cannot keep. Be near the broken place. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ But we do not want you to be uninformed, brothers, about those who are asleep, t
 The Lord gave, and the Lord has taken away; blessed be the name of the Lord.
 
 He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.
-
-## Under fire
-
-- The Lord is near the brokenhearted — mourning is not unbelief.
-- Do not grieve as those without hope. Hope does not erase tears; it frames them.
-- The Lord gave and the Lord has taken away — bless His name with empty hands.
-
-## Prayer
-
-Father, my hands are empty. I release what I cannot keep. Be near the broken place. Amen.
 
 ## Scripture
 
@@ -46,4 +46,4 @@ Father, my hands are empty. I release what I cannot keep. Be near the broken pla
 - [rumination](https://bedrock.rippel.ai/c/rumination)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/loss.md

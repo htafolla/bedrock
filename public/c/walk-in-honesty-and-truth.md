@@ -2,15 +2,7 @@
 
 > Truthful lips. Yes and no.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/walk-in-honesty-and-truth*
-
-## Truth
-
-Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
-
-Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
-
-Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-in-honesty-and-truth · OG https://bedrock.rippel.ai/og/c/walk-in-honesty-and-truth.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Let what you say be simply “Yes” or “No”; anything more than this comes 
 ## Prayer
 
 Lord, I release managed darkness. Keep me in the light with straight words. Amen.
+
+## Truth
+
+Lying lips are an abomination to the Lord, but those who act faithfully are His delight.
+
+Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
+
+Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Lord, I release managed darkness. Keep me in the light with straight words. Amen
 - [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md

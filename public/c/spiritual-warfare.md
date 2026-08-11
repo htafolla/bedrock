@@ -2,7 +2,17 @@
 
 > We are at war — not against flesh and blood.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/spiritual-warfare*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-warfare · OG https://bedrock.rippel.ai/og/c/spiritual-warfare.png*
+
+## Under fire
+
+- Name the war: this is not only circumstance. Schemes are real — stay sober and watchful.
+- A chief lie: “You cannot know or understand the Word.” That is the serpent’s fog. Open Scripture; fight with the sword of the Spirit.
+- Weapons have divine power to destroy strongholds. Authority is given to trample the enemy — under Christ, not in flesh bravado. Resist; stand.
+
+## Prayer
+
+Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your strength and Your Word. Amen.
 
 ## Truth
 
@@ -23,16 +33,6 @@ Behold, I have given you authority to tread on serpents and scorpions, and over 
 The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly.
 
 You are of your father the devil, and your will is to do your father’s desires. He was a murderer from the beginning, and does not stand in the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.
-
-## Under fire
-
-- Name the war: this is not only circumstance. Schemes are real — stay sober and watchful.
-- A chief lie: “You cannot know or understand the Word.” That is the serpent’s fog. Open Scripture; fight with the sword of the Spirit.
-- Weapons have divine power to destroy strongholds. Authority is given to trample the enemy — under Christ, not in flesh bravado. Resist; stand.
-
-## Prayer
-
-Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your strength and Your Word. Amen.
 
 ## Scripture
 
@@ -58,4 +58,4 @@ Father, I release fighting in the flesh. Open my eyes to lies. I stand in Your s
 - [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-warfare.md

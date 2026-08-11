@@ -2,13 +2,7 @@
 
 > True love is patient, kind, and keeps no record of wrongs.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/love-and-patience*
-
-## Truth
-
-Love does not envy, boast, or act proudly. It is not self-seeking or easily angered.
-
-It always protects, trusts, hopes, and perseveres.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love-and-patience · OG https://bedrock.rippel.ai/og/c/love-and-patience.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ It always protects, trusts, hopes, and perseveres.
 ## Prayer
 
 Lord, I release the scoreboard. Soften me to love and wait as You love. Amen.
+
+## Truth
+
+Love does not envy, boast, or act proudly. It is not self-seeking or easily angered.
+
+It always protects, trusts, hopes, and perseveres.
 
 ## Scripture
 
@@ -32,4 +32,4 @@ Lord, I release the scoreboard. Soften me to love and wait as You love. Amen.
 - [patience](https://bedrock.rippel.ai/c/patience)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love-and-patience.md

@@ -2,11 +2,7 @@
 
 > Do not repay evil with evil or insult with insult.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil*
-
-## Truth
-
-On the contrary, repay evil with blessing.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil · OG https://bedrock.rippel.ai/og/c/do-not-repay-evil-with-evil.png*
 
 ## Under fire
 
@@ -16,6 +12,10 @@ On the contrary, repay evil with blessing.
 ## Prayer
 
 Lord, I release repayment. Teach me to bless and entrust the rest to You. Amen.
+
+## Truth
+
+On the contrary, repay evil with blessing.
 
 ## Scripture
 
@@ -28,4 +28,4 @@ Lord, I release repayment. Teach me to bless and entrust the rest to You. Amen.
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md

@@ -2,15 +2,7 @@
 
 > Gate the heart and the mouth.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/guard-your-heart-and-mouth*
-
-## Truth
-
-Keep your heart with all vigilance, for from it flow the springs of life.
-
-Set a guard, O Lord, over my mouth; keep watch over the door of my lips!
-
-Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/guard-your-heart-and-mouth · OG https://bedrock.rippel.ai/og/c/guard-your-heart-and-mouth.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Let no corrupting talk come out of your mouths, but only such as is good for bui
 ## Prayer
 
 Lord, I release the sharp word. Guard my mouth and keep my heart. Amen.
+
+## Truth
+
+Keep your heart with all vigilance, for from it flow the springs of life.
+
+Set a guard, O Lord, over my mouth; keep watch over the door of my lips!
+
+Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.
 
 ## Scripture
 
@@ -34,4 +34,4 @@ Lord, I release the sharp word. Guard my mouth and keep my heart. Amen.
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md

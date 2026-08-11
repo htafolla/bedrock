@@ -40,14 +40,25 @@ describe('seo', () => {
     expect(seo.title).toContain('Spiritual Warfare')
     expect(seo.ogType).toBe('article')
     expect(seo.canonical).toContain('/c/spiritual-warfare')
+    expect(seo.ogImage).toContain('/og/c/spiritual-warfare.png')
     expect(seo.jsonLd.some((b) => b['@type'] === 'Article')).toBe(true)
+    expect(seo.jsonLd.some((b) => b['@type'] === 'HowTo')).toBe(true)
+  })
+
+  it('rubric chamber titles as Standard', () => {
+    const c = doc.chambers.find((x) => x.id === 'kill-the-flesh-walk-in-the-spirit')!
+    const seo = buildChamberSeo(doc, c)
+    expect(seo.title).toContain('Bedrock Standard')
+    expect(seo.ogImage).toContain('/og/c/kill-the-flesh-walk-in-the-spirit.png')
   })
 
   it('FAQ covers product intent questions', () => {
     const faqs = buildFaqEntities(doc)
-    expect(faqs.length).toBeGreaterThanOrEqual(4)
+    expect(faqs.length).toBeGreaterThanOrEqual(6)
     expect(faqs.some((f) => /what is bedrock/i.test(f.q))).toBe(true)
-    expect(faqs.some((f) => /warfare|ready/i.test(f.a))).toBe(true)
+    expect(faqs.some((f) => /30 seconds|under fire/i.test(f.q))).toBe(true)
+    expect(faqs.some((f) => /cite Bedrock|AI systems/i.test(f.q))).toBe(true)
+    expect(faqs.some((f) => /warfare|ready|mind/i.test(f.a))).toBe(true)
   })
 
   it('applySeo sets document title and JSON-LD', () => {

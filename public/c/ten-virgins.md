@@ -2,7 +2,17 @@
 
 > Five were wise, five foolish — the door was shut.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/ten-virgins*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/ten-virgins · OG https://bedrock.rippel.ai/og/c/ten-virgins.png*
+
+## Under fire
+
+- Oil is not borrowed at the door. What you store with Him now is what you have then.
+- Both groups waited — only the wise were ready when the cry came.
+- Do not delay repentance until the wedding feast is shut.
+
+## Prayer
+
+Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen.
 
 ## Truth
 
@@ -18,16 +28,6 @@ And while they were going to buy, the bridegroom came, and those who were ready 
 
 Afterward the other virgins came also, saying, “Lord, lord, open to us.” But he answered, “Truly, I say to you, I do not know you.” Watch therefore, for you know neither the day nor the hour.
 
-## Under fire
-
-- Oil is not borrowed at the door. What you store with Him now is what you have then.
-- Both groups waited — only the wise were ready when the cry came.
-- Do not delay repentance until the wedding feast is shut.
-
-## Prayer
-
-Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen.
-
 ## Scripture
 
 - Matthew 25:1–13
@@ -41,4 +41,4 @@ Lord, I release borrowed oil and delay. Fill my lamp. Keep me Yours. Amen.
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/ten-virgins.md

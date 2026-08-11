@@ -188,7 +188,8 @@ function renderRubricBand(
 
 /**
  * Field card always open (common steel).
- * Holds / For men / Success collapsed by default — depth is opt-in.
+ * Full holds collapsed by default — depth is opt-in under fog.
+ * Mind path is secondary (not competing with the hold).
  */
 function RubricBody({
   blocks,
@@ -211,11 +212,6 @@ function RubricBody({
       {surface.map((sec, si) => renderRubricBand(sec, si, ipfsCid))}
 
       <div className="rubric-depth-actions">
-        {onOpenMindPath ? (
-          <button type="button" className="rubric-depth-btn primary" onClick={onOpenMindPath}>
-            Mind war path →
-          </button>
-        ) : null}
         {depth.length > 0 ? (
           <button
             type="button"
@@ -224,6 +220,11 @@ function RubricBody({
             onClick={() => setShowDepth((v) => !v)}
           >
             {showDepth ? 'Hide full holds' : 'Show full holds'}
+          </button>
+        ) : null}
+        {onOpenMindPath ? (
+          <button type="button" className="rubric-depth-btn ghost" onClick={onOpenMindPath}>
+            Mind war path →
           </button>
         ) : null}
       </div>
@@ -283,10 +284,12 @@ export function ChamberFocus({
     return () => window.removeEventListener('keydown', onKey)
   }, [onBack, onSpineStep])
 
-  /** One station share (+ path when on a journey) — header and footer of the card. */
-  const cardShare = (
-    placement: 'header' | 'footer',
-  ) => (
+  /**
+   * Share hierarchy under fog:
+   * - Primary: this station / standard (header + footer)
+   * - Secondary: path only when on a journey, compact/ghost, never equal weight
+   */
+  const cardShare = (placement: 'header' | 'footer') => (
     <div
       className={
         placement === 'header'
@@ -305,8 +308,8 @@ export function ChamberFocus({
       {journey && onPath ? (
         <ShareMenu
           compact
-          className="chamber-share-path"
-          triggerLabel="Share path"
+          className="chamber-share-path chamber-share-path-secondary"
+          triggerLabel="Path"
           payload={buildPathShare({
             journeyId: journey.id,
             title: journey.title,
@@ -469,7 +472,7 @@ export function ChamberFocus({
           </h3>
           <p className="field-layer-hint">
             {isRubric
-              ? 'Field card first. Open full holds only if you need the map.'
+              ? 'Field card open. Full holds on demand. Mind path when the war is inside.'
               : 'When you can read deeper — Scripture-rooted steel.'}
           </p>
           {isRubric ? (

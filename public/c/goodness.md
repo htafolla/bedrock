@@ -2,7 +2,17 @@
 
 > Spirit fruit: goodness.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/goodness*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/goodness · OG https://bedrock.rippel.ai/og/c/goodness.png*
+
+## Under fire
+
+- Flesh counterfeit: performative virtue, self-justifying “good reasons,” or evil for a noble end.
+- Ask: is this good, or only useful for my case? Choose light over managed darkness.
+- One honest yes, one honest no. Half-truths are full lies with better manners.
+
+## Prayer
+
+Lord, I release useful darkness. Keep me clinging to what is good. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ He has told you, O man, what is good; and what does the Lord require of you but 
 For the fruit of light is found in all that is good and right and true.
 
 Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever.
-
-## Under fire
-
-- Flesh counterfeit: performative virtue, self-justifying “good reasons,” or evil for a noble end.
-- Ask: is this good, or only useful for my case? Choose light over managed darkness.
-- One honest yes, one honest no. Half-truths are full lies with better manners.
-
-## Prayer
-
-Lord, I release useful darkness. Keep me clinging to what is good. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Lord, I release useful darkness. Keep me clinging to what is good. Amen.
 - [faithfulness](https://bedrock.rippel.ai/c/faithfulness)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/goodness.md

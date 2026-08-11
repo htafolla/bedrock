@@ -2,7 +2,17 @@
 
 > Blessed is that servant whom his master will find so doing when he comes.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/the-faithful-servant*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-faithful-servant · OG https://bedrock.rippel.ai/og/c/the-faithful-servant.png*
+
+## Under fire
+
+- Faithful is ordinary obedience while the Master delays — not performance when He is watching.
+- Beating others, eating and drinking with drunkards — that is the wicked servant’s path.
+- Blessed is the one the Master finds doing the assignment when He comes.
+
+## Prayer
+
+Lord, I release the wicked servant’s ease. Find me faithful when You come. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ And will cut him in pieces and put him with the hypocrites. In that place there 
 Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more.
 
 Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks.
-
-## Under fire
-
-- Faithful is ordinary obedience while the Master delays — not performance when He is watching.
-- Beating others, eating and drinking with drunkards — that is the wicked servant’s path.
-- Blessed is the one the Master finds doing the assignment when He comes.
-
-## Prayer
-
-Lord, I release the wicked servant’s ease. Find me faithful when You come. Amen.
 
 ## Scripture
 
@@ -42,4 +42,4 @@ Lord, I release the wicked servant’s ease. Find me faithful when You come. Ame
 - [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-faithful-servant.md

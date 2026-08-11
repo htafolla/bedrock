@@ -2,7 +2,17 @@
 
 > All liars — and everyone who loves and practices falsehood.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/falsehood*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/falsehood · OG https://bedrock.rippel.ai/og/c/falsehood.png*
+
+## Under fire
+
+- Liars have no place in the city of God. Half-truths are still lies with manners.
+- Let your yes be yes. Put off falsehood even when truth costs status.
+- Walk in light. Managed darkness is still darkness.
+
+## Prayer
+
+Lord, I release managed darkness. Keep me in the light with straight words. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ But as for … all liars, their portion will be in the lake that burns with fire
 Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood.
 
 Let what you say be simply “Yes” or “No”; anything more than this comes from evil.
-
-## Under fire
-
-- Liars have no place in the city of God. Half-truths are still lies with manners.
-- Let your yes be yes. Put off falsehood even when truth costs status.
-- Walk in light. Managed darkness is still darkness.
-
-## Prayer
-
-Lord, I release managed darkness. Keep me in the light with straight words. Amen.
 
 ## Scripture
 
@@ -43,4 +43,4 @@ Lord, I release managed darkness. Keep me in the light with straight words. Amen
 - [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/falsehood.md

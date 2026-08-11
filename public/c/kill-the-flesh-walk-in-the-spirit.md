@@ -1,8 +1,18 @@
-# Rubric: Kill the Flesh. Walk in the Spirit.
+# Standard: Kill the Flesh. Walk in the Spirit.
 
 > Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.
 
-*Rubric · operational standard · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit*
+*Standard · Field card first · Hold first · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit · OG https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.png*
+
+## Under fire
+
+- Capture the thought. Refuse investigation (evidence-hunt) and condemnation (accuser’s voice). Conviction leads to life; the rest freezes.
+- Stay on your side of the street. Their replies are theirs. Distance can be protection. Success is Spirit, not outcomes.
+- Deeper mind war: Journeys → Battlefield of the mind. Field card first; full holds below when you need them.
+
+## Prayer
+
+Father, I take every thought captive. I refuse investigation and condemnation. I release this war into Your hands. Amen.
 
 ## The standard
 
@@ -216,16 +226,6 @@ Do better. Be better. Trust God.
 
 [Galatians 6:9](https://www.biblegateway.com/passage/?search=Galatians+6%3A9&version=NIV) · [James 1:12](https://www.biblegateway.com/passage/?search=James+1%3A12&version=NIV)
 
-## Under fire
-
-- Capture the thought. Refuse investigation (evidence-hunt) and condemnation (accuser’s voice). Conviction leads to life; the rest freezes.
-- Stay on your side of the street. Their replies are theirs. Distance can be protection. Success is Spirit, not outcomes.
-- Deeper mind war: Journeys → Battlefield of the mind. Field card first; full holds below when you need them.
-
-## Prayer
-
-Father, I take every thought captive. I refuse investigation and condemnation. I release this war into Your hands. Amen.
-
 ## Scripture
 
 - Galatians 5:16
@@ -290,4 +290,4 @@ Father, I take every thought captive. I refuse investigation and condemnation. I
 - [regret](https://bedrock.rippel.ai/c/regret)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md

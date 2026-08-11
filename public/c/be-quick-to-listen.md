@@ -2,11 +2,7 @@
 
 > Quick to hear. Slow to speak. Slow to anger.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/be-quick-to-listen*
-
-## Truth
-
-Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/be-quick-to-listen · OG https://bedrock.rippel.ai/og/c/be-quick-to-listen.png*
 
 ## Under fire
 
@@ -17,6 +13,10 @@ Know this, my beloved brothers: let every person be quick to hear, slow to speak
 ## Prayer
 
 Lord, I release the need for the last word. Make me quick to listen. Amen.
+
+## Truth
+
+Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.
 
 ## Scripture
 
@@ -29,4 +29,4 @@ Lord, I release the need for the last word. Make me quick to listen. Amen.
 - [restore-gently-and-give-time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/be-quick-to-listen.md

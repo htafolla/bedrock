@@ -2,13 +2,7 @@
 
 > The Lord is near to the brokenhearted.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/a-broken-and-contrite-heart*
-
-## Truth
-
-This is the one to whom I will look: he who is humble and contrite in spirit and trembles at My word.
-
-The sacrifices of God are a broken spirit; a broken and contrite heart, O God, You will not despise.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/a-broken-and-contrite-heart · OG https://bedrock.rippel.ai/og/c/a-broken-and-contrite-heart.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ The sacrifices of God are a broken spirit; a broken and contrite heart, O God, Y
 ## Prayer
 
 Father, I bring a broken heart. I release pride. Look upon me in mercy. Amen.
+
+## Truth
+
+This is the one to whom I will look: he who is humble and contrite in spirit and trembles at My word.
+
+The sacrifices of God are a broken spirit; a broken and contrite heart, O God, You will not despise.
 
 ## Scripture
 
@@ -33,4 +33,4 @@ Father, I bring a broken heart. I release pride. Look upon me in mercy. Amen.
 - [loss](https://bedrock.rippel.ai/c/loss)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md

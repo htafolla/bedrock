@@ -2,7 +2,17 @@
 
 > Spirit fruit: kindness.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/kindness*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kindness · OG https://bedrock.rippel.ai/og/c/kindness.png*
+
+## Under fire
+
+- Flesh counterfeit: niceness to manage image, or harshness justified as “just being honest.”
+- Replace the sharp text with one true, clean sentence — or silence if silence is love.
+- Do one kind act without announcement. Kindness that needs credit is still flesh.
+
+## Prayer
+
+Lord, I release the sharp edge. Soften what is hard in me. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kin
 Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart.
 
 Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God’s kindness is meant to lead you to repentance?
-
-## Under fire
-
-- Flesh counterfeit: niceness to manage image, or harshness justified as “just being honest.”
-- Replace the sharp text with one true, clean sentence — or silence if silence is love.
-- Do one kind act without announcement. Kindness that needs credit is still flesh.
-
-## Prayer
-
-Lord, I release the sharp edge. Soften what is hard in me. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Lord, I release the sharp edge. Soften what is hard in me. Amen.
 - [gentleness](https://bedrock.rippel.ai/c/gentleness)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/kindness.md

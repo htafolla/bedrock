@@ -2,7 +2,17 @@
 
 > Godly grief leads to life; worldly grief leads to death.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/regret*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/regret · OG https://bedrock.rippel.ai/og/c/regret.png*
+
+## Under fire
+
+- Godly grief produces repentance that leads to life; worldly grief produces death — refuse the death-tape.
+- Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.
+- There is now no condemnation in Christ Jesus — self-hate is not holiness. Own what is yours; then rise.
+
+## Prayer
+
+Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ There is therefore now no condemnation for those who are in Christ Jesus.
 Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.
 
 Create in me a clean heart, O God, and renew a right spirit within me.
-
-## Under fire
-
-- Godly grief produces repentance that leads to life; worldly grief produces death — refuse the death-tape.
-- Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.
-- There is now no condemnation in Christ Jesus — self-hate is not holiness. Own what is yours; then rise.
-
-## Prayer
-
-Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy. Amen.
 
 ## Scripture
 
@@ -45,4 +45,4 @@ Father, I bring my regret. I release self-hate as god. Cleanse me by Your mercy.
 - [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/regret.md

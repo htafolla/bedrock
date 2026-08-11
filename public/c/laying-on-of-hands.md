@@ -2,7 +2,17 @@
 
 > Hands laid in faith under the name of Jesus.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/laying-on-of-hands*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/laying-on-of-hands · OG https://bedrock.rippel.ai/og/c/laying-on-of-hands.png*
+
+## Under fire
+
+- Hands are not magic — they are obedient faith under the name of Jesus.
+- Invite mature believers. Avoid spectacle and pressure. Let the Spirit lead the moment.
+- If you are the one prayed for: receive without performing. God sees the heart.
+
+## Prayer
+
+Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ They will lay their hands on the sick, and they will recover.
 And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying.
 
 And God was doing extraordinary miracles by the hands of Paul.
-
-## Under fire
-
-- Hands are not magic — they are obedient faith under the name of Jesus.
-- Invite mature believers. Avoid spectacle and pressure. Let the Spirit lead the moment.
-- If you are the one prayed for: receive without performing. God sees the heart.
-
-## Prayer
-
-Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen.
 
 ## Scripture
 
@@ -47,4 +47,4 @@ Lord Jesus, we release spectacle. Let Your power and peace rest here. Amen.
 - [his-power-and-beauty](https://bedrock.rippel.ai/c/his-power-and-beauty)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/laying-on-of-hands.md

@@ -13,6 +13,7 @@
     "content": "node scripts/build-content.mjs",
     "ai-surface": "node scripts/build-ai-surface.mjs",
     "og-cards": "node scripts/build-og-cards.mjs",
+    "smoke:og": "node scripts/smoke-og.mjs",
     "prebuild": "node scripts/build-content.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",

@@ -2,7 +2,17 @@
 
 > Spirit fruit: faithfulness.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/faithfulness*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/faithfulness · OG https://bedrock.rippel.ai/og/c/faithfulness.png*
+
+## Under fire
+
+- Flesh counterfeit: conditional loyalty, ghosting covenant, “I need to be true to myself” as exit ramp.
+- Covenant is not a contract of feelings. Keep the next faithful act you already know is right.
+- When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true.
+
+## Prayer
+
+Lord, You are faithful. I release exit stories. Keep me true. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ The steadfast love of the Lord never ceases; His mercies never come to an end; t
 Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man.
 
 If we are faithless, He remains faithful—for He cannot deny Himself.
-
-## Under fire
-
-- Flesh counterfeit: conditional loyalty, ghosting covenant, “I need to be true to myself” as exit ramp.
-- Covenant is not a contract of feelings. Keep the next faithful act you already know is right.
-- When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true.
-
-## Prayer
-
-Lord, You are faithful. I release exit stories. Keep me true. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Lord, You are faithful. I release exit stories. Keep me true. Amen.
 - [gentleness](https://bedrock.rippel.ai/c/gentleness)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/faithfulness.md

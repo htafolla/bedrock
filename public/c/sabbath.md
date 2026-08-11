@@ -2,7 +2,17 @@
 
 > The seventh day is the Sabbath — Saturday — still holy to the Lord. A holy day He made.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/sabbath*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/sabbath · OG https://bedrock.rippel.ai/og/c/sabbath.png*
+
+## Under fire
+
+- The Sabbath is the seventh day — Saturday — still holy to the Lord. He made it holy; you do not rename it.
+- He knows His people as they obey: keep His Sabbaths as a sign that He is the Lord who sanctifies you.
+- Rest is not laziness. Stop the grind, delight in His day, and remember He is God.
+
+## Prayer
+
+Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it holy. Amen.
 
 ## Truth
 
@@ -23,16 +33,6 @@ And He said to them, “The Sabbath was made for man, not man for the Sabbath. S
 There remains a Sabbath rest for the people of God, for whoever has entered God’s rest has also rested from his works as God did from His.
 
 Be still, and know that I am God.
-
-## Under fire
-
-- The Sabbath is the seventh day — Saturday — still holy to the Lord. He made it holy; you do not rename it.
-- He knows His people as they obey: keep His Sabbaths as a sign that He is the Lord who sanctifies you.
-- Rest is not laziness. Stop the grind, delight in His day, and remember He is God.
-
-## Prayer
-
-Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it holy. Amen.
 
 ## Scripture
 
@@ -57,4 +57,4 @@ Lord of the Sabbath, this day is Yours. I release the grind. Teach me to keep it
 - [the-lords-prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/sabbath.md

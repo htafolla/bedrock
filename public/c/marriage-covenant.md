@@ -2,7 +2,16 @@
 
 > One-flesh covenant. Sacrificial love.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/marriage-covenant*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/marriage-covenant · OG https://bedrock.rippel.ai/og/c/marriage-covenant.png*
+
+## Under fire
+
+- Covenant is not a contract of feelings. Lead by sacrifice, not by winning the argument.
+- If separation exists: do not invent a new story. Remain faithful to what God still calls true.
+
+## Prayer
+
+Lord of the covenant, I release winning the argument. Make me faithful. Amen.
 
 ## Truth
 
@@ -19,15 +28,6 @@ She does him good, and not harm, all the days of her life.
 Do not deprive one another, except perhaps by agreement for a limited time, that you may devote yourselves to prayer; but then come together again.
 
 To the married I give this charge (not I, but the Lord): the wife should not separate from her husband… and the husband should not divorce his wife.
-
-## Under fire
-
-- Covenant is not a contract of feelings. Lead by sacrifice, not by winning the argument.
-- If separation exists: do not invent a new story. Remain faithful to what God still calls true.
-
-## Prayer
-
-Lord of the covenant, I release winning the argument. Make me faithful. Amen.
 
 ## Scripture
 
@@ -51,4 +51,4 @@ Lord of the covenant, I release winning the argument. Make me faithful. Amen.
 - [love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/marriage-covenant.md

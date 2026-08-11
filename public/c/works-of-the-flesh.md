@@ -2,7 +2,17 @@
 
 > Those who practice such things will not inherit the kingdom of God.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/works-of-the-flesh*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/works-of-the-flesh · OG https://bedrock.rippel.ai/og/c/works-of-the-flesh.png*
+
+## Under fire
+
+- Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”
+- Those who practice such things will not inherit the kingdom — this is warning, not a joke.
+- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See: Kill the Flesh. Walk in the Spirit. (the Rubric).
+
+## Prayer
+
+Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Or do you not know that the unrighteous will not inherit the kingdom of God? Do 
 And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.
 
 But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.
-
-## Under fire
-
-- Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”
-- Those who practice such things will not inherit the kingdom — this is warning, not a joke.
-- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See: Kill the Flesh. Walk in the Spirit. (the Rubric).
-
-## Prayer
-
-Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your Spirit. Amen.
 
 ## Scripture
 
@@ -48,4 +48,4 @@ Father, I renounce the flesh. I release soft names for hard sin. Lead me by Your
 - [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/works-of-the-flesh.md

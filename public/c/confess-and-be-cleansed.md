@@ -2,15 +2,7 @@
 
 > Confess. Be cleansed. Draw near.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/confess-and-be-cleansed*
-
-## Truth
-
-If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
-
-Therefore, confess your sins to one another and pray for one another, that you may be healed.
-
-Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/confess-and-be-cleansed · OG https://bedrock.rippel.ai/og/c/confess-and-be-cleansed.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Let us then with confidence draw near to the throne of grace, that we may receiv
 ## Prayer
 
 Father, I confess. I release this sin into Your light. Cleanse me. Amen.
+
+## Truth
+
+If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
+
+Therefore, confess your sins to one another and pray for one another, that you may be healed.
+
+Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Father, I confess. I release this sin into Your light. Cleanse me. Amen.
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/confess-and-be-cleansed.md

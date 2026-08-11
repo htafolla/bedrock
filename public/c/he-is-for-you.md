@@ -2,17 +2,7 @@
 
 > God is for you.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/he-is-for-you*
-
-## Truth
-
-If God is for us, who can be against us?
-
-He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?
-
-He casts your sins behind His back and remembers them no more.
-
-Cast all your cares on Him, because He cares for you.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/he-is-for-you · OG https://bedrock.rippel.ai/og/c/he-is-for-you.png*
 
 ## Under fire
 
@@ -23,6 +13,16 @@ Cast all your cares on Him, because He cares for you.
 ## Prayer
 
 Lord, You are for me. I cast my cares on You. Remember mercy over my sin. Amen.
+
+## Truth
+
+If God is for us, who can be against us?
+
+He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?
+
+He casts your sins behind His back and remembers them no more.
+
+Cast all your cares on Him, because He cares for you.
 
 ## Scripture
 
@@ -38,4 +38,4 @@ Lord, You are for me. I cast my cares on You. Remember mercy over my sin. Amen.
 - [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/he-is-for-you.md

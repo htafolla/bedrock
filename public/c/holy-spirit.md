@@ -2,7 +2,17 @@
 
 > Jesus gave the Helper — Spirit of truth with you, to testify and empower.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/holy-spirit*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/holy-spirit · OG https://bedrock.rippel.ai/og/c/holy-spirit.png*
+
+## Under fire
+
+- Jesus did not leave you alone. The Helper is with you and in you — Spirit of truth, not a vague feeling.
+- He testifies to the truth. When lies press in, ask Him to bear witness and open the Word.
+- Power is for witness and warfare under God — demolish strongholds, stand in authority — not for show or self-glory.
+
+## Prayer
+
+Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen.
 
 ## Truth
 
@@ -25,16 +35,6 @@ Now there are varieties of gifts, but the same Spirit… To each is given the ma
 For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
 
 Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
-
-## Under fire
-
-- Jesus did not leave you alone. The Helper is with you and in you — Spirit of truth, not a vague feeling.
-- He testifies to the truth. When lies press in, ask Him to bear witness and open the Word.
-- Power is for witness and warfare under God — demolish strongholds, stand in authority — not for show or self-glory.
-
-## Prayer
-
-Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen.
 
 ## Scripture
 
@@ -62,4 +62,4 @@ Holy Spirit, Jesus sent You. Fill me. Testify to the truth. I release fear. Amen
 - [love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/holy-spirit.md

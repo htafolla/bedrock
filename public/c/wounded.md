@@ -2,7 +2,17 @@
 
 > You were harmed — God sees; He is near the crushed.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/wounded*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wounded · OG https://bedrock.rippel.ai/og/c/wounded.png*
+
+## Under fire
+
+- You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.
+- Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. You are His; cry Abba, Father.
+- Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains. Hold the adult position: love without handing them the remote.
+
+## Prayer
+
+Father, You see what was done to me. I release hatred. Heal me and hold me. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ Beloved, never avenge yourselves, but leave it to the wrath of God, for it is wr
 Fear not, for I have redeemed you; I have called you by name, you are Mine.
 
 For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
-
-## Under fire
-
-- You were harmed. Do not steal a total blame that is false — and do not make hatred your shelter.
-- Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. You are His; cry Abba, Father.
-- Do not repay evil with evil. Entrust the scales to God; keep wise boundaries while grief remains. Hold the adult position: love without handing them the remote.
-
-## Prayer
-
-Father, You see what was done to me. I release hatred. Heal me and hold me. Amen.
 
 ## Scripture
 
@@ -48,4 +48,4 @@ Father, You see what was done to me. I release hatred. Heal me and hold me. Amen
 - [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wounded.md

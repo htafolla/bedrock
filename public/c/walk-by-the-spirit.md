@@ -2,13 +2,7 @@
 
 > Walk by the Spirit, and you will not gratify the desires of the flesh.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/walk-by-the-spirit*
-
-## Truth
-
-The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.
-
-If we live by the Spirit, let us also keep in step with the Spirit.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-by-the-spirit · OG https://bedrock.rippel.ai/og/c/walk-by-the-spirit.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ If we live by the Spirit, let us also keep in step with the Spirit.
 ## Prayer
 
 Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Amen.
+
+## Truth
+
+The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.
+
+If we live by the Spirit, let us also keep in step with the Spirit.
 
 ## Scripture
 
@@ -48,4 +48,4 @@ Holy Spirit, I release the flesh’s lead. I wait on You — keep me in step. Am
 - [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-by-the-spirit.md

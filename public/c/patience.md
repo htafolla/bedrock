@@ -2,7 +2,17 @@
 
 > Spirit fruit: patience.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/patience*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/patience · OG https://bedrock.rippel.ai/og/c/patience.png*
+
+## Under fire
+
+- Flesh counterfeit: force the outcome, rage at the clock, punish them for not moving on your schedule.
+- When urgency screams “fix them,” answer: wait for the Lord; do the one duty you own today.
+- Slow the reply. Soften the tone. Love is patient — you are not the weather.
+
+## Prayer
+
+Father, I release outcomes I cannot rule. Grow patience while I wait on You. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Wait for the Lord; be strong, and let your heart take courage; wait for the Lord
 Rejoice in hope, be patient in tribulation, be constant in prayer.
 
 Love is patient and kind.
-
-## Under fire
-
-- Flesh counterfeit: force the outcome, rage at the clock, punish them for not moving on your schedule.
-- When urgency screams “fix them,” answer: wait for the Lord; do the one duty you own today.
-- Slow the reply. Soften the tone. Love is patient — you are not the weather.
-
-## Prayer
-
-Father, I release outcomes I cannot rule. Grow patience while I wait on You. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Father, I release outcomes I cannot rule. Grow patience while I wait on You. Ame
 - [self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/patience.md

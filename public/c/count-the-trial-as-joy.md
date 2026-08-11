@@ -2,13 +2,7 @@
 
 > Consider it pure joy when you face trials.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/count-the-trial-as-joy*
-
-## Truth
-
-The testing of your faith produces perseverance that makes you mature and complete.
-
-Suffering produces perseverance; perseverance, character; and character, hope.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/count-the-trial-as-joy · OG https://bedrock.rippel.ai/og/c/count-the-trial-as-joy.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ Suffering produces perseverance; perseverance, character; and character, hope.
 ## Prayer
 
 Father, I do not love this fire. I release the demand that it stop on my terms. Use it. Amen.
+
+## Truth
+
+The testing of your faith produces perseverance that makes you mature and complete.
+
+Suffering produces perseverance; perseverance, character; and character, hope.
 
 ## Scripture
 
@@ -32,4 +32,4 @@ Father, I do not love this fire. I release the demand that it stop on my terms. 
 - [joy](https://bedrock.rippel.ai/c/joy)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/count-the-trial-as-joy.md

@@ -2,7 +2,17 @@
 
 > Spirit fruit: self-control.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/self-control*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/self-control · OG https://bedrock.rippel.ai/og/c/self-control.png*
+
+## Under fire
+
+- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
+- Flesh counterfeit: impulse as master — rage, lust, the check-again loop — or controlling them because you cannot control you.
+- Name the impulse. Delay. Capture the thought. Self-control rules you — not them. Keep in step with the Spirit.
+
+## Prayer
+
+Holy Spirit, I release the impulse to master others — and myself in rage. Keep me in step. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ A man without self-control is like a city broken into and left without walls.
 Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable.
 
 For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
-
-## Under fire
-
-- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
-- Flesh counterfeit: impulse as master — rage, lust, the check-again loop — or controlling them because you cannot control you.
-- Name the impulse. Delay. Capture the thought. Self-control rules you — not them. Keep in step with the Spirit.
-
-## Prayer
-
-Holy Spirit, I release the impulse to master others — and myself in rage. Keep me in step. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Holy Spirit, I release the impulse to master others — and myself in rage. Keep
 - [patience](https://bedrock.rippel.ai/c/patience)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/self-control.md

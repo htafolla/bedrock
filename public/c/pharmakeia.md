@@ -2,7 +2,17 @@
 
 > Sorcery — and every counterfeit power — is works of the flesh.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/pharmakeia*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/pharmakeia · OG https://bedrock.rippel.ai/og/c/pharmakeia.png*
+
+## Under fire
+
+- Pharmakeia is not neutral “help” when it is sorcery, occult power, or numbing the soul against God.
+- Do not open doors to spirits through what promises control of mood, fate, or power without the Lord.
+- Be sober-minded. If it owns you, renounce it. Draw near to God; resist the devil.
+
+## Prayer
+
+Father, I release every counterfeit power. I belong to You. Make me sober. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Outside are the dogs and sorcerers and the sexually immoral and murderers and id
 Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.
 
 Submit yourselves therefore to God. Resist the devil, and he will flee from you.
-
-## Under fire
-
-- Pharmakeia is not neutral “help” when it is sorcery, occult power, or numbing the soul against God.
-- Do not open doors to spirits through what promises control of mood, fate, or power without the Lord.
-- Be sober-minded. If it owns you, renounce it. Draw near to God; resist the devil.
-
-## Prayer
-
-Father, I release every counterfeit power. I belong to You. Make me sober. Amen.
 
 ## Scripture
 
@@ -45,4 +45,4 @@ Father, I release every counterfeit power. I belong to You. Make me sober. Amen.
 - [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/pharmakeia.md

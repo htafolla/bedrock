@@ -2,7 +2,17 @@
 
 > Open the hand — trust is not passivity; self-control rules you, not them.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/control*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/control · OG https://bedrock.rippel.ai/og/c/control.png*
+
+## Under fire
+
+- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
+- Name the grip: outcomes, people, image, timeline — if you must hold it, it has become a god. Open the hand.
+- Self-control rules you — not them. Trust is not passivity: next obedient step; leave the rest to Him.
+
+## Prayer
+
+Lord, I trust You with all my heart. I release control. Direct my path. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faith
 Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
 
 Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.
-
-## Under fire
-
-- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
-- Name the grip: outcomes, people, image, timeline — if you must hold it, it has become a god. Open the hand.
-- Self-control rules you — not them. Trust is not passivity: next obedient step; leave the rest to Him.
-
-## Prayer
-
-Lord, I trust You with all my heart. I release control. Direct my path. Amen.
 
 ## Scripture
 
@@ -46,4 +46,4 @@ Lord, I trust You with all my heart. I release control. Direct my path. Amen.
 - [peace](https://bedrock.rippel.ai/c/peace)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/control.md

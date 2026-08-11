@@ -2,13 +2,7 @@
 
 > Forgive one another as God in Christ forgave you.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven*
-
-## Truth
-
-If you do not forgive others their trespasses, neither will your Father forgive your trespasses.
-
-Be kind to one another, tenderhearted, forgiving one another.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven · OG https://bedrock.rippel.ai/og/c/forgive-as-you-have-been-forgiven.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ Be kind to one another, tenderhearted, forgiving one another.
 ## Prayer
 
 Lord, as You forgave me, I release this debt. Soften my heart. Amen.
+
+## Truth
+
+If you do not forgive others their trespasses, neither will your Father forgive your trespasses.
+
+Be kind to one another, tenderhearted, forgiving one another.
 
 ## Scripture
 
@@ -32,4 +32,4 @@ Lord, as You forgave me, I release this debt. Soften my heart. Amen.
 - [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md

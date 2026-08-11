@@ -1323,11 +1323,24 @@ body {
   box-shadow: 0 4px 16px var(--shadow-card);
 }
 
-.chamber-card-share .chamber-share-path .share-trigger {
-  min-height: 2.5rem;
-  padding: 0.45rem 0.85rem;
-  font-size: 0.8rem;
+/* Path share is secondary — never equal weight with station Share under fog */
+.chamber-card-share .chamber-share-path .share-trigger,
+.chamber-card-share .chamber-share-path-secondary .share-trigger {
+  min-height: 2.35rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 500;
   box-shadow: none;
+  border-color: var(--glass-border);
+  background: transparent;
+  color: var(--muted);
+}
+
+.chamber-card-share .chamber-share-path-secondary .share-trigger:hover,
+.chamber-card-share .chamber-share-path-secondary .share-trigger:focus-visible {
+  color: var(--ember);
+  border-color: var(--ember-border-mid);
+  background: var(--ember-wash);
 }
 
 /*
@@ -1474,22 +1487,24 @@ body {
   touch-action: manipulation;
 }
 
-.rubric-depth-btn.primary {
-  border-color: var(--ember-border-mid);
-  background: linear-gradient(180deg, var(--cta-grad-from), var(--cta-grad-to));
-  color: var(--on-ember);
-  font-weight: 600;
+.rubric-depth-btn.ghost {
+  background: transparent;
+  color: var(--muted);
+  border-color: var(--glass-border);
+  font-weight: 500;
 }
 
 .rubric-depth-btn:hover,
 .rubric-depth-btn:focus-visible {
   border-color: var(--ember);
   outline: none;
+  color: var(--beam);
 }
 
-.rubric-depth-btn.primary:hover,
-.rubric-depth-btn.primary:focus-visible {
-  filter: brightness(1.05);
+.rubric-depth-btn.ghost:hover,
+.rubric-depth-btn.ghost:focus-visible {
+  color: var(--ember);
+  background: var(--ember-wash);
 }
 
 /* —— Rubric SOP: scannable bands + numbered cards + boxed prayer —— */

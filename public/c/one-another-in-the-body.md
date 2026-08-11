@@ -2,15 +2,7 @@
 
 > Bear one another’s burdens, and so fulfill the law of Christ.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/one-another-in-the-body*
-
-## Truth
-
-Encourage one another daily… that none of you may be hardened by the deceitfulness of sin.
-
-Confess your sins to one another and pray for one another.
-
-Let us consider how to stir up one another to love and good works, not neglecting to meet together.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-another-in-the-body · OG https://bedrock.rippel.ai/og/c/one-another-in-the-body.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Let us consider how to stir up one another to love and good works, not neglectin
 ## Prayer
 
 Father, I release isolation. Place me in Your body to give and receive. Amen.
+
+## Truth
+
+Encourage one another daily… that none of you may be hardened by the deceitfulness of sin.
+
+Confess your sins to one another and pray for one another.
+
+Let us consider how to stir up one another to love and good works, not neglecting to meet together.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Father, I release isolation. Place me in Your body to give and receive. Amen.
 - [choose-selfless-love](https://bedrock.rippel.ai/c/choose-selfless-love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-another-in-the-body.md

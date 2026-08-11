@@ -2,7 +2,17 @@
 
 > Spirit fruit: love.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/love*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love · OG https://bedrock.rippel.ai/og/c/love.png*
+
+## Under fire
+
+- Flesh counterfeit: lust, scorekeeping, or “love” that needs them to change so you feel safe — that is not the Spirit’s fruit.
+- Before you act “for love,” ask: does this serve their good under God — or my appetite, my image, my control?
+- If hatred rises, name it. Put it down. Bless once. Entrust the scales. Hatred and love of God cannot share a heart.
+
+## Prayer
+
+Holy Spirit, I release cold love and scorekeeping. Pour Your love into this heart. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ If anyone says, “I love God,” and hates his brother, he is a liar; for he wh
 Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth.
 
 God’s love has been poured into our hearts through the Holy Spirit who has been given to us.
-
-## Under fire
-
-- Flesh counterfeit: lust, scorekeeping, or “love” that needs them to change so you feel safe — that is not the Spirit’s fruit.
-- Before you act “for love,” ask: does this serve their good under God — or my appetite, my image, my control?
-- If hatred rises, name it. Put it down. Bless once. Entrust the scales. Hatred and love of God cannot share a heart.
-
-## Prayer
-
-Holy Spirit, I release cold love and scorekeeping. Pour Your love into this heart. Amen.
 
 ## Scripture
 
@@ -46,4 +46,4 @@ Holy Spirit, I release cold love and scorekeeping. Pour Your love into this hear
 - [jealousy](https://bedrock.rippel.ai/c/jealousy)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love.md

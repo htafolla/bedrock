@@ -2,7 +2,17 @@
 
 > Stay awake. The Son of Man is coming at an hour you do not expect.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/watch-and-be-ready*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/watch-and-be-ready · OG https://bedrock.rippel.ai/og/c/watch-and-be-ready.png*
+
+## Under fire
+
+- Stay awake. The hour is unknown — readiness is oil, not panic.
+- He told you beforehand. Do not sleep through the warning.
+- When He knocks, open. Do not assume tomorrow is yours.
+
+## Prayer
+
+Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ But stay awake at all times, praying that you may have strength to escape all th
 Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in to him and eat with him, and he with Me.
 
 I have said these things to you, that when their hour comes you may remember that I told them to you.
-
-## Under fire
-
-- Stay awake. The hour is unknown — readiness is oil, not panic.
-- He told you beforehand. Do not sleep through the warning.
-- When He knocks, open. Do not assume tomorrow is yours.
-
-## Prayer
-
-Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen.
 
 ## Scripture
 
@@ -48,4 +48,4 @@ Lord, I release tomorrow as if it were mine. Keep me awake and ready. Amen.
 - [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/watch-and-be-ready.md

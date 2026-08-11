@@ -2,15 +2,7 @@
 
 > Grace enough for this hour.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/his-grace-is-sufficient*
-
-## Truth
-
-My grace is sufficient for you, for My power is made perfect in weakness.
-
-The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
-
-We love because He first loved us.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-grace-is-sufficient · OG https://bedrock.rippel.ai/og/c/his-grace-is-sufficient.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ We love because He first loved us.
 ## Prayer
 
 Lord, Your grace is enough. I release performed strength. Meet me in weakness. Amen.
+
+## Truth
+
+My grace is sufficient for you, for My power is made perfect in weakness.
+
+The grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age.
+
+We love because He first loved us.
 
 ## Scripture
 
@@ -34,4 +34,4 @@ Lord, Your grace is enough. I release performed strength. Meet me in weakness. A
 - [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-grace-is-sufficient.md

@@ -2,13 +2,7 @@
 
 > Transformed mind.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/renew-your-mind*
-
-## Truth
-
-Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
-
-Have this mind among yourselves, which is yours in Christ Jesus.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/renew-your-mind · OG https://bedrock.rippel.ai/og/c/renew-your-mind.png*
 
 ## Under fire
 
@@ -18,6 +12,12 @@ Have this mind among yourselves, which is yours in Christ Jesus.
 ## Prayer
 
 Lord, I release the world’s pattern. Renew my mind in this trial. Amen.
+
+## Truth
+
+Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
+
+Have this mind among yourselves, which is yours in Christ Jesus.
 
 ## Scripture
 
@@ -33,4 +33,4 @@ Lord, I release the world’s pattern. Renew my mind in this trial. Amen.
 - [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/renew-your-mind.md

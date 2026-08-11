@@ -2,7 +2,17 @@
 
 > Put away all malice — the quiet wish to harm.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/malice*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/malice · OG https://bedrock.rippel.ai/og/c/malice.png*
+
+## Under fire
+
+- Malice is the quiet wish to harm. Name it. Put it off with the old self.
+- Bitterness, rage, slander — these are not “just honesty.” They are flesh.
+- Be kind and tenderhearted. Forgive as you were forgiven — or malice will keep the ledger.
+
+## Prayer
+
+Father, I release the quiet wish to harm. Put away malice from me. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Be kind to one another, tenderhearted, forgiving one another, as God in Christ f
 Now the works of the flesh are evident: … enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy…
 
 Those who do such things will not inherit the kingdom of God.
-
-## Under fire
-
-- Malice is the quiet wish to harm. Name it. Put it off with the old self.
-- Bitterness, rage, slander — these are not “just honesty.” They are flesh.
-- Be kind and tenderhearted. Forgive as you were forgiven — or malice will keep the ledger.
-
-## Prayer
-
-Father, I release the quiet wish to harm. Put away malice from me. Amen.
 
 ## Scripture
 
@@ -42,4 +42,4 @@ Father, I release the quiet wish to harm. Put away malice from me. Amen.
 - [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/malice.md

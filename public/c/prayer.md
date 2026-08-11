@@ -2,7 +2,17 @@
 
 > Ask, seek, knock — pray without ceasing.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/prayer*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/prayer · OG https://bedrock.rippel.ai/og/c/prayer.png*
+
+## Under fire
+
+- When you do not know what to pray, the Spirit helps — groan, wait, then one true sentence.
+- Ask, seek, knock — persistence is faith, not nagging God into a corner.
+- Pray without ceasing means stay turned toward Him all day, not only at crisis.
+
+## Prayer
+
+Father, I bring this need and I wait. I release the need to control the answer. Amen.
 
 ## Truth
 
@@ -19,16 +29,6 @@ Do not be anxious about anything, but in everything by prayer and supplication w
 If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.
 
 The prayer of a righteous person has great power as it is working.
-
-## Under fire
-
-- When you do not know what to pray, the Spirit helps — groan, wait, then one true sentence.
-- Ask, seek, knock — persistence is faith, not nagging God into a corner.
-- Pray without ceasing means stay turned toward Him all day, not only at crisis.
-
-## Prayer
-
-Father, I bring this need and I wait. I release the need to control the answer. Amen.
 
 ## Scripture
 
@@ -51,4 +51,4 @@ Father, I bring this need and I wait. I release the need to control the answer. 
 - [god-first](https://bedrock.rippel.ai/c/god-first)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/prayer.md

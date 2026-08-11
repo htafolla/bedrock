@@ -2,7 +2,17 @@
 
 > Lay up treasure where moth and rust do not destroy.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/treasure-in-heaven*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/treasure-in-heaven · OG https://bedrock.rippel.ai/og/c/treasure-in-heaven.png*
+
+## Under fire
+
+- Where your treasure is, your heart follows — audit the vault, not only the feelings.
+- Earth rusts and thieves break in. Lay up what the fire cannot touch.
+- Fight for the lasting: obedience, love, souls, the kingdom — not the applause of a week.
+
+## Prayer
+
+Father, I release rust and moth. Set my treasure in heaven. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ But seek first the kingdom of God and His righteousness, and all these things wi
 Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail.
 
 As for the rich in this present age, charge them not to be haughty, nor to set their hopes on the uncertainty of riches, but on God… They are to do good, to be rich in good works, to be generous and ready to share, thus storing up treasure for themselves as a good foundation for the future.
-
-## Under fire
-
-- Where your treasure is, your heart follows — audit the vault, not only the feelings.
-- Earth rusts and thieves break in. Lay up what the fire cannot touch.
-- Fight for the lasting: obedience, love, souls, the kingdom — not the applause of a week.
-
-## Prayer
-
-Father, I release rust and moth. Set my treasure in heaven. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Father, I release rust and moth. Set my treasure in heaven. Amen.
 - [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/treasure-in-heaven.md

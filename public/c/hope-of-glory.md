@@ -2,7 +2,16 @@
 
 > What we fight toward — glory with Him.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/hope-of-glory*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/hope-of-glory · OG https://bedrock.rippel.ai/og/c/hope-of-glory.png*
+
+## Under fire
+
+- Present pain is real. Future glory is more real. Hold both without denying either.
+- Steadfast under trial is not glamorous. Crowns are for those who remain — keep remaining today.
+
+## Prayer
+
+Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen.
 
 ## Truth
 
@@ -21,15 +30,6 @@ Blessed is the one who remains steadfast under trial, for when he has stood the 
 There is laid up for me the crown of righteousness, which the Lord will award on that day.
 
 When the Chief Shepherd appears, you will receive the unfading crown of glory.
-
-## Under fire
-
-- Present pain is real. Future glory is more real. Hold both without denying either.
-- Steadfast under trial is not glamorous. Crowns are for those who remain — keep remaining today.
-
-## Prayer
-
-Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen.
 
 ## Scripture
 
@@ -57,4 +57,4 @@ Jesus, my hope of glory. I release despair as master. Keep me steadfast. Amen.
 - [prayer](https://bedrock.rippel.ai/c/prayer)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/hope-of-glory.md

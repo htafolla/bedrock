@@ -2,7 +2,17 @@
 
 > There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/fear*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/fear · OG https://bedrock.rippel.ai/og/c/fear.png*
+
+## Under fire
+
+- Perfect love casts out fear — run toward His love, not toward control.
+- When I am afraid, I put my trust in You. Name the fear; then trust.
+- Fear of man lays a snare. Put that face down. You cry Abba, Father — not slave to terror.
+
+## Prayer
+
+Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Peace I leave with you; My peace I give to you. Not as the world gives do I give
 Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.
 
 For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
-
-## Under fire
-
-- Perfect love casts out fear — run toward His love, not toward control.
-- When I am afraid, I put my trust in You. Name the fear; then trust.
-- Fear of man lays a snare. Put that face down. You cry Abba, Father — not slave to terror.
-
-## Prayer
-
-Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen.
 
 ## Scripture
 
@@ -47,4 +47,4 @@ Father, I cast this fear on You. Perfect Your love in me. Hold me. Amen.
 - [peace](https://bedrock.rippel.ai/c/peace)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fear.md

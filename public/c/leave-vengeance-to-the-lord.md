@@ -2,7 +2,17 @@
 
 > Vengeance belongs to Him — and hatred has no place with love.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord · OG https://bedrock.rippel.ai/og/c/leave-vengeance-to-the-lord.png*
+
+## Under fire
+
+- Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.
+- If the urge is to repay, that is flesh. Bless, entrust the scales to God, do the next right thing.
+- Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin.
+
+## Prayer
+
+Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ Everyone who hates his brother is a murderer, and you know that no murderer has 
 You shall not take vengeance or bear a grudge… but you shall love your neighbor as yourself.
 
 Love your enemies and pray for those who persecute you.
-
-## Under fire
-
-- Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.
-- If the urge is to repay, that is flesh. Bless, entrust the scales to God, do the next right thing.
-- Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin.
-
-## Prayer
-
-Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen.
 
 ## Scripture
 
@@ -50,4 +50,4 @@ Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen.
 - [wounded](https://bedrock.rippel.ai/c/wounded)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md

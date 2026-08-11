@@ -2,7 +2,17 @@
 
 > He is real. Do not fixate. Name him, resist him, stand with God.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/the-adversary*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-adversary · OG https://bedrock.rippel.ai/og/c/the-adversary.png*
+
+## Under fire
+
+- He is real — not a cartoon, not a metaphor. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.
+- Weeds grow among wheat: not everyone who looks religious is of the kingdom. Discern fruit; do not play detective for the devil’s resume.
+- When persecution and schemes hit: submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind.
+
+## Prayer
+
+Father, open my eyes to the real enemy. I release fear and fixation. I stand with You. Amen.
 
 ## Truth
 
@@ -25,16 +35,6 @@ Submit yourselves therefore to God. Resist the devil, and he will flee from you.
 And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death.
 
 The God of peace will soon crush Satan under your feet.
-
-## Under fire
-
-- He is real — not a cartoon, not a metaphor. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.
-- Weeds grow among wheat: not everyone who looks religious is of the kingdom. Discern fruit; do not play detective for the devil’s resume.
-- When persecution and schemes hit: submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind.
-
-## Prayer
-
-Father, open my eyes to the real enemy. I release fear and fixation. I stand with You. Amen.
 
 ## Scripture
 
@@ -61,4 +61,4 @@ Father, open my eyes to the real enemy. I release fear and fixation. I stand wit
 - [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-adversary.md

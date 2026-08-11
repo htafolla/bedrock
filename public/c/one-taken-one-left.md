@@ -2,7 +2,17 @@
 
 > Two in the field — one taken, one left.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/one-taken-one-left*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-taken-one-left · OG https://bedrock.rippel.ai/og/c/one-taken-one-left.png*
+
+## Under fire
+
+- Two side by side — only readiness separates them. Proximity is not salvation.
+- As in the days of Noah: life looked normal until the door shut.
+- Watch. You do not know which hour. Live ready, not guessing the calendar.
+
+## Prayer
+
+Lord, I release presumption. Keep me watching for You. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ As were the days of Noah, so will be the coming of the Son of Man. For as in tho
 Therefore, stay awake, for you do not know on what day your Lord is coming.
 
 See, I have told you beforehand.
-
-## Under fire
-
-- Two side by side — only readiness separates them. Proximity is not salvation.
-- As in the days of Noah: life looked normal until the door shut.
-- Watch. You do not know which hour. Live ready, not guessing the calendar.
-
-## Prayer
-
-Lord, I release presumption. Keep me watching for You. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Lord, I release presumption. Keep me watching for You. Amen.
 - [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-taken-one-left.md

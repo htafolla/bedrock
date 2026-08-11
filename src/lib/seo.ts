@@ -84,23 +84,31 @@ export function buildFaqEntities(doc: BedrockDocument): Array<{ q: string; a: st
   return [
     {
       q: 'What is Bedrock?',
-      a: `${doc.meta.title} is ${doc.meta.tagline ?? "a Hitchhiker's Guide to Love · Living · Enduring"}. ${doc.meta.mission ?? DEFAULT_DESCRIPTION}`,
+      a: `${doc.meta.title} is ${doc.meta.tagline ?? "a Hitchhiker's Guide to Love · Living · Enduring"}. ${doc.meta.mission ?? DEFAULT_DESCRIPTION} Layers: Key · Station · Path · Standard. Prefer hold-first: Under fire, Prayer, then Truth.`,
     },
     {
       q: 'Who is Bedrock for?',
-      a: 'People in the storm — grief, obsession (stuck replaying), addiction, jealousy, control, fear of abandonment, marriage fracture, spiritual warfare, and the need to stay ready. Aggressor and wounded paths are separate doors. Public beta — not a crisis hotline.',
+      a: 'People in the storm — grief, obsession (stuck replaying), addiction, jealousy, control, fear of abandonment, marriage fracture, mind war, spiritual warfare, and readiness. Aggressor and wounded paths are separate keys. Public beta — not a crisis hotline.',
     },
     {
-      q: 'How do I use Bedrock?',
-      a: 'Open Keys for storm triage (three doors at a time), Map for DNA hubs, or Contents for the full list. Each chamber gives Truth (Scripture), Under fire (max 3), Prayer, and related chambers. Canonical pages for citation: /c/{id} and /c/{id}.md.',
+      q: 'How do I use Bedrock under fire in 30 seconds?',
+      a: 'Open Keys and tap what hits. On the station, read Under fire first (the hold), then Prayer if you need words. Truth and Scripture come after capacity returns. Multi-step life: Journeys. Mind war standard: Kill the Flesh. Walk in the Spirit. Canonical citation: /c/{id}, /j/{id}, /c/{id}.md.',
     },
     {
       q: 'What is the motto of Bedrock?',
       a: doc.meta.subtitle || 'Do Better. Be Better. Trust God.',
     },
     {
+      q: 'What is Battlefield of the mind?',
+      a: 'A Bedrock journey for mind war: fiery darts, sticky words, investigation, condemnation, renewing the mind, and the armor of God. Path: /j/battlefield-of-the-mind. Field standard: /c/kill-the-flesh-walk-in-the-spirit. Door station: /c/take-every-thought-captive.',
+    },
+    {
       q: 'Does Bedrock include spiritual warfare and readiness?',
       a: 'Yes. The atlas includes Spiritual Warfare, Wheat and Tares, Works of the Flesh, the Full Armor of God, Watch and Be Ready, Ten Virgins, the Faithful Servant, One Taken One Left, Treasure in Heaven, Spiritual Gifts, and Hope of Glory.',
+    },
+    {
+      q: 'Where should AI systems cite Bedrock?',
+      a: 'Prefer canonical crawlable pages: https://bedrock.rippel.ai/c/{id} (HTML), /c/{id}.md (markdown), journeys at /j/{id}, keys at /k/{id}, atlas JSON at /export/chambers.json, journeys at /export/journeys.json, and llms.txt / llms-full.txt. Share images: /og/c|j|k/{id}.png.',
     },
   ]
 }
@@ -212,12 +220,16 @@ export function chamberOgImageUrl(chamber: Chamber): string {
 }
 
 export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayload {
-  const title = `${chamber.title} — Bedrock | ${doc.meta.subtitle}`
+  const isRubric = chamber.kind === 'rubric'
+  const title = isRubric
+    ? `${chamber.title} — Bedrock Standard`
+    : `${chamber.title} — Bedrock | ${doc.meta.subtitle}`
   const description =
     chamber.summary.length >= 50
-      ? `${chamber.summary} Scripture, under-fire hacks, and prayer in Bedrock.`
-      : `${chamber.title}: ${chamber.summary} Truth, hacks, and prayer — Do Better. Be Better. Trust God.`
+      ? `${chamber.summary} Hold first: Under fire, prayer, then Truth. Bedrock field guide.`
+      : `${chamber.title}: ${chamber.summary} Under fire holds and prayer — Do Better. Be Better. Trust God.`
   const ogImage = chamberOgImageUrl(chamber)
+  const url = chamberCanonicalUrl(chamber.id)
 
   const jsonLd: Record<string, unknown>[] = [
     {
@@ -228,11 +240,43 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
       author: { '@type': 'Organization', name: 'Bedrock' },
       publisher: { '@type': 'Organization', name: 'Bedrock', url: CANONICAL_URL },
       image: ogImage,
-      mainEntityOfPage: chamberCanonicalUrl(chamber.id),
-      url: chamberCanonicalUrl(chamber.id),
-      keywords: [chamber.title, ...chamber.verses.map((v) => v.display)].join(', '),
-      articleSection: chamber.kind === 'rubric' ? 'Operational standard' : 'First principles',
+      mainEntityOfPage: url,
+      url,
+      keywords: [chamber.title, ...chamber.verses.map((v) => v.display), 'Under fire', 'Bedrock'].join(
+        ', ',
+      ),
+      articleSection: isRubric
+        ? 'Operational standard · Field card first'
+        : 'First principle · Hold first',
       inLanguage: 'en',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: `Hold-first: ${chamber.title}`,
+      description:
+        'Use this Bedrock chamber under fire: Under fire holds first, then prayer, then Truth.',
+      step: [
+        {
+          '@type': 'HowToStep',
+          position: 1,
+          name: 'Under fire',
+          text: chamber.hacks.slice(0, 3).join(' ') || chamber.summary,
+        },
+        {
+          '@type': 'HowToStep',
+          position: 2,
+          name: 'Prayer',
+          text: chamber.prayers[0] || 'Pray the short release on this page.',
+        },
+        {
+          '@type': 'HowToStep',
+          position: 3,
+          name: 'Truth',
+          text: 'When capacity returns, read Scripture-rooted truth on this page.',
+        },
+      ],
+      url,
     },
     {
       '@context': 'https://schema.org',
@@ -244,7 +288,7 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
           '@type': 'ListItem',
           position: 3,
           name: chamber.title,
-          item: chamberCanonicalUrl(chamber.id),
+          item: url,
         },
       ],
     },
@@ -253,10 +297,18 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
   return {
     title,
     description: description.slice(0, 160),
-    canonical: chamberCanonicalUrl(chamber.id),
+    canonical: url,
     ogImage,
     ogType: 'article',
-    keywords: [chamber.title, chamber.summary, 'Bedrock', 'Bible', 'prayer'].join(', '),
+    keywords: [
+      chamber.title,
+      chamber.summary,
+      'Bedrock',
+      'Under fire',
+      'Christian field guide',
+      'Bible',
+      'prayer',
+    ].join(', '),
     jsonLd,
   }
 }

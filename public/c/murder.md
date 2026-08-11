@@ -2,17 +2,7 @@
 
 > You shall not murder — not by hand, and not by hatred.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/murder*
-
-## Truth
-
-Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
-
-You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment.
-
-But as for … murderers… their portion will be in the lake that burns with fire and sulfur.
-
-Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/murder · OG https://bedrock.rippel.ai/og/c/murder.png*
 
 ## Under fire
 
@@ -23,6 +13,16 @@ Beloved, never avenge yourselves, but leave it to the wrath of God, for it is wr
 ## Prayer
 
 Father, I release hatred and the wish to erase. Have mercy. Soften my heart. Amen.
+
+## Truth
+
+Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.
+
+You have heard that it was said to those of old, “You shall not murder; and whoever murders will be liable to judgment.” But I say to you that everyone who is angry with his brother will be liable to judgment.
+
+But as for … murderers… their portion will be in the lake that burns with fire and sulfur.
+
+Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is Mine, I will repay, says the Lord.”
 
 ## Scripture
 
@@ -42,4 +42,4 @@ Father, I release hatred and the wish to erase. Have mercy. Soften my heart. Ame
 - [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/murder.md

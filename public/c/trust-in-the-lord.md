@@ -2,17 +2,7 @@
 
 > When you cannot grip the outcome — trust.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/trust-in-the-lord*
-
-## Truth
-
-Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
-
-Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
-
-And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
-
-Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/trust-in-the-lord · OG https://bedrock.rippel.ai/og/c/trust-in-the-lord.png*
 
 ## Under fire
 
@@ -23,6 +13,16 @@ Therefore do not be anxious about tomorrow, for tomorrow will be anxious for its
 ## Prayer
 
 Lord, I trust You with all my heart. I release control. Direct my path. Amen.
+
+## Truth
+
+Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
+
+Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
 
 ## Scripture
 
@@ -42,4 +42,4 @@ Lord, I trust You with all my heart. I release control. Direct my path. Amen.
 - [control](https://bedrock.rippel.ai/c/control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/trust-in-the-lord.md

@@ -2,7 +2,17 @@
 
 > Blessed when they revile you for His name — stand, bless, do not repay evil.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/persecution*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/persecution · OG https://bedrock.rippel.ai/og/c/persecution.png*
+
+## Under fire
+
+- Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.
+- Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.
+- Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God.
+
+## Prayer
+
+Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ But I say to you, Love your enemies and pray for those who persecute you.
 Do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ’s sufferings.
 
 If the world hates you, know that it has hated Me before it hated you.
-
-## Under fire
-
-- Name it without drama: pressure for Christ’s name is expected — not proof you failed, not a license to hate.
-- Bless those who curse you. Do not repay evil with evil. Keep a clear conscience and wise feet — flee when you must; stand when you must.
-- Rejoice that you are counted worthy to suffer for the Name — then take the next free, obedient step under God.
-
-## Prayer
-
-Father, I release bitterness and fear. Strengthen me to bless, stand, and stay faithful under pressure. Amen.
 
 ## Scripture
 
@@ -47,4 +47,4 @@ Father, I release bitterness and fear. Strengthen me to bless, stand, and stay f
 - [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/persecution.md

@@ -2,7 +2,16 @@
 
 > God is faithful. He will never leave you nor forsake you.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/his-promises*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-promises · OG https://bedrock.rippel.ai/og/c/his-promises.png*
+
+## Under fire
+
+- Replace “what if they never…” with “what has He already promised that does not depend on them.”
+- Once you are in His hand, no one snatches you out — including your own shame narrative.
+
+## Prayer
+
+Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen.
 
 ## Truth
 
@@ -13,15 +22,6 @@ The work of God is this: to believe in the One He has sent.
 Abide in Me, and I will abide in you.
 
 He is faithful. His word is true. He never breaks His promises.
-
-## Under fire
-
-- Replace “what if they never…” with “what has He already promised that does not depend on them.”
-- Once you are in His hand, no one snatches you out — including your own shame narrative.
-
-## Prayer
-
-Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen.
 
 ## Scripture
 
@@ -40,4 +40,4 @@ Lord, You are faithful. I release my what-ifs. Anchor me to Your word. Amen.
 - [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-promises.md

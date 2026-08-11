@@ -2,15 +2,7 @@
 
 > God is with you and will never leave you.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/god-first*
-
-## Truth
-
-He goes before you, guards behind you, stays close when you are brokenhearted, and fights for you.
-
-Be still and know that He is God.
-
-Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. Keep His commandments and follow Him.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-first · OG https://bedrock.rippel.ai/og/c/god-first.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. 
 ## Prayer
 
 Father, You are first. I am not God. Be still my heart and lead me in Your will. Amen.
+
+## Truth
+
+He goes before you, guards behind you, stays close when you are brokenhearted, and fights for you.
+
+Be still and know that He is God.
+
+Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. Keep His commandments and follow Him.
 
 ## Scripture
 
@@ -42,4 +42,4 @@ Father, You are first. I am not God. Be still my heart and lead me in Your will.
 - [the-lords-prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/god-first.md

@@ -2,7 +2,17 @@
 
 > The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/the-word*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-word · OG https://bedrock.rippel.ai/og/c/the-word.png*
+
+## Under fire
+
+- The enemy says: “You cannot understand the Bible — leave it to experts.” God says His words give light to the simple. Open it.
+- People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line. Understanding grows in the doing.
+- Do not wait to feel smart. Abide in His Word. The truth sets free — not vibes, not secondhand summaries alone.
+
+## Prayer
+
+Father, Your Word is for me. I release the lie that I cannot understand. Give light. Teach me. Amen.
 
 ## Truth
 
@@ -27,16 +37,6 @@ Man shall not live by bread alone, but by every word that comes from the mouth o
 And take the helmet of salvation, and the sword of the Spirit, which is the word of God.
 
 But I am afraid that as the serpent deceived Eve by his cunning, your thoughts will be led astray from a sincere and pure devotion to Christ.
-
-## Under fire
-
-- The enemy says: “You cannot understand the Bible — leave it to experts.” God says His words give light to the simple. Open it.
-- People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line. Understanding grows in the doing.
-- Do not wait to feel smart. Abide in His Word. The truth sets free — not vibes, not secondhand summaries alone.
-
-## Prayer
-
-Father, Your Word is for me. I release the lie that I cannot understand. Give light. Teach me. Amen.
 
 ## Scripture
 
@@ -65,4 +65,4 @@ Father, Your Word is for me. I release the lie that I cannot understand. Give li
 - [falsehood](https://bedrock.rippel.ai/c/falsehood)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-word.md

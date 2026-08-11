@@ -2,15 +2,7 @@
 
 > Pour out your heart like water before the presence of the Lord.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart*
-
-## Truth
-
-How long, O Lord? Will You forget me forever?
-
-The Lord is near to the brokenhearted and saves the crushed in spirit.
-
-Trust in Him at all times… pour out your heart before Him.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart · OG https://bedrock.rippel.ai/og/c/lament-and-pour-out-your-heart.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Trust in Him at all times… pour out your heart before Him.
 ## Prayer
 
 Lord, I pour out my heart. I release the need to hold it alone. Stay near. Amen.
+
+## Truth
+
+How long, O Lord? Will You forget me forever?
+
+The Lord is near to the brokenhearted and saves the crushed in spirit.
+
+Trust in Him at all times… pour out your heart before Him.
 
 ## Scripture
 
@@ -36,4 +36,4 @@ Lord, I pour out my heart. I release the need to hold it alone. Stay near. Amen.
 - [loss](https://bedrock.rippel.ai/c/loss)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md

@@ -2,7 +2,17 @@
 
 > Spirit fruit: peace.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/peace*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/peace · OG https://bedrock.rippel.ai/og/c/peace.png*
+
+## Under fire
+
+- Flesh counterfeit: numbness, conflict-avoidance, or “peace” that only arrives when you grip the timeline.
+- Stop negotiating every what-if. Pray, thank, and receive the guard over heart and mind.
+- Peace is given, not earned. Receive it; let the peace of Christ rule this hour.
+
+## Prayer
+
+Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Do not be anxious about anything, but in everything by prayer and supplication w
 And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
 
 You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
-
-## Under fire
-
-- Flesh counterfeit: numbness, conflict-avoidance, or “peace” that only arrives when you grip the timeline.
-- Stop negotiating every what-if. Pray, thank, and receive the guard over heart and mind.
-- Peace is given, not earned. Receive it; let the peace of Christ rule this hour.
-
-## Prayer
-
-Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Jesus, I release the grip on the timeline. Give Your peace and guard my mind. Am
 - [patience](https://bedrock.rippel.ai/c/patience)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/peace.md

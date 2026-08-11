@@ -2,7 +2,17 @@
 
 > If it masters you, it is not free — walk by the Spirit; put the flesh to death.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/addiction*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/addiction · OG https://bedrock.rippel.ai/og/c/addiction.png*
+
+## Under fire
+
+- All things are lawful — not all helpful. If it masters you, it is not free. Name the master and refuse its throne.
+- Do not get drunk with wine (or any substitute god). Be filled with the Spirit. Walk by the Spirit; put the flesh to death one hour at a time.
+- Confess, forsake, and get real help. Freedom is not alone-willpower theater. Name it → capture the craving → pray → one next sober step.
+
+## Prayer
+
+Father, I release every false master. I am Yours. Fill me with Your Spirit and keep me free. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ Or do you not know that your body is a temple of the Holy Spirit within you, who
 For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
 
 And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God.
-
-## Under fire
-
-- All things are lawful — not all helpful. If it masters you, it is not free. Name the master and refuse its throne.
-- Do not get drunk with wine (or any substitute god). Be filled with the Spirit. Walk by the Spirit; put the flesh to death one hour at a time.
-- Confess, forsake, and get real help. Freedom is not alone-willpower theater. Name it → capture the craving → pray → one next sober step.
-
-## Prayer
-
-Father, I release every false master. I am Yours. Fill me with Your Spirit and keep me free. Amen.
 
 ## Scripture
 
@@ -52,4 +52,4 @@ Father, I release every false master. I am Yours. Fill me with Your Spirit and k
 - [adultery](https://bedrock.rippel.ai/c/adultery)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/addiction.md

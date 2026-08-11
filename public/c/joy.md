@@ -2,7 +2,17 @@
 
 > Spirit fruit: joy.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/joy*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/joy · OG https://bedrock.rippel.ai/og/c/joy.png*
+
+## Under fire
+
+- Flesh counterfeit: happiness rented from circumstances; bitterness when the rent comes due.
+- When joy dies with the outcome, speak one true thing about God that does not depend on them.
+- Grief is allowed; bitterness as identity is not. Rejoice in the Lord — His joy is your strength.
+
+## Prayer
+
+Lord, I release joy rented from outcomes. Be my strength and restore Your joy. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Rejoice in the Lord always; again I will say, rejoice.
 These things I have spoken to you, that My joy may be in you, and that your joy may be full.
 
 Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
-
-## Under fire
-
-- Flesh counterfeit: happiness rented from circumstances; bitterness when the rent comes due.
-- When joy dies with the outcome, speak one true thing about God that does not depend on them.
-- Grief is allowed; bitterness as identity is not. Rejoice in the Lord — His joy is your strength.
-
-## Prayer
-
-Lord, I release joy rented from outcomes. Be my strength and restore Your joy. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Lord, I release joy rented from outcomes. Be my strength and restore Your joy. A
 - [love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/joy.md

@@ -2,7 +2,17 @@
 
 > Spirit fruit: gentleness.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/gentleness*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/gentleness · OG https://bedrock.rippel.ai/og/c/gentleness.png*
+
+## Under fire
+
+- Flesh counterfeit: harsh correction to feel powerful, or limp avoidance labeled “gentleness.”
+- If you must correct, restore gently — and audit your pride first. Contempt is not courage.
+- Soft answer to hard moment. Truth without the knife. No venom.
+
+## Prayer
+
+Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Amen.
 
 ## Truth
 
@@ -15,16 +25,6 @@ Take My yoke upon you, and learn from Me, for I am gentle and lowly in heart, an
 Let your reasonableness be known to everyone. The Lord is at hand.
 
 Always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect.
-
-## Under fire
-
-- Flesh counterfeit: harsh correction to feel powerful, or limp avoidance labeled “gentleness.”
-- If you must correct, restore gently — and audit your pride first. Contempt is not courage.
-- Soft answer to hard moment. Truth without the knife. No venom.
-
-## Prayer
-
-Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Amen.
 
 ## Scripture
 
@@ -44,4 +44,4 @@ Jesus, gentle and lowly, I release harsh control. Form Your gentleness in me. Am
 - [self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/gentleness.md

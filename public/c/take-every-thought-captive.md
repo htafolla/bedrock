@@ -2,17 +2,7 @@
 
 > Divine power demolishes strongholds — take every thought captive to Christ.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/take-every-thought-captive*
-
-## Truth
-
-For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
-
-We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
-
-Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.
-
-Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/take-every-thought-captive · OG https://bedrock.rippel.ai/og/c/take-every-thought-captive.png*
 
 ## Under fire
 
@@ -23,6 +13,16 @@ Behold, I have given you authority to tread on serpents and scorpions, and over 
 ## Prayer
 
 Jesus, I release this loop into Your hands. Destroy the stronghold. I take the thought captive to You. Amen.
+
+## Truth
+
+For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds.
+
+We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
+
+Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.
+
+Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you.
 
 ## Scripture
 
@@ -41,4 +41,4 @@ Jesus, I release this loop into Your hands. Destroy the stronghold. I take the t
 - [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/take-every-thought-captive.md

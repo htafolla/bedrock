@@ -2,7 +2,17 @@
 
 > The stuck, replaying mind is not the Holy Spirit. Capture it.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/rumination*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/rumination · OG https://bedrock.rippel.ai/og/c/rumination.png*
+
+## Under fire
+
+- Take every thought captive to obey Christ — obsession is not revelation.
+- When cares are many, His consolations cheer the soul. Pray the spiral; do not feed it.
+- Mind stayed on Him is kept in perfect peace. Capture → replace → the next obedient step.
+
+## Prayer
+
+Lord, I release the replaying mind. I take every thought captive to You. Amen.
 
 ## Truth
 
@@ -17,16 +27,6 @@ Finally, brothers, whatever is true, whatever is honorable, whatever is just, wh
 When the cares of my heart are many, Your consolations cheer my soul.
 
 You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
-
-## Under fire
-
-- Take every thought captive to obey Christ — obsession is not revelation.
-- When cares are many, His consolations cheer the soul. Pray the spiral; do not feed it.
-- Mind stayed on Him is kept in perfect peace. Capture → replace → the next obedient step.
-
-## Prayer
-
-Lord, I release the replaying mind. I take every thought captive to You. Amen.
 
 ## Scripture
 
@@ -50,4 +50,4 @@ Lord, I release the replaying mind. I take every thought captive to You. Amen.
 - [the-adversary](https://bedrock.rippel.ai/c/the-adversary)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/rumination.md

@@ -42,10 +42,10 @@ function ChipButton({
 
 /** Shared header copy — keep desktop + mobile aligned. */
 export const KEYS_BLURB =
-  '30 seconds: tap the key that hits → Under fire is the hold. Prayer if you need words. Truth when you can read. Share lives on the station card. Path: Journeys. Atlas: Contents. Standard: Kill the Flesh.'
+  'Tap the key that hits → Under fire is the hold (seconds). Prayer if you need words. Truth when you can read. Share on the open card only. Paths: Journeys. Standard: Kill the Flesh.'
 
 const KEYS_BLURB_MOBILE =
-  'Tap a key → Under fire first (the hold). Prayer next. Share on the card. Path: Journeys. Atlas: Contents.'
+  'Tap a key → Under fire first. Prayer next. Share on the card. Paths: Journeys.'
 
 /** Storm triage — full grid on desktop; 3-up carousel on mobile. */
 export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {

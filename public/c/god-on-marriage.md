@@ -2,15 +2,7 @@
 
 > God designed marriage as a lifelong one-flesh covenant and hates divorce.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/god-on-marriage*
-
-## Truth
-
-God is the witness between a man and the wife of his youth.
-
-What He has joined, no one should separate.
-
-Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-on-marriage · OG https://bedrock.rippel.ai/og/c/god-on-marriage.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ Divorce covers a man’s garment with violence and breaks faith, yet God desires
 ## Prayer
 
 Father of the covenant, I release my grip on the outcome. Make me faithful under Your eye. Amen.
+
+## Truth
+
+God is the witness between a man and the wife of his youth.
+
+What He has joined, no one should separate.
+
+Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring.
 
 ## Scripture
 
@@ -35,4 +35,4 @@ Father of the covenant, I release my grip on the outcome. Make me faithful under
 - [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/god-on-marriage.md

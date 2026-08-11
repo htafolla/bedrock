@@ -2,15 +2,7 @@
 
 > Christ died for our sins according to the Scriptures. He was raised on the third day.
 
-*First principle · Bedrock field guide · https://bedrock.rippel.ai/c/the-cross-and-our-justification*
-
-## Truth
-
-By His wounds you have been healed. There is therefore now no condemnation for those who are in Christ Jesus.
-
-We have been justified by faith and have peace with God through our Lord Jesus Christ.
-
-It is finished.
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-cross-and-our-justification · OG https://bedrock.rippel.ai/og/c/the-cross-and-our-justification.png*
 
 ## Under fire
 
@@ -20,6 +12,14 @@ It is finished.
 ## Prayer
 
 Jesus, it is finished. I release condemnation. Keep me under Your blood. Amen.
+
+## Truth
+
+By His wounds you have been healed. There is therefore now no condemnation for those who are in Christ Jesus.
+
+We have been justified by faith and have peace with God through our Lord Jesus Christ.
+
+It is finished.
 
 ## Scripture
 
@@ -38,4 +38,4 @@ Jesus, it is finished. I release condemnation. Keep me under Your blood. Amen.
 - [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline.
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-cross-and-our-justification.md
