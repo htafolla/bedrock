@@ -1,9 +1,11 @@
-# Bedrock OG cards (PNG 1200×630)
+# Bedrock OG cards
 
-Generated on content build for social share (X, Facebook, LinkedIn, etc.).
+Generated on content build for social share.
 
-- Stations / standards: `/og/c/{id}.png`
+- Stations / standards: `/og/c/{id}.png` (1200×630)
 - Paths (journeys): `/og/j/{id}.png`
 - Keys: `/og/k/{id}.png`
+- Origin (About): `/og/origin.png`
+- Sealed poem (tall): `/og/testimony-poem.png`
 
-Cards: 107 · ~5773 KB total
+Cards: 108 · ~6115 KB total

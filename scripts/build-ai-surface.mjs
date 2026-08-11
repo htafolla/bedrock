@@ -1098,6 +1098,12 @@ export async function buildAiSurface(doc) {
     journeys,
     keys,
     origin: { subtitle: heartLine },
+    poem: doc.testimony?.poem
+      ? {
+          title: doc.testimony.poem.title || 'Backstory',
+          lines: doc.testimony.poem.lines || [],
+        }
+      : undefined,
   })
 
   writeFileSync(join(publicDir, 'llms.txt'), buildLlmsTxt(doc))

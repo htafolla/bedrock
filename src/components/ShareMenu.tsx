@@ -11,9 +11,9 @@ import {
   xIntentUrl,
 } from '../lib/share'
 import {
-  captureElementToPng,
   dataUrlToFile,
   downloadDataUrl,
+  resolveShareImageDataUrl,
   shareFilename,
 } from '../lib/capture-share-image'
 import { trackEvent } from '../lib/analytics'
@@ -36,10 +36,9 @@ interface PopoverPos {
 }
 
 /**
- * Share Door / Station / Path / Standard.
- * Image: html-to-image (bubble-blast-retro toPng) of ShareCard.
- * X / Facebook: link intents (OG unfurl from URL).
- * Instagram / TikTok: system share with PNG when possible.
+ * Share Door / Station / Path / Standard / Origin / Sealed poem.
+ * - Stations etc.: DOM card capture + URL OG for X/FB.
+ * - Poem: static tall /og/testimony-poem.png only — never About origin OG.
  *
  * Popover is portaled to document.body so sticky rails / glass stacking
  * contexts never bury the menu.
@@ -120,21 +119,16 @@ export function ShareMenu({
   }, [])
 
   const capturePng = useCallback(async (): Promise<string | null> => {
-    const el = cardRef.current
-    if (!el) return null
-    try {
-      // Wait a frame so off-screen card paints fonts/layout
-      await new Promise<void>((r) => requestAnimationFrame(() => r()))
-      return await captureElementToPng(el, { quality: 0.95, pixelRatio: 2 })
-    } catch (e) {
-      console.error('share capture failed', e)
-      return null
-    }
-  }, [])
+    // Wait a frame so off-screen card paints when used as fallback
+    await new Promise<void>((r) => requestAnimationFrame(() => r()))
+    return resolveShareImageDataUrl(payload, cardRef.current)
+  }, [payload])
 
   const shareWithImage = useCallback(async (): Promise<'shared' | 'copied' | 'cancelled' | 'failed'> => {
     const dataUrl = await capturePng()
     if (!dataUrl) {
+      // Poem must never fall back to About-only link share without image
+      if (isPoem) return 'failed'
       return systemShare(payload)
     }
     const file = await dataUrlToFile(dataUrl, shareFilename(payload))
@@ -142,13 +136,12 @@ export function ShareMenu({
       try {
         await navigator.share({
           title: payload.title,
-          text: `${payload.text}\n${payload.url}`,
+          text: isPoem ? payload.shareLine : `${payload.text}\n${payload.url}`,
           files: [file],
         })
         return 'shared'
       } catch (e) {
         if (e instanceof Error && e.name === 'AbortError') return 'cancelled'
-        // Some browsers reject files+text; try files only then fall back
         try {
           await navigator.share({ files: [file], title: payload.title })
           return 'shared'
@@ -157,11 +150,11 @@ export function ShareMenu({
         }
       }
     }
-    // Desktop: download PNG + copy link (user can attach)
+    // Desktop: download PNG + copy poem/link (user attaches image)
     downloadDataUrl(dataUrl, shareFilename(payload))
     await copyText(payload.shareLine)
     return 'copied'
-  }, [capturePng, payload])
+  }, [capturePng, payload, isPoem])
 
   const act = useCallback(
     async (network: ShareNetwork | 'image') => {
@@ -174,11 +167,11 @@ export function ShareMenu({
         if (network === 'image') {
           const dataUrl = await capturePng()
           if (!dataUrl) {
-            flash('Could not capture card')
+            flash(isPoem ? 'Could not load poem image' : 'Could not capture card')
             return
           }
           downloadDataUrl(dataUrl, shareFilename(payload))
-          flash('Image saved')
+          flash(isPoem ? 'Poem image saved' : 'Image saved')
           setOpen(false)
           return
         }
@@ -187,27 +180,43 @@ export function ShareMenu({
           if (r === 'shared') flash(network === 'system' ? 'Shared' : 'Opened share sheet')
           else if (r === 'copied')
             flash(
-              network === 'instagram' || network === 'tiktok'
-                ? 'Image saved + link copied — paste in app'
-                : 'Image saved + link copied',
+              isPoem
+                ? 'Poem image saved + text copied — paste in app'
+                : network === 'instagram' || network === 'tiktok'
+                  ? 'Image saved + link copied — paste in app'
+                  : 'Image saved + link copied',
             )
+          else if (r === 'failed') flash('Could not load poem image')
           setOpen(false)
           return
         }
         if (network === 'copy') {
           const ok = await copyText(payload.shareLine)
-          flash(ok ? 'Link copied' : 'Copy failed')
+          flash(ok ? (isPoem ? 'Poem copied' : 'Link copied') : 'Copy failed')
           setOpen(false)
           return
         }
-        // X / Facebook: open intent (preview uses OG from URL)
+        // X / Facebook: for poem, attach path is image download (URL OG is About — wrong)
+        if (isPoem && (network === 'x' || network === 'facebook')) {
+          const r = await shareWithImage()
+          if (r === 'shared') flash('Shared poem image')
+          else if (r === 'copied')
+            flash(
+              network === 'x'
+                ? 'Poem image saved + text copied — attach in X'
+                : 'Poem image saved + text copied — attach in Facebook',
+            )
+          else flash('Could not load poem image')
+          setOpen(false)
+          return
+        }
         openShareNetwork(network, payload)
         setOpen(false)
       } finally {
         setBusy(false)
       }
     },
-    [payload, flash, capturePng, shareWithImage],
+    [payload, flash, capturePng, shareWithImage, isPoem],
   )
 
   const popover =
@@ -226,7 +235,9 @@ export function ShareMenu({
           >
             <p className="share-popover-kicker">Share {payload.layerLabel}</p>
             <p className="share-popover-title">{payload.title}</p>
-            {/* Poem / sealed word: image is primary */}
+            {isPoem ? (
+              <p className="share-popover-note">Full poem image — not the About card.</p>
+            ) : null}
             <button
               type="button"
               role="menuitem"
@@ -247,32 +258,57 @@ export function ShareMenu({
                 Share with image…
               </button>
             ) : null}
-            <a
-              role="menuitem"
-              className="share-item"
-              href={xIntentUrl(payload)}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                trackEvent('nav', { nav: payload.layer, source: 'share-x' })
-                setOpen(false)
-              }}
-            >
-              X (Twitter)
-            </a>
-            <a
-              role="menuitem"
-              className="share-item"
-              href={facebookShareUrl(payload)}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                trackEvent('nav', { nav: payload.layer, source: 'share-facebook' })
-                setOpen(false)
-              }}
-            >
-              Facebook
-            </a>
+            {isPoem ? (
+              <>
+                <button
+                  type="button"
+                  role="menuitem"
+                  className="share-item"
+                  disabled={busy}
+                  onClick={() => void act('x')}
+                >
+                  X — poem image
+                </button>
+                <button
+                  type="button"
+                  role="menuitem"
+                  className="share-item"
+                  disabled={busy}
+                  onClick={() => void act('facebook')}
+                >
+                  Facebook — poem image
+                </button>
+              </>
+            ) : (
+              <>
+                <a
+                  role="menuitem"
+                  className="share-item"
+                  href={xIntentUrl(payload)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    trackEvent('nav', { nav: payload.layer, source: 'share-x' })
+                    setOpen(false)
+                  }}
+                >
+                  X (Twitter)
+                </a>
+                <a
+                  role="menuitem"
+                  className="share-item"
+                  href={facebookShareUrl(payload)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    trackEvent('nav', { nav: payload.layer, source: 'share-facebook' })
+                    setOpen(false)
+                  }}
+                >
+                  Facebook
+                </a>
+              </>
+            )}
             <button
               type="button"
               role="menuitem"
@@ -298,7 +334,7 @@ export function ShareMenu({
               disabled={busy}
               onClick={() => void act('copy')}
             >
-              Copy link
+              {isPoem ? 'Copy poem text' : 'Copy link'}
             </button>
           </div>,
           document.body,

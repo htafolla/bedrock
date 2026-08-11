@@ -74,7 +74,7 @@ describe('share payloads', () => {
     expect(p.shareLine).toContain('Through the fire')
   })
 
-  it('testimony poem share carries full lines for tall image capture', () => {
+  it('testimony poem share uses tall poem PNG — never About origin OG', () => {
     const lines = [
       'I made a grave error.',
       'Travesty has beset me.',
@@ -85,6 +85,8 @@ describe('share payloads', () => {
     expect(p.layerLabel).toBe('Sealed word')
     expect(p.lines).toEqual(lines)
     expect(p.url).toBe(`${SITE_ORIGIN}/about`)
+    expect(p.ogImage).toBe(`${SITE_ORIGIN}/og/testimony-poem.png`)
+    expect(p.ogImage).not.toContain('origin.png')
     expect(p.shareLine).toContain('I made a grave error.')
     expect(p.shareLine).toContain('forgiven, restored, and saved')
   })

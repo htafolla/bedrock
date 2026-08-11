@@ -52,12 +52,107 @@ export async function writeOgPng(opts, outPath) {
   return png.length
 }
 
+function escXml(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
+/** Word-wrap a poem line for tall share image. */
+function wrapPoemLine(text, maxChars = 44) {
+  const words = String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(' ')
+    .filter(Boolean)
+  if (!words.length) return ['']
+  const lines = []
+  let cur = ''
+  for (const w of words) {
+    const next = cur ? `${cur} ${w}` : w
+    if (next.length > maxChars && cur) {
+      lines.push(cur)
+      cur = w
+    } else {
+      cur = next
+    }
+  }
+  if (cur) lines.push(cur)
+  return lines
+}
+
+/**
+ * Tall sealed-poem PNG (full Backstory) — not the 1200×630 OG tile.
+ * Used by “Share poem image” so social share is the poem, not About origin.
+ *
+ * @param {{ title?: string, lines: string[] }} opts
+ * @param {string} outPath
+ */
+export async function writePoemPng(opts, outPath) {
+  const W = 1080
+  const padX = 72
+  const padTop = 68
+  const lineSize = 34
+  const lineStep = 46
+  const title = String(opts.title || 'Backstory')
+  const rawLines = Array.isArray(opts.lines) ? opts.lines : []
+  /** @type {string[]} */
+  const body = []
+  for (const raw of rawLines) {
+    const wrapped = wrapPoemLine(raw, 44)
+    for (const w of wrapped) body.push(w)
+    // Extra breath after each original line (couplet rhythm)
+    body.push('')
+  }
+  // Drop trailing blank
+  while (body.length && body[body.length - 1] === '') body.pop()
+
+  const bodyStart = padTop + 118
+  const bodyH = Math.max(body.length, 1) * lineStep
+  const H = bodyStart + bodyH + 140
+
+  const textNodes = body
+    .map((line, i) => {
+      const y = bodyStart + i * lineStep
+      if (!line) return ''
+      return `<text x="${padX}" y="${y}" fill="#f0e6d8" font-family="Georgia, 'Times New Roman', serif" font-size="${lineSize}" font-weight="500">${escXml(line)}</text>`
+    })
+    .filter(Boolean)
+    .join('\n')
+
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241c16"/>
+      <stop offset="48%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#120e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#bg)"/>
+  <rect x="0" y="0" width="10" height="${H}" fill="#e8a050"/>
+  <text x="${padX}" y="${padTop + 8}" fill="#c4a574" font-family="system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="4">SEALED WORD · BEDROCK</text>
+  <text x="${padX}" y="${padTop + 64}" fill="#f5e6c8" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="600">${escXml(title)}</text>
+  ${textNodes}
+  <text x="${padX}" y="${H - 78}" fill="#f5e6c8" font-family="Georgia, serif" font-size="26" font-style="italic">${escXml(MOTTO)}</text>
+  <text x="${padX}" y="${H - 40}" fill="#6a5c4e" font-family="system-ui, sans-serif" font-size="18" letter-spacing="1">bedrock.rippel.ai/about</text>
+</svg>`
+
+  const png = await sharp(Buffer.from(svg)).png({ compressionLevel: 8 }).toBuffer()
+  mkdirSync(dirname(outPath), { recursive: true })
+  writeFileSync(outPath, png)
+  return png.length
+}
+
 /**
  * @param {{
  *   chambers: Array<{ id: string, title: string, summary: string, kind?: string }>,
  *   journeys?: Array<{ id: string, title: string, summary: string }>,
  *   keys?: Array<{ id: string, label: string, hint: string }>,
  *   origin?: { subtitle?: string },
+ *   poem?: { title?: string, lines?: string[] },
  * }} input
  */
 export async function buildAllOgCards(input) {
@@ -76,7 +171,7 @@ export async function buildAllOgCards(input) {
   let bytes = 0
   let count = 0
 
-  // Origin · heart of Bedrock (About / sealed word)
+  // Origin · heart of Bedrock (About / sealed word) — landscape OG
   {
     const n = await writeOgPng(
       {
@@ -87,6 +182,19 @@ export async function buildAllOgCards(input) {
           'Through the fire He was always with me. A crucible in the rubble.',
       },
       join(publicOg, 'origin.png'),
+    )
+    bytes += n
+    count += 1
+  }
+
+  // Full sealed poem — tall PNG for “Share poem image” (not About OG)
+  if (input.poem?.lines?.length) {
+    const n = await writePoemPng(
+      {
+        title: input.poem.title || 'Backstory',
+        lines: input.poem.lines,
+      },
+      join(publicOg, 'testimony-poem.png'),
     )
     bytes += n
     count += 1
@@ -122,11 +230,13 @@ export async function buildAllOgCards(input) {
 
   writeFileSync(
     join(publicOg, 'README.md'),
-    `# Bedrock OG cards (PNG 1200×630)\n\n` +
-      `Generated on content build for social share (X, Facebook, LinkedIn, etc.).\n\n` +
-      `- Stations / standards: \`/og/c/{id}.png\`\n` +
+    `# Bedrock OG cards\n\n` +
+      `Generated on content build for social share.\n\n` +
+      `- Stations / standards: \`/og/c/{id}.png\` (1200×630)\n` +
       `- Paths (journeys): \`/og/j/{id}.png\`\n` +
-      `- Keys: \`/og/k/{id}.png\`\n\n` +
+      `- Keys: \`/og/k/{id}.png\`\n` +
+      `- Origin (About): \`/og/origin.png\`\n` +
+      `- Sealed poem (tall): \`/og/testimony-poem.png\`\n\n` +
       `Cards: ${count} · ~${Math.round(bytes / 1024)} KB total\n`,
   )
 
@@ -163,7 +273,17 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
       }
     }
   }
-  const r = await buildAllOgCards({ chambers: doc.chambers, journeys, keys })
+  const r = await buildAllOgCards({
+    chambers: doc.chambers,
+    journeys,
+    keys,
+    poem: doc.testimony?.poem
+      ? {
+          title: doc.testimony.poem.title || 'Backstory',
+          lines: doc.testimony.poem.lines || [],
+        }
+      : undefined,
+  })
   console.log(
     `OG cards: ${r.count} PNGs (${r.chambers} chambers · ${r.journeys} journeys · ${r.keys} keys) → public/og/`,
   )

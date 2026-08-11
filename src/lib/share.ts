@@ -71,8 +71,11 @@ export function ogImageUrl(params: {
   title?: string
   subtitle?: string
 }): string {
-  if (params.layer === 'origin' || params.layer === 'testimony') {
+  if (params.layer === 'origin') {
     return `${SITE_ORIGIN}/og/origin.png`
+  }
+  if (params.layer === 'testimony') {
+    return `${SITE_ORIGIN}/og/testimony-poem.png`
   }
   if (params.id) {
     const kind = params.layer === 'path' ? 'j' : params.layer === 'door' ? 'k' : 'c'
@@ -195,9 +198,12 @@ export function buildOriginShare(input: {
   }
 }
 
+/** Static tall poem PNG (built on content change) — not the About landscape OG. */
+export const TESTIMONY_POEM_IMAGE = `${SITE_ORIGIN}/og/testimony-poem.png`
+
 /**
- * Full sealed poem as a tall shareable image (runtime capture).
- * Link still points at /about for context.
+ * Full sealed poem as a tall shareable image.
+ * Always uses /og/testimony-poem.png — never the About origin card.
  */
 export function buildTestimonyPoemShare(input: {
   title?: string
@@ -214,7 +220,8 @@ export function buildTestimonyPoemShare(input: {
     text: preview,
     lines,
     url,
-    ogImage: ogImageUrl({ layer: 'testimony', title, subtitle: preview }),
+    // Tall full poem — do not use /og/origin.png (About landscape)
+    ogImage: TESTIMONY_POEM_IMAGE,
     shareLine: `${title}\n\n${lines.join('\n')}\n\n${url}`,
   }
 }
