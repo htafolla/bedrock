@@ -812,7 +812,7 @@
     <priority>0.88</priority>
     <image:image>
       <image:loc>https://bedrock.rippel.ai/og/j/spouse-left.png</image:loc>
-      <image:title>Spouse left</image:title>
+      <image:title>Marriage under fire</image:title>
     </image:image>
   </url>
   <url>
@@ -822,7 +822,7 @@
     <priority>0.88</priority>
     <image:image>
       <image:loc>https://bedrock.rippel.ai/og/j/deep-wound.png</image:loc>
-      <image:title>Betrayal</image:title>
+      <image:title>Deep wound</image:title>
     </image:image>
   </url>
   <url>
@@ -862,7 +862,7 @@
     <priority>0.88</priority>
     <image:image>
       <image:loc>https://bedrock.rippel.ai/og/j/control-grip.png</image:loc>
-      <image:title>Control grip</image:title>
+      <image:title>Control</image:title>
     </image:image>
   </url>
   <url>

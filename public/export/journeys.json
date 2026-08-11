@@ -107,10 +107,10 @@
     },
     {
       "id": "spouse-left",
-      "title": "Spouse left",
+      "title": "Marriage under fire",
       "family": "body",
       "wave": 1,
-      "summary": "You were wounded. Their leaving does not cancel whose you are. Critical to healing: your emotional state is your own — not dependent on them. Operational standard: Kill the Flesh. Walk in the Spirit. — return to your side of the street; refuse the remote. Adult position. Hold it.",
+      "summary": "You were wounded. Their leaving does not cancel whose you are. Your emotional state is your own — not dependent on them. Return to your side of the street; refuse the remote. Adult position. Hold it. Standard: Kill the Flesh. Walk in the Spirit.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -228,7 +228,7 @@
     },
     {
       "id": "deep-wound",
-      "title": "Betrayal",
+      "title": "Deep wound",
       "family": "body",
       "wave": 2,
       "summary": "You were harmed. God sees. Do not repay evil; forgive over time; keep wise boundaries.",
@@ -535,10 +535,10 @@
     },
     {
       "id": "control-grip",
-      "title": "Control grip",
+      "title": "Control",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Critical: emotional state is your own; refuse the remote. Operational standard: Kill the Flesh. Walk in the Spirit. — return to your side of the street.",
+      "summary": "Open the hand. Trust is not passivity. Self-control rules you — not them. Your emotional state is your own; refuse the remote. Return to your side of the street. Standard: Kill the Flesh. Walk in the Spirit.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
