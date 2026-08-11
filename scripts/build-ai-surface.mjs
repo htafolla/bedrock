@@ -154,8 +154,8 @@ function chamberMarkdown(c) {
   const prayers = c.prayers.map((p) => p).join('\n\n')
   const related = c.related.map((id) => `- [${id}](${ORIGIN}/c/${id})`).join('\n')
   const kicker = isRubric
-    ? `*Standard · Field card first · Hold first · Bedrock · ${ORIGIN}/c/${c.id} · OG ${ORIGIN}/og/c/${c.id}.png*`
-    : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${ORIGIN}/c/${c.id} · OG ${ORIGIN}/og/c/${c.id}.png*`
+    ? `*Standard · Field card first · Hold first · Bedrock · ${ORIGIN}/c/${c.id}*`
+    : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${ORIGIN}/c/${c.id}*`
   const truthHeading = isRubric ? 'The standard' : 'Truth'
 
   return `# ${isRubric ? `Standard: ${c.title}` : c.title}
@@ -490,7 +490,7 @@ function chamberHtml(c, meta) {
     <footer>
       <p>Do better. Be better. Trust God.</p>
       <p>Public beta v${esc(meta.version)} · revised ${esc(meta.revised)} · Not a crisis hotline.</p>
-      <p><a href="${ORIGIN}/export/chambers.json">Full atlas JSON</a> · <a href="${ORIGIN}/llms-full.txt">llms-full.txt</a> · <a href="${ORIGIN}/og/c/${esc(c.id)}.png">Share card PNG</a></p>
+      <p><a href="${ORIGIN}/export/chambers.json">Full atlas JSON</a> · <a href="${ORIGIN}/llms-full.txt">llms-full.txt</a></p>
     </footer>
   </main>
 </body>

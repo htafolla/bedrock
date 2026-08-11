@@ -2,7 +2,7 @@
 
 > Gentleness and timing.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/restore-gently-and-give-time · OG https://bedrock.rippel.ai/og/c/restore-gently-and-give-time.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/restore-gently-and-give-time*
 
 ## Under fire
 

@@ -2,7 +2,7 @@
 
 > God is for you.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/he-is-for-you · OG https://bedrock.rippel.ai/og/c/he-is-for-you.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/he-is-for-you*
 
 ## Under fire
 

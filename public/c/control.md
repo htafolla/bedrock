@@ -2,7 +2,7 @@
 
 > Open the hand — trust is not passivity; self-control rules you, not them.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/control · OG https://bedrock.rippel.ai/og/c/control.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/control*
 
 ## Under fire
 

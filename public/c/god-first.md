@@ -2,7 +2,7 @@
 
 > God is with you and will never leave you.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-first · OG https://bedrock.rippel.ai/og/c/god-first.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-first*
 
 ## Under fire
 

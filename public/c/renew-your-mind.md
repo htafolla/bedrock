@@ -2,7 +2,7 @@
 
 > Transformed mind.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/renew-your-mind · OG https://bedrock.rippel.ai/og/c/renew-your-mind.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/renew-your-mind*
 
 ## Under fire
 

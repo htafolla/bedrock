@@ -2,7 +2,7 @@
 
 > Quick to hear. Slow to speak. Slow to anger.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/be-quick-to-listen · OG https://bedrock.rippel.ai/og/c/be-quick-to-listen.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/be-quick-to-listen*
 
 ## Under fire
 

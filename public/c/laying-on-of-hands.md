@@ -2,7 +2,7 @@
 
 > Hands laid in faith under the name of Jesus.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/laying-on-of-hands · OG https://bedrock.rippel.ai/og/c/laying-on-of-hands.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/laying-on-of-hands*
 
 ## Under fire
 

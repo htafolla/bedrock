@@ -2,7 +2,7 @@
 
 > Divine power demolishes strongholds — take every thought captive to Christ.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/take-every-thought-captive · OG https://bedrock.rippel.ai/og/c/take-every-thought-captive.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/take-every-thought-captive*
 
 ## Under fire
 

@@ -2,7 +2,7 @@
 
 > Christ died for our sins according to the Scriptures. He was raised on the third day.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-cross-and-our-justification · OG https://bedrock.rippel.ai/og/c/the-cross-and-our-justification.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-cross-and-our-justification*
 
 ## Under fire
 

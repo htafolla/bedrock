@@ -2,7 +2,7 @@
 
 > All liars — and everyone who loves and practices falsehood.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/falsehood · OG https://bedrock.rippel.ai/og/c/falsehood.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/falsehood*
 
 ## Under fire
 

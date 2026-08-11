@@ -2,7 +2,7 @@
 
 > The stuck, replaying mind is not the Holy Spirit. Capture it.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/rumination · OG https://bedrock.rippel.ai/og/c/rumination.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/rumination*
 
 ## Under fire
 

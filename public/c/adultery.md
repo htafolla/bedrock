@@ -2,7 +2,7 @@
 
 > Flee sexual immorality. You are not your own.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/adultery · OG https://bedrock.rippel.ai/og/c/adultery.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/adultery*
 
 ## Under fire
 

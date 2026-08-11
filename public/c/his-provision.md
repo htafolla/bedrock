@@ -2,7 +2,7 @@
 
 > Give us this day our daily bread.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-provision · OG https://bedrock.rippel.ai/og/c/his-provision.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-provision*
 
 ## Under fire
 

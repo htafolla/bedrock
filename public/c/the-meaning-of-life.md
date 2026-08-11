@@ -2,7 +2,7 @@
 
 > The greatest commandments.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-meaning-of-life · OG https://bedrock.rippel.ai/og/c/the-meaning-of-life.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-meaning-of-life*
 
 ## Under fire
 

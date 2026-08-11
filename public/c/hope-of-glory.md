@@ -2,7 +2,7 @@
 
 > What we fight toward — glory with Him.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/hope-of-glory · OG https://bedrock.rippel.ai/og/c/hope-of-glory.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/hope-of-glory*
 
 ## Under fire
 

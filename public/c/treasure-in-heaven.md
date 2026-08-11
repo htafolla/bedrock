@@ -2,7 +2,7 @@
 
 > Lay up treasure where moth and rust do not destroy.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/treasure-in-heaven · OG https://bedrock.rippel.ai/og/c/treasure-in-heaven.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/treasure-in-heaven*
 
 ## Under fire
 

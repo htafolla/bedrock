@@ -2,7 +2,7 @@
 
 > When you cannot grip the outcome — trust.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/trust-in-the-lord · OG https://bedrock.rippel.ai/og/c/trust-in-the-lord.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/trust-in-the-lord*
 
 ## Under fire
 

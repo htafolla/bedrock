@@ -2,7 +2,7 @@
 
 > Spirit fruit: kindness.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kindness · OG https://bedrock.rippel.ai/og/c/kindness.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kindness*
 
 ## Under fire
 

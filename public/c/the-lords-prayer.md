@@ -2,7 +2,7 @@
 
 > Our Father in heaven, hallowed be Your name.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-lords-prayer · OG https://bedrock.rippel.ai/og/c/the-lords-prayer.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-lords-prayer*
 
 ## Under fire
 

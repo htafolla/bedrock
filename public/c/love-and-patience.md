@@ -2,7 +2,7 @@
 
 > True love is patient, kind, and keeps no record of wrongs.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love-and-patience · OG https://bedrock.rippel.ai/og/c/love-and-patience.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love-and-patience*
 
 ## Under fire
 

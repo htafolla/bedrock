@@ -2,7 +2,7 @@
 
 > Gate the heart and the mouth.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/guard-your-heart-and-mouth · OG https://bedrock.rippel.ai/og/c/guard-your-heart-and-mouth.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/guard-your-heart-and-mouth*
 
 ## Under fire
 

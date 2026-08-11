@@ -2,7 +2,7 @@
 
 > Stay awake. The Son of Man is coming at an hour you do not expect.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/watch-and-be-ready · OG https://bedrock.rippel.ai/og/c/watch-and-be-ready.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/watch-and-be-ready*
 
 ## Under fire
 

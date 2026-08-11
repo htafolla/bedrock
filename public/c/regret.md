@@ -2,7 +2,7 @@
 
 > Godly grief leads to life; worldly grief leads to death.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/regret · OG https://bedrock.rippel.ai/og/c/regret.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/regret*
 
 ## Under fire
 

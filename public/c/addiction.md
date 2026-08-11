@@ -2,7 +2,7 @@
 
 > If it masters you, it is not free — walk by the Spirit; put the flesh to death.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/addiction · OG https://bedrock.rippel.ai/og/c/addiction.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/addiction*
 
 ## Under fire
 

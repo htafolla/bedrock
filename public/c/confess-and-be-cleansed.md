@@ -2,7 +2,7 @@
 
 > Confess. Be cleansed. Draw near.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/confess-and-be-cleansed · OG https://bedrock.rippel.ai/og/c/confess-and-be-cleansed.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/confess-and-be-cleansed*
 
 ## Under fire
 

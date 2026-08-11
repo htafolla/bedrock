@@ -2,7 +2,7 @@
 
 > Consider it pure joy when you face trials.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/count-the-trial-as-joy · OG https://bedrock.rippel.ai/og/c/count-the-trial-as-joy.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/count-the-trial-as-joy*
 
 ## Under fire
 

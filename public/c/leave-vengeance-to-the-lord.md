@@ -2,7 +2,7 @@
 
 > Vengeance belongs to Him — and hatred has no place with love.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord · OG https://bedrock.rippel.ai/og/c/leave-vengeance-to-the-lord.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord*
 
 ## Under fire
 

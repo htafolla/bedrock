@@ -2,7 +2,7 @@
 
 > Spirit fruit: joy.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/joy · OG https://bedrock.rippel.ai/og/c/joy.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/joy*
 
 ## Under fire
 

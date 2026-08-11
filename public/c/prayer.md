@@ -2,7 +2,7 @@
 
 > Ask, seek, knock — pray without ceasing.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/prayer · OG https://bedrock.rippel.ai/og/c/prayer.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/prayer*
 
 ## Under fire
 

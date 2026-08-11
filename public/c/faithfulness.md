@@ -2,7 +2,7 @@
 
 > Spirit fruit: faithfulness.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/faithfulness · OG https://bedrock.rippel.ai/og/c/faithfulness.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/faithfulness*
 
 ## Under fire
 

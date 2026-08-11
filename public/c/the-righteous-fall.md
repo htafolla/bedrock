@@ -2,7 +2,7 @@
 
 > Fall and rise.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-righteous-fall · OG https://bedrock.rippel.ai/og/c/the-righteous-fall.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-righteous-fall*
 
 ## Under fire
 

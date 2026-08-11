@@ -2,7 +2,7 @@
 
 > Spirit fruit: peace.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/peace · OG https://bedrock.rippel.ai/og/c/peace.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/peace*
 
 ## Under fire
 

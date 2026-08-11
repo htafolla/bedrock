@@ -2,7 +2,7 @@
 
 > Steel under fire: kill the flesh, walk in the Spirit. Field card first. Full holds when you need them.
 
-*Standard · Field card first · Hold first · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit · OG https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.png*
+*Standard · Field card first · Hold first · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit*
 
 ## Under fire
 

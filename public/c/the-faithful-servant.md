@@ -2,7 +2,7 @@
 
 > Blessed is that servant whom his master will find so doing when he comes.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-faithful-servant · OG https://bedrock.rippel.ai/og/c/the-faithful-servant.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-faithful-servant*
 
 ## Under fire
 

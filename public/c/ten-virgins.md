@@ -2,7 +2,7 @@
 
 > Five were wise, five foolish — the door was shut.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/ten-virgins · OG https://bedrock.rippel.ai/og/c/ten-virgins.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/ten-virgins*
 
 ## Under fire
 

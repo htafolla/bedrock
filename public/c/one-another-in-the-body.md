@@ -2,7 +2,7 @@
 
 > Bear one another’s burdens, and so fulfill the law of Christ.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-another-in-the-body · OG https://bedrock.rippel.ai/og/c/one-another-in-the-body.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-another-in-the-body*
 
 ## Under fire
 

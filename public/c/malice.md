@@ -2,7 +2,7 @@
 
 > Put away all malice — the quiet wish to harm.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/malice · OG https://bedrock.rippel.ai/og/c/malice.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/malice*
 
 ## Under fire
 

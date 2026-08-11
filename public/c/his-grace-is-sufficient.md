@@ -2,7 +2,7 @@
 
 > Grace enough for this hour.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-grace-is-sufficient · OG https://bedrock.rippel.ai/og/c/his-grace-is-sufficient.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-grace-is-sufficient*
 
 ## Under fire
 

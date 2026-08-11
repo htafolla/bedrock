@@ -2,7 +2,7 @@
 
 > Spirit fruit: patience.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/patience · OG https://bedrock.rippel.ai/og/c/patience.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/patience*
 
 ## Under fire
 

@@ -2,7 +2,7 @@
 
 > When everything is out of your control — wait. Be strong. Take courage.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wait-on-the-lord · OG https://bedrock.rippel.ai/og/c/wait-on-the-lord.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wait-on-the-lord*
 
 ## Under fire
 

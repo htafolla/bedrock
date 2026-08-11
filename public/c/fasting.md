@@ -2,7 +2,7 @@
 
 > Humble yourself with fasting — seek God, not applause.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/fasting · OG https://bedrock.rippel.ai/og/c/fasting.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/fasting*
 
 ## Under fire
 

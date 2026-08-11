@@ -2,7 +2,7 @@
 
 > Blessed when they revile you for His name — stand, bless, do not repay evil.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/persecution · OG https://bedrock.rippel.ai/og/c/persecution.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/persecution*
 
 ## Under fire
 

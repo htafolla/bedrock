@@ -2,7 +2,7 @@
 
 > Varieties of gifts, one Spirit — for the common good.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-gifts · OG https://bedrock.rippel.ai/og/c/spiritual-gifts.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-gifts*
 
 ## Under fire
 

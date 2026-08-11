@@ -2,7 +2,7 @@
 
 > Grief for real loss and possible loss — He is near the brokenhearted.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/loss · OG https://bedrock.rippel.ai/og/c/loss.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/loss*
 
 ## Under fire
 

@@ -2,7 +2,7 @@
 
 > God designed marriage as a lifelong one-flesh covenant and hates divorce.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-on-marriage · OG https://bedrock.rippel.ai/og/c/god-on-marriage.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/god-on-marriage*
 
 ## Under fire
 

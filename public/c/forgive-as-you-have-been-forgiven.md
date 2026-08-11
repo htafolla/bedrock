@@ -2,7 +2,7 @@
 
 > Forgive one another as God in Christ forgave you.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven · OG https://bedrock.rippel.ai/og/c/forgive-as-you-have-been-forgiven.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven*
 
 ## Under fire
 

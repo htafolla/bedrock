@@ -2,7 +2,7 @@
 
 > We are at war — not against flesh and blood.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-warfare · OG https://bedrock.rippel.ai/og/c/spiritual-warfare.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/spiritual-warfare*
 
 ## Under fire
 

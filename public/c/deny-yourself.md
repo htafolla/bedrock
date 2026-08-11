@@ -2,7 +2,7 @@
 
 > Cross daily. Follow Me.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/deny-yourself · OG https://bedrock.rippel.ai/og/c/deny-yourself.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/deny-yourself*
 
 ## Under fire
 

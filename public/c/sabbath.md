@@ -2,7 +2,7 @@
 
 > The seventh day is the Sabbath — Saturday — still holy to the Lord. A holy day He made.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/sabbath · OG https://bedrock.rippel.ai/og/c/sabbath.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/sabbath*
 
 ## Under fire
 

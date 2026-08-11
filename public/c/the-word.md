@@ -2,7 +2,7 @@
 
 > The enemy says you cannot know or understand. God says His Word is for you — light to the simple.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-word · OG https://bedrock.rippel.ai/og/c/the-word.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-word*
 
 ## Under fire
 

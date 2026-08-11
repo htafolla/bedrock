@@ -2,7 +2,7 @@
 
 > The Lord is near to the brokenhearted.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/a-broken-and-contrite-heart · OG https://bedrock.rippel.ai/og/c/a-broken-and-contrite-heart.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/a-broken-and-contrite-heart*
 
 ## Under fire
 

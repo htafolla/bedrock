@@ -2,7 +2,7 @@
 
 > Do not repay evil with evil or insult with insult.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil · OG https://bedrock.rippel.ai/og/c/do-not-repay-evil-with-evil.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil*
 
 ## Under fire
 

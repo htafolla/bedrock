@@ -2,7 +2,7 @@
 
 > Spirit fruit: self-control.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/self-control · OG https://bedrock.rippel.ai/og/c/self-control.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/self-control*
 
 ## Under fire
 

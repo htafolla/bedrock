@@ -2,7 +2,7 @@
 
 > A good farmer sowed wheat; an enemy sowed weeds at night.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wheat-and-tares · OG https://bedrock.rippel.ai/og/c/wheat-and-tares.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wheat-and-tares*
 
 ## Under fire
 

@@ -2,7 +2,7 @@
 
 > God is faithful. He will never leave you nor forsake you.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-promises · OG https://bedrock.rippel.ai/og/c/his-promises.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-promises*
 
 ## Under fire
 

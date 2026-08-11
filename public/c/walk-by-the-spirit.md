@@ -2,7 +2,7 @@
 
 > Walk by the Spirit, and you will not gratify the desires of the flesh.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-by-the-spirit · OG https://bedrock.rippel.ai/og/c/walk-by-the-spirit.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-by-the-spirit*
 
 ## Under fire
 

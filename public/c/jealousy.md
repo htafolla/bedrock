@@ -2,7 +2,7 @@
 
 > If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/jealousy · OG https://bedrock.rippel.ai/og/c/jealousy.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/jealousy*
 
 ## Under fire
 

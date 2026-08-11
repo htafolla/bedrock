@@ -2,7 +2,7 @@
 
 > Spirit fruit: goodness.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/goodness · OG https://bedrock.rippel.ai/og/c/goodness.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/goodness*
 
 ## Under fire
 

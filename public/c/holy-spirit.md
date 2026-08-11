@@ -2,7 +2,7 @@
 
 > Jesus gave the Helper — Spirit of truth with you, to testify and empower.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/holy-spirit · OG https://bedrock.rippel.ai/og/c/holy-spirit.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/holy-spirit*
 
 ## Under fire
 

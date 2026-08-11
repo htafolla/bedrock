@@ -2,7 +2,7 @@
 
 > Two in the field — one taken, one left.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-taken-one-left · OG https://bedrock.rippel.ai/og/c/one-taken-one-left.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/one-taken-one-left*
 
 ## Under fire
 

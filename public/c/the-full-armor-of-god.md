@@ -2,7 +2,7 @@
 
 > The kit for the war — stand.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-full-armor-of-god · OG https://bedrock.rippel.ai/og/c/the-full-armor-of-god.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-full-armor-of-god*
 
 ## Under fire
 

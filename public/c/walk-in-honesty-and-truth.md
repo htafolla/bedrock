@@ -2,7 +2,7 @@
 
 > Truthful lips. Yes and no.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-in-honesty-and-truth · OG https://bedrock.rippel.ai/og/c/walk-in-honesty-and-truth.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/walk-in-honesty-and-truth*
 
 ## Under fire
 

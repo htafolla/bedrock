@@ -2,7 +2,7 @@
 
 > One-flesh covenant. Sacrificial love.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/marriage-covenant · OG https://bedrock.rippel.ai/og/c/marriage-covenant.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/marriage-covenant*
 
 ## Under fire
 

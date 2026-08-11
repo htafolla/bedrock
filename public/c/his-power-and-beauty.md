@@ -2,7 +2,7 @@
 
 > All things were created by Him and for Him.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-power-and-beauty · OG https://bedrock.rippel.ai/og/c/his-power-and-beauty.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/his-power-and-beauty*
 
 ## Under fire
 

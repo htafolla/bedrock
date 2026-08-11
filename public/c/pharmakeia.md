@@ -2,7 +2,7 @@
 
 > Sorcery — and every counterfeit power — is works of the flesh.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/pharmakeia · OG https://bedrock.rippel.ai/og/c/pharmakeia.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/pharmakeia*
 
 ## Under fire
 

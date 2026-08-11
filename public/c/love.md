@@ -2,7 +2,7 @@
 
 > Spirit fruit: love.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love · OG https://bedrock.rippel.ai/og/c/love.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/love*
 
 ## Under fire
 

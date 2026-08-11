@@ -2,7 +2,7 @@
 
 > Those who practice such things will not inherit the kingdom of God.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/works-of-the-flesh · OG https://bedrock.rippel.ai/og/c/works-of-the-flesh.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/works-of-the-flesh*
 
 ## Under fire
 

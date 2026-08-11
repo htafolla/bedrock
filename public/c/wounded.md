@@ -2,7 +2,7 @@
 
 > You were harmed — God sees; He is near the crushed.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wounded · OG https://bedrock.rippel.ai/og/c/wounded.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/wounded*
 
 ## Under fire
 

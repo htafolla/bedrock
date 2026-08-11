@@ -2,7 +2,7 @@
 
 > He is real. Do not fixate. Name him, resist him, stand with God.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-adversary · OG https://bedrock.rippel.ai/og/c/the-adversary.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/the-adversary*
 
 ## Under fire
 

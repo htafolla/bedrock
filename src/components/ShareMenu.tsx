@@ -233,7 +233,6 @@ export function ShareMenu({
                 onClick={() => void act('system')}
               >
                 Share with image…
-                <span className="share-item-hint">card PNG</span>
               </button>
             ) : null}
             <button
@@ -257,7 +256,6 @@ export function ShareMenu({
               }}
             >
               X (Twitter)
-              <span className="share-item-hint">link + OG card</span>
             </a>
             <a
               role="menuitem"
@@ -271,7 +269,6 @@ export function ShareMenu({
               }}
             >
               Facebook
-              <span className="share-item-hint">link + OG card</span>
             </a>
             <button
               type="button"
@@ -281,7 +278,6 @@ export function ShareMenu({
               onClick={() => void act('instagram')}
             >
               Instagram
-              <span className="share-item-hint">image + share sheet</span>
             </button>
             <button
               type="button"
@@ -291,7 +287,6 @@ export function ShareMenu({
               onClick={() => void act('tiktok')}
             >
               TikTok
-              <span className="share-item-hint">image + share sheet</span>
             </button>
             <button
               type="button"
@@ -302,10 +297,6 @@ export function ShareMenu({
             >
               Copy link
             </button>
-            <p className="share-popover-note">
-              Card image is captured from this screen (html-to-image). X/Facebook previews also use
-              the link&apos;s OG image.
-            </p>
           </div>,
           document.body,
         )

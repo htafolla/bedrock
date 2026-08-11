@@ -2,7 +2,7 @@
 
 > You shall not murder — not by hand, and not by hatred.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/murder · OG https://bedrock.rippel.ai/og/c/murder.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/murder*
 
 ## Under fire
 

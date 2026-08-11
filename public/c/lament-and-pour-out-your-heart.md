@@ -2,7 +2,7 @@
 
 > Pour out your heart like water before the presence of the Lord.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart · OG https://bedrock.rippel.ai/og/c/lament-and-pour-out-your-heart.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart*
 
 ## Under fire
 

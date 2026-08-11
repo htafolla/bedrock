@@ -2,7 +2,7 @@
 
 > Jesus heals — ask, trust, and do not lose heart.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/healing · OG https://bedrock.rippel.ai/og/c/healing.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/healing*
 
 ## Under fire
 

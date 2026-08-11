@@ -2,7 +2,7 @@
 
 > God has not given you a spirit of fear, but of power, love, and a sound mind.
 
-*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-fear · OG https://bedrock.rippel.ai/og/c/do-not-fear.png*
+*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/do-not-fear*
 
 ## Under fire
 
