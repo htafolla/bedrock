@@ -7,8 +7,8 @@
 ## Under fire
 
 - If God is for you, stop rehearsing every face that seems against you.
-- Cast the care — do not decorate it. He cares for you is a fact, not a mood.
-- Your emotional state is your own — not dependent on them. Love them; refuse them the remote to your insides.
+- Cast your care on Him. Do not polish it or keep replaying it. He cares for you.
+- Your peace is not rented to another person. Love them, and keep your heart under God.
 
 ## Prayer
 

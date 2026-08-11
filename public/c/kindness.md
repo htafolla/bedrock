@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Flesh counterfeit: niceness to manage image, or harshness justified as “just being honest.”
-- Replace the sharp text with one true, clean sentence — or silence if silence is love.
+- Niceness to manage image, or harshness excused as “just being honest,” is not kindness.
+- Replace the sharp text with one true, clean sentence, or silence if silence is love.
 - Do one kind act without announcement. Kindness that needs credit is still flesh.
 
 ## Prayer

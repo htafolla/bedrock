@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Flesh counterfeit: happiness rented from circumstances; bitterness when the rent comes due.
+- Happiness rented from circumstances turns to bitterness when the rent comes due.
 - When joy dies with the outcome, speak one true thing about God that does not depend on them.
-- Grief is allowed; bitterness as identity is not. Rejoice in the Lord — His joy is your strength.
+- Grief is allowed; bitterness as identity is not. Rejoice in the Lord. His joy is your strength.
 
 ## Prayer
 

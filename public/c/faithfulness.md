@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Flesh counterfeit: conditional loyalty, ghosting covenant, “I need to be true to myself” as exit ramp.
+- Conditional loyalty and “I need to be true to myself” as an exit ramp are not faithfulness.
 - Covenant is not a contract of feelings. Keep the next faithful act you already know is right.
 - When you want to rewrite the story to exit: stop. Tell the truth. Stay under what God still calls true.
 

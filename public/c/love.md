@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Flesh counterfeit: lust, scorekeeping, or “love” that needs them to change so you feel safe — that is not the Spirit’s fruit.
-- Before you act “for love,” ask: does this serve their good under God — or my appetite, my image, my control?
-- If hatred rises, name it. Put it down. Bless once. Entrust the scales. Hatred and love of God cannot share a heart.
+- Lust, scorekeeping, or “love” that needs them to change so you feel safe is not the Spirit’s fruit.
+- Before you act “for love,” ask: does this serve their good under God, or my appetite, my image, my control?
+- If hatred rises, name it. Put it down. Bless once. Leave judgment to God. Hatred and love of God cannot share a heart.
 
 ## Prayer
 

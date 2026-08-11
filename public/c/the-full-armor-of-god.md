@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Dress for war daily: truth, righteousness, peace, faith, salvation, Word, prayer — not vibes.
+- Dress for war daily: truth, righteousness, peace, faith, salvation, the Word, and prayer.
 - Flaming darts are expected. Raise the shield of faith instead of explaining every dart to yourself.
-- Armor is for standing — after you know you are in a fight. Stay dressed; stay praying.
+- Armor is for standing once you know you are in a fight. Stay dressed. Stay praying.
 
 ## Prayer
 

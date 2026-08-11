@@ -6,7 +6,7 @@
 
 ## Under fire
 
-- Flesh counterfeit: performative virtue, self-justifying “good reasons,” or evil for a noble end.
+- Performative virtue and evil for a “good reason” are not goodness.
 - Ask: is this good, or only useful for my case? Choose light over managed darkness.
 - One honest yes, one honest no. Half-truths are full lies with better manners.
 

@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Take every thought captive to obey Christ — obsession is not revelation.
-- When cares are many, His consolations cheer the soul. Pray the spiral; do not feed it.
-- Mind stayed on Him is kept in perfect peace. Capture → replace → the next obedient step.
+- Take every thought captive to obey Christ. Obsession is not revelation.
+- When cares are many, bring them to God. Pray. Do not feed the loop.
+- Keep your mind on Him. Capture the thought, replace it with what is true, then take the next obedient step.
 
 ## Prayer
 

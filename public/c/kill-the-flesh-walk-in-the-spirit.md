@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Capture the thought. Refuse investigation (evidence-hunt) and condemnation (accuser’s voice). Conviction leads to life; the rest freezes.
-- Stay on your side of the street. Their replies are theirs. Distance can be protection. Success is Spirit, not outcomes.
-- Deeper mind war: Journeys → Battlefield of the mind. Field card first; full holds below when you need them.
+- Capture the thought. Refuse the evidence-hunt and the accuser’s voice. Conviction leads to life; condemnation freezes.
+- Stay with what is yours to obey. Their replies are theirs. Distance can be protection. Success is Spirit, not outcomes.
+- For deeper mind war, open Journeys → Battlefield of the mind. Use the field card first; open full holds only when you need the map.
 
 ## Prayer
 
-Father, I take every thought captive. I refuse investigation and condemnation. I release this war into Your hands. Amen.
+Father, I take every thought captive. I refuse the hunt and the accuser. I release this war into Your hands. Amen.
 
 ## The standard
 

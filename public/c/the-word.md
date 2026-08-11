@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- The enemy says: “You cannot understand the Bible — leave it to experts.” God says His words give light to the simple. Open it.
-- People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line. Understanding grows in the doing.
-- Do not wait to feel smart. Abide in His Word. The truth sets free — not vibes, not secondhand summaries alone.
+- The enemy says you cannot understand the Bible. God says His words give light to the simple. Open it.
+- People perish for lack of knowledge. Read a short passage. Ask the Spirit. Obey the next clear line.
+- Do not wait to feel smart. Abide in His Word. The truth sets free, not secondhand summaries alone.
 
 ## Prayer
 

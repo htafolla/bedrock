@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Flesh counterfeit: force the outcome, rage at the clock, punish them for not moving on your schedule.
-- When urgency screams “fix them,” answer: wait for the Lord; do the one duty you own today.
-- Slow the reply. Soften the tone. Love is patient — you are not the weather.
+- Do not force the outcome, rage at the clock, or punish them for not moving on your schedule.
+- When urgency screams “fix them,” wait for the Lord. Do the one duty you own today.
+- Slow the reply. Soften the tone. Love is patient. You do not control their will.
 
 ## Prayer
 

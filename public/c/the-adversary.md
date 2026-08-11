@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- He is real — not a cartoon, not a metaphor. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.
-- Weeds grow among wheat: not everyone who looks religious is of the kingdom. Discern fruit; do not play detective for the devil’s resume.
-- When persecution and schemes hit: submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind.
+- He is real. Name him when Scripture does. Then refuse fascination; fix your eyes on Jesus.
+- Weeds grow among wheat. Not everyone who looks religious is of the kingdom. Discern fruit; do not chase the devil’s résumé.
+- Submit to God, resist the devil, stand in the Word. Do not give him the microphone of your mind.
 
 ## Prayer
 

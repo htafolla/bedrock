@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Flesh counterfeit: numbness, conflict-avoidance, or “peace” that only arrives when you grip the timeline.
-- Stop negotiating every what-if. Pray, thank, and receive the guard over heart and mind.
-- Peace is given, not earned. Receive it; let the peace of Christ rule this hour.
+- Numbness, avoiding conflict, or peace that only arrives when you control the timeline is not Christ’s peace.
+- Stop negotiating every what-if. Pray, thank Him, and receive the guard over heart and mind.
+- Peace is given, not earned. Receive it. Let the peace of Christ rule this hour.
 
 ## Prayer
 

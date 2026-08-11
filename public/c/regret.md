@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Godly grief produces repentance that leads to life; worldly grief produces death — refuse the death-tape.
+- Godly grief leads to life and change. Worldly grief only kills. Refuse grief that never rises.
 - Confess and forsake: name the sin, receive cleansing, change. Concealment will not prosper.
-- There is now no condemnation in Christ Jesus — self-hate is not holiness. Own what is yours; then rise.
+- There is now no condemnation in Christ Jesus. Self-hate is not holiness. Own what is yours; then rise.
 
 ## Prayer
 

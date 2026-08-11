@@ -6,13 +6,13 @@
 
 ## Under fire
 
-- Stillness is a weapon. You need not win the courtroom of your mind. The Lord fights; you stand.
-- If the urge is to repay, that is flesh. Bless, entrust the scales to God, do the next right thing.
+- You do not need to win the argument in your head. The Lord fights; you stand.
+- If the urge is to repay, that is flesh. Bless, leave judgment to God, do the next right thing.
 - Hatred of a brother and love of God cannot share the same heart. Name the hate; put it down before it becomes a second sin.
 
 ## Prayer
 
-Father, vengeance is Yours. I release the scales. Soften hatred in me. Amen.
+Father, vengeance is Yours. I release judgment to You. Soften hatred in me. Amen.
 
 ## Truth
 

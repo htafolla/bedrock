@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Flesh counterfeit: harsh correction to feel powerful, or limp avoidance labeled “gentleness.”
-- If you must correct, restore gently — and audit your pride first. Contempt is not courage.
-- Soft answer to hard moment. Truth without the knife. No venom.
+- Harsh correction to feel powerful, or limp avoidance labeled “gentleness,” is still flesh.
+- If you must correct, restore gently, and check your pride first. Contempt is not courage.
+- Soft answer to a hard moment. Truth without the knife. No venom.
 
 ## Prayer
 

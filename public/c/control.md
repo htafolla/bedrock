@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Your emotional state is your own — not dependent on them. Love, want reconciliation, and still refuse them the remote to your internal state. That is the adult position. Hold it.
-- Name the grip: outcomes, people, image, timeline — if you must hold it, it has become a god. Open the hand.
-- Self-control rules you — not them. Trust is not passivity: next obedient step; leave the rest to Him.
+- Your peace is not rented to them. You can love them, want reconciliation, and still refuse to let their choices rule your spirit.
+- Name the grip: outcomes, people, image, timeline. If you must hold it, it has become a god. Open the hand.
+- Self-control rules you, not them. Trust is not passivity: take the next obedient step and leave the rest to Him.
 
 ## Prayer
 

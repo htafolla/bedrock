@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- Name the work of the flesh without soft labels — what God named, do not rename as “self-care.”
-- Those who practice such things will not inherit the kingdom — this is warning, not a joke.
-- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See: Kill the Flesh. Walk in the Spirit. (the Rubric).
+- Name the work of the flesh without soft labels. What God named, do not rename as “self-care.”
+- Those who practice such things will not inherit the kingdom. This is warning, not a joke.
+- Walk by the Spirit and you will not gratify the flesh. Put it to death; do not negotiate. See Kill the Flesh. Walk in the Spirit.
 
 ## Prayer
 

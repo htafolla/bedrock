@@ -6,8 +6,8 @@
 
 ## Under fire
 
-- Name it the moment it rises: “This is jealousy.” It is not protection — it is a demand that another exist to secure you. Refuse its throne.
-- Do not investigate, accuse, or punish. Capture the thought → pray → one next free step.
+- Name it when it rises: this is jealousy. It is not love. It is a demand that another person secure you.
+- Do not investigate, accuse, or punish. Capture the thought, pray, then take one free step.
 - Love does not envy. Walk by the Spirit; put the flesh to death.
 
 ## Prayer

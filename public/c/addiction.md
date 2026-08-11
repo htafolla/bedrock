@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- All things are lawful — not all helpful. If it masters you, it is not free. Name the master and refuse its throne.
-- Do not get drunk with wine (or any substitute god). Be filled with the Spirit. Walk by the Spirit; put the flesh to death one hour at a time.
-- Confess, forsake, and get real help. Freedom is not alone-willpower theater. Name it → capture the craving → pray → one next sober step.
+- All things are lawful, not all helpful. If it masters you, it is not free. Name the master and refuse its throne.
+- Do not get drunk with wine or any substitute god. Be filled with the Spirit. Put the flesh to death one hour at a time.
+- Confess, forsake, and get real help. Freedom is not white-knuckling alone. Name it, capture the craving, pray, take one sober step.
 
 ## Prayer
 
