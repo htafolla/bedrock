@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "revised": "2026-08-10",
+    "revised": "2026-08-11",
     "title": "Bedrock core journeys",
     "description": "Ordered multi-stage walks through the chamber atlas for ground-shaking life. Chambers are stations; journeys are paths. Shared spine: blow → near → spiral → fork → long_middle → remain. People loop spiral↔fork↔long_middle; the path is to keep walking, not complete a checklist.",
     "stageRoles": [
@@ -54,49 +54,49 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "The blow",
+          "label": "Loss",
           "chamberId": "loss",
           "note": "Name the death. Mourning is not unbelief."
         },
         {
           "id": "near",
           "role": "near",
-          "label": "Who holds me",
+          "label": "Presence",
           "chamberId": "he-is-for-you",
           "note": "Presence before advice."
         },
         {
           "id": "promises",
           "role": "near",
-          "label": "What still stands",
+          "label": "Promises",
           "chamberId": "his-promises",
           "note": "Faithful when the chair is empty."
         },
         {
           "id": "lament",
           "role": "spiral",
-          "label": "Pour out",
+          "label": "Lament",
           "chamberId": "lament-and-pour-out-your-heart",
           "note": "Do not perform fine."
         },
         {
           "id": "hope",
           "role": "long_middle",
-          "label": "Pain and glory",
+          "label": "Hope",
           "chamberId": "hope-of-glory",
           "note": "Present pain real; future glory more real. Hold both."
         },
         {
           "id": "wait",
           "role": "long_middle",
-          "label": "The long middle",
+          "label": "Wait",
           "chamberId": "wait-on-the-lord",
           "note": "Time moves; they do not."
         },
         {
           "id": "peace",
           "role": "remain",
-          "label": "Guard the mind",
+          "label": "Peace",
           "chamberId": "peace",
           "note": "Peace given, not earned by gripping the timeline."
         }
@@ -140,35 +140,35 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "The wound",
+          "label": "Wound",
           "chamberId": "wounded",
           "note": "Name harm. Do not make hatred your shelter."
         },
         {
           "id": "near",
           "role": "near",
-          "label": "Whose you are",
+          "label": "You are His",
           "chamberId": "he-is-for-you",
           "note": "Their leaving does not cancel you are His. Your emotional state is your own — not dependent on them."
         },
         {
           "id": "spiral",
           "role": "spiral",
-          "label": "The replay",
+          "label": "Replay",
           "chamberId": "rumination",
           "note": "Obsession is not revelation. Do not hand the loop the remote to your insides."
         },
         {
           "id": "fear",
           "role": "spiral",
-          "label": "Abandonment fear",
+          "label": "Fear",
           "chamberId": "fear",
           "note": "Name the fear; then trust. Adult position: refuse fear the throne of your state."
         },
         {
           "id": "fork-vengeance",
           "role": "fork",
-          "label": "Courtroom of the mind",
+          "label": "Vengeance",
           "chamberId": "leave-vengeance-to-the-lord",
           "note": "Flesh wants repayment; entrust the scales."
         },
@@ -182,42 +182,42 @@
         {
           "id": "covenant",
           "role": "long_middle",
-          "label": "Covenant honesty",
+          "label": "Covenant",
           "chamberId": "marriage-covenant",
           "note": "Do not invent a new story. Faithful to what God still calls true — not self-erasure in harm."
         },
         {
           "id": "forgive",
           "role": "long_middle",
-          "label": "Forgiveness over time",
+          "label": "Forgive",
           "chamberId": "forgive-as-you-have-been-forgiven",
           "note": "Not saying it did not hurt. Release the ledger while grief remains."
         },
         {
           "id": "endure",
           "role": "long_middle",
-          "label": "Long middle",
+          "label": "Patience",
           "chamberId": "patience",
           "note": "One duty you own today."
         },
         {
           "id": "trust",
           "role": "remain",
-          "label": "Release the outcome",
+          "label": "Trust",
           "chamberId": "trust-in-the-lord",
           "note": "You cannot grip the outcome."
         },
         {
           "id": "rubric",
           "role": "remain",
-          "label": "The Rubric",
+          "label": "Standard",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
           "note": "Operational standard under fire: refuse the flesh; walk in the Spirit; your side of the street."
         },
         {
           "id": "hope",
           "role": "remain",
-          "label": "Keep remaining",
+          "label": "Remain",
           "chamberId": "hope-of-glory",
           "note": "Steadfast under trial."
         }
@@ -257,14 +257,14 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "The wound",
+          "label": "Wound",
           "chamberId": "wounded",
           "note": "Name harm without false total blame."
         },
         {
           "id": "near",
           "role": "near",
-          "label": "He is for you",
+          "label": "For you",
           "chamberId": "he-is-for-you",
           "note": "Cast the care; do not decorate it."
         },
@@ -278,14 +278,14 @@
         {
           "id": "fork-vengeance",
           "role": "fork",
-          "label": "Leave vengeance",
+          "label": "Vengeance",
           "chamberId": "leave-vengeance-to-the-lord",
           "note": "Stillness is a weapon."
         },
         {
           "id": "forgive",
           "role": "long_middle",
-          "label": "Forgive as forgiven",
+          "label": "Forgive",
           "chamberId": "forgive-as-you-have-been-forgiven",
           "note": "Frees you to obey while grief remains."
         },
@@ -327,7 +327,7 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the fear",
+          "label": "Fear",
           "chamberId": "fear",
           "note": "Perfect love casts out fear."
         },
@@ -341,7 +341,7 @@
         {
           "id": "near",
           "role": "near",
-          "label": "He is for you",
+          "label": "For you",
           "chamberId": "he-is-for-you",
           "note": "Stop rehearsing every face against you."
         },
@@ -355,7 +355,7 @@
         {
           "id": "spiral",
           "role": "spiral",
-          "label": "Capture the spiral",
+          "label": "Capture",
           "chamberId": "take-every-thought-captive",
           "note": "Fear thoughts are not prophecy."
         },
@@ -405,28 +405,28 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the master",
+          "label": "Master",
           "chamberId": "addiction",
           "note": "Lawful is not free if it masters you."
         },
         {
           "id": "spiral",
           "role": "spiral",
-          "label": "Capture the craving",
+          "label": "Craving",
           "chamberId": "take-every-thought-captive",
           "note": "Craving is not command."
         },
         {
           "id": "renew",
           "role": "spiral",
-          "label": "Renew the mind",
+          "label": "Renew",
           "chamberId": "renew-your-mind",
           "note": "World pattern reasserts by default."
         },
         {
           "id": "spirit",
           "role": "fork",
-          "label": "Walk by the Spirit",
+          "label": "Spirit",
           "chamberId": "walk-by-the-spirit",
           "note": "Put the flesh to death one hour at a time."
         },
@@ -440,21 +440,21 @@
         {
           "id": "confess",
           "role": "long_middle",
-          "label": "Confess and forsake",
+          "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
           "note": "Freedom is not alone-willpower theater."
         },
         {
           "id": "grace",
           "role": "long_middle",
-          "label": "Grace for this hour",
+          "label": "Grace",
           "chamberId": "his-grace-is-sufficient",
           "note": "Weakness is where His power is perfected."
         },
         {
           "id": "remain",
           "role": "remain",
-          "label": "Keep remaining",
+          "label": "Remain",
           "chamberId": "hope-of-glory",
           "note": "One next sober step; real help when needed."
         }
@@ -489,28 +489,28 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the loop",
+          "label": "Loop",
           "chamberId": "rumination",
           "note": "Obsession is not revelation."
         },
         {
           "id": "captive",
           "role": "spiral",
-          "label": "Take captive",
+          "label": "Capture",
           "chamberId": "take-every-thought-captive",
           "note": "Capture to obey Christ."
         },
         {
           "id": "word",
           "role": "near",
-          "label": "The Word",
+          "label": "Word",
           "chamberId": "the-word",
           "note": "Open Scripture; fight fog with light."
         },
         {
           "id": "prayer",
           "role": "fork",
-          "label": "Pray the spiral",
+          "label": "Prayer",
           "chamberId": "prayer",
           "note": "Do not feed the loop."
         },
@@ -564,7 +564,7 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the grip",
+          "label": "Grip",
           "chamberId": "control",
           "note": "Emotional state is your own — not dependent on them. Outcomes, people, image, timeline: if you must hold it, it has become a god. Open the hand."
         },
@@ -599,14 +599,14 @@
         {
           "id": "spirit",
           "role": "fork",
-          "label": "Walk by the Spirit",
+          "label": "Spirit",
           "chamberId": "walk-by-the-spirit",
           "note": "Flesh wants the last word over another life."
         },
         {
           "id": "rubric",
           "role": "remain",
-          "label": "The Rubric",
+          "label": "Standard",
           "chamberId": "kill-the-flesh-walk-in-the-spirit",
           "note": "Full operational standard: refuse the flesh; side of the street; success without their response."
         }
@@ -641,7 +641,7 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name jealousy",
+          "label": "Jealousy",
           "chamberId": "jealousy",
           "note": "Not love."
         },
@@ -655,14 +655,14 @@
         {
           "id": "fork-vengeance",
           "role": "fork",
-          "label": "Leave vengeance",
+          "label": "Vengeance",
           "chamberId": "leave-vengeance-to-the-lord",
           "note": "Do not turn rivalry into payback."
         },
         {
           "id": "love",
           "role": "long_middle",
-          "label": "Selfless love",
+          "label": "Love",
           "chamberId": "choose-selfless-love",
           "note": "Love does not seek its own way."
         },
@@ -702,49 +702,49 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the fall",
+          "label": "Fall",
           "chamberId": "the-righteous-fall",
           "note": "I sinned. I am not finished."
         },
         {
           "id": "confess",
           "role": "near",
-          "label": "Confess and be cleansed",
+          "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
           "note": "Concealment will not prosper."
         },
         {
           "id": "grace",
           "role": "near",
-          "label": "Grace sufficient",
+          "label": "Grace",
           "chamberId": "his-grace-is-sufficient",
           "note": "Receive mercy; renounce the flesh habit."
         },
         {
           "id": "cross",
           "role": "near",
-          "label": "No condemnation",
+          "label": "Cross",
           "chamberId": "the-cross-and-our-justification",
           "note": "Self-hate is not holiness."
         },
         {
           "id": "spirit",
           "role": "fork",
-          "label": "Walk by the Spirit",
+          "label": "Spirit",
           "chamberId": "walk-by-the-spirit",
           "note": "Rise and walk again."
         },
         {
           "id": "regret",
           "role": "spiral",
-          "label": "Godly grief",
+          "label": "Grief",
           "chamberId": "regret",
           "note": "Refuse the death-tape of worldly grief."
         },
         {
           "id": "remain",
           "role": "remain",
-          "label": "Hope of glory",
+          "label": "Hope",
           "chamberId": "hope-of-glory",
           "note": "Your fall does not cancel the crucible."
         }
@@ -780,7 +780,7 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name it",
+          "label": "Adultery",
           "chamberId": "adultery",
           "note": "Not your own; do not rename darkness."
         },
@@ -794,7 +794,7 @@
         {
           "id": "deny",
           "role": "fork",
-          "label": "Deny yourself",
+          "label": "Deny",
           "chamberId": "deny-yourself",
           "note": "Cross daily; refuse self as god of this hour."
         },
@@ -808,7 +808,7 @@
         {
           "id": "spirit",
           "role": "long_middle",
-          "label": "Walk by the Spirit",
+          "label": "Spirit",
           "chamberId": "walk-by-the-spirit",
           "note": "One hour free."
         },
@@ -854,14 +854,14 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the regret",
+          "label": "Regret",
           "chamberId": "regret",
           "note": "Godly grief vs death-tape."
         },
         {
           "id": "confess",
           "role": "near",
-          "label": "If sin — confess",
+          "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
           "note": "Own what is yours."
         },
@@ -882,7 +882,7 @@
         {
           "id": "spiral",
           "role": "spiral",
-          "label": "Stop the replay",
+          "label": "Replay",
           "chamberId": "rumination",
           "note": "Regret loop is not holiness."
         },
@@ -922,21 +922,21 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name persecution",
+          "label": "Persecution",
           "chamberId": "persecution",
           "note": "For His name — not every conflict is this."
         },
         {
           "id": "armor",
           "role": "near",
-          "label": "Full armor",
+          "label": "Armor",
           "chamberId": "the-full-armor-of-god",
           "note": "Stand."
         },
         {
           "id": "warfare",
           "role": "spiral",
-          "label": "Warfare right-sized",
+          "label": "Warfare",
           "chamberId": "spiritual-warfare",
           "note": "Not against flesh and blood; no devil-fascination."
         },
@@ -950,14 +950,14 @@
         {
           "id": "faithful",
           "role": "long_middle",
-          "label": "Faithful servant",
+          "label": "Faithful",
           "chamberId": "the-faithful-servant",
           "note": "Found doing when He comes."
         },
         {
           "id": "hope",
           "role": "remain",
-          "label": "Hope of glory",
+          "label": "Hope",
           "chamberId": "hope-of-glory",
           "note": "Crowns for those who remain."
         }
@@ -991,14 +991,14 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the war",
+          "label": "War",
           "chamberId": "spiritual-warfare",
           "note": "Not against flesh and blood."
         },
         {
           "id": "adversary",
           "role": "near",
-          "label": "The adversary",
+          "label": "Adversary",
           "chamberId": "the-adversary",
           "note": "Real; do not fixate."
         },
@@ -1012,7 +1012,7 @@
         {
           "id": "word",
           "role": "fork",
-          "label": "The Word",
+          "label": "Word",
           "chamberId": "the-word",
           "note": "Sword of the Spirit; fight the lie you cannot understand."
         },
@@ -1026,7 +1026,7 @@
         {
           "id": "captive",
           "role": "spiral",
-          "label": "Capture thoughts",
+          "label": "Capture",
           "chamberId": "take-every-thought-captive",
           "note": "Accusation and despair are not the Spirit."
         },
@@ -1071,14 +1071,14 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Can't force it",
+          "label": "Patience",
           "chamberId": "patience",
           "note": "Urgency is not wisdom."
         },
         {
           "id": "wait",
           "role": "near",
-          "label": "Wait on the Lord",
+          "label": "Wait",
           "chamberId": "wait-on-the-lord",
           "note": "Do the one duty you own today."
         },
@@ -1099,7 +1099,7 @@
         {
           "id": "provision",
           "role": "long_middle",
-          "label": "Daily bread",
+          "label": "Bread",
           "chamberId": "his-provision",
           "note": "This day, not the whole future."
         },
@@ -1163,7 +1163,7 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Name the war",
+          "label": "War",
           "chamberId": "take-every-thought-captive",
           "note": "The blow is a thought. Capture it. Weapons demolish strongholds."
         },
@@ -1177,14 +1177,14 @@
         {
           "id": "spiral-loop",
           "role": "spiral",
-          "label": "The loop",
+          "label": "Loop",
           "chamberId": "rumination",
           "note": "Replay and investigation are not the Holy Spirit. Capture → replace."
         },
         {
           "id": "fork-accuser",
           "role": "fork",
-          "label": "Fiery darts",
+          "label": "Darts",
           "chamberId": "the-adversary",
           "note": "Fiery darts and schemes. Do not give him the microphone of your mind."
         },
@@ -1198,28 +1198,28 @@
         {
           "id": "near-wound",
           "role": "near",
-          "label": "Sticky words",
+          "label": "Wounds",
           "chamberId": "wounded",
-          "note": "What they said can lodge. God near the crushed; do not make hatred your shelter."
+          "note": "Sticky words lodge. God near the crushed; do not make hatred your shelter."
         },
         {
           "id": "long-renew",
           "role": "long_middle",
-          "label": "Renew the mind",
+          "label": "Renew",
           "chamberId": "renew-your-mind",
           "note": "One thought at a time. Word over the spiral."
         },
         {
           "id": "long-fear",
           "role": "long_middle",
-          "label": "Fear of punishment",
+          "label": "Fear",
           "chamberId": "fear",
           "note": "Perfect love casts out fear. Sound mind."
         },
         {
           "id": "remain-peace",
           "role": "remain",
-          "label": "Guard",
+          "label": "Peace",
           "chamberId": "peace",
           "note": "Peace given — not earned by solving every case."
         },
