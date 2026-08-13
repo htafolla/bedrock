@@ -21,8 +21,6 @@ Father, this is fear — this is the flesh. I take it captive to Christ. I stop.
 
 ## Truth
 
-You’re in a fight. The urge is real. You feel out of control — master the flesh.
-
 ## 1. Name it
 
 - Surfaces: Thoughts · In-person

@@ -4723,10 +4723,6 @@
       "kind": "chamber",
       "body": [
         {
-          "type": "paragraph",
-          "text": "You’re in a fight. The urge is real. You feel out of control — master the flesh."
-        },
-        {
           "type": "heading",
           "level": 2,
           "text": "1. Name it"
