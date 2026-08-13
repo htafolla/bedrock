@@ -1,41 +1,47 @@
 # Kill the Flesh
 
-> Fear drives the flesh. Notice. Capture. Kill it before action — three steps.
+> You’re in a fight. The urge is up. You’re about to blow — master the flesh before action.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh*
 
 ## Under fire
 
-- Name it: Thoughts · In-person. Root: Fear → Control · Jealousy · Impatience.
+- You’re in a fight. Name it: fear — the flesh. Surfaces: thoughts · in-person.
 - Filters: self-less? Protect? Honor God? If no → stop.
-- Name. Capture. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”
+- BAM: Name. Capture to Christ. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”
 
 ## Prayer
 
-Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen.
+Father, this is fear — this is the flesh. I take it captive to Christ. I stop. I choose Your path. Amen.
 
 ## Truth
 
-Fear drives the actions of the flesh as reactions or reflexes. Master the flesh by noticing and capturing them before action — in three steps.
+You’re in a fight. The desire is strong. You feel like you’re going to explode. You can’t control it — and you have to. Fear drives the flesh as reaction and reflex. Then: master the flesh. Notice. Capture. Kill it before action — three steps.
 
 ## 1. Name it
+
+See the punch. Name what is running — not the story, the root.
 
 - Surfaces: Thoughts · In-person
 - Root: Fear
 - Fear produces: Control · Jealousy · Impatience
 - Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief
 
-“This is fear. This is the flesh.”
+Say it: “This is fear. This is the flesh.”
 
 ## 2. Three Filters
+
+Instant block. All three must pass — or you stop.
 
 - Is it self-less?
 - Does it protect?
 - Does it honor God?
 
-If no → stop.
+If no → stop. Do not negotiate with the flesh.
 
 ## 3. Kill the Flesh (3 steps)
+
+The counter. Fire this without delay.
 
 - Name it — “This is fear. This is the flesh.”
 - Capture it — Take the thought captive. Give it to Christ.
@@ -43,13 +49,19 @@ If no → stop.
 
 ## 4. Tools in the Moment
 
+When the body is still ringing — reset the frame, then return to the three steps.
+
 - Exhale hard once
-- 3-2-1 grounding
+- 3-2-1 grounding — three you see, two you hear, one you feel
 - Default phrase: “My emotional state is my own.”
 
 ## 5. Core Verses
 
+Steel on the belt. Tap a chip under fire.
+
 [James 1:19](https://www.biblegateway.com/passage/?search=James+1%3A19&version=NIV) · [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV) · [Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV) · [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV) · [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV) · [Luke 9:23](https://www.biblegateway.com/passage/?search=Luke+9%3A23&version=NIV) · [1 Corinthians 13:4–7](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-7&version=NIV) · [Proverbs 25:28](https://www.biblegateway.com/passage/?search=Proverbs+25%3A28&version=NIV) · [Titus 2:11–12](https://www.biblegateway.com/passage/?search=Titus+2%3A11-12&version=NIV) · [James 5:16](https://www.biblegateway.com/passage/?search=James+5%3A16&version=NIV) · [Matthew 6:16–18](https://www.biblegateway.com/passage/?search=Matthew+6%3A16-18&version=NIV)
+
+Longer map when the fight slows: Kill the Flesh. Walk in the Spirit. — the full Standard.
 
 ## Scripture
 

@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T15:50:17.180Z",
+    "exportedAt": "2026-08-13T15:54:16.210Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4888,17 +4888,21 @@
     {
       "id": "kill-the-flesh",
       "title": "Kill the Flesh",
-      "summary": "Fear drives the flesh. Notice. Capture. Kill it before action — three steps.",
+      "summary": "You’re in a fight. The urge is up. You’re about to blow — master the flesh before action.",
       "kind": "chamber",
       "body": [
         {
           "type": "paragraph",
-          "text": "Fear drives the actions of the flesh as reactions or reflexes. Master the flesh by noticing and capturing them before action — in three steps."
+          "text": "You’re in a fight. The desire is strong. You feel like you’re going to explode. You can’t control it — and you have to. Fear drives the flesh as reaction and reflex. Then: master the flesh. Notice. Capture. Kill it before action — three steps."
         },
         {
           "type": "heading",
           "level": 2,
           "text": "1. Name it"
+        },
+        {
+          "type": "paragraph",
+          "text": "See the punch. Name what is running — not the story, the root."
         },
         {
           "type": "list",
@@ -4911,12 +4915,16 @@
         },
         {
           "type": "paragraph",
-          "text": "“This is fear. This is the flesh.”"
+          "text": "Say it: “This is fear. This is the flesh.”"
         },
         {
           "type": "heading",
           "level": 2,
           "text": "2. Three Filters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Instant block. All three must pass — or you stop."
         },
         {
           "type": "list",
@@ -4928,12 +4936,16 @@
         },
         {
           "type": "paragraph",
-          "text": "If no → stop."
+          "text": "If no → stop. Do not negotiate with the flesh."
         },
         {
           "type": "heading",
           "level": 2,
           "text": "3. Kill the Flesh (3 steps)"
+        },
+        {
+          "type": "paragraph",
+          "text": "The counter. Fire this without delay."
         },
         {
           "type": "list",
@@ -4949,10 +4961,14 @@
           "text": "4. Tools in the Moment"
         },
         {
+          "type": "paragraph",
+          "text": "When the body is still ringing — reset the frame, then return to the three steps."
+        },
+        {
           "type": "list",
           "items": [
             "Exhale hard once",
-            "3-2-1 grounding",
+            "3-2-1 grounding — three you see, two you hear, one you feel",
             "Default phrase: “My emotional state is my own.”"
           ]
         },
@@ -4963,7 +4979,15 @@
         },
         {
           "type": "paragraph",
+          "text": "Steel on the belt. Tap a chip under fire."
+        },
+        {
+          "type": "paragraph",
           "text": "(James 1:19, 2 Timothy 1:7, Galatians 5:16, Galatians 5:22-23, 2 Corinthians 10:5, Luke 9:23, 1 Corinthians 13:4-7, Proverbs 25:28, Titus 2:11-12, James 5:16, Matthew 6:16-18)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Longer map when the fight slows: Kill the Flesh. Walk in the Spirit. — the full Standard."
         }
       ],
       "verses": [
@@ -5039,12 +5063,12 @@
         }
       ],
       "hacks": [
-        "Name it: Thoughts · In-person. Root: Fear → Control · Jealousy · Impatience.",
+        "You’re in a fight. Name it: fear — the flesh. Surfaces: thoughts · in-person.",
         "Filters: self-less? Protect? Honor God? If no → stop.",
-        "Name. Capture. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”"
+        "BAM: Name. Capture to Christ. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”"
       ],
       "prayers": [
-        "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen."
+        "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. I choose Your path. Amen."
       ],
       "related": [
         "kill-the-flesh-walk-in-the-spirit",
