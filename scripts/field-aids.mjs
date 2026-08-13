@@ -422,11 +422,10 @@ export const FIELD_AIDS = {
     prayers: ['Father, I renounce the flesh. Lead me by Your Spirit. Amen.'],
   },
   'kill-the-flesh': {
-    // Intro lives in underFireIntro (field-layer-hint) — not a hold bullet
-    underFireIntro: 'Fear (the flesh) drives thoughts and actions. Name it.',
+    // Same shape as god-first / jealousy: default hint + 1–3 flat hold cards
     hacks: [
-      // Newlines → nested bullets in Under fire (ChamberFocus / static HTML)
-      'Is it self-less?\nDoes it protect?\nDoes it honor God?\nIf no → stop.',
+      'Fear (the flesh) drives thoughts and actions. Name it.',
+      'Is it self-less? Does it protect? Does it honor God? If no → stop.',
       'Capture it to Christ. Stop. Breathe. Choose the other path.',
     ],
     prayers: [

@@ -465,32 +465,14 @@ export function ChamberFocus({
                   Under fire
                 </h3>
                 <p className="field-layer-hint">
-                  {chamber.underFireIntro
-                    ? chamber.underFireIntro
-                    : isRubric
-                      ? 'Three holds when fog is worst.'
-                      : 'The next right hold — walk this hour.'}
+                  {isRubric
+                    ? 'Three holds when fog is worst.'
+                    : 'The next right hold — walk this hour.'}
                 </p>
                 <ul className="field-list">
-                  {chamber.hacks.map((hack) => {
-                    const lines = hack
-                      .split('\n')
-                      .map((s) => s.trim())
-                      .filter(Boolean)
-                    // Multi-line hold → inner bullets (e.g. three filters)
-                    if (lines.length > 1) {
-                      return (
-                        <li key={hack} className="hold-group">
-                          <ul className="field-list field-list-nested">
-                            {lines.map((line) => (
-                              <li key={line}>{line}</li>
-                            ))}
-                          </ul>
-                        </li>
-                      )
-                    }
-                    return <li key={hack}>{hack}</li>
-                  })}
+                  {chamber.hacks.map((hack) => (
+                    <li key={hack}>{hack}</li>
+                  ))}
                 </ul>
               </section>
             ) : null}

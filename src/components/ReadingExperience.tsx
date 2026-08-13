@@ -95,11 +95,7 @@ function ChamberView({
           <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
             Under fire
           </h3>
-          <p className="field-layer-hint">
-            {chamber.underFireIntro
-              ? chamber.underFireIntro
-              : 'Scripture under pressure — how to walk this hour.'}
-          </p>
+          <p className="field-layer-hint">Scripture under pressure — how to walk this hour.</p>
           <ul className="field-list">
             {chamber.hacks.map((hack) => (
               <li key={hack}>{hack}</li>

@@ -58,16 +58,13 @@ describe('bedrock content integrity', () => {
     const killCard = byId.get('kill-the-flesh')!
     expect(killCard.summary.toLowerCase()).toMatch(/you're in a fight|the urge is real|out of control/)
     expect(killCard.summary.toLowerCase()).toMatch(/master the flesh/)
-    // Intro under Under fire (field-layer-hint) — not a hold bullet
-    expect(killCard.underFireIntro?.toLowerCase() ?? '').toMatch(
-      /fear \(the flesh\) drives thoughts and actions/,
-    )
+    // Same Under fire chrome as god-first: default hint + flat hold cards only
+    expect(killCard.underFireIntro).toBeUndefined()
     expect(killCard.hacks.length).toBeGreaterThan(0)
     expect(killCard.hacks.length).toBeLessThanOrEqual(3)
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
-      /self-less|protect|honor god|capture|other path/,
+      /fear \(the flesh\)|self-less|protect|honor god|capture|other path/,
     )
-    expect(killCard.hacks.some((h) => /drives thoughts and actions/i.test(h))).toBe(false)
     // Truth: short lead lines + inner lists for filters / steps / tools
     expect(killCard.body.some((b) => b.type === 'list')).toBe(true)
     expect(killCard.body.filter((b) => b.type === 'list').length).toBeGreaterThanOrEqual(3)
