@@ -22,15 +22,15 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(76)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(76)
+    expect(chambers.length).toBe(77)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(77)
+    // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
-    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
+    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.kind).toBe('rubric')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
-      /stop the thought|do your part|spirit, not outcomes|one free step|three filters|name it/,
+      /stop the thought|do your part|spirit, not outcomes|one free step/,
     )
-    // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
     const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
     expect(rubric.body.length).toBeGreaterThan(8)
     expect(rubric.body.some((b) => b.type === 'heading')).toBe(true)
@@ -43,21 +43,34 @@ describe('bedrock content integrity', () => {
       })
       .join(' ')
       .toLowerCase()
-    // Field card SOP: name → filters → kill steps → tools → core verses
-    expect(rubricText).toMatch(/field card/)
-    expect(rubricText).toMatch(/name it/)
-    expect(rubricText).toMatch(/three filters|self-less|honor god/)
-    expect(rubricText).toMatch(/kill the flesh \(3 steps\)|capture it|choose the other path/)
-    expect(rubricText).toMatch(/tools in the moment|3-2-1|emotional state is my own/)
-    expect(rubricText).toMatch(/fear produces|control|jealousy|impatience/)
-    // Full holds still present under depth
     expect(rubricText).toMatch(/thought capture|do your part|forgiveness|trust over understanding/)
+    expect(rubricText).toMatch(/field card/)
     expect(rubricText).toMatch(/building a case|detective of every gap/)
     expect(rubricText).toMatch(/refuse condemnation|no condemnation|accuser/)
     expect(rubricText).toMatch(/battlefield of the mind|fiery darts|harsh words/)
     expect(rubricText).not.toMatch(/investigation mode|condemnation mode/)
     expect(rubricText).toMatch(/for men/)
     expect(rubricText).toMatch(/release this to you|sound mind/)
+    // New short card — Name · Filters · Kill · Tools (not the Standard rubric)
+    expect(byId.has('kill-the-flesh')).toBe(true)
+    expect(byId.get('kill-the-flesh')!.title).toBe('Kill the Flesh')
+    expect(byId.get('kill-the-flesh')!.kind ?? 'chamber').toBe('chamber')
+    const killCard = byId.get('kill-the-flesh')!
+    const killText = killCard.body
+      .map((b) => {
+        if (b.type === 'list' && Array.isArray(b.items)) return b.items.join(' ')
+        if ('text' in b && typeof b.text === 'string') return b.text
+        return ''
+      })
+      .join(' ')
+      .toLowerCase()
+    expect(killText).toMatch(/name it/)
+    expect(killText).toMatch(/three filters|self-less|honor god/)
+    expect(killText).toMatch(/kill the flesh \(3 steps\)|capture it|choose the other path/)
+    expect(killText).toMatch(/tools in the moment|3-2-1|emotional state is my own/)
+    expect(killText).toMatch(/fear produces|control|jealousy|impatience/)
+    expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
+    expect(rubric.related).toContain('kill-the-flesh')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
     expect(byId.get('persecution')!.title).toBe('Persecution')

@@ -13,7 +13,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [The Meaning of Life](https://bedrock.rippel.ai/c/the-meaning-of-life) — The greatest commandments.
 - [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself) — Cross daily. Follow Me.
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit) — Walk by the Spirit, and you will not gratify the desires of the flesh.
-- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit) — Name the flesh. Filter it. Kill it in three steps. Tools for this hour. Walk by the Spirit.
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit) — Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.
 - [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit) — Jesus gave the Helper — Spirit of truth with you, to testify and empower.
 - [Love](https://bedrock.rippel.ai/c/love) — Spirit fruit: love.
 - [Joy](https://bedrock.rippel.ai/c/joy) — Spirit fruit: joy.
@@ -59,6 +59,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares) — A good farmer sowed wheat; an enemy sowed weeds at night.
 - [Persecution](https://bedrock.rippel.ai/c/persecution) — Blessed when they revile you for His name — stand, bless, do not repay evil.
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh) — Those who practice such things will not inherit the kingdom of God.
+- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh) — Name the flesh. Three filters. Kill it in three steps. Tools for this hour.
 - [Adultery](https://bedrock.rippel.ai/c/adultery) — Flee sexual immorality. You are not your own.
 - [Pharmakeia](https://bedrock.rippel.ai/c/pharmakeia) — Sorcery — and every counterfeit power — is works of the flesh.
 - [Murder](https://bedrock.rippel.ai/c/murder) — You shall not murder — not by hand, and not by hatred.

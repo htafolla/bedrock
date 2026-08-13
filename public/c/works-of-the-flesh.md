@@ -46,6 +46,7 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 - [falsehood](https://bedrock.rippel.ai/c/falsehood)
 - [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
 - [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [kill-the-flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/works-of-the-flesh.md
