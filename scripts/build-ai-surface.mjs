@@ -359,7 +359,19 @@ function rubricBodyToHtml(body) {
 function chamberHtml(c, meta, titleById = new Map()) {
   const isRubric = c.kind === 'rubric'
   const truth = isRubric ? rubricBodyToHtml(c.body) : bodyToHtml(c.body)
-  const hacks = c.hacks.map((h) => `<li>${esc(h)}</li>`).join('\n')
+  const hacks = c.hacks
+    .map((h) => {
+      const lines = String(h)
+        .split('\n')
+        .map((s) => s.trim())
+        .filter(Boolean)
+      if (lines.length > 1) {
+        const nested = lines.map((line) => `<li>${esc(line)}</li>`).join('\n')
+        return `<li class="hold-group"><ul class="hold-nested">\n${nested}\n</ul></li>`
+      }
+      return `<li>${esc(h)}</li>`
+    })
+    .join('\n')
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
   const verseChips = verseChipRowHtml(c.verses || [])
   const related = (c.related || [])
@@ -471,6 +483,11 @@ function chamberHtml(c, meta, titleById = new Map()) {
     .summary { color:var(--muted); margin:.5rem 0 1rem; font-size:1.05rem; }
     .hold { border:1px solid rgba(196,165,116,.35); border-radius:14px; padding:.9rem 1rem 1rem; margin:0 0 1.15rem; background:linear-gradient(165deg,rgba(196,165,116,.12),rgba(14,11,9,.55)); }
     .hold .kicker-hold { font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); font-weight:700; margin:0 0 .55rem; }
+    .hold ul { list-style:none; padding:0; margin:.35rem 0; display:flex; flex-direction:column; gap:.5rem; }
+    .hold li { padding:.65rem .8rem; border-radius:10px; border:1px solid rgba(196,165,116,.22); background:rgba(0,0,0,.2); border-left:2px solid rgba(196,165,116,.55); line-height:1.45; }
+    .hold li.hold-group { padding:0; border:none; background:transparent; border-left:none; }
+    .hold .hold-nested { gap:.4rem; margin:0; }
+    .hold .hold-nested li { font-size:.98rem; }
     .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
     h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
     .card p, .card li, .hold li { margin:.4rem 0; color:var(--ink); }

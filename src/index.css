@@ -3048,7 +3048,31 @@ body {
   color: var(--ink);
 }
 
+/* Nested filter lines inside one hold (still counts as one Under fire beat) */
+.field-list li.hold-group {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.field-list-nested {
+  gap: 0.45rem;
+}
+
+.field-list-nested li {
+  padding: 0.55rem 0.85rem;
+  font-size: 0.98rem;
+}
+
 .field-hacks li {
+  border-left: 2px solid var(--ember-border-strong);
+}
+
+.field-list li.hold-group {
+  border-left: none;
+}
+
+.field-list-nested li {
   border-left: 2px solid var(--ember-border-strong);
 }
 

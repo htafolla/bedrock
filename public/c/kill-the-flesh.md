@@ -9,9 +9,11 @@
 
 ## Under fire
 
-- Name it: fear — the flesh. Thoughts · In-person.
-- Filters: self-less? Protect? Honor God? If no → stop.
-- Name. Capture to Christ. Stop. Breathe. Choose the other path.
+- Fear (the flesh) drives thoughts and actions.
+- Is it self-less?
+Does it protect?
+Does it honor God?
+- No → stop. Capture to Christ. Choose the other path.
 
 ## Prayer
 
