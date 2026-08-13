@@ -2854,6 +2854,38 @@ body {
   max-width: 42ch;
 }
 
+/* Battle-card / station pencil art — the “wow” strike */
+.chamber-illustration {
+  margin: 0.35rem auto 1rem;
+  max-width: min(22rem, 100%);
+  padding: 0;
+  border: none;
+}
+
+.chamber-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--ember) 28%, transparent);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(245, 230, 200, 0.04) inset;
+  background: #e8e0d4;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+.chamber-illustration figcaption {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.9;
+}
+
 /* —— Hold first (30s path): Under fire + Prayer before Truth —— */
 .hold-block {
   margin: 0.35rem 0 0;

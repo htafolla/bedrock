@@ -4916,7 +4916,12 @@
         "forgive-as-you-have-been-forgiven",
         "trust-in-the-lord",
         "the-full-armor-of-god"
-      ]
+      ],
+      "illustration": {
+        "src": "/art/kill-the-flesh-pow.jpg",
+        "alt": "Pencil art: the decisive pow — fist open into light, mastering the flesh by the Spirit",
+        "caption": "The counter. Graphite on paper."
+      }
     },
     {
       "id": "adultery",

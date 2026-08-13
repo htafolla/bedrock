@@ -74,6 +74,7 @@ describe('bedrock content integrity', () => {
     expect(killText).toMatch(/\(james 1:19.*2 timothy 1:7.*galatians 5:16/)
     expect(killCard.verses.length).toBeGreaterThanOrEqual(10)
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(/fight|filters|capture|3-2-1/)
+    expect(killCard.illustration?.src).toMatch(/kill-the-flesh-pow/)
     expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
     expect(rubric.related).toContain('kill-the-flesh')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')

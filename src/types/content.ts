@@ -29,6 +29,15 @@ export type ChamberKind = 'chamber' | 'rubric'
  * Chambers: Truth (body + verses) | Hack | Prayer.
  * Rubrics: Forged word + Standard (body) | Under fire (≤3) | Prayer — intentionally denser SOP.
  */
+/** Optional battle-card / station illustration (static under public/). */
+export interface ChamberIllustration {
+  /** Absolute site path, e.g. /art/kill-the-flesh-pow.jpg */
+  src: string
+  alt: string
+  /** Optional credit / medium line under the image */
+  caption?: string
+}
+
 export interface Chamber {
   id: string
   title: string
@@ -46,6 +55,8 @@ export interface Chamber {
   prayers: string[]
   /** Related chamber ids — edges in the web of truth */
   related: string[]
+  /** Optional art (battle card / station illustration) */
+  illustration?: ChamberIllustration
 }
 
 export interface BedrockMeta {

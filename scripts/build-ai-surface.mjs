@@ -169,13 +169,17 @@ function chamberMarkdown(c) {
     ? `*Standard · Field card first · Hold first · Bedrock · ${ORIGIN}/c/${c.id}*`
     : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${ORIGIN}/c/${c.id}*`
   const truthHeading = isRubric ? 'The standard' : 'Truth'
+  const ill = c.illustration
+  const illMd = ill
+    ? `\n![${ill.alt}](${ORIGIN}${ill.src})\n\n${ill.caption ? `*${ill.caption}*\n` : ''}`
+    : ''
 
   return `# ${isRubric ? `Standard: ${c.title}` : c.title}
 
 > ${c.summary}
 
 ${kicker}
-
+${illMd}
 ## Under fire
 
 ${hacks}
@@ -358,6 +362,13 @@ function chamberHtml(c, meta) {
   const kicker = isRubric ? 'Rubric · daily standard · Bedrock' : 'First principle · Bedrock'
   const truthHeading = isRubric ? 'The standard' : 'Truth'
   const truthClass = isRubric ? 'card card-rubric' : 'card'
+  const ill = c.illustration
+  const illustrationHtml = ill
+    ? `<figure class="illustration">
+      <img src="${esc(ill.src)}" alt="${esc(ill.alt)}" width="864" height="1152" loading="eager" />
+      ${ill.caption ? `<figcaption>${esc(ill.caption)}</figcaption>` : ''}
+    </figure>`
+    : ''
 
   const title = `${esc(c.title)} — Bedrock`
   const desc = esc(
@@ -465,6 +476,9 @@ function chamberHtml(c, meta) {
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
+    .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
+    .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
+    .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
@@ -476,6 +490,7 @@ function chamberHtml(c, meta) {
     <p class="kicker">${esc(kicker)} · Hold first</p>
     <h1>${esc(c.title)}</h1>
     <p class="summary">${esc(c.summary)}</p>
+    ${illustrationHtml}
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=${esc(c.id)}">Open in field guide</a>
       <a href="/c/${esc(c.id)}.md">Markdown</a>

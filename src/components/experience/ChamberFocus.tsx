@@ -436,6 +436,21 @@ export function ChamberFocus({
               Under fire first. Field card and full map when you can read.
             </p>
           ) : null}
+          {chamber.illustration ? (
+            <figure className="chamber-illustration">
+              <img
+                src={chamber.illustration.src}
+                alt={chamber.illustration.alt}
+                width={864}
+                height={1152}
+                loading="eager"
+                decoding="async"
+              />
+              {chamber.illustration.caption ? (
+                <figcaption>{chamber.illustration.caption}</figcaption>
+              ) : null}
+            </figure>
+          ) : null}
         </header>
 
         {/*

@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T15:54:16.210Z",
+    "exportedAt": "2026-08-13T15:56:14.757Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -5086,6 +5086,11 @@
         "trust-in-the-lord",
         "the-full-armor-of-god"
       ],
+      "illustration": {
+        "src": "/art/kill-the-flesh-pow.jpg",
+        "alt": "Pencil art: the decisive pow — fist open into light, mastering the flesh by the Spirit",
+        "caption": "The counter. Graphite on paper."
+      },
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh",
       "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh.md",
       "ogImage": "https://bedrock.rippel.ai/og/c/kill-the-flesh.png"
