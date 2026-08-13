@@ -212,16 +212,25 @@ Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite
 `
 }
 
-/** Shared verse chip markup (matches SPA etched chips). */
-function verseChipRowHtml(refs) {
+/**
+ * Scripture chips — same structure as SPA ChamberFocus:
+ * ul.verses-list > li > span.verse-link.verse-etched > a.verse-primary
+ */
+function versesListHtml(refs) {
   if (!refs?.length) return ''
-  const chips = refs
+  const items = refs
     .map(
       (r) =>
-        `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
+        `<li><span class="verse-link verse-etched"><a class="verse-primary" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a></span></li>`,
     )
     .join('\n')
-  return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
+  return `<ul class="verses-list">\n${items}\n</ul>`
+}
+
+/** Body-inline citation chips (parenthetical lines in Truth). */
+function verseChipRowHtml(refs) {
+  if (!refs?.length) return ''
+  return `<div class="chamber-verse-chips" aria-label="Scripture">${versesListHtml(refs)}</div>`
 }
 
 /** Optional privacy analytics for static chamber pages (build-time env). */
@@ -373,11 +382,11 @@ function chamberHtml(c, meta, titleById = new Map()) {
     })
     .join('\n')
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
-  const verseChips = verseChipRowHtml(c.verses || [])
+  const versesList = versesListHtml(c.verses || [])
   const related = (c.related || [])
     .map((id) => {
       const label = titleById.get(id) || id
-      return `<li><a class="related-chip" href="/c/${esc(id)}">${esc(label)}</a></li>`
+      return `<li><a class="related-link" href="/c/${esc(id)}">${esc(label)}</a></li>`
     })
     .join('\n')
   const kicker = isRubric ? 'Rubric · daily standard · Bedrock' : 'First principle · Bedrock'
@@ -521,29 +530,43 @@ function chamberHtml(c, meta, titleById = new Map()) {
       .has-ill h1, .has-ill .summary { padding-right:min(38%,8rem); }
       .has-ill .hold { padding-right:.9rem; }
     }
-    /* Verse chips — same etched language as SPA field guide */
-    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
-    .verse-chip {
-      display:inline-flex; align-items:center;
-      padding:.4rem .8rem;
-      border-radius:999px;
-      background:rgba(245,230,200,.08);
-      border:1px solid rgba(196,165,116,.32);
-      color:var(--beam);
-      text-decoration:none;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size:.95rem;
-      line-height:1.2;
-      white-space:nowrap;
+    /* Scripture + Connected truth — same classes/language as SPA field guide */
+    .chamber-verses, .related-web {
+      margin-top:1.75rem; padding-top:1.25rem;
+      border-top:1px solid var(--border);
     }
-    .verse-chip:hover { border-color:var(--ember); color:#fff; background:rgba(196,165,116,.16); }
-    .related-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
-    .related-list li { margin:0; }
-    .related-chip {
-      display:inline-flex; padding:.4rem .85rem; border-radius:999px;
-      border:1px solid var(--border); color:var(--ember); text-decoration:none; font-size:.88rem;
+    .verses-heading {
+      margin:0 0 .75rem; font-size:.7rem; letter-spacing:.2em;
+      text-transform:uppercase; color:var(--muted); font-weight:500;
     }
-    .related-chip:hover { border-color:var(--ember); color:var(--beam); background:rgba(196,165,116,.1); }
+    .field-layer-hint {
+      margin:0 0 .75rem; font-size:.85rem; color:var(--muted); line-height:1.4;
+    }
+    .verses-list, .related-list {
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; gap:.5rem;
+    }
+    .verse-link { display:inline-flex; align-items:center; }
+    .verse-etched {
+      padding:.35rem .55rem .35rem .75rem; border-radius:999px;
+      background:rgba(245,230,200,.08); border:1px solid rgba(196,165,116,.28);
+    }
+    .verse-primary {
+      color:var(--beam); text-decoration:none;
+      font-family:"Cormorant Garamond", Georgia, serif; font-size:1.05rem;
+      border-bottom:1px solid transparent;
+    }
+    .verse-primary:hover { color:#fff; border-bottom-color:var(--ember); }
+    .related-link {
+      display:inline-flex; font-family:"Cormorant Garamond", Georgia, serif;
+      font-size:1rem; color:var(--beam);
+      background:rgba(196,165,116,.12); border:1px solid rgba(196,165,116,.28);
+      border-radius:999px; padding:.4rem .85rem; text-decoration:none;
+    }
+    .related-link:hover { border-color:var(--ember); background:rgba(196,165,116,.2); }
+    .chamber-verse-chips { margin:.55rem 0 .35rem; }
+    .chamber-verse-chips .verses-list { gap:.45rem; }
+    .chamber-verse-chips .verse-primary { font-size:.9rem; }
     .body-list { list-style:none; padding-left:0; }
     .body-list li {
       margin:.45rem 0; padding:.55rem .75rem;
@@ -582,14 +605,16 @@ function chamberHtml(c, meta, titleById = new Map()) {
       <h2 id="truth">${esc(truthHeading)}</h2>
       ${truth}
     </section>
-    <section class="card" aria-labelledby="scripture">
-      <h2 id="scripture">Scripture</h2>
-      ${verseChips}
-    </section>
-    <section class="card" aria-labelledby="related">
-      <h2 id="related">Connected truth</h2>
+    <footer class="chamber-verses" aria-labelledby="scripture">
+      <h3 id="scripture" class="verses-heading">Scripture</h3>
+      <p class="field-layer-hint">Opens the passage on Bible Gateway.</p>
+      ${versesList}
+    </footer>
+    <nav class="related-web" aria-label="Related first principles" aria-labelledby="related">
+      <h3 id="related" class="verses-heading">Connected truth</h3>
+      <p class="field-layer-hint">Related chambers — tap to open.</p>
       <ul class="related-list">${related}</ul>
-    </section>
+    </nav>
     <footer>
       <p>Do better. Be better. Trust God.</p>
       <p>Public beta v${esc(meta.version)} · revised ${esc(meta.revised)} · Not a crisis hotline.</p>

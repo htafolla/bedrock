@@ -54,6 +54,11 @@
     .summary { color:var(--muted); margin:.5rem 0 1rem; font-size:1.05rem; }
     .hold { border:1px solid rgba(196,165,116,.35); border-radius:14px; padding:.9rem 1rem 1rem; margin:0 0 1.15rem; background:linear-gradient(165deg,rgba(196,165,116,.12),rgba(14,11,9,.55)); }
     .hold .kicker-hold { font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); font-weight:700; margin:0 0 .55rem; }
+    .hold ul { list-style:none; padding:0; margin:.35rem 0; display:flex; flex-direction:column; gap:.5rem; }
+    .hold li { padding:.65rem .8rem; border-radius:10px; border:1px solid rgba(196,165,116,.22); background:rgba(0,0,0,.2); border-left:2px solid rgba(196,165,116,.55); line-height:1.45; }
+    .hold li.hold-group { padding:0; border:none; background:transparent; border-left:none; }
+    .hold .hold-nested { gap:.4rem; margin:0; }
+    .hold .hold-nested li { font-size:.98rem; }
     .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
     h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
     .card p, .card li, .hold li { margin:.4rem 0; color:var(--ink); }
@@ -68,32 +73,62 @@
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
-    .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
-    .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
-    .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
-    /* Verse chips — same etched language as SPA field guide */
-    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
-    .verse-chip {
-      display:inline-flex; align-items:center;
-      padding:.4rem .8rem;
-      border-radius:999px;
-      background:rgba(245,230,200,.08);
-      border:1px solid rgba(196,165,116,.32);
-      color:var(--beam);
-      text-decoration:none;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size:.95rem;
-      line-height:1.2;
-      white-space:nowrap;
+    .strike-stage { position:relative; isolation:isolate; }
+    .illustration {
+      position:absolute; z-index:0; top:-.25rem; right:-.65rem;
+      width:min(12.5rem,50%); max-width:14rem; margin:0; padding:0;
+      pointer-events:none; opacity:.4; user-select:none;
     }
-    .verse-chip:hover { border-color:var(--ember); color:#fff; background:rgba(196,165,116,.16); }
-    .related-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
-    .related-list li { margin:0; }
-    .related-chip {
-      display:inline-flex; padding:.4rem .85rem; border-radius:999px;
-      border:1px solid var(--border); color:var(--ember); text-decoration:none; font-size:.88rem;
+    .illustration img { display:block; width:100%; height:auto; border:none; background:transparent; object-fit:contain; }
+    .strike-stage > .kicker,
+    .strike-stage > h1,
+    .strike-stage > .summary,
+    .strike-stage > .nav,
+    .strike-stage > .hold { position:relative; z-index:1; }
+    .has-ill h1, .has-ill .summary { padding-right:min(40%,10rem); }
+    .has-ill .hold { padding-right:min(26%,6.5rem); }
+    @media (max-width:420px) {
+      .illustration { width:min(9rem,44%); opacity:.32; right:-.35rem; }
+      .has-ill h1, .has-ill .summary { padding-right:min(38%,8rem); }
+      .has-ill .hold { padding-right:.9rem; }
     }
-    .related-chip:hover { border-color:var(--ember); color:var(--beam); background:rgba(196,165,116,.1); }
+    /* Scripture + Connected truth — same classes/language as SPA field guide */
+    .chamber-verses, .related-web {
+      margin-top:1.75rem; padding-top:1.25rem;
+      border-top:1px solid var(--border);
+    }
+    .verses-heading {
+      margin:0 0 .75rem; font-size:.7rem; letter-spacing:.2em;
+      text-transform:uppercase; color:var(--muted); font-weight:500;
+    }
+    .field-layer-hint {
+      margin:0 0 .75rem; font-size:.85rem; color:var(--muted); line-height:1.4;
+    }
+    .verses-list, .related-list {
+      list-style:none; margin:0; padding:0;
+      display:flex; flex-wrap:wrap; gap:.5rem;
+    }
+    .verse-link { display:inline-flex; align-items:center; }
+    .verse-etched {
+      padding:.35rem .55rem .35rem .75rem; border-radius:999px;
+      background:rgba(245,230,200,.08); border:1px solid rgba(196,165,116,.28);
+    }
+    .verse-primary {
+      color:var(--beam); text-decoration:none;
+      font-family:"Cormorant Garamond", Georgia, serif; font-size:1.05rem;
+      border-bottom:1px solid transparent;
+    }
+    .verse-primary:hover { color:#fff; border-bottom-color:var(--ember); }
+    .related-link {
+      display:inline-flex; font-family:"Cormorant Garamond", Georgia, serif;
+      font-size:1rem; color:var(--beam);
+      background:rgba(196,165,116,.12); border:1px solid rgba(196,165,116,.28);
+      border-radius:999px; padding:.4rem .85rem; text-decoration:none;
+    }
+    .related-link:hover { border-color:var(--ember); background:rgba(196,165,116,.2); }
+    .chamber-verse-chips { margin:.55rem 0 .35rem; }
+    .chamber-verse-chips .verses-list { gap:.45rem; }
+    .chamber-verse-chips .verse-primary { font-size:.9rem; }
     .body-list { list-style:none; padding-left:0; }
     .body-list li {
       margin:.45rem 0; padding:.55rem .75rem;
@@ -109,10 +144,11 @@
 </head>
 <body>
   <main class="wrap">
+    <div class="strike-stage">
+    
     <p class="kicker">First principle · Bedrock · Hold first</p>
     <h1>Patience</h1>
     <p class="summary">Spirit fruit: patience.</p>
-    
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=patience">Open in field guide</a>
       <a href="/c/patience.md">Markdown</a>
@@ -128,6 +164,7 @@
       <h2 id="prayer">Prayer</h2>
       <p class="prayer">Father, grow patience while I wait on You. Amen.</p>
     </section>
+    </div>
     <section class="card" aria-labelledby="truth">
       <h2 id="truth">Truth</h2>
       <p>The fruit of the Spirit is patience.</p>
@@ -136,25 +173,27 @@
 <p>Rejoice in hope, be patient in tribulation, be constant in prayer.</p>
 <p>Love is patient and kind.</p>
     </section>
-    <section class="card" aria-labelledby="scripture">
-      <h2 id="scripture">Scripture</h2>
-      <p class="verse-chip-row" aria-label="Scripture">
-<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Galatians+5%3A22&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Galatians 5:22 on Bible Gateway">Galatians 5:22</a>
-<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=James+5%3A7-8&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open James 5:7–8 on Bible Gateway">James 5:7–8</a>
-<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Psalm+27%3A14&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Psalm 27:14 on Bible Gateway">Psalm 27:14</a>
-<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Romans+12%3A12&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Romans 12:12 on Bible Gateway">Romans 12:12</a>
-<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Corinthians 13:4 on Bible Gateway">1 Corinthians 13:4</a>
-</p>
-    </section>
-    <section class="card" aria-labelledby="related">
-      <h2 id="related">Connected truth</h2>
-      <ul class="related-list"><li><a class="related-chip" href="/c/walk-by-the-spirit">Walk by the Spirit</a></li>
-<li><a class="related-chip" href="/c/wait-on-the-lord">Wait on the Lord</a></li>
-<li><a class="related-chip" href="/c/love-and-patience">Love and Patience</a></li>
-<li><a class="related-chip" href="/c/trust-in-the-lord">Trust in the Lord</a></li>
-<li><a class="related-chip" href="/c/peace">Peace</a></li>
-<li><a class="related-chip" href="/c/self-control">Self-control</a></li></ul>
-    </section>
+    <footer class="chamber-verses" aria-labelledby="scripture">
+      <h3 id="scripture" class="verses-heading">Scripture</h3>
+      <p class="field-layer-hint">Opens the passage on Bible Gateway.</p>
+      <ul class="verses-list">
+<li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Galatians+5%3A22&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Galatians 5:22 on Bible Gateway">Galatians 5:22</a></span></li>
+<li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=James+5%3A7-8&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open James 5:7–8 on Bible Gateway">James 5:7–8</a></span></li>
+<li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Psalm+27%3A14&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Psalm 27:14 on Bible Gateway">Psalm 27:14</a></span></li>
+<li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Romans+12%3A12&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Romans 12:12 on Bible Gateway">Romans 12:12</a></span></li>
+<li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Corinthians 13:4 on Bible Gateway">1 Corinthians 13:4</a></span></li>
+</ul>
+    </footer>
+    <nav class="related-web" aria-label="Related first principles" aria-labelledby="related">
+      <h3 id="related" class="verses-heading">Connected truth</h3>
+      <p class="field-layer-hint">Related chambers — tap to open.</p>
+      <ul class="related-list"><li><a class="related-link" href="/c/walk-by-the-spirit">Walk by the Spirit</a></li>
+<li><a class="related-link" href="/c/wait-on-the-lord">Wait on the Lord</a></li>
+<li><a class="related-link" href="/c/love-and-patience">Love and Patience</a></li>
+<li><a class="related-link" href="/c/trust-in-the-lord">Trust in the Lord</a></li>
+<li><a class="related-link" href="/c/peace">Peace</a></li>
+<li><a class="related-link" href="/c/self-control">Self-control</a></li></ul>
+    </nav>
     <footer>
       <p>Do better. Be better. Trust God.</p>
       <p>Public beta v0.2.0-beta · revised 2026-08-13 · Not a crisis hotline.</p>
