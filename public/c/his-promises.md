@@ -25,19 +25,19 @@ He is faithful. His word is true. He never breaks His promises.
 
 ## Scripture
 
-- Deuteronomy 31:6
-- John 10:28–29
-- John 6:29
-- John 15:4
-- Hebrews 10:23
-- Numbers 23:19
+- [Deuteronomy 31:6](https://www.biblegateway.com/passage/?search=Deuteronomy+31%3A6&version=NIV)
+- [John 10:28–29](https://www.biblegateway.com/passage/?search=John+10%3A28-29&version=NIV)
+- [John 6:29](https://www.biblegateway.com/passage/?search=John+6%3A29&version=NIV)
+- [John 15:4](https://www.biblegateway.com/passage/?search=John+15%3A4&version=NIV)
+- [Hebrews 10:23](https://www.biblegateway.com/passage/?search=Hebrews+10%3A23&version=NIV)
+- [Numbers 23:19](https://www.biblegateway.com/passage/?search=Numbers+23%3A19&version=NIV)
 
 ## Connected truth
 
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-promises.md

@@ -30,24 +30,24 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 
 ## Scripture
 
-- 2 Corinthians 10:5
-- Romans 12:2
-- Philippians 4:6–8
-- Psalm 94:19
-- Isaiah 26:3
+- [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV)
+- [Romans 12:2](https://www.biblegateway.com/passage/?search=Romans+12%3A2&version=NIV)
+- [Philippians 4:6–8](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-8&version=NIV)
+- [Psalm 94:19](https://www.biblegateway.com/passage/?search=Psalm+94%3A19&version=NIV)
+- [Isaiah 26:3](https://www.biblegateway.com/passage/?search=Isaiah+26%3A3&version=NIV)
 
 ## Connected truth
 
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [renew-your-mind](https://bedrock.rippel.ai/c/renew-your-mind)
-- [the-word](https://bedrock.rippel.ai/c/the-word)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [loss](https://bedrock.rippel.ai/c/loss)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [peace](https://bedrock.rippel.ai/c/peace)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [the-adversary](https://bedrock.rippel.ai/c/the-adversary)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
+- [The Word](https://bedrock.rippel.ai/c/the-word)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Loss](https://bedrock.rippel.ai/c/loss)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/rumination.md

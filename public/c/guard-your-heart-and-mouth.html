@@ -68,6 +68,39 @@
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
+    .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
+    .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
+    .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    /* Verse chips — same etched language as SPA field guide */
+    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
+    .verse-chip {
+      display:inline-flex; align-items:center;
+      padding:.4rem .8rem;
+      border-radius:999px;
+      background:rgba(245,230,200,.08);
+      border:1px solid rgba(196,165,116,.32);
+      color:var(--beam);
+      text-decoration:none;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size:.95rem;
+      line-height:1.2;
+      white-space:nowrap;
+    }
+    .verse-chip:hover { border-color:var(--ember); color:#fff; background:rgba(196,165,116,.16); }
+    .related-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+    .related-list li { margin:0; }
+    .related-chip {
+      display:inline-flex; padding:.4rem .85rem; border-radius:999px;
+      border:1px solid var(--border); color:var(--ember); text-decoration:none; font-size:.88rem;
+    }
+    .related-chip:hover { border-color:var(--ember); color:var(--beam); background:rgba(196,165,116,.1); }
+    .body-list { list-style:none; padding-left:0; }
+    .body-list li {
+      margin:.45rem 0; padding:.55rem .75rem;
+      border-left:2px solid rgba(196,165,116,.35);
+      background:rgba(0,0,0,.18); border-radius:0 8px 8px 0;
+      line-height:1.45;
+    }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
@@ -79,6 +112,7 @@
     <p class="kicker">First principle · Bedrock · Hold first</p>
     <h1>Guard Your Heart and Mouth</h1>
     <p class="summary">Gate the heart and the mouth.</p>
+    
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=guard-your-heart-and-mouth">Open in field guide</a>
       <a href="/c/guard-your-heart-and-mouth.md">Markdown</a>
@@ -101,15 +135,17 @@
     </section>
     <section class="card" aria-labelledby="scripture">
       <h2 id="scripture">Scripture</h2>
-      <ul><li><a href="https://www.biblegateway.com/passage/?search=Proverbs%204%3A23&version=NIV" target="_blank" rel="noopener noreferrer">Proverbs 4:23</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Psalm%20141%3A3&version=NIV" target="_blank" rel="noopener noreferrer">Psalm 141:3</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Ephesians%204%3A29&version=NIV" target="_blank" rel="noopener noreferrer">Ephesians 4:29</a></li></ul>
+      <p class="verse-chip-row" aria-label="Scripture">
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Proverbs 4:23 on Bible Gateway">Proverbs 4:23</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Psalm+141%3A3&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Psalm 141:3 on Bible Gateway">Psalm 141:3</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Ephesians+4%3A29&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Ephesians 4:29 on Bible Gateway">Ephesians 4:29</a>
+</p>
     </section>
     <section class="card" aria-labelledby="related">
       <h2 id="related">Connected truth</h2>
-      <ul><li><a href="/c/be-quick-to-listen">be-quick-to-listen</a></li>
-<li><a href="/c/walk-in-honesty-and-truth">walk-in-honesty-and-truth</a></li>
-<li><a href="/c/walk-by-the-spirit">walk-by-the-spirit</a></li></ul>
+      <ul class="related-list"><li><a class="related-chip" href="/c/be-quick-to-listen">Be Quick to Listen</a></li>
+<li><a class="related-chip" href="/c/walk-in-honesty-and-truth">Walk in Honesty and Truth</a></li>
+<li><a class="related-chip" href="/c/walk-by-the-spirit">Walk by the Spirit</a></li></ul>
     </section>
     <footer>
       <p>Do better. Be better. Trust God.</p>

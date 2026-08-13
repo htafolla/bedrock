@@ -26,16 +26,16 @@ Cast all your cares on Him, because He cares for you.
 
 ## Scripture
 
-- Romans 8:31–32
-- Isaiah 43:25
-- Hebrews 8:12
-- 1 Peter 5:7
+- [Romans 8:31–32](https://www.biblegateway.com/passage/?search=Romans+8%3A31-32&version=NIV)
+- [Isaiah 43:25](https://www.biblegateway.com/passage/?search=Isaiah+43%3A25&version=NIV)
+- [Hebrews 8:12](https://www.biblegateway.com/passage/?search=Hebrews+8%3A12&version=NIV)
+- [1 Peter 5:7](https://www.biblegateway.com/passage/?search=1+Peter+5%3A7&version=NIV)
 
 ## Connected truth
 
-- [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
-- [his-promises](https://bedrock.rippel.ai/c/his-promises)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
+- [His Promises](https://bedrock.rippel.ai/c/his-promises)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/he-is-for-you.md

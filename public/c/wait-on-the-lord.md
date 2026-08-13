@@ -26,18 +26,18 @@ Be still before the Lord and wait patiently for Him; fret not yourself over the 
 
 ## Scripture
 
-- Psalm 27:14
-- Isaiah 40:31
-- Lamentations 3:25
-- Psalm 37:7
+- [Psalm 27:14](https://www.biblegateway.com/passage/?search=Psalm+27%3A14&version=NIV)
+- [Isaiah 40:31](https://www.biblegateway.com/passage/?search=Isaiah+40%3A31&version=NIV)
+- [Lamentations 3:25](https://www.biblegateway.com/passage/?search=Lamentations+3%3A25&version=NIV)
+- [Psalm 37:7](https://www.biblegateway.com/passage/?search=Psalm+37%3A7&version=NIV)
 
 ## Connected truth
 
-- [count-the-trial-as-joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [patience](https://bedrock.rippel.ai/c/patience)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
+- [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Patience](https://bedrock.rippel.ai/c/patience)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wait-on-the-lord.md

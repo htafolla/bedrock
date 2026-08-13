@@ -30,15 +30,15 @@ Afterward the other virgins came also, saying, “Lord, lord, open to us.” But
 
 ## Scripture
 
-- Matthew 25:1–13
+- [Matthew 25:1–13](https://www.biblegateway.com/passage/?search=Matthew+25%3A1-13&version=NIV)
 
 ## Connected truth
 
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
-- [the-faithful-servant](https://bedrock.rippel.ai/c/the-faithful-servant)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [one-taken-one-left](https://bedrock.rippel.ai/c/one-taken-one-left)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [One Taken, One Left](https://bedrock.rippel.ai/c/one-taken-one-left)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/ten-virgins.md

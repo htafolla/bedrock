@@ -158,13 +158,20 @@ function bodyToMarkdown(body) {
   return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim()
 }
 
-function chamberMarkdown(c) {
+function chamberMarkdown(c, titleById = new Map()) {
   const isRubric = c.kind === 'rubric'
   const truth = bodyToMarkdown(c.body)
-  const verses = c.verses.map((v) => `- ${v.display}`).join('\n')
+  const verses = c.verses
+    .map((v) => `- [${v.display}](${bibleGatewayHref(v)})`)
+    .join('\n')
   const hacks = c.hacks.map((h) => `- ${h}`).join('\n')
   const prayers = c.prayers.map((p) => p).join('\n\n')
-  const related = c.related.map((id) => `- [${id}](${ORIGIN}/c/${id})`).join('\n')
+  const related = c.related
+    .map((id) => {
+      const label = titleById.get(id) || id
+      return `- [${label}](${ORIGIN}/c/${id})`
+    })
+    .join('\n')
   const kicker = isRubric
     ? `*Standard · Field card first · Hold first · Bedrock · ${ORIGIN}/c/${c.id}*`
     : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${ORIGIN}/c/${c.id}*`
@@ -203,6 +210,18 @@ ${related}
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: ${ORIGIN}/c/${c.id}.md
 `
+}
+
+/** Shared verse chip markup (matches SPA etched chips). */
+function verseChipRowHtml(refs) {
+  if (!refs?.length) return ''
+  const chips = refs
+    .map(
+      (r) =>
+        `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
+    )
+    .join('\n')
+  return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
 }
 
 /** Optional privacy analytics for static chamber pages (build-time env). */
@@ -253,15 +272,7 @@ function renderBodyBlockHtml(b) {
   if (b.type === 'paragraph') {
     if (isScriptureCitationLine(b.text)) {
       const refs = parseScriptureCitationLine(b.text)
-      if (refs.length) {
-        const chips = refs
-          .map(
-            (r) =>
-              `<a class="verse-chip" href="${esc(bibleGatewayHref(r))}" target="_blank" rel="noopener noreferrer" title="Open ${esc(r.display)} on Bible Gateway">${esc(r.display)}</a>`,
-          )
-          .join('\n')
-        return `<p class="verse-chip-row" aria-label="Scripture">\n${chips}\n</p>`
-      }
+      if (refs.length) return verseChipRowHtml(refs)
     }
     if (/^Prayer:\s*/i.test(b.text)) {
       const body = b.text.replace(/^Prayer:\s*/i, '').trim()
@@ -345,19 +356,17 @@ function rubricBodyToHtml(body) {
     .join('\n')
 }
 
-function chamberHtml(c, meta) {
+function chamberHtml(c, meta, titleById = new Map()) {
   const isRubric = c.kind === 'rubric'
   const truth = isRubric ? rubricBodyToHtml(c.body) : bodyToHtml(c.body)
   const hacks = c.hacks.map((h) => `<li>${esc(h)}</li>`).join('\n')
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
-  const verses = c.verses
-    .map(
-      (v) =>
-        `<li><a href="https://www.biblegateway.com/passage/?search=${encodeURIComponent(v.display)}&version=NIV" target="_blank" rel="noopener noreferrer">${esc(v.display)}</a></li>`,
-    )
-    .join('\n')
-  const related = c.related
-    .map((id) => `<li><a href="/c/${esc(id)}">${esc(id)}</a></li>`)
+  const verseChips = verseChipRowHtml(c.verses || [])
+  const related = (c.related || [])
+    .map((id) => {
+      const label = titleById.get(id) || id
+      return `<li><a class="related-chip" href="/c/${esc(id)}">${esc(label)}</a></li>`
+    })
     .join('\n')
   const kicker = isRubric ? 'Rubric · daily standard · Bedrock' : 'First principle · Bedrock'
   const truthHeading = isRubric ? 'The standard' : 'Truth'
@@ -479,6 +488,36 @@ function chamberHtml(c, meta) {
     .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
     .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
     .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    /* Verse chips — same etched language as SPA field guide */
+    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
+    .verse-chip {
+      display:inline-flex; align-items:center;
+      padding:.4rem .8rem;
+      border-radius:999px;
+      background:rgba(245,230,200,.08);
+      border:1px solid rgba(196,165,116,.32);
+      color:var(--beam);
+      text-decoration:none;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size:.95rem;
+      line-height:1.2;
+      white-space:nowrap;
+    }
+    .verse-chip:hover { border-color:var(--ember); color:#fff; background:rgba(196,165,116,.16); }
+    .related-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+    .related-list li { margin:0; }
+    .related-chip {
+      display:inline-flex; padding:.4rem .85rem; border-radius:999px;
+      border:1px solid var(--border); color:var(--ember); text-decoration:none; font-size:.88rem;
+    }
+    .related-chip:hover { border-color:var(--ember); color:var(--beam); background:rgba(196,165,116,.1); }
+    .body-list { list-style:none; padding-left:0; }
+    .body-list li {
+      margin:.45rem 0; padding:.55rem .75rem;
+      border-left:2px solid rgba(196,165,116,.35);
+      background:rgba(0,0,0,.18); border-radius:0 8px 8px 0;
+      line-height:1.45;
+    }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
@@ -510,11 +549,11 @@ function chamberHtml(c, meta) {
     </section>
     <section class="card" aria-labelledby="scripture">
       <h2 id="scripture">Scripture</h2>
-      <ul>${verses}</ul>
+      ${verseChips}
     </section>
     <section class="card" aria-labelledby="related">
       <h2 id="related">Connected truth</h2>
-      <ul>${related}</ul>
+      <ul class="related-list">${related}</ul>
     </section>
     <footer>
       <p>Do better. Be better. Trust God.</p>
@@ -621,11 +660,12 @@ Public gift: truth, brain hacks, and prayer to max-cope and **grow out of the st
 }
 
 function buildLlmsFull(doc) {
+  const titleById = new Map(doc.chambers.map((ch) => [ch.id, ch.title]))
   const parts = [
     `# Bedrock — full atlas\n\nMotto: Do Better. Be Better. Trust God.\nVersion: ${doc.meta.version}\nChambers: ${doc.chambers.length}\nSource: ${ORIGIN}/export/chambers.json\nHold-first: Under fire → Prayer → Truth. Cite ${ORIGIN}/c/{id} and ${ORIGIN}/c/{id}.md. Layers: Key · Station · Path · Standard. Flagship mind path: ${ORIGIN}/j/battlefield-of-the-mind · Standard: ${ORIGIN}/c/kill-the-flesh-walk-in-the-spirit.\n`,
   ]
   for (const c of doc.chambers) {
-    parts.push(chamberMarkdown(c))
+    parts.push(chamberMarkdown(c, titleById))
     parts.push('\n')
   }
   return parts.join('\n')
@@ -1037,9 +1077,10 @@ export async function buildAiSurface(doc) {
     `# Bedrock chambers\n\nCanonical field-guide pages for crawlers and answer engines.\n\n${indexLinks}\n`,
   )
 
+  const titleById = new Map(doc.chambers.map((ch) => [ch.id, ch.title]))
   for (const c of doc.chambers) {
-    writeFileSync(join(cDir, `${c.id}.md`), chamberMarkdown(c))
-    writeFileSync(join(cDir, `${c.id}.html`), chamberHtml(c, doc.meta))
+    writeFileSync(join(cDir, `${c.id}.md`), chamberMarkdown(c, titleById))
+    writeFileSync(join(cDir, `${c.id}.html`), chamberHtml(c, doc.meta, titleById))
   }
 
   const exportPayload = {

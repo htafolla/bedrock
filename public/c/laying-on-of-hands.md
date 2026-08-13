@@ -30,21 +30,21 @@ And God was doing extraordinary miracles by the hands of Paul.
 
 ## Scripture
 
-- Acts 8:17
-- 1 Timothy 4:14
-- Mark 6:5
-- Mark 16:18
-- Acts 19:6
-- Acts 19:11
+- [Acts 8:17](https://www.biblegateway.com/passage/?search=Acts+8%3A17&version=NIV)
+- [1 Timothy 4:14](https://www.biblegateway.com/passage/?search=1+Timothy+4%3A14&version=NIV)
+- [Mark 6:5](https://www.biblegateway.com/passage/?search=Mark+6%3A5&version=NIV)
+- [Mark 16:18](https://www.biblegateway.com/passage/?search=Mark+16%3A18&version=NIV)
+- [Acts 19:6](https://www.biblegateway.com/passage/?search=Acts+19%3A6&version=NIV)
+- [Acts 19:11](https://www.biblegateway.com/passage/?search=Acts+19%3A11&version=NIV)
 
 ## Connected truth
 
-- [healing](https://bedrock.rippel.ai/c/healing)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
-- [one-another-in-the-body](https://bedrock.rippel.ai/c/one-another-in-the-body)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [his-power-and-beauty](https://bedrock.rippel.ai/c/his-power-and-beauty)
+- [Healing](https://bedrock.rippel.ai/c/healing)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [His Power and Beauty](https://bedrock.rippel.ai/c/his-power-and-beauty)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/laying-on-of-hands.md

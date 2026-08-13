@@ -28,21 +28,21 @@ Submit yourselves therefore to God. Resist the devil, and he will flee from you.
 
 ## Scripture
 
-- Galatians 5:19–21
-- Revelation 21:8
-- Revelation 22:15
-- 1 Peter 5:8
-- James 4:7
+- [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV)
+- [Revelation 21:8](https://www.biblegateway.com/passage/?search=Revelation+21%3A8&version=NIV)
+- [Revelation 22:15](https://www.biblegateway.com/passage/?search=Revelation+22%3A15&version=NIV)
+- [1 Peter 5:8](https://www.biblegateway.com/passage/?search=1+Peter+5%3A8&version=NIV)
+- [James 4:7](https://www.biblegateway.com/passage/?search=James+4%3A7&version=NIV)
 
 ## Connected truth
 
-- [addiction](https://bedrock.rippel.ai/c/addiction)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Addiction](https://bedrock.rippel.ai/c/addiction)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/pharmakeia.md

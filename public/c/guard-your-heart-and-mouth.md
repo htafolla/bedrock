@@ -23,15 +23,15 @@ Let no corrupting talk come out of your mouths, but only such as is good for bui
 
 ## Scripture
 
-- Proverbs 4:23
-- Psalm 141:3
-- Ephesians 4:29
+- [Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&version=NIV)
+- [Psalm 141:3](https://www.biblegateway.com/passage/?search=Psalm+141%3A3&version=NIV)
+- [Ephesians 4:29](https://www.biblegateway.com/passage/?search=Ephesians+4%3A29&version=NIV)
 
 ## Connected truth
 
-- [be-quick-to-listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
-- [walk-in-honesty-and-truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
+- [Walk in Honesty and Truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/guard-your-heart-and-mouth.md

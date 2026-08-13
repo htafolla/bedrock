@@ -38,27 +38,27 @@ The God of peace will soon crush Satan under your feet.
 
 ## Scripture
 
-- 1 Peter 5:8–9
-- John 8:44
-- Matthew 13:38–39
-- 1 John 3:10
-- 2 Timothy 3:12
-- John 15:18–20
-- Ephesians 6:11–12
-- James 4:7–8
-- Revelation 12:11
-- Romans 16:20
+- [1 Peter 5:8–9](https://www.biblegateway.com/passage/?search=1+Peter+5%3A8-9&version=NIV)
+- [John 8:44](https://www.biblegateway.com/passage/?search=John+8%3A44&version=NIV)
+- [Matthew 13:38–39](https://www.biblegateway.com/passage/?search=Matthew+13%3A38-39&version=NIV)
+- [1 John 3:10](https://www.biblegateway.com/passage/?search=1+John+3%3A10&version=NIV)
+- [2 Timothy 3:12](https://www.biblegateway.com/passage/?search=2+Timothy+3%3A12&version=NIV)
+- [John 15:18–20](https://www.biblegateway.com/passage/?search=John+15%3A18-20&version=NIV)
+- [Ephesians 6:11–12](https://www.biblegateway.com/passage/?search=Ephesians+6%3A11-12&version=NIV)
+- [James 4:7–8](https://www.biblegateway.com/passage/?search=James+4%3A7-8&version=NIV)
+- [Revelation 12:11](https://www.biblegateway.com/passage/?search=Revelation+12%3A11&version=NIV)
+- [Romans 16:20](https://www.biblegateway.com/passage/?search=Romans+16%3A20&version=NIV)
 
 ## Connected truth
 
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [the-word](https://bedrock.rippel.ai/c/the-word)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
-- [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [The Word](https://bedrock.rippel.ai/c/the-word)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-adversary.md

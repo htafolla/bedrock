@@ -19,13 +19,13 @@ On the contrary, repay evil with blessing.
 
 ## Scripture
 
-- 1 Peter 3:9
+- [1 Peter 3:9](https://www.biblegateway.com/passage/?search=1+Peter+3%3A9&version=NIV)
 
 ## Connected truth
 
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil.md

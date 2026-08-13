@@ -26,19 +26,19 @@ Behold, I have given you authority to tread on serpents and scorpions, and over 
 
 ## Scripture
 
-- 2 Corinthians 10:4–5
-- Philippians 4:8
-- Luke 10:19
+- [2 Corinthians 10:4–5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A4-5&version=NIV)
+- [Philippians 4:8](https://www.biblegateway.com/passage/?search=Philippians+4%3A8&version=NIV)
+- [Luke 10:19](https://www.biblegateway.com/passage/?search=Luke+10%3A19&version=NIV)
 
 ## Connected truth
 
-- [rumination](https://bedrock.rippel.ai/c/rumination)
-- [renew-your-mind](https://bedrock.rippel.ai/c/renew-your-mind)
-- [the-word](https://bedrock.rippel.ai/c/the-word)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
+- [The Word](https://bedrock.rippel.ai/c/the-word)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/take-every-thought-captive.md

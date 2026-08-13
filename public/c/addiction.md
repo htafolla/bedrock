@@ -30,26 +30,26 @@ And such were some of you. But you were washed, you were sanctified, you were ju
 
 ## Scripture
 
-- 1 Corinthians 6:12
-- Ephesians 5:18
-- Galatians 5:16
-- 1 Corinthians 6:19–20
-- 2 Corinthians 10:4
-- 1 Corinthians 6:11
+- [1 Corinthians 6:12](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A12&version=NIV)
+- [Ephesians 5:18](https://www.biblegateway.com/passage/?search=Ephesians+5%3A18&version=NIV)
+- [Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV)
+- [1 Corinthians 6:19–20](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A19-20&version=NIV)
+- [2 Corinthians 10:4](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A4&version=NIV)
+- [1 Corinthians 6:11](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A11&version=NIV)
 
 ## Connected truth
 
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [renew-your-mind](https://bedrock.rippel.ai/c/renew-your-mind)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [holy-spirit](https://bedrock.rippel.ai/c/holy-spirit)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [his-grace-is-sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
-- [jealousy](https://bedrock.rippel.ai/c/jealousy)
-- [pharmakeia](https://bedrock.rippel.ai/c/pharmakeia)
-- [adultery](https://bedrock.rippel.ai/c/adultery)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [His Grace Is Sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [Pharmakeia](https://bedrock.rippel.ai/c/pharmakeia)
+- [Adultery](https://bedrock.rippel.ai/c/adultery)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/addiction.md

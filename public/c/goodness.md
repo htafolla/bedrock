@@ -28,20 +28,20 @@ Surely goodness and mercy shall follow me all the days of my life, and I shall d
 
 ## Scripture
 
-- Galatians 5:22
-- Romans 12:9
-- Micah 6:8
-- Ephesians 5:9
-- Psalm 23:6
+- [Galatians 5:22](https://www.biblegateway.com/passage/?search=Galatians+5%3A22&version=NIV)
+- [Romans 12:9](https://www.biblegateway.com/passage/?search=Romans+12%3A9&version=NIV)
+- [Micah 6:8](https://www.biblegateway.com/passage/?search=Micah+6%3A8&version=NIV)
+- [Ephesians 5:9](https://www.biblegateway.com/passage/?search=Ephesians+5%3A9&version=NIV)
+- [Psalm 23:6](https://www.biblegateway.com/passage/?search=Psalm+23%3A6&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [walk-in-honesty-and-truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
-- [kindness](https://bedrock.rippel.ai/c/kindness)
-- [faithfulness](https://bedrock.rippel.ai/c/faithfulness)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Walk in Honesty and Truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Kindness](https://bedrock.rippel.ai/c/kindness)
+- [Faithfulness](https://bedrock.rippel.ai/c/faithfulness)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/goodness.md

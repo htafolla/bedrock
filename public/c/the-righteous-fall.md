@@ -26,19 +26,19 @@ As it is written: “None is righteous, no, not one.”
 
 ## Scripture
 
-- Proverbs 24:16
-- Romans 3:23
-- 1 John 1:8
-- Romans 3:10
+- [Proverbs 24:16](https://www.biblegateway.com/passage/?search=Proverbs+24%3A16&version=NIV)
+- [Romans 3:23](https://www.biblegateway.com/passage/?search=Romans+3%3A23&version=NIV)
+- [1 John 1:8](https://www.biblegateway.com/passage/?search=1+John+1%3A8&version=NIV)
+- [Romans 3:10](https://www.biblegateway.com/passage/?search=Romans+3%3A10&version=NIV)
 
 ## Connected truth
 
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [his-grace-is-sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [a-broken-and-contrite-heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
-- [regret](https://bedrock.rippel.ai/c/regret)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [His Grace Is Sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
+- [Regret](https://bedrock.rippel.ai/c/regret)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-righteous-fall.md

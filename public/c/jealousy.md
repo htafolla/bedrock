@@ -26,22 +26,22 @@ But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, f
 
 ## Scripture
 
-- James 3:16
-- 1 Corinthians 13:4–5
-- Galatians 5:19–21
-- Galatians 5:22–23
+- [James 3:16](https://www.biblegateway.com/passage/?search=James+3%3A16&version=NIV)
+- [1 Corinthians 13:4–5](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-5&version=NIV)
+- [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV)
+- [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
 
 ## Connected truth
 
-- [control](https://bedrock.rippel.ai/c/control)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [love](https://bedrock.rippel.ai/c/love)
-- [addiction](https://bedrock.rippel.ai/c/addiction)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Love](https://bedrock.rippel.ai/c/love)
+- [Addiction](https://bedrock.rippel.ai/c/addiction)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/jealousy.md

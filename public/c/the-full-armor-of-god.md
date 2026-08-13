@@ -26,16 +26,16 @@ In all circumstances take up the shield of faith, with which you can extinguish 
 
 ## Scripture
 
-- Ephesians 6:10–18
+- [Ephesians 6:10–18](https://www.biblegateway.com/passage/?search=Ephesians+6%3A10-18&version=NIV)
 
 ## Connected truth
 
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-full-armor-of-god.md

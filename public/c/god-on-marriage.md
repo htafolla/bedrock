@@ -23,16 +23,16 @@ Divorce covers a man’s garment with violence and breaks faith, yet God desires
 
 ## Scripture
 
-- Malachi 2:14–16
-- Matthew 19:4–6
-- Matthew 19:8–9
-- Luke 16:18
+- [Malachi 2:14–16](https://www.biblegateway.com/passage/?search=Malachi+2%3A14-16&version=NIV)
+- [Matthew 19:4–6](https://www.biblegateway.com/passage/?search=Matthew+19%3A4-6&version=NIV)
+- [Matthew 19:8–9](https://www.biblegateway.com/passage/?search=Matthew+19%3A8-9&version=NIV)
+- [Luke 16:18](https://www.biblegateway.com/passage/?search=Luke+16%3A18&version=NIV)
 
 ## Connected truth
 
-- [marriage-covenant](https://bedrock.rippel.ai/c/marriage-covenant)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/god-on-marriage.md

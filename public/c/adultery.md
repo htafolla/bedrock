@@ -28,20 +28,20 @@ Let marriage be held in honor among all, and let the marriage bed be undefiled, 
 
 ## Scripture
 
-- Exodus 20:14
-- Matthew 5:28
-- 1 Corinthians 6:18–20
-- Hebrews 13:4
+- [Exodus 20:14](https://www.biblegateway.com/passage/?search=Exodus+20%3A14&version=NIV)
+- [Matthew 5:28](https://www.biblegateway.com/passage/?search=Matthew+5%3A28&version=NIV)
+- [1 Corinthians 6:18–20](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A18-20&version=NIV)
+- [Hebrews 13:4](https://www.biblegateway.com/passage/?search=Hebrews+13%3A4&version=NIV)
 
 ## Connected truth
 
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [marriage-covenant](https://bedrock.rippel.ai/c/marriage-covenant)
-- [god-on-marriage](https://bedrock.rippel.ai/c/god-on-marriage)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [addiction](https://bedrock.rippel.ai/c/addiction)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Addiction](https://bedrock.rippel.ai/c/addiction)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/adultery.md

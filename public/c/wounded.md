@@ -30,22 +30,22 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Scripture
 
-- Psalm 34:18
-- Psalm 147:3
-- 1 Peter 3:9
-- Romans 12:19
-- Isaiah 43:1
-- Romans 8:15
+- [Psalm 34:18](https://www.biblegateway.com/passage/?search=Psalm+34%3A18&version=NIV)
+- [Psalm 147:3](https://www.biblegateway.com/passage/?search=Psalm+147%3A3&version=NIV)
+- [1 Peter 3:9](https://www.biblegateway.com/passage/?search=1+Peter+3%3A9&version=NIV)
+- [Romans 12:19](https://www.biblegateway.com/passage/?search=Romans+12%3A19&version=NIV)
+- [Isaiah 43:1](https://www.biblegateway.com/passage/?search=Isaiah+43%3A1&version=NIV)
+- [Romans 8:15](https://www.biblegateway.com/passage/?search=Romans+8%3A15&version=NIV)
 
 ## Connected truth
 
-- [loss](https://bedrock.rippel.ai/c/loss)
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [do-not-repay-evil-with-evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Loss](https://bedrock.rippel.ai/c/loss)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Do Not Repay Evil with Evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wounded.md

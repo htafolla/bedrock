@@ -28,22 +28,22 @@ He will wipe away every tear from their eyes, and death shall be no more, neithe
 
 ## Scripture
 
-- Psalm 34:18
-- Matthew 5:4
-- 1 Thessalonians 4:13
-- Job 1:21
-- Revelation 21:4
+- [Psalm 34:18](https://www.biblegateway.com/passage/?search=Psalm+34%3A18&version=NIV)
+- [Matthew 5:4](https://www.biblegateway.com/passage/?search=Matthew+5%3A4&version=NIV)
+- [1 Thessalonians 4:13](https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A13&version=NIV)
+- [Job 1:21](https://www.biblegateway.com/passage/?search=Job+1%3A21&version=NIV)
+- [Revelation 21:4](https://www.biblegateway.com/passage/?search=Revelation+21%3A4&version=NIV)
 
 ## Connected truth
 
-- [lament-and-pour-out-your-heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
-- [a-broken-and-contrite-heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [wounded](https://bedrock.rippel.ai/c/wounded)
-- [rumination](https://bedrock.rippel.ai/c/rumination)
+- [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
+- [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Wounded](https://bedrock.rippel.ai/c/wounded)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/loss.md

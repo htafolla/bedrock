@@ -28,22 +28,22 @@ God’s love has been poured into our hearts through the Holy Spirit who has bee
 
 ## Scripture
 
-- Galatians 5:22
-- 1 John 4:7–8
-- 1 John 4:20
-- 1 Corinthians 13:4–6
-- Romans 5:5
+- [Galatians 5:22](https://www.biblegateway.com/passage/?search=Galatians+5%3A22&version=NIV)
+- [1 John 4:7–8](https://www.biblegateway.com/passage/?search=1+John+4%3A7-8&version=NIV)
+- [1 John 4:20](https://www.biblegateway.com/passage/?search=1+John+4%3A20&version=NIV)
+- [1 Corinthians 13:4–6](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-6&version=NIV)
+- [Romans 5:5](https://www.biblegateway.com/passage/?search=Romans+5%3A5&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [holy-spirit](https://bedrock.rippel.ai/c/holy-spirit)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [choose-selfless-love](https://bedrock.rippel.ai/c/choose-selfless-love)
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [marriage-covenant](https://bedrock.rippel.ai/c/marriage-covenant)
-- [joy](https://bedrock.rippel.ai/c/joy)
-- [jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [Joy](https://bedrock.rippel.ai/c/joy)
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love.md

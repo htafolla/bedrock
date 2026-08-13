@@ -23,19 +23,19 @@ It is finished.
 
 ## Scripture
 
-- 1 Corinthians 15:3–4
-- Isaiah 53:5
-- 1 Peter 2:24
-- Romans 8:1
-- Romans 5:1
-- John 19:30
+- [1 Corinthians 15:3–4](https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-4&version=NIV)
+- [Isaiah 53:5](https://www.biblegateway.com/passage/?search=Isaiah+53%3A5&version=NIV)
+- [1 Peter 2:24](https://www.biblegateway.com/passage/?search=1+Peter+2%3A24&version=NIV)
+- [Romans 8:1](https://www.biblegateway.com/passage/?search=Romans+8%3A1&version=NIV)
+- [Romans 5:1](https://www.biblegateway.com/passage/?search=Romans+5%3A1&version=NIV)
+- [John 19:30](https://www.biblegateway.com/passage/?search=John+19%3A30&version=NIV)
 
 ## Connected truth
 
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [his-grace-is-sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
-- [the-righteous-fall](https://bedrock.rippel.ai/c/the-righteous-fall)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [His Grace Is Sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
+- [The Righteous Fall](https://bedrock.rippel.ai/c/the-righteous-fall)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-cross-and-our-justification.md

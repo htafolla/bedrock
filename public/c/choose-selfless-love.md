@@ -19,15 +19,15 @@ Look not only to your own interests, but also to the interests of others.
 
 ## Scripture
 
-- Philippians 2:3–4
-- James 3:14–16
+- [Philippians 2:3–4](https://www.biblegateway.com/passage/?search=Philippians+2%3A3-4&version=NIV)
+- [James 3:14–16](https://www.biblegateway.com/passage/?search=James+3%3A14-16&version=NIV)
 
 ## Connected truth
 
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [deny-yourself](https://bedrock.rippel.ai/c/deny-yourself)
-- [marriage-covenant](https://bedrock.rippel.ai/c/marriage-covenant)
-- [love](https://bedrock.rippel.ai/c/love)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself)
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [Love](https://bedrock.rippel.ai/c/love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/choose-selfless-love.md

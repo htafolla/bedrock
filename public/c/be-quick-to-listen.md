@@ -20,13 +20,13 @@ Know this, my beloved brothers: let every person be quick to hear, slow to speak
 
 ## Scripture
 
-- James 1:19–20
+- [James 1:19–20](https://www.biblegateway.com/passage/?search=James+1%3A19-20&version=NIV)
 
 ## Connected truth
 
-- [guard-your-heart-and-mouth](https://bedrock.rippel.ai/c/guard-your-heart-and-mouth)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [restore-gently-and-give-time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
+- [Guard Your Heart and Mouth](https://bedrock.rippel.ai/c/guard-your-heart-and-mouth)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Restore Gently and Give Time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/be-quick-to-listen.md

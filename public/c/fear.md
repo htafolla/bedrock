@@ -28,23 +28,23 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Scripture
 
-- 1 John 4:18
-- Psalm 56:3
-- Proverbs 29:25
-- John 14:27
-- Joshua 1:9
-- Romans 8:15
+- [1 John 4:18](https://www.biblegateway.com/passage/?search=1+John+4%3A18&version=NIV)
+- [Psalm 56:3](https://www.biblegateway.com/passage/?search=Psalm+56%3A3&version=NIV)
+- [Proverbs 29:25](https://www.biblegateway.com/passage/?search=Proverbs+29%3A25&version=NIV)
+- [John 14:27](https://www.biblegateway.com/passage/?search=John+14%3A27&version=NIV)
+- [Joshua 1:9](https://www.biblegateway.com/passage/?search=Joshua+1%3A9&version=NIV)
+- [Romans 8:15](https://www.biblegateway.com/passage/?search=Romans+8%3A15&version=NIV)
 
 ## Connected truth
 
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [loss](https://bedrock.rippel.ai/c/loss)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [his-promises](https://bedrock.rippel.ai/c/his-promises)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [his-grace-is-sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
-- [peace](https://bedrock.rippel.ai/c/peace)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Loss](https://bedrock.rippel.ai/c/loss)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [His Promises](https://bedrock.rippel.ai/c/his-promises)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [His Grace Is Sufficient](https://bedrock.rippel.ai/c/his-grace-is-sufficient)
+- [Peace](https://bedrock.rippel.ai/c/peace)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fear.md

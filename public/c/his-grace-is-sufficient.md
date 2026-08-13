@@ -23,15 +23,15 @@ We love because He first loved us.
 
 ## Scripture
 
-- 2 Corinthians 12:9
-- Titus 2:11–12
-- 1 John 4:19
+- [2 Corinthians 12:9](https://www.biblegateway.com/passage/?search=2+Corinthians+12%3A9&version=NIV)
+- [Titus 2:11–12](https://www.biblegateway.com/passage/?search=Titus+2%3A11-12&version=NIV)
+- [1 John 4:19](https://www.biblegateway.com/passage/?search=1+John+4%3A19&version=NIV)
 
 ## Connected truth
 
-- [the-righteous-fall](https://bedrock.rippel.ai/c/the-righteous-fall)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
+- [The Righteous Fall](https://bedrock.rippel.ai/c/the-righteous-fall)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-grace-is-sufficient.md

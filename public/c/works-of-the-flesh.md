@@ -28,25 +28,25 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 
 ## Scripture
 
-- Galatians 5:19–21
-- 1 Corinthians 6:9–11
-- Revelation 21:8
+- [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV)
+- [1 Corinthians 6:9–11](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A9-11&version=NIV)
+- [Revelation 21:8](https://www.biblegateway.com/passage/?search=Revelation+21%3A8&version=NIV)
 
 ## Connected truth
 
-- [kill-the-flesh-walk-in-the-spirit](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [adultery](https://bedrock.rippel.ai/c/adultery)
-- [pharmakeia](https://bedrock.rippel.ai/c/pharmakeia)
-- [addiction](https://bedrock.rippel.ai/c/addiction)
-- [jealousy](https://bedrock.rippel.ai/c/jealousy)
-- [murder](https://bedrock.rippel.ai/c/murder)
-- [malice](https://bedrock.rippel.ai/c/malice)
-- [falsehood](https://bedrock.rippel.ai/c/falsehood)
-- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [kill-the-flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Adultery](https://bedrock.rippel.ai/c/adultery)
+- [Pharmakeia](https://bedrock.rippel.ai/c/pharmakeia)
+- [Addiction](https://bedrock.rippel.ai/c/addiction)
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [Murder](https://bedrock.rippel.ai/c/murder)
+- [Malice](https://bedrock.rippel.ai/c/malice)
+- [Falsehood](https://bedrock.rippel.ai/c/falsehood)
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/works-of-the-flesh.md

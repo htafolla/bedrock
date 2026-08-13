@@ -23,16 +23,16 @@ Seek first the kingdom of God and His righteousness, and all these things will b
 
 ## Scripture
 
-- Matthew 6:11
-- Matthew 6:8
-- Matthew 7:11
-- Matthew 6:33
+- [Matthew 6:11](https://www.biblegateway.com/passage/?search=Matthew+6%3A11&version=NIV)
+- [Matthew 6:8](https://www.biblegateway.com/passage/?search=Matthew+6%3A8&version=NIV)
+- [Matthew 7:11](https://www.biblegateway.com/passage/?search=Matthew+7%3A11&version=NIV)
+- [Matthew 6:33](https://www.biblegateway.com/passage/?search=Matthew+6%3A33&version=NIV)
 
 ## Connected truth
 
-- [the-lords-prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
+- [The Lord's Prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-provision.md

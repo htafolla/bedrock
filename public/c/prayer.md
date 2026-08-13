@@ -32,23 +32,23 @@ The prayer of a righteous person has great power as it is working.
 
 ## Scripture
 
-- Matthew 7:7
-- Luke 18:1
-- 1 Thessalonians 5:16–18
-- Romans 8:26
-- Philippians 4:6
-- James 1:5
-- James 5:16
+- [Matthew 7:7](https://www.biblegateway.com/passage/?search=Matthew+7%3A7&version=NIV)
+- [Luke 18:1](https://www.biblegateway.com/passage/?search=Luke+18%3A1&version=NIV)
+- [1 Thessalonians 5:16–18](https://www.biblegateway.com/passage/?search=1+Thessalonians+5%3A16-18&version=NIV)
+- [Romans 8:26](https://www.biblegateway.com/passage/?search=Romans+8%3A26&version=NIV)
+- [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
+- [James 1:5](https://www.biblegateway.com/passage/?search=James+1%3A5&version=NIV)
+- [James 5:16](https://www.biblegateway.com/passage/?search=James+5%3A16&version=NIV)
 
 ## Connected truth
 
-- [the-lords-prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
-- [fasting](https://bedrock.rippel.ai/c/fasting)
-- [healing](https://bedrock.rippel.ai/c/healing)
-- [lament-and-pour-out-your-heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
+- [The Lord's Prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
+- [Fasting](https://bedrock.rippel.ai/c/fasting)
+- [Healing](https://bedrock.rippel.ai/c/healing)
+- [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/prayer.md

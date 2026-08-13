@@ -228,67 +228,67 @@ Do better. Be better. Trust God.
 
 ## Scripture
 
-- Galatians 5:16
-- Galatians 5:24–25
-- 2 Corinthians 10:5
-- Colossians 3:2
-- Philippians 4:8
-- Romans 12:2
-- Romans 8:1
-- Revelation 12:10
-- 1 John 1:9
-- 2 Corinthians 7:10
-- 2 Timothy 1:7
-- Ephesians 6:16
-- Philippians 4:6–7
-- Galatians 5:19–21
-- Ephesians 4:29
-- Ephesians 4:31–32
-- Matthew 6:14–15
-- Colossians 3:13
-- 1 Corinthians 6:18–20
-- Galatians 5:22–23
-- Colossians 3:23
-- Galatians 6:4–5
-- Psalm 16:8
-- Proverbs 4:23
-- Ephesians 4:15
-- Matthew 5:37
-- Ecclesiastes 3:1
-- 1 Thessalonians 4:11
-- Matthew 7:3
-- Romans 12:17–19
-- Psalm 46:10
-- Exodus 14:14
-- 1 Peter 5:7
-- Proverbs 3:5–6
-- Jeremiah 29:11
-- 1 Corinthians 16:13–14
-- Proverbs 25:28
-- Joshua 1:9
-- Ephesians 5:25
-- Galatians 6:9
-- James 1:12
+- [Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV)
+- [Galatians 5:24–25](https://www.biblegateway.com/passage/?search=Galatians+5%3A24-25&version=NIV)
+- [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV)
+- [Colossians 3:2](https://www.biblegateway.com/passage/?search=Colossians+3%3A2&version=NIV)
+- [Philippians 4:8](https://www.biblegateway.com/passage/?search=Philippians+4%3A8&version=NIV)
+- [Romans 12:2](https://www.biblegateway.com/passage/?search=Romans+12%3A2&version=NIV)
+- [Romans 8:1](https://www.biblegateway.com/passage/?search=Romans+8%3A1&version=NIV)
+- [Revelation 12:10](https://www.biblegateway.com/passage/?search=Revelation+12%3A10&version=NIV)
+- [1 John 1:9](https://www.biblegateway.com/passage/?search=1+John+1%3A9&version=NIV)
+- [2 Corinthians 7:10](https://www.biblegateway.com/passage/?search=2+Corinthians+7%3A10&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
+- [Ephesians 6:16](https://www.biblegateway.com/passage/?search=Ephesians+6%3A16&version=NIV)
+- [Philippians 4:6–7](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=NIV)
+- [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV)
+- [Ephesians 4:29](https://www.biblegateway.com/passage/?search=Ephesians+4%3A29&version=NIV)
+- [Ephesians 4:31–32](https://www.biblegateway.com/passage/?search=Ephesians+4%3A31-32&version=NIV)
+- [Matthew 6:14–15](https://www.biblegateway.com/passage/?search=Matthew+6%3A14-15&version=NIV)
+- [Colossians 3:13](https://www.biblegateway.com/passage/?search=Colossians+3%3A13&version=NIV)
+- [1 Corinthians 6:18–20](https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A18-20&version=NIV)
+- [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
+- [Colossians 3:23](https://www.biblegateway.com/passage/?search=Colossians+3%3A23&version=NIV)
+- [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV)
+- [Psalm 16:8](https://www.biblegateway.com/passage/?search=Psalm+16%3A8&version=NIV)
+- [Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&version=NIV)
+- [Ephesians 4:15](https://www.biblegateway.com/passage/?search=Ephesians+4%3A15&version=NIV)
+- [Matthew 5:37](https://www.biblegateway.com/passage/?search=Matthew+5%3A37&version=NIV)
+- [Ecclesiastes 3:1](https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A1&version=NIV)
+- [1 Thessalonians 4:11](https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A11&version=NIV)
+- [Matthew 7:3](https://www.biblegateway.com/passage/?search=Matthew+7%3A3&version=NIV)
+- [Romans 12:17–19](https://www.biblegateway.com/passage/?search=Romans+12%3A17-19&version=NIV)
+- [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV)
+- [Exodus 14:14](https://www.biblegateway.com/passage/?search=Exodus+14%3A14&version=NIV)
+- [1 Peter 5:7](https://www.biblegateway.com/passage/?search=1+Peter+5%3A7&version=NIV)
+- [Proverbs 3:5–6](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5-6&version=NIV)
+- [Jeremiah 29:11](https://www.biblegateway.com/passage/?search=Jeremiah+29%3A11&version=NIV)
+- [1 Corinthians 16:13–14](https://www.biblegateway.com/passage/?search=1+Corinthians+16%3A13-14&version=NIV)
+- [Proverbs 25:28](https://www.biblegateway.com/passage/?search=Proverbs+25%3A28&version=NIV)
+- [Joshua 1:9](https://www.biblegateway.com/passage/?search=Joshua+1%3A9&version=NIV)
+- [Ephesians 5:25](https://www.biblegateway.com/passage/?search=Ephesians+5%3A25&version=NIV)
+- [Galatians 6:9](https://www.biblegateway.com/passage/?search=Galatians+6%3A9&version=NIV)
+- [James 1:12](https://www.biblegateway.com/passage/?search=James+1%3A12&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [the-adversary](https://bedrock.rippel.ai/c/the-adversary)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [control](https://bedrock.rippel.ai/c/control)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [peace](https://bedrock.rippel.ai/c/peace)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
-- [wounded](https://bedrock.rippel.ai/c/wounded)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [rumination](https://bedrock.rippel.ai/c/rumination)
-- [renew-your-mind](https://bedrock.rippel.ai/c/renew-your-mind)
-- [regret](https://bedrock.rippel.ai/c/regret)
-- [kill-the-flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Wounded](https://bedrock.rippel.ai/c/wounded)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
+- [Regret](https://bedrock.rippel.ai/c/regret)
+- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md

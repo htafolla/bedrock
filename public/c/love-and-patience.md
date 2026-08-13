@@ -21,15 +21,15 @@ It always protects, trusts, hopes, and perseveres.
 
 ## Scripture
 
-- 1 Corinthians 13:4–7
+- [1 Corinthians 13:4–7](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-7&version=NIV)
 
 ## Connected truth
 
-- [marriage-covenant](https://bedrock.rippel.ai/c/marriage-covenant)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [be-quick-to-listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
-- [love](https://bedrock.rippel.ai/c/love)
-- [patience](https://bedrock.rippel.ai/c/patience)
+- [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
+- [Love](https://bedrock.rippel.ai/c/love)
+- [Patience](https://bedrock.rippel.ai/c/patience)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love-and-patience.md

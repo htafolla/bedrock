@@ -21,16 +21,16 @@ The sacrifices of God are a broken spirit; a broken and contrite heart, O God, Y
 
 ## Scripture
 
-- Psalm 34:18
-- Isaiah 66:2
-- Psalm 51:17
+- [Psalm 34:18](https://www.biblegateway.com/passage/?search=Psalm+34%3A18&version=NIV)
+- [Isaiah 66:2](https://www.biblegateway.com/passage/?search=Isaiah+66%3A2&version=NIV)
+- [Psalm 51:17](https://www.biblegateway.com/passage/?search=Psalm+51%3A17&version=NIV)
 
 ## Connected truth
 
-- [lament-and-pour-out-your-heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [the-righteous-fall](https://bedrock.rippel.ai/c/the-righteous-fall)
-- [loss](https://bedrock.rippel.ai/c/loss)
+- [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [The Righteous Fall](https://bedrock.rippel.ai/c/the-righteous-fall)
+- [Loss](https://bedrock.rippel.ai/c/loss)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md

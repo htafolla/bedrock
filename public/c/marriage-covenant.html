@@ -68,6 +68,39 @@
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
+    .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
+    .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
+    .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    /* Verse chips — same etched language as SPA field guide */
+    .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
+    .verse-chip {
+      display:inline-flex; align-items:center;
+      padding:.4rem .8rem;
+      border-radius:999px;
+      background:rgba(245,230,200,.08);
+      border:1px solid rgba(196,165,116,.32);
+      color:var(--beam);
+      text-decoration:none;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size:.95rem;
+      line-height:1.2;
+      white-space:nowrap;
+    }
+    .verse-chip:hover { border-color:var(--ember); color:#fff; background:rgba(196,165,116,.16); }
+    .related-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+    .related-list li { margin:0; }
+    .related-chip {
+      display:inline-flex; padding:.4rem .85rem; border-radius:999px;
+      border:1px solid var(--border); color:var(--ember); text-decoration:none; font-size:.88rem;
+    }
+    .related-chip:hover { border-color:var(--ember); color:var(--beam); background:rgba(196,165,116,.1); }
+    .body-list { list-style:none; padding-left:0; }
+    .body-list li {
+      margin:.45rem 0; padding:.55rem .75rem;
+      border-left:2px solid rgba(196,165,116,.35);
+      background:rgba(0,0,0,.18); border-radius:0 8px 8px 0;
+      line-height:1.45;
+    }
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
@@ -79,6 +112,7 @@
     <p class="kicker">First principle · Bedrock · Hold first</p>
     <h1>Marriage Covenant</h1>
     <p class="summary">One-flesh covenant. Sacrificial love.</p>
+    
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=marriage-covenant">Open in field guide</a>
       <a href="/c/marriage-covenant.md">Markdown</a>
@@ -105,24 +139,26 @@
     </section>
     <section class="card" aria-labelledby="scripture">
       <h2 id="scripture">Scripture</h2>
-      <ul><li><a href="https://www.biblegateway.com/passage/?search=Ephesians%205%3A23&version=NIV" target="_blank" rel="noopener noreferrer">Ephesians 5:23</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Ephesians%205%3A25%E2%80%9326&version=NIV" target="_blank" rel="noopener noreferrer">Ephesians 5:25–26</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Ephesians%205%3A33&version=NIV" target="_blank" rel="noopener noreferrer">Ephesians 5:33</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=1%20Peter%203%3A1%E2%80%932&version=NIV" target="_blank" rel="noopener noreferrer">1 Peter 3:1–2</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Proverbs%2031%3A12&version=NIV" target="_blank" rel="noopener noreferrer">Proverbs 31:12</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A5&version=NIV" target="_blank" rel="noopener noreferrer">1 Corinthians 7:5</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A10%E2%80%9311&version=NIV" target="_blank" rel="noopener noreferrer">1 Corinthians 7:10–11</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Matthew%2019%3A6&version=NIV" target="_blank" rel="noopener noreferrer">Matthew 19:6</a></li>
-<li><a href="https://www.biblegateway.com/passage/?search=Matthew%2019%3A8%E2%80%939&version=NIV" target="_blank" rel="noopener noreferrer">Matthew 19:8–9</a></li></ul>
+      <p class="verse-chip-row" aria-label="Scripture">
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A23&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Ephesians 5:23 on Bible Gateway">Ephesians 5:23</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A25-26&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Ephesians 5:25–26 on Bible Gateway">Ephesians 5:25–26</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A33&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Ephesians 5:33 on Bible Gateway">Ephesians 5:33</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=1+Peter+3%3A1-2&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Peter 3:1–2 on Bible Gateway">1 Peter 3:1–2</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Proverbs+31%3A12&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Proverbs 31:12 on Bible Gateway">Proverbs 31:12</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=1+Corinthians+7%3A5&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Corinthians 7:5 on Bible Gateway">1 Corinthians 7:5</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=1+Corinthians+7%3A10-11&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Corinthians 7:10–11 on Bible Gateway">1 Corinthians 7:10–11</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Matthew+19%3A6&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Matthew 19:6 on Bible Gateway">Matthew 19:6</a>
+<a class="verse-chip" href="https://www.biblegateway.com/passage/?search=Matthew+19%3A8-9&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Matthew 19:8–9 on Bible Gateway">Matthew 19:8–9</a>
+</p>
     </section>
     <section class="card" aria-labelledby="related">
       <h2 id="related">Connected truth</h2>
-      <ul><li><a href="/c/god-on-marriage">god-on-marriage</a></li>
-<li><a href="/c/love-and-patience">love-and-patience</a></li>
-<li><a href="/c/choose-selfless-love">choose-selfless-love</a></li>
-<li><a href="/c/leave-vengeance-to-the-lord">leave-vengeance-to-the-lord</a></li>
-<li><a href="/c/faithfulness">faithfulness</a></li>
-<li><a href="/c/love">love</a></li></ul>
+      <ul class="related-list"><li><a class="related-chip" href="/c/god-on-marriage">God on Marriage</a></li>
+<li><a class="related-chip" href="/c/love-and-patience">Love and Patience</a></li>
+<li><a class="related-chip" href="/c/choose-selfless-love">Choose Selfless Love</a></li>
+<li><a class="related-chip" href="/c/leave-vengeance-to-the-lord">Leave Vengeance to the Lord</a></li>
+<li><a class="related-chip" href="/c/faithfulness">Faithfulness</a></li>
+<li><a class="related-chip" href="/c/love">Love</a></li></ul>
     </section>
     <footer>
       <p>Do better. Be better. Trust God.</p>

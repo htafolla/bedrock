@@ -28,20 +28,20 @@ Love is patient and kind.
 
 ## Scripture
 
-- Galatians 5:22
-- James 5:7–8
-- Psalm 27:14
-- Romans 12:12
-- 1 Corinthians 13:4
+- [Galatians 5:22](https://www.biblegateway.com/passage/?search=Galatians+5%3A22&version=NIV)
+- [James 5:7–8](https://www.biblegateway.com/passage/?search=James+5%3A7-8&version=NIV)
+- [Psalm 27:14](https://www.biblegateway.com/passage/?search=Psalm+27%3A14&version=NIV)
+- [Romans 12:12](https://www.biblegateway.com/passage/?search=Romans+12%3A12&version=NIV)
+- [1 Corinthians 13:4](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [peace](https://bedrock.rippel.ai/c/peace)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/patience.md

@@ -28,20 +28,20 @@ For the grace of God has appeared, bringing salvation for all people, training u
 
 ## Scripture
 
-- Galatians 5:22–23
-- 2 Timothy 1:7
-- Proverbs 25:28
-- 1 Corinthians 9:25
-- Titus 2:11–12
+- [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
+- [Proverbs 25:28](https://www.biblegateway.com/passage/?search=Proverbs+25%3A28&version=NIV)
+- [1 Corinthians 9:25](https://www.biblegateway.com/passage/?search=1+Corinthians+9%3A25&version=NIV)
+- [Titus 2:11–12](https://www.biblegateway.com/passage/?search=Titus+2%3A11-12&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [deny-yourself](https://bedrock.rippel.ai/c/deny-yourself)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [rumination](https://bedrock.rippel.ai/c/rumination)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [patience](https://bedrock.rippel.ai/c/patience)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Patience](https://bedrock.rippel.ai/c/patience)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/self-control.md

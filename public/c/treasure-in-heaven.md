@@ -28,20 +28,20 @@ As for the rich in this present age, charge them not to be haughty, nor to set t
 
 ## Scripture
 
-- Matthew 6:19–21
-- Matthew 6:33
-- Luke 12:33
-- 1 Timothy 6:17–19
+- [Matthew 6:19–21](https://www.biblegateway.com/passage/?search=Matthew+6%3A19-21&version=NIV)
+- [Matthew 6:33](https://www.biblegateway.com/passage/?search=Matthew+6%3A33&version=NIV)
+- [Luke 12:33](https://www.biblegateway.com/passage/?search=Luke+12%3A33&version=NIV)
+- [1 Timothy 6:17–19](https://www.biblegateway.com/passage/?search=1+Timothy+6%3A17-19&version=NIV)
 
 ## Connected truth
 
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
-- [the-faithful-servant](https://bedrock.rippel.ai/c/the-faithful-servant)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [his-provision](https://bedrock.rippel.ai/c/his-provision)
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [His Provision](https://bedrock.rippel.ai/c/his-provision)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/treasure-in-heaven.md

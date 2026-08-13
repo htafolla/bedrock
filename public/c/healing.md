@@ -30,23 +30,23 @@ Heal me, O Lord, and I shall be healed; save me, and I shall be saved, for You a
 
 ## Scripture
 
-- Matthew 4:23
-- Matthew 8:17
-- James 5:14–15
-- Mark 16:17–18
-- Psalm 103:2–3
-- Jeremiah 17:14
+- [Matthew 4:23](https://www.biblegateway.com/passage/?search=Matthew+4%3A23&version=NIV)
+- [Matthew 8:17](https://www.biblegateway.com/passage/?search=Matthew+8%3A17&version=NIV)
+- [James 5:14–15](https://www.biblegateway.com/passage/?search=James+5%3A14-15&version=NIV)
+- [Mark 16:17–18](https://www.biblegateway.com/passage/?search=Mark+16%3A17-18&version=NIV)
+- [Psalm 103:2–3](https://www.biblegateway.com/passage/?search=Psalm+103%3A2-3&version=NIV)
+- [Jeremiah 17:14](https://www.biblegateway.com/passage/?search=Jeremiah+17%3A14&version=NIV)
 
 ## Connected truth
 
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [laying-on-of-hands](https://bedrock.rippel.ai/c/laying-on-of-hands)
-- [fasting](https://bedrock.rippel.ai/c/fasting)
-- [sabbath](https://bedrock.rippel.ai/c/sabbath)
-- [his-power-and-beauty](https://bedrock.rippel.ai/c/his-power-and-beauty)
-- [faithfulness](https://bedrock.rippel.ai/c/faithfulness)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Laying on of Hands](https://bedrock.rippel.ai/c/laying-on-of-hands)
+- [Fasting](https://bedrock.rippel.ai/c/fasting)
+- [Sabbath](https://bedrock.rippel.ai/c/sabbath)
+- [His Power and Beauty](https://bedrock.rippel.ai/c/his-power-and-beauty)
+- [Faithfulness](https://bedrock.rippel.ai/c/faithfulness)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/healing.md

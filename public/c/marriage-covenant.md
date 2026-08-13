@@ -31,24 +31,24 @@ To the married I give this charge (not I, but the Lord): the wife should not sep
 
 ## Scripture
 
-- Ephesians 5:23
-- Ephesians 5:25–26
-- Ephesians 5:33
-- 1 Peter 3:1–2
-- Proverbs 31:12
-- 1 Corinthians 7:5
-- 1 Corinthians 7:10–11
-- Matthew 19:6
-- Matthew 19:8–9
+- [Ephesians 5:23](https://www.biblegateway.com/passage/?search=Ephesians+5%3A23&version=NIV)
+- [Ephesians 5:25–26](https://www.biblegateway.com/passage/?search=Ephesians+5%3A25-26&version=NIV)
+- [Ephesians 5:33](https://www.biblegateway.com/passage/?search=Ephesians+5%3A33&version=NIV)
+- [1 Peter 3:1–2](https://www.biblegateway.com/passage/?search=1+Peter+3%3A1-2&version=NIV)
+- [Proverbs 31:12](https://www.biblegateway.com/passage/?search=Proverbs+31%3A12&version=NIV)
+- [1 Corinthians 7:5](https://www.biblegateway.com/passage/?search=1+Corinthians+7%3A5&version=NIV)
+- [1 Corinthians 7:10–11](https://www.biblegateway.com/passage/?search=1+Corinthians+7%3A10-11&version=NIV)
+- [Matthew 19:6](https://www.biblegateway.com/passage/?search=Matthew+19%3A6&version=NIV)
+- [Matthew 19:8–9](https://www.biblegateway.com/passage/?search=Matthew+19%3A8-9&version=NIV)
 
 ## Connected truth
 
-- [god-on-marriage](https://bedrock.rippel.ai/c/god-on-marriage)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [choose-selfless-love](https://bedrock.rippel.ai/c/choose-selfless-love)
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [faithfulness](https://bedrock.rippel.ai/c/faithfulness)
-- [love](https://bedrock.rippel.ai/c/love)
+- [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Faithfulness](https://bedrock.rippel.ai/c/faithfulness)
+- [Love](https://bedrock.rippel.ai/c/love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/marriage-covenant.md

@@ -28,22 +28,22 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 
 ## Scripture
 
-- Proverbs 3:5–6
-- Psalm 46:10
-- Galatians 5:22–23
-- Philippians 4:6
-- Psalm 55:22
+- [Proverbs 3:5–6](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5-6&version=NIV)
+- [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV)
+- [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
+- [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
+- [Psalm 55:22](https://www.biblegateway.com/passage/?search=Psalm+55%3A22&version=NIV)
 
 ## Connected truth
 
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [jealousy](https://bedrock.rippel.ai/c/jealousy)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [peace](https://bedrock.rippel.ai/c/peace)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Peace](https://bedrock.rippel.ai/c/peace)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/control.md

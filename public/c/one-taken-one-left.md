@@ -28,20 +28,20 @@ See, I have told you beforehand.
 
 ## Scripture
 
-- Matthew 24:40–42
-- Luke 17:34–35
-- Matthew 24:37–39
-- Matthew 24:25
+- [Matthew 24:40–42](https://www.biblegateway.com/passage/?search=Matthew+24%3A40-42&version=NIV)
+- [Luke 17:34–35](https://www.biblegateway.com/passage/?search=Luke+17%3A34-35&version=NIV)
+- [Matthew 24:37–39](https://www.biblegateway.com/passage/?search=Matthew+24%3A37-39&version=NIV)
+- [Matthew 24:25](https://www.biblegateway.com/passage/?search=Matthew+24%3A25&version=NIV)
 
 ## Connected truth
 
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
-- [ten-virgins](https://bedrock.rippel.ai/c/ten-virgins)
-- [the-faithful-servant](https://bedrock.rippel.ai/c/the-faithful-servant)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [treasure-in-heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
-- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [Ten Virgins](https://bedrock.rippel.ai/c/ten-virgins)
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Treasure in Heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-taken-one-left.md

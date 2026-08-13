@@ -26,18 +26,18 @@ The harvest is the end of the age, and the reapers are angels. … The Son of Ma
 
 ## Scripture
 
-- Matthew 13:24–30
-- Matthew 13:37–41
+- [Matthew 13:24–30](https://www.biblegateway.com/passage/?search=Matthew+13%3A24-30&version=NIV)
+- [Matthew 13:37–41](https://www.biblegateway.com/passage/?search=Matthew+13%3A37-41&version=NIV)
 
 ## Connected truth
 
-- [the-adversary](https://bedrock.rippel.ai/c/the-adversary)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [persecution](https://bedrock.rippel.ai/c/persecution)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Persecution](https://bedrock.rippel.ai/c/persecution)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wheat-and-tares.md

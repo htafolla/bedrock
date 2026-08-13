@@ -28,18 +28,18 @@ Stay dressed for action and keep your lamps burning, and be like men who are wai
 
 ## Scripture
 
-- Matthew 24:45–51
-- Luke 12:35–36
-- Luke 12:48
+- [Matthew 24:45–51](https://www.biblegateway.com/passage/?search=Matthew+24%3A45-51&version=NIV)
+- [Luke 12:35–36](https://www.biblegateway.com/passage/?search=Luke+12%3A35-36&version=NIV)
+- [Luke 12:48](https://www.biblegateway.com/passage/?search=Luke+12%3A48&version=NIV)
 
 ## Connected truth
 
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
-- [ten-virgins](https://bedrock.rippel.ai/c/ten-virgins)
-- [one-taken-one-left](https://bedrock.rippel.ai/c/one-taken-one-left)
-- [deny-yourself](https://bedrock.rippel.ai/c/deny-yourself)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [Ten Virgins](https://bedrock.rippel.ai/c/ten-virgins)
+- [One Taken, One Left](https://bedrock.rippel.ai/c/one-taken-one-left)
+- [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-faithful-servant.md

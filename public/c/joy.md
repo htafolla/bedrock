@@ -28,20 +28,20 @@ Rejoice always, pray without ceasing, give thanks in all circumstances; for this
 
 ## Scripture
 
-- Galatians 5:22
-- Nehemiah 8:10
-- Philippians 4:4
-- John 15:11
-- 1 Thessalonians 5:16–18
+- [Galatians 5:22](https://www.biblegateway.com/passage/?search=Galatians+5%3A22&version=NIV)
+- [Nehemiah 8:10](https://www.biblegateway.com/passage/?search=Nehemiah+8%3A10&version=NIV)
+- [Philippians 4:4](https://www.biblegateway.com/passage/?search=Philippians+4%3A4&version=NIV)
+- [John 15:11](https://www.biblegateway.com/passage/?search=John+15%3A11&version=NIV)
+- [1 Thessalonians 5:16–18](https://www.biblegateway.com/passage/?search=1+Thessalonians+5%3A16-18&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [count-the-trial-as-joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [loss](https://bedrock.rippel.ai/c/loss)
-- [peace](https://bedrock.rippel.ai/c/peace)
-- [love](https://bedrock.rippel.ai/c/love)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Loss](https://bedrock.rippel.ai/c/loss)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+- [Love](https://bedrock.rippel.ai/c/love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/joy.md

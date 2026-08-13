@@ -26,20 +26,20 @@ Therefore do not be anxious about tomorrow, for tomorrow will be anxious for its
 
 ## Scripture
 
-- Proverbs 3:5–6
-- Philippians 4:6–7
-- Matthew 6:27
-- Matthew 6:34
+- [Proverbs 3:5–6](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5-6&version=NIV)
+- [Philippians 4:6–7](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=NIV)
+- [Matthew 6:27](https://www.biblegateway.com/passage/?search=Matthew+6%3A27&version=NIV)
+- [Matthew 6:34](https://www.biblegateway.com/passage/?search=Matthew+6%3A34&version=NIV)
 
 ## Connected truth
 
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [his-promises](https://bedrock.rippel.ai/c/his-promises)
-- [faithfulness](https://bedrock.rippel.ai/c/faithfulness)
-- [patience](https://bedrock.rippel.ai/c/patience)
-- [control](https://bedrock.rippel.ai/c/control)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [His Promises](https://bedrock.rippel.ai/c/his-promises)
+- [Faithfulness](https://bedrock.rippel.ai/c/faithfulness)
+- [Patience](https://bedrock.rippel.ai/c/patience)
+- [Control](https://bedrock.rippel.ai/c/control)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/trust-in-the-lord.md

@@ -21,18 +21,18 @@ You cannot add a single hour to your life. Even the hairs of your head are all n
 
 ## Scripture
 
-- 2 Timothy 1:7
-- Isaiah 41:10
-- Philippians 4:6
-- Matthew 6:27
-- Matthew 10:30
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
+- [Isaiah 41:10](https://www.biblegateway.com/passage/?search=Isaiah+41%3A10&version=NIV)
+- [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
+- [Matthew 6:27](https://www.biblegateway.com/passage/?search=Matthew+6%3A27&version=NIV)
+- [Matthew 10:30](https://www.biblegateway.com/passage/?search=Matthew+10%3A30&version=NIV)
 
 ## Connected truth
 
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [his-promises](https://bedrock.rippel.ai/c/his-promises)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [His Promises](https://bedrock.rippel.ai/c/his-promises)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-fear.md

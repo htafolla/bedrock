@@ -28,19 +28,19 @@ Let what you say be simply “Yes” or “No”; anything more than this comes 
 
 ## Scripture
 
-- Ephesians 4:25
-- Proverbs 12:22
-- Revelation 21:8
-- Revelation 22:15
-- Matthew 5:37
+- [Ephesians 4:25](https://www.biblegateway.com/passage/?search=Ephesians+4%3A25&version=NIV)
+- [Proverbs 12:22](https://www.biblegateway.com/passage/?search=Proverbs+12%3A22&version=NIV)
+- [Revelation 21:8](https://www.biblegateway.com/passage/?search=Revelation+21%3A8&version=NIV)
+- [Revelation 22:15](https://www.biblegateway.com/passage/?search=Revelation+22%3A15&version=NIV)
+- [Matthew 5:37](https://www.biblegateway.com/passage/?search=Matthew+5%3A37&version=NIV)
 
 ## Connected truth
 
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [walk-in-honesty-and-truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Walk in Honesty and Truth](https://bedrock.rippel.ai/c/walk-in-honesty-and-truth)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/falsehood.md

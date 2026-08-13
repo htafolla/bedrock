@@ -30,22 +30,22 @@ So we fasted and implored our God for this, and He listened to our entreaty.
 
 ## Scripture
 
-- Matthew 6:16–18
-- Daniel 9:3
-- Isaiah 58:6–7
-- Matthew 9:15
-- Acts 13:2
-- Ezra 8:23
+- [Matthew 6:16–18](https://www.biblegateway.com/passage/?search=Matthew+6%3A16-18&version=NIV)
+- [Daniel 9:3](https://www.biblegateway.com/passage/?search=Daniel+9%3A3&version=NIV)
+- [Isaiah 58:6–7](https://www.biblegateway.com/passage/?search=Isaiah+58%3A6-7&version=NIV)
+- [Matthew 9:15](https://www.biblegateway.com/passage/?search=Matthew+9%3A15&version=NIV)
+- [Acts 13:2](https://www.biblegateway.com/passage/?search=Acts+13%3A2&version=NIV)
+- [Ezra 8:23](https://www.biblegateway.com/passage/?search=Ezra+8%3A23&version=NIV)
 
 ## Connected truth
 
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [sabbath](https://bedrock.rippel.ai/c/sabbath)
-- [deny-yourself](https://bedrock.rippel.ai/c/deny-yourself)
-- [a-broken-and-contrite-heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
-- [healing](https://bedrock.rippel.ai/c/healing)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Sabbath](https://bedrock.rippel.ai/c/sabbath)
+- [Deny Yourself](https://bedrock.rippel.ai/c/deny-yourself)
+- [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
+- [Healing](https://bedrock.rippel.ai/c/healing)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fasting.md

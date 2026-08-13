@@ -21,15 +21,15 @@ For everything there is a season, and a time for every matter under heaven.
 
 ## Scripture
 
-- Galatians 6:1
-- Ecclesiastes 3:1
+- [Galatians 6:1](https://www.biblegateway.com/passage/?search=Galatians+6%3A1&version=NIV)
+- [Ecclesiastes 3:1](https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A1&version=NIV)
 
 ## Connected truth
 
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [one-another-in-the-body](https://bedrock.rippel.ai/c/one-another-in-the-body)
-- [gentleness](https://bedrock.rippel.ai/c/gentleness)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body)
+- [Gentleness](https://bedrock.rippel.ai/c/gentleness)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/restore-gently-and-give-time.md

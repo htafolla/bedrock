@@ -23,17 +23,17 @@ Trust in Him at all times… pour out your heart before Him.
 
 ## Scripture
 
-- Lamentations 2:19
-- Psalm 13:1
-- Psalm 34:18
-- Psalm 62:8
+- [Lamentations 2:19](https://www.biblegateway.com/passage/?search=Lamentations+2%3A19&version=NIV)
+- [Psalm 13:1](https://www.biblegateway.com/passage/?search=Psalm+13%3A1&version=NIV)
+- [Psalm 34:18](https://www.biblegateway.com/passage/?search=Psalm+34%3A18&version=NIV)
+- [Psalm 62:8](https://www.biblegateway.com/passage/?search=Psalm+62%3A8&version=NIV)
 
 ## Connected truth
 
-- [a-broken-and-contrite-heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [he-is-for-you](https://bedrock.rippel.ai/c/he-is-for-you)
-- [loss](https://bedrock.rippel.ai/c/loss)
+- [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [He Is For You](https://bedrock.rippel.ai/c/he-is-for-you)
+- [Loss](https://bedrock.rippel.ai/c/loss)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart.md

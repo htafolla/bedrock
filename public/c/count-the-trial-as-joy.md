@@ -21,15 +21,15 @@ Suffering produces perseverance; perseverance, character; and character, hope.
 
 ## Scripture
 
-- James 1:2–4
-- Romans 5:3–4
+- [James 1:2–4](https://www.biblegateway.com/passage/?search=James+1%3A2-4&version=NIV)
+- [Romans 5:3–4](https://www.biblegateway.com/passage/?search=Romans+5%3A3-4&version=NIV)
 
 ## Connected truth
 
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [lament-and-pour-out-your-heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
-- [joy](https://bedrock.rippel.ai/c/joy)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
+- [Joy](https://bedrock.rippel.ai/c/joy)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/count-the-trial-as-joy.md

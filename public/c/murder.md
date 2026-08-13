@@ -26,20 +26,20 @@ Beloved, never avenge yourselves, but leave it to the wrath of God, for it is wr
 
 ## Scripture
 
-- Exodus 20:13
-- 1 John 3:15
-- Matthew 5:21–22
-- Revelation 21:8
-- Romans 12:19
+- [Exodus 20:13](https://www.biblegateway.com/passage/?search=Exodus+20%3A13&version=NIV)
+- [1 John 3:15](https://www.biblegateway.com/passage/?search=1+John+3%3A15&version=NIV)
+- [Matthew 5:21–22](https://www.biblegateway.com/passage/?search=Matthew+5%3A21-22&version=NIV)
+- [Revelation 21:8](https://www.biblegateway.com/passage/?search=Revelation+21%3A8&version=NIV)
+- [Romans 12:19](https://www.biblegateway.com/passage/?search=Romans+12%3A19&version=NIV)
 
 ## Connected truth
 
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [do-not-repay-evil-with-evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)
-- [malice](https://bedrock.rippel.ai/c/malice)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Do Not Repay Evil with Evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)
+- [Malice](https://bedrock.rippel.ai/c/malice)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/murder.md

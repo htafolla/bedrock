@@ -28,20 +28,20 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 
 ## Scripture
 
-- Galatians 5:22
-- John 14:27
-- Philippians 4:6–7
-- Colossians 3:15
-- Isaiah 26:3
+- [Galatians 5:22](https://www.biblegateway.com/passage/?search=Galatians+5%3A22&version=NIV)
+- [John 14:27](https://www.biblegateway.com/passage/?search=John+14%3A27&version=NIV)
+- [Philippians 4:6–7](https://www.biblegateway.com/passage/?search=Philippians+4%3A6-7&version=NIV)
+- [Colossians 3:15](https://www.biblegateway.com/passage/?search=Colossians+3%3A15&version=NIV)
+- [Isaiah 26:3](https://www.biblegateway.com/passage/?search=Isaiah+26%3A3&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [do-not-fear](https://bedrock.rippel.ai/c/do-not-fear)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [patience](https://bedrock.rippel.ai/c/patience)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Patience](https://bedrock.rippel.ai/c/patience)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/peace.md

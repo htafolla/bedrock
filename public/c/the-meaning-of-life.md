@@ -23,15 +23,15 @@ On these two commandments depend all the Law and the Prophets.
 
 ## Scripture
 
-- Matthew 22:37–40
-- Mark 12:30–31
-- Luke 10:27
+- [Matthew 22:37–40](https://www.biblegateway.com/passage/?search=Matthew+22%3A37-40&version=NIV)
+- [Mark 12:30–31](https://www.biblegateway.com/passage/?search=Mark+12%3A30-31&version=NIV)
+- [Luke 10:27](https://www.biblegateway.com/passage/?search=Luke+10%3A27&version=NIV)
 
 ## Connected truth
 
-- [love-and-patience](https://bedrock.rippel.ai/c/love-and-patience)
-- [choose-selfless-love](https://bedrock.rippel.ai/c/choose-selfless-love)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
+- [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
+- [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
+- [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-meaning-of-life.md

@@ -25,14 +25,14 @@ And lead us not into temptation, but deliver us from evil.
 
 ## Scripture
 
-- Matthew 6:9–13
+- [Matthew 6:9–13](https://www.biblegateway.com/passage/?search=Matthew+6%3A9-13&version=NIV)
 
 ## Connected truth
 
-- [his-provision](https://bedrock.rippel.ai/c/his-provision)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
+- [His Provision](https://bedrock.rippel.ai/c/his-provision)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-lords-prayer.md

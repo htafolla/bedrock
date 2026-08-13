@@ -30,22 +30,22 @@ I have said these things to you, that when their hour comes you may remember tha
 
 ## Scripture
 
-- Matthew 25:13
-- Matthew 24:44
-- Matthew 24:25
-- Luke 21:36
-- Revelation 3:20
-- John 16:4
+- [Matthew 25:13](https://www.biblegateway.com/passage/?search=Matthew+25%3A13&version=NIV)
+- [Matthew 24:44](https://www.biblegateway.com/passage/?search=Matthew+24%3A44&version=NIV)
+- [Matthew 24:25](https://www.biblegateway.com/passage/?search=Matthew+24%3A25&version=NIV)
+- [Luke 21:36](https://www.biblegateway.com/passage/?search=Luke+21%3A36&version=NIV)
+- [Revelation 3:20](https://www.biblegateway.com/passage/?search=Revelation+3%3A20&version=NIV)
+- [John 16:4](https://www.biblegateway.com/passage/?search=John+16%3A4&version=NIV)
 
 ## Connected truth
 
-- [ten-virgins](https://bedrock.rippel.ai/c/ten-virgins)
-- [the-faithful-servant](https://bedrock.rippel.ai/c/the-faithful-servant)
-- [one-taken-one-left](https://bedrock.rippel.ai/c/one-taken-one-left)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Ten Virgins](https://bedrock.rippel.ai/c/ten-virgins)
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant)
+- [One Taken, One Left](https://bedrock.rippel.ai/c/one-taken-one-left)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/watch-and-be-ready.md

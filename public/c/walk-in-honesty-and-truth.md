@@ -23,16 +23,16 @@ Let what you say be simply “Yes” or “No”; anything more than this comes 
 
 ## Scripture
 
-- Proverbs 12:22
-- Ephesians 4:25
-- Matthew 5:37
+- [Proverbs 12:22](https://www.biblegateway.com/passage/?search=Proverbs+12%3A22&version=NIV)
+- [Ephesians 4:25](https://www.biblegateway.com/passage/?search=Ephesians+4%3A25&version=NIV)
+- [Matthew 5:37](https://www.biblegateway.com/passage/?search=Matthew+5%3A37&version=NIV)
 
 ## Connected truth
 
-- [falsehood](https://bedrock.rippel.ai/c/falsehood)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [guard-your-heart-and-mouth](https://bedrock.rippel.ai/c/guard-your-heart-and-mouth)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Falsehood](https://bedrock.rippel.ai/c/falsehood)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Guard Your Heart and Mouth](https://bedrock.rippel.ai/c/guard-your-heart-and-mouth)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md

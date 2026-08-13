@@ -33,28 +33,28 @@ When the Chief Shepherd appears, you will receive the unfading crown of glory.
 
 ## Scripture
 
-- Romans 8:18
-- Colossians 1:27
-- Titus 2:13
-- Revelation 21:3–4
-- Revelation 22:12
-- James 1:12
-- 2 Timothy 4:8
-- 1 Peter 5:4
+- [Romans 8:18](https://www.biblegateway.com/passage/?search=Romans+8%3A18&version=NIV)
+- [Colossians 1:27](https://www.biblegateway.com/passage/?search=Colossians+1%3A27&version=NIV)
+- [Titus 2:13](https://www.biblegateway.com/passage/?search=Titus+2%3A13&version=NIV)
+- [Revelation 21:3–4](https://www.biblegateway.com/passage/?search=Revelation+21%3A3-4&version=NIV)
+- [Revelation 22:12](https://www.biblegateway.com/passage/?search=Revelation+22%3A12&version=NIV)
+- [James 1:12](https://www.biblegateway.com/passage/?search=James+1%3A12&version=NIV)
+- [2 Timothy 4:8](https://www.biblegateway.com/passage/?search=2+Timothy+4%3A8&version=NIV)
+- [1 Peter 5:4](https://www.biblegateway.com/passage/?search=1+Peter+5%3A4&version=NIV)
 
 ## Connected truth
 
-- [count-the-trial-as-joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
-- [the-cross-and-our-justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
-- [the-righteous-fall](https://bedrock.rippel.ai/c/the-righteous-fall)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [wheat-and-tares](https://bedrock.rippel.ai/c/wheat-and-tares)
-- [watch-and-be-ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
-- [treasure-in-heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
-- [healing](https://bedrock.rippel.ai/c/healing)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
+- [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy)
+- [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
+- [The Righteous Fall](https://bedrock.rippel.ai/c/the-righteous-fall)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
+- [Watch and Be Ready](https://bedrock.rippel.ai/c/watch-and-be-ready)
+- [Treasure in Heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [Healing](https://bedrock.rippel.ai/c/healing)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/hope-of-glory.md

@@ -23,16 +23,16 @@ Let us consider how to stir up one another to love and good works, not neglectin
 
 ## Scripture
 
-- Galatians 6:2
-- Hebrews 3:13
-- James 5:16
-- Hebrews 10:24–25
+- [Galatians 6:2](https://www.biblegateway.com/passage/?search=Galatians+6%3A2&version=NIV)
+- [Hebrews 3:13](https://www.biblegateway.com/passage/?search=Hebrews+3%3A13&version=NIV)
+- [James 5:16](https://www.biblegateway.com/passage/?search=James+5%3A16&version=NIV)
+- [Hebrews 10:24–25](https://www.biblegateway.com/passage/?search=Hebrews+10%3A24-25&version=NIV)
 
 ## Connected truth
 
-- [restore-gently-and-give-time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
-- [confess-and-be-cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [choose-selfless-love](https://bedrock.rippel.ai/c/choose-selfless-love)
+- [Restore Gently and Give Time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
+- [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
+- [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-another-in-the-body.md

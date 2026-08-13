@@ -28,18 +28,18 @@ Those who do such things will not inherit the kingdom of God.
 
 ## Scripture
 
-- Ephesians 4:31–32
-- 1 Peter 2:1
-- Galatians 5:19–21
+- [Ephesians 4:31–32](https://www.biblegateway.com/passage/?search=Ephesians+4%3A31-32&version=NIV)
+- [1 Peter 2:1](https://www.biblegateway.com/passage/?search=1+Peter+2%3A1&version=NIV)
+- [Galatians 5:19–21](https://www.biblegateway.com/passage/?search=Galatians+5%3A19-21&version=NIV)
 
 ## Connected truth
 
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [murder](https://bedrock.rippel.ai/c/murder)
-- [leave-vengeance-to-the-lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [kindness](https://bedrock.rippel.ai/c/kindness)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Murder](https://bedrock.rippel.ai/c/murder)
+- [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Kindness](https://bedrock.rippel.ai/c/kindness)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/malice.md

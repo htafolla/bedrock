@@ -69,34 +69,34 @@ Longer map when the fight slows: Kill the Flesh. Walk in the Spirit. — the ful
 
 ## Scripture
 
-- James 1:19
-- 2 Timothy 1:7
-- Galatians 5:16
-- Galatians 5:22–23
-- 2 Corinthians 10:5
-- Luke 9:23
-- 1 Corinthians 13:4–7
-- Proverbs 25:28
-- Titus 2:11–12
-- James 5:16
-- Matthew 6:16–18
+- [James 1:19](https://www.biblegateway.com/passage/?search=James+1%3A19&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
+- [Galatians 5:16](https://www.biblegateway.com/passage/?search=Galatians+5%3A16&version=NIV)
+- [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
+- [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV)
+- [Luke 9:23](https://www.biblegateway.com/passage/?search=Luke+9%3A23&version=NIV)
+- [1 Corinthians 13:4–7](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-7&version=NIV)
+- [Proverbs 25:28](https://www.biblegateway.com/passage/?search=Proverbs+25%3A28&version=NIV)
+- [Titus 2:11–12](https://www.biblegateway.com/passage/?search=Titus+2%3A11-12&version=NIV)
+- [James 5:16](https://www.biblegateway.com/passage/?search=James+5%3A16&version=NIV)
+- [Matthew 6:16–18](https://www.biblegateway.com/passage/?search=Matthew+6%3A16-18&version=NIV)
 
 ## Connected truth
 
-- [kill-the-flesh-walk-in-the-spirit](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [works-of-the-flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [fear](https://bedrock.rippel.ai/c/fear)
-- [control](https://bedrock.rippel.ai/c/control)
-- [jealousy](https://bedrock.rippel.ai/c/jealousy)
-- [patience](https://bedrock.rippel.ai/c/patience)
-- [self-control](https://bedrock.rippel.ai/c/self-control)
-- [rumination](https://bedrock.rippel.ai/c/rumination)
-- [renew-your-mind](https://bedrock.rippel.ai/c/renew-your-mind)
-- [forgive-as-you-have-been-forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
-- [trust-in-the-lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
-- [the-full-armor-of-god](https://bedrock.rippel.ai/c/the-full-armor-of-god)
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Jealousy](https://bedrock.rippel.ai/c/jealousy)
+- [Patience](https://bedrock.rippel.ai/c/patience)
+- [Self-control](https://bedrock.rippel.ai/c/self-control)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/kill-the-flesh.md

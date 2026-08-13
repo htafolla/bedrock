@@ -38,28 +38,28 @@ Behold, I have given you authority to tread on serpents and scorpions, and over 
 
 ## Scripture
 
-- John 14:16–17
-- John 14:26
-- John 15:26
-- John 16:7
-- John 16:13
-- Acts 1:8
-- Romans 5:5
-- 1 Corinthians 12:4–7
-- 2 Corinthians 10:4
-- Luke 10:19
+- [John 14:16–17](https://www.biblegateway.com/passage/?search=John+14%3A16-17&version=NIV)
+- [John 14:26](https://www.biblegateway.com/passage/?search=John+14%3A26&version=NIV)
+- [John 15:26](https://www.biblegateway.com/passage/?search=John+15%3A26&version=NIV)
+- [John 16:7](https://www.biblegateway.com/passage/?search=John+16%3A7&version=NIV)
+- [John 16:13](https://www.biblegateway.com/passage/?search=John+16%3A13&version=NIV)
+- [Acts 1:8](https://www.biblegateway.com/passage/?search=Acts+1%3A8&version=NIV)
+- [Romans 5:5](https://www.biblegateway.com/passage/?search=Romans+5%3A5&version=NIV)
+- [1 Corinthians 12:4–7](https://www.biblegateway.com/passage/?search=1+Corinthians+12%3A4-7&version=NIV)
+- [2 Corinthians 10:4](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A4&version=NIV)
+- [Luke 10:19](https://www.biblegateway.com/passage/?search=Luke+10%3A19&version=NIV)
 
 ## Connected truth
 
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [the-word](https://bedrock.rippel.ai/c/the-word)
-- [spiritual-gifts](https://bedrock.rippel.ai/c/spiritual-gifts)
-- [take-every-thought-captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
-- [spiritual-warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
-- [the-adversary](https://bedrock.rippel.ai/c/the-adversary)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [love](https://bedrock.rippel.ai/c/love)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [The Word](https://bedrock.rippel.ai/c/the-word)
+- [Gifts of the Spirit](https://bedrock.rippel.ai/c/spiritual-gifts)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
+- [The Adversary](https://bedrock.rippel.ai/c/the-adversary)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Love](https://bedrock.rippel.ai/c/love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/holy-spirit.md

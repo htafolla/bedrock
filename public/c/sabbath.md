@@ -36,25 +36,25 @@ Be still, and know that I am God.
 
 ## Scripture
 
-- Genesis 2:3
-- Exodus 20:8–10
-- Exodus 31:13
-- Ezekiel 20:12
-- Ezekiel 20:20
-- Isaiah 58:13–14
-- Mark 2:27–28
-- Hebrews 4:9–10
-- Psalm 46:10
+- [Genesis 2:3](https://www.biblegateway.com/passage/?search=Genesis+2%3A3&version=NIV)
+- [Exodus 20:8–10](https://www.biblegateway.com/passage/?search=Exodus+20%3A8-10&version=NIV)
+- [Exodus 31:13](https://www.biblegateway.com/passage/?search=Exodus+31%3A13&version=NIV)
+- [Ezekiel 20:12](https://www.biblegateway.com/passage/?search=Ezekiel+20%3A12&version=NIV)
+- [Ezekiel 20:20](https://www.biblegateway.com/passage/?search=Ezekiel+20%3A20&version=NIV)
+- [Isaiah 58:13–14](https://www.biblegateway.com/passage/?search=Isaiah+58%3A13-14&version=NIV)
+- [Mark 2:27–28](https://www.biblegateway.com/passage/?search=Mark+2%3A27-28&version=NIV)
+- [Hebrews 4:9–10](https://www.biblegateway.com/passage/?search=Hebrews+4%3A9-10&version=NIV)
+- [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV)
 
 ## Connected truth
 
-- [god-first](https://bedrock.rippel.ai/c/god-first)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [fasting](https://bedrock.rippel.ai/c/fasting)
-- [his-provision](https://bedrock.rippel.ai/c/his-provision)
-- [wait-on-the-lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
-- [peace](https://bedrock.rippel.ai/c/peace)
-- [the-lords-prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Fasting](https://bedrock.rippel.ai/c/fasting)
+- [His Provision](https://bedrock.rippel.ai/c/his-provision)
+- [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+- [The Lord's Prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/sabbath.md

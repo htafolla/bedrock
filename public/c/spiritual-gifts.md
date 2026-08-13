@@ -32,25 +32,25 @@ If I speak in the tongues of men and of angels, but have not love, I am a noisy 
 
 ## Scripture
 
-- 1 Corinthians 12:4–11
-- Romans 12:6–8
-- 1 Peter 4:10–11
-- Ephesians 4:11–12
-- 1 Corinthians 14:1
-- 1 Corinthians 13:1
+- [1 Corinthians 12:4–11](https://www.biblegateway.com/passage/?search=1+Corinthians+12%3A4-11&version=NIV)
+- [Romans 12:6–8](https://www.biblegateway.com/passage/?search=Romans+12%3A6-8&version=NIV)
+- [1 Peter 4:10–11](https://www.biblegateway.com/passage/?search=1+Peter+4%3A10-11&version=NIV)
+- [Ephesians 4:11–12](https://www.biblegateway.com/passage/?search=Ephesians+4%3A11-12&version=NIV)
+- [1 Corinthians 14:1](https://www.biblegateway.com/passage/?search=1+Corinthians+14%3A1&version=NIV)
+- [1 Corinthians 13:1](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A1&version=NIV)
 
 ## Connected truth
 
-- [treasure-in-heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
-- [hope-of-glory](https://bedrock.rippel.ai/c/hope-of-glory)
-- [holy-spirit](https://bedrock.rippel.ai/c/holy-spirit)
-- [prayer](https://bedrock.rippel.ai/c/prayer)
-- [healing](https://bedrock.rippel.ai/c/healing)
-- [laying-on-of-hands](https://bedrock.rippel.ai/c/laying-on-of-hands)
-- [the-faithful-servant](https://bedrock.rippel.ai/c/the-faithful-servant)
-- [one-another-in-the-body](https://bedrock.rippel.ai/c/one-another-in-the-body)
-- [walk-by-the-spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
-- [love](https://bedrock.rippel.ai/c/love)
+- [Treasure in Heaven](https://bedrock.rippel.ai/c/treasure-in-heaven)
+- [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
+- [Holy Spirit](https://bedrock.rippel.ai/c/holy-spirit)
+- [Prayer](https://bedrock.rippel.ai/c/prayer)
+- [Healing](https://bedrock.rippel.ai/c/healing)
+- [Laying on of Hands](https://bedrock.rippel.ai/c/laying-on-of-hands)
+- [The Faithful Servant](https://bedrock.rippel.ai/c/the-faithful-servant)
+- [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body)
+- [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
+- [Love](https://bedrock.rippel.ai/c/love)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-gifts.md
