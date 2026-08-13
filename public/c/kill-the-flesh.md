@@ -9,11 +9,11 @@
 
 ## Under fire
 
-- Fear (the flesh) drives thoughts and actions.
+Fear (the flesh) drives thoughts and actions.
+
 - Is it self-less?
-Does it protect?
-Does it honor God?
-- No → stop. Capture to Christ. Choose the other path.
+- Does it protect?
+- Does it honor God? — No → stop. Capture to Christ. Choose the other path.
 
 ## Prayer
 

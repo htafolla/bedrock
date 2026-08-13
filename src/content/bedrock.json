@@ -4855,9 +4855,9 @@
         }
       ],
       "hacks": [
-        "Fear (the flesh) drives thoughts and actions.",
-        "Is it self-less?\nDoes it protect?\nDoes it honor God?",
-        "No → stop. Capture to Christ. Choose the other path."
+        "Is it self-less?",
+        "Does it protect?",
+        "Does it honor God? — No → stop. Capture to Christ. Choose the other path."
       ],
       "prayers": [
         "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen."
@@ -4881,7 +4881,8 @@
       "illustration": {
         "src": "/art/kill-the-flesh-pow.png",
         "alt": "Pow crescendo line form"
-      }
+      },
+      "underFireIntro": "Fear (the flesh) drives thoughts and actions."
     },
     {
       "id": "adultery",

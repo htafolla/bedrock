@@ -164,6 +164,7 @@ function chamberMarkdown(c, titleById = new Map()) {
   const verses = c.verses
     .map((v) => `- [${v.display}](${bibleGatewayHref(v)})`)
     .join('\n')
+  const underFireLead = c.underFireIntro ? `${c.underFireIntro}\n\n` : ''
   const hacks = c.hacks.map((h) => `- ${h}`).join('\n')
   const prayers = c.prayers.map((p) => p).join('\n\n')
   const related = c.related
@@ -189,7 +190,7 @@ ${kicker}
 ${illMd}
 ## Under fire
 
-${hacks}
+${underFireLead}${hacks}
 
 ## Prayer
 
@@ -368,19 +369,14 @@ function rubricBodyToHtml(body) {
 function chamberHtml(c, meta, titleById = new Map()) {
   const isRubric = c.kind === 'rubric'
   const truth = isRubric ? rubricBodyToHtml(c.body) : bodyToHtml(c.body)
-  const hacks = c.hacks
-    .map((h) => {
-      const lines = String(h)
-        .split('\n')
-        .map((s) => s.trim())
-        .filter(Boolean)
-      if (lines.length > 1) {
-        const nested = lines.map((line) => `<li>${esc(line)}</li>`).join('\n')
-        return `<li class="hold-group"><ul class="hold-nested">\n${nested}\n</ul></li>`
-      }
-      return `<li>${esc(h)}</li>`
-    })
-    .join('\n')
+  const hacks = (c.hacks || []).map((h) => `<li>${esc(h)}</li>`).join('\n')
+  const underFireIntro = c.underFireIntro
+    ? `<p class="field-layer-hint">${esc(c.underFireIntro)}</p>`
+    : `<p class="field-layer-hint">${
+        c.kind === 'rubric'
+          ? 'Three holds when fog is worst.'
+          : 'The next right hold — walk this hour.'
+      }</p>`
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
   const versesList = versesListHtml(c.verses || [])
   const related = (c.related || [])
@@ -596,6 +592,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     <section class="hold" aria-labelledby="fire">
       <p class="kicker-hold">This hour</p>
       <h2 id="fire">Under fire</h2>
+      ${underFireIntro}
       <ul>${hacks}</ul>
       <h2 id="prayer">Prayer</h2>
       ${prayers}

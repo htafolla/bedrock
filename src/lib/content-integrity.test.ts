@@ -76,10 +76,13 @@ describe('bedrock content integrity', () => {
     expect(killCard.verses.length).toBeGreaterThanOrEqual(10)
     expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/James 1:19/)
     expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/2 Timothy 1:7/)
+    expect(killCard.underFireIntro?.toLowerCase()).toMatch(/fear \(the flesh\) drives/)
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
-      /fear \(the flesh\)|self-less|protect|honor god|no → stop|capture to christ/,
+      /self-less|protect|honor god|no → stop|capture to christ/,
     )
     expect(killCard.hacks.length).toBeLessThanOrEqual(3)
+    // Holds are bullets only — intro is not a hack line
+    expect(killCard.hacks.some((h) => /fear \(the flesh\) drives/i.test(h))).toBe(false)
     expect(killCard.illustration?.src).toMatch(/kill-the-flesh-pow/)
     expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
     expect(rubric.related).toContain('kill-the-flesh')

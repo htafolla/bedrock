@@ -31,7 +31,7 @@ export type ChamberKind = 'chamber' | 'rubric'
  */
 /** Optional battle-card / station illustration (static under public/). */
 export interface ChamberIllustration {
-  /** Absolute site path, e.g. /art/kill-the-flesh-pow.jpg */
+  /** Absolute site path, e.g. /art/kill-the-flesh-pow.png */
   src: string
   alt: string
   /** Optional credit / medium line under the image */
@@ -51,6 +51,11 @@ export interface Chamber {
   verses: ScriptureRef[]
   /** Usable under pressure: short obedience / mind reframes ("brain hacks") */
   hacks: string[]
+  /**
+   * Optional lead under “Under fire” — same role as field-layer-hint prose,
+   * not a hold bullet. Most chambers omit this and use the default hint.
+   */
+  underFireIntro?: string
   /** Short prayers for the trial */
   prayers: string[]
   /** Related chamber ids — edges in the web of truth */
