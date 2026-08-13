@@ -422,8 +422,9 @@ export const FIELD_AIDS = {
     prayers: ['Father, I renounce the flesh. Lead me by Your Spirit. Amen.'],
   },
   'kill-the-flesh': {
+    // Intro lives in underFireIntro (field-layer-hint) — not a hold bullet
+    underFireIntro: 'Fear (the flesh) drives thoughts and actions. Name it.',
     hacks: [
-      'The flesh (fear) drives thoughts and actions. Name it.',
       // Newlines → nested bullets in Under fire (ChamberFocus / static HTML)
       'Is it self-less?\nDoes it protect?\nDoes it honor God?\nIf no → stop.',
       'Capture it to Christ. Stop. Breathe. Choose the other path.',

@@ -1858,6 +1858,10 @@ for (const c of document.chambers) {
   if (aids) {
     c.hacks = aids.hacks ?? []
     c.prayers = aids.prayers ?? []
+    // Optional lead under Under fire (prose, not a bullet) — same slot as default hint
+    if (aids.underFireIntro) {
+      c.underFireIntro = aids.underFireIntro
+    }
   }
   // Artifact kinds: most nodes are first-principle chambers; rubrics are denser SOP under fire
   if (c.id === 'kill-the-flesh-walk-in-the-spirit') {

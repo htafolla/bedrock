@@ -9,7 +9,8 @@
 
 ## Under fire
 
-- The flesh (fear) drives thoughts and actions. Name it.
+Fear (the flesh) drives thoughts and actions. Name it.
+
 - Is it self-less?
 Does it protect?
 Does it honor God?

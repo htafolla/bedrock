@@ -56,14 +56,18 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh')!.title).toBe('Kill the Flesh')
     expect(byId.get('kill-the-flesh')!.kind ?? 'chamber').toBe('chamber')
     const killCard = byId.get('kill-the-flesh')!
-    expect(killCard.underFireIntro).toBeUndefined()
     expect(killCard.summary.toLowerCase()).toMatch(/you're in a fight|the urge is real|out of control/)
     expect(killCard.summary.toLowerCase()).toMatch(/master the flesh/)
+    // Intro under Under fire (field-layer-hint) — not a hold bullet
+    expect(killCard.underFireIntro?.toLowerCase() ?? '').toMatch(
+      /fear \(the flesh\) drives thoughts and actions/,
+    )
     expect(killCard.hacks.length).toBeGreaterThan(0)
     expect(killCard.hacks.length).toBeLessThanOrEqual(3)
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
-      /flesh \(fear\)|self-less|protect|honor god|capture|other path/,
+      /self-less|protect|honor god|capture|other path/,
     )
+    expect(killCard.hacks.some((h) => /drives thoughts and actions/i.test(h))).toBe(false)
     // Truth: short lead lines + inner lists for filters / steps / tools
     expect(killCard.body.some((b) => b.type === 'list')).toBe(true)
     expect(killCard.body.filter((b) => b.type === 'list').length).toBeGreaterThanOrEqual(3)
