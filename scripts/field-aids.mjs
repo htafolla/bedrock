@@ -424,7 +424,8 @@ export const FIELD_AIDS = {
   'kill-the-flesh': {
     hacks: [
       'The flesh (fear) drives thoughts and actions. Name it.',
-      'Is it self-less? Does it protect? Does it honor God? If no → stop.',
+      // Newlines → nested bullets in Under fire (ChamberFocus / static HTML)
+      'Is it self-less?\nDoes it protect?\nDoes it honor God?\nIf no → stop.',
       'Capture it to Christ. Stop. Breathe. Choose the other path.',
     ],
     prayers: [

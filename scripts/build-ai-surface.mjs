@@ -369,7 +369,19 @@ function rubricBodyToHtml(body) {
 function chamberHtml(c, meta, titleById = new Map()) {
   const isRubric = c.kind === 'rubric'
   const truth = isRubric ? rubricBodyToHtml(c.body) : bodyToHtml(c.body)
-  const hacks = (c.hacks || []).map((h) => `<li>${esc(h)}</li>`).join('\n')
+  const hacks = (c.hacks || [])
+    .map((h) => {
+      const lines = String(h)
+        .split('\n')
+        .map((s) => s.trim())
+        .filter(Boolean)
+      if (lines.length > 1) {
+        const nested = lines.map((line) => `<li>${esc(line)}</li>`).join('\n')
+        return `<li class="hold-group"><ul class="hold-nested">\n${nested}\n</ul></li>`
+      }
+      return `<li>${esc(h)}</li>`
+    })
+    .join('\n')
   const underFireIntro = c.underFireIntro
     ? `<p class="field-layer-hint">${esc(c.underFireIntro)}</p>`
     : `<p class="field-layer-hint">${
