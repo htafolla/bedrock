@@ -3,10 +3,12 @@
  * Run from build-ai-surface (content change) so social platforms always get
  * a real PNG file — not a dynamic SVG endpoint.
  *
- * Output:
- *   public/og/c/{chamberId}.png
- *   public/og/j/{journeyId}.png
- *   public/og/k/{keyId}.png
+ * Output (versioned path — social scrapers cache by full URL):
+ *   public/og/c/{chamberId}.v{OG_CARD_VERSION}.png
+ *   public/og/j/{journeyId}.v{OG_CARD_VERSION}.png
+ *   public/og/k/{keyId}.v{OG_CARD_VERSION}.png
+ *
+ * Keep OG_CARD_VERSION in sync with src/lib/seo.ts (bump on title/art changes).
  */
 import { mkdirSync, writeFileSync, rmSync, existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -17,6 +19,13 @@ import { buildOgSvg } from '../server/og-card.mjs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const publicOg = join(root, 'public', 'og')
+
+/** Must match src/lib/seo.ts OG_CARD_VERSION */
+const OG_CARD_VERSION = '7'
+
+function ogFileName(id) {
+  return `${id}.v${OG_CARD_VERSION}.png`
+}
 
 const MOTTO = 'Do Better. Be Better. Trust God.'
 
@@ -239,7 +248,7 @@ export async function buildAllOgCards(input) {
         subtitle: c.summary,
         illustrationSrc: c.illustration?.src,
       },
-      join(cDir, `${c.id}.png`),
+      join(cDir, ogFileName(c.id)),
     )
     bytes += n
     count += 1
@@ -248,7 +257,7 @@ export async function buildAllOgCards(input) {
   for (const j of input.journeys || []) {
     const n = await writeOgPng(
       { layer: 'path', title: j.title, subtitle: j.summary },
-      join(jDir, `${j.id}.png`),
+      join(jDir, ogFileName(j.id)),
     )
     bytes += n
     count += 1
@@ -257,7 +266,7 @@ export async function buildAllOgCards(input) {
   for (const k of input.keys || []) {
     const n = await writeOgPng(
       { layer: 'door', title: k.label, subtitle: k.hint },
-      join(kDir, `${k.id}.png`),
+      join(kDir, ogFileName(k.id)),
     )
     bytes += n
     count += 1
@@ -266,10 +275,11 @@ export async function buildAllOgCards(input) {
   writeFileSync(
     join(publicOg, 'README.md'),
     `# Bedrock OG cards\n\n` +
-      `Generated on content build for social share.\n\n` +
-      `- Stations / standards: \`/og/c/{id}.png\` (1200×630)\n` +
-      `- Paths (journeys): \`/og/j/{id}.png\`\n` +
-      `- Keys: \`/og/k/{id}.png\`\n` +
+      `Generated on content build for social share.\n` +
+      `Version: v${OG_CARD_VERSION} (path-versioned for social cache bust).\n\n` +
+      `- Stations / standards: \`/og/c/{id}.v${OG_CARD_VERSION}.png\` (1200×630)\n` +
+      `- Paths (journeys): \`/og/j/{id}.v${OG_CARD_VERSION}.png\`\n` +
+      `- Keys: \`/og/k/{id}.v${OG_CARD_VERSION}.png\`\n` +
       `- Origin (About): \`/og/origin.png\`\n` +
       `- Sealed poem (tall): \`/og/testimony-poem.png\`\n\n` +
       `Cards: ${count} · ~${Math.round(bytes / 1024)} KB total\n`,

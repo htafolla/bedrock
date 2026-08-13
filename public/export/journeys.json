@@ -102,7 +102,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/death-of-loved-one",
-      "ogImage": "https://bedrock.rippel.ai/og/j/death-of-loved-one.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/death-of-loved-one.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/loss"
     },
     {
@@ -222,7 +222,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/spouse-left",
-      "ogImage": "https://bedrock.rippel.ai/og/j/spouse-left.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/spouse-left.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/wounded"
     },
     {
@@ -295,7 +295,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/deep-wound",
-      "ogImage": "https://bedrock.rippel.ai/og/j/deep-wound.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/deep-wound.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/wounded"
     },
     {
@@ -372,7 +372,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/abandonment-fear",
-      "ogImage": "https://bedrock.rippel.ai/og/j/abandonment-fear.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/abandonment-fear.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/fear"
     },
     {
@@ -457,7 +457,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/addiction",
-      "ogImage": "https://bedrock.rippel.ai/og/j/addiction.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/addiction.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/addiction"
     },
     {
@@ -527,7 +527,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/obsession",
-      "ogImage": "https://bedrock.rippel.ai/og/j/obsession.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/obsession.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/rumination"
     },
     {
@@ -609,7 +609,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/control-grip",
-      "ogImage": "https://bedrock.rippel.ai/og/j/control-grip.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/control-grip.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/control"
     },
     {
@@ -672,7 +672,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/jealousy",
-      "ogImage": "https://bedrock.rippel.ai/og/j/jealousy.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/jealousy.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/jealousy"
     },
     {
@@ -747,7 +747,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/i-fell",
-      "ogImage": "https://bedrock.rippel.ai/og/j/i-fell.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/i-fell.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/the-righteous-fall"
     },
     {
@@ -825,7 +825,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/sexual-sin",
-      "ogImage": "https://bedrock.rippel.ai/og/j/sexual-sin.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/sexual-sin.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/adultery"
     },
     {
@@ -894,7 +894,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/stuck-regret",
-      "ogImage": "https://bedrock.rippel.ai/og/j/stuck-regret.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/stuck-regret.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/regret"
     },
     {
@@ -962,7 +962,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/persecution",
-      "ogImage": "https://bedrock.rippel.ai/og/j/persecution.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/persecution.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/persecution"
     },
     {
@@ -1036,7 +1036,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/spiritual-warfare-fog",
-      "ogImage": "https://bedrock.rippel.ai/og/j/spiritual-warfare-fog.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/spiritual-warfare-fog.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/spiritual-warfare"
     },
     {
@@ -1114,7 +1114,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/forced-waiting",
-      "ogImage": "https://bedrock.rippel.ai/og/j/forced-waiting.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/forced-waiting.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord"
     },
     {
@@ -1225,7 +1225,7 @@
         }
       ],
       "url": "https://bedrock.rippel.ai/j/battlefield-of-the-mind",
-      "ogImage": "https://bedrock.rippel.ai/og/j/battlefield-of-the-mind.png",
+      "ogImage": "https://bedrock.rippel.ai/og/j/battlefield-of-the-mind.v7.png",
       "doorUrl": "https://bedrock.rippel.ai/c/take-every-thought-captive"
     }
   ]

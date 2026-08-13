@@ -21,22 +21,27 @@ const checks = [
   {
     name: 'Standard',
     page: `${origin}/c/kill-the-flesh-walk-in-the-spirit`,
-    image: `${origin}/og/c/kill-the-flesh-walk-in-the-spirit.png`,
+    image: `${origin}/og/c/kill-the-flesh-walk-in-the-spirit.v7.png`,
+  },
+  {
+    name: 'Master the Flesh station',
+    page: `${origin}/c/kill-the-flesh`,
+    image: `${origin}/og/c/kill-the-flesh.v7.png`,
   },
   {
     name: 'Battlefield path',
     page: `${origin}/j/battlefield-of-the-mind`,
-    image: `${origin}/og/j/battlefield-of-the-mind.png`,
+    image: `${origin}/og/j/battlefield-of-the-mind.v7.png`,
   },
   {
     name: 'Station wounded',
     page: `${origin}/c/wounded`,
-    image: `${origin}/og/c/wounded.png`,
+    image: `${origin}/og/c/wounded.v7.png`,
   },
   {
     name: 'Key wounded',
     page: `${origin}/k/key-wounded`,
-    image: `${origin}/og/k/key-wounded.png`,
+    image: `${origin}/og/k/key-wounded.v7.png`,
   },
 ]
 

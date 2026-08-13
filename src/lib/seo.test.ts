@@ -43,7 +43,7 @@ describe('seo', () => {
     expect(seo.title).toContain('Spiritual Warfare')
     expect(seo.ogType).toBe('article')
     expect(seo.canonical).toContain('/c/spiritual-warfare')
-    expect(seo.ogImage).toContain('/og/c/spiritual-warfare.png')
+    expect(seo.ogImage).toMatch(/\/og\/c\/spiritual-warfare\.v\d+\.png$/)
     expect(seo.jsonLd.some((b) => b['@type'] === 'Article')).toBe(true)
     expect(seo.jsonLd.some((b) => b['@type'] === 'HowTo')).toBe(true)
   })
@@ -52,7 +52,7 @@ describe('seo', () => {
     const c = doc.chambers.find((x) => x.id === 'kill-the-flesh-walk-in-the-spirit')!
     const seo = buildChamberSeo(doc, c)
     expect(seo.title).toContain('Bedrock Standard')
-    expect(seo.ogImage).toContain('/og/c/kill-the-flesh-walk-in-the-spirit.png')
+    expect(seo.ogImage).toMatch(/\/og\/c\/kill-the-flesh-walk-in-the-spirit\.v\d+\.png$/)
   })
 
   it('FAQ covers product intent questions', () => {

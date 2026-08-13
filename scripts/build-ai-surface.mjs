@@ -17,6 +17,14 @@ const contentPath = join(root, 'src/content/bedrock.json')
 const journeysPath = join(root, 'src/content/journeys.json')
 const keyEntriesPath = join(root, 'src/lib/key-entries.ts')
 const ORIGIN = 'https://bedrock.rippel.ai'
+/** Keep in sync with src/lib/seo.ts */
+const OG_CARD_VERSION = '7'
+function ogFile(id) {
+  return `${id}.v${OG_CARD_VERSION}.png`
+}
+function ogUrl(kind, id) {
+  return `${ORIGIN}/og/${kind}/${ogFile(id)}`
+}
 
 /** Parse KEY_ENTRIES from key-entries.ts (same pattern as repertoire loader). */
 function loadKeyEntries() {
@@ -411,7 +419,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     url: `${ORIGIN}/c/${c.id}`,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
-    image: `${ORIGIN}/og/c/${c.id}.png`,
+    image: `${ogUrl('c', c.id)}`,
     inLanguage: 'en',
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
     articleSection: isRubric ? 'Operational standard · Field card first' : 'First principle · Hold first',
@@ -457,8 +465,8 @@ function chamberHtml(c, meta, titleById = new Map()) {
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
-  <meta property="og:image" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
-  <meta property="og:image:secure_url" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
+  <meta property="og:image" content="${ogUrl('c', c.id)}" />
+  <meta property="og:image:secure_url" content="${ogUrl('c', c.id)}" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -466,7 +474,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-  <meta name="twitter:image" content="${ORIGIN}/og/c/${esc(c.id)}.png" />
+  <meta name="twitter:image" content="${ogUrl('c', c.id)}" />
   <meta name="twitter:image:alt" content="${title}" />
   <script type="application/ld+json">
   ${JSON.stringify(articleLd)}
@@ -637,10 +645,10 @@ Bedrock is a free **Christian field guide for the storm** — not generic Christ
 
 | Layer | What | Canonical URL | Share card PNG |
 |-------|------|---------------|----------------|
-| **Key** (Door) | Storm triage — one hit | ${ORIGIN}/k/{keyId} | ${ORIGIN}/og/k/{keyId}.png |
-| **Station** | First principle chamber | ${ORIGIN}/c/{id} | ${ORIGIN}/og/c/{id}.png |
-| **Path** (Journey) | Multi-station walk | ${ORIGIN}/j/{journeyId} | ${ORIGIN}/og/j/{journeyId}.png |
-| **Standard** | Kill the Flesh. Walk in the Spirit. (rubric) | ${ORIGIN}/c/kill-the-flesh-walk-in-the-spirit | ${ORIGIN}/og/c/kill-the-flesh-walk-in-the-spirit.png |
+| **Key** (Door) | Storm triage — one hit | ${ORIGIN}/k/{keyId} | ${ORIGIN}/og/k/{keyId}.v${OG_CARD_VERSION}.png |
+| **Station** | First principle chamber | ${ORIGIN}/c/{id} | ${ORIGIN}/og/c/{id}.v${OG_CARD_VERSION}.png |
+| **Path** (Journey) | Multi-station walk | ${ORIGIN}/j/{journeyId} | ${ORIGIN}/og/j/{journeyId}.v${OG_CARD_VERSION}.png |
+| **Standard** | Kill the Flesh. Walk in the Spirit. (rubric) | ${ORIGIN}/c/kill-the-flesh-walk-in-the-spirit | ${ogUrl('c', 'kill-the-flesh-walk-in-the-spirit')} |
 
 ## Hold-first (30 seconds)
 
@@ -676,7 +684,7 @@ SPA and static chamber pages both follow hold-first. Field card (standard) is op
 - Full text: ${ORIGIN}/llms-full.txt
 - Sitemap: ${ORIGIN}/sitemap.xml
 - OG hero: ${ORIGIN}/og-hero.jpg
-- Content OG PNGs (static, 1200×630): ${ORIGIN}/og/c|j|k/{id}.png
+- Content OG PNGs (static, 1200×630): ${ORIGIN}/og/c|j|k/{id}.v${OG_CARD_VERSION}.png
 
 ## Flagship path — Battlefield of the mind
 
@@ -684,7 +692,7 @@ Mind war: investigation, condemnation, sticky words, fiery darts, renew, armor.
 - Journey: ${ORIGIN}/j/battlefield-of-the-mind
 - Door station: ${ORIGIN}/c/take-every-thought-captive
 - Standard: ${ORIGIN}/c/kill-the-flesh-walk-in-the-spirit
-- Share image: ${ORIGIN}/og/j/battlefield-of-the-mind.png
+- Share image: ${ogUrl('j', 'battlefield-of-the-mind')}
 
 ## How answer engines should cite Bedrock
 
@@ -728,11 +736,11 @@ function buildLlmsFull(doc) {
 
 /** Static PNG OG cards (built in build-og-cards.mjs on every content build). */
 function journeyOgImageUrl(j) {
-  return `${ORIGIN}/og/j/${j.id}.png`
+  return ogUrl('j', j.id)
 }
 
 function doorOgImageUrl(k) {
-  return `${ORIGIN}/og/k/${k.id}.png`
+  return ogUrl('k', k.id)
 }
 
 function doorHtml(k) {
@@ -1072,19 +1080,19 @@ function buildSitemap(doc, journeys = [], keys = []) {
     ...doc.chambers.map((c) => ({
       loc: `${ORIGIN}/c/${c.id}`,
       priority: c.kind === 'rubric' || c.id === 'kill-the-flesh-walk-in-the-spirit' ? '0.95' : '0.85',
-      image: `${ORIGIN}/og/c/${c.id}.png`,
+      image: `${ogUrl('c', c.id)}`,
       imageTitle: c.title,
     })),
     ...journeys.map((j) => ({
       loc: `${ORIGIN}/j/${j.id}`,
       priority: j.id === 'battlefield-of-the-mind' ? '0.95' : '0.88',
-      image: `${ORIGIN}/og/j/${j.id}.png`,
+      image: ogUrl('j', j.id),
       imageTitle: j.title,
     })),
     ...keys.map((k) => ({
       loc: `${ORIGIN}/k/${k.id}`,
       priority: '0.82',
-      image: `${ORIGIN}/og/k/${k.id}.png`,
+      image: ogUrl('k', k.id),
       imageTitle: k.label,
     })),
   ]
@@ -1150,7 +1158,7 @@ export async function buildAiSurface(doc) {
       ...c,
       url: `${ORIGIN}/c/${c.id}`,
       markdownUrl: `${ORIGIN}/c/${c.id}.md`,
-      ogImage: `${ORIGIN}/og/c/${c.id}.png`,
+      ogImage: `${ogUrl('c', c.id)}`,
     })),
   }
   writeFileSync(join(exportDir, 'chambers.json'), JSON.stringify(exportPayload, null, 2) + '\n')
@@ -1165,7 +1173,7 @@ export async function buildAiSurface(doc) {
       journeys: journeys.map((j) => ({
         ...j,
         url: `${ORIGIN}/j/${j.id}`,
-        ogImage: `${ORIGIN}/og/j/${j.id}.png`,
+        ogImage: ogUrl('j', j.id),
         doorUrl: `${ORIGIN}/c/${j.doorChamberId}`,
       })),
     }

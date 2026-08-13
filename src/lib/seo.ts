@@ -199,15 +199,20 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
  * Bump when card art changes so platforms re-fetch.
  */
 /**
- * Bump when card art pipeline changes. Prefer clean PNG paths (no query string) —
- * X/Twitter card crawler is unreliable with image URLs that include ?v=.
- * Cache-bust by regenerating files on content build (ETag / last-modified).
+ * Bump when card art or titles change and social scrapers must refetch.
+ * Prefer path versioning (no query string) — X/Twitter is unreliable with `?v=`
+ * on image URLs; Facebook also pins cache to the full image URL.
  */
-export const OG_CARD_VERSION = '6'
+export const OG_CARD_VERSION = '7'
+
+/** Filename only: `{id}.v7.png` */
+export function staticOgFileName(id: string): string {
+  return `${id}.v${OG_CARD_VERSION}.png`
+}
 
 /** @param kind c = chamber, j = journey/path, k = key */
 export function staticOgImageUrl(kind: 'c' | 'j' | 'k', id: string): string {
-  return `${SITE_ORIGIN}/og/${kind}/${id}.png`
+  return `${SITE_ORIGIN}/og/${kind}/${staticOgFileName(id)}`
 }
 
 /** @deprecated use static paths; kept for ad-hoc /api/og fallback */

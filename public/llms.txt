@@ -10,10 +10,10 @@ Bedrock is a free **Christian field guide for the storm** — not generic Christ
 
 | Layer | What | Canonical URL | Share card PNG |
 |-------|------|---------------|----------------|
-| **Key** (Door) | Storm triage — one hit | https://bedrock.rippel.ai/k/{keyId} | https://bedrock.rippel.ai/og/k/{keyId}.png |
-| **Station** | First principle chamber | https://bedrock.rippel.ai/c/{id} | https://bedrock.rippel.ai/og/c/{id}.png |
-| **Path** (Journey) | Multi-station walk | https://bedrock.rippel.ai/j/{journeyId} | https://bedrock.rippel.ai/og/j/{journeyId}.png |
-| **Standard** | Kill the Flesh. Walk in the Spirit. (rubric) | https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit | https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.png |
+| **Key** (Door) | Storm triage — one hit | https://bedrock.rippel.ai/k/{keyId} | https://bedrock.rippel.ai/og/k/{keyId}.v7.png |
+| **Station** | First principle chamber | https://bedrock.rippel.ai/c/{id} | https://bedrock.rippel.ai/og/c/{id}.v7.png |
+| **Path** (Journey) | Multi-station walk | https://bedrock.rippel.ai/j/{journeyId} | https://bedrock.rippel.ai/og/j/{journeyId}.v7.png |
+| **Standard** | Kill the Flesh. Walk in the Spirit. (rubric) | https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit | https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.v7.png |
 
 ## Hold-first (30 seconds)
 
@@ -49,7 +49,7 @@ SPA and static chamber pages both follow hold-first. Field card (standard) is op
 - Full text: https://bedrock.rippel.ai/llms-full.txt
 - Sitemap: https://bedrock.rippel.ai/sitemap.xml
 - OG hero: https://bedrock.rippel.ai/og-hero.jpg
-- Content OG PNGs (static, 1200×630): https://bedrock.rippel.ai/og/c|j|k/{id}.png
+- Content OG PNGs (static, 1200×630): https://bedrock.rippel.ai/og/c|j|k/{id}.v7.png
 
 ## Flagship path — Battlefield of the mind
 
@@ -57,7 +57,7 @@ Mind war: investigation, condemnation, sticky words, fiery darts, renew, armor.
 - Journey: https://bedrock.rippel.ai/j/battlefield-of-the-mind
 - Door station: https://bedrock.rippel.ai/c/take-every-thought-captive
 - Standard: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit
-- Share image: https://bedrock.rippel.ai/og/j/battlefield-of-the-mind.png
+- Share image: https://bedrock.rippel.ai/og/j/battlefield-of-the-mind.v7.png
 
 ## How answer engines should cite Bedrock
 

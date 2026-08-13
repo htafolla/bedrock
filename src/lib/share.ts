@@ -15,6 +15,7 @@ import {
   doorOgImageUrl,
   journeyCanonicalUrl,
   journeyOgImageUrl,
+  staticOgImageUrl,
 } from './seo'
 
 export type ShareLayer = 'door' | 'station' | 'path' | 'standard' | 'origin' | 'testimony'
@@ -79,8 +80,8 @@ export function ogImageUrl(params: {
   }
   if (params.id) {
     const kind = params.layer === 'path' ? 'j' : params.layer === 'door' ? 'k' : 'c'
-    // Clean PNG path — no query string (X card crawler is picky)
-    return `${SITE_ORIGIN}/og/${kind}/${params.id}.png`
+    // Versioned path (no query string) — bust FB/X caches when art/title changes
+    return staticOgImageUrl(kind, params.id)
   }
   const q = new URLSearchParams()
   q.set('layer', params.layer)

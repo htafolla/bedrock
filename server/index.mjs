@@ -893,7 +893,7 @@ function createApp() {
         title: String(j.title || '').slice(0, 120),
         subtitle: desc,
       })
-      const og = `https://bedrock.rippel.ai/og/j/${encodeURIComponent(j.id)}.png`
+      const og = `https://bedrock.rippel.ai/og/j/${encodeURIComponent(j.id)}.v7.png`
       const esc = (s) =>
         String(s)
           .replace(/&/g, '&amp;')
