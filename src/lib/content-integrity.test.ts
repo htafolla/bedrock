@@ -65,7 +65,7 @@ describe('bedrock content integrity', () => {
       .join(' ')
       .toLowerCase()
     expect(killText).toMatch(/name it/)
-    expect(killText).toMatch(/fear runs the flesh|before you fight|name what is running/)
+    expect(killText).toMatch(/fear drives the actions of the flesh|reactions or reflexes|before action/)
     expect(killText).toMatch(/three filters|self-less|honor god/)
     expect(killText).toMatch(/kill the flesh \(3 steps\)|capture it|choose the other path/)
     expect(killText).toMatch(/tools in the moment|3-2-1|emotional state is my own/)

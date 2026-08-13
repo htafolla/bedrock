@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T15:44:53.437Z",
+    "exportedAt": "2026-08-13T15:50:17.180Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4888,21 +4888,17 @@
     {
       "id": "kill-the-flesh",
       "title": "Kill the Flesh",
-      "summary": "When fear drives the flesh — name it, filter it, kill it in three steps. Tools you can use this hour.",
+      "summary": "Fear drives the flesh. Notice. Capture. Kill it before action — three steps.",
       "kind": "chamber",
       "body": [
         {
           "type": "paragraph",
-          "text": "Fear runs the flesh more often than we admit. Name the root, filter the urge, kill the act in three steps — then walk by the Spirit. Use this under fire; do not debate the flesh."
+          "text": "Fear drives the actions of the flesh as reactions or reflexes. Master the flesh by noticing and capturing them before action — in three steps."
         },
         {
           "type": "heading",
           "level": 2,
           "text": "1. Name it"
-        },
-        {
-          "type": "paragraph",
-          "text": "Before you fight the act, name what is running."
         },
         {
           "type": "list",
@@ -4915,16 +4911,12 @@
         },
         {
           "type": "paragraph",
-          "text": "Say it plain: “This is fear. This is the flesh.”"
+          "text": "“This is fear. This is the flesh.”"
         },
         {
           "type": "heading",
           "level": 2,
           "text": "2. Three Filters"
-        },
-        {
-          "type": "paragraph",
-          "text": "Before you speak, send, or act — run three questions. All three must pass."
         },
         {
           "type": "list",
@@ -4936,16 +4928,12 @@
         },
         {
           "type": "paragraph",
-          "text": "If any answer is no → stop. Do not negotiate with the flesh."
+          "text": "If no → stop."
         },
         {
           "type": "heading",
           "level": 2,
           "text": "3. Kill the Flesh (3 steps)"
-        },
-        {
-          "type": "paragraph",
-          "text": "When the filters fail — or the urge is already rising — do these three without delay."
         },
         {
           "type": "list",
@@ -4961,14 +4949,10 @@
           "text": "4. Tools in the Moment"
         },
         {
-          "type": "paragraph",
-          "text": "When the body is hot and the mind is loud — use tools, not more thinking."
-        },
-        {
           "type": "list",
           "items": [
             "Exhale hard once",
-            "3-2-1 grounding — three you see, two you hear, one you feel",
+            "3-2-1 grounding",
             "Default phrase: “My emotional state is my own.”"
           ]
         },
@@ -4976,10 +4960,6 @@
           "type": "heading",
           "level": 2,
           "text": "5. Core Verses"
-        },
-        {
-          "type": "paragraph",
-          "text": "Hold these under fire. Tap a chip to open the passage."
         },
         {
           "type": "paragraph",
@@ -5059,12 +5039,12 @@
         }
       ],
       "hacks": [
-        "Name it: Thoughts · In-person. Root: Fear → Control · Jealousy · Impatience → Rage.",
-        "Three filters: self-less? Protect? Honor God? If no → stop.",
-        "Name it. Capture it. Stop. Breathe. Choose the other path. Exhale · 3-2-1 · “My emotional state is my own.”"
+        "Name it: Thoughts · In-person. Root: Fear → Control · Jealousy · Impatience.",
+        "Filters: self-less? Protect? Honor God? If no → stop.",
+        "Name. Capture. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”"
       ],
       "prayers": [
-        "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. I walk by the Spirit. Amen."
+        "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen."
       ],
       "related": [
         "kill-the-flesh-walk-in-the-spirit",
