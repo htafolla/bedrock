@@ -28,7 +28,7 @@ describe('bedrock content integrity', () => {
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh/i)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.kind).toBe('rubric')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.hacks.join(' ').toLowerCase()).toMatch(
-      /stop the thought|do your part|spirit, not outcomes|one free step/,
+      /stop the thought|do your part|spirit, not outcomes|one free step|three filters|name it/,
     )
     // Rubrics are denser SOP with structured headings/lists (not a wall of prose)
     const rubric = byId.get('kill-the-flesh-walk-in-the-spirit')!
@@ -43,8 +43,15 @@ describe('bedrock content integrity', () => {
       })
       .join(' ')
       .toLowerCase()
-    expect(rubricText).toMatch(/thought capture|do your part|forgiveness|trust over understanding/)
+    // Field card SOP: name → filters → kill steps → tools → core verses
     expect(rubricText).toMatch(/field card/)
+    expect(rubricText).toMatch(/name it/)
+    expect(rubricText).toMatch(/three filters|self-less|honor god/)
+    expect(rubricText).toMatch(/kill the flesh \(3 steps\)|capture it|choose the other path/)
+    expect(rubricText).toMatch(/tools in the moment|3-2-1|emotional state is my own/)
+    expect(rubricText).toMatch(/fear produces|control|jealousy|impatience/)
+    // Full holds still present under depth
+    expect(rubricText).toMatch(/thought capture|do your part|forgiveness|trust over understanding/)
     expect(rubricText).toMatch(/building a case|detective of every gap/)
     expect(rubricText).toMatch(/refuse condemnation|no condemnation|accuser/)
     expect(rubricText).toMatch(/battlefield of the mind|fiery darts|harsh words/)

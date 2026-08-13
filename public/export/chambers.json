@@ -6,13 +6,13 @@
     "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.",
     "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
     "version": "0.2.0-beta",
-    "revised": "2026-08-10",
+    "revised": "2026-08-13",
     "contentHash": null,
     "ipfsCid": null,
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 76,
-    "exportedAt": "2026-08-13T11:18:12.733Z",
+    "exportedAt": "2026-08-13T15:27:02.560Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -766,7 +766,8 @@
     {
       "id": "kill-the-flesh-walk-in-the-spirit",
       "title": "Kill the Flesh. Walk in the Spirit.",
-      "summary": "Kill the flesh. Walk in the Spirit. Short card first. Full holds when you need them.",
+      "summary": "Name the flesh. Filter it. Kill it in three steps. Tools for this hour. Walk by the Spirit.",
+      "kind": "rubric",
       "body": [
         {
           "type": "heading",
@@ -779,24 +780,132 @@
         },
         {
           "type": "paragraph",
-          "text": "(Galatians 5:16, 5:24-25)"
+          "text": "(Galatians 5:16, 5:22-23, 5:24-25)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "1. Name it"
+        },
+        {
+          "type": "paragraph",
+          "text": "Before you fight, name what is running."
         },
         {
           "type": "list",
           "items": [
-            "Capture every destructive thought. Stop. Name it. Do not feed it. Give it to Christ.",
-            "Refuse building a case. Small gaps are not proof you must solve now.",
-            "Refuse condemnation — the accuser’s voice. Conviction leads to life; condemnation freezes. Own once, cleanse, rise.",
-            "Fight fear with power, love, and a sound mind. Hand the outcome to God.",
-            "Refuse the flesh: no rage, control, monitoring, revenge, or settled bitterness.",
-            "Forgive. Release the debt. Do your part.",
-            "Guard body and desire. Love without vanishing. Do not let their choices rule your peace.",
-            "Low contact when the bond is unstable. Logistics only. Strength, not need. Trust God over understanding."
+            "Surfaces: Thoughts · In-person (words, tone, body, messages).",
+            "Root: Fear.",
+            "Fear produces: Control · Jealousy · Impatience.",
+            "Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief."
           ]
         },
         {
           "type": "paragraph",
-          "text": "Prayer: “Father, I take every thought captive. I refuse building a case and condemnation. I walk in the Spirit. Amen.”"
+          "text": "Say it plain: “This is fear. This is the flesh.” Do not dress it up as “just caring,” “just needing to know,” or “just honesty.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2 Timothy 1:7, Galatians 5:19-21, James 1:19-20)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "2. Three filters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Run the act (or the urge) through three questions. All three must pass."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Is it self-less? (Love does not seek its own way.)",
+            "Does it protect? (Body, soul, family, the weak — not ego, not image.)",
+            "Does it honor God? (Would you do this with Christ in the room?)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "If any answer is no → stop. Do not negotiate with the flesh."
+        },
+        {
+          "type": "paragraph",
+          "text": "(1 Corinthians 13:4-7, Galatians 5:16, Luke 9:23)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "3. Kill the flesh (3 steps)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Name it — “This is fear. This is the flesh.”",
+            "Capture it — Take the thought captive. Give it to Christ. Do not feed it.",
+            "Stop. Breathe. Choose the other path — the next right act in the Spirit, not the old relief."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Prayer: “Father, I take every thought captive. This is flesh. I refuse it. I walk in the Spirit. Amen.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(2 Corinthians 10:5, Galatians 5:24-25, Romans 8:13)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "4. Tools in the moment"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the body is hot and the mind is loud — use steel tools, not more thinking."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Exhale hard once — empty the panic breath.",
+            "3-2-1 grounding — 3 things you see, 2 you hear, 1 you feel. Back in the room.",
+            "Default phrase: “My emotional state is my own.” Their choices do not own your peace."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Then return to step 3. Do your part. Their replies are theirs. Success is Spirit, not outcomes."
+        },
+        {
+          "type": "paragraph",
+          "text": "(James 1:19, Proverbs 25:28, Galatians 6:4-5)"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "5. Core verses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hold these under fire. Open when you can read."
+        },
+        {
+          "type": "list",
+          "items": [
+            "James 1:19 — Quick to hear, slow to speak, slow to anger.",
+            "2 Timothy 1:7 — Power, love, sound mind — not fear.",
+            "Galatians 5:16, 22-23 — Walk by the Spirit; fruit of the Spirit.",
+            "2 Corinthians 10:5 — Take every thought captive to obey Christ.",
+            "Luke 9:23 — Deny yourself, take up the cross daily, follow Him.",
+            "1 Corinthians 13:4-7 — Love is patient and kind; it is not self-seeking.",
+            "Proverbs 25:28 — No rule of spirit is a city broken into.",
+            "Titus 2:11-12 — Grace trains us to renounce ungodliness.",
+            "James 5:16 — Confess and pray; healing in the body.",
+            "Matthew 6:16-18 — Fast in secret; the Father who sees in secret rewards."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "(James 1:19, 2 Timothy 1:7, Galatians 5:16, Galatians 5:22-23, 2 Corinthians 10:5, Luke 9:23, 1 Corinthians 13:4-7, Proverbs 25:28, Titus 2:11-12, James 5:16, Matthew 6:16-18)"
         },
         {
           "type": "paragraph",
@@ -812,19 +921,23 @@
           "text": "Holds"
         },
         {
+          "type": "paragraph",
+          "text": "When the field card is not enough — same steel, more map. Use under fire first; open these when capacity returns."
+        },
+        {
           "type": "heading",
           "level": 3,
           "text": "1. Thought capture"
         },
         {
           "type": "paragraph",
-          "text": "Destructive thought appears — capture it."
+          "text": "Destructive thought appears — capture it. This is the first kill."
         },
         {
           "type": "list",
           "items": [
-            "Stop.",
-            "Name it.",
+            "Stop the thought.",
+            "Name it: fear, case-hunt, accusation, lust, rage.",
             "Do not feed it.",
             "Give it to Christ."
           ]
@@ -844,7 +957,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The mind hunts evidence. Gaps become “proof.” Peace rarely follows."
+          "text": "Fear hunts evidence. Gaps become “proof.” Peace rarely follows."
         },
         {
           "type": "list",
@@ -876,7 +989,7 @@
           "items": [
             "Name it: “This is condemnation — not the Holy Spirit.”",
             "Own what is real once.",
-            "Receive cleansing. Take one free step."
+            "Receive cleansing. Take one free step in the Spirit now."
           ]
         },
         {
@@ -890,18 +1003,18 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "4. Fight fear"
+          "text": "4. Fight fear at the root"
         },
         {
           "type": "paragraph",
-          "text": "Fear is fought with power, love, and a sound mind."
+          "text": "Fear is the root. Control, jealousy, and impatience are its fruit. Rage, bitterness, habit, and cheap relief are further downstream."
         },
         {
           "type": "list",
           "items": [
-            "Name the fear.",
+            "Name the fear — not only the behavior.",
             "Refuse to agree with it.",
-            "Hand the outcome to God."
+            "Hand the outcome to God. Power, love, sound mind."
           ]
         },
         {
@@ -915,18 +1028,18 @@
         {
           "type": "heading",
           "level": 3,
-          "text": "5. Refuse the flesh"
+          "text": "5. Refuse the flesh acts"
         },
         {
           "type": "paragraph",
-          "text": "No name-calling, rage, control, monitoring, revenge, or settled bitterness."
+          "text": "No name-calling, rage, control, monitoring, revenge, or settled bitterness. No jealousy dressed as love. No impatience dressed as urgency."
         },
         {
           "type": "list",
           "items": [
             "Name the act.",
-            "Refuse it.",
-            "Return to obedience."
+            "Run the three filters. If no — stop.",
+            "Return to obedience: one free step."
           ]
         },
         {
@@ -935,7 +1048,7 @@
         },
         {
           "type": "paragraph",
-          "text": "(Galatians 5:19-21, Ephesians 4:29, 4:31)"
+          "text": "(Galatians 5:19-21, Ephesians 4:29, 4:31, 1 Corinthians 13:4-7)"
         },
         {
           "type": "heading",
@@ -944,7 +1057,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Forgiveness refuses the scorecard and bitterness."
+          "text": "Forgiveness refuses the scorecard and bitterness. It is not saying the harm was small."
         },
         {
           "type": "list",
@@ -969,14 +1082,14 @@
         },
         {
           "type": "paragraph",
-          "text": "Guard eyes, thoughts, and body. Do not push for intimacy or force deep talks."
+          "text": "A man without rule of his spirit is a city broken into. Guard eyes, mouth, body, and send button."
         },
         {
           "type": "list",
           "items": [
             "Stop the urge.",
-            "Do not chase self-gratification.",
-            "Submit the thought to Christ."
+            "Exhale. Ground. Default phrase if needed.",
+            "Submit the thought to Christ. One duty you own today."
           ]
         },
         {
@@ -985,7 +1098,7 @@
         },
         {
           "type": "paragraph",
-          "text": "(1 Corinthians 6:18-20, Galatians 5:22-23)"
+          "text": "(Proverbs 25:28, 1 Corinthians 6:18-20, Galatians 5:22-23, Titus 2:11-12)"
         },
         {
           "type": "heading",
@@ -1001,7 +1114,7 @@
           "items": [
             "Do not over-function.",
             "Be present where God has you.",
-            "Do not let their choices rule your peace."
+            "Do not let their choices rule your peace. My emotional state is my own."
           ]
         },
         {
@@ -1051,7 +1164,7 @@
           "items": [
             "Short and clear.",
             "Kids, house, money, schedules — not the relationship.",
-            "If the urge is to manage pain, do not send."
+            "If the urge is to manage pain, do not send. Filters first."
           ]
         },
         {
@@ -1074,9 +1187,9 @@
         {
           "type": "list",
           "items": [
-            "Notice the drift.",
+            "Notice the drift into control or case-hunt.",
             "Stop building stories.",
-            "Return to your part."
+            "Return to your part. One free step."
           ]
         },
         {
@@ -1144,7 +1257,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Trust the Lord. Do not lean on your own understanding."
+          "text": "Trust the Lord. Do not lean on your own understanding. Fear demands a full map; faith takes the next step."
         },
         {
           "type": "list",
@@ -1169,14 +1282,14 @@
         },
         {
           "type": "paragraph",
-          "text": "Lead yourself first. Carry your own load. Kind, clear, and boundaried — not passive, not aggressive."
+          "text": "Lead yourself first. Carry your own load. Kind, clear, and boundaried — not passive, not aggressive. Govern the flesh before you speak."
         },
         {
           "type": "list",
           "items": [
-            "No one else steadies your peace for you.",
+            "No one else steadies your peace for you. My emotional state is my own.",
             "Courage stays steady without forcing closeness.",
-            "Govern yourself; do not manage her."
+            "Govern yourself; do not manage her. Rule of spirit — not a city broken into."
           ]
         },
         {
@@ -1190,7 +1303,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Not whether they return or choose you. Staying in the Spirit — one decision at a time."
+          "text": "Not whether they return or choose you. Staying in the Spirit — one decision at a time. One free step."
         },
         {
           "type": "paragraph",
@@ -1203,10 +1316,29 @@
       ],
       "verses": [
         {
+          "display": "James 1:19",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 19
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
           "display": "Galatians 5:16",
           "book": "Galatians",
           "chapter": 5,
           "verseStart": 16
+        },
+        {
+          "display": "Galatians 5:22–23",
+          "book": "Galatians",
+          "chapter": 5,
+          "verseStart": 22,
+          "verseEnd": 23
         },
         {
           "display": "Galatians 5:24–25",
@@ -1222,22 +1354,43 @@
           "verseStart": 5
         },
         {
-          "display": "Colossians 3:2",
-          "book": "Colossians",
-          "chapter": 3,
-          "verseStart": 2
+          "display": "Luke 9:23",
+          "book": "Luke",
+          "chapter": 9,
+          "verseStart": 23
         },
         {
-          "display": "Philippians 4:8",
-          "book": "Philippians",
-          "chapter": 4,
-          "verseStart": 8
+          "display": "1 Corinthians 13:4–7",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 7
         },
         {
-          "display": "Romans 12:2",
-          "book": "Romans",
-          "chapter": 12,
-          "verseStart": 2
+          "display": "Proverbs 25:28",
+          "book": "Proverbs",
+          "chapter": 25,
+          "verseStart": 28
+        },
+        {
+          "display": "Titus 2:11–12",
+          "book": "Titus",
+          "chapter": 2,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "James 5:16",
+          "book": "James",
+          "chapter": 5,
+          "verseStart": 16
+        },
+        {
+          "display": "Matthew 6:16–18",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 16,
+          "verseEnd": 18
         },
         {
           "display": "Romans 8:1",
@@ -1246,41 +1399,10 @@
           "verseStart": 1
         },
         {
-          "display": "Revelation 12:10",
-          "book": "Revelation",
-          "chapter": 12,
-          "verseStart": 10
-        },
-        {
-          "display": "1 John 1:9",
-          "book": "1 John",
-          "chapter": 1,
-          "verseStart": 9
-        },
-        {
-          "display": "2 Corinthians 7:10",
-          "book": "2 Corinthians",
-          "chapter": 7,
-          "verseStart": 10
-        },
-        {
-          "display": "2 Timothy 1:7",
-          "book": "2 Timothy",
-          "chapter": 1,
-          "verseStart": 7
-        },
-        {
-          "display": "Ephesians 6:16",
-          "book": "Ephesians",
-          "chapter": 6,
-          "verseStart": 16
-        },
-        {
-          "display": "Philippians 4:6–7",
-          "book": "Philippians",
-          "chapter": 4,
-          "verseStart": 6,
-          "verseEnd": 7
+          "display": "Romans 8:13",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 13
         },
         {
           "display": "Galatians 5:19–21",
@@ -1290,17 +1412,11 @@
           "verseEnd": 21
         },
         {
-          "display": "Ephesians 4:29",
-          "book": "Ephesians",
+          "display": "Philippians 4:6–7",
+          "book": "Philippians",
           "chapter": 4,
-          "verseStart": 29
-        },
-        {
-          "display": "Ephesians 4:31–32",
-          "book": "Ephesians",
-          "chapter": 4,
-          "verseStart": 31,
-          "verseEnd": 32
+          "verseStart": 6,
+          "verseEnd": 7
         },
         {
           "display": "Matthew 6:14–15",
@@ -1310,117 +1426,11 @@
           "verseEnd": 15
         },
         {
-          "display": "Colossians 3:13",
-          "book": "Colossians",
-          "chapter": 3,
-          "verseStart": 13
-        },
-        {
-          "display": "1 Corinthians 6:18–20",
-          "book": "1 Corinthians",
-          "chapter": 6,
-          "verseStart": 18,
-          "verseEnd": 20
-        },
-        {
-          "display": "Galatians 5:22–23",
-          "book": "Galatians",
-          "chapter": 5,
-          "verseStart": 22,
-          "verseEnd": 23
-        },
-        {
-          "display": "Colossians 3:23",
-          "book": "Colossians",
-          "chapter": 3,
-          "verseStart": 23
-        },
-        {
-          "display": "Galatians 6:4–5",
-          "book": "Galatians",
-          "chapter": 6,
-          "verseStart": 4,
-          "verseEnd": 5
-        },
-        {
-          "display": "Psalm 16:8",
-          "book": "Psalm",
-          "chapter": 16,
-          "verseStart": 8
-        },
-        {
-          "display": "Proverbs 4:23",
-          "book": "Proverbs",
-          "chapter": 4,
-          "verseStart": 23
-        },
-        {
-          "display": "Ephesians 4:15",
-          "book": "Ephesians",
-          "chapter": 4,
-          "verseStart": 15
-        },
-        {
-          "display": "Matthew 5:37",
-          "book": "Matthew",
-          "chapter": 5,
-          "verseStart": 37
-        },
-        {
-          "display": "Ecclesiastes 3:1",
-          "book": "Ecclesiastes",
-          "chapter": 3,
-          "verseStart": 1
-        },
-        {
-          "display": "1 Thessalonians 4:11",
-          "book": "1 Thessalonians",
-          "chapter": 4,
-          "verseStart": 11
-        },
-        {
-          "display": "Matthew 7:3",
-          "book": "Matthew",
-          "chapter": 7,
-          "verseStart": 3
-        },
-        {
-          "display": "Romans 12:17–19",
-          "book": "Romans",
-          "chapter": 12,
-          "verseStart": 17,
-          "verseEnd": 19
-        },
-        {
-          "display": "Psalm 46:10",
-          "book": "Psalm",
-          "chapter": 46,
-          "verseStart": 10
-        },
-        {
-          "display": "Exodus 14:14",
-          "book": "Exodus",
-          "chapter": 14,
-          "verseStart": 14
-        },
-        {
-          "display": "1 Peter 5:7",
-          "book": "1 Peter",
-          "chapter": 5,
-          "verseStart": 7
-        },
-        {
           "display": "Proverbs 3:5–6",
           "book": "Proverbs",
           "chapter": 3,
           "verseStart": 5,
           "verseEnd": 6
-        },
-        {
-          "display": "Jeremiah 29:11",
-          "book": "Jeremiah",
-          "chapter": 29,
-          "verseStart": 11
         },
         {
           "display": "1 Corinthians 16:13–14",
@@ -1430,63 +1440,41 @@
           "verseEnd": 14
         },
         {
-          "display": "Proverbs 25:28",
-          "book": "Proverbs",
-          "chapter": 25,
-          "verseStart": 28
-        },
-        {
-          "display": "Joshua 1:9",
-          "book": "Joshua",
-          "chapter": 1,
-          "verseStart": 9
-        },
-        {
-          "display": "Ephesians 5:25",
-          "book": "Ephesians",
-          "chapter": 5,
-          "verseStart": 25
-        },
-        {
           "display": "Galatians 6:9",
           "book": "Galatians",
           "chapter": 6,
           "verseStart": 9
-        },
-        {
-          "display": "James 1:12",
-          "book": "James",
-          "chapter": 1,
-          "verseStart": 12
         }
       ],
       "hacks": [
-        "Stop the thought. Name it. Do not feed it. Give it to Christ.",
-        "Do your part. Their replies are theirs. Success is Spirit, not outcomes.",
-        "No rage, monitoring, revenge, or bitterness. One free step in the Spirit now."
+        "Name it: fear — the flesh. Stop the thought. Capture it. Give it to Christ.",
+        "Three filters: self-less? Protect? Honor God? If no — stop.",
+        "Stop. Breathe. Choose the other path. Do your part. Success is Spirit, not outcomes."
       ],
       "prayers": [
-        "Father, I release every thought to You. I refuse the accuser. Amen."
+        "Father, this is fear — this is the flesh. I take it captive to Christ. I refuse control, jealousy, impatience, and rage. Walk me by the Spirit. Amen."
       ],
       "related": [
         "walk-by-the-spirit",
         "works-of-the-flesh",
         "take-every-thought-captive",
-        "the-adversary",
-        "forgive-as-you-have-been-forgiven",
-        "self-control",
-        "control",
         "fear",
+        "control",
+        "jealousy",
+        "patience",
+        "self-control",
+        "rumination",
+        "renew-your-mind",
+        "forgive-as-you-have-been-forgiven",
         "trust-in-the-lord",
         "peace",
         "the-full-armor-of-god",
+        "the-adversary",
         "wounded",
         "he-is-for-you",
-        "rumination",
-        "renew-your-mind",
-        "regret"
+        "regret",
+        "fasting"
       ],
-      "kind": "rubric",
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit",
       "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md",
       "ogImage": "https://bedrock.rippel.ai/og/c/kill-the-flesh-walk-in-the-spirit.png"
