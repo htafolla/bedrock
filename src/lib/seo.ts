@@ -5,9 +5,12 @@ export const SITE_ORIGIN = 'https://bedrock.rippel.ai'
 export const SITE_PATH = '/'
 export const CANONICAL_URL = `${SITE_ORIGIN}${SITE_PATH}`
 export const OG_IMAGE_PATH = '/og-hero.jpg'
-/** Bump when og-hero changes so X/FB treat the image URL as new and re-fetch. */
-export const OG_IMAGE_VERSION = '2'
-export const OG_IMAGE_URL = `${SITE_ORIGIN}${OG_IMAGE_PATH}?v=${OG_IMAGE_VERSION}`
+/**
+ * Homepage / default OG image. No query string — X/Twitter card crawler is
+ * unreliable with `?v=` on image URLs. Cache-bust by changing the file bytes
+ * (ETag / Last-Modified) or renaming the path on art changes.
+ */
+export const OG_IMAGE_URL = `${SITE_ORIGIN}${OG_IMAGE_PATH}`
 
 /** Canonical crawlable chamber URL (static HTML + .md for AI). */
 export function chamberCanonicalUrl(id: string): string {
@@ -200,7 +203,7 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
  * X/Twitter card crawler is unreliable with image URLs that include ?v=.
  * Cache-bust by regenerating files on content build (ETag / last-modified).
  */
-export const OG_CARD_VERSION = '5'
+export const OG_CARD_VERSION = '6'
 
 /** @param kind c = chamber, j = journey/path, k = key */
 export function staticOgImageUrl(kind: 'c' | 'j' | 'k', id: string): string {
@@ -362,6 +365,7 @@ export function applySeo(payload: SeoPayload): void {
   upsertMeta('property', 'og:description', payload.description)
   upsertMeta('property', 'og:url', payload.canonical)
   upsertMeta('property', 'og:image', payload.ogImage)
+  upsertMeta('property', 'og:image:secure_url', payload.ogImage)
   upsertMeta(
     'property',
     'og:image:alt',
@@ -376,7 +380,7 @@ export function applySeo(payload: SeoPayload): void {
   upsertMeta('property', 'og:image:width', '1200')
   upsertMeta('property', 'og:image:height', '630')
 
-  // Twitter / X
+  // Twitter / X — absolute image URL, no query string
   upsertMeta('name', 'twitter:card', 'summary_large_image')
   upsertMeta('name', 'twitter:title', payload.title)
   upsertMeta('name', 'twitter:description', payload.description)

@@ -9,6 +9,27 @@ Allow: /og/
 Allow: /export/
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /og-hero.jpg
+Allow: /about
+
+# Social preview crawlers (X, Facebook, LinkedIn, messengers)
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
 
 # Common AI / answer-engine crawlers — full access
 User-agent: GPTBot

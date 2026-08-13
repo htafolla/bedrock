@@ -293,6 +293,15 @@ function loadDocument() {
   return null
 }
 
+/** Social / unfurl bots that need static HTML OG tags (no SPA JS). */
+function isSocialCrawler(ua) {
+  return /Twitterbot|facebookexternalhit|Facebot|LinkedInBot|Slackbot|Discordbot|WhatsApp|TelegramBot|SkypeUriPreview|redditbot|Embedly|Quora Link Preview|Showyoubot|outbrain|pinterest|vkShare|W3C_Validator|Applebot|Iframely/i.test(
+    ua || '',
+  )
+}
+
+const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/i
+
 function createApp() {
   const app = express()
   app.disable('x-powered-by')
@@ -300,6 +309,35 @@ function createApp() {
 
   const doc = loadDocument()
   const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
+
+  /**
+   * SPA deep links (?c= / ?j= / ?k=) only have homepage OG until React hydrates.
+   * Social crawlers never run that JS — send them to static /c /j /k pages that
+   * ship the correct og:image PNG for the shared card.
+   */
+  app.get('/', (req, res, next) => {
+    if (!isSocialCrawler(req.get('user-agent'))) {
+      next()
+      return
+    }
+    const c = typeof req.query.c === 'string' ? req.query.c.trim().toLowerCase() : ''
+    const j = typeof req.query.j === 'string' ? req.query.j.trim().toLowerCase() : ''
+    const k = typeof req.query.k === 'string' ? req.query.k.trim().toLowerCase() : ''
+    if (c && SLUG_RE.test(c)) {
+      res.redirect(302, `/c/${encodeURIComponent(c)}`)
+      return
+    }
+    if (j && SLUG_RE.test(j)) {
+      res.redirect(302, `/j/${encodeURIComponent(j)}`)
+      return
+    }
+    if (k && SLUG_RE.test(k)) {
+      const keyId = k.startsWith('key-') ? k : `key-${k}`
+      res.redirect(302, `/k/${encodeURIComponent(keyId)}`)
+      return
+    }
+    next()
+  })
 
   /**
    * Dynamic OG card fallback (PNG). Prefer static files built at content time:
@@ -870,14 +908,21 @@ function createApp() {
 <meta name="description" content="${esc(desc)}"/>
 <link rel="canonical" href="https://bedrock.rippel.ai/j/${esc(j.id)}"/>
 <meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Bedrock"/>
 <meta property="og:title" content="${esc(title)}"/>
 <meta property="og:description" content="${esc(desc)}"/>
 <meta property="og:url" content="https://bedrock.rippel.ai/j/${esc(j.id)}"/>
 <meta property="og:image" content="${esc(og)}"/>
+<meta property="og:image:secure_url" content="${esc(og)}"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="${esc(title)}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="${esc(title)}"/>
 <meta name="twitter:description" content="${esc(desc)}"/>
 <meta name="twitter:image" content="${esc(og)}"/>
+<meta name="twitter:image:alt" content="${esc(title)}"/>
 <meta http-equiv="refresh" content="0;url=/?j=${encodeURIComponent(j.id)}"/>
 </head><body>
 <p><a href="/?j=${encodeURIComponent(j.id)}">Open ${esc(j.title)}</a></p>
@@ -901,13 +946,13 @@ function createApp() {
 
     // OG share PNGs — real files only. Never SPA-fallback (X would scrape HTML as the image).
     // Prefer public/ (fresh content build) over dist/ copy.
+    // No `immutable`: failed crawler caches must be able to re-fetch after a fix.
     const ogRoots = [path.join(publicDir, 'og'), path.join(dist, 'og')].filter((p) =>
       existsSync(p),
     )
     app.use(
       '/og',
       (req, res, next) => {
-        // Clean crawler-friendly headers (do not inherit no-store from /c/ path quirks)
         res.removeHeader('Pragma')
         res.removeHeader('Expires')
         next()
@@ -915,11 +960,15 @@ function createApp() {
       ...ogRoots.map((root) =>
         express.static(root, {
           index: false,
-          maxAge: '7d',
+          maxAge: '1d',
           fallthrough: true,
-          setHeaders(res) {
-            res.setHeader('Content-Type', 'image/png')
-            res.setHeader('Cache-Control', 'public, max-age=604800, immutable')
+          setHeaders(res, filePath) {
+            const lower = String(filePath).toLowerCase()
+            if (lower.endsWith('.png')) res.setHeader('Content-Type', 'image/png')
+            else if (lower.endsWith('.jpg') || lower.endsWith('.jpeg'))
+              res.setHeader('Content-Type', 'image/jpeg')
+            else if (lower.endsWith('.webp')) res.setHeader('Content-Type', 'image/webp')
+            res.setHeader('Cache-Control', 'public, max-age=86400, must-revalidate')
             res.setHeader('X-Content-Type-Options', 'nosniff')
           },
         }),
@@ -928,6 +977,19 @@ function createApp() {
     app.get(/^\/og\//, (_req, res) => {
       res.status(404).type('text').send('OG image not found')
     })
+
+    // Homepage hero JPEG — same crawler-friendly headers as /og/*
+    for (const heroRoot of [publicDir, dist]) {
+      const hero = path.join(heroRoot, 'og-hero.jpg')
+      if (!existsSync(hero)) continue
+      app.get('/og-hero.jpg', (_req, res) => {
+        res.setHeader('Content-Type', 'image/jpeg')
+        res.setHeader('Cache-Control', 'public, max-age=86400, must-revalidate')
+        res.setHeader('X-Content-Type-Options', 'nosniff')
+        res.sendFile(hero)
+      })
+      break
+    }
 
     // Other dist files (favicon, robots, chamber html, export, etc.)
     app.use(

@@ -76,13 +76,15 @@ export function buildOgSvg(opts) {
     )
     .join('\n')
 
+  // Keep cathedral-dark tone but lift midtones so X/FB previews don't look like
+  // empty black squares (avg luminance was ~19/255 — scrapers still accept, humans don't).
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1410"/>
-      <stop offset="55%" stop-color="#0c0a09"/>
-      <stop offset="100%" stop-color="#120e0b"/>
+      <stop offset="0%" stop-color="#2a221c"/>
+      <stop offset="45%" stop-color="#1a1512"/>
+      <stop offset="100%" stop-color="#14100e"/>
     </linearGradient>
     <linearGradient id="ember" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#e8a050"/>
@@ -90,13 +92,13 @@ export function buildOgSvg(opts) {
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <rect x="0" y="0" width="12" height="${H}" fill="url(#ember)"/>
-  <circle cx="1080" cy="120" r="180" fill="#e8a050" fill-opacity="0.06"/>
-  <circle cx="980" cy="520" r="220" fill="#c4a574" fill-opacity="0.05"/>
-  <text x="80" y="100" fill="#c4a574" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" letter-spacing="4">${esc(kicker)}</text>
+  <rect x="0" y="0" width="14" height="${H}" fill="url(#ember)"/>
+  <circle cx="1080" cy="120" r="200" fill="#e8a050" fill-opacity="0.10"/>
+  <circle cx="980" cy="520" r="240" fill="#c4a574" fill-opacity="0.08"/>
+  <text x="80" y="100" fill="#d4b896" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" letter-spacing="4">${esc(kicker)}</text>
   ${titleSvg}
   ${subSvg}
   <text x="80" y="560" fill="#f5e6c8" font-family="Georgia, serif" font-size="26" font-style="italic">${esc(motto)}</text>
-  <text x="80" y="598" fill="#6a5c4e" font-family="system-ui, sans-serif" font-size="20">bedrock.rippel.ai</text>
+  <text x="80" y="598" fill="#8a7a6a" font-family="system-ui, sans-serif" font-size="20">bedrock.rippel.ai</text>
 </svg>`
 }

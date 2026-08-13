@@ -25,6 +25,9 @@ describe('seo', () => {
     expect(seo.description.length).toBeGreaterThan(40)
     expect(seo.canonical).toBe(CANONICAL_URL)
     expect(seo.ogImage).toBe(OG_IMAGE_URL)
+    // X card crawler is unreliable with ?v= on image URLs
+    expect(seo.ogImage).not.toMatch(/\?v=/)
+    expect(seo.ogImage).toMatch(/\/og-hero\.jpg$/)
     expect(seo.jsonLd.some((b) => b['@type'] === 'WebSite')).toBe(true)
     expect(seo.jsonLd.some((b) => b['@type'] === 'FAQPage')).toBe(true)
     expect(seo.jsonLd.some((b) => b['@type'] === 'ItemList')).toBe(true)
