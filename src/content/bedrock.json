@@ -4719,12 +4719,12 @@
     {
       "id": "kill-the-flesh",
       "title": "Kill the Flesh",
-      "summary": "You’re in a fight. The urge is real. You feel out of control — master and beat the flesh.",
+      "summary": "You’re in a fight. The urge is real. You feel out of control — master the flesh.",
       "kind": "chamber",
       "body": [
         {
           "type": "paragraph",
-          "text": "You’re in a fight. The urge is real. You feel out of control — master and beat the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps."
+          "text": "You’re in a fight. The urge is real. You feel out of control — master the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps."
         },
         {
           "type": "heading",

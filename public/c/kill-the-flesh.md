@@ -1,6 +1,6 @@
 # Kill the Flesh
 
-> You’re in a fight. The urge is real. You feel out of control — master and beat the flesh.
+> You’re in a fight. The urge is real. You feel out of control — master the flesh.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh*
 
@@ -20,7 +20,7 @@ Father, this is fear — this is the flesh. I take it captive to Christ. I stop.
 
 ## Truth
 
-You’re in a fight. The urge is real. You feel out of control — master and beat the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps.
+You’re in a fight. The urge is real. You feel out of control — master the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps.
 
 ## 1. Name it
 
