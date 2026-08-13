@@ -6,13 +6,13 @@
     "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.",
     "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
     "version": "0.2.0-beta",
-    "revised": "2026-08-13",
+    "revised": "2026-08-10",
     "contentHash": null,
     "ipfsCid": null,
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T16:41:05.806Z",
+    "exportedAt": "2026-08-13T16:46:44.771Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -1469,6 +1469,7 @@
         "Father, I release every thought to You. I refuse the accuser. Amen."
       ],
       "related": [
+        "kill-the-flesh",
         "walk-by-the-spirit",
         "works-of-the-flesh",
         "take-every-thought-captive",
@@ -1484,8 +1485,7 @@
         "he-is-for-you",
         "rumination",
         "renew-your-mind",
-        "regret",
-        "kill-the-flesh"
+        "regret"
       ],
       "kind": "rubric",
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit",
@@ -4866,6 +4866,7 @@
         "Father, I renounce the flesh. Lead me by Your Spirit. Amen."
       ],
       "related": [
+        "kill-the-flesh",
         "kill-the-flesh-walk-in-the-spirit",
         "spiritual-warfare",
         "walk-by-the-spirit",
@@ -4877,8 +4878,7 @@
         "malice",
         "falsehood",
         "wheat-and-tares",
-        "confess-and-be-cleansed",
-        "kill-the-flesh"
+        "confess-and-be-cleansed"
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/works-of-the-flesh",
@@ -4889,7 +4889,6 @@
       "id": "kill-the-flesh",
       "title": "Kill the Flesh",
       "summary": "You’re in a fight. The urge is real. You feel out of control — master the flesh.",
-      "kind": "chamber",
       "body": [
         {
           "type": "paragraph",
@@ -5007,6 +5006,7 @@
         "trust-in-the-lord",
         "the-full-armor-of-god"
       ],
+      "kind": "chamber",
       "illustration": {
         "src": "/art/kill-the-flesh-pow.png",
         "alt": "Pow crescendo line form"

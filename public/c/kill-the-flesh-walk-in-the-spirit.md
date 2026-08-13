@@ -272,6 +272,7 @@ Do better. Be better. Trust God.
 
 ## Connected truth
 
+- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
@@ -288,7 +289,6 @@ Do better. Be better. Trust God.
 - [Obsession](https://bedrock.rippel.ai/c/rumination)
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
 - [Regret](https://bedrock.rippel.ai/c/regret)
-- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.md

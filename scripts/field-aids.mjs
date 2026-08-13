@@ -421,6 +421,16 @@ export const FIELD_AIDS = {
     ],
     prayers: ['Father, I renounce the flesh. Lead me by Your Spirit. Amen.'],
   },
+  'kill-the-flesh': {
+    hacks: [
+      'Fear (the flesh) drives thoughts and actions. Name it.',
+      'Is it self-less? Does it protect? Does it honor God? If no → stop.',
+      'Capture it to Christ. Stop. Breathe. Choose the other path.',
+    ],
+    prayers: [
+      'Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen.',
+    ],
+  },
   'kill-the-flesh-walk-in-the-spirit': {
     hacks: [
       'Stop the thought. Name it. Do not feed it. Give it to Christ.',

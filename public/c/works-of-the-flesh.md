@@ -34,6 +34,7 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 
 ## Connected truth
 
+- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
@@ -46,7 +47,6 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 - [Falsehood](https://bedrock.rippel.ai/c/falsehood)
 - [Wheat and Tares](https://bedrock.rippel.ai/c/wheat-and-tares)
 - [Confess and Be Cleansed](https://bedrock.rippel.ai/c/confess-and-be-cleansed)
-- [Kill the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
 
 ---
 Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/works-of-the-flesh.md

@@ -487,6 +487,7 @@ const RELATED = {
     'leave-vengeance-to-the-lord',
   ],
   'works-of-the-flesh': [
+    'kill-the-flesh',
     'kill-the-flesh-walk-in-the-spirit',
     'spiritual-warfare',
     'walk-by-the-spirit',
@@ -500,7 +501,20 @@ const RELATED = {
     'wheat-and-tares',
     'confess-and-be-cleansed',
   ],
+  /** Battle station — same form as other keys; full map is the Standard */
+  'kill-the-flesh': [
+    'kill-the-flesh-walk-in-the-spirit',
+    'walk-by-the-spirit',
+    'take-every-thought-captive',
+    'fear',
+    'control',
+    'jealousy',
+    'self-control',
+    'trust-in-the-lord',
+    'the-full-armor-of-god',
+  ],
   'kill-the-flesh-walk-in-the-spirit': [
+    'kill-the-flesh',
     'walk-by-the-spirit',
     'works-of-the-flesh',
     'take-every-thought-captive',
@@ -1511,6 +1525,23 @@ const document = {
       ],
       'Galatians 5:19-21 · 1 Corinthians 6:9-11 · Revelation 21:8',
     ),
+    /**
+     * Battle station (same form as god-first / jealousy — not the full Standard rubric).
+     * Title slugs to id `kill-the-flesh`.
+     */
+    chamber(
+      'Kill the Flesh',
+      'You’re in a fight. The urge is real. You feel out of control — master the flesh.',
+      [
+        'Fear drives the flesh as reaction and reflex — in thoughts and in person. It produces control, jealousy, and impatience; then rage, bitterness, habit, and immediate relief. Say it plain: this is fear; this is the flesh.',
+        'Before you speak, send, or act — three filters: Is it self-less? Does it protect? Does it honor God? If any answer is no, stop. Do not negotiate with the flesh.',
+        'Kill it in three steps. Name it: “This is fear. This is the flesh.” Capture the thought and give it to Christ. Stop. Breathe. Choose the other path.',
+        'When the body is still ringing: exhale hard once; three things you see, two you hear, one you feel; default phrase — “My emotional state is my own.” Then return to the three steps.',
+        'Take every thought captive to obey Christ. Walk by the Spirit, and you will not gratify the desires of the flesh. God has not given a spirit of fear, but of power and love and a sound mind.',
+        'When the fight slows — full Standard: Kill the Flesh. Walk in the Spirit.',
+      ],
+      'James 1:19 · 2 Timothy 1:7 · Galatians 5:16, 22-23 · 2 Corinthians 10:5 · Luke 9:23 · 1 Corinthians 13:4-7 · Proverbs 25:28 · Titus 2:11-12 · James 5:16 · Matthew 6:16-18',
+    ),
     chamber(
       'Adultery',
       'Flee sexual immorality. You are not your own.',
@@ -1815,6 +1846,13 @@ for (const c of document.chambers) {
     c.kind = 'chamber'
   }
   c.related = RELATED[c.id] ?? []
+  // Battle-card line art (transparent pow) — not in chamber() helper
+  if (c.id === 'kill-the-flesh') {
+    c.illustration = {
+      src: '/art/kill-the-flesh-pow.png',
+      alt: 'Pow crescendo line form',
+    }
+  }
 }
 
 /**
