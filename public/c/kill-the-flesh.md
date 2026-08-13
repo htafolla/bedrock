@@ -1,6 +1,6 @@
 # Kill the Flesh
 
-> You’re in a fight. The urge is up. You’re about to blow — master the flesh before action.
+> You’re in a fight. The urge is real. You feel out of control — master and beat the flesh.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh*
 
@@ -10,7 +10,7 @@
 
 ## Under fire
 
-- You’re in a fight. Name it: fear — the flesh. Surfaces: thoughts · in-person.
+- You’re in a fight. The urge is real. Name it: fear — the flesh. Thoughts · In-person.
 - Filters: self-less? Protect? Honor God? If no → stop.
 - BAM: Name. Capture to Christ. Stop. Breathe. Other path. Exhale · 3-2-1 · “My emotional state is my own.”
 
@@ -20,7 +20,7 @@ Father, this is fear — this is the flesh. I take it captive to Christ. I stop.
 
 ## Truth
 
-You’re in a fight. The desire is strong. You feel like you’re going to explode. You can’t control it — and you have to. Fear drives the flesh as reaction and reflex. Then: master the flesh. Notice. Capture. Kill it before action — three steps.
+You’re in a fight. The urge is real. You feel out of control — master and beat the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps.
 
 ## 1. Name it
 
