@@ -111,15 +111,23 @@ describe('core journeys SSOT', () => {
     expect(journeysForChamber('wounded').some((j) => j.id === 'spouse-left')).toBe(true)
   })
 
-  it('keyIds point at real Keys when set', () => {
-    const keySet = new Set(KEY_ENTRIES.map((k) => k.id))
+  it('keyIds point at real Keys when set; primary key door matches journey door', () => {
+    const keyById = new Map(KEY_ENTRIES.map((k) => [k.id, k]))
     for (const j of journeys) {
       for (const kid of j.keyIds || []) {
-        expect(keySet.has(kid)).toBe(true)
+        expect(keyById.has(kid)).toBe(true)
+        const k = keyById.get(kid)!
+        // Primary key on a journey must open this path’s door chamber
+        if (k.journeyId === j.id) {
+          expect(k.chamberId).toBe(j.doorChamberId)
+        }
       }
     }
     expect(journeyForKey('key-loss')?.id).toBe('death-of-loved-one')
     expect(journeyForKey('key-addiction')?.id).toBe('addiction')
+    expect(journeyForKey('key-wait')?.id).toBe('forced-waiting')
+    expect(journeyForKey('key-regret')?.id).toBe('stuck-regret')
+    expect(getJourney('forced-waiting')!.doorChamberId).toBe('wait-on-the-lord')
   })
 
   it('formatJourneyContextLine includes next stations and distinctness', () => {

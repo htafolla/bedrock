@@ -171,11 +171,25 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
         nav: navMode,
         journeyId: journeyId || undefined,
       })
-      if (journeyId) setActiveJourneyId(journeyId)
-      else if (source === 'journey-stage') {
+      /**
+       * Path context only when:
+       * - explicit path UI (journeys tab / stage rail / mind-path / guide), or
+       * - key/station open where chamberId is that path’s door (never attach a
+       *   mismatched journey that would mislabel Station as Path).
+       */
+      if (journeyId) {
+        const j = getJourney(journeyId)
+        const pathUi =
+          source === 'journeys' ||
+          source === 'journey-stage' ||
+          source === 'rubric-mind-path' ||
+          source === 'guide'
+        const doorMatch = Boolean(j && j.doorChamberId === id)
+        if (pathUi || doorMatch) setActiveJourneyId(journeyId)
+        else setActiveJourneyId(null)
+      } else if (source === 'journey-stage') {
         // stay on active journey
-      } else if (source === 'keys' || source === 'ui') {
-        // Opening a door without journey id clears path context
+      } else if (source === 'keys' || source === 'ui' || source === 'toc') {
         setActiveJourneyId(null)
       }
       openChamber(id)
@@ -323,11 +337,18 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               onToggleTheme={toggleTheme}
               onHome={goHome}
             />
-            {/* Depth ladder only on browse surfaces — not on station (adds a third header) */}
-            {depthLayer && state.mode !== 'chamber' ? (
-              <p className="depth-ladder" aria-label="How Bedrock is layered">
+            {/* Depth ladder: Key · Station · Path · Standard (subtle on chamber) */}
+            {depthLayer ? (
+              <p
+                className={
+                  state.mode === 'chamber'
+                    ? 'depth-ladder depth-ladder-on-station'
+                    : 'depth-ladder'
+                }
+                aria-label="How Bedrock is layered"
+              >
                 <span className={depthLayer === 'door' ? 'depth-step active' : 'depth-step'}>
-                  Door
+                  Key
                 </span>
                 <span className="depth-sep" aria-hidden>
                   ·

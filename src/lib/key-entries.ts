@@ -1,7 +1,15 @@
 /**
  * Keys = short storm triage on home (not the full atlas).
- * Order: God · Marriage · storm doors · close with Sexual sin · Witchcraft · Persecution · Love.
- * Multi-step paths: Journeys tab. Full list: Contents. Rubric: Contents or journey stations.
+ *
+ * Order:
+ *   Solid (2): God · Marriage
+ *   Fire (plan): Out of control · Trust · Grief · Wounded · Obsession · Regret · Fear
+ *   Extra storms: Addiction · Jealousy · Control · Sexual sin · Witchcraft · Persecution
+ *
+ * Rules:
+ * - journeyId only when this key’s chamberId is that path’s doorChamberId.
+ * - Fruit / formation (Love, Patience fruit, Spirit) live in Contents — not Keys.
+ * - Multi-step walks: Journeys tab. Full atlas: Contents. Rubric: Standard.
  * Desktop: grid · Mobile: carousel of 3.
  */
 export interface KeyEntry {
@@ -11,6 +19,7 @@ export interface KeyEntry {
   chamberId: string
   /**
    * Optional primary core journey opened by this key.
+   * Must match journeys.json doorChamberId === chamberId.
    * SSOT for stages: src/content/journeys.json (via journeys.ts).
    */
   journeyId?: string
@@ -23,20 +32,20 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'God',
     hint: 'First',
     chamberId: 'god-first',
-    journeyId: 'forced-waiting',
+    // Station only — forced-waiting door is Wait, not God first
   },
   {
     id: 'key-marriage',
     label: 'Marriage',
     hint: 'Covenant',
     chamberId: 'marriage-covenant',
-    journeyId: 'spouse-left',
+    // Station only — spouse-left door is Wounded
   },
   {
-    id: 'key-patience',
-    label: 'Patience',
+    id: 'key-wait',
+    label: 'Out of control',
     hint: "Can't force it",
-    chamberId: 'patience',
+    chamberId: 'wait-on-the-lord',
     journeyId: 'forced-waiting',
   },
   {
@@ -44,7 +53,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Trust',
     hint: 'Release grip',
     chamberId: 'trust-in-the-lord',
-    journeyId: 'forced-waiting',
+    // Station only — on forced-waiting path after Wait
   },
   {
     id: 'key-loss',
@@ -68,11 +77,11 @@ export const KEY_ENTRIES: KeyEntry[] = [
     journeyId: 'obsession',
   },
   {
-    id: 'key-addiction',
-    label: 'Addiction',
-    hint: 'It owns me',
-    chamberId: 'addiction',
-    journeyId: 'addiction',
+    id: 'key-regret',
+    label: 'Regret',
+    hint: 'I blew it',
+    chamberId: 'regret',
+    journeyId: 'stuck-regret',
   },
   {
     id: 'key-fear',
@@ -80,6 +89,13 @@ export const KEY_ENTRIES: KeyEntry[] = [
     hint: 'Abandonment',
     chamberId: 'fear',
     journeyId: 'abandonment-fear',
+  },
+  {
+    id: 'key-addiction',
+    label: 'Addiction',
+    hint: 'It owns me',
+    chamberId: 'addiction',
+    journeyId: 'addiction',
   },
   {
     id: 'key-jealousy',
@@ -107,7 +123,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Witchcraft',
     hint: 'Counterfeit power',
     chamberId: 'pharmakeia',
-    journeyId: 'spiritual-warfare-fog',
+    // Station only — spiritual-warfare-fog door is spiritual-warfare
   },
   {
     id: 'key-persecution',
@@ -115,12 +131,5 @@ export const KEY_ENTRIES: KeyEntry[] = [
     hint: 'For His name',
     chamberId: 'persecution',
     journeyId: 'persecution',
-  },
-  {
-    id: 'key-love',
-    label: 'Love',
-    hint: 'Still the way',
-    chamberId: 'love',
-    // Love is formation / fruit — not a storm journey door
   },
 ]

@@ -1,42 +1,46 @@
 import { describe, expect, it } from 'vitest'
 import { KEY_ENTRIES } from './key-entries'
 import { SPINE_ORDER } from './spine'
+import { getJourney, journeyForKey } from './journeys'
 
 describe('KEY_ENTRIES', () => {
-  it('starts with two solid doors — God then Marriage — then the storm — then love', () => {
+  it('solid first, then fire plan, then extra storms — no Love fruit on Keys', () => {
     expect(KEY_ENTRIES.map((k) => k.label)).toEqual([
       'God',
       'Marriage',
-      'Patience',
+      'Out of control',
       'Trust',
       'Grief',
       'Wounded',
       'Obsession',
-      'Addiction',
+      'Regret',
       'Fear',
+      'Addiction',
       'Jealousy',
       'Control',
       'Sexual sin',
       'Witchcraft',
       'Persecution',
-      'Love',
     ])
-    // 15 doors: desktop 4-col (last row 3) · mobile carousel of 3 (5 pages)
     expect(KEY_ENTRIES.length).toBe(15)
+    expect(KEY_ENTRIES.some((k) => k.id === 'key-love')).toBe(false)
+    expect(KEY_ENTRIES.some((k) => k.id === 'key-patience')).toBe(false)
   })
 
-  it('keeps wounded on Keys; addiction on Keys; regret stays Map-only', () => {
+  it('puts Regret on Keys (aggressor door) and Wounded on Keys (victim door)', () => {
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-regret')?.chamberId).toBe('regret')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-regret')?.hint).toBe('I blew it')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-regret')?.journeyId).toBe('stuck-regret')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.chamberId).toBe('wounded')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.chamberId).toBe('addiction')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.hint).toBe('It owns me')
-    expect(KEY_ENTRIES.some((k) => k.chamberId === 'regret')).toBe(false)
   })
 
-  it('names Patience as the positive for “can’t force it” (fruit chamber)', () => {
-    const door = KEY_ENTRIES.find((k) => k.id === 'key-patience')
-    expect(door?.label).toBe('Patience')
+  it('names Out of control with Wait chamber (not Patience fruit)', () => {
+    const door = KEY_ENTRIES.find((k) => k.id === 'key-wait')
+    expect(door?.label).toBe('Out of control')
     expect(door?.hint).toBe("Can't force it")
-    expect(door?.chamberId).toBe('patience')
+    expect(door?.chamberId).toBe('wait-on-the-lord')
+    expect(door?.journeyId).toBe('forced-waiting')
   })
 
   it('names Obsession in plain speech (not Loops / Rumination)', () => {
@@ -46,16 +50,17 @@ describe('KEY_ENTRIES', () => {
     expect(door?.chamberId).toBe('rumination')
   })
 
-  it('closes flesh/war doors then Love — Witchcraft + Persecution on Keys', () => {
+  it('closes flesh/war keys without attaching mismatched paths', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-witchcraft')?.chamberId).toBe('pharmakeia')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-witchcraft')?.hint).toBe('Counterfeit power')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-witchcraft')?.journeyId).toBeUndefined()
     expect(KEY_ENTRIES.find((k) => k.id === 'key-persecution')?.chamberId).toBe('persecution')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-persecution')?.hint).toBe('For His name')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.chamberId).toBe('control')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-love')?.chamberId).toBe('love')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-god')?.journeyId).toBeUndefined()
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-marriage')?.journeyId).toBeUndefined()
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-trust')?.journeyId).toBeUndefined()
   })
 
-  it('does not put syllabus / map-path chips on the first screen', () => {
+  it('does not put syllabus chips on the first screen', () => {
     const labels = new Set(KEY_ENTRIES.map((k) => k.label))
     for (const syllabus of [
       'I fell',
@@ -66,13 +71,13 @@ describe('KEY_ENTRIES', () => {
       'Confess',
       'Armor',
       'The Cross',
-      'Out of control',
       'Loops',
       'Rumination',
       'Faith',
       'Hope',
       'War',
-      'Regret',
+      'Love',
+      'Patience',
     ]) {
       expect(labels.has(syllabus)).toBe(false)
     }
@@ -85,10 +90,20 @@ describe('KEY_ENTRIES', () => {
     }
   })
 
+  it('journeyId only when key chamber is that path’s door', () => {
+    for (const k of KEY_ENTRIES) {
+      if (!k.journeyId) continue
+      const j = getJourney(k.journeyId)
+      expect(j, `${k.id} journey ${k.journeyId}`).toBeTruthy()
+      expect(j!.doorChamberId).toBe(k.chamberId)
+      expect(journeyForKey(k.id)?.id).toBe(k.journeyId)
+    }
+  })
+
   it('storm Keys link to core journey ids when set', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-loss')?.journeyId).toBe('death-of-loved-one')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('spouse-left')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.journeyId).toBe('addiction')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-love')?.journeyId).toBeUndefined()
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-wait')?.journeyId).toBe('forced-waiting')
   })
 })

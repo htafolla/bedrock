@@ -87,7 +87,7 @@ export function buildFaqEntities(doc: BedrockDocument): Array<{ q: string; a: st
   return [
     {
       q: 'What is Bedrock?',
-      a: `${doc.meta.title} is ${doc.meta.tagline ?? "a Hitchhiker's Guide to Love · Living · Enduring"}. ${doc.meta.mission ?? DEFAULT_DESCRIPTION} Layers: Key · Station · Path · Standard. Prefer hold-first: Under fire, Prayer, then Truth.`,
+      a: `${doc.meta.title} is ${doc.meta.tagline ?? "a Hitchhiker's Guide to Love · Living · Enduring"}. ${doc.meta.mission ?? DEFAULT_DESCRIPTION} Lenses: Key · Station · Path · Standard. Prefer hold-first: Under fire, Prayer, then Truth.`,
     },
     {
       q: 'Who is Bedrock for?',

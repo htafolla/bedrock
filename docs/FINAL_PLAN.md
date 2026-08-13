@@ -98,22 +98,25 @@ Sealed word (optional) → poem for deeper understanding
 
 ### Keys order (storm triage only — short list)
 
-Map · Contents hold the full atlas. Keys = first doors only:
+Contents hold the full atlas. Keys = first doors only.  
+**Rule:** a Key may attach a Path only when `chamberId === path.doorChamberId`.
 
 **Solid (2):**  
-1. God  
-2. **Marriage** (covenant — after God)  
+1. God (station only)  
+2. **Marriage** (covenant — station only)  
 
 **Fire (7):**  
-3. **Out of control** (Wait)  
-4. **Trust**  
+3. **Out of control** → Wait (`wait-on-the-lord` · path: Forced waiting)  
+4. **Trust** (station; also on Forced waiting)  
 5. **Grief** (Loss)  
 6. **Wounded** (I was hurt)  
-7. **Loops** (Rumination)  
+7. **Obsession** (Loops / Rumination chamber)  
 8. **Regret** (I blew it)  
 9. Fear  
 
-Not on Keys (use Map / Contents): I fell · Forgive · Hatred · Grace · Spirit fruit · Confess · Armor · Hope · Cross · all fruit chambers  
+**Extra storms (Keys):** Addiction · Jealousy · Control · Sexual sin · Witchcraft · Persecution  
+
+Not on Keys (use Contents / Journeys): I fell · Forgive · Hatred · Grace · Spirit fruit (incl. Love, Patience fruit) · Confess · Armor · Hope · Cross · Battlefield of the mind (via Standard / Journeys)
 
 
 

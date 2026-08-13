@@ -128,8 +128,7 @@
         "death-of-loved-one"
       ],
       "keyIds": [
-        "key-wounded",
-        "key-marriage"
+        "key-wounded"
       ],
       "loopStageIds": [
         "spiral",
@@ -246,9 +245,7 @@
         "spouse-left",
         "death-of-loved-one"
       ],
-      "keyIds": [
-        "key-wounded"
-      ],
+      "keyIds": [],
       "loopStageIds": [
         "fork",
         "long_middle"
@@ -846,7 +843,9 @@
         "stuck in the past"
       ],
       "doorChamberId": "regret",
-      "keyIds": [],
+      "keyIds": [
+        "key-regret"
+      ],
       "loopStageIds": [
         "spiral"
       ],
@@ -981,9 +980,7 @@
         "spiritual fog"
       ],
       "doorChamberId": "spiritual-warfare",
-      "keyIds": [
-        "key-witchcraft"
-      ],
+      "keyIds": [],
       "loopStageIds": [
         "spiral"
       ],
@@ -1058,11 +1055,9 @@
         "everything is stuck",
         "i feel lost"
       ],
-      "doorChamberId": "patience",
+      "doorChamberId": "wait-on-the-lord",
       "keyIds": [
-        "key-patience",
-        "key-trust",
-        "key-god"
+        "key-wait"
       ],
       "loopStageIds": [
         "long_middle"
@@ -1071,16 +1066,16 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Patience",
-          "chamberId": "patience",
-          "note": "Urgency is not wisdom."
-        },
-        {
-          "id": "wait",
-          "role": "near",
           "label": "Wait",
           "chamberId": "wait-on-the-lord",
-          "note": "Do the one duty you own today."
+          "note": "You cannot force the timeline. Force is flesh."
+        },
+        {
+          "id": "patience",
+          "role": "near",
+          "label": "Patience",
+          "chamberId": "patience",
+          "note": "Urgency is not wisdom. Spirit fruit under delay."
         },
         {
           "id": "trust",
@@ -1120,7 +1115,7 @@
       ],
       "url": "https://bedrock.rippel.ai/j/forced-waiting",
       "ogImage": "https://bedrock.rippel.ai/og/j/forced-waiting.png",
-      "doorUrl": "https://bedrock.rippel.ai/c/patience"
+      "doorUrl": "https://bedrock.rippel.ai/c/wait-on-the-lord"
     },
     {
       "id": "battlefield-of-the-mind",
@@ -1151,9 +1146,7 @@
         "stuck-regret",
         "obsession"
       ],
-      "keyIds": [
-        "key-obsession"
-      ],
+      "keyIds": [],
       "loopStageIds": [
         "spiral-loop",
         "spiral-shame",

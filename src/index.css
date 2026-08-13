@@ -1735,7 +1735,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Depth ladder: Door · Station · Path · Standard */
+/* Depth ladder: Key · Station · Path · Standard */
 .depth-ladder {
   display: flex;
   flex-wrap: wrap;
@@ -1749,6 +1749,14 @@ body {
   text-transform: uppercase;
   color: var(--muted);
   pointer-events: none;
+}
+
+/* On open chamber — one quiet line so Path vs Station is visible without a third header */
+.depth-ladder-on-station {
+  padding: 0.2rem 0.75rem 0.25rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  opacity: 0.92;
 }
 
 .depth-step {
