@@ -373,11 +373,11 @@ function chamberHtml(c, meta, titleById = new Map()) {
   const truthClass = isRubric ? 'card card-rubric' : 'card'
   const ill = c.illustration
   const illustrationHtml = ill
-    ? `<figure class="illustration">
-      <img src="${esc(ill.src)}" alt="${esc(ill.alt)}" width="864" height="1152" loading="eager" />
-      ${ill.caption ? `<figcaption>${esc(ill.caption)}</figcaption>` : ''}
-    </figure>`
+    ? `<div class="illustration" aria-hidden="true">
+      <img src="${esc(ill.src)}" alt="" width="864" height="1152" loading="eager" />
+    </div>`
     : ''
+  const stageClass = ill ? 'strike-stage has-ill' : 'strike-stage'
 
   const title = `${esc(c.title)} — Bedrock`
   const desc = esc(
@@ -485,9 +485,25 @@ function chamberHtml(c, meta, titleById = new Map()) {
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
-    .illustration { margin:.5rem auto 1.25rem; max-width:min(20rem,100%); padding:0; background:transparent; }
-    .illustration img { display:block; width:100%; height:auto; border:none; border-radius:0; box-shadow:none; background:transparent; aspect-ratio:3/4; object-fit:contain; }
-    .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    .strike-stage { position:relative; isolation:isolate; }
+    .illustration {
+      position:absolute; z-index:0; top:-.25rem; right:-.65rem;
+      width:min(12.5rem,50%); max-width:14rem; margin:0; padding:0;
+      pointer-events:none; opacity:.4; user-select:none;
+    }
+    .illustration img { display:block; width:100%; height:auto; border:none; background:transparent; object-fit:contain; }
+    .strike-stage > .kicker,
+    .strike-stage > h1,
+    .strike-stage > .summary,
+    .strike-stage > .nav,
+    .strike-stage > .hold { position:relative; z-index:1; }
+    .has-ill h1, .has-ill .summary { padding-right:min(40%,10rem); }
+    .has-ill .hold { padding-right:min(26%,6.5rem); }
+    @media (max-width:420px) {
+      .illustration { width:min(9rem,44%); opacity:.32; right:-.35rem; }
+      .has-ill h1, .has-ill .summary { padding-right:min(38%,8rem); }
+      .has-ill .hold { padding-right:.9rem; }
+    }
     /* Verse chips — same etched language as SPA field guide */
     .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }
     .verse-chip {
@@ -526,10 +542,11 @@ function chamberHtml(c, meta, titleById = new Map()) {
 </head>
 <body>
   <main class="wrap">
+    <div class="${stageClass}">
+    ${illustrationHtml}
     <p class="kicker">${esc(kicker)} · Hold first</p>
     <h1>${esc(c.title)}</h1>
     <p class="summary">${esc(c.summary)}</p>
-    ${illustrationHtml}
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=${esc(c.id)}">Open in field guide</a>
       <a href="/c/${esc(c.id)}.md">Markdown</a>
@@ -543,6 +560,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
       <h2 id="prayer">Prayer</h2>
       ${prayers}
     </section>
+    </div>
     <section class="${truthClass}" aria-labelledby="truth">
       <h2 id="truth">${esc(truthHeading)}</h2>
       ${truth}

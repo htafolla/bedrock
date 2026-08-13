@@ -4,9 +4,8 @@
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh*
 
-![Line art: pure pow crescendo form — the counter strike of the Spirit](https://bedrock.rippel.ai/art/kill-the-flesh-pow.png)
+![Pow crescendo line form](https://bedrock.rippel.ai/art/kill-the-flesh-pow.png)
 
-*The form. Line only.*
 
 ## Under fire
 

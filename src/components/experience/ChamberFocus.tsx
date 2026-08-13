@@ -416,81 +416,82 @@ export function ChamberFocus({
       )}
 
       <article
-        className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}`}
+        className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}${chamber.illustration ? ' has-illustration' : ''}`}
         id={chamber.id}
       >
-        <header className="chamber-header">
-          <div className="chamber-title-row">
-            <h2
-              className="chamber-title"
-              ref={titleRef}
-              tabIndex={-1}
-            >
-              {chamber.title}
-            </h2>
-            {cardShare('header')}
-          </div>
-          <p className="chamber-summary">{chamber.summary}</p>
-          {isRubric ? (
-            <p className="chamber-kind-note">
-              Under fire first. Field card and full map when you can read.
-            </p>
-          ) : null}
+        {/* Title + Under fire share one stage so the pow sits behind as corner watermark */}
+        <div className="chamber-strike-stage">
           {chamber.illustration ? (
-            <figure className="chamber-illustration">
+            <div className="chamber-illustration" aria-hidden="true">
               <img
                 src={chamber.illustration.src}
-                alt={chamber.illustration.alt}
+                alt=""
                 width={864}
                 height={1152}
                 loading="eager"
                 decoding="async"
               />
-              {chamber.illustration.caption ? (
-                <figcaption>{chamber.illustration.caption}</figcaption>
-              ) : null}
-            </figure>
+            </div>
           ) : null}
-        </header>
 
-        {/*
-          30-second path: title → Under fire → Prayer.
-          Truth / Standard body / Scripture / Related come after capacity returns.
-        */}
-        <div className="hold-block" id={`${chamber.id}-hold`}>
-          <p className="hold-block-kicker">This hour</p>
-          {chamber.hacks.length > 0 ? (
-            <section className="field-layer field-hacks hold-layer" aria-labelledby={`${chamber.id}-hacks`}>
-              <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
-                Under fire
-              </h3>
-              <p className="field-layer-hint">
-                {isRubric ? 'Three holds when fog is worst.' : 'The next right hold — walk this hour.'}
+          <header className="chamber-header">
+            <div className="chamber-title-row">
+              <h2
+                className="chamber-title"
+                ref={titleRef}
+                tabIndex={-1}
+              >
+                {chamber.title}
+              </h2>
+              {cardShare('header')}
+            </div>
+            <p className="chamber-summary">{chamber.summary}</p>
+            {isRubric ? (
+              <p className="chamber-kind-note">
+                Under fire first. Field card and full map when you can read.
               </p>
-              <ul className="field-list">
-                {chamber.hacks.map((hack) => (
-                  <li key={hack}>{hack}</li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
+            ) : null}
+          </header>
 
-          {chamber.prayers.length > 0 ? (
-            <section
-              className="field-layer field-prayers hold-layer"
-              aria-labelledby={`${chamber.id}-prayers`}
-            >
-              <h3 id={`${chamber.id}-prayers`} className="field-layer-label">
-                Prayer
-              </h3>
-              <p className="field-layer-hint">When you do not have the words.</p>
-              <ul className="field-list prayer-list">
-                {chamber.prayers.map((prayer) => (
-                  <li key={prayer}>{prayer}</li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
+          {/*
+            30-second path: title → Under fire → Prayer.
+            Truth / Standard body / Scripture / Related come after capacity returns.
+          */}
+          <div className="hold-block" id={`${chamber.id}-hold`}>
+            <p className="hold-block-kicker">This hour</p>
+            {chamber.hacks.length > 0 ? (
+              <section className="field-layer field-hacks hold-layer" aria-labelledby={`${chamber.id}-hacks`}>
+                <h3 id={`${chamber.id}-hacks`} className="field-layer-label">
+                  Under fire
+                </h3>
+                <p className="field-layer-hint">
+                  {isRubric ? 'Three holds when fog is worst.' : 'The next right hold — walk this hour.'}
+                </p>
+                <ul className="field-list">
+                  {chamber.hacks.map((hack) => (
+                    <li key={hack}>{hack}</li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+
+            {chamber.prayers.length > 0 ? (
+              <section
+                className="field-layer field-prayers hold-layer"
+                aria-labelledby={`${chamber.id}-prayers`}
+              >
+                <h3 id={`${chamber.id}-prayers`} className="field-layer-label">
+                  Prayer
+                </h3>
+                <p className="field-layer-hint">When you do not have the words.</p>
+                <ul className="field-list prayer-list">
+                  {chamber.prayers.map((prayer) => (
+                    <li key={prayer}>{prayer}</li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+          </div>
         </div>
 
         <section className="field-layer field-truth-depth" aria-labelledby={`${chamber.id}-truth`}>

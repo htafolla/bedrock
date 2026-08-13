@@ -2854,36 +2854,69 @@ body {
   max-width: 42ch;
 }
 
-/* Battle-card / station pencil art — the “wow” strike */
+/* Battle-card pow: watermark behind title + Under fire, upper-right */
+.chamber-strike-stage {
+  position: relative;
+  isolation: isolate;
+}
+
 .chamber-illustration {
-  margin: 0.35rem auto 1rem;
-  max-width: min(22rem, 100%);
+  position: absolute;
+  z-index: 0;
+  top: -0.35rem;
+  right: -0.85rem;
+  width: min(13.5rem, 52%);
+  max-width: 15rem;
+  margin: 0;
   padding: 0;
   border: none;
+  pointer-events: none;
+  opacity: 0.42;
+  user-select: none;
 }
 
 .chamber-illustration img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 16rem;
-  margin: 0 auto;
-  border-radius: 0;
   border: none;
+  border-radius: 0;
   box-shadow: none;
   background: transparent;
   object-fit: contain;
-  aspect-ratio: 3 / 4;
 }
 
-.chamber-illustration figcaption {
-  margin: 0.45rem 0 0;
-  text-align: center;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  opacity: 0.9;
+/* Keep type above the form */
+.chamber-strike-stage .chamber-header,
+.chamber-strike-stage .hold-block {
+  position: relative;
+  z-index: 1;
+}
+
+/* Room for the form so text doesn’t fully collide on narrow cards */
+.chamber.has-illustration .chamber-header {
+  padding-right: min(42%, 11rem);
+}
+
+.chamber.has-illustration .hold-block {
+  padding-right: min(28%, 7rem);
+}
+
+@media (max-width: 420px) {
+  .chamber-illustration {
+    width: min(9.5rem, 46%);
+    right: -0.5rem;
+    top: 0;
+    opacity: 0.34;
+  }
+
+  .chamber.has-illustration .chamber-header {
+    padding-right: min(40%, 8.5rem);
+  }
+
+  .chamber.has-illustration .hold-block {
+    padding-right: 0.9rem;
+  }
 }
 
 /* —— Hold first (30s path): Under fire + Prayer before Truth —— */

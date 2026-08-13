@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T16:03:44.809Z",
+    "exportedAt": "2026-08-13T16:09:50.711Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -5088,8 +5088,7 @@
       ],
       "illustration": {
         "src": "/art/kill-the-flesh-pow.png",
-        "alt": "Line art: pure pow crescendo form — the counter strike of the Spirit",
-        "caption": "The form. Line only."
+        "alt": "Pow crescendo line form"
       },
       "url": "https://bedrock.rippel.ai/c/kill-the-flesh",
       "markdownUrl": "https://bedrock.rippel.ai/c/kill-the-flesh.md",
