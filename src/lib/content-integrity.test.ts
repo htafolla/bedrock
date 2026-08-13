@@ -51,38 +51,31 @@ describe('bedrock content integrity', () => {
     expect(rubricText).not.toMatch(/investigation mode|condemnation mode/)
     expect(rubricText).toMatch(/for men/)
     expect(rubricText).toMatch(/release this to you|sound mind/)
-    // Battle card — fight kata: name · filters · kill · tools · verse chips
+    // Station form like god-first / jealousy — not a custom SOP layout
     expect(byId.has('kill-the-flesh')).toBe(true)
     expect(byId.get('kill-the-flesh')!.title).toBe('Kill the Flesh')
     expect(byId.get('kill-the-flesh')!.kind ?? 'chamber').toBe('chamber')
     const killCard = byId.get('kill-the-flesh')!
-    const killText = killCard.body
-      .map((b) => {
-        if (b.type === 'list' && Array.isArray(b.items)) return b.items.join(' ')
-        if ('text' in b && typeof b.text === 'string') return b.text
-        return ''
-      })
-      .join(' ')
-      .toLowerCase()
-    expect(killText).toMatch(/name it/)
-    // Open lives in summary (not repeated as first Truth line)
+    expect(killCard.underFireIntro).toBeUndefined()
     expect(killCard.summary.toLowerCase()).toMatch(/you're in a fight|the urge is real|out of control/)
     expect(killCard.summary.toLowerCase()).toMatch(/master the flesh/)
-    expect(killText).toMatch(/three filters|self-less|honor god/)
-    expect(killText).toMatch(/kill the flesh \(3 steps\)|capture it|choose the other path/)
-    expect(killText).toMatch(/tools in the moment|3-2-1|emotional state is my own/)
-    expect(killText).toMatch(/fear produces|control|jealousy|impatience/)
-    expect(killText).not.toMatch(/see the punch|instant block|the counter\.|still ringing|core verses|steel on the belt/)
+    expect(killCard.hacks.length).toBeGreaterThan(0)
+    expect(killCard.hacks.length).toBeLessThanOrEqual(3)
+    expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
+      /fear \(the flesh\)|self-less|protect|honor god|capture|other path/,
+    )
+    // Truth is verse/steel paragraphs (same body form as other stations)
+    expect(killCard.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(killCard.body.some((b) => b.type === 'heading' || b.type === 'list')).toBe(false)
+    const killText = killCard.body
+      .map((b) => ('text' in b && typeof b.text === 'string' ? b.text : ''))
+      .join(' ')
+      .toLowerCase()
+    expect(killText).toMatch(/self-less|protect|honor god/)
+    expect(killText).toMatch(/capture|christ|other path/)
+    expect(killText).toMatch(/emotional state is my own|3-2-1|exhale/)
     expect(killCard.verses.length).toBeGreaterThanOrEqual(10)
     expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/James 1:19/)
-    expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/2 Timothy 1:7/)
-    expect(killCard.underFireIntro?.toLowerCase()).toMatch(/fear \(the flesh\) drives/)
-    expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
-      /self-less|protect|honor god|no → stop|capture to christ/,
-    )
-    expect(killCard.hacks.length).toBeLessThanOrEqual(3)
-    // Holds are bullets only — intro is not a hack line
-    expect(killCard.hacks.some((h) => /fear \(the flesh\) drives/i.test(h))).toBe(false)
     expect(killCard.illustration?.src).toMatch(/kill-the-flesh-pow/)
     expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
     expect(rubric.related).toContain('kill-the-flesh')

@@ -4723,59 +4723,24 @@
       "kind": "chamber",
       "body": [
         {
-          "type": "heading",
-          "level": 2,
-          "text": "1. Name it"
+          "type": "paragraph",
+          "text": "Fear drives the flesh as reaction and reflex — in thoughts and in person. It produces control, jealousy, and impatience; then rage, bitterness, habit, and immediate relief. Say it plain: this is fear; this is the flesh."
         },
         {
-          "type": "list",
-          "items": [
-            "Surfaces: Thoughts · In-person",
-            "Root: Fear",
-            "Fear produces: Control · Jealousy · Impatience",
-            "Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief",
-            "Say it: “This is fear. This is the flesh.”"
-          ]
+          "type": "paragraph",
+          "text": "Before you speak, send, or act — three filters: Is it self-less? Does it protect? Does it honor God? If any answer is no, stop. Do not negotiate with the flesh."
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "2. Three Filters"
+          "type": "paragraph",
+          "text": "Kill it in three steps. Name it: “This is fear. This is the flesh.” Capture the thought and give it to Christ. Stop. Breathe. Choose the other path."
         },
         {
-          "type": "list",
-          "items": [
-            "Is it self-less?",
-            "Does it protect?",
-            "Does it honor God?",
-            "If no → stop. Do not negotiate with the flesh."
-          ]
+          "type": "paragraph",
+          "text": "When the body is still ringing: exhale hard once; three things you see, two you hear, one you feel; default phrase — “My emotional state is my own.” Then return to the three steps."
         },
         {
-          "type": "heading",
-          "level": 2,
-          "text": "3. Kill the Flesh (3 steps)"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Name it — “This is fear. This is the flesh.”",
-            "Capture it — Take the thought captive. Give it to Christ.",
-            "Stop. Breathe. Choose the other path."
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "4. Tools in the Moment"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Exhale hard once",
-            "3-2-1 grounding — three you see, two you hear, one you feel",
-            "Default phrase: “My emotional state is my own.”"
-          ]
+          "type": "paragraph",
+          "text": "Take every thought captive to obey Christ. Walk by the Spirit, and you will not gratify the desires of the flesh. God has not given a spirit of fear, but of power and love and a sound mind."
         },
         {
           "type": "paragraph",
@@ -4855,9 +4820,9 @@
         }
       ],
       "hacks": [
-        "Is it self-less?",
-        "Does it protect?",
-        "Does it honor God? — No → stop. Capture to Christ. Choose the other path."
+        "Fear (the flesh) drives thoughts and actions. Name it.",
+        "Is it self-less? Does it protect? Does it honor God? If no → stop.",
+        "Capture it to Christ. Stop. Breathe. Choose the other path."
       ],
       "prayers": [
         "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen."
@@ -4865,24 +4830,18 @@
       "related": [
         "kill-the-flesh-walk-in-the-spirit",
         "walk-by-the-spirit",
-        "works-of-the-flesh",
         "take-every-thought-captive",
         "fear",
         "control",
         "jealousy",
-        "patience",
         "self-control",
-        "rumination",
-        "renew-your-mind",
-        "forgive-as-you-have-been-forgiven",
         "trust-in-the-lord",
         "the-full-armor-of-god"
       ],
       "illustration": {
         "src": "/art/kill-the-flesh-pow.png",
         "alt": "Pow crescendo line form"
-      },
-      "underFireIntro": "Fear (the flesh) drives thoughts and actions."
+      }
     },
     {
       "id": "adultery",
