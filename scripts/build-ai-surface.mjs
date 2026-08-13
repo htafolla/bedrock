@@ -485,8 +485,8 @@ function chamberHtml(c, meta, titleById = new Map()) {
     .card-rubric { padding:.85rem .85rem 1rem; }
     .prayer { font-style:italic; color:var(--beam); }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
-    .illustration { margin:.5rem auto 1.25rem; max-width:min(22rem,100%); padding:0; }
-    .illustration img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow:0 12px 40px rgba(0,0,0,.4); background:#e8e0d4; aspect-ratio:3/4; object-fit:cover; }
+    .illustration { margin:.5rem auto 1.25rem; max-width:min(20rem,100%); padding:0; background:transparent; }
+    .illustration img { display:block; width:100%; height:auto; border:none; border-radius:0; box-shadow:none; background:transparent; aspect-ratio:3/4; object-fit:contain; }
     .illustration figcaption { margin:.45rem 0 0; text-align:center; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
     /* Verse chips — same etched language as SPA field guide */
     .verse-chip-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:.55rem 0 .35rem; align-items:center; }

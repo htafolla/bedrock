@@ -4,9 +4,9 @@
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/kill-the-flesh*
 
-![Pencil art: the decisive pow — fist open into light, mastering the flesh by the Spirit](https://bedrock.rippel.ai/art/kill-the-flesh-pow.jpg)
+![Line art: pure pow crescendo form — the counter strike of the Spirit](https://bedrock.rippel.ai/art/kill-the-flesh-pow.png)
 
-*The counter. Graphite on paper.*
+*The form. Line only.*
 
 ## Under fire
 
