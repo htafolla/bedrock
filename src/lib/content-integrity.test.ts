@@ -53,7 +53,7 @@ describe('bedrock content integrity', () => {
     expect(rubricText).toMatch(/release this to you|sound mind/)
     // Station form like god-first / jealousy — not a custom SOP layout
     expect(byId.has('kill-the-flesh')).toBe(true)
-    expect(byId.get('kill-the-flesh')!.title).toBe('Kill the Flesh')
+    expect(byId.get('kill-the-flesh')!.title).toBe('Master the Flesh')
     expect(byId.get('kill-the-flesh')!.kind ?? 'chamber').toBe('chamber')
     const killCard = byId.get('kill-the-flesh')!
     expect(killCard.summary.toLowerCase()).toMatch(/you're in a fight|the urge is real|out of control/)

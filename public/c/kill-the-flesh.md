@@ -1,4 +1,4 @@
-# Kill the Flesh
+# Master the Flesh
 
 > You’re in a fight. The urge is real. You feel out of control — master the flesh.
 

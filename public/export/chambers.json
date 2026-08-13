@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T17:05:28.431Z",
+    "exportedAt": "2026-08-13T17:27:09.318Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4887,7 +4887,7 @@
     },
     {
       "id": "kill-the-flesh",
-      "title": "Kill the Flesh",
+      "title": "Master the Flesh",
       "summary": "You’re in a fight. The urge is real. You feel out of control — master the flesh.",
       "body": [
         {

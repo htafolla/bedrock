@@ -69,13 +69,14 @@ function list(...items) {
  * @param {string} summary
  * @param {(string | { type: string })[]} bodyLines strings → paragraphs; objects pass through
  * @param {string} verseLine
+ * @param {string} [fixedId] Stable id when display title must not change the slug (e.g. share URLs)
  */
-function chamber(title, summary, bodyLines, verseLine) {
+function chamber(title, summary, bodyLines, verseLine, fixedId) {
   const body = bodyLines.map((line) =>
     typeof line === 'string' ? { type: 'paragraph', text: line } : line,
   )
   return {
-    id: slug(title),
+    id: fixedId ?? slug(title),
     title,
     summary,
     body,
@@ -1527,14 +1528,12 @@ const document = {
     ),
     /**
      * Battle station (same form as god-first / jealousy — not the full Standard rubric).
-     * Title slugs to id `kill-the-flesh`.
-     */
-    /**
+     * Display title: Master the Flesh. Fixed id `kill-the-flesh` keeps share/OG URLs stable.
      * Station chrome matches other keys. Truth: short lead lines + inner bullet lists
      * for filters / kill steps / tools (not one long run-on paragraph each).
      */
     chamber(
-      'Kill the Flesh',
+      'Master the Flesh',
       'You’re in a fight. The urge is real. You feel out of control — master the flesh.',
       [
         'Fear drives the flesh as reaction and reflex — in thoughts and in person. It produces control, jealousy, and impatience; then rage, bitterness, habit, and immediate relief. Say it plain: this is fear; this is the flesh.',
@@ -1561,6 +1560,7 @@ const document = {
         'When the fight slows — full Standard: Kill the Flesh. Walk in the Spirit.',
       ],
       'James 1:19 · 2 Timothy 1:7 · Galatians 5:16, 22-23 · 2 Corinthians 10:5 · Luke 9:23 · 1 Corinthians 13:4-7 · Proverbs 25:28 · Titus 2:11-12 · James 5:16 · Matthew 6:16-18',
+      'kill-the-flesh',
     ),
     chamber(
       'Adultery',

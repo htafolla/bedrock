@@ -20,10 +20,6 @@ const publicOg = join(root, 'public', 'og')
 
 const MOTTO = 'Do Better. Be Better. Trust God.'
 
-/**
- * @param {{ layer: string, title: string, subtitle?: string }} opts
- * @param {string} outPath absolute path to .png
- */
 /** Prefer full sentences on the card; soft-cap so wrapLines does not feel chopped. */
 function ogSubtitle(text, max = 140) {
   const t = String(text || '')
@@ -36,6 +32,33 @@ function ogSubtitle(text, max = 140) {
   return `${base.replace(/[.,;:–—-]+$/, '')}…`
 }
 
+/**
+ * Optional chamber art path under public/ (e.g. /art/kill-the-flesh-pow.png).
+ * Composited as a soft hero watermark on the right — keeps title readable.
+ * @param {string | undefined} src
+ * @returns {Promise<Buffer | null>}
+ */
+async function loadIllustrationOverlay(src) {
+  if (!src) return null
+  const rel = String(src).replace(/^\//, '')
+  const illPath = join(root, 'public', rel)
+  if (!existsSync(illPath)) return null
+  const { data, info } = await sharp(illPath)
+    .resize(540, 540, { fit: 'inside', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true })
+  // Soft watermark (~38% alpha) so STATION title stays primary
+  for (let i = 3; i < data.length; i += 4) {
+    data[i] = Math.round(data[i] * 0.38)
+  }
+  return sharp(data, { raw: info }).png().toBuffer()
+}
+
+/**
+ * @param {{ layer: string, title: string, subtitle?: string, illustrationSrc?: string }} opts
+ * @param {string} outPath absolute path to .png
+ */
 export async function writeOgPng(opts, outPath) {
   const svg = buildOgSvg({
     layer: opts.layer,
@@ -43,10 +66,17 @@ export async function writeOgPng(opts, outPath) {
     subtitle: ogSubtitle(opts.subtitle || MOTTO),
     motto: MOTTO,
   })
-  const png = await sharp(Buffer.from(svg))
-    .resize(1200, 630, { fit: 'fill' })
-    .png({ compressionLevel: 8 })
-    .toBuffer()
+  let pipeline = sharp(Buffer.from(svg)).resize(1200, 630, { fit: 'fill' })
+  const overlay = await loadIllustrationOverlay(opts.illustrationSrc)
+  if (overlay) {
+    const meta = await sharp(overlay).metadata()
+    const ow = meta.width || 540
+    const oh = meta.height || 540
+    const left = Math.max(0, 1200 - ow - 36)
+    const top = Math.max(0, Math.round((630 - oh) / 2))
+    pipeline = pipeline.composite([{ input: overlay, left, top, blend: 'over' }])
+  }
+  const png = await pipeline.png({ compressionLevel: 8 }).toBuffer()
   mkdirSync(dirname(outPath), { recursive: true })
   writeFileSync(outPath, png)
   return png.length
@@ -148,7 +178,7 @@ export async function writePoemPng(opts, outPath) {
 
 /**
  * @param {{
- *   chambers: Array<{ id: string, title: string, summary: string, kind?: string }>,
+ *   chambers: Array<{ id: string, title: string, summary: string, kind?: string, illustration?: { src?: string } }>,
  *   journeys?: Array<{ id: string, title: string, summary: string }>,
  *   keys?: Array<{ id: string, label: string, hint: string }>,
  *   origin?: { subtitle?: string },
@@ -203,7 +233,12 @@ export async function buildAllOgCards(input) {
   for (const c of input.chambers || []) {
     const layer = c.kind === 'rubric' ? 'standard' : 'station'
     const n = await writeOgPng(
-      { layer, title: c.title, subtitle: c.summary },
+      {
+        layer,
+        title: c.title,
+        subtitle: c.summary,
+        illustrationSrc: c.illustration?.src,
+      },
       join(cDir, `${c.id}.png`),
     )
     bytes += n
