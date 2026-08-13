@@ -62,7 +62,7 @@ describe('bedrock content integrity', () => {
     expect(killCard.hacks.length).toBeGreaterThan(0)
     expect(killCard.hacks.length).toBeLessThanOrEqual(3)
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
-      /fear \(the flesh\)|self-less|protect|honor god|capture|other path/,
+      /flesh \(fear\)|self-less|protect|honor god|capture|other path/,
     )
     // Truth: short lead lines + inner lists for filters / steps / tools
     expect(killCard.body.some((b) => b.type === 'list')).toBe(true)
