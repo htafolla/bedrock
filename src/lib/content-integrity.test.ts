@@ -64,11 +64,15 @@ describe('bedrock content integrity', () => {
     expect(killCard.hacks.join(' ').toLowerCase()).toMatch(
       /fear \(the flesh\)|self-less|protect|honor god|capture|other path/,
     )
-    // Truth is verse/steel paragraphs (same body form as other stations)
-    expect(killCard.body.every((b) => b.type === 'paragraph')).toBe(true)
-    expect(killCard.body.some((b) => b.type === 'heading' || b.type === 'list')).toBe(false)
+    // Truth: short lead lines + inner lists for filters / steps / tools
+    expect(killCard.body.some((b) => b.type === 'list')).toBe(true)
+    expect(killCard.body.filter((b) => b.type === 'list').length).toBeGreaterThanOrEqual(3)
     const killText = killCard.body
-      .map((b) => ('text' in b && typeof b.text === 'string' ? b.text : ''))
+      .map((b) => {
+        if (b.type === 'list' && Array.isArray(b.items)) return b.items.join(' ')
+        if ('text' in b && typeof b.text === 'string') return b.text
+        return ''
+      })
       .join(' ')
       .toLowerCase()
     expect(killText).toMatch(/self-less|protect|honor god/)

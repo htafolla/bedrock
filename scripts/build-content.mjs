@@ -1529,14 +1529,34 @@ const document = {
      * Battle station (same form as god-first / jealousy — not the full Standard rubric).
      * Title slugs to id `kill-the-flesh`.
      */
+    /**
+     * Station chrome matches other keys. Truth: short lead lines + inner bullet lists
+     * for filters / kill steps / tools (not one long run-on paragraph each).
+     */
     chamber(
       'Kill the Flesh',
       'You’re in a fight. The urge is real. You feel out of control — master the flesh.',
       [
         'Fear drives the flesh as reaction and reflex — in thoughts and in person. It produces control, jealousy, and impatience; then rage, bitterness, habit, and immediate relief. Say it plain: this is fear; this is the flesh.',
-        'Before you speak, send, or act — three filters: Is it self-less? Does it protect? Does it honor God? If any answer is no, stop. Do not negotiate with the flesh.',
-        'Kill it in three steps. Name it: “This is fear. This is the flesh.” Capture the thought and give it to Christ. Stop. Breathe. Choose the other path.',
-        'When the body is still ringing: exhale hard once; three things you see, two you hear, one you feel; default phrase — “My emotional state is my own.” Then return to the three steps.',
+        'Before you speak, send, or act — three filters:',
+        list(
+          'Is it self-less?',
+          'Does it protect?',
+          'Does it honor God?',
+          'If any answer is no → stop. Do not negotiate with the flesh.',
+        ),
+        'Kill it in three steps:',
+        list(
+          'Name it — “This is fear. This is the flesh.”',
+          'Capture the thought and give it to Christ.',
+          'Stop. Breathe. Choose the other path.',
+        ),
+        'When the body is still ringing — reset, then return to the three steps:',
+        list(
+          'Exhale hard once',
+          '3-2-1 grounding — three you see, two you hear, one you feel',
+          'Default phrase: “My emotional state is my own.”',
+        ),
         'Take every thought captive to obey Christ. Walk by the Spirit, and you will not gratify the desires of the flesh. God has not given a spirit of fear, but of power and love and a sound mind.',
         'When the fight slows — full Standard: Kill the Flesh. Walk in the Spirit.',
       ],

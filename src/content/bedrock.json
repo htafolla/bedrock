@@ -4727,15 +4727,40 @@
         },
         {
           "type": "paragraph",
-          "text": "Before you speak, send, or act — three filters: Is it self-less? Does it protect? Does it honor God? If any answer is no, stop. Do not negotiate with the flesh."
+          "text": "Before you speak, send, or act — three filters:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Is it self-less?",
+            "Does it protect?",
+            "Does it honor God?",
+            "If any answer is no → stop. Do not negotiate with the flesh."
+          ]
         },
         {
           "type": "paragraph",
-          "text": "Kill it in three steps. Name it: “This is fear. This is the flesh.” Capture the thought and give it to Christ. Stop. Breathe. Choose the other path."
+          "text": "Kill it in three steps:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Name it — “This is fear. This is the flesh.”",
+            "Capture the thought and give it to Christ.",
+            "Stop. Breathe. Choose the other path."
+          ]
         },
         {
           "type": "paragraph",
-          "text": "When the body is still ringing: exhale hard once; three things you see, two you hear, one you feel; default phrase — “My emotional state is my own.” Then return to the three steps."
+          "text": "When the body is still ringing — reset, then return to the three steps:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Exhale hard once",
+            "3-2-1 grounding — three you see, two you hear, one you feel",
+            "Default phrase: “My emotional state is my own.”"
+          ]
         },
         {
           "type": "paragraph",
