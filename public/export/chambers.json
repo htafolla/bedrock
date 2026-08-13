@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-13T16:25:03.597Z",
+    "exportedAt": "2026-08-13T16:30:03.029Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4893,7 +4893,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "You’re in a fight. The urge is real. You feel out of control — master the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps."
+          "text": "You’re in a fight. The urge is real. You feel out of control — master the flesh."
         },
         {
           "type": "heading",
@@ -4901,21 +4901,14 @@
           "text": "1. Name it"
         },
         {
-          "type": "paragraph",
-          "text": "See the punch. Name what is running — not the story, the root."
-        },
-        {
           "type": "list",
           "items": [
             "Surfaces: Thoughts · In-person",
             "Root: Fear",
             "Fear produces: Control · Jealousy · Impatience",
-            "Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief"
+            "Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief",
+            "Say it: “This is fear. This is the flesh.”"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Say it: “This is fear. This is the flesh.”"
         },
         {
           "type": "heading",
@@ -4923,29 +4916,18 @@
           "text": "2. Three Filters"
         },
         {
-          "type": "paragraph",
-          "text": "Instant block. All three must pass — or you stop."
-        },
-        {
           "type": "list",
           "items": [
             "Is it self-less?",
             "Does it protect?",
-            "Does it honor God?"
+            "Does it honor God?",
+            "If no → stop. Do not negotiate with the flesh."
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "If no → stop. Do not negotiate with the flesh."
         },
         {
           "type": "heading",
           "level": 2,
           "text": "3. Kill the Flesh (3 steps)"
-        },
-        {
-          "type": "paragraph",
-          "text": "The counter. Fire this without delay."
         },
         {
           "type": "list",
@@ -4959,10 +4941,6 @@
           "type": "heading",
           "level": 2,
           "text": "4. Tools in the Moment"
-        },
-        {
-          "type": "paragraph",
-          "text": "When the body is still ringing — reset the frame, then return to the three steps."
         },
         {
           "type": "list",

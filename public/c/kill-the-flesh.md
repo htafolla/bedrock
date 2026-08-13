@@ -21,40 +21,30 @@ Father, this is fear — this is the flesh. I take it captive to Christ. I stop.
 
 ## Truth
 
-You’re in a fight. The urge is real. You feel out of control — master the flesh. Fear drives the flesh as reaction and reflex. Notice. Capture. Kill it before action — three steps.
+You’re in a fight. The urge is real. You feel out of control — master the flesh.
 
 ## 1. Name it
-
-See the punch. Name what is running — not the story, the root.
 
 - Surfaces: Thoughts · In-person
 - Root: Fear
 - Fear produces: Control · Jealousy · Impatience
 - Downstream: Fear → Control / Jealousy / Impatience → Rage → Bitterness · Habit · Immediate relief
-
-Say it: “This is fear. This is the flesh.”
+- Say it: “This is fear. This is the flesh.”
 
 ## 2. Three Filters
-
-Instant block. All three must pass — or you stop.
 
 - Is it self-less?
 - Does it protect?
 - Does it honor God?
-
-If no → stop. Do not negotiate with the flesh.
+- If no → stop. Do not negotiate with the flesh.
 
 ## 3. Kill the Flesh (3 steps)
-
-The counter. Fire this without delay.
 
 - Name it — “This is fear. This is the flesh.”
 - Capture it — Take the thought captive. Give it to Christ.
 - Stop. Breathe. Choose the other path.
 
 ## 4. Tools in the Moment
-
-When the body is still ringing — reset the frame, then return to the three steps.
 
 - Exhale hard once
 - 3-2-1 grounding — three you see, two you hear, one you feel
