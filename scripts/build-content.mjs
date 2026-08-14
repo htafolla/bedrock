@@ -340,12 +340,15 @@ const RELATED = {
   'one-another-in-the-body': ['restore-gently-and-give-time', 'confess-and-be-cleansed', 'choose-selfless-love'],
   'trust-in-the-lord': [
     'god-first',
+    'control',
+    'presence-without-control',
+    'fear',
     'do-not-fear',
     'wait-on-the-lord',
     'his-promises',
+    'kill-the-flesh',
     'faithfulness',
     'patience',
-    'control',
   ],
   'do-not-fear': ['fear', 'trust-in-the-lord', 'his-promises', 'take-every-thought-captive'],
   fear: [
@@ -1328,16 +1331,21 @@ const document = {
       ],
       'Galatians 6:2 · Hebrews 3:13 · James 5:16 · Hebrews 10:24-25',
     ),
+    /**
+     * Trust — opposite of grip. New prose: name what it is / is not, then Scripture.
+     * Control grips the outcome; trust opens the hand without abandoning the next duty.
+     */
     chamber(
       'Trust in the Lord',
-      'When you cannot grip the outcome — trust.',
+      'Trust is open hands when you cannot grip the outcome — not lean on your own understanding.',
       [
+        'Trust is not passive. It is not gripping harder with religious words. It is open hands: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
-        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
-        'And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
         'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
+        'Commit your way to the Lord; trust in Him, and He will act.',
       ],
-      'Proverbs 3:5-6 · Philippians 4:6-7 · Matthew 6:27, 34',
+      'Proverbs 3:5-6 · Philippians 4:6-7 · Matthew 6:34 · Psalm 37:5 · Isaiah 26:3',
     ),
     chamber(
       'Do Not Fear',

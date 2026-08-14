@@ -136,11 +136,13 @@ export const FIELD_AIDS = {
   },
   'trust-in-the-lord': {
     hacks: [
-      'Trust the Lord with all your heart. Panic is not wisdom.',
-      'Take only the next step He shows.',
-      'Release the outcome you cannot rule.',
+      'Name the grip: I am securing the outcome. Trust is open hands — not lean on my understanding.',
+      'Take only the next step He shows. Do not demand the whole map.',
+      'Release what you cannot rule. Panic is not wisdom. Presence is not control.',
     ],
-    prayers: ['Lord, I trust You. Direct my path. Amen.'],
+    prayers: [
+      'Father, I trust You with all my heart. I release the outcome. Direct my path. Amen.',
+    ],
   },
   'the-cross-and-our-justification': {
     hacks: [

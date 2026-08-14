@@ -9,4 +9,4 @@ Version: v7 (path-versioned for social cache bust).
 - Origin (About): `/og/origin.png`
 - Sealed poem (tall): `/og/testimony-poem.png`
 
-Cards: 110 · ~6332 KB total
+Cards: 110 · ~6341 KB total

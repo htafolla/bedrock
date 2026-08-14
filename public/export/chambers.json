@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 78,
-    "exportedAt": "2026-08-14T17:29:03.286Z",
+    "exportedAt": "2026-08-14T17:37:03.767Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -3379,23 +3379,27 @@
     {
       "id": "trust-in-the-lord",
       "title": "Trust in the Lord",
-      "summary": "When you cannot grip the outcome — trust.",
+      "summary": "Trust is open hands when you cannot grip the outcome — not lean on your own understanding.",
       "body": [
+        {
+          "type": "paragraph",
+          "text": "Trust is not passive. It is not gripping harder with religious words. It is open hands: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path."
+        },
         {
           "type": "paragraph",
           "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
         },
         {
           "type": "paragraph",
-          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
-        },
-        {
-          "type": "paragraph",
-          "text": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
         },
         {
           "type": "paragraph",
           "text": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."
+        },
+        {
+          "type": "paragraph",
+          "text": "Commit your way to the Lord; trust in Him, and He will act."
         }
       ],
       "verses": [
@@ -3414,34 +3418,43 @@
           "verseEnd": 7
         },
         {
-          "display": "Matthew 6:27",
-          "book": "Matthew",
-          "chapter": 6,
-          "verseStart": 27
-        },
-        {
           "display": "Matthew 6:34",
           "book": "Matthew",
           "chapter": 6,
           "verseStart": 34
+        },
+        {
+          "display": "Psalm 37:5",
+          "book": "Psalm",
+          "chapter": 37,
+          "verseStart": 5
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
         }
       ],
       "hacks": [
-        "Trust the Lord with all your heart. Panic is not wisdom.",
-        "Take only the next step He shows.",
-        "Release the outcome you cannot rule."
+        "Name the grip: I am securing the outcome. Trust is open hands — not lean on my understanding.",
+        "Take only the next step He shows. Do not demand the whole map.",
+        "Release what you cannot rule. Panic is not wisdom. Presence is not control."
       ],
       "prayers": [
-        "Lord, I trust You. Direct my path. Amen."
+        "Father, I trust You with all my heart. I release the outcome. Direct my path. Amen."
       ],
       "related": [
         "god-first",
+        "control",
+        "presence-without-control",
+        "fear",
         "do-not-fear",
         "wait-on-the-lord",
         "his-promises",
+        "kill-the-flesh",
         "faithfulness",
-        "patience",
-        "control"
+        "patience"
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/trust-in-the-lord",
