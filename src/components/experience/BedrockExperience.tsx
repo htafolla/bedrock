@@ -432,6 +432,17 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
               <p>Do Better. Be Better. Trust God.</p>
+              <p className="site-footer-crisis">
+                In crisis:{' '}
+                <a href="tel:988" className="site-footer-crisis-link">
+                  call or text 988
+                </a>
+                {' · '}
+                Christian counsel:{' '}
+                <a href="tel:18557714357" className="site-footer-crisis-link">
+                  1-855-771-HELP
+                </a>
+              </p>
               <p className="site-footer-meta">
                 <button
                   type="button"
@@ -447,6 +458,8 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 </button>
                 {' · '}
                 Public beta · v{document.meta.version} · revised {document.meta.revised}
+                {' · '}
+                Not a crisis hotline
               </p>
             </footer>
           </div>

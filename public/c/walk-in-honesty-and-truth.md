@@ -35,4 +35,4 @@ Let what you say be simply “Yes” or “No”; anything more than this comes 
 - [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-in-honesty-and-truth.md

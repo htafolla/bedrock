@@ -18,6 +18,7 @@ import {
 import { resolveChamberId } from '../../lib/chamber-match'
 import { scriptureChipHref } from '../../lib/verses'
 import { trackEvent } from '../../lib/analytics'
+import { CHRISTIAN_COUNSEL, CRISIS_988, CRISIS_FOOTER_LINE } from '../../lib/crisis-resources'
 
 interface GuideChamberRef {
   id: string
@@ -356,6 +357,23 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
             </p>
           ) : null}
 
+          <aside className="guide-chat-crisis" aria-label="If you are in crisis">
+            <p className="guide-chat-crisis-lead">
+              Not a crisis hotline. If you may harm yourself or others:
+            </p>
+            <p className="guide-chat-crisis-lines">
+              <a href={CRISIS_988.href} className="guide-chat-crisis-link">
+                Call or text {CRISIS_988.chip}
+              </a>
+              <span className="guide-chat-crisis-sep" aria-hidden>
+                ·
+              </span>
+              <a href={CHRISTIAN_COUNSEL.href} className="guide-chat-crisis-link">
+                Christian counsel {CHRISTIAN_COUNSEL.chip}
+              </a>
+            </p>
+          </aside>
+
           <div className="guide-chat-messages" ref={listRef}>
             {messages.length === 0 ? (
               <div className="guide-chat-empty">
@@ -429,6 +447,8 @@ export function GuideChat({ context, chambers = [], onOpenChamber }: GuideChatPr
               {busy ? '…' : 'Send'}
             </button>
           </form>
+
+          <p className="guide-chat-crisis-foot">{CRISIS_FOOTER_LINE}</p>
         </section>
       ) : null}
     </div>

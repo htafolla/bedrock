@@ -1611,6 +1611,23 @@ body {
   color: var(--muted, #a89884);
 }
 
+.chamber-card-crisis {
+  margin: 0.55rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--muted, #a89884);
+}
+
+.chamber-card-crisis a {
+  color: var(--ember-soft, #e8c9a0);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.chamber-card-crisis a:hover {
+  color: var(--beam, #f5e6c8);
+}
+
 /* Phone: share stays on title row; keep end-of-card motto + optional footer share */
 @media (max-width: 640px) {
   .chamber-card-share-footer {
@@ -2580,6 +2597,24 @@ body {
   border: none;
 }
 
+.site-footer-crisis {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted, #a89884);
+}
+
+.site-footer-crisis-link {
+  color: var(--ember-soft, #e8c9a0);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.site-footer-crisis-link:hover,
+.site-footer-crisis-link:focus-visible {
+  color: var(--beam, #f5e6c8);
+}
+
 /* Fixed footer + Guide FAB clearance (all main surfaces) */
 .mode-constellation.nav-keys .experience-main,
 .mode-constellation.nav-map .experience-main,
@@ -3523,6 +3558,52 @@ button.chamber-inline-link:focus-visible {
   color: var(--ember-soft);
   text-align: right;
   max-width: 9rem;
+}
+
+.guide-chat-crisis {
+  padding: 0.55rem 1rem 0.5rem;
+  border-bottom: 1px solid var(--glass-border);
+  background: color-mix(in srgb, var(--ember, #c4a574) 8%, transparent);
+}
+
+.guide-chat-crisis-lead {
+  margin: 0 0 0.25rem;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.guide-chat-crisis-lines {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--stone-100, #f7f1e8);
+}
+
+.guide-chat-crisis-link {
+  color: var(--ember-soft, #e8c9a0);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.guide-chat-crisis-link:hover {
+  color: var(--beam, #f5e6c8);
+}
+
+.guide-chat-crisis-sep {
+  margin: 0 0.35rem;
+  color: var(--muted);
+}
+
+.guide-chat-crisis-foot {
+  margin: 0;
+  padding: 0.4rem 1rem 0.55rem;
+  font-size: 0.65rem;
+  line-height: 1.35;
+  color: var(--muted);
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
 }
 
 .guide-chat-banner,

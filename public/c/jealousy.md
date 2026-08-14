@@ -44,4 +44,4 @@ But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, f
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/jealousy.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/jealousy.md

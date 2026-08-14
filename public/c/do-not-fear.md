@@ -35,4 +35,4 @@ You cannot add a single hour to your life. Even the hairs of your head are all n
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-fear.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/do-not-fear.md

@@ -44,4 +44,4 @@ For the grace of God has appeared, bringing salvation for all people, training u
 - [Patience](https://bedrock.rippel.ai/c/patience)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/self-control.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/self-control.md

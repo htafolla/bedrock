@@ -30,4 +30,4 @@ Look not only to your own interests, but also to the interests of others.
 - [Love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/choose-selfless-love.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/choose-selfless-love.md

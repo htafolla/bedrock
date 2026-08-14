@@ -184,6 +184,11 @@ function ChamberView({
       <footer className="chamber-card-end" aria-label="Bedrock">
         <p className="chamber-card-motto">Do Better. Be Better. Trust God.</p>
         <p className="chamber-card-end-meta">Hold first · Public beta · Not a crisis hotline</p>
+        <p className="chamber-card-crisis">
+          In crisis: <a href="tel:988">call or text 988</a>
+          {' · '}
+          Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a>
+        </p>
       </footer>
     </article>
   )

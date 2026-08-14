@@ -29,4 +29,4 @@ Know this, my beloved brothers: let every person be quick to hear, slow to speak
 - [Restore Gently and Give Time](https://bedrock.rippel.ai/c/restore-gently-and-give-time)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/be-quick-to-listen.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/be-quick-to-listen.md

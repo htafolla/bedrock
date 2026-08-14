@@ -117,9 +117,18 @@ export function AboutPanel({ document, onClose }: AboutPanelProps) {
           </button>
         </div>
 
+        <p className="about-meta about-crisis">
+          In crisis:{' '}
+          <a href="tel:988">call or text 988</a>
+          {' · '}
+          Christian counsel:{' '}
+          <a href="tel:18557714357">1-855-771-HELP</a>
+        </p>
         <p className="about-meta">
           Public beta · v{meta.version}
           {meta.revised ? ` · revised ${meta.revised}` : ''}
+          {' · '}
+          Not a crisis hotline
         </p>
       </div>
     </div>

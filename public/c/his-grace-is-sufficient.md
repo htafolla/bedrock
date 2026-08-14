@@ -34,4 +34,4 @@ We love because He first loved us.
 - [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/his-grace-is-sufficient.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/his-grace-is-sufficient.md

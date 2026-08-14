@@ -236,7 +236,7 @@ ${verses}
 ${related}
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: ${chamberPublicUrl(c.id)}.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: ${chamberPublicUrl(c.id)}.md
 `
 }
 
@@ -660,6 +660,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     <footer class="page-card-footer">
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta v${esc(meta.version)} · revised ${esc(meta.revised)} · Not a crisis hotline.</p>
+      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
       <p><a href="${ORIGIN}/export/chambers.json">Full atlas JSON</a> · <a href="${ORIGIN}/llms-full.txt">llms-full.txt</a></p>
     </footer>
   </main>
@@ -883,6 +884,7 @@ function doorHtml(k) {
     <footer class="page-card-footer">
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta · Not a crisis hotline.</p>
+      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
     </footer>
   </main>
 </body>
@@ -991,6 +993,7 @@ function journeyHtml(j) {
     <footer class="page-card-footer">
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta · Not a crisis hotline.</p>
+      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
     </footer>
   </main>
 </body>
@@ -1147,6 +1150,7 @@ ${poemHtml}
     <footer class="page-card-footer">
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta · Not a crisis hotline.</p>
+      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
     </footer>
   </main>
 </body>

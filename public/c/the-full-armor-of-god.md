@@ -38,4 +38,4 @@ In all circumstances take up the shield of faith, with which you can extinguish 
 - [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-full-armor-of-god.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/the-full-armor-of-god.md

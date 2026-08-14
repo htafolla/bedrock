@@ -50,4 +50,4 @@ Love your enemies and pray for those who persecute you.
 - [Wounded](https://bedrock.rippel.ai/c/wounded)
 
 ---
-Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord.md
