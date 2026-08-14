@@ -40,4 +40,4 @@ Be still before the Lord and wait patiently for Him; fret not yourself over the 
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wait-on-the-lord.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wait-on-the-lord.md

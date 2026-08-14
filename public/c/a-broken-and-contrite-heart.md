@@ -33,4 +33,4 @@ The sacrifices of God are a broken spirit; a broken and contrite heart, O God, Y
 - [Loss](https://bedrock.rippel.ai/c/loss)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/a-broken-and-contrite-heart.md

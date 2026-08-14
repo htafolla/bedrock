@@ -46,4 +46,4 @@ He will wipe away every tear from their eyes, and death shall be no more, neithe
 - [Obsession](https://bedrock.rippel.ai/c/rumination)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/loss.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/loss.md

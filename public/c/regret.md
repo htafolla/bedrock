@@ -45,4 +45,4 @@ Create in me a clean heart, O God, and renew a right spirit within me.
 - [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/regret.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/regret.md

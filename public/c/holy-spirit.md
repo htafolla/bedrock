@@ -62,4 +62,4 @@ Behold, I have given you authority to tread on serpents and scorpions, and over 
 - [Love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/holy-spirit.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/holy-spirit.md

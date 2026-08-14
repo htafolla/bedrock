@@ -61,4 +61,4 @@ The God of peace will soon crush Satan under your feet.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-adversary.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-adversary.md

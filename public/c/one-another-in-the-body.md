@@ -35,4 +35,4 @@ Let us consider how to stir up one another to love and good works, not neglectin
 - [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-another-in-the-body.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/one-another-in-the-body.md

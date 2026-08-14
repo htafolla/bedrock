@@ -48,4 +48,4 @@ If we live by the Spirit, let us also keep in step with the Spirit.
 - [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-by-the-spirit.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/walk-by-the-spirit.md

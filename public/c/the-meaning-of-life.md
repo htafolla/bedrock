@@ -34,4 +34,4 @@ On these two commandments depend all the Law and the Prophets.
 - [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-meaning-of-life.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/the-meaning-of-life.md

@@ -46,4 +46,4 @@ God’s love has been poured into our hearts through the Holy Spirit who has bee
 - [Jealousy](https://bedrock.rippel.ai/c/jealousy)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/love.md

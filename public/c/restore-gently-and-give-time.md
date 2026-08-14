@@ -32,4 +32,4 @@ For everything there is a season, and a time for every matter under heaven.
 - [Gentleness](https://bedrock.rippel.ai/c/gentleness)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/restore-gently-and-give-time.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/restore-gently-and-give-time.md

@@ -42,4 +42,4 @@ Return to your first love. Seek first His kingdom. Fear the Lord. Abide in Him. 
 - [The Lord's Prayer](https://bedrock.rippel.ai/c/the-lords-prayer)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/god-first.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/god-first.md

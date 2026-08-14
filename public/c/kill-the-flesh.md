@@ -71,4 +71,4 @@ When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](ht
 - [The Full Armor of God](https://bedrock.rippel.ai/c/the-full-armor-of-god)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/master-the-flesh.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/master-the-flesh.md

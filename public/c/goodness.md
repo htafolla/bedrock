@@ -44,4 +44,4 @@ Surely goodness and mercy shall follow me all the days of my life, and I shall d
 - [Faithfulness](https://bedrock.rippel.ai/c/faithfulness)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/goodness.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/goodness.md

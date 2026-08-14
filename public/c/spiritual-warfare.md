@@ -58,4 +58,4 @@ You are of your father the devil, and your will is to do your father’s desires
 - [The Cross and Our Justification](https://bedrock.rippel.ai/c/the-cross-and-our-justification)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-warfare.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-warfare.md

@@ -50,4 +50,4 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 - [The Adversary](https://bedrock.rippel.ai/c/the-adversary)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/rumination.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/rumination.md

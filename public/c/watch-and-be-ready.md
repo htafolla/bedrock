@@ -48,4 +48,4 @@ I have said these things to you, that when their hour comes you may remember tha
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/watch-and-be-ready.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/watch-and-be-ready.md

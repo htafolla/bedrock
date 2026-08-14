@@ -40,4 +40,4 @@ The harvest is the end of the age, and the reapers are angels. … The Son of Ma
 - [God First](https://bedrock.rippel.ai/c/god-first)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wheat-and-tares.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/wheat-and-tares.md

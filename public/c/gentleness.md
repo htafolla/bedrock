@@ -44,4 +44,4 @@ Always being prepared to make a defense to anyone who asks you for a reason for 
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/gentleness.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/gentleness.md

@@ -42,4 +42,4 @@ Therefore do not be anxious about tomorrow, for tomorrow will be anxious for its
 - [Control](https://bedrock.rippel.ai/c/control)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/trust-in-the-lord.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/trust-in-the-lord.md

@@ -53,4 +53,4 @@ If I speak in the tongues of men and of angels, but have not love, I am a noisy 
 - [Love](https://bedrock.rippel.ai/c/love)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-gifts.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/spiritual-gifts.md

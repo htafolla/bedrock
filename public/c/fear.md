@@ -47,4 +47,4 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 - [Peace](https://bedrock.rippel.ai/c/peace)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fear.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/fear.md

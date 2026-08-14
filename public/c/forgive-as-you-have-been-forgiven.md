@@ -32,4 +32,4 @@ Be kind to one another, tenderhearted, forgiving one another.
 - [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven.md
