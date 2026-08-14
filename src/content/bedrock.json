@@ -4015,10 +4015,6 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "This is the other path when [Master the Flesh](chamber:kill-the-flesh) meets real presence. Warm when they are near is not a campaign to fix or define the relationship. One is showing up cleanly in the moment. The other is managing the outcome. Presence is not control."
-        },
-        {
-          "type": "paragraph",
           "text": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!"
         },
         {
@@ -4035,11 +4031,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding."
-        },
-        {
-          "type": "paragraph",
-          "text": "When they are near: relax and be present — listen, wait for responses, talk less; do not form a reply while they are speaking. Do not take or force control of the present — just exist in it — or of the future — it is unknown. When the urge hits, name the old hook, take the thought captive to Christ, and do the next right thing in front of you."
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
         }
       ],
       "verses": [
@@ -4068,10 +4060,11 @@
           "verseStart": 34
         },
         {
-          "display": "Proverbs 3:5",
+          "display": "Proverbs 3:5–6",
           "book": "Proverbs",
           "chapter": 3,
-          "verseStart": 5
+          "verseStart": 5,
+          "verseEnd": 6
         }
       ],
       "hacks": [

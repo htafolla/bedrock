@@ -43,70 +43,117 @@
   } catch(e) {}
 })();
 </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600;650;700&display=swap" rel="stylesheet" />
   <style>
-    :root { color-scheme: dark; --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574; --glass:rgba(18,14,12,.9); --border:rgba(196,165,116,.22); }
+    /* Static /c pages mirror SPA ChamberFocus station chrome (god-first form) */
+    :root {
+      color-scheme: dark;
+      --bg:#0c0a09; --ink:#f7f1e8; --muted:#a89884; --beam:#f5e6c8; --ember:#c4a574;
+      --ember-soft:#e8c9a0; --glass:rgba(18,14,12,.92); --border:rgba(196,165,116,.22);
+      --glass-border:rgba(196,165,116,.22); --surface-inset:rgba(0,0,0,.22);
+      --ember-border-strong:rgba(196,165,116,.55); --font-display:"Cormorant Garamond", Georgia, serif;
+      --font-body:"Source Sans 3", system-ui, sans-serif;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: "Source Sans 3", system-ui, sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+    body { margin:0; font-family:var(--font-body); background:var(--bg); color:var(--ink); line-height:1.55; }
     a { color:var(--ember); }
-    .wrap { max-width: 40rem; margin: 0 auto; padding: 1.25rem 1.15rem 3rem; }
-    .kicker { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ember); margin:0 0 .4rem; }
-    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; font-size:clamp(2rem,6vw,2.75rem); color:var(--beam); margin:.2rem 0; line-height:1.1; }
-    .summary { color:var(--muted); margin:.5rem 0 1rem; font-size:1.05rem; }
-    .hold { border:1px solid rgba(196,165,116,.35); border-radius:14px; padding:.9rem 1rem 1rem; margin:0 0 1.15rem; background:linear-gradient(165deg,rgba(196,165,116,.12),rgba(14,11,9,.55)); }
-    .hold .kicker-hold { font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); font-weight:700; margin:0 0 .55rem; }
-    .hold ul { list-style:none; padding:0; margin:.35rem 0; display:flex; flex-direction:column; gap:.5rem; }
-    .hold li { padding:.65rem .8rem; border-radius:10px; border:1px solid rgba(196,165,116,.22); background:rgba(0,0,0,.2); border-left:2px solid rgba(196,165,116,.55); line-height:1.45; }
-    .hold li.hold-group { padding:0; border:none; background:transparent; border-left:none; }
-    .hold .hold-nested { gap:.4rem; margin:0; }
-    .hold .hold-nested li { font-size:.98rem; }
-    .card { background:var(--glass); border:1px solid var(--border); border-radius:14px; padding:1.1rem 1.15rem; margin:0 0 1rem; }
-    h2 { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.2rem; color:var(--beam); margin:0 0 .65rem; letter-spacing:.04em; }
-    .card p, .card li, .hold li { margin:.4rem 0; color:var(--ink); }
-    .card ul, .hold ul { padding-left:1.1rem; margin:.35rem 0; }
-    .body-head { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); margin:1.15rem 0 .4rem; line-height:1.25; }
-    h3.body-head { font-size:1.2rem; letter-spacing:.03em; border-bottom:1px solid var(--border); padding-bottom:.35rem; margin-top:1.35rem; }
-    h3.body-head:first-of-type { margin-top:.35rem; }
-    h4.body-head { font-size:1.02rem; margin:1rem 0 .35rem; color:var(--ember); font-family: system-ui, sans-serif; font-weight:600; letter-spacing:.02em; }
-    .body-list { margin:.2rem 0 .85rem; padding-left:1.35rem; list-style: disc; }
-    .body-list li { margin:.35rem 0; line-height:1.5; padding-left:.15rem; }
-    .card p { margin:.45rem 0 .65rem; line-height:1.55; }
-    .card-rubric { padding:.85rem .85rem 1rem; }
-    .prayer { font-style:italic; color:var(--beam); }
+    .wrap { max-width: 45rem; margin: 0 auto; padding: 1rem .9rem 3rem; }
+    .chamber-in-focus {
+      background:var(--glass); border:1px solid var(--border); border-radius:16px;
+      padding:1.1rem 1.05rem 1.35rem; box-shadow:0 12px 40px rgba(0,0,0,.35);
+    }
+    .chamber-strike-stage { position:relative; isolation:isolate; }
+    .chamber-illustration {
+      position:absolute; z-index:0; top:-.35rem; right:-.85rem;
+      width:min(13.5rem,52%); max-width:15rem; margin:0; padding:0;
+      pointer-events:none; opacity:.42; user-select:none;
+    }
+    .chamber-illustration img { display:block; width:100%; height:auto; border:none; background:transparent; }
+    .chamber-header, .hold-block { position:relative; z-index:1; }
+    .chamber-kicker {
+      margin:0; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--ember-soft); font-weight:500;
+    }
+    .chamber-title {
+      font-family:var(--font-display); font-weight:600; color:var(--beam);
+      font-size:clamp(1.65rem,4vw,2.2rem); margin:.35rem 0 .5rem; line-height:1.15;
+    }
+    .chamber-summary {
+      margin:0 0 .85rem; color:var(--muted); font-size:1.05rem; line-height:1.5; max-width:42ch;
+    }
+    .chamber.has-illustration .chamber-title,
+    .chamber.has-illustration .chamber-summary { padding-right:min(40%,10rem); }
+    .nav { display:flex; flex-wrap:wrap; gap:.55rem; margin:0 0 1.1rem; font-size:.88rem; position:relative; z-index:1; }
+    .nav a {
+      text-decoration:none; border:1px solid var(--border); color:var(--beam);
+      padding:.4rem .75rem; border-radius:999px; background:rgba(196,165,116,.08);
+    }
+    .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
+    /* Hold-first block — same hierarchy as SPA */
+    .hold-block {
+      margin-top:.35rem; padding:1rem .95rem 1.05rem;
+      border:1px solid rgba(196,165,116,.32); border-radius:14px;
+      background:linear-gradient(165deg,rgba(196,165,116,.1),rgba(14,11,9,.45));
+    }
+    .hold-block-kicker {
+      margin:0 0 .55rem; font-size:.68rem; letter-spacing:.16em; text-transform:uppercase;
+      font-weight:700; color:var(--ember);
+    }
+    .field-layer { margin-top:.75rem; }
+    .field-layer:first-of-type { margin-top:0; }
+    .field-layer-label {
+      margin:0 0 .35rem; font-size:.7rem; letter-spacing:.2em; text-transform:uppercase;
+      color:var(--ember); font-weight:650;
+    }
+    .field-layer-hint { margin:0 0 .65rem; font-size:.85rem; color:var(--muted); line-height:1.4; }
+    .field-list {
+      margin:0; padding:0; list-style:none;
+      display:flex; flex-direction:column; gap:.65rem;
+    }
+    .field-list li {
+      margin:0; padding:.75rem .9rem; border-radius:10px;
+      border:1px solid var(--glass-border); background:var(--surface-inset);
+      font-size:1rem; line-height:1.55; color:var(--ink);
+    }
+    .field-hacks li { border-left:3px solid var(--ember-border-strong); }
+    .prayer-list li, .prayer-item {
+      font-style:italic; color:var(--beam); border-left-color:rgba(196,165,116,.35);
+    }
+    /* Truth — SPA field-truth-depth */
+    .field-truth-depth {
+      margin-top:1.75rem; padding-top:1.25rem; border-top:1px solid var(--border);
+    }
+    .field-truth-depth > .field-layer-label { color:var(--ember-soft); font-weight:500; }
+    .chamber-body p, .chamber-paragraph {
+      margin:0 0 1.15rem; font-size:1.08rem; line-height:1.75; color:var(--ink); max-width:62ch;
+    }
+    .chamber-body p:last-child, .chamber-paragraph:last-child { margin-bottom:0; }
+    .body-head {
+      font-family:var(--font-display); color:var(--beam);
+      margin:1.15rem 0 .4rem; line-height:1.25;
+    }
+    h3.body-head { font-size:1.2rem; border-bottom:1px solid var(--border); padding-bottom:.35rem; }
+    h4.body-head { font-size:1.02rem; color:var(--ember); font-family:var(--font-body); font-weight:600; }
+    .body-list { margin:.2rem 0 .85rem; padding-left:1.2rem; list-style:disc; }
+    .body-list li { margin:.35rem 0; line-height:1.5; }
     blockquote { margin:.5rem 0; padding-left:.85rem; border-left:2px solid var(--ember); color:var(--muted); }
-    .strike-stage { position:relative; isolation:isolate; }
-    .illustration {
-      position:absolute; z-index:0; top:-.25rem; right:-.65rem;
-      width:min(12.5rem,50%); max-width:14rem; margin:0; padding:0;
-      pointer-events:none; opacity:.4; user-select:none;
+    a.chamber-inline-link {
+      color:var(--ember-soft); font-weight:600; text-decoration:underline;
+      text-underline-offset:.15em; text-decoration-color:rgba(196,165,116,.55);
     }
-    .illustration img { display:block; width:100%; height:auto; border:none; background:transparent; object-fit:contain; }
-    .strike-stage > .kicker,
-    .strike-stage > h1,
-    .strike-stage > .summary,
-    .strike-stage > .nav,
-    .strike-stage > .hold { position:relative; z-index:1; }
-    .has-ill h1, .has-ill .summary { padding-right:min(40%,10rem); }
-    .has-ill .hold { padding-right:min(26%,6.5rem); }
-    @media (max-width:420px) {
-      .illustration { width:min(9rem,44%); opacity:.32; right:-.35rem; }
-      .has-ill h1, .has-ill .summary { padding-right:min(38%,8rem); }
-      .has-ill .hold { padding-right:.9rem; }
-    }
-    /* Scripture + Connected truth — same classes/language as SPA field guide */
+    a.chamber-inline-link:hover { color:var(--beam); text-decoration-color:var(--ember); }
+    /* Scripture + Connected truth — SPA chips */
     .chamber-verses, .related-web {
-      margin-top:1.75rem; padding-top:1.25rem;
-      border-top:1px solid var(--border);
+      margin-top:1.75rem; padding-top:1.25rem; border-top:1px solid var(--border);
     }
     .verses-heading {
       margin:0 0 .75rem; font-size:.7rem; letter-spacing:.2em;
       text-transform:uppercase; color:var(--muted); font-weight:500;
     }
-    .field-layer-hint {
-      margin:0 0 .75rem; font-size:.85rem; color:var(--muted); line-height:1.4;
-    }
     .verses-list, .related-list {
-      list-style:none; margin:0; padding:0;
-      display:flex; flex-wrap:wrap; gap:.5rem;
+      list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.5rem;
     }
     .verse-link { display:inline-flex; align-items:center; }
     .verse-etched {
@@ -115,83 +162,97 @@
     }
     .verse-primary {
       color:var(--beam); text-decoration:none;
-      font-family:"Cormorant Garamond", Georgia, serif; font-size:1.05rem;
-      border-bottom:1px solid transparent;
+      font-family:var(--font-display); font-size:1.05rem;
     }
-    .verse-primary:hover { color:#fff; border-bottom-color:var(--ember); }
+    .verse-primary:hover { color:#fff; }
     .related-link {
-      display:inline-flex; font-family:"Cormorant Garamond", Georgia, serif;
-      font-size:1rem; color:var(--beam);
+      display:inline-flex; font-family:var(--font-display); font-size:1rem; color:var(--beam);
       background:rgba(196,165,116,.12); border:1px solid rgba(196,165,116,.28);
       border-radius:999px; padding:.4rem .85rem; text-decoration:none;
     }
     .related-link:hover { border-color:var(--ember); background:rgba(196,165,116,.2); }
-    a.chamber-inline-link { color:var(--beam); text-decoration:underline; text-underline-offset:.15em; text-decoration-color:rgba(196,165,116,.55); }
-    a.chamber-inline-link:hover { color:#fff6e8; text-decoration-color:var(--ember); }
-    .chamber-verse-chips { margin:.55rem 0 .35rem; }
-    .chamber-verse-chips .verses-list { gap:.45rem; }
-    .chamber-verse-chips .verse-primary { font-size:.9rem; }
-    .body-list { list-style:none; padding-left:0; }
-    .body-list li {
-      margin:.45rem 0; padding:.55rem .75rem;
-      border-left:2px solid rgba(196,165,116,.35);
-      background:rgba(0,0,0,.18); border-radius:0 8px 8px 0;
-      line-height:1.45;
+    .chamber-card-end {
+      margin-top:1.35rem; padding-top:1rem; border-top:1px solid var(--border); text-align:center;
     }
-    .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
-    .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
-    .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
-    footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
-    .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
+    .chamber-card-motto {
+      margin:0; font-family:var(--font-display); font-size:1.05rem; font-style:italic; color:var(--beam);
+    }
+    .chamber-card-end-meta { margin:.4rem 0 0; font-size:.72rem; color:var(--muted); letter-spacing:.04em; }
+    .chamber-card-crisis { margin:.55rem 0 0; font-size:.72rem; color:var(--muted); line-height:1.45; }
+    .chamber-card-crisis a { color:var(--ember-soft); }
+    /* Rubric denser form only when chamber-rubric */
+    .chamber-rubric .hold-block { border-color:rgba(196,165,116,.4); }
+    .rubric-band { margin:1rem 0; }
+    .rubric-band-title { font-family:var(--font-display); color:var(--beam); font-size:1.2rem; }
+    .rubric-standard { margin:.75rem 0; padding:.75rem; border:1px solid var(--border); border-radius:12px; }
+    .rubric-when { font-weight:600; color:var(--ember-soft); margin:.75rem 0 .35rem; }
+    .rubric-list { list-style:none; padding:0; }
+    .rubric-list li {
+      margin:.45rem 0; padding:.55rem .75rem; border-left:2px solid rgba(196,165,116,.35);
+      background:rgba(0,0,0,.18); border-radius:0 8px 8px 0;
+    }
+    @media (max-width:420px) {
+      .chamber-illustration { width:min(9rem,44%); opacity:.32; right:-.35rem; }
+      .chamber.has-illustration .chamber-title,
+      .chamber.has-illustration .chamber-summary { padding-right:min(36%,7.5rem); }
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <div class="strike-stage">
-    
-    <p class="kicker">First principle · Bedrock · Hold first</p>
-    <h1>Loss</h1>
-    <p class="summary">Grief for real loss and possible loss — He is near the brokenhearted.</p>
-    <nav class="nav" aria-label="Chamber actions">
-      <a class="primary" href="/?c=loss">Open in field guide</a>
-      <a href="/c/loss.md">Markdown</a>
-      <a href="/">Home</a>
-      <a href="/llms.txt">llms.txt</a>
-    </nav>
-    <section class="hold" aria-labelledby="fire">
-      <p class="kicker-hold">This hour</p>
-      <h2 id="fire">Under fire</h2>
-      <p class="field-layer-hint">The next right hold — walk this hour.</p>
-      <ul><li>The Lord is near the brokenhearted. Mourning is not unbelief.</li>
+    <article class="chamber chamber-in-focus hold-first" id="loss">
+      <div class="chamber-strike-stage">
+        
+        <header class="chamber-header">
+          <p class="chamber-kicker">First principle</p>
+          <h1 class="chamber-title">Loss</h1>
+          <p class="chamber-summary">Grief for real loss and possible loss — He is near the brokenhearted.</p>
+        </header>
+        <nav class="nav" aria-label="Chamber actions">
+          <a class="primary" href="/?c=loss">Open in field guide</a>
+          <a href="/c/loss.md">Markdown</a>
+          <a href="/">Home</a>
+        </nav>
+        <div class="hold-block" id="loss-hold">
+          <p class="hold-block-kicker">This hour</p>
+          <section class="field-layer field-hacks" aria-labelledby="fire">
+            <h2 id="fire" class="field-layer-label">Under fire</h2>
+            <p class="field-layer-hint">The next right hold — walk this hour.</p>
+            <ul class="field-list field-hacks"><li>The Lord is near the brokenhearted. Mourning is not unbelief.</li>
 <li>Do not grieve as those without hope. Tears and hope can share a room.</li>
 <li>The Lord gave and the Lord has taken away. Bless His name with empty hands.</li></ul>
-      <h2 id="prayer">Prayer</h2>
-      <p class="prayer">Father, my hands are empty. Be near. Amen.</p>
-    </section>
-    </div>
-    <section class="card" aria-labelledby="truth">
-      <h2 id="truth">Truth</h2>
-      <p>The Lord is near to the brokenhearted and saves the crushed in spirit.</p>
-<p>Blessed are those who mourn, for they shall be comforted.</p>
-<p>But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope.</p>
-<p>The Lord gave, and the Lord has taken away; blessed be the name of the Lord.</p>
-<p>He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.</p>
-    </section>
-    <footer class="chamber-verses" aria-labelledby="scripture">
-      <h3 id="scripture" class="verses-heading">Scripture</h3>
-      <p class="field-layer-hint">Opens the passage on Bible Gateway.</p>
-      <ul class="verses-list">
+          </section>
+          <section class="field-layer field-prayers" aria-labelledby="prayer">
+            <h2 id="prayer" class="field-layer-label">Prayer</h2>
+            <p class="field-layer-hint">When you do not have the words.</p>
+            <ul class="field-list prayer-list"><li class="prayer-item">Father, my hands are empty. Be near. Amen.</li></ul>
+          </section>
+        </div>
+      </div>
+      <section class="field-layer field-truth-depth" aria-labelledby="truth">
+        <h2 id="truth" class="field-layer-label">Truth</h2>
+        <p class="field-layer-hint">When you can read deeper — Scripture-rooted steel.</p>
+        <div class="chamber-body"><p class="chamber-paragraph">The Lord is near to the brokenhearted and saves the crushed in spirit.</p>
+<p class="chamber-paragraph">Blessed are those who mourn, for they shall be comforted.</p>
+<p class="chamber-paragraph">But we do not want you to be uninformed, brothers, about those who are asleep, that you may not grieve as others do who have no hope.</p>
+<p class="chamber-paragraph">The Lord gave, and the Lord has taken away; blessed be the name of the Lord.</p>
+<p class="chamber-paragraph">He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.</p></div>
+      </section>
+      <footer class="chamber-verses" aria-labelledby="scripture">
+        <h3 id="scripture" class="verses-heading">Scripture</h3>
+        <p class="field-layer-hint">Opens the passage on Bible Gateway.</p>
+        <ul class="verses-list">
 <li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Psalm+34%3A18&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Psalm 34:18 on Bible Gateway">Psalm 34:18</a></span></li>
 <li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Matthew+5%3A4&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Matthew 5:4 on Bible Gateway">Matthew 5:4</a></span></li>
 <li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A13&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open 1 Thessalonians 4:13 on Bible Gateway">1 Thessalonians 4:13</a></span></li>
 <li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Job+1%3A21&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Job 1:21 on Bible Gateway">Job 1:21</a></span></li>
 <li><span class="verse-link verse-etched"><a class="verse-primary" href="https://www.biblegateway.com/passage/?search=Revelation+21%3A4&amp;version=NIV" target="_blank" rel="noopener noreferrer" title="Open Revelation 21:4 on Bible Gateway">Revelation 21:4</a></span></li>
 </ul>
-    </footer>
-    <nav class="related-web" aria-label="Related first principles" aria-labelledby="related">
-      <h3 id="related" class="verses-heading">Connected truth</h3>
-      <p class="field-layer-hint">Related chambers — tap to open.</p>
-      <ul class="related-list"><li><a class="related-link" href="/c/lament-and-pour-out-your-heart">Lament and Pour Out Your Heart</a></li>
+      </footer>
+      <nav class="related-web" aria-label="Related first principles" aria-labelledby="related">
+        <h3 id="related" class="verses-heading">Connected truth</h3>
+        <p class="field-layer-hint">Related chambers — tap to open.</p>
+        <ul class="related-list"><li><a class="related-link" href="/c/lament-and-pour-out-your-heart">Lament and Pour Out Your Heart</a></li>
 <li><a class="related-link" href="/c/a-broken-and-contrite-heart">A Broken and Contrite Heart</a></li>
 <li><a class="related-link" href="/c/hope-of-glory">Hope of Glory</a></li>
 <li><a class="related-link" href="/c/wait-on-the-lord">Wait on the Lord</a></li>
@@ -199,13 +260,16 @@
 <li><a class="related-link" href="/c/fear">Fear</a></li>
 <li><a class="related-link" href="/c/wounded">Wounded</a></li>
 <li><a class="related-link" href="/c/rumination">Obsession</a></li></ul>
-    </nav>
-    <footer class="page-card-footer">
-      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
-      <p>Hold first · Public beta v0.2.0-beta · revised 2026-08-10 · Not a crisis hotline.</p>
-      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
-      <p><a href="https://bedrock.rippel.ai/export/chambers.json">Full atlas JSON</a> · <a href="https://bedrock.rippel.ai/llms-full.txt">llms-full.txt</a></p>
-    </footer>
+      </nav>
+      <footer class="chamber-card-end" aria-label="Bedrock">
+        <p class="chamber-card-motto">Do Better. Be Better. Trust God.</p>
+        <p class="chamber-card-end-meta">Hold first · Public beta v0.2.0-beta · Not a crisis hotline</p>
+        <p class="chamber-card-crisis">
+          In crisis: <a href="tel:988">call or text 988</a>
+          · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a>
+        </p>
+      </footer>
+    </article>
   </main>
 </body>
 </html>

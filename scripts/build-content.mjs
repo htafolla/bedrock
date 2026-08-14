@@ -1456,15 +1456,14 @@ const document = {
       'Presence Without Control',
       'Relax. Be present. Don’t take or force control of the present or the future.',
       [
-        'This is the other path when [Master the Flesh](chamber:kill-the-flesh) meets real presence. Warm when they are near is not a campaign to fix or define the relationship. One is showing up cleanly in the moment. The other is managing the outcome. Presence is not control.',
+        // Same Truth form as god-first: short Scripture paragraphs only (holds carry practice)
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
         'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
-        'Trust in the Lord with all your heart, and do not lean on your own understanding.',
-        'When they are near: relax and be present — listen, wait for responses, talk less; do not form a reply while they are speaking. Do not take or force control of the present — just exist in it — or of the future — it is unknown. When the urge hits, name the old hook, take the thought captive to Christ, and do the next right thing in front of you.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
       ],
-      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5',
+      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6',
     ),
     chamber(
       'Renew Your Mind',
