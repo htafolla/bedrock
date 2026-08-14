@@ -65,6 +65,15 @@ function list(...items) {
 }
 
 /**
+ * Station SSOT (kind defaults to chamber — not Standard/rubric).
+ *
+ * Uniform design contract (enforced by content-integrity tests):
+ * - Under fire = 1–3 holds (field aids)
+ * - Prayer = short release (field aids)
+ * - Truth body = Scripture paragraphs for default stations
+ * - Lists/headings in Truth are exceptional (allowlist: kill-the-flesh battle station, rubrics)
+ * - Do not copy Standard SOP shape onto ordinary stations
+ *
  * @param {string} title
  * @param {string} summary
  * @param {(string | { type: string })[]} bodyLines strings → paragraphs; objects pass through

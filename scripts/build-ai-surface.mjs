@@ -294,14 +294,21 @@ function analyticsHeadSnippet(pagePath) {
   return parts.join('\n  ')
 }
 
-function renderBodyBlockHtml(b) {
+/**
+ * @param {object} b body block
+ * @param {{ isRubric?: boolean }} [opts] Standard SOP chrome only when isRubric
+ */
+function renderBodyBlockHtml(b, opts = {}) {
+  const isRubric = Boolean(opts.isRubric)
   if (b.type === 'heading') {
     const tag = b.level === 2 ? 'h3' : 'h4'
     return `<${tag} class="body-head">${esc(b.text)}</${tag}>`
   }
   if (b.type === 'list') {
     const items = (b.items || []).map((item) => `<li>${esc(item)}</li>`).join('\n')
-    return `<ul class="body-list rubric-list">\n${items}\n</ul>`
+    // Stations: plain disc list. Standard: rubric SOP list chrome.
+    const cls = isRubric ? 'body-list rubric-list' : 'body-list'
+    return `<ul class="${cls}">\n${items}\n</ul>`
   }
   if (b.type === 'quote') {
     return `<blockquote><p>${esc(b.text)}</p></blockquote>`
@@ -311,11 +318,11 @@ function renderBodyBlockHtml(b) {
       const refs = parseScriptureCitationLine(b.text)
       if (refs.length) return verseChipRowHtml(refs)
     }
-    if (/^Prayer:\s*/i.test(b.text)) {
+    if (isRubric && /^Prayer:\s*/i.test(b.text)) {
       const body = b.text.replace(/^Prayer:\s*/i, '').trim()
       return `<aside class="rubric-prayer" aria-label="Prayer"><span class="rubric-prayer-label">Prayer</span><p class="rubric-prayer-text">${esc(body)}</p></aside>`
     }
-    if (/^When .+:\s*$/i.test(b.text)) {
+    if (isRubric && /^When .+:\s*$/i.test(b.text)) {
       return `<p class="rubric-when">${esc(b.text.replace(/:\s*$/, ''))}</p>`
     }
     // Inline chamber links: [Label](chamber:id) → /c/{publicSlug}
@@ -338,9 +345,9 @@ function renderBodyBlockHtml(b) {
   return ''
 }
 
-/** Flat body (ordinary chambers). */
+/** Flat body (ordinary stations) — never SOP/rubric chrome. */
 function bodyToHtml(body) {
-  return (body || []).map(renderBodyBlockHtml).filter(Boolean).join('\n')
+  return (body || []).map((b) => renderBodyBlockHtml(b, { isRubric: false })).filter(Boolean).join('\n')
 }
 
 /**
@@ -381,7 +388,10 @@ function rubricBodyToHtml(body) {
 
   return bands
     .map((sec) => {
-      const intro = sec.intro.map(renderBodyBlockHtml).filter(Boolean).join('\n')
+      const intro = sec.intro
+        .map((b) => renderBodyBlockHtml(b, { isRubric: true }))
+        .filter(Boolean)
+        .join('\n')
       const cards = sec.cards
         .map((c) => {
           const m = String(c.title || '')
@@ -392,7 +402,10 @@ function rubricBodyToHtml(body) {
           const numHtml = num
             ? `<span class="rubric-num" aria-hidden="true">${esc(num)}</span>`
             : ''
-          const body = c.blocks.map(renderBodyBlockHtml).filter(Boolean).join('\n')
+          const body = c.blocks
+            .map((b) => renderBodyBlockHtml(b, { isRubric: true }))
+            .filter(Boolean)
+            .join('\n')
           return `<article class="rubric-standard">
 <header class="rubric-standard-head">${numHtml}<h4 class="rubric-standard-title">${esc(label)}</h4></header>
 <div class="rubric-standard-body">${body}</div>

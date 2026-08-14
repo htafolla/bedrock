@@ -42,6 +42,8 @@ function renderBlock(
   key: number,
   ipfsCid?: string | null,
   onSelectChamber?: (id: string) => void,
+  /** Standard (rubric) only — never apply SOP chrome to ordinary stations */
+  isRubric = false,
 ) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
@@ -55,8 +57,9 @@ function renderBlock(
     )
   }
   if (block.type === 'list') {
+    // rubric-list = SOP band chrome. Stations use plain chamber-list only.
     return (
-      <ul key={key} className="chamber-list rubric-list">
+      <ul key={key} className={isRubric ? 'chamber-list rubric-list' : 'chamber-list'}>
         {block.items.map((item) => (
           <li key={item}>{item}</li>
         ))}
@@ -84,7 +87,8 @@ function renderBlock(
       )
     }
   }
-  if (block.type === 'paragraph' && PRAYER_RE.test(block.text)) {
+  // Prayer: / When: bands exist only in Standard (rubric) body — not stations
+  if (isRubric && block.type === 'paragraph' && PRAYER_RE.test(block.text)) {
     const body = block.text.replace(PRAYER_RE, '').trim()
     return (
       <aside key={key} className="rubric-prayer" aria-label="Prayer">
@@ -93,7 +97,7 @@ function renderBlock(
       </aside>
     )
   }
-  if (block.type === 'paragraph' && WHEN_RE.test(block.text)) {
+  if (isRubric && block.type === 'paragraph' && WHEN_RE.test(block.text)) {
     return (
       <p key={key} className="rubric-when">
         {block.text.replace(/:\s*$/, '')}
@@ -201,7 +205,7 @@ function renderRubricBand(
       {sec.title ? <h2 className="rubric-band-title">{sec.title}</h2> : null}
       {sec.intro.length > 0 ? (
         <div className="rubric-band-intro">
-          {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber))}
+          {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber, true))}
         </div>
       ) : null}
       {sec.cards.map((c, ci) => {
@@ -223,7 +227,7 @@ function renderRubricBand(
               </h3>
             </header>
             <div className="rubric-standard-body">
-              {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber))}
+              {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber, true))}
             </div>
           </article>
         )
@@ -565,7 +569,7 @@ export function ChamberFocus({
           ) : (
             <div className="chamber-body">
               {chamber.body.map((block, i) =>
-                renderBlock(block, i, document.meta.ipfsCid, onSelect),
+                renderBlock(block, i, document.meta.ipfsCid, onSelect, false),
               )}
             </div>
           )}

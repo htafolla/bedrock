@@ -252,6 +252,33 @@ describe('bedrock content integrity', () => {
     }
   })
 
+  /**
+   * Uniform design by content type — stops “looks like a different card” regressions.
+   * - Default stations: Truth = paragraphs only (god-first / control / presence form)
+   * - Battle station kill-the-flesh may use lead + lists (explicit allowlist)
+   * - Standard (rubric) may use headings + lists
+   * - Illustration is opt-in art, not a second layout system
+   */
+  it('stations use uniform Truth shape by kind (no accidental SOP bodies)', () => {
+    /** @type {ReadonlySet<string>} */
+    const stationListAllow = new Set(['kill-the-flesh'])
+    for (const c of chambers) {
+      const kind = c.kind ?? 'chamber'
+      if (kind === 'rubric') {
+        expect(c.body.some((b) => b.type === 'heading' || b.type === 'list'), c.id).toBe(true)
+        continue
+      }
+      if (stationListAllow.has(c.id)) {
+        expect(c.body.some((b) => b.type === 'list'), c.id).toBe(true)
+        continue
+      }
+      // Default station chrome: Scripture paragraphs only in Truth
+      for (const b of c.body) {
+        expect(b.type, `${c.id} Truth block must be paragraph (got ${b.type})`).toBe('paragraph')
+      }
+    }
+  })
+
   it('does not repeat the summary as the first Truth line', () => {
     const normalize = (s: string) =>
       s
