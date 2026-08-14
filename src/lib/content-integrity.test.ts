@@ -94,14 +94,17 @@ describe('bedrock content integrity', () => {
       ),
     ).toBe(true)
     expect(rubric.related).toContain('kill-the-flesh')
-    // Presence Without Control — other path in real presence
+    // Presence Without Control — same station form as god-first (Truth = paragraphs, not lists)
     expect(byId.has('presence-without-control')).toBe(true)
     const presence = byId.get('presence-without-control')!
     expect(presence.title).toBe('Presence Without Control')
     expect(presence.kind ?? 'chamber').toBe('chamber')
+    expect(presence.illustration).toBeUndefined()
     expect(presence.hacks.length).toBeGreaterThan(0)
     expect(presence.hacks.length).toBeLessThanOrEqual(3)
     expect(presence.hacks.join(' ').toLowerCase()).toMatch(/relax|present|control|hook|captive/)
+    expect(presence.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(presence.body.some((b) => b.type === 'list')).toBe(false)
     expect(presence.verses.map((v) => v.display).join(' ')).toMatch(
       /Psalm 46:10|James 1:19|Philippians 4:6|Matthew 6:34|Proverbs 3:5/,
     )
