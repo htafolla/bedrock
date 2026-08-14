@@ -541,13 +541,14 @@ const RELATED = {
   'presence-without-control': [
     'kill-the-flesh',
     'control',
-    'love',
-    'trust-in-the-lord',
     'fear',
     'be-quick-to-listen',
+    'wait-on-the-lord',
+    'take-every-thought-captive',
+    'trust-in-the-lord',
     'self-control',
     'peace',
-    'forgive-as-you-have-been-forgiven',
+    'do-not-fear',
   ],
   'kill-the-flesh-walk-in-the-spirit': [
     'kill-the-flesh',
@@ -1470,17 +1471,17 @@ const document = {
      */
     chamber(
       'Presence Without Control',
-      'My emotional state is my own. Presence without control. Love keeps no record.',
+      'Relax. Be present. Don’t take or force control of the present or the future.',
       [
-        // Final three holds under God — short lead, then Scripture
-        'My emotional state is my own — their choices do not own my peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop replaying wrongs; release the score to God.',
-        'Be still, and know that I am God.',
+        // Echo: force = control; driver often fear, not absolute
+        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.',
+        'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
-        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
-        'Trust in the Lord with all your heart, and do not lean on your own understanding.',
+        'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
       ],
-      'Psalm 46:10 · James 1:19 · 1 Corinthians 13:4-6 · Philippians 4:6 · Proverbs 3:5 · 2 Timothy 1:7',
+      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     chamber(
       'Renew Your Mind',

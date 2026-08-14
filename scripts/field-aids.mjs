@@ -379,14 +379,14 @@ export const FIELD_AIDS = {
     ],
   },
   'presence-without-control': {
-    // Final three holds — bit-sized, exact
+    // Same station chrome as god-first / Master the Flesh: ≤3 flat holds
     hacks: [
-      'My emotional state is my own.',
-      'Presence without control.',
-      'Love keeps no record.',
+      'Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.',
+      'Don’t force the present or the future — that is control (often fear, not only fear). Exist in the moment; the future is unknown.',
+      'When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.',
     ],
     prayers: [
-      'Father, my state is my own. I am present under You. I keep no record. Amen.',
+      'Father, I release this grip. I am present under You. Amen.',
     ],
   },
   'spiritual-warfare': {
