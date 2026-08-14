@@ -7,8 +7,8 @@ interface ArrivalGateProps {
   mission?: string
   prologue?: string[]
   onEnter: () => void
-  /** Optional sealed word / about (after enter chrome would show footer About) */
-  onAbout?: () => void
+  /** Origin page — full poem, heart, crisis lines (not an SPA overlay) */
+  aboutHref?: string
 }
 
 export function ArrivalGate({
@@ -18,7 +18,7 @@ export function ArrivalGate({
   mission,
   prologue,
   onEnter,
-  onAbout,
+  aboutHref = '/about',
 }: ArrivalGateProps) {
   return (
     <div className="arrival-gate">
@@ -32,10 +32,10 @@ export function ArrivalGate({
         <button type="button" className="arrival-enter" onClick={onEnter}>
           Enter
         </button>
-        {onAbout ? (
-          <button type="button" className="arrival-about" onClick={onAbout}>
+        {aboutHref ? (
+          <a href={aboutHref} className="arrival-about">
             About
-          </button>
+          </a>
         ) : null}
         {prologue?.length ? (
           <div className="arrival-under-enter" aria-label="Prologue">

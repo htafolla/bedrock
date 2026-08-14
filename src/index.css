@@ -2531,6 +2531,7 @@ body {
 }
 
 .site-footer-about {
+  display: inline;
   font: inherit;
   color: var(--beam, #e8a050);
   background: none;
