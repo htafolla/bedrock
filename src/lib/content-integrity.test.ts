@@ -102,7 +102,16 @@ describe('bedrock content integrity', () => {
     expect(presence.illustration).toBeUndefined()
     expect(presence.hacks.length).toBeGreaterThan(0)
     expect(presence.hacks.length).toBeLessThanOrEqual(3)
-    expect(presence.hacks.join(' ').toLowerCase()).toMatch(/relax|present|control|hook|captive/)
+    expect(presence.summary.toLowerCase()).toMatch(
+      /emotional state is my own|presence without control|keeps no record/,
+    )
+    expect(presence.hacks.map((h) => h.toLowerCase())).toEqual(
+      expect.arrayContaining([
+        'my emotional state is my own.',
+        'presence without control.',
+        'love keeps no record.',
+      ]),
+    )
     expect(presence.body.every((b) => b.type === 'paragraph')).toBe(true)
     expect(presence.body.some((b) => b.type === 'list')).toBe(false)
     expect(presence.verses.map((v) => v.display).join(' ')).toMatch(
