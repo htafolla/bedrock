@@ -1009,13 +1009,43 @@ function aboutHtml(doc) {
   const testimonyLines = (doc.testimony?.lines || [])
     .map((l) => `<p class="heart">${esc(l)}</p>`)
     .join('\n')
+  const poem = doc.testimony?.poem
+  const poemTitle = poem?.title || 'Backstory'
+  const poemLines = Array.isArray(poem?.lines) ? poem.lines : []
+  const poemHtml = poemLines.length
+    ? poemLines.map((l) => `<p class="poem-line">${esc(l)}</p>`).join('\n')
+    : ''
   const heart =
     (doc.testimony?.lines || []).slice(0, 2).join(' ') ||
     'This is a testament to Him that through the fire He was always with me.'
   const title = 'Bedrock — Origin'
-  const desc = esc(metaDesc(`${tagline}. ${motto}. ${heart}`))
+  const desc = esc(
+    metaDesc(
+      poemLines.length
+        ? `${tagline} · ${motto}. Sealed word and Backstory poem. ${heart}`
+        : `${tagline} · ${motto}. ${heart}`,
+    ),
+  )
   const ogImage = `${ORIGIN}/og/origin.png`
+  const poemImage = `${ORIGIN}/og/testimony-poem.png`
   const analytics = analyticsHeadSnippet('/about')
+
+  const poemSection = poemHtml
+    ? `
+    <section class="card poem-card" aria-label="${esc(poemTitle)} · sealed poem" id="backstory">
+      <div class="poem-head">
+        <p class="poem-kicker">Sealed word · full poem</p>
+        <h2 class="poem-title">${esc(poemTitle)}</h2>
+      </div>
+      <div class="poem-body">
+${poemHtml}
+      </div>
+      <p class="poem-share">
+        <a href="${poemImage}">Share image</a>
+        · full sealed word for social
+      </p>
+    </section>`
+    : ''
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1051,6 +1081,17 @@ function aboutHtml(doc) {
     isPartOf: { '@type': 'WebSite', name: 'Bedrock', url: ORIGIN },
     image: ogImage,
     inLanguage: 'en',
+    ...(poemLines.length
+      ? {
+          hasPart: {
+            '@type': 'CreativeWork',
+            name: poemTitle,
+            text: poemLines.join('\n'),
+            url: `${ORIGIN}/about#backstory`,
+            image: poemImage,
+          },
+        }
+      : {}),
   })}
   </script>
   ${analytics}
@@ -1069,6 +1110,13 @@ function aboutHtml(doc) {
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
+    .poem-card { border-color:rgba(196,165,116,.35); }
+    .poem-kicker { font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ember); margin:0 0 .35rem; }
+    .poem-title { font-family: "Cormorant Garamond", Georgia, serif; font-weight:600; font-size:1.45rem; color:var(--beam); margin:0 0 1rem; }
+    .poem-body { margin:0; }
+    .poem-line { font-family: "Cormorant Garamond", Georgia, serif; font-size:1.12rem; line-height:1.55; margin:.35rem 0; color:var(--ink); }
+    .poem-share { margin:1.1rem 0 0; font-size:.82rem; color:var(--muted); }
+    .poem-share a { text-decoration:underline; text-underline-offset:.15em; }
     footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
     .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
   </style>
@@ -1083,12 +1131,19 @@ function aboutHtml(doc) {
     <nav class="nav" aria-label="Origin actions">
       <a class="primary" href="/">Open the field guide</a>
       <a href="/">Keys</a>
+      ${poemHtml ? `<a href="#backstory">${esc(poemTitle)}</a>` : ''}
     </nav>
     ${prologue ? `<section class="card" aria-label="Prologue">${prologue}</section>` : ''}
     <section class="card" aria-label="Heart">
       <h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.2rem;color:var(--beam);margin:0 0 .65rem;">Heart</h2>
       ${testimonyLines}
+      ${
+        poemHtml
+          ? `<p class="poem-share" style="margin-top:1rem"><a href="#backstory">${esc(poem?.linkLabel || 'For a deeper understanding')}</a></p>`
+          : ''
+      }
     </section>
+    ${poemSection}
     <footer class="page-card-footer">
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta · Not a crisis hotline.</p>
