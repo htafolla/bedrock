@@ -1337,15 +1337,15 @@ const document = {
      */
     chamber(
       'Trust in the Lord',
-      'How to trust other people: give the fear to the Lord, then take one faithful step toward them.',
+      'Afraid to trust them? Give the fear to the Lord. Then one faithful step.',
       [
-        'This card is about trusting others. Fear says: if you trust, you will be hurt again. So you control, pull away, or demand certainty first. The answer is not to make them God — and not to shut every door. Give the fear to the Lord. He holds what you cannot. Then trust as love requires: one clear step, not the whole future.',
+        'Fear of trust says you will be hurt again. So you control, pull away, or demand certainty first. Give that fear to the Lord. He holds the risk. Then take one clear step toward them — not the whole future.',
         'There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.',
         'When I am afraid, I put my trust in You.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
         'Love bears all things, believes all things, hopes all things, endures all things.',
-        'Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.',
+        'Cast your burden on the Lord, and He will sustain you.',
       ],
       '1 John 4:18 · Psalm 56:3 · Proverbs 3:5-6 · Philippians 4:6-7 · 1 Corinthians 13:7 · Psalm 55:22 · Isaiah 26:3',
     ),
