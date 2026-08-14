@@ -48,9 +48,16 @@ import {
   isTelemetryRedisReady,
   hydrateFromJsonl,
   recordTelemetryEvent,
+  recordAccessHit,
   getTelemetrySummary,
   validateVid,
 } from './telemetry-store.mjs'
+import {
+  classifyUserAgent,
+  isInterestingAccessPath,
+  classifyAccessPath,
+  extractResourceId,
+} from './access-classify.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -306,6 +313,48 @@ function createApp() {
   const app = express()
   app.disable('x-powered-by')
   app.use(express.json({ limit: '48kb' }))
+
+  /**
+   * Server access telemetry — runs for humans + bots that never execute JS.
+   * No IP. Classifies UA (ai/social/search/human) on interesting paths only.
+   */
+  app.use((req, res, next) => {
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      next()
+      return
+    }
+    const pathname = req.path || '/'
+    if (!isInterestingAccessPath(pathname)) {
+      next()
+      return
+    }
+    const started = Date.now()
+    res.on('finish', () => {
+      // Fire-and-forget; never block the response path
+      try {
+        const { class: accessClass, bot } = classifyUserAgent(req.get('user-agent'))
+        const kind = classifyAccessPath(pathname)
+        const ref = req.get('referer') || req.get('referrer') || ''
+        void recordAccessHit(
+          {
+            path: pathname.length > 180 ? pathname.slice(0, 180) : pathname,
+            class: accessClass,
+            kind,
+            bot,
+            status: res.statusCode,
+            resourceId: extractResourceId(pathname),
+            referrer: ref ? String(ref).slice(0, 200) : undefined,
+          },
+          telemetryPath,
+        )
+      } catch (err) {
+        if (started) {
+          /* ignore — never surface telemetry errors */
+        }
+      }
+    })
+    next()
+  })
 
   const doc = loadDocument()
   const chamberById = new Map((doc?.chambers || []).map((c) => [c.id, c]))
@@ -717,6 +766,7 @@ function createApp() {
       return
     }
     const summary = await getTelemetrySummary()
+    res.setHeader('Cache-Control', 'no-store')
     res.json(summary)
   })
 
