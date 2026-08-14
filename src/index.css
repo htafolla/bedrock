@@ -2499,6 +2499,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.about-meta.about-crisis {
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.about-meta.about-crisis a {
+  color: var(--ember-soft, #e8c9a0);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .about-toolbar {
   display: flex;
   flex-wrap: wrap;
