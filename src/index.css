@@ -2975,6 +2975,33 @@ body {
   max-width: 62ch;
 }
 
+/* Inline Truth deep-links: [Label](chamber:id) → station navigation */
+button.chamber-inline-link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ember-soft, #e8c9a0);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--ember-soft, #e8c9a0) 55%, transparent);
+  cursor: pointer;
+  text-align: inherit;
+}
+button.chamber-inline-link:hover,
+button.chamber-inline-link:focus-visible {
+  color: var(--beam, #f5e6c8);
+  text-decoration-color: var(--ember, #c4a574);
+  outline: none;
+}
+.chamber-inline-link-static {
+  font-weight: 600;
+  color: var(--ember-soft, #e8c9a0);
+}
+
 .chamber-subhead {
   font-family: var(--font-display);
   color: var(--ember-soft);

@@ -1557,7 +1557,8 @@ const document = {
           'Default phrase: “My emotional state is my own.”',
         ),
         'Take every thought captive to obey Christ. Walk by the Spirit, and you will not gratify the desires of the flesh. God has not given a spirit of fear, but of power and love and a sound mind.',
-        'When the fight slows — full Standard: Kill the Flesh. Walk in the Spirit.',
+        // Inline chamber link — SPA + static /c pages resolve [label](chamber:id)
+        'When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](chamber:kill-the-flesh-walk-in-the-spirit)',
       ],
       'James 1:19 · 2 Timothy 1:7 · Galatians 5:16, 22-23 · 2 Corinthians 10:5 · Luke 9:23 · 1 Corinthians 13:4-7 · Proverbs 25:28 · Titus 2:11-12 · James 5:16 · Matthew 6:16-18',
       'kill-the-flesh',

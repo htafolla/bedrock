@@ -8,12 +8,18 @@ import {
   isScriptureCitationLine,
   parseScriptureCitationLine,
 } from '../lib/verses'
+import { hasChamberLinks, parseBodyChamberLinks } from '../lib/body-links'
 
 interface ReadingExperienceProps {
   document: BedrockDocument
 }
 
-function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
+function renderBlock(
+  block: BodyBlock,
+  key: number,
+  ipfsCid?: string | null,
+  onSelectChamber?: (id: string) => void,
+) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
     return (
@@ -51,6 +57,29 @@ function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
       )
     }
   }
+  if (block.type === 'paragraph' && hasChamberLinks(block.text)) {
+    const parts = parseBodyChamberLinks(block.text)
+    return (
+      <p key={key} className="chamber-paragraph">
+        {parts.map((part, i) =>
+          part.type === 'text' ? (
+            <span key={`t-${i}`}>{part.text}</span>
+          ) : onSelectChamber ? (
+            <button
+              key={`c-${part.id}-${i}`}
+              type="button"
+              className="chamber-inline-link"
+              onClick={() => onSelectChamber(part.id)}
+            >
+              {part.label}
+            </button>
+          ) : (
+            <span key={`c-${part.id}-${i}`}>{part.label}</span>
+          ),
+        )}
+      </p>
+    )
+  }
   return (
     <p key={key} className="chamber-paragraph">
       {block.text}
@@ -86,7 +115,7 @@ function ChamberView({
           Truth
         </h3>
         <div className="chamber-body">
-          {chamber.body.map((block, i) => renderBlock(block, i, ipfsCid))}
+          {chamber.body.map((block, i) => renderBlock(block, i, ipfsCid, onSelect))}
         </div>
       </section>
 

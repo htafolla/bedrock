@@ -83,6 +83,15 @@ describe('bedrock content integrity', () => {
     expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/James 1:19/)
     expect(killCard.illustration?.src).toMatch(/kill-the-flesh-pow/)
     expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
+    // Truth closer must deep-link to the Standard (not plain text)
+    expect(
+      killCard.body.some(
+        (b) =>
+          b.type === 'paragraph' &&
+          /chamber:kill-the-flesh-walk-in-the-spirit/i.test(b.text) &&
+          /Kill the Flesh\. Walk in the Spirit/i.test(b.text),
+      ),
+    ).toBe(true)
     expect(rubric.related).toContain('kill-the-flesh')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)

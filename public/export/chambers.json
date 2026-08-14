@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 77,
-    "exportedAt": "2026-08-14T09:52:07.506Z",
+    "exportedAt": "2026-08-14T13:50:48.400Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4994,7 +4994,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When the fight slows — full Standard: Kill the Flesh. Walk in the Spirit."
+          "text": "When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](chamber:kill-the-flesh-walk-in-the-spirit)"
         }
       ],
       "verses": [

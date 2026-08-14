@@ -9,6 +9,7 @@ import {
   isScriptureCitationLine,
   parseScriptureCitationLine,
 } from '../../lib/verses'
+import { hasChamberLinks, parseBodyChamberLinks } from '../../lib/body-links'
 import { JourneyStageRail } from './JourneyStageRail'
 import { ShareMenu } from '../ShareMenu'
 import { buildPathShare, buildStationShare } from '../../lib/share'
@@ -36,7 +37,12 @@ function splitNumberedTitle(text: string): { num: string | null; label: string }
   return { num: m[1]!, label: m[2]! }
 }
 
-function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
+function renderBlock(
+  block: BodyBlock,
+  key: number,
+  ipfsCid?: string | null,
+  onSelectChamber?: (id: string) => void,
+) {
   if (block.type === 'heading') {
     const Tag = block.level === 2 ? 'h2' : 'h3'
     return (
@@ -91,6 +97,45 @@ function renderBlock(block: BodyBlock, key: number, ipfsCid?: string | null) {
     return (
       <p key={key} className="rubric-when">
         {block.text.replace(/:\s*$/, '')}
+      </p>
+    )
+  }
+  // Inline [Label](chamber:id) — e.g. Standard deep-link from Master the Flesh
+  if (block.type === 'paragraph' && hasChamberLinks(block.text) && onSelectChamber) {
+    const parts = parseBodyChamberLinks(block.text)
+    return (
+      <p key={key} className="chamber-paragraph">
+        {parts.map((part, i) =>
+          part.type === 'text' ? (
+            <span key={`t-${i}`}>{part.text}</span>
+          ) : (
+            <button
+              key={`c-${part.id}-${i}`}
+              type="button"
+              className="chamber-inline-link"
+              onClick={() => onSelectChamber(part.id)}
+            >
+              {part.label}
+            </button>
+          ),
+        )}
+      </p>
+    )
+  }
+  if (block.type === 'paragraph' && hasChamberLinks(block.text)) {
+    // Fallback: plain labels if no navigation handler
+    const parts = parseBodyChamberLinks(block.text)
+    return (
+      <p key={key} className="chamber-paragraph">
+        {parts.map((part, i) =>
+          part.type === 'text' ? (
+            <span key={`t-${i}`}>{part.text}</span>
+          ) : (
+            <span key={`c-${part.id}-${i}`} className="chamber-inline-link-static">
+              {part.label}
+            </span>
+          ),
+        )}
       </p>
     )
   }
@@ -149,13 +194,14 @@ function renderRubricBand(
   sec: RubricBand,
   si: number,
   ipfsCid?: string | null,
+  onSelectChamber?: (id: string) => void,
 ) {
   return (
     <section key={`band-${si}-${sec.title ?? 'open'}`} className="rubric-band">
       {sec.title ? <h2 className="rubric-band-title">{sec.title}</h2> : null}
       {sec.intro.length > 0 ? (
         <div className="rubric-band-intro">
-          {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid))}
+          {sec.intro.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber))}
         </div>
       ) : null}
       {sec.cards.map((c, ci) => {
@@ -177,7 +223,7 @@ function renderRubricBand(
               </h3>
             </header>
             <div className="rubric-standard-body">
-              {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid))}
+              {c.blocks.map((b, i) => renderBlock(b, i, ipfsCid, onSelectChamber))}
             </div>
           </article>
         )
@@ -195,10 +241,12 @@ function RubricBody({
   blocks,
   ipfsCid,
   onOpenMindPath,
+  onSelectChamber,
 }: {
   blocks: BodyBlock[]
   ipfsCid?: string | null
   onOpenMindPath?: () => void
+  onSelectChamber?: (id: string) => void
 }) {
   const [showDepth, setShowDepth] = useState(false)
   const bands = useMemo(() => parseRubricBands(blocks), [blocks])
@@ -209,7 +257,7 @@ function RubricBody({
 
   return (
     <div className="chamber-body chamber-body-rubric">
-      {surface.map((sec, si) => renderRubricBand(sec, si, ipfsCid))}
+      {surface.map((sec, si) => renderRubricBand(sec, si, ipfsCid, onSelectChamber))}
 
       <div className="rubric-depth-actions">
         {depth.length > 0 ? (
@@ -230,7 +278,9 @@ function RubricBody({
       </div>
 
       {showDepth
-        ? depth.map((sec, si) => renderRubricBand(sec, si + surface.length, ipfsCid))
+        ? depth.map((sec, si) =>
+            renderRubricBand(sec, si + surface.length, ipfsCid, onSelectChamber),
+          )
         : null}
     </div>
   )
@@ -510,11 +560,12 @@ export function ChamberFocus({
               blocks={chamber.body}
               ipfsCid={document.meta.ipfsCid}
               onOpenMindPath={onOpenMindPath}
+              onSelectChamber={onSelect}
             />
           ) : (
             <div className="chamber-body">
               {chamber.body.map((block, i) =>
-                renderBlock(block, i, document.meta.ipfsCid),
+                renderBlock(block, i, document.meta.ipfsCid, onSelect),
               )}
             </div>
           )}

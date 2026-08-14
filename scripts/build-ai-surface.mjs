@@ -171,7 +171,14 @@ function bodyToMarkdown(body) {
           continue
         }
       }
-      lines.push(b.text, '')
+      // Expand [Label](chamber:id) → absolute /c/{publicSlug} markdown links
+      lines.push(
+        String(b.text || '').replace(
+          /\[([^\]]+)\]\(chamber:([a-z0-9]+(?:-[a-z0-9]+)*)\)/gi,
+          (_full, label, id) => `[${label}](${ORIGIN}/c/${publicChamberSlug(id)})`,
+        ),
+        '',
+      )
     }
   }
   return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim()
@@ -310,6 +317,21 @@ function renderBodyBlockHtml(b) {
     }
     if (/^When .+:\s*$/i.test(b.text)) {
       return `<p class="rubric-when">${esc(b.text.replace(/:\s*$/, ''))}</p>`
+    }
+    // Inline chamber links: [Label](chamber:id) → /c/{publicSlug}
+    if (/\[([^\]]+)\]\(chamber:([a-z0-9]+(?:-[a-z0-9]+)*)\)/i.test(b.text || '')) {
+      const s = String(b.text || '')
+      const re = /\[([^\]]+)\]\(chamber:([a-z0-9]+(?:-[a-z0-9]+)*)\)/gi
+      let out = ''
+      let last = 0
+      let m
+      while ((m = re.exec(s)) != null) {
+        out += esc(s.slice(last, m.index))
+        out += `<a class="chamber-inline-link" href="/c/${esc(publicChamberSlug(m[2]))}">${esc(m[1])}</a>`
+        last = m.index + m[0].length
+      }
+      out += esc(s.slice(last))
+      return `<p>${out}</p>`
     }
     return `<p>${esc(b.text)}</p>`
   }
@@ -580,6 +602,8 @@ function chamberHtml(c, meta, titleById = new Map()) {
       border-radius:999px; padding:.4rem .85rem; text-decoration:none;
     }
     .related-link:hover { border-color:var(--ember); background:rgba(196,165,116,.2); }
+    a.chamber-inline-link { color:var(--beam); text-decoration:underline; text-underline-offset:.15em; text-decoration-color:rgba(196,165,116,.55); }
+    a.chamber-inline-link:hover { color:#fff6e8; text-decoration-color:var(--ember); }
     .chamber-verse-chips { margin:.55rem 0 .35rem; }
     .chamber-verse-chips .verses-list { gap:.45rem; }
     .chamber-verse-chips .verse-primary { font-size:.9rem; }
