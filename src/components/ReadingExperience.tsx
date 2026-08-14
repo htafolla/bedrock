@@ -180,6 +180,11 @@ function ChamberView({
           </ul>
         </nav>
       ) : null}
+
+      <footer className="chamber-card-end" aria-label="Bedrock">
+        <p className="chamber-card-motto">Do Better. Be Better. Trust God.</p>
+        <p className="chamber-card-end-meta">Hold first · Public beta · Not a crisis hotline</p>
+      </footer>
     </article>
   )
 }

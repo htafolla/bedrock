@@ -427,11 +427,11 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
           </div>
         ) : null}
 
-        {/* Viewport-fixed footer — outside nested chrome so mobile always pins bottom */}
-        {state.mode === 'constellation' && navMode !== 'about' ? (
+        {/* Viewport-fixed footer — every surface after enter (Keys, Map, chamber cards, paths) */}
+        {state.mode !== 'arrival' && navMode !== 'about' ? (
           <div className="experience-footer-stack" role="contentinfo">
             <footer className="site-footer compact">
-              <p>Truth under fire.</p>
+              <p>Do Better. Be Better. Trust God.</p>
               <p className="site-footer-meta">
                 <button
                   type="button"

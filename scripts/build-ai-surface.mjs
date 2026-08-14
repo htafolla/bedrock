@@ -236,7 +236,7 @@ ${verses}
 ${related}
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: ${chamberPublicUrl(c.id)}.md
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · Cite this page for AI: ${chamberPublicUrl(c.id)}.md
 `
 }
 
@@ -617,7 +617,8 @@ function chamberHtml(c, meta, titleById = new Map()) {
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0 1.25rem; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
-    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
   </style>
 </head>
 <body>
@@ -656,9 +657,9 @@ function chamberHtml(c, meta, titleById = new Map()) {
       <p class="field-layer-hint">Related chambers — tap to open.</p>
       <ul class="related-list">${related}</ul>
     </nav>
-    <footer>
-      <p>Do better. Be better. Trust God.</p>
-      <p>Public beta v${esc(meta.version)} · revised ${esc(meta.revised)} · Not a crisis hotline.</p>
+    <footer class="page-card-footer">
+      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
+      <p>Hold first · Public beta v${esc(meta.version)} · revised ${esc(meta.revised)} · Not a crisis hotline.</p>
       <p><a href="${ORIGIN}/export/chambers.json">Full atlas JSON</a> · <a href="${ORIGIN}/llms-full.txt">llms-full.txt</a></p>
     </footer>
   </main>
@@ -853,7 +854,8 @@ function doorHtml(k) {
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
-    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
   </style>
 </head>
 <body>
@@ -878,9 +880,9 @@ function doorHtml(k) {
           : ''
       }</p>
     </section>
-    <footer>
-      <p>Do better. Be better. Trust God.</p>
-      <p>Public beta · Not a crisis hotline.</p>
+    <footer class="page-card-footer">
+      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
+      <p>Hold first · Public beta · Not a crisis hotline.</p>
     </footer>
   </main>
 </body>
@@ -967,7 +969,8 @@ function journeyHtml(j) {
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
-    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
   </style>
 </head>
 <body>
@@ -985,9 +988,9 @@ function journeyHtml(j) {
       <h2 id="stations">${stages.length} stations</h2>
       <ol>${stageList}</ol>
     </section>
-    <footer>
-      <p>Do better. Be better. Trust God.</p>
-      <p>Public beta · Not a crisis hotline.</p>
+    <footer class="page-card-footer">
+      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
+      <p>Hold first · Public beta · Not a crisis hotline.</p>
     </footer>
   </main>
 </body>
@@ -1066,7 +1069,8 @@ function aboutHtml(doc) {
     .nav { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.9rem; }
     .nav a { text-decoration:none; border:1px solid var(--border); padding:.45rem .75rem; border-radius:999px; }
     .nav a.primary { background:linear-gradient(180deg,#f0d9a8,#c4a574); color:#0c0a09; border:none; font-weight:600; }
-    footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    footer, .page-card-footer { margin-top:2rem; color:var(--muted); font-size:.8rem; text-align:center; }
+    .page-card-motto { font-family: "Cormorant Garamond", Georgia, serif; color:var(--beam); font-size:1.05rem; font-style:italic; margin:0 0 .35rem; }
   </style>
 </head>
 <body>
@@ -1085,9 +1089,9 @@ function aboutHtml(doc) {
       <h2 style="font-family:Cormorant Garamond,Georgia,serif;font-size:1.2rem;color:var(--beam);margin:0 0 .65rem;">Heart</h2>
       ${testimonyLines}
     </section>
-    <footer>
-      <p>Do better. Be better. Trust God.</p>
-      <p>Public beta · Not a crisis hotline.</p>
+    <footer class="page-card-footer">
+      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
+      <p>Hold first · Public beta · Not a crisis hotline.</p>
     </footer>
   </main>
 </body>

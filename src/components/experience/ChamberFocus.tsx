@@ -641,6 +641,14 @@ export function ChamberFocus({
         ) : null}
 
         {cardShare('footer')}
+
+        {/* Always-on card footer — matches static /c pages and share chrome */}
+        <footer className="chamber-card-end" aria-label="Bedrock">
+          <p className="chamber-card-motto">Do Better. Be Better. Trust God.</p>
+          <p className="chamber-card-end-meta">
+            Hold first · Public beta · Not a crisis hotline
+          </p>
+        </footer>
       </article>
 
       {/* Bottom path chips removed — one chip strip under path chrome is enough */}

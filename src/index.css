@@ -1587,10 +1587,35 @@ body {
   justify-content: flex-start;
 }
 
-/* Phone: share stays on title row; hide footer share */
+/* End-of-card motto — every station / standard */
+.chamber-card-end {
+  margin-top: 1.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+.chamber-card-motto {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--beam, #f5e6c8);
+  line-height: 1.4;
+}
+
+.chamber-card-end-meta {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--muted, #a89884);
+}
+
+/* Phone: share stays on title row; keep end-of-card motto + optional footer share */
 @media (max-width: 640px) {
   .chamber-card-share-footer {
-    display: none;
+    margin-top: 1.1rem;
+    padding-top: 0.75rem;
   }
 
   .chamber-title-row {
@@ -1606,6 +1631,10 @@ body {
 
   .depth-ladder {
     display: none;
+  }
+
+  .chamber-card-motto {
+    font-size: 0.98rem;
   }
 
   .chamber-kind-note {
@@ -2559,8 +2588,20 @@ body {
   padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
 }
 
+/* Chamber cards: room for fixed site footer + Guide FAB (chamber-focus also pads) */
 .mode-chamber .experience-main {
-  padding-bottom: 0; /* chamber-focus owns FAB clearance */
+  padding-bottom: 0;
+}
+
+.mode-chamber .chamber-focus {
+  /* Extra clearance so card motto is not under fixed site footer */
+  padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (max-width: 640px) {
+  .mode-chamber .chamber-focus {
+    padding-bottom: calc(6.25rem + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 /* Map: keep chrome short so DNA remains the usable surface */
