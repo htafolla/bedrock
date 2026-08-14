@@ -339,16 +339,16 @@ const RELATED = {
   ],
   'one-another-in-the-body': ['restore-gently-and-give-time', 'confess-and-be-cleansed', 'choose-selfless-love'],
   'trust-in-the-lord': [
+    'fear',
+    'do-not-fear',
+    'love',
+    'presence-without-control',
+    'control',
     'god-first',
     'his-promises',
-    'do-not-fear',
-    'fear',
-    'control',
-    'presence-without-control',
-    'wait-on-the-lord',
     'he-is-for-you',
-    'faithfulness',
-    'patience',
+    'choose-selfless-love',
+    'wait-on-the-lord',
   ],
   'do-not-fear': ['fear', 'trust-in-the-lord', 'his-promises', 'take-every-thought-captive'],
   fear: [
@@ -1332,21 +1332,22 @@ const document = {
       'Galatians 6:2 · Hebrews 3:13 · James 5:16 · Hebrews 10:24-25',
     ),
     /**
-     * Trust — about people and where security lives. Lord is the answer.
-     * Not a second Control card (grip/stop-securing steps). Entrust people to Him.
+     * Trust — how to trust other people. Fear blocks trust; give the fear to the Lord.
+     * Not Control (stop securing outcomes). Not “never trust people.” Lord holds the risk.
      */
     chamber(
       'Trust in the Lord',
-      'People fail. Plans fail. The Lord does not. Put your weight on Him — not on them, not on your own understanding.',
+      'How to trust other people: give the fear to the Lord, then take one faithful step toward them.',
       [
-        'This card is about trust and other people. They can wound you, leave you, lie, or stay and still not be God. If you make them your safety, you will control them or collapse when they fail. Trust in the Lord means He is the One you lean on — with them, for them, and when you cannot read them. Not passive. Not naïve. Weight on Him.',
-        'It is better to take refuge in the Lord than to trust in man. It is better to take refuge in the Lord than to trust in princes.',
-        'Thus says the Lord: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the Lord… Blessed is the man who trusts in the Lord, whose trust is the Lord.',
+        'This card is about trusting others. Fear says: if you trust, you will be hurt again. So you control, pull away, or demand certainty first. The answer is not to make them God — and not to shut every door. Give the fear to the Lord. He holds what you cannot. Then trust as love requires: one clear step, not the whole future.',
+        'There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.',
+        'When I am afraid, I put my trust in You.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
-        'You keep him in perfect peace whose mind is stayed on You, because he trusts in You.',
-        'Commit your way to the Lord; trust in Him, and He will act.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
+        'Love bears all things, believes all things, hopes all things, endures all things.',
+        'Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.',
       ],
-      'Psalm 118:8-9 · Jeremiah 17:5, 7 · Proverbs 3:5-6 · Isaiah 26:3 · Psalm 37:5 · Philippians 4:6-7',
+      '1 John 4:18 · Psalm 56:3 · Proverbs 3:5-6 · Philippians 4:6-7 · 1 Corinthians 13:7 · Psalm 55:22 · Isaiah 26:3',
     ),
     chamber(
       'Do Not Fear',

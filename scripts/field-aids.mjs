@@ -135,14 +135,14 @@ export const FIELD_AIDS = {
     prayers: ['Father, place me in Your body to give and receive. Amen.'],
   },
   'trust-in-the-lord': {
-    // About people + Lord as answer — not Control’s “stop securing” steps
+    // How to trust other people: fear → give it to the Lord → one faithful step
     hacks: [
-      'Name it: I am making a person (or their choice) my safety. They are not God.',
-      'Entrust them to the Lord. Do your part. Do not make their will your peace.',
-      'Lean on Him, not on your reading of them or your own understanding.',
+      'Name it: I am afraid to trust them. Give that fear to the Lord — out loud if you can.',
+      'Trust is not a feeling. Under God, take one small faithful step toward them (not the whole future).',
+      'Do not demand certainty first. Do not control their response. Let the Lord hold the risk.',
     ],
     prayers: [
-      'Father, I trust You with them and with me. You are my safety. Amen.',
+      'Father, I give You this fear. Teach me to trust them under You. Amen.',
     ],
   },
   'the-cross-and-our-justification': {

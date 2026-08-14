@@ -3225,19 +3225,19 @@
     {
       "id": "trust-in-the-lord",
       "title": "Trust in the Lord",
-      "summary": "People fail. Plans fail. The Lord does not. Put your weight on Him — not on them, not on your own understanding.",
+      "summary": "How to trust other people: give the fear to the Lord, then take one faithful step toward them.",
       "body": [
         {
           "type": "paragraph",
-          "text": "This card is about trust and other people. They can wound you, leave you, lie, or stay and still not be God. If you make them your safety, you will control them or collapse when they fail. Trust in the Lord means He is the One you lean on — with them, for them, and when you cannot read them. Not passive. Not naïve. Weight on Him."
+          "text": "This card is about trusting others. Fear says: if you trust, you will be hurt again. So you control, pull away, or demand certainty first. The answer is not to make them God — and not to shut every door. Give the fear to the Lord. He holds what you cannot. Then trust as love requires: one clear step, not the whole future."
         },
         {
           "type": "paragraph",
-          "text": "It is better to take refuge in the Lord than to trust in man. It is better to take refuge in the Lord than to trust in princes."
+          "text": "There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love."
         },
         {
           "type": "paragraph",
-          "text": "Thus says the Lord: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the Lord… Blessed is the man who trusts in the Lord, whose trust is the Lord."
+          "text": "When I am afraid, I put my trust in You."
         },
         {
           "type": "paragraph",
@@ -3245,32 +3245,29 @@
         },
         {
           "type": "paragraph",
-          "text": "You keep him in perfect peace whose mind is stayed on You, because he trusts in You."
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
         },
         {
           "type": "paragraph",
-          "text": "Commit your way to the Lord; trust in Him, and He will act."
+          "text": "Love bears all things, believes all things, hopes all things, endures all things."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved."
         }
       ],
       "verses": [
         {
-          "display": "Psalm 118:8–9",
+          "display": "1 John 4:18",
+          "book": "1 John",
+          "chapter": 4,
+          "verseStart": 18
+        },
+        {
+          "display": "Psalm 56:3",
           "book": "Psalm",
-          "chapter": 118,
-          "verseStart": 8,
-          "verseEnd": 9
-        },
-        {
-          "display": "Jeremiah 17:5",
-          "book": "Jeremiah",
-          "chapter": 17,
-          "verseStart": 5
-        },
-        {
-          "display": "Jeremiah 17:7",
-          "book": "Jeremiah",
-          "chapter": 17,
-          "verseStart": 7
+          "chapter": 56,
+          "verseStart": 3
         },
         {
           "display": "Proverbs 3:5–6",
@@ -3280,44 +3277,50 @@
           "verseEnd": 6
         },
         {
-          "display": "Isaiah 26:3",
-          "book": "Isaiah",
-          "chapter": 26,
-          "verseStart": 3
-        },
-        {
-          "display": "Psalm 37:5",
-          "book": "Psalm",
-          "chapter": 37,
-          "verseStart": 5
-        },
-        {
           "display": "Philippians 4:6–7",
           "book": "Philippians",
           "chapter": 4,
           "verseStart": 6,
           "verseEnd": 7
+        },
+        {
+          "display": "1 Corinthians 13:7",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 7
+        },
+        {
+          "display": "Psalm 55:22",
+          "book": "Psalm",
+          "chapter": 55,
+          "verseStart": 22
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
         }
       ],
       "hacks": [
-        "Name it: I am making a person (or their choice) my safety. They are not God.",
-        "Entrust them to the Lord. Do your part. Do not make their will your peace.",
-        "Lean on Him, not on your reading of them or your own understanding."
+        "Name it: I am afraid to trust them. Give that fear to the Lord — out loud if you can.",
+        "Trust is not a feeling. Under God, take one small faithful step toward them (not the whole future).",
+        "Do not demand certainty first. Do not control their response. Let the Lord hold the risk."
       ],
       "prayers": [
-        "Father, I trust You with them and with me. You are my safety. Amen."
+        "Father, I give You this fear. Teach me to trust them under You. Amen."
       ],
       "related": [
+        "fear",
+        "do-not-fear",
+        "love",
+        "presence-without-control",
+        "control",
         "god-first",
         "his-promises",
-        "do-not-fear",
-        "fear",
-        "control",
-        "presence-without-control",
-        "wait-on-the-lord",
         "he-is-for-you",
-        "faithfulness",
-        "patience"
+        "choose-selfless-love",
+        "wait-on-the-lord"
       ],
       "kind": "chamber"
     },
