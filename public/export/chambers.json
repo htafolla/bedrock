@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 78,
-    "exportedAt": "2026-08-14T17:39:57.432Z",
+    "exportedAt": "2026-08-14T17:47:30.895Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -3379,11 +3379,19 @@
     {
       "id": "trust-in-the-lord",
       "title": "Trust in the Lord",
-      "summary": "Trust means stop securing the outcome yourself — lean on Him, not on your own understanding.",
+      "summary": "People fail. Plans fail. The Lord does not. Put your weight on Him — not on them, not on your own understanding.",
       "body": [
         {
           "type": "paragraph",
-          "text": "Trust is not passive. It is not gripping harder with religious words. It is this: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path."
+          "text": "This card is about trust and other people. They can wound you, leave you, lie, or stay and still not be God. If you make them your safety, you will control them or collapse when they fail. Trust in the Lord means He is the One you lean on — with them, for them, and when you cannot read them. Not passive. Not naïve. Weight on Him."
+        },
+        {
+          "type": "paragraph",
+          "text": "It is better to take refuge in the Lord than to trust in man. It is better to take refuge in the Lord than to trust in princes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Thus says the Lord: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the Lord… Blessed is the man who trusts in the Lord, whose trust is the Lord."
         },
         {
           "type": "paragraph",
@@ -3391,11 +3399,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
-        },
-        {
-          "type": "paragraph",
-          "text": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."
+          "text": "You keep him in perfect peace whose mind is stayed on You, because he trusts in You."
         },
         {
           "type": "paragraph",
@@ -3404,6 +3408,25 @@
       ],
       "verses": [
         {
+          "display": "Psalm 118:8–9",
+          "book": "Psalm",
+          "chapter": 118,
+          "verseStart": 8,
+          "verseEnd": 9
+        },
+        {
+          "display": "Jeremiah 17:5",
+          "book": "Jeremiah",
+          "chapter": 17,
+          "verseStart": 5
+        },
+        {
+          "display": "Jeremiah 17:7",
+          "book": "Jeremiah",
+          "chapter": 17,
+          "verseStart": 7
+        },
+        {
           "display": "Proverbs 3:5–6",
           "book": "Proverbs",
           "chapter": 3,
@@ -3411,17 +3434,10 @@
           "verseEnd": 6
         },
         {
-          "display": "Philippians 4:6–7",
-          "book": "Philippians",
-          "chapter": 4,
-          "verseStart": 6,
-          "verseEnd": 7
-        },
-        {
-          "display": "Matthew 6:34",
-          "book": "Matthew",
-          "chapter": 6,
-          "verseStart": 34
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
         },
         {
           "display": "Psalm 37:5",
@@ -3430,29 +3446,30 @@
           "verseStart": 5
         },
         {
-          "display": "Isaiah 26:3",
-          "book": "Isaiah",
-          "chapter": 26,
-          "verseStart": 3
+          "display": "Philippians 4:6–7",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6,
+          "verseEnd": 7
         }
       ],
       "hacks": [
-        "Name the grip: I am securing the outcome. Stop. Lean on Him — not on your own understanding.",
-        "Take only the next step He shows. Do not demand the whole map.",
-        "Release what you cannot rule. Panic is not wisdom. Presence is not control."
+        "Name it: I am making a person (or their choice) my safety. They are not God.",
+        "Entrust them to the Lord. Do your part. Do not make their will your peace.",
+        "Lean on Him, not on your reading of them or your own understanding."
       ],
       "prayers": [
-        "Father, I trust You with all my heart. I release the outcome. Direct my path. Amen."
+        "Father, I trust You with them and with me. You are my safety. Amen."
       ],
       "related": [
         "god-first",
+        "his-promises",
+        "do-not-fear",
+        "fear",
         "control",
         "presence-without-control",
-        "fear",
-        "do-not-fear",
         "wait-on-the-lord",
-        "his-promises",
-        "kill-the-flesh",
+        "he-is-for-you",
         "faithfulness",
         "patience"
       ],

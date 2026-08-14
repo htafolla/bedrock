@@ -41,7 +41,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord) — Vengeance belongs to Him — and hatred has no place with love.
 - [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven) — Forgive one another as God in Christ forgave you.
 - [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body) — Bear one another’s burdens, and so fulfill the law of Christ.
-- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord) — Trust means stop securing the outcome yourself — lean on Him, not on your own understanding.
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord) — People fail. Plans fail. The Lord does not. Put your weight on Him — not on them, not on your own understanding.
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear) — God has not given you a spirit of fear, but of power, love, and a sound mind.
 - [Fear](https://bedrock.rippel.ai/c/fear) — There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.
 - [Loss](https://bedrock.rippel.ai/c/loss) — Grief for real loss and possible loss — He is near the brokenhearted.

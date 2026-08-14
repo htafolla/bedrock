@@ -135,13 +135,14 @@ export const FIELD_AIDS = {
     prayers: ['Father, place me in Your body to give and receive. Amen.'],
   },
   'trust-in-the-lord': {
+    // About people + Lord as answer — not Control’s “stop securing” steps
     hacks: [
-      'Name the grip: I am securing the outcome. Stop. Lean on Him — not on your own understanding.',
-      'Take only the next step He shows. Do not demand the whole map.',
-      'Release what you cannot rule. Panic is not wisdom. Presence is not control.',
+      'Name it: I am making a person (or their choice) my safety. They are not God.',
+      'Entrust them to the Lord. Do your part. Do not make their will your peace.',
+      'Lean on Him, not on your reading of them or your own understanding.',
     ],
     prayers: [
-      'Father, I trust You with all my heart. I release the outcome. Direct my path. Amen.',
+      'Father, I trust You with them and with me. You are my safety. Amen.',
     ],
   },
   'the-cross-and-our-justification': {
