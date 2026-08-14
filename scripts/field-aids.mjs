@@ -367,23 +367,23 @@ export const FIELD_AIDS = {
   },
   control: {
     hacks: [
-      'Control is often fear at work. Name the fear — then open the hand.',
+      'Control grips the outcome. Often fear — also pride, habit, or idol. Name the driver. Open the hand.',
       'If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.',
       'Rule yourself, not them. Do your part. Leave the rest to God.',
     ],
     prayers: [
-      'Father, this grip is fear. I release control. Direct my path. Amen.',
+      'Father, I release this grip — fear, pride, or idol. Direct my path. Amen.',
     ],
   },
   'presence-without-control': {
     // Same station chrome as god-first / Master the Flesh: ≤3 flat holds
     hacks: [
       'Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.',
-      'Don’t force the present or the future — that grip is often fear. Just exist in the moment; the future is unknown.',
+      'Don’t force the present or the future — that is control (often fear, not only fear). Exist in the moment; the future is unknown.',
       'When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.',
     ],
     prayers: [
-      'Father, this force is fear. I release this moment and the unknown. I am present under You. Amen.',
+      'Father, I release this grip. I am present under You. Amen.',
     ],
   },
   'spiritual-warfare': {

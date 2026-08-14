@@ -50,7 +50,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Regret](https://bedrock.rippel.ai/c/regret) — Godly grief leads to life; worldly grief leads to death.
 - [Addiction](https://bedrock.rippel.ai/c/addiction) — If it masters you, it is not free — walk by the Spirit; put the flesh to death.
 - [Jealousy](https://bedrock.rippel.ai/c/jealousy) — If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
-- [Control](https://bedrock.rippel.ai/c/control) — Control is often fear at work. Open the hand — rule yourself, not them.
+- [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Open the hand.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.

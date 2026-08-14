@@ -1,22 +1,22 @@
 # Control
 
-> Control is often fear at work. Open the hand — rule yourself, not them.
+> Control is the grip on the outcome. Often fear — also pride, habit, or idol. Open the hand.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/control*
 
 ## Under fire
 
-- Control is often fear at work. Name the fear — then open the hand.
+- Control grips the outcome. Often fear — also pride, habit, or idol. Name the driver. Open the hand.
 - If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.
 - Rule yourself, not them. Do your part. Leave the rest to God.
 
 ## Prayer
 
-Father, this grip is fear. I release control. Direct my path. Amen.
+Father, I release this grip — fear, pride, or idol. Direct my path. Amen.
 
 ## Truth
 
-When the grip tightens, name the driver: control is often fear at work. Name the fear. Then open the hand and leave the outcome to the Lord.
+Control is the grip that tries to secure the outcome — people, timeline, certainty. It is often fear at work; pride, habit, and the idol of outcome can drive it too. Name the driver. Open the hand. Leave the rest to the Lord.
 
 Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
 

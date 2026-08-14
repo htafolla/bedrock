@@ -1443,10 +1443,10 @@ const document = {
     ),
     chamber(
       'Control',
-      'Control is often fear at work. Open the hand — rule yourself, not them.',
+      'Control is the grip on the outcome. Often fear — also pride, habit, or idol. Open the hand.',
       [
-        // Diagnostic lead (not a hold list) — then Scripture, god-first form
-        'When the grip tightens, name the driver: control is often fear at work. Name the fear. Then open the hand and leave the outcome to the Lord.',
+        // What control is (precise): driver is often fear, not always only fear
+        'Control is the grip that tries to secure the outcome — people, timeline, certainty. It is often fear at work; pride, habit, and the idol of outcome can drive it too. Name the driver. Open the hand. Leave the rest to the Lord.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.',
@@ -1463,8 +1463,8 @@ const document = {
       'Presence Without Control',
       'Relax. Be present. Don’t take or force control of the present or the future.',
       [
-        // Echo diagnosis lightly; practice stays in Under fire
-        'Forcing the present or the future is often fear wearing control. Presence is not control — show up cleanly; do not manage the outcome.',
+        // Echo: force = control; driver often fear, not absolute
+        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',

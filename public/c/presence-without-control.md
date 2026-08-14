@@ -7,16 +7,16 @@
 ## Under fire
 
 - Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.
-- Don’t force the present or the future — that grip is often fear. Just exist in the moment; the future is unknown.
+- Don’t force the present or the future — that is control (often fear, not only fear). Exist in the moment; the future is unknown.
 - When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.
 
 ## Prayer
 
-Father, this force is fear. I release this moment and the unknown. I am present under You. Amen.
+Father, I release this grip. I am present under You. Amen.
 
 ## Truth
 
-Forcing the present or the future is often fear wearing control. Presence is not control — show up cleanly; do not manage the outcome.
+Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
