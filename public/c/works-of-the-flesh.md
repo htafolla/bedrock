@@ -34,7 +34,7 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 
 ## Connected truth
 
-- [Master the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
+- [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

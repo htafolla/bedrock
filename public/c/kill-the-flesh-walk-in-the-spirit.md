@@ -272,7 +272,7 @@ Do better. Be better. Trust God.
 
 ## Connected truth
 
-- [Master the Flesh](https://bedrock.rippel.ai/c/kill-the-flesh)
+- [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)

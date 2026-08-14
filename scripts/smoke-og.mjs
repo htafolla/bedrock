@@ -25,7 +25,7 @@ const checks = [
   },
   {
     name: 'Master the Flesh station',
-    page: `${origin}/c/kill-the-flesh`,
+    page: `${origin}/c/master-the-flesh`,
     image: `${origin}/og/c/kill-the-flesh.v7.png`,
   },
   {

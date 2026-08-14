@@ -11,6 +11,8 @@ import {
 describe('path-routing', () => {
   it('builds canonical and app hrefs', () => {
     expect(chamberPath('god-first')).toBe('/c/god-first')
+    // Preferred public slug when title ≠ internal id
+    expect(chamberPath('kill-the-flesh')).toBe('/c/master-the-flesh')
     expect(chamberAppHref('god-first')).toBe('/?c=god-first')
   })
 
@@ -41,6 +43,9 @@ describe('path-routing', () => {
   it('parses /c/:id path', () => {
     expect(parseChamberFromLocation('', '/c/jealousy')).toBe('jealousy')
     expect(parseChamberFromLocation('', '/c/walk-by-the-spirit/')).toBe('walk-by-the-spirit')
+    // Public alias → stable content id
+    expect(parseChamberFromLocation('', '/c/master-the-flesh')).toBe('kill-the-flesh')
+    expect(parseChamberFromLocation('?c=master-the-flesh', '/')).toBe('kill-the-flesh')
   })
 
   it('rejects junk', () => {

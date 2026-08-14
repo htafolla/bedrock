@@ -1,4 +1,5 @@
 import type { BedrockDocument, Chamber } from '../types/content'
+import { publicChamberSlug } from './chamber-slugs'
 
 /** Canonical production origin */
 export const SITE_ORIGIN = 'https://bedrock.rippel.ai'
@@ -12,9 +13,9 @@ export const OG_IMAGE_PATH = '/og-hero.jpg'
  */
 export const OG_IMAGE_URL = `${SITE_ORIGIN}${OG_IMAGE_PATH}`
 
-/** Canonical crawlable chamber URL (static HTML + .md for AI). */
+/** Canonical crawlable chamber URL (static HTML + .md for AI). Uses preferred public slug. */
 export function chamberCanonicalUrl(id: string): string {
-  return `${SITE_ORIGIN}/c/${id}`
+  return `${SITE_ORIGIN}/c/${publicChamberSlug(id)}`
 }
 
 /** Canonical crawlable journey/path URL (static HTML with path OG card). */

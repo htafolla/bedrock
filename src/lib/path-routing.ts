@@ -9,6 +9,8 @@
  * replaceState only for first paint / no-op same URL.
  */
 
+import { publicChamberSlug, resolveChamberIdFromSlug } from './chamber-slugs'
+
 export const CHAMBER_QUERY = 'c'
 export const JOURNEY_QUERY = 'j'
 
@@ -18,12 +20,14 @@ function isSlugId(v: string): boolean {
   return ID_RE.test(v.trim())
 }
 
+/** Public /c/ path (preferred slug when title ≠ internal id). */
 export function chamberPath(id: string): string {
-  return `/c/${id}`
+  return `/c/${publicChamberSlug(id)}`
 }
 
+/** SPA open uses stable internal id so content lookup never misses. */
 export function chamberAppHref(id: string): string {
-  return `/?${CHAMBER_QUERY}=${encodeURIComponent(id)}`
+  return `/?${CHAMBER_QUERY}=${encodeURIComponent(resolveChamberIdFromSlug(id))}`
 }
 
 /** Canonical crawlable journey page (static OG for social share). */
@@ -47,13 +51,13 @@ export function parseChamberFromLocation(
   try {
     const q = new URLSearchParams(search).get(CHAMBER_QUERY)
     if (q && isSlugId(q)) {
-      return q.trim().toLowerCase()
+      return resolveChamberIdFromSlug(q)
     }
   } catch {
     /* ignore */
   }
   const m = pathname.match(/^\/c\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/i)
-  if (m?.[1]) return m[1].toLowerCase()
+  if (m?.[1]) return resolveChamberIdFromSlug(m[1])
   return null
 }
 

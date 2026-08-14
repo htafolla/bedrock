@@ -25,6 +25,17 @@ function ogFile(id) {
 function ogUrl(kind, id) {
   return `${ORIGIN}/og/${kind}/${ogFile(id)}`
 }
+/** Keep in sync with src/lib/chamber-slugs.ts */
+const CHAMBER_PUBLIC_SLUG = {
+  'kill-the-flesh': 'master-the-flesh',
+}
+function publicChamberSlug(id) {
+  const s = String(id || '').toLowerCase()
+  return CHAMBER_PUBLIC_SLUG[s] ?? s
+}
+function chamberPublicUrl(id) {
+  return `${ORIGIN}/c/${publicChamberSlug(id)}`
+}
 
 /** Parse KEY_ENTRIES from key-entries.ts (same pattern as repertoire loader). */
 function loadKeyEntries() {
@@ -178,12 +189,13 @@ function chamberMarkdown(c, titleById = new Map()) {
   const related = c.related
     .map((id) => {
       const label = titleById.get(id) || id
-      return `- [${label}](${ORIGIN}/c/${id})`
+      return `- [${label}](${chamberPublicUrl(id)})`
     })
     .join('\n')
+  const pub = chamberPublicUrl(c.id)
   const kicker = isRubric
-    ? `*Standard · Field card first · Hold first · Bedrock · ${ORIGIN}/c/${c.id}*`
-    : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${ORIGIN}/c/${c.id}*`
+    ? `*Standard · Field card first · Hold first · Bedrock · ${pub}*`
+    : `*Station · Hold first (Under fire → Prayer → Truth) · Bedrock · ${pub}*`
   const truthHeading = isRubric ? 'The standard' : 'Truth'
   const ill = c.illustration
   const illMd = ill
@@ -217,7 +229,7 @@ ${verses}
 ${related}
 
 ---
-Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: ${ORIGIN}/c/${c.id}.md
+Do better. Be better. Trust God. · Public beta · Not a crisis hotline. · Cite this page for AI: ${chamberPublicUrl(c.id)}.md
 `
 }
 
@@ -385,10 +397,12 @@ function chamberHtml(c, meta, titleById = new Map()) {
       : 'The next right hold — walk this hour.'
   const prayers = c.prayers.map((p) => `<p class="prayer">${esc(p)}</p>`).join('\n')
   const versesList = versesListHtml(c.verses || [])
+  const slug = publicChamberSlug(c.id)
+  const pubUrl = chamberPublicUrl(c.id)
   const related = (c.related || [])
     .map((id) => {
       const label = titleById.get(id) || id
-      return `<li><a class="related-link" href="/c/${esc(id)}">${esc(label)}</a></li>`
+      return `<li><a class="related-link" href="/c/${esc(publicChamberSlug(id))}">${esc(label)}</a></li>`
     })
     .join('\n')
   const kicker = isRubric ? 'Rubric · daily standard · Bedrock' : 'First principle · Bedrock'
@@ -408,7 +422,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
       `${c.summary} Hold first: Under fire, prayer, then Truth. Do Better. Be Better. Trust God.`,
     ),
   )
-  const pagePath = `/c/${c.id}`
+  const pagePath = `/c/${slug}`
   const analytics = analyticsHeadSnippet(pagePath)
 
   const articleLd = {
@@ -416,7 +430,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     '@type': 'Article',
     headline: c.title,
     description: c.summary,
-    url: `${ORIGIN}/c/${c.id}`,
+    url: pubUrl,
     author: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Bedrock', url: ORIGIN },
     image: `${ogUrl('c', c.id)}`,
@@ -446,7 +460,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
         text: 'When capacity returns, read the Scripture-rooted body on this page.',
       },
     ],
-    url: `${ORIGIN}/c/${c.id}`,
+    url: pubUrl,
   }
 
   return `<!DOCTYPE html>
@@ -458,13 +472,13 @@ function chamberHtml(c, meta, titleById = new Map()) {
   <meta name="description" content="${desc}" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="ai-content-declaration" content="human-authored Christian field guide; hold-first: Under fire, Prayer, then Truth" />
-  <link rel="canonical" href="${ORIGIN}/c/${esc(c.id)}" />
-  <link rel="alternate" type="text/markdown" href="${ORIGIN}/c/${esc(c.id)}.md" title="Markdown" />
+  <link rel="canonical" href="${esc(pubUrl)}" />
+  <link rel="alternate" type="text/markdown" href="${esc(pubUrl)}.md" title="Markdown" />
   <meta property="og:site_name" content="Bedrock" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
-  <meta property="og:url" content="${ORIGIN}/c/${esc(c.id)}" />
+  <meta property="og:url" content="${esc(pubUrl)}" />
   <meta property="og:image" content="${ogUrl('c', c.id)}" />
   <meta property="og:image:secure_url" content="${ogUrl('c', c.id)}" />
   <meta property="og:image:type" content="image/png" />
@@ -591,7 +605,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     <p class="summary">${esc(c.summary)}</p>
     <nav class="nav" aria-label="Chamber actions">
       <a class="primary" href="/?c=${esc(c.id)}">Open in field guide</a>
-      <a href="/c/${esc(c.id)}.md">Markdown</a>
+      <a href="/c/${esc(slug)}.md">Markdown</a>
       <a href="/">Home</a>
       <a href="/llms.txt">llms.txt</a>
     </nav>
@@ -756,7 +770,7 @@ function doorHtml(k) {
   spa.set('door', k.id)
   if (k.journeyId) spa.set('j', k.journeyId)
   const spaHref = `/?${spa.toString()}`
-  const chamberHref = `/c/${esc(k.chamberId)}`
+  const chamberHref = `/c/${esc(publicChamberSlug(k.chamberId))}`
   const pathHref = k.journeyId ? `/j/${esc(k.journeyId)}` : null
 
   return `<!DOCTYPE html>
@@ -855,7 +869,7 @@ function journeyHtml(j) {
   const stageList = stages
     .map(
       (s, i) =>
-        `<li><span class="stage-num">${i + 1}</span> <a href="/c/${esc(s.chamberId)}">${esc(s.label)}</a>${
+        `<li><span class="stage-num">${i + 1}</span> <a href="/c/${esc(publicChamberSlug(s.chamberId))}">${esc(s.label)}</a>${
           s.note ? ` <span class="stage-note">— ${esc(s.note)}</span>` : ''
         }</li>`,
     )
@@ -868,7 +882,7 @@ function journeyHtml(j) {
   const pagePath = `/j/${j.id}`
   const analytics = analyticsHeadSnippet(pagePath)
   const spaHref = `/?j=${encodeURIComponent(j.id)}`
-  const doorHref = j.doorChamberId ? `/c/${esc(j.doorChamberId)}` : '/'
+  const doorHref = j.doorChamberId ? `/c/${esc(publicChamberSlug(j.doorChamberId))}` : '/'
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1078,7 +1092,7 @@ function buildSitemap(doc, journeys = [], keys = []) {
     { loc: `${ORIGIN}/export/chambers.json`, priority: '0.8' },
     { loc: `${ORIGIN}/export/journeys.json`, priority: '0.8' },
     ...doc.chambers.map((c) => ({
-      loc: `${ORIGIN}/c/${c.id}`,
+      loc: chamberPublicUrl(c.id),
       priority: c.kind === 'rubric' || c.id === 'kill-the-flesh-walk-in-the-spirit' ? '0.95' : '0.85',
       image: `${ogUrl('c', c.id)}`,
       imageTitle: c.title,
@@ -1133,7 +1147,7 @@ export async function buildAiSurface(doc) {
 
   // Index of chambers for /c/
   const indexLinks = doc.chambers
-    .map((c) => `- [${c.title}](${ORIGIN}/c/${c.id}) — ${c.summary}`)
+    .map((c) => `- [${c.title}](${chamberPublicUrl(c.id)}) — ${c.summary}`)
     .join('\n')
   writeFileSync(
     join(cDir, 'README.md'),
@@ -1142,8 +1156,17 @@ export async function buildAiSurface(doc) {
 
   const titleById = new Map(doc.chambers.map((ch) => [ch.id, ch.title]))
   for (const c of doc.chambers) {
-    writeFileSync(join(cDir, `${c.id}.md`), chamberMarkdown(c, titleById))
-    writeFileSync(join(cDir, `${c.id}.html`), chamberHtml(c, doc.meta, titleById))
+    const slug = publicChamberSlug(c.id)
+    const md = chamberMarkdown(c, titleById)
+    const html = chamberHtml(c, doc.meta, titleById)
+    // Preferred public path (e.g. master-the-flesh.html)
+    writeFileSync(join(cDir, `${slug}.md`), md)
+    writeFileSync(join(cDir, `${slug}.html`), html)
+    // Keep internal id files when slug differs so local tooling / old mirrors still resolve
+    if (slug !== c.id) {
+      writeFileSync(join(cDir, `${c.id}.md`), md)
+      writeFileSync(join(cDir, `${c.id}.html`), html)
+    }
   }
 
   const exportPayload = {
@@ -1156,8 +1179,9 @@ export async function buildAiSurface(doc) {
     },
     chambers: doc.chambers.map((c) => ({
       ...c,
-      url: `${ORIGIN}/c/${c.id}`,
-      markdownUrl: `${ORIGIN}/c/${c.id}.md`,
+      url: chamberPublicUrl(c.id),
+      markdownUrl: `${chamberPublicUrl(c.id)}.md`,
+      publicSlug: publicChamberSlug(c.id),
       ogImage: `${ogUrl('c', c.id)}`,
     })),
   }
@@ -1174,7 +1198,7 @@ export async function buildAiSurface(doc) {
         ...j,
         url: `${ORIGIN}/j/${j.id}`,
         ogImage: ogUrl('j', j.id),
-        doorUrl: `${ORIGIN}/c/${j.doorChamberId}`,
+        doorUrl: j.doorChamberId ? chamberPublicUrl(j.doorChamberId) : undefined,
       })),
     }
     writeFileSync(join(exportDir, 'journeys.json'), JSON.stringify(journeysExport, null, 2) + '\n')

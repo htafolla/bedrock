@@ -324,7 +324,10 @@ function createApp() {
     const j = typeof req.query.j === 'string' ? req.query.j.trim().toLowerCase() : ''
     const k = typeof req.query.k === 'string' ? req.query.k.trim().toLowerCase() : ''
     if (c && SLUG_RE.test(c)) {
-      res.redirect(302, `/c/${encodeURIComponent(c)}`)
+      // Prefer public slug (master-the-flesh) over legacy internal id
+      const contentId = resolveChamberIdFromSlug(c)
+      const preferred = publicChamberSlug(contentId)
+      res.redirect(302, `/c/${encodeURIComponent(preferred)}`)
       return
     }
     if (j && SLUG_RE.test(j)) {
@@ -799,37 +802,77 @@ function createApp() {
     res.setHeader('Expires', '0')
   }
 
+  /**
+   * Public slug aliases (title-aligned URLs). Keep in sync with
+   * src/lib/chamber-slugs.ts — preferred slug 301s away from legacy ids.
+   */
+  const CHAMBER_PUBLIC_SLUG = {
+    'kill-the-flesh': 'master-the-flesh',
+  }
+  const CHAMBER_SLUG_ALIASES = {
+    'master-the-flesh': 'kill-the-flesh',
+  }
+  function resolveChamberIdFromSlug(slug) {
+    const s = String(slug || '').toLowerCase()
+    return CHAMBER_SLUG_ALIASES[s] ?? s
+  }
+  function publicChamberSlug(id) {
+    const s = String(id || '').toLowerCase()
+    return CHAMBER_PUBLIC_SLUG[s] ?? s
+  }
+
   // Clean /c/:id → .html ; /c/:id.md → markdown
+  // Preferred public slug is canonical (e.g. /c/master-the-flesh).
+  // Legacy internal id redirects 301 (e.g. /c/kill-the-flesh → master-the-flesh).
   app.get('/c/:id.md', (req, res, next) => {
-    const id = String(req.params.id || '').toLowerCase()
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+    const raw = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(raw)) {
       next()
       return
     }
+    const contentId = resolveChamberIdFromSlug(raw)
+    const preferred = publicChamberSlug(contentId)
+    if (raw !== preferred) {
+      res.redirect(301, `/c/${preferred}.md`)
+      return
+    }
+    const candidates = raw === contentId ? [raw] : [raw, contentId]
     for (const base of staticRoots) {
-      const file = path.join(base, 'c', `${id}.md`)
-      if (existsSync(file)) {
-        res.type('text/markdown; charset=utf-8')
-        setContentNoStore(res)
-        res.sendFile(file)
-        return
+      for (const name of candidates) {
+        const file = path.join(base, 'c', `${name}.md`)
+        if (existsSync(file)) {
+          res.type('text/markdown; charset=utf-8')
+          setContentNoStore(res)
+          res.sendFile(file)
+          return
+        }
       }
     }
     res.status(404).type('text').send('Chamber markdown not found')
   })
 
   app.get('/c/:id', (req, res, next) => {
-    const id = String(req.params.id || '').toLowerCase()
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+    const raw = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(raw)) {
       next()
       return
     }
+    const contentId = resolveChamberIdFromSlug(raw)
+    const preferred = publicChamberSlug(contentId)
+    if (raw !== preferred) {
+      res.redirect(301, `/c/${preferred}`)
+      return
+    }
+    // Serve preferred slug file, fall back to internal id file
+    const candidates = preferred === contentId ? [preferred] : [preferred, contentId]
     for (const base of staticRoots) {
-      const file = path.join(base, 'c', `${id}.html`)
-      if (existsSync(file)) {
-        setContentNoStore(res)
-        res.sendFile(file)
-        return
+      for (const name of candidates) {
+        const file = path.join(base, 'c', `${name}.html`)
+        if (existsSync(file)) {
+          setContentNoStore(res)
+          res.sendFile(file)
+          return
+        }
       }
     }
     res.status(404).type('text').send('Chamber not found')

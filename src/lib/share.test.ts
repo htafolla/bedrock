@@ -24,6 +24,16 @@ describe('share payloads', () => {
     expect(p.ogImage).toMatch(/\/og\/c\/wounded\.v\d+\.png$/)
   })
 
+  it('Master the Flesh share uses public slug URL, stable og id', () => {
+    const p = buildStationShare({
+      chamberId: 'kill-the-flesh',
+      title: 'Master the Flesh',
+      summary: 'You’re in a fight.',
+    })
+    expect(p.url).toBe(`${SITE_ORIGIN}/c/master-the-flesh`)
+    expect(p.ogImage).toMatch(/\/og\/c\/kill-the-flesh\.v\d+\.png$/)
+  })
+
   it('rubric chamber is standard layer', () => {
     const p = buildStationShare({
       chamberId: 'kill-the-flesh-walk-in-the-spirit',
