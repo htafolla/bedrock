@@ -556,6 +556,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://bedrock.rippel.ai/c/pain-interrupt</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://bedrock.rippel.ai/og/c/pain-interrupt.v7.png</image:loc>
+      <image:title>Pain Interrupt</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://bedrock.rippel.ai/c/renew-your-mind</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>

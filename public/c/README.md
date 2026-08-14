@@ -53,6 +53,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Stop securing what only God can rule.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
 - [The Line](https://bedrock.rippel.ai/c/the-line) — My emotional state is my own. Presence without control. Love keeps no record.
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt) — Notice it. My emotional state is my own. Return to what is in front of me.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
 - [The Word](https://bedrock.rippel.ai/c/the-word) — The lie says you cannot know or understand. God says His Word is for you — light to the simple.

@@ -1,5 +1,5 @@
 /**
- * Social share for Key · Station · Path · Standard · Linchpin.
+ * Social share for Key · Station · Path · Standard · Stance · Lock.
  *
  * Platform reality:
  * - X / Facebook: share a URL; previews use Open Graph (og:image).
@@ -23,7 +23,8 @@ export type ShareLayer =
   | 'station'
   | 'path'
   | 'standard'
-  | 'linchpin'
+  | 'stance'
+  | 'lock'
   | 'origin'
   | 'testimony'
 
@@ -48,7 +49,8 @@ export interface SharePayload {
 }
 
 const STANDARD_CHAMBER_ID = 'kill-the-flesh-walk-in-the-spirit'
-const LINCHPIN_CHAMBER_ID = 'the-line'
+const STANCE_CHAMBER_ID = 'the-line'
+const LOCK_CHAMBER_ID = 'pain-interrupt'
 
 export function layerLabel(layer: ShareLayer): string {
   switch (layer) {
@@ -60,8 +62,10 @@ export function layerLabel(layer: ShareLayer): string {
       return 'Path'
     case 'standard':
       return 'Standard'
-    case 'linchpin':
-      return 'Linchpin'
+    case 'stance':
+      return 'Stance'
+    case 'lock':
+      return 'Lock'
     case 'origin':
       return 'Origin'
     case 'testimony':
@@ -107,14 +111,23 @@ export function buildStationShare(input: {
   kind?: string
 }): SharePayload {
   const isStandard = input.kind === 'rubric' || input.chamberId === STANDARD_CHAMBER_ID
-  const isLinchpin = input.kind === 'linchpin' || input.chamberId === LINCHPIN_CHAMBER_ID
-  const layer: ShareLayer = isStandard ? 'standard' : isLinchpin ? 'linchpin' : 'station'
+  const isStance = input.kind === 'stance' || input.chamberId === STANCE_CHAMBER_ID
+  const isLock = input.kind === 'lock' || input.chamberId === LOCK_CHAMBER_ID
+  const layer: ShareLayer = isStandard
+    ? 'standard'
+    : isStance
+      ? 'stance'
+      : isLock
+        ? 'lock'
+        : 'station'
   const url = chamberCanonicalUrl(input.chamberId)
   const title = isStandard
     ? `${input.title} — Bedrock Standard`
-    : isLinchpin
-      ? `${input.title} — Bedrock Linchpin`
-      : `${input.title} — Bedrock`
+    : isStance
+      ? `${input.title} — Bedrock Stance`
+      : isLock
+        ? `${input.title} — Bedrock Lock`
+        : `${input.title} — Bedrock`
   const text = input.summary
   return {
     layer,

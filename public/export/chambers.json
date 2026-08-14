@@ -11,8 +11,8 @@
     "ipfsCid": null,
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
-    "chamberCount": 79,
-    "exportedAt": "2026-08-14T18:29:48.236Z",
+    "chamberCount": 80,
+    "exportedAt": "2026-08-14T18:38:42.125Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -1481,6 +1481,7 @@
       ],
       "related": [
         "the-line",
+        "pain-interrupt",
         "kill-the-flesh",
         "walk-by-the-spirit",
         "works-of-the-flesh",
@@ -3707,6 +3708,7 @@
         "Father, my hands are empty. Be near. Amen."
       ],
       "related": [
+        "pain-interrupt",
         "lament-and-pour-out-your-heart",
         "a-broken-and-contrite-heart",
         "hope-of-glory",
@@ -3799,6 +3801,8 @@
         "Father, You see what was done to me. Heal me and hold me. Amen."
       ],
       "related": [
+        "pain-interrupt",
+        "the-line",
         "loss",
         "leave-vengeance-to-the-lord",
         "do-not-repay-evil-with-evil",
@@ -3885,6 +3889,8 @@
         "Lord, I release the replaying mind. Amen."
       ],
       "related": [
+        "pain-interrupt",
+        "the-line",
         "take-every-thought-captive",
         "renew-your-mind",
         "the-word",
@@ -4235,6 +4241,7 @@
       ],
       "related": [
         "the-line",
+        "pain-interrupt",
         "fear",
         "presence-without-control",
         "kill-the-flesh",
@@ -4260,7 +4267,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](chamber:the-line)."
+          "text": "Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — stand on [The Line](chamber:the-line). When a memory or pain wave hits — use [Pain Interrupt](chamber:pain-interrupt)."
         },
         {
           "type": "paragraph",
@@ -4332,6 +4339,7 @@
       ],
       "related": [
         "the-line",
+        "pain-interrupt",
         "kill-the-flesh",
         "control",
         "love",
@@ -4356,7 +4364,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool."
+          "text": "When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the stance — how you stand every day under the Standard."
         },
         {
           "type": "paragraph",
@@ -4364,7 +4372,7 @@
         },
         {
           "type": "paragraph",
-          "text": "These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide."
+          "text": "This is the posture. When pain, memory, or rage surges mid-hour, use [Pain Interrupt](chamber:pain-interrupt) — the lock that snaps you back into this stance."
         },
         {
           "type": "paragraph",
@@ -4435,6 +4443,7 @@
         "Father, my state is my own. I am present under You. I keep no record. Amen."
       ],
       "related": [
+        "pain-interrupt",
         "kill-the-flesh-walk-in-the-spirit",
         "kill-the-flesh",
         "presence-without-control",
@@ -4445,11 +4454,109 @@
         "god-first",
         "forgive-as-you-have-been-forgiven"
       ],
-      "kind": "linchpin",
+      "kind": "stance",
       "url": "https://bedrock.rippel.ai/c/the-line",
       "markdownUrl": "https://bedrock.rippel.ai/c/the-line.md",
       "publicSlug": "the-line",
       "ogImage": "https://bedrock.rippel.ai/og/c/the-line.v7.png"
+    },
+    {
+      "id": "pain-interrupt",
+      "title": "Pain Interrupt",
+      "summary": "Notice it. My emotional state is my own. Return to what is in front of me.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "A painful memory or reminder hits — it hurts. This is not the time to rebuild the whole creed. This is the lock: three moves that snap you back into [The Line](chamber:the-line)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Notice it — name the wave without following it. My emotional state is my own — not theirs; their choices do not own this hour. Return to what is in front of you — the next real task, person, or prayer under your feet."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stance is how you live. Lock is how you recover when the wave hits. Then stand again on The Line."
+        },
+        {
+          "type": "paragraph",
+          "text": "We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ."
+        },
+        {
+          "type": "paragraph",
+          "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."
+        }
+      ],
+      "verses": [
+        {
+          "display": "2 Corinthians 10:5",
+          "book": "2 Corinthians",
+          "chapter": 10,
+          "verseStart": 5
+        },
+        {
+          "display": "Philippians 4:8",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 8
+        },
+        {
+          "display": "Philippians 4:6",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "Matthew 6:34",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 34
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
+        },
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        }
+      ],
+      "hacks": [
+        "Notice it.",
+        "My emotional state is my own.",
+        "Return to what is in front of me."
+      ],
+      "prayers": [
+        "Father, I notice this pain. My state is my own. I return to what is in front of me. Amen."
+      ],
+      "related": [
+        "the-line",
+        "wounded",
+        "rumination",
+        "loss",
+        "control",
+        "presence-without-control",
+        "fear",
+        "kill-the-flesh",
+        "take-every-thought-captive",
+        "peace"
+      ],
+      "kind": "lock",
+      "url": "https://bedrock.rippel.ai/c/pain-interrupt",
+      "markdownUrl": "https://bedrock.rippel.ai/c/pain-interrupt.md",
+      "publicSlug": "pain-interrupt",
+      "ogImage": "https://bedrock.rippel.ai/og/c/pain-interrupt.v7.png"
     },
     {
       "id": "renew-your-mind",
@@ -5330,6 +5437,7 @@
       ],
       "related": [
         "the-line",
+        "pain-interrupt",
         "kill-the-flesh-walk-in-the-spirit",
         "presence-without-control",
         "walk-by-the-spirit",

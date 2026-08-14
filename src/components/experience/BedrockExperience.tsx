@@ -249,24 +249,28 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   const isRubricOpen =
     state.mode === 'chamber' && activeChamber?.kind === 'rubric'
-  const isLinchpinOpen =
-    state.mode === 'chamber' && activeChamber?.kind === 'linchpin'
-  const depthLayer: 'door' | 'station' | 'path' | 'linchpin' | 'standard' | null =
+  const isStanceOpen =
+    state.mode === 'chamber' && activeChamber?.kind === 'stance'
+  const isLockOpen =
+    state.mode === 'chamber' && activeChamber?.kind === 'lock'
+  const depthLayer: 'door' | 'station' | 'path' | 'stance' | 'lock' | 'standard' | null =
     state.mode === 'arrival'
       ? null
       : isRubricOpen
         ? 'standard'
-        : isLinchpinOpen
-          ? 'linchpin'
-          : state.mode === 'chamber'
-            ? activeJourney
-              ? 'path'
-              : 'station'
-            : navMode === 'journeys'
-              ? 'path'
-              : navMode === 'toc'
-                ? 'station'
-                : 'door'
+        : isStanceOpen
+          ? 'stance'
+          : isLockOpen
+            ? 'lock'
+            : state.mode === 'chamber'
+              ? activeJourney
+                ? 'path'
+                : 'station'
+              : navMode === 'journeys'
+                ? 'path'
+                : navMode === 'toc'
+                  ? 'station'
+                  : 'door'
 
   return (
     <div className={`experience mode-${state.mode} nav-${navMode}`}>
@@ -330,7 +334,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               onToggleTheme={toggleTheme}
               onHome={goHome}
             />
-            {/* Depth ladder: Key · Station · Path · Linchpin · Standard (subtle on chamber) */}
+            {/* Depth ladder: Key · Station · Path · Stance · Lock · Standard (subtle on chamber) */}
             {depthLayer ? (
               <p
                 className={
@@ -358,8 +362,14 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 <span className="depth-sep" aria-hidden>
                   ·
                 </span>
-                <span className={depthLayer === 'linchpin' ? 'depth-step active' : 'depth-step'}>
-                  Linchpin
+                <span className={depthLayer === 'stance' ? 'depth-step active' : 'depth-step'}>
+                  Stance
+                </span>
+                <span className="depth-sep" aria-hidden>
+                  ·
+                </span>
+                <span className={depthLayer === 'lock' ? 'depth-step active' : 'depth-step'}>
+                  Lock
                 </span>
                 <span className="depth-sep" aria-hidden>
                   ·

@@ -55,17 +55,30 @@ describe('seo', () => {
     expect(seo.ogImage).toMatch(/\/og\/c\/kill-the-flesh-walk-in-the-spirit\.v\d+\.png$/)
   })
 
-  it('linchpin chamber titles as Linchpin', () => {
+  it('stance chamber titles as Stance', () => {
     const c = doc.chambers.find((x) => x.id === 'the-line')!
     const seo = buildChamberSeo(doc, c)
-    expect(c.kind).toBe('linchpin')
-    expect(seo.title).toContain('Bedrock Linchpin')
+    expect(c.kind).toBe('stance')
+    expect(seo.title).toContain('Bedrock Stance')
     expect(seo.canonical).toContain('/c/the-line')
     expect(seo.ogImage).toMatch(/\/og\/c\/the-line\.v\d+\.png$/)
     const article = seo.jsonLd.find((b) => b['@type'] === 'Article') as
       | { articleSection?: string }
       | undefined
-    expect(article?.articleSection).toMatch(/Linchpin/i)
+    expect(article?.articleSection).toMatch(/Stance/i)
+  })
+
+  it('lock chamber titles as Lock', () => {
+    const c = doc.chambers.find((x) => x.id === 'pain-interrupt')!
+    const seo = buildChamberSeo(doc, c)
+    expect(c.kind).toBe('lock')
+    expect(seo.title).toContain('Bedrock Lock')
+    expect(seo.canonical).toContain('/c/pain-interrupt')
+    expect(seo.ogImage).toMatch(/\/og\/c\/pain-interrupt\.v\d+\.png$/)
+    const article = seo.jsonLd.find((b) => b['@type'] === 'Article') as
+      | { articleSection?: string }
+      | undefined
+    expect(article?.articleSection).toMatch(/Lock/i)
   })
 
   it('FAQ covers product intent questions', () => {

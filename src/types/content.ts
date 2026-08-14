@@ -21,15 +21,16 @@ export interface ScriptureRef {
  * Artifact kind on the spine:
  * - chamber — first-principle card (Scripture-led Truth · short Under fire · Prayer)
  * - rubric — operational SOP under fire (forged word + denser standard; same steel, different form)
- * - linchpin — field creed that locks a station cluster (assembly rule under Standard)
+ * - stance — daily posture / creed (how you stand every day; e.g. The Line)
+ * - lock — moment tool that snaps you back into stance when pain, memory, or rage surges
  */
-export type ChamberKind = 'chamber' | 'rubric' | 'linchpin'
+export type ChamberKind = 'chamber' | 'rubric' | 'stance' | 'lock'
 
 /**
  * Field-guide node on the navigable web of truth.
  * Chambers: Truth (body + verses) | Hack | Prayer.
  * Rubrics: Forged word + Standard (body) | Under fire (≤3) | Prayer — intentionally denser SOP.
- * Linchpin: three iron lines that bind a cluster (e.g. fear · control · trust · flesh · presence).
+ * Stance: daily creed (The Line). Lock: field interrupt when the wave hits (Pain Interrupt).
  */
 /** Optional battle-card / station illustration (static under public/). */
 export interface ChamberIllustration {

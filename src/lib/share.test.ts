@@ -45,18 +45,32 @@ describe('share payloads', () => {
     expect(layerLabel(p.layer)).toBe('Standard')
   })
 
-  it('linchpin chamber is linchpin layer', () => {
+  it('stance chamber is stance layer', () => {
     const p = buildStationShare({
       chamberId: 'the-line',
       title: 'The Line',
       summary: 'My emotional state is my own. Presence without control. Love keeps no record.',
-      kind: 'linchpin',
+      kind: 'stance',
     })
-    expect(p.layer).toBe('linchpin')
-    expect(layerLabel(p.layer)).toBe('Linchpin')
-    expect(p.title).toContain('Bedrock Linchpin')
+    expect(p.layer).toBe('stance')
+    expect(layerLabel(p.layer)).toBe('Stance')
+    expect(p.title).toContain('Bedrock Stance')
     expect(p.url).toBe(`${SITE_ORIGIN}/c/the-line`)
     expect(p.ogImage).toMatch(/\/og\/c\/the-line\.v\d+\.png$/)
+  })
+
+  it('lock chamber is lock layer', () => {
+    const p = buildStationShare({
+      chamberId: 'pain-interrupt',
+      title: 'Pain Interrupt',
+      summary: 'Notice it. My emotional state is my own. Return to what is in front of me.',
+      kind: 'lock',
+    })
+    expect(p.layer).toBe('lock')
+    expect(layerLabel(p.layer)).toBe('Lock')
+    expect(p.title).toContain('Bedrock Lock')
+    expect(p.url).toBe(`${SITE_ORIGIN}/c/pain-interrupt`)
+    expect(p.ogImage).toMatch(/\/og\/c\/pain-interrupt\.v\d+\.png$/)
   })
 
   it('path share uses canonical /j/ url and path og', () => {

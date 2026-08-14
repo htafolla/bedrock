@@ -2,9 +2,9 @@
 
 Motto: Do Better. Be Better. Trust God.
 Version: 0.2.0-beta
-Chambers: 79
+Chambers: 80
 Source: https://bedrock.rippel.ai/export/chambers.json
-Hold-first: Under fire → Prayer → Truth. Cite https://bedrock.rippel.ai/c/{id} and https://bedrock.rippel.ai/c/{id}.md. Layers: Key · Station · Path · Linchpin · Standard. Flagship mind path: https://bedrock.rippel.ai/j/battlefield-of-the-mind · Linchpin: https://bedrock.rippel.ai/c/the-line · Standard: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.
+Hold-first: Under fire → Prayer → Truth. Cite https://bedrock.rippel.ai/c/{id} and https://bedrock.rippel.ai/c/{id}.md. Layers: Key · Station · Path · Stance · Lock · Standard. Flagship mind path: https://bedrock.rippel.ai/j/battlefield-of-the-mind · Stance: https://bedrock.rippel.ai/c/the-line · Lock: https://bedrock.rippel.ai/c/pain-interrupt · Standard: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.
 
 # God First
 
@@ -762,6 +762,7 @@ Do better. Be better. Trust God.
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
@@ -2203,6 +2204,7 @@ He will wipe away every tear from their eyes, and death shall be no more, neithe
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
 - [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
 - [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
@@ -2258,6 +2260,8 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Loss](https://bedrock.rippel.ai/c/loss)
 - [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
 - [Do Not Repay Evil with Evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)
@@ -2311,6 +2315,8 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
 - [The Word](https://bedrock.rippel.ai/c/the-word)
@@ -2528,6 +2534,7 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
@@ -2563,7 +2570,7 @@ Father, I release this grip. I am present under You. Amen.
 
 ## Truth
 
-Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](https://bedrock.rippel.ai/c/the-line).
+Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — stand on [The Line](https://bedrock.rippel.ai/c/the-line). When a memory or pain wave hits — use [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt).
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
@@ -2587,6 +2594,7 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)
 - [Love](https://bedrock.rippel.ai/c/love)
@@ -2603,11 +2611,11 @@ Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis ho
 
 
 
-# Linchpin: The Line
+# Stance: The Line
 
 > My emotional state is my own. Presence without control. Love keeps no record.
 
-*Linchpin · Assembly rule · Field creed · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
+*Stance · Daily creed · How you stand · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
 
 ## Under fire
 
@@ -2621,11 +2629,11 @@ Father, my state is my own. I am present under You. I keep no record. Amen.
 
 ## Truth
 
-When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool.
+When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the stance — how you stand every day under the Standard.
 
 My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.
 
-These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide.
+This is the posture. When pain, memory, or rage surges mid-hour, use [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt) — the lock that snaps you back into this stance.
 
 Be still, and know that I am God.
 
@@ -2648,6 +2656,7 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
@@ -2660,6 +2669,65 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 
 ---
 Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/the-line.md
+
+
+
+# Lock: Pain Interrupt
+
+> Notice it. My emotional state is my own. Return to what is in front of me.
+
+*Lock · Pain interrupt · When the wave hits · Hold first · Bedrock · https://bedrock.rippel.ai/c/pain-interrupt*
+
+## Under fire
+
+- Notice it.
+- My emotional state is my own.
+- Return to what is in front of me.
+
+## Prayer
+
+Father, I notice this pain. My state is my own. I return to what is in front of me. Amen.
+
+## Truth
+
+A painful memory or reminder hits — it hurts. This is not the time to rebuild the whole creed. This is the lock: three moves that snap you back into [The Line](https://bedrock.rippel.ai/c/the-line).
+
+Notice it — name the wave without following it. My emotional state is my own — not theirs; their choices do not own this hour. Return to what is in front of you — the next real task, person, or prayer under your feet.
+
+Stance is how you live. Lock is how you recover when the wave hits. Then stand again on The Line.
+
+We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
+
+Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.
+
+Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
+
+Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
+
+## Scripture
+
+- [2 Corinthians 10:5](https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A5&version=NIV)
+- [Philippians 4:8](https://www.biblegateway.com/passage/?search=Philippians+4%3A8&version=NIV)
+- [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
+- [Matthew 6:34](https://www.biblegateway.com/passage/?search=Matthew+6%3A34&version=NIV)
+- [Isaiah 26:3](https://www.biblegateway.com/passage/?search=Isaiah+26%3A3&version=NIV)
+- [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV)
+
+## Connected truth
+
+- [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Wounded](https://bedrock.rippel.ai/c/wounded)
+- [Obsession](https://bedrock.rippel.ai/c/rumination)
+- [Loss](https://bedrock.rippel.ai/c/loss)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
+- [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
+- [Peace](https://bedrock.rippel.ai/c/peace)
+
+---
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/pain-interrupt.md
 
 
 
@@ -3169,6 +3237,7 @@ When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](ht
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

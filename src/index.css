@@ -1304,8 +1304,9 @@ body {
   border-color: var(--ember-border);
 }
 
-/* Linchpin — assembly rule under Standard; same station chrome, slightly firmer edge */
-.chamber-focus.is-linchpin .chamber-in-focus {
+/* Stance — daily creed; Lock — moment interrupt; same station chrome, firmer edge */
+.chamber-focus.is-stance .chamber-in-focus,
+.chamber-focus.is-lock .chamber-in-focus {
   border-color: var(--ember-border-mid);
 }
 
@@ -1786,7 +1787,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Depth ladder: Key · Station · Path · Linchpin · Standard */
+/* Depth ladder: Key · Station · Path · Stance · Lock · Standard */
 .depth-ladder {
   display: flex;
   flex-wrap: wrap;

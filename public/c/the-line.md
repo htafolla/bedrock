@@ -1,8 +1,8 @@
-# Linchpin: The Line
+# Stance: The Line
 
 > My emotional state is my own. Presence without control. Love keeps no record.
 
-*Linchpin · Assembly rule · Field creed · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
+*Stance · Daily creed · How you stand · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
 
 ## Under fire
 
@@ -16,11 +16,11 @@ Father, my state is my own. I am present under You. I keep no record. Amen.
 
 ## Truth
 
-When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool.
+When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the stance — how you stand every day under the Standard.
 
 My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.
 
-These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide.
+This is the posture. When pain, memory, or rage surges mid-hour, use [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt) — the lock that snaps you back into this stance.
 
 Be still, and know that I am God.
 
@@ -43,6 +43,7 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)

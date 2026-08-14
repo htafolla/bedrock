@@ -36,6 +36,7 @@ He will wipe away every tear from their eyes, and death shall be no more, neithe
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)
 - [A Broken and Contrite Heart](https://bedrock.rippel.ai/c/a-broken-and-contrite-heart)
 - [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)

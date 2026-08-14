@@ -390,7 +390,7 @@ export const FIELD_AIDS = {
     ],
   },
   'the-line': {
-    // Linchpin — three iron holds, field creed for the cluster
+    // Stance — daily creed / how you stand
     hacks: [
       'My emotional state is my own.',
       'Presence without control.',
@@ -398,6 +398,17 @@ export const FIELD_AIDS = {
     ],
     prayers: [
       'Father, my state is my own. I am present under You. I keep no record. Amen.',
+    ],
+  },
+  'pain-interrupt': {
+    // Lock — moment tool when pain, memory, or rage surges
+    hacks: [
+      'Notice it.',
+      'My emotional state is my own.',
+      'Return to what is in front of me.',
+    ],
+    prayers: [
+      'Father, I notice this pain. My state is my own. I return to what is in front of me. Amen.',
     ],
   },
   'spiritual-warfare': {

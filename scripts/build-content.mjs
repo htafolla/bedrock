@@ -366,6 +366,7 @@ const RELATED = {
     'peace',
   ],
   loss: [
+    'pain-interrupt',
     'lament-and-pour-out-your-heart',
     'a-broken-and-contrite-heart',
     'hope-of-glory',
@@ -376,6 +377,8 @@ const RELATED = {
     'rumination',
   ],
   wounded: [
+    'pain-interrupt',
+    'the-line',
     'loss',
     'leave-vengeance-to-the-lord',
     'do-not-repay-evil-with-evil',
@@ -422,6 +425,8 @@ const RELATED = {
     'take-every-thought-captive',
   ],
   rumination: [
+    'pain-interrupt',
+    'the-line',
     'take-every-thought-captive',
     'renew-your-mind',
     'the-word',
@@ -469,6 +474,7 @@ const RELATED = {
   ],
   control: [
     'the-line',
+    'pain-interrupt',
     'fear',
     'presence-without-control',
     'kill-the-flesh',
@@ -530,6 +536,7 @@ const RELATED = {
   /** Battle station — same form as other keys; full map is the Standard */
   'kill-the-flesh': [
     'the-line',
+    'pain-interrupt',
     'kill-the-flesh-walk-in-the-spirit',
     'presence-without-control',
     'walk-by-the-spirit',
@@ -544,6 +551,7 @@ const RELATED = {
   /** Practical other path when Master the Flesh meets real presence */
   'presence-without-control': [
     'the-line',
+    'pain-interrupt',
     'kill-the-flesh',
     'control',
     'love',
@@ -556,10 +564,12 @@ const RELATED = {
     'peace',
   ],
   /**
-   * Linchpin — field creed for person-idol / grip cluster.
+   * Stance — The Line (daily creed for person-idol / grip cluster).
    * Under Standard; above Fear · Control · Trust · Master · Presence.
+   * Sister: Pain Interrupt (Lock) when the wave hits.
    */
   'the-line': [
+    'pain-interrupt',
     'kill-the-flesh-walk-in-the-spirit',
     'kill-the-flesh',
     'presence-without-control',
@@ -570,8 +580,25 @@ const RELATED = {
     'god-first',
     'forgive-as-you-have-been-forgiven',
   ],
+  /**
+   * Lock — Pain Interrupt (moment tool when pain / memory / rage surges).
+   * Snaps you back into The Line (Stance).
+   */
+  'pain-interrupt': [
+    'the-line',
+    'wounded',
+    'rumination',
+    'loss',
+    'control',
+    'presence-without-control',
+    'fear',
+    'kill-the-flesh',
+    'take-every-thought-captive',
+    'peace',
+  ],
   'kill-the-flesh-walk-in-the-spirit': [
     'the-line',
+    'pain-interrupt',
     'kill-the-flesh',
     'walk-by-the-spirit',
     'works-of-the-flesh',
@@ -1495,7 +1522,7 @@ const document = {
       'Relax. Be present. Don’t take or force control of the present or the future.',
       [
         // Echo: force = control; driver often fear, not absolute
-        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](chamber:the-line).',
+        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — stand on [The Line](chamber:the-line). When a memory or pain wave hits — use [Pain Interrupt](chamber:pain-interrupt).',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
@@ -1505,17 +1532,17 @@ const document = {
       'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     /**
-     * Linchpin — field creed / assembly rule for the person-idol cluster.
-     * Under Standard; above Fear · Control · Trust · Master the Flesh · Presence.
-     * Title: The Line. Kind: linchpin.
+     * Stance — daily posture / creed for the person-idol cluster.
+     * Title: The Line. Kind: stance. How you stand every day.
+     * Sister Lock: Pain Interrupt (when the wave hits).
      */
     chamber(
       'The Line',
       'My emotional state is my own. Presence without control. Love keeps no record.',
       [
-        'When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool.',
+        'When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the stance — how you stand every day under the Standard.',
         'My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.',
-        'These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide.',
+        'This is the posture. When pain, memory, or rage surges mid-hour, use [Pain Interrupt](chamber:pain-interrupt) — the lock that snaps you back into this stance.',
         'Be still, and know that I am God.',
         'Love is patient and kind… it is not irritable or resentful.',
         'God has not given you a spirit of fear, but of power and love and a sound mind.',
@@ -1524,6 +1551,25 @@ const document = {
       ],
       'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5 · Matthew 6:33',
       'the-line',
+    ),
+    /**
+     * Lock — moment tool when pain, memory, or rage surges.
+     * Title: Pain Interrupt. Kind: lock. Snaps you back into The Line (Stance).
+     */
+    chamber(
+      'Pain Interrupt',
+      'Notice it. My emotional state is my own. Return to what is in front of me.',
+      [
+        'A painful memory or reminder hits — it hurts. This is not the time to rebuild the whole creed. This is the lock: three moves that snap you back into [The Line](chamber:the-line).',
+        'Notice it — name the wave without following it. My emotional state is my own — not theirs; their choices do not own this hour. Return to what is in front of you — the next real task, person, or prayer under your feet.',
+        'Stance is how you live. Lock is how you recover when the wave hits. Then stand again on The Line.',
+        'We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.',
+        'Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
+        'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
+      ],
+      '2 Corinthians 10:5 · Philippians 4:8 · Philippians 4:6 · Matthew 6:34 · Isaiah 26:3 · Psalm 46:10',
+      'pain-interrupt',
     ),
     chamber(
       'Renew Your Mind',
@@ -1969,7 +2015,9 @@ for (const c of document.chambers) {
   if (c.id === 'kill-the-flesh-walk-in-the-spirit') {
     c.kind = 'rubric'
   } else if (c.id === 'the-line') {
-    c.kind = 'linchpin'
+    c.kind = 'stance'
+  } else if (c.id === 'pain-interrupt') {
+    c.kind = 'lock'
   } else if (!c.kind) {
     c.kind = 'chamber'
   }

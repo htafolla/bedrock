@@ -16,7 +16,7 @@ Father, I release this grip. I am present under You. Amen.
 
 ## Truth
 
-Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](https://bedrock.rippel.ai/c/the-line).
+Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — stand on [The Line](https://bedrock.rippel.ai/c/the-line). When a memory or pain wave hits — use [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt).
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
@@ -40,6 +40,7 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)
 - [Love](https://bedrock.rippel.ai/c/love)

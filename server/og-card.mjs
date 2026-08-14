@@ -45,7 +45,8 @@ const LAYER_KICKER = {
   station: 'STATION',
   path: 'PATH',
   standard: 'STANDARD',
-  linchpin: 'LINCHPIN',
+  stance: 'STANCE',
+  lock: 'LOCK',
   origin: 'ORIGIN · HEART',
 }
 
@@ -53,7 +54,9 @@ const LAYER_KICKER = {
  * @param {{ layer: string, title: string, subtitle?: string, motto?: string }} opts
  */
 export function buildOgSvg(opts) {
-  const layer = ['door', 'station', 'path', 'standard', 'linchpin', 'origin'].includes(opts.layer)
+  const layer = ['door', 'station', 'path', 'standard', 'stance', 'lock', 'origin'].includes(
+    opts.layer,
+  )
     ? opts.layer
     : 'station'
   const kicker = LAYER_KICKER[layer]

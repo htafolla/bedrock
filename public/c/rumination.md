@@ -38,6 +38,8 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind)
 - [The Word](https://bedrock.rippel.ai/c/the-word)

@@ -39,6 +39,8 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Connected truth
 
+- [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Loss](https://bedrock.rippel.ai/c/loss)
 - [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)
 - [Do Not Repay Evil with Evil](https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil)

@@ -241,7 +241,13 @@ export async function buildAllOgCards(input) {
 
   for (const c of input.chambers || []) {
     const layer =
-      c.kind === 'rubric' ? 'standard' : c.kind === 'linchpin' ? 'linchpin' : 'station'
+      c.kind === 'rubric'
+        ? 'standard'
+        : c.kind === 'stance'
+          ? 'stance'
+          : c.kind === 'lock'
+            ? 'lock'
+            : 'station'
     const n = await writeOgPng(
       {
         layer,
