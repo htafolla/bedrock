@@ -1532,41 +1532,45 @@ const document = {
       'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     /**
-     * Stance — daily posture / creed for the person-idol cluster.
-     * Title: The Line. Kind: stance. How you stand every day.
-     * Sister Lock: Pain Interrupt (when the wave hits).
+     * Stance — daily creed. Title: The Line. Kind: stance.
+     * Truth expands the three lines only — no product meta, no architecture talk.
+     * Sister tool (Pain Interrupt) lives in related / kind chrome, not in Truth.
      */
     chamber(
       'The Line',
       'My emotional state is my own. Presence without control. Love keeps no record.',
       [
-        'When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the stance — how you stand every day under the Standard.',
-        'My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.',
-        'This is the posture. When pain, memory, or rage surges mid-hour, use [Pain Interrupt](chamber:pain-interrupt) — the lock that snaps you back into this stance.',
-        'Be still, and know that I am God.',
-        'Love is patient and kind… it is not irritable or resentful.',
-        'God has not given you a spirit of fear, but of power and love and a sound mind.',
+        'My emotional state is my own. Their choices, silence, or return do not own your peace. You can love them and still rule yourself under God.',
+        'Presence without control. Listen. Wait. Talk less. Do not force the present or the future. Show up cleanly; stop securing the outcome.',
+        'Love keeps no record. Stop the ledger. Release the score. Do not rehearse every gap as evidence. Forgive as you have been forgiven.',
+        'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
+        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.',
+        'For God gave us a spirit not of fear but of power and love and self-control.',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
-        'Trust in the Lord with all your heart, and do not lean on your own understanding.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
+        'But seek first the kingdom of God and His righteousness, and all these things will be added to you.',
       ],
-      'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5 · Matthew 6:33',
+      'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5-6 · Matthew 6:33',
       'the-line',
     ),
     /**
      * Lock — moment tool when pain, memory, or rage surges.
-     * Title: Pain Interrupt. Kind: lock. Snaps you back into The Line (Stance).
+     * Title: Pain Interrupt. Kind: lock.
+     * Truth is the three moves under fire — no “this is a lock / stance vs lock” meta.
      */
     chamber(
       'Pain Interrupt',
       'Notice it. My emotional state is my own. Return to what is in front of me.',
       [
-        'A painful memory or reminder hits — it hurts. This is not the time to rebuild the whole creed. This is the lock: three moves that snap you back into [The Line](chamber:the-line).',
-        'Notice it — name the wave without following it. My emotional state is my own — not theirs; their choices do not own this hour. Return to what is in front of you — the next real task, person, or prayer under your feet.',
-        'Stance is how you live. Lock is how you recover when the wave hits. Then stand again on The Line.',
+        'A painful memory or reminder hits. It hurts. Do not chase it. Do not rebuild the case. Do not let the wave write the next hour.',
+        'Notice it. Name the surge — pain, memory, rage — without following it into the story. Capture the thought; do not feed it.',
+        'My emotional state is my own. Not theirs. Their choices do not own this hour. You can hurt and still stand under God.',
+        'Return to what is in front of you. The next real task. The person in the room. The prayer under your feet. One step. Then the next.',
         'We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.',
         'Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
         'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
+        'You keep him in perfect peace whose mind is stayed on You, because he trusts in You.',
       ],
       '2 Corinthians 10:5 · Philippians 4:8 · Philippians 4:6 · Matthew 6:34 · Isaiah 26:3 · Psalm 46:10',
       'pain-interrupt',

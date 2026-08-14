@@ -16,11 +16,13 @@ Father, I notice this pain. My state is my own. I return to what is in front of 
 
 ## Truth
 
-A painful memory or reminder hits — it hurts. This is not the time to rebuild the whole creed. This is the lock: three moves that snap you back into [The Line](https://bedrock.rippel.ai/c/the-line).
+A painful memory or reminder hits. It hurts. Do not chase it. Do not rebuild the case. Do not let the wave write the next hour.
 
-Notice it — name the wave without following it. My emotional state is my own — not theirs; their choices do not own this hour. Return to what is in front of you — the next real task, person, or prayer under your feet.
+Notice it. Name the surge — pain, memory, rage — without following it into the story. Capture the thought; do not feed it.
 
-Stance is how you live. Lock is how you recover when the wave hits. Then stand again on The Line.
+My emotional state is my own. Not theirs. Their choices do not own this hour. You can hurt and still stand under God.
+
+Return to what is in front of you. The next real task. The person in the room. The prayer under your feet. One step. Then the next.
 
 We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ.
 
@@ -29,6 +31,8 @@ Finally, brothers, whatever is true, whatever is honorable, whatever is just, wh
 Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.
 
 Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.
+
+You keep him in perfect peace whose mind is stayed on You, because he trusts in You.
 
 ## Scripture
 
