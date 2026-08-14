@@ -207,6 +207,13 @@
           "note": "You cannot force the outcome."
         },
         {
+          "id": "presence",
+          "role": "remain",
+          "label": "Presence",
+          "chamberId": "presence-without-control",
+          "note": "When near: present, not managing. Relax. Listen. Don’t force present or future."
+        },
+        {
           "id": "rubric",
           "role": "remain",
           "label": "Standard",
@@ -592,6 +599,13 @@
           "label": "Self-control",
           "chamberId": "self-control",
           "note": "Rule yourself, not them."
+        },
+        {
+          "id": "presence",
+          "role": "long_middle",
+          "label": "Presence",
+          "chamberId": "presence-without-control",
+          "note": "Be present. Don’t force present or future."
         },
         {
           "id": "spirit",

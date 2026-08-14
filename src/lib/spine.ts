@@ -56,6 +56,7 @@ export const SPINE_ORDER = [
   'addiction',
   'jealousy',
   'control',
+  'presence-without-control',
   'renew-your-mind',
   'take-every-thought-captive',
   'the-word',

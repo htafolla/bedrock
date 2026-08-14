@@ -36,6 +36,7 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 
 ## Connected truth
 
+- [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

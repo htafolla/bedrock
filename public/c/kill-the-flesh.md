@@ -61,6 +61,7 @@ When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](ht
 ## Connected truth
 
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
+- [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
 - [Fear](https://bedrock.rippel.ai/c/fear)

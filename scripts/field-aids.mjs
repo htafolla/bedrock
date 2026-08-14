@@ -373,6 +373,17 @@ export const FIELD_AIDS = {
     ],
     prayers: ['Lord, I release control. Direct my path. Amen.'],
   },
+  'presence-without-control': {
+    // Same station chrome as god-first / Master the Flesh: ≤3 flat holds
+    hacks: [
+      'Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.',
+      'Don’t take or force control of the present — just exist in it — or of the future — it is unknown.',
+      'When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.',
+    ],
+    prayers: [
+      'Father, I release this moment and the unknown. I am present under You. Amen.',
+    ],
+  },
   'spiritual-warfare': {
     hacks: [
       'This is not only circumstance. Stay sober and watchful.',

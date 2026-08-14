@@ -22,8 +22,8 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(77)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(77)
+    expect(chambers.length).toBe(78)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(78)
     // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
@@ -83,6 +83,7 @@ describe('bedrock content integrity', () => {
     expect(killCard.verses.map((v) => v.display).join(' ')).toMatch(/James 1:19/)
     expect(killCard.illustration?.src).toMatch(/kill-the-flesh-pow/)
     expect(killCard.related).toContain('kill-the-flesh-walk-in-the-spirit')
+    expect(killCard.related).toContain('presence-without-control')
     // Truth closer must deep-link to the Standard (not plain text)
     expect(
       killCard.body.some(
@@ -93,6 +94,19 @@ describe('bedrock content integrity', () => {
       ),
     ).toBe(true)
     expect(rubric.related).toContain('kill-the-flesh')
+    // Presence Without Control — other path in real presence
+    expect(byId.has('presence-without-control')).toBe(true)
+    const presence = byId.get('presence-without-control')!
+    expect(presence.title).toBe('Presence Without Control')
+    expect(presence.kind ?? 'chamber').toBe('chamber')
+    expect(presence.hacks.length).toBeGreaterThan(0)
+    expect(presence.hacks.length).toBeLessThanOrEqual(3)
+    expect(presence.hacks.join(' ').toLowerCase()).toMatch(/relax|present|control|hook|captive/)
+    expect(presence.verses.map((v) => v.display).join(' ')).toMatch(
+      /Psalm 46:10|James 1:19|Philippians 4:6|Matthew 6:34|Proverbs 3:5/,
+    )
+    expect(presence.related).toContain('kill-the-flesh')
+    expect(presence.related).toContain('control')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
     expect(byId.get('persecution')!.title).toBe('Persecution')

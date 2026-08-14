@@ -277,7 +277,12 @@ const RELATED = {
     'loss',
   ],
   'guard-your-heart-and-mouth': ['be-quick-to-listen', 'walk-in-honesty-and-truth', 'walk-by-the-spirit'],
-  'be-quick-to-listen': ['guard-your-heart-and-mouth', 'love-and-patience', 'restore-gently-and-give-time'],
+  'be-quick-to-listen': [
+    'guard-your-heart-and-mouth',
+    'love-and-patience',
+    'restore-gently-and-give-time',
+    'presence-without-control',
+  ],
   'restore-gently-and-give-time': [
     'confess-and-be-cleansed',
     'love-and-patience',
@@ -447,6 +452,7 @@ const RELATED = {
     'trust-in-the-lord',
   ],
   control: [
+    'presence-without-control',
     'trust-in-the-lord',
     'self-control',
     'walk-by-the-spirit',
@@ -505,6 +511,7 @@ const RELATED = {
   /** Battle station — same form as other keys; full map is the Standard */
   'kill-the-flesh': [
     'kill-the-flesh-walk-in-the-spirit',
+    'presence-without-control',
     'walk-by-the-spirit',
     'take-every-thought-captive',
     'fear',
@@ -513,6 +520,18 @@ const RELATED = {
     'self-control',
     'trust-in-the-lord',
     'the-full-armor-of-god',
+  ],
+  /** Practical other path when Master the Flesh meets real presence */
+  'presence-without-control': [
+    'kill-the-flesh',
+    'control',
+    'be-quick-to-listen',
+    'wait-on-the-lord',
+    'take-every-thought-captive',
+    'trust-in-the-lord',
+    'self-control',
+    'peace',
+    'do-not-fear',
   ],
   'kill-the-flesh-walk-in-the-spirit': [
     'kill-the-flesh',
@@ -1419,6 +1438,40 @@ const document = {
         'Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.',
       ],
       'Proverbs 3:5-6 · Psalm 46:10 · Galatians 5:22-23 · Philippians 4:6 · Psalm 55:22',
+    ),
+    /**
+     * Adjacent to Master the Flesh — the other path in real presence:
+     * relax, be present, do not force present or future.
+     */
+    chamber(
+      'Presence Without Control',
+      'Relax. Be present. Don’t take or force control of the present or the future.',
+      [
+        'This is the other path when [Master the Flesh](chamber:kill-the-flesh) meets real presence. Warm when they are near is not a campaign to fix or define the relationship. One is showing up cleanly in the moment. The other is managing the outcome.',
+        'Relax.',
+        'Be present:',
+        list(
+          'Listen',
+          'Wait for responses',
+          'Talk less',
+          'Don’t form a reply while they are speaking',
+        ),
+        'Don’t take or force control',
+        list(
+          'of the present — just exist in it',
+          'of the future — it is unknown',
+        ),
+        'When the urge to check, message, analyze, or force clarity shows up:',
+        list(
+          'Name it — “This is the old hook.”',
+          'Capture it — “I take this thought captive and submit it to the obedience of Christ.”',
+          'Return to the present — “What is the next right thing in front of me right now?” Then do that.',
+        ),
+        'Limit contact to what is necessary. Protect the quiet hours. When silence comes, do not fill it by reaching. Let the quiet be quiet. Carry your own state.',
+        'You will fail some days. Notice it. Reset. Go back to the first hold. No self-punishment drama.',
+        'Be still, and know that I am God. Be quick to listen, slow to speak, slow to anger. Do not be anxious. Do not worry about tomorrow. Trust in the Lord with all your heart — do not lean on your own understanding.',
+      ],
+      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5',
     ),
     chamber(
       'Renew Your Mind',

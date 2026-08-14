@@ -60,7 +60,7 @@ describe('core journeys SSOT', () => {
   it('stages have valid roles, unique ids per journey, door matches first blow chamber', () => {
     for (const j of journeys) {
       expect(j.stages.length).toBeGreaterThanOrEqual(4)
-      expect(j.stages.length).toBeLessThanOrEqual(12)
+      expect(j.stages.length).toBeLessThanOrEqual(14)
       const stageIds = new Set<string>()
       for (const s of j.stages) {
         expect(ROLES).toContain(s.role)

@@ -2796,7 +2796,8 @@
       "related": [
         "guard-your-heart-and-mouth",
         "love-and-patience",
-        "restore-gently-and-give-time"
+        "restore-gently-and-give-time",
+        "presence-without-control"
       ],
       "kind": "chamber"
     },
@@ -3995,6 +3996,7 @@
         "Lord, I release control. Direct my path. Amen."
       ],
       "related": [
+        "presence-without-control",
         "trust-in-the-lord",
         "self-control",
         "walk-by-the-spirit",
@@ -4003,6 +4005,121 @@
         "god-first",
         "take-every-thought-captive",
         "peace"
+      ],
+      "kind": "chamber"
+    },
+    {
+      "id": "presence-without-control",
+      "title": "Presence Without Control",
+      "summary": "Relax. Be present. Don’t take or force control of the present or the future.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "This is the other path when [Master the Flesh](chamber:kill-the-flesh) meets real presence. Warm when they are near is not a campaign to fix or define the relationship. One is showing up cleanly in the moment. The other is managing the outcome."
+        },
+        {
+          "type": "paragraph",
+          "text": "Relax."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be present:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Listen",
+            "Wait for responses",
+            "Talk less",
+            "Don’t form a reply while they are speaking"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Don’t take or force control"
+        },
+        {
+          "type": "list",
+          "items": [
+            "of the present — just exist in it",
+            "of the future — it is unknown"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "When the urge to check, message, analyze, or force clarity shows up:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Name it — “This is the old hook.”",
+            "Capture it — “I take this thought captive and submit it to the obedience of Christ.”",
+            "Return to the present — “What is the next right thing in front of me right now?” Then do that."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Limit contact to what is necessary. Protect the quiet hours. When silence comes, do not fill it by reaching. Let the quiet be quiet. Carry your own state."
+        },
+        {
+          "type": "paragraph",
+          "text": "You will fail some days. Notice it. Reset. Go back to the first hold. No self-punishment drama."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still, and know that I am God. Be quick to listen, slow to speak, slow to anger. Do not be anxious. Do not worry about tomorrow. Trust in the Lord with all your heart — do not lean on your own understanding."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        },
+        {
+          "display": "James 1:19",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 19
+        },
+        {
+          "display": "Philippians 4:6",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6
+        },
+        {
+          "display": "Matthew 6:34",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 34
+        },
+        {
+          "display": "Proverbs 3:5",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5
+        }
+      ],
+      "hacks": [
+        "Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.",
+        "Don’t take or force control of the present — just exist in it — or of the future — it is unknown.",
+        "When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you."
+      ],
+      "prayers": [
+        "Father, I release this moment and the unknown. I am present under You. Amen."
+      ],
+      "related": [
+        "kill-the-flesh",
+        "control",
+        "be-quick-to-listen",
+        "wait-on-the-lord",
+        "take-every-thought-captive",
+        "trust-in-the-lord",
+        "self-control",
+        "peace",
+        "do-not-fear"
       ],
       "kind": "chamber"
     },
@@ -4853,6 +4970,7 @@
       ],
       "related": [
         "kill-the-flesh-walk-in-the-spirit",
+        "presence-without-control",
         "walk-by-the-spirit",
         "take-every-thought-captive",
         "fear",
