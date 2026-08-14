@@ -22,8 +22,8 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(78)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(78)
+    expect(chambers.length).toBe(79)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(79)
     // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
@@ -110,6 +110,39 @@ describe('bedrock content integrity', () => {
     )
     expect(presence.related).toContain('kill-the-flesh')
     expect(presence.related).toContain('control')
+    expect(presence.related).toContain('the-line')
+    expect(
+      presence.body.some(
+        (b) =>
+          b.type === 'paragraph' &&
+          /chamber:the-line/i.test(b.text) &&
+          /The Line/i.test(b.text),
+      ),
+    ).toBe(true)
+    // Linchpin — assembly rule under Standard; three iron holds, station Truth form
+    expect(byId.has('the-line')).toBe(true)
+    const theLine = byId.get('the-line')!
+    expect(theLine.title).toBe('The Line')
+    expect(theLine.kind).toBe('linchpin')
+    expect(theLine.summary.toLowerCase()).toMatch(
+      /emotional state is my own|presence without control|love keeps no record/,
+    )
+    expect(theLine.hacks).toEqual([
+      'My emotional state is my own.',
+      'Presence without control.',
+      'Love keeps no record.',
+    ])
+    expect(theLine.prayers[0]?.toLowerCase()).toMatch(/state is my own|keep no record/)
+    expect(theLine.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(theLine.related).toContain('kill-the-flesh-walk-in-the-spirit')
+    expect(theLine.related).toContain('kill-the-flesh')
+    expect(theLine.related).toContain('presence-without-control')
+    expect(theLine.related).toContain('control')
+    expect(theLine.related).toContain('trust-in-the-lord')
+    expect(theLine.related).toContain('fear')
+    expect(byId.get('control')!.related).toContain('the-line')
+    expect(byId.get('kill-the-flesh')!.related).toContain('the-line')
+    expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.related).toContain('the-line')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
     expect(byId.get('persecution')!.title).toBe('Persecution')

@@ -39,6 +39,7 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)

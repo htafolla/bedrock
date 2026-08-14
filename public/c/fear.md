@@ -37,6 +37,7 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 - [Control](https://bedrock.rippel.ai/c/control)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)

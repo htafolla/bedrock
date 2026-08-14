@@ -240,7 +240,8 @@ export async function buildAllOgCards(input) {
   }
 
   for (const c of input.chambers || []) {
-    const layer = c.kind === 'rubric' ? 'standard' : 'station'
+    const layer =
+      c.kind === 'rubric' ? 'standard' : c.kind === 'linchpin' ? 'linchpin' : 'station'
     const n = await writeOgPng(
       {
         layer,

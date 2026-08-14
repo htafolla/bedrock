@@ -11,8 +11,8 @@
     "ipfsCid": null,
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
-    "chamberCount": 78,
-    "exportedAt": "2026-08-14T18:11:03.364Z",
+    "chamberCount": 79,
+    "exportedAt": "2026-08-14T18:29:48.236Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -1480,6 +1480,7 @@
         "Father, I release every thought to You. I refuse the accuser. Amen."
       ],
       "related": [
+        "the-line",
         "kill-the-flesh",
         "walk-by-the-spirit",
         "works-of-the-flesh",
@@ -3465,6 +3466,7 @@
         "Father, I give You this fear. Help me take the next step. Amen."
       ],
       "related": [
+        "the-line",
         "fear",
         "do-not-fear",
         "love",
@@ -3620,6 +3622,7 @@
         "Father, I cast this fear on You. Hold me. Amen."
       ],
       "related": [
+        "the-line",
         "do-not-fear",
         "control",
         "presence-without-control",
@@ -4231,6 +4234,7 @@
         "Father, I release this grip — fear, pride, or idol. Direct my path. Amen."
       ],
       "related": [
+        "the-line",
         "fear",
         "presence-without-control",
         "kill-the-flesh",
@@ -4256,7 +4260,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome."
+          "text": "Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](chamber:the-line)."
         },
         {
           "type": "paragraph",
@@ -4327,22 +4331,125 @@
         "Father, I release this grip. I am present under You. Amen."
       ],
       "related": [
+        "the-line",
         "kill-the-flesh",
         "control",
+        "love",
         "fear",
         "be-quick-to-listen",
         "wait-on-the-lord",
         "take-every-thought-captive",
         "trust-in-the-lord",
         "self-control",
-        "peace",
-        "do-not-fear"
+        "peace"
       ],
       "kind": "chamber",
       "url": "https://bedrock.rippel.ai/c/presence-without-control",
       "markdownUrl": "https://bedrock.rippel.ai/c/presence-without-control.md",
       "publicSlug": "presence-without-control",
       "ogImage": "https://bedrock.rippel.ai/og/c/presence-without-control.v7.png"
+    },
+    {
+      "id": "the-line",
+      "title": "The Line",
+      "summary": "My emotional state is my own. Presence without control. Love keeps no record.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool."
+        },
+        {
+          "type": "paragraph",
+          "text": "My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God."
+        },
+        {
+          "type": "paragraph",
+          "text": "These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide."
+        },
+        {
+          "type": "paragraph",
+          "text": "Be still, and know that I am God."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love is patient and kind… it is not irritable or resentful."
+        },
+        {
+          "type": "paragraph",
+          "text": "God has not given you a spirit of fear, but of power and love and a sound mind."
+        },
+        {
+          "type": "paragraph",
+          "text": "Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Psalm 46:10",
+          "book": "Psalm",
+          "chapter": 46,
+          "verseStart": 10
+        },
+        {
+          "display": "1 Corinthians 13:4–5",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "James 1:19",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 19
+        },
+        {
+          "display": "Proverbs 3:5",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5
+        },
+        {
+          "display": "Matthew 6:33",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 33
+        }
+      ],
+      "hacks": [
+        "My emotional state is my own.",
+        "Presence without control.",
+        "Love keeps no record."
+      ],
+      "prayers": [
+        "Father, my state is my own. I am present under You. I keep no record. Amen."
+      ],
+      "related": [
+        "kill-the-flesh-walk-in-the-spirit",
+        "kill-the-flesh",
+        "presence-without-control",
+        "control",
+        "trust-in-the-lord",
+        "fear",
+        "love",
+        "god-first",
+        "forgive-as-you-have-been-forgiven"
+      ],
+      "kind": "linchpin",
+      "url": "https://bedrock.rippel.ai/c/the-line",
+      "markdownUrl": "https://bedrock.rippel.ai/c/the-line.md",
+      "publicSlug": "the-line",
+      "ogImage": "https://bedrock.rippel.ai/og/c/the-line.v7.png"
     },
     {
       "id": "renew-your-mind",
@@ -5222,6 +5329,7 @@
         "Father, this is fear — this is the flesh. I take it captive to Christ. I stop. Amen."
       ],
       "related": [
+        "the-line",
         "kill-the-flesh-walk-in-the-spirit",
         "presence-without-control",
         "walk-by-the-spirit",

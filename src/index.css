@@ -1304,6 +1304,11 @@ body {
   border-color: var(--ember-border);
 }
 
+/* Linchpin — assembly rule under Standard; same station chrome, slightly firmer edge */
+.chamber-focus.is-linchpin .chamber-in-focus {
+  border-color: var(--ember-border-mid);
+}
+
 .chamber-kind-note {
   margin: 0.65rem 0 0;
   font-size: 0.82rem;
@@ -1781,7 +1786,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Depth ladder: Key · Station · Path · Standard */
+/* Depth ladder: Key · Station · Path · Linchpin · Standard */
 .depth-ladder {
   display: flex;
   flex-wrap: wrap;

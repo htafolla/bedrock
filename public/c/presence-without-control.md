@@ -16,7 +16,7 @@ Father, I release this grip. I am present under You. Amen.
 
 ## Truth
 
-Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.
+Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](https://bedrock.rippel.ai/c/the-line).
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
@@ -39,8 +39,10 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)
+- [Love](https://bedrock.rippel.ai/c/love)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
 - [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
@@ -48,7 +50,6 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 - [Peace](https://bedrock.rippel.ai/c/peace)
-- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
 Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/presence-without-control.md

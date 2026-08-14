@@ -45,6 +45,20 @@ describe('share payloads', () => {
     expect(layerLabel(p.layer)).toBe('Standard')
   })
 
+  it('linchpin chamber is linchpin layer', () => {
+    const p = buildStationShare({
+      chamberId: 'the-line',
+      title: 'The Line',
+      summary: 'My emotional state is my own. Presence without control. Love keeps no record.',
+      kind: 'linchpin',
+    })
+    expect(p.layer).toBe('linchpin')
+    expect(layerLabel(p.layer)).toBe('Linchpin')
+    expect(p.title).toContain('Bedrock Linchpin')
+    expect(p.url).toBe(`${SITE_ORIGIN}/c/the-line`)
+    expect(p.ogImage).toMatch(/\/og\/c\/the-line\.v\d+\.png$/)
+  })
+
   it('path share uses canonical /j/ url and path og', () => {
     const p = buildPathShare({
       journeyId: 'battlefield-of-the-mind',

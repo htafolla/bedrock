@@ -1,5 +1,5 @@
 /**
- * Social share for Key · Station · Path · Standard.
+ * Social share for Key · Station · Path · Standard · Linchpin.
  *
  * Platform reality:
  * - X / Facebook: share a URL; previews use Open Graph (og:image).
@@ -18,7 +18,14 @@ import {
   staticOgImageUrl,
 } from './seo'
 
-export type ShareLayer = 'door' | 'station' | 'path' | 'standard' | 'origin' | 'testimony'
+export type ShareLayer =
+  | 'door'
+  | 'station'
+  | 'path'
+  | 'standard'
+  | 'linchpin'
+  | 'origin'
+  | 'testimony'
 
 export type ShareNetwork = 'system' | 'x' | 'facebook' | 'copy' | 'instagram' | 'tiktok' | 'image'
 
@@ -41,6 +48,7 @@ export interface SharePayload {
 }
 
 const STANDARD_CHAMBER_ID = 'kill-the-flesh-walk-in-the-spirit'
+const LINCHPIN_CHAMBER_ID = 'the-line'
 
 export function layerLabel(layer: ShareLayer): string {
   switch (layer) {
@@ -52,6 +60,8 @@ export function layerLabel(layer: ShareLayer): string {
       return 'Path'
     case 'standard':
       return 'Standard'
+    case 'linchpin':
+      return 'Linchpin'
     case 'origin':
       return 'Origin'
     case 'testimony':
@@ -97,11 +107,14 @@ export function buildStationShare(input: {
   kind?: string
 }): SharePayload {
   const isStandard = input.kind === 'rubric' || input.chamberId === STANDARD_CHAMBER_ID
-  const layer: ShareLayer = isStandard ? 'standard' : 'station'
+  const isLinchpin = input.kind === 'linchpin' || input.chamberId === LINCHPIN_CHAMBER_ID
+  const layer: ShareLayer = isStandard ? 'standard' : isLinchpin ? 'linchpin' : 'station'
   const url = chamberCanonicalUrl(input.chamberId)
   const title = isStandard
     ? `${input.title} — Bedrock Standard`
-    : `${input.title} — Bedrock`
+    : isLinchpin
+      ? `${input.title} — Bedrock Linchpin`
+      : `${input.title} — Bedrock`
   const text = input.summary
   return {
     layer,

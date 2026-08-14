@@ -52,6 +52,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Jealousy](https://bedrock.rippel.ai/c/jealousy) — If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
 - [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Stop securing what only God can rule.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
+- [The Line](https://bedrock.rippel.ai/c/the-line) — My emotional state is my own. Presence without control. Love keeps no record.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
 - [The Word](https://bedrock.rippel.ai/c/the-word) — The lie says you cannot know or understand. God says His Word is for you — light to the simple.

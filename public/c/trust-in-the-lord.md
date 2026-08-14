@@ -42,6 +42,7 @@ Cast your burden on the Lord, and He will sustain you.
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 - [Love](https://bedrock.rippel.ai/c/love)

@@ -339,6 +339,7 @@ const RELATED = {
   ],
   'one-another-in-the-body': ['restore-gently-and-give-time', 'confess-and-be-cleansed', 'choose-selfless-love'],
   'trust-in-the-lord': [
+    'the-line',
     'fear',
     'do-not-fear',
     'love',
@@ -352,6 +353,7 @@ const RELATED = {
   ],
   'do-not-fear': ['fear', 'trust-in-the-lord', 'his-promises', 'take-every-thought-captive'],
   fear: [
+    'the-line',
     'do-not-fear',
     'control',
     'presence-without-control',
@@ -466,6 +468,7 @@ const RELATED = {
     'trust-in-the-lord',
   ],
   control: [
+    'the-line',
     'fear',
     'presence-without-control',
     'kill-the-flesh',
@@ -526,6 +529,7 @@ const RELATED = {
   ],
   /** Battle station — same form as other keys; full map is the Standard */
   'kill-the-flesh': [
+    'the-line',
     'kill-the-flesh-walk-in-the-spirit',
     'presence-without-control',
     'walk-by-the-spirit',
@@ -539,8 +543,10 @@ const RELATED = {
   ],
   /** Practical other path when Master the Flesh meets real presence */
   'presence-without-control': [
+    'the-line',
     'kill-the-flesh',
     'control',
+    'love',
     'fear',
     'be-quick-to-listen',
     'wait-on-the-lord',
@@ -548,9 +554,24 @@ const RELATED = {
     'trust-in-the-lord',
     'self-control',
     'peace',
-    'do-not-fear',
+  ],
+  /**
+   * Linchpin — field creed for person-idol / grip cluster.
+   * Under Standard; above Fear · Control · Trust · Master · Presence.
+   */
+  'the-line': [
+    'kill-the-flesh-walk-in-the-spirit',
+    'kill-the-flesh',
+    'presence-without-control',
+    'control',
+    'trust-in-the-lord',
+    'fear',
+    'love',
+    'god-first',
+    'forgive-as-you-have-been-forgiven',
   ],
   'kill-the-flesh-walk-in-the-spirit': [
+    'the-line',
     'kill-the-flesh',
     'walk-by-the-spirit',
     'works-of-the-flesh',
@@ -1474,7 +1495,7 @@ const document = {
       'Relax. Be present. Don’t take or force control of the present or the future.',
       [
         // Echo: force = control; driver often fear, not absolute
-        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.',
+        'Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](chamber:the-line).',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
@@ -1482,6 +1503,27 @@ const document = {
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
       ],
       'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
+    ),
+    /**
+     * Linchpin — field creed / assembly rule for the person-idol cluster.
+     * Under Standard; above Fear · Control · Trust · Master the Flesh · Presence.
+     * Title: The Line. Kind: linchpin.
+     */
+    chamber(
+      'The Line',
+      'My emotional state is my own. Presence without control. Love keeps no record.',
+      [
+        'When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool.',
+        'My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.',
+        'These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide.',
+        'Be still, and know that I am God.',
+        'Love is patient and kind… it is not irritable or resentful.',
+        'God has not given you a spirit of fear, but of power and love and a sound mind.',
+        'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding.',
+      ],
+      'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5 · Matthew 6:33',
+      'the-line',
     ),
     chamber(
       'Renew Your Mind',
@@ -1926,6 +1968,8 @@ for (const c of document.chambers) {
   // Artifact kinds: most nodes are first-principle chambers; rubrics are denser SOP under fire
   if (c.id === 'kill-the-flesh-walk-in-the-spirit') {
     c.kind = 'rubric'
+  } else if (c.id === 'the-line') {
+    c.kind = 'linchpin'
   } else if (!c.kind) {
     c.kind = 'chamber'
   }

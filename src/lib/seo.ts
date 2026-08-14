@@ -230,9 +230,12 @@ export function chamberOgImageUrl(chamber: Chamber): string {
 
 export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayload {
   const isRubric = chamber.kind === 'rubric'
+  const isLinchpin = chamber.kind === 'linchpin'
   const title = isRubric
     ? `${chamber.title} — Bedrock Standard`
-    : `${chamber.title} — Bedrock | ${doc.meta.subtitle}`
+    : isLinchpin
+      ? `${chamber.title} — Bedrock Linchpin`
+      : `${chamber.title} — Bedrock | ${doc.meta.subtitle}`
   const description =
     chamber.summary.length >= 50
       ? `${chamber.summary} Hold first: Under fire, prayer, then Truth. Bedrock field guide.`
@@ -256,7 +259,9 @@ export function buildChamberSeo(doc: BedrockDocument, chamber: Chamber): SeoPayl
       ),
       articleSection: isRubric
         ? 'Operational standard · Field card first'
-        : 'First principle · Hold first',
+        : isLinchpin
+          ? 'Linchpin · Assembly rule · Field creed'
+          : 'First principle · Hold first',
       inLanguage: 'en',
     },
     {

@@ -272,6 +272,7 @@ Do better. Be better. Trust God.
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)

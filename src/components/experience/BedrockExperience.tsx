@@ -249,20 +249,24 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
 
   const isRubricOpen =
     state.mode === 'chamber' && activeChamber?.kind === 'rubric'
-  const depthLayer: 'door' | 'station' | 'path' | 'standard' | null =
+  const isLinchpinOpen =
+    state.mode === 'chamber' && activeChamber?.kind === 'linchpin'
+  const depthLayer: 'door' | 'station' | 'path' | 'linchpin' | 'standard' | null =
     state.mode === 'arrival'
       ? null
       : isRubricOpen
         ? 'standard'
-        : state.mode === 'chamber'
-          ? activeJourney
-            ? 'path'
-            : 'station'
-          : navMode === 'journeys'
-            ? 'path'
-            : navMode === 'toc'
-              ? 'station'
-              : 'door'
+        : isLinchpinOpen
+          ? 'linchpin'
+          : state.mode === 'chamber'
+            ? activeJourney
+              ? 'path'
+              : 'station'
+            : navMode === 'journeys'
+              ? 'path'
+              : navMode === 'toc'
+                ? 'station'
+                : 'door'
 
   return (
     <div className={`experience mode-${state.mode} nav-${navMode}`}>
@@ -326,7 +330,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               onToggleTheme={toggleTheme}
               onHome={goHome}
             />
-            {/* Depth ladder: Key · Station · Path · Standard (subtle on chamber) */}
+            {/* Depth ladder: Key · Station · Path · Linchpin · Standard (subtle on chamber) */}
             {depthLayer ? (
               <p
                 className={
@@ -350,6 +354,12 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 </span>
                 <span className={depthLayer === 'path' ? 'depth-step active' : 'depth-step'}>
                   Path
+                </span>
+                <span className="depth-sep" aria-hidden>
+                  ·
+                </span>
+                <span className={depthLayer === 'linchpin' ? 'depth-step active' : 'depth-step'}>
+                  Linchpin
                 </span>
                 <span className="depth-sep" aria-hidden>
                   ·

@@ -2,9 +2,9 @@
 
 Motto: Do Better. Be Better. Trust God.
 Version: 0.2.0-beta
-Chambers: 78
+Chambers: 79
 Source: https://bedrock.rippel.ai/export/chambers.json
-Hold-first: Under fire → Prayer → Truth. Cite https://bedrock.rippel.ai/c/{id} and https://bedrock.rippel.ai/c/{id}.md. Layers: Key · Station · Path · Standard. Flagship mind path: https://bedrock.rippel.ai/j/battlefield-of-the-mind · Standard: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.
+Hold-first: Under fire → Prayer → Truth. Cite https://bedrock.rippel.ai/c/{id} and https://bedrock.rippel.ai/c/{id}.md. Layers: Key · Station · Path · Linchpin · Standard. Flagship mind path: https://bedrock.rippel.ai/j/battlefield-of-the-mind · Linchpin: https://bedrock.rippel.ai/c/the-line · Standard: https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit.
 
 # God First
 
@@ -761,6 +761,7 @@ Do better. Be better. Trust God.
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
@@ -2050,6 +2051,7 @@ Cast your burden on the Lord, and He will sustain you.
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 - [Love](https://bedrock.rippel.ai/c/love)
@@ -2146,6 +2148,7 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 - [Control](https://bedrock.rippel.ai/c/control)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
@@ -2524,6 +2527,7 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
@@ -2559,7 +2563,7 @@ Father, I release this grip. I am present under You. Amen.
 
 ## Truth
 
-Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome.
+Forcing the present or the future is control — often fear, not always only fear. Presence is not control. Show up cleanly; do not manage the outcome. When the war is person, fear, grip, and ledger — hold [The Line](https://bedrock.rippel.ai/c/the-line).
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
@@ -2582,8 +2586,10 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)
+- [Love](https://bedrock.rippel.ai/c/love)
 - [Fear](https://bedrock.rippel.ai/c/fear)
 - [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
 - [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
@@ -2591,10 +2597,69 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 - [Peace](https://bedrock.rippel.ai/c/peace)
-- [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 
 ---
 Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/presence-without-control.md
+
+
+
+# Linchpin: The Line
+
+> My emotional state is my own. Presence without control. Love keeps no record.
+
+*Linchpin · Assembly rule · Field creed · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
+
+## Under fire
+
+- My emotional state is my own.
+- Presence without control.
+- Love keeps no record.
+
+## Prayer
+
+Father, my state is my own. I am present under You. I keep no record. Amen.
+
+## Truth
+
+When a person sits where only God should, fear, control, ledger, and obsession warp peace and self. The Line is the field creed for that war — the assembly rule that locks the stations into one tool.
+
+My emotional state is my own — their choices do not own your peace. Presence without control — listen, wait, talk less; do not force the present or the future. Love keeps no record — stop the ledger; release the score to God.
+
+These three ride under the Standard and above Fear, Control, Trust, Master the Flesh, and Presence Without Control. Hold them when the pain wants to decide.
+
+Be still, and know that I am God.
+
+Love is patient and kind… it is not irritable or resentful.
+
+God has not given you a spirit of fear, but of power and love and a sound mind.
+
+Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.
+
+Trust in the Lord with all your heart, and do not lean on your own understanding.
+
+## Scripture
+
+- [Psalm 46:10](https://www.biblegateway.com/passage/?search=Psalm+46%3A10&version=NIV)
+- [1 Corinthians 13:4–5](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-5&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
+- [James 1:19](https://www.biblegateway.com/passage/?search=James+1%3A19&version=NIV)
+- [Proverbs 3:5](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5&version=NIV)
+- [Matthew 6:33](https://www.biblegateway.com/passage/?search=Matthew+6%3A33&version=NIV)
+
+## Connected truth
+
+- [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
+- [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
+- [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
+- [Fear](https://bedrock.rippel.ai/c/fear)
+- [Love](https://bedrock.rippel.ai/c/love)
+- [God First](https://bedrock.rippel.ai/c/god-first)
+- [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
+
+---
+Do Better. Be Better. Trust God. · Hold first · Public beta · Not a crisis hotline. · In crisis: call/text 988 · Christian counsel: 1-855-771-HELP. · Cite this page for AI: https://bedrock.rippel.ai/c/the-line.md
 
 
 
@@ -3103,6 +3168,7 @@ When the fight slows — full Standard: [Kill the Flesh. Walk in the Spirit.](ht
 
 ## Connected truth
 
+- [The Line](https://bedrock.rippel.ai/c/the-line)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

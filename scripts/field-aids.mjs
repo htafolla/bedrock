@@ -389,6 +389,17 @@ export const FIELD_AIDS = {
       'Father, I release this grip. I am present under You. Amen.',
     ],
   },
+  'the-line': {
+    // Linchpin — three iron holds, field creed for the cluster
+    hacks: [
+      'My emotional state is my own.',
+      'Presence without control.',
+      'Love keeps no record.',
+    ],
+    prayers: [
+      'Father, my state is my own. I am present under You. I keep no record. Amen.',
+    ],
+  },
   'spiritual-warfare': {
     hacks: [
       'This is not only circumstance. Stay sober and watchful.',

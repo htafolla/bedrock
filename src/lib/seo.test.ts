@@ -55,6 +55,19 @@ describe('seo', () => {
     expect(seo.ogImage).toMatch(/\/og\/c\/kill-the-flesh-walk-in-the-spirit\.v\d+\.png$/)
   })
 
+  it('linchpin chamber titles as Linchpin', () => {
+    const c = doc.chambers.find((x) => x.id === 'the-line')!
+    const seo = buildChamberSeo(doc, c)
+    expect(c.kind).toBe('linchpin')
+    expect(seo.title).toContain('Bedrock Linchpin')
+    expect(seo.canonical).toContain('/c/the-line')
+    expect(seo.ogImage).toMatch(/\/og\/c\/the-line\.v\d+\.png$/)
+    const article = seo.jsonLd.find((b) => b['@type'] === 'Article') as
+      | { articleSection?: string }
+      | undefined
+    expect(article?.articleSection).toMatch(/Linchpin/i)
+  })
+
   it('FAQ covers product intent questions', () => {
     const faqs = buildFaqEntities(doc)
     expect(faqs.length).toBeGreaterThanOrEqual(6)

@@ -312,6 +312,7 @@ export function ChamberFocus({
   const onPath = stageIdx >= 0
   const showJourneyRail = Boolean(journey && onSelectJourneyStage)
   const isRubric = chamber.kind === 'rubric'
+  const isLinchpin = chamber.kind === 'linchpin'
   const journeyPrevStage =
     journey && stageIdx > 0 ? journey.stages[stageIdx - 1] ?? null : null
   const journeyNextStage =
@@ -378,7 +379,7 @@ export function ChamberFocus({
 
   return (
     <div
-      className={`chamber-focus${onJourney ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}`}
+      className={`chamber-focus${onJourney ? ' has-journey-path' : ''}${isRubric ? ' is-rubric' : ''}${isLinchpin ? ' is-linchpin' : ''}`}
       ref={rootRef}
     >
       {/*
@@ -470,7 +471,7 @@ export function ChamberFocus({
       )}
 
       <article
-        className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}${chamber.illustration ? ' has-illustration' : ''}`}
+        className={`chamber chamber-in-focus hold-first${isRubric ? ' chamber-rubric' : ''}${isLinchpin ? ' chamber-linchpin' : ''}${chamber.illustration ? ' has-illustration' : ''}`}
         id={chamber.id}
       >
         {/* Title + Under fire share one stage so the pow sits behind as corner watermark */}
@@ -505,6 +506,11 @@ export function ChamberFocus({
                 Under fire first. Field card and full map when you can read.
               </p>
             ) : null}
+            {isLinchpin ? (
+              <p className="chamber-kind-note">
+                Assembly rule under the Standard — three lines that lock the cluster.
+              </p>
+            ) : null}
           </header>
 
           {/*
@@ -521,7 +527,9 @@ export function ChamberFocus({
                 <p className="field-layer-hint">
                   {isRubric
                     ? 'Three holds when fog is worst.'
-                    : 'The next right hold — walk this hour.'}
+                    : isLinchpin
+                      ? 'Three lines that lock the cluster.'
+                      : 'The next right hold — walk this hour.'}
                 </p>
                 <ul className="field-list">
                   {chamber.hacks.map((hack) => (
