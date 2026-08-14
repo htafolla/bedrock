@@ -1,20 +1,22 @@
 # Control
 
-> Open the hand — trust is not passivity; self-control rules you, not them.
+> Control is often fear at work. Open the hand — rule yourself, not them.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/control*
 
 ## Under fire
 
-- Love them. Do not let their choices rule your peace.
-- Name the grip. If you must hold it, it has become a god. Open the hand.
+- Control is often fear at work. Name the fear — then open the hand.
+- If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.
 - Rule yourself, not them. Do your part. Leave the rest to God.
 
 ## Prayer
 
-Lord, I release control. Direct my path. Amen.
+Father, this grip is fear. I release control. Direct my path. Amen.
 
 ## Truth
+
+When the grip tightens, name the driver: control is often fear at work. Name the fear. Then open the hand and leave the outcome to the Lord.
 
 Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
 
@@ -33,10 +35,13 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 - [Galatians 5:22–23](https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&version=NIV)
 - [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
 - [Psalm 55:22](https://www.biblegateway.com/passage/?search=Psalm+55%3A22&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
 
 ## Connected truth
 
+- [Fear](https://bedrock.rippel.ai/c/fear)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
+- [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

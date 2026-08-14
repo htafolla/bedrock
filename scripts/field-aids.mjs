@@ -367,21 +367,23 @@ export const FIELD_AIDS = {
   },
   control: {
     hacks: [
-      'Love them. Do not let their choices rule your peace.',
-      'Name the grip. If you must hold it, it has become a god. Open the hand.',
+      'Control is often fear at work. Name the fear — then open the hand.',
+      'If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.',
       'Rule yourself, not them. Do your part. Leave the rest to God.',
     ],
-    prayers: ['Lord, I release control. Direct my path. Amen.'],
+    prayers: [
+      'Father, this grip is fear. I release control. Direct my path. Amen.',
+    ],
   },
   'presence-without-control': {
     // Same station chrome as god-first / Master the Flesh: ≤3 flat holds
     hacks: [
       'Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.',
-      'Don’t take or force control of the present — just exist in it — or of the future — it is unknown.',
+      'Don’t force the present or the future — that grip is often fear. Just exist in the moment; the future is unknown.',
       'When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.',
     ],
     prayers: [
-      'Father, I release this moment and the unknown. I am present under You. Amen.',
+      'Father, this force is fear. I release this moment and the unknown. I am present under You. Amen.',
     ],
   },
   'spiritual-warfare': {

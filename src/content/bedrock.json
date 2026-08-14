@@ -3426,6 +3426,8 @@
       ],
       "related": [
         "do-not-fear",
+        "control",
+        "presence-without-control",
         "trust-in-the-lord",
         "loss",
         "take-every-thought-captive",
@@ -3930,8 +3932,12 @@
     {
       "id": "control",
       "title": "Control",
-      "summary": "Open the hand — trust is not passivity; self-control rules you, not them.",
+      "summary": "Control is often fear at work. Open the hand — rule yourself, not them.",
       "body": [
+        {
+          "type": "paragraph",
+          "text": "When the grip tightens, name the driver: control is often fear at work. Name the fear. Then open the hand and leave the outcome to the Lord."
+        },
         {
           "type": "paragraph",
           "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
@@ -3985,18 +3991,26 @@
           "book": "Psalm",
           "chapter": 55,
           "verseStart": 22
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
         }
       ],
       "hacks": [
-        "Love them. Do not let their choices rule your peace.",
-        "Name the grip. If you must hold it, it has become a god. Open the hand.",
+        "Control is often fear at work. Name the fear — then open the hand.",
+        "If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.",
         "Rule yourself, not them. Do your part. Leave the rest to God."
       ],
       "prayers": [
-        "Lord, I release control. Direct my path. Amen."
+        "Father, this grip is fear. I release control. Direct my path. Amen."
       ],
       "related": [
+        "fear",
         "presence-without-control",
+        "kill-the-flesh",
         "trust-in-the-lord",
         "self-control",
         "walk-by-the-spirit",
@@ -4013,6 +4027,10 @@
       "title": "Presence Without Control",
       "summary": "Relax. Be present. Don’t take or force control of the present or the future.",
       "body": [
+        {
+          "type": "paragraph",
+          "text": "Forcing the present or the future is often fear wearing control. Presence is not control — show up cleanly; do not manage the outcome."
+        },
         {
           "type": "paragraph",
           "text": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!"
@@ -4065,19 +4083,26 @@
           "chapter": 3,
           "verseStart": 5,
           "verseEnd": 6
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
         }
       ],
       "hacks": [
         "Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.",
-        "Don’t take or force control of the present — just exist in it — or of the future — it is unknown.",
+        "Don’t force the present or the future — that grip is often fear. Just exist in the moment; the future is unknown.",
         "When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you."
       ],
       "prayers": [
-        "Father, I release this moment and the unknown. I am present under You. Amen."
+        "Father, this force is fear. I release this moment and the unknown. I am present under You. Amen."
       ],
       "related": [
         "kill-the-flesh",
         "control",
+        "fear",
         "be-quick-to-listen",
         "wait-on-the-lord",
         "take-every-thought-captive",

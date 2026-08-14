@@ -38,6 +38,8 @@ For you did not receive the spirit of slavery to fall back into fear, but you ha
 ## Connected truth
 
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
+- [Control](https://bedrock.rippel.ai/c/control)
+- [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)
 - [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord)
 - [Loss](https://bedrock.rippel.ai/c/loss)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)

@@ -350,6 +350,8 @@ const RELATED = {
   'do-not-fear': ['fear', 'trust-in-the-lord', 'his-promises', 'take-every-thought-captive'],
   fear: [
     'do-not-fear',
+    'control',
+    'presence-without-control',
     'trust-in-the-lord',
     'loss',
     'take-every-thought-captive',
@@ -461,7 +463,9 @@ const RELATED = {
     'trust-in-the-lord',
   ],
   control: [
+    'fear',
     'presence-without-control',
+    'kill-the-flesh',
     'trust-in-the-lord',
     'self-control',
     'walk-by-the-spirit',
@@ -534,6 +538,7 @@ const RELATED = {
   'presence-without-control': [
     'kill-the-flesh',
     'control',
+    'fear',
     'be-quick-to-listen',
     'wait-on-the-lord',
     'take-every-thought-captive',
@@ -1438,15 +1443,17 @@ const document = {
     ),
     chamber(
       'Control',
-      'Open the hand — trust is not passivity; self-control rules you, not them.',
+      'Control is often fear at work. Open the hand — rule yourself, not them.',
       [
+        // Diagnostic lead (not a hold list) — then Scripture, god-first form
+        'When the grip tightens, name the driver: control is often fear at work. Name the fear. Then open the hand and leave the outcome to the Lord.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
         'Cast your burden on the Lord, and He will sustain you; He will never permit the righteous to be moved.',
       ],
-      'Proverbs 3:5-6 · Psalm 46:10 · Galatians 5:22-23 · Philippians 4:6 · Psalm 55:22',
+      'Proverbs 3:5-6 · Psalm 46:10 · Galatians 5:22-23 · Philippians 4:6 · Psalm 55:22 · 2 Timothy 1:7',
     ),
     /**
      * Adjacent to Master the Flesh — same station chrome as god-first / control:
@@ -1456,14 +1463,15 @@ const document = {
       'Presence Without Control',
       'Relax. Be present. Don’t take or force control of the present or the future.',
       [
-        // Same Truth form as god-first: short Scripture paragraphs only (holds carry practice)
+        // Echo diagnosis lightly; practice stays in Under fire
+        'Forcing the present or the future is often fear wearing control. Presence is not control — show up cleanly; do not manage the outcome.',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.',
         'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
       ],
-      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6',
+      'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     chamber(
       'Renew Your Mind',

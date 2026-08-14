@@ -7,14 +7,16 @@
 ## Under fire
 
 - Relax. Be present — listen, wait for responses, talk less; don’t form a reply while they are speaking.
-- Don’t take or force control of the present — just exist in it — or of the future — it is unknown.
+- Don’t force the present or the future — that grip is often fear. Just exist in the moment; the future is unknown.
 - When the urge hits: “This is the old hook.” Capture it to Christ. Next right thing in front of you.
 
 ## Prayer
 
-Father, I release this moment and the unknown. I am present under You. Amen.
+Father, this force is fear. I release this moment and the unknown. I am present under You. Amen.
 
 ## Truth
+
+Forcing the present or the future is often fear wearing control. Presence is not control — show up cleanly; do not manage the outcome.
 
 Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!
 
@@ -33,11 +35,13 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 - [Philippians 4:6](https://www.biblegateway.com/passage/?search=Philippians+4%3A6&version=NIV)
 - [Matthew 6:34](https://www.biblegateway.com/passage/?search=Matthew+6%3A34&version=NIV)
 - [Proverbs 3:5–6](https://www.biblegateway.com/passage/?search=Proverbs+3%3A5-6&version=NIV)
+- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
 
 ## Connected truth
 
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)
+- [Fear](https://bedrock.rippel.ai/c/fear)
 - [Be Quick to Listen](https://bedrock.rippel.ai/c/be-quick-to-listen)
 - [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive)
