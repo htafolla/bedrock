@@ -1333,13 +1333,13 @@ const document = {
     ),
     /**
      * Trust — opposite of grip. New prose: name what it is / is not, then Scripture.
-     * Control grips the outcome; trust opens the hand without abandoning the next duty.
+     * Control secures the outcome; trust stops securing it without abandoning the next duty.
      */
     chamber(
       'Trust in the Lord',
-      'Trust is open hands when you cannot grip the outcome — not lean on your own understanding.',
+      'Trust means stop securing the outcome yourself — lean on Him, not on your own understanding.',
       [
-        'Trust is not passive. It is not gripping harder with religious words. It is open hands: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path.',
+        'Trust is not passive. It is not gripping harder with religious words. It is this: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
         'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
@@ -1451,10 +1451,10 @@ const document = {
     ),
     chamber(
       'Control',
-      'Control is the grip on the outcome. Often fear — also pride, habit, or idol. Open the hand.',
+      'Control is the grip on the outcome. Often fear — also pride, habit, or idol. Stop securing what only God can rule.',
       [
         // What control is (precise): driver is often fear, not always only fear
-        'Control is the grip that tries to secure the outcome — people, timeline, certainty. It is often fear at work; pride, habit, and the idol of outcome can drive it too. Name the driver. Open the hand. Leave the rest to the Lord.',
+        'Control is the grip that tries to secure the outcome — people, timeline, certainty. It is often fear at work; pride, habit, and the idol of outcome can drive it too. Name the driver. Stop securing what only God can rule. Do your part. Leave the rest to the Lord.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.',

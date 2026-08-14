@@ -542,7 +542,7 @@
       "title": "Control",
       "family": "will",
       "wave": 2,
-      "summary": "Open the hand. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Trust God with the rest.",
+      "summary": "Stop securing the outcome. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Trust God with the rest.",
       "plainSpeech": [
         "i have to fix it",
         "i have to fix them",
@@ -570,7 +570,7 @@
           "role": "blow",
           "label": "Grip",
           "chamberId": "control",
-          "note": "If you must force the outcome, it has become a god. Open the hand."
+          "note": "If you must force the outcome, it has become a god. Stop securing it."
         },
         {
           "id": "trust",

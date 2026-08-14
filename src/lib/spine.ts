@@ -115,7 +115,7 @@ export const SPINE_ANCHORS = [
   'works-of-the-flesh',
   'the-full-armor-of-god',
   'watch-and-be-ready',
-  'control', // release grip / open hand — hub for jealousy & trust
+  'control', // release grip / stop securing outcome — hub for jealousy & trust
   'prayer', // practice / gifts approach
   'spiritual-gifts',
   'hope-of-glory',

@@ -107,7 +107,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
   {
     id: 'key-control',
     label: 'Control',
-    hint: 'Open hand',
+    hint: 'Stop securing',
     chamberId: 'control',
     journeyId: 'control-grip',
   },

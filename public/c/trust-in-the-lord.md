@@ -1,12 +1,12 @@
 # Trust in the Lord
 
-> Trust is open hands when you cannot grip the outcome — not lean on your own understanding.
+> Trust means stop securing the outcome yourself — lean on Him, not on your own understanding.
 
 *Station · Hold first (Under fire → Prayer → Truth) · Bedrock · https://bedrock.rippel.ai/c/trust-in-the-lord*
 
 ## Under fire
 
-- Name the grip: I am securing the outcome. Trust is open hands — not lean on my understanding.
+- Name the grip: I am securing the outcome. Stop. Lean on Him — not on your own understanding.
 - Take only the next step He shows. Do not demand the whole map.
 - Release what you cannot rule. Panic is not wisdom. Presence is not control.
 
@@ -16,7 +16,7 @@ Father, I trust You with all my heart. I release the outcome. Direct my path. Am
 
 ## Truth
 
-Trust is not passive. It is not gripping harder with religious words. It is open hands: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path.
+Trust is not passive. It is not gripping harder with religious words. It is this: acknowledge Him in this path, take the next right step, leave the harvest to Him. Control tries to secure people, timeline, certainty — often fear, also pride, habit, or idol. Trust is the other path.
 
 Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.
 

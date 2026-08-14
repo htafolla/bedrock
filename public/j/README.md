@@ -8,7 +8,7 @@ Canonical multi-station paths for crawlers and social share.
 - [Abandonment fear](https://bedrock.rippel.ai/j/abandonment-fear) — Perfect love casts out fear. You cry Abba — not slave to terror. Trust when the face is gone.
 - [Addiction](https://bedrock.rippel.ai/j/addiction) — If it masters you, it is not free. Name the master; walk by the Spirit one hour; get real help.
 - [Obsession](https://bedrock.rippel.ai/j/obsession) — The stuck replaying mind is not the Holy Spirit. Capture the thought. Replace it with truth. Take the next right step.
-- [Control](https://bedrock.rippel.ai/j/control-grip) — Open the hand. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Trust God with the rest.
+- [Control](https://bedrock.rippel.ai/j/control-grip) — Stop securing the outcome. Rule yourself, not them. Do not let their choices rule your peace. Do your part. Trust God with the rest.
 - [Jealousy](https://bedrock.rippel.ai/j/jealousy) — Jealousy is not love. Capture the thought. Choose selfless love. Trust God with what you cannot hold.
 - [I fell](https://bedrock.rippel.ai/j/i-fell) — Name the fall. Confess. Grace is enough. Rise. The righteous man falls and gets up again.
 - [Sexual sin](https://bedrock.rippel.ai/j/sexual-sin) — Confess, forsake, be cleansed. Do not call darkness a new identity. Deny yourself; walk by the Spirit.

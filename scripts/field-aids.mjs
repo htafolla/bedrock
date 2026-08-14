@@ -136,7 +136,7 @@ export const FIELD_AIDS = {
   },
   'trust-in-the-lord': {
     hacks: [
-      'Name the grip: I am securing the outcome. Trust is open hands — not lean on my understanding.',
+      'Name the grip: I am securing the outcome. Stop. Lean on Him — not on your own understanding.',
       'Take only the next step He shows. Do not demand the whole map.',
       'Release what you cannot rule. Panic is not wisdom. Presence is not control.',
     ],
@@ -262,7 +262,7 @@ export const FIELD_AIDS = {
   'wait-on-the-lord': {
     hacks: [
       'Be strong. Wait for the Lord, not for your timeline.',
-      'Force is flesh. Waiting is faith with open hands.',
+      'Force is flesh. Waiting is faith that does not force the harvest.',
       'Obey today. Leave the harvest to Him.',
     ],
     prayers: ['Lord, I wait for You. Renew my strength. Amen.'],
@@ -369,7 +369,7 @@ export const FIELD_AIDS = {
   },
   control: {
     hacks: [
-      'Control grips the outcome. Often fear — also pride, habit, or idol. Name the driver. Open the hand.',
+      'Control grips the outcome. Often fear — also pride, habit, or idol. Name the driver. Stop securing it.',
       'If you must hold the outcome, it has become a god. Love them; do not let their choices rule your peace.',
       'Rule yourself, not them. Do your part. Leave the rest to God.',
     ],

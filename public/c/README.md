@@ -41,7 +41,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord) — Vengeance belongs to Him — and hatred has no place with love.
 - [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven) — Forgive one another as God in Christ forgave you.
 - [One Another in the Body](https://bedrock.rippel.ai/c/one-another-in-the-body) — Bear one another’s burdens, and so fulfill the law of Christ.
-- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord) — Trust is open hands when you cannot grip the outcome — not lean on your own understanding.
+- [Trust in the Lord](https://bedrock.rippel.ai/c/trust-in-the-lord) — Trust means stop securing the outcome yourself — lean on Him, not on your own understanding.
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear) — God has not given you a spirit of fear, but of power, love, and a sound mind.
 - [Fear](https://bedrock.rippel.ai/c/fear) — There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love.
 - [Loss](https://bedrock.rippel.ai/c/loss) — Grief for real loss and possible loss — He is near the brokenhearted.
@@ -50,7 +50,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Regret](https://bedrock.rippel.ai/c/regret) — Godly grief leads to life; worldly grief leads to death.
 - [Addiction](https://bedrock.rippel.ai/c/addiction) — If it masters you, it is not free — walk by the Spirit; put the flesh to death.
 - [Jealousy](https://bedrock.rippel.ai/c/jealousy) — If it demands control of another, it is not love — walk by the Spirit; put the flesh to death.
-- [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Open the hand.
+- [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Stop securing what only God can rule.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.

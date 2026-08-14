@@ -7,7 +7,7 @@
 ## Under fire
 
 - Be strong. Wait for the Lord, not for your timeline.
-- Force is flesh. Waiting is faith with open hands.
+- Force is flesh. Waiting is faith that does not force the harvest.
 - Obey today. Leave the harvest to Him.
 
 ## Prayer
