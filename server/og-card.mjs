@@ -82,8 +82,11 @@ export function buildOgSvg(opts) {
 
   // Keep cathedral-dark tone but lift midtones so X/FB previews don't look like
   // empty black squares (avg luminance was ~19/255 — scrapers still accept, humans don't).
+  // Version salt in SVG so PNG bytes change whenever subtitle/title rebuilds for cache bust
+  const salt = esc(String(opts.subtitle || opts.title || '').slice(0, 80))
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <!-- bedrock-og ${salt} -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#2a221c"/>

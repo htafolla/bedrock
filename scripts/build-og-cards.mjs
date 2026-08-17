@@ -21,7 +21,7 @@ const root = join(__dirname, '..')
 const publicOg = join(root, 'public', 'og')
 
 /** Must match src/lib/seo.ts OG_CARD_VERSION */
-const OG_CARD_VERSION = '9'
+const OG_CARD_VERSION = '10'
 
 function ogFileName(id) {
   return `${id}.v${OG_CARD_VERSION}.png`
@@ -263,7 +263,12 @@ export async function buildAllOgCards(input) {
 
   for (const j of input.journeys || []) {
     const n = await writeOgPng(
-      { layer: 'path', title: j.title, subtitle: j.summary },
+      {
+        layer: 'path',
+        title: j.title,
+        // Prefer shareSummary so FB cards are short and intentional (not full in-app summary)
+        subtitle: j.shareSummary || j.summary,
+      },
       join(jDir, ogFileName(j.id)),
     )
     bytes += n

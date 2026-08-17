@@ -373,6 +373,7 @@ export function ChamberFocus({
           journeyId: journey.id,
           title: journey.title,
           summary: journey.summary,
+          shareSummary: journey.shareSummary,
         })
       : null
   const cardShare = (placement: 'header' | 'footer') => (

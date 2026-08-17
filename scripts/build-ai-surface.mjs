@@ -18,7 +18,7 @@ const journeysPath = join(root, 'src/content/journeys.json')
 const keyEntriesPath = join(root, 'src/lib/key-entries.ts')
 const ORIGIN = 'https://bedrock.rippel.ai'
 /** Keep in sync with src/lib/seo.ts */
-const OG_CARD_VERSION = '9'
+const OG_CARD_VERSION = '10'
 function ogFile(id) {
   return `${id}.v${OG_CARD_VERSION}.png`
 }
@@ -1047,8 +1047,10 @@ function journeyHtml(j) {
     )
     .join('\n')
   const title = `${esc(j.title)} — Bedrock Path`
+  // OG/social: prefer short shareSummary so scrapers match the PNG card line
+  const socialLine = (j.shareSummary || j.summary || '').trim()
   const desc = esc(
-    metaDesc(`${j.summary} Multi-station path in Bedrock. Do Better. Be Better. Trust God.`),
+    metaDesc(`${socialLine} Multi-station path in Bedrock. Do Better. Be Better. Trust God.`),
   )
   const ogImage = esc(journeyOgImageUrl(j))
   const pagePath = `/j/${j.id}`

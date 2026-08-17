@@ -28,6 +28,11 @@ export interface Journey {
   /** Ship priority: 1 first */
   wave: 1 | 2 | 3
   summary: string
+  /**
+   * Optional short line for OG / share cards (path PNG + share payload).
+   * Falls back to summary when omitted.
+   */
+  shareSummary?: string
   /** Phrases people actually say — matching entry */
   plainSpeech: string[]
   /** First chamber when entering this journey */

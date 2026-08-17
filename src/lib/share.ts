@@ -149,22 +149,25 @@ export function buildPathShare(input: {
   journeyId: string
   title: string
   summary: string
+  /** Prefer short OG/share line when set (journey.shareSummary) */
+  shareSummary?: string
 }): SharePayload {
   // Canonical /j/:id has static OG tags for crawlers (SPA ?j= only has homepage meta).
   const url = journeyCanonicalUrl(input.journeyId)
   const title = `${input.title} — Bedrock Path`
+  const text = (input.shareSummary || input.summary).trim()
   return {
     layer: 'path',
     layerLabel: 'Path',
     title,
-    text: input.summary,
+    text,
     url,
     ogImage: journeyOgImageUrl({
       journeyId: input.journeyId,
       title: input.title,
-      summary: input.summary,
+      summary: text,
     }),
-    shareLine: `${title}\n${input.summary}\n${url}`,
+    shareLine: `${title}\n${text}\n${url}`,
   }
 }
 
