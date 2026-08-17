@@ -68,8 +68,11 @@ export function useFieldState() {
     getStationMark: (id: string) => getStationMark(id, state),
     getPathProgress: (id: string) => getPathProgress(id, state),
     getKeyMark: (id: string) => getKeyMark(id, state),
-    pathResumeChamberId: (journeyId: string, door: string) =>
-      pathResumeChamberId(journeyId, door, state),
+    pathResumeChamberId: (
+      journeyId: string,
+      door: string,
+      stages?: ReadonlyArray<{ chamberId: string }>,
+    ) => pathResumeChamberId(journeyId, door, state, stages),
     storageKey: FIELD_STORAGE_KEY,
   } as const
 }

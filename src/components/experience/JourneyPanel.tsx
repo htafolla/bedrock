@@ -95,11 +95,18 @@ export function JourneyPanel({
                   const isActive = j.id === activeJourneyId
                   const prog = fieldPaths[j.id]
                   const total = j.stages.length
-                  const meta = prog
-                    ? prog.completedAt
-                      ? `Complete · ${total} stations`
-                      : `Continue ${Math.min(prog.stageIndex + 1, total)}/${total}`
-                    : `${total} stations · door ${j.doorChamberId.replace(/-/g, ' ')}`
+                  const startLabel = j.stages[0]?.label || 'Start'
+                  // Resume only if past the door (stageIndex > 0); stage 0 / stale door = start fresh
+                  const canResume =
+                    Boolean(prog) &&
+                    !prog!.completedAt &&
+                    prog!.stageIndex > 0 &&
+                    j.stages.some((s) => s.chamberId === prog!.chamberId)
+                  const meta = prog?.completedAt
+                    ? `Complete · ${total} stations`
+                    : canResume
+                      ? `Continue ${Math.min(prog!.stageIndex + 1, total)}/${total}`
+                      : `${total} stations · starts ${startLabel}`
                   return (
                     <li key={j.id}>
                       <button
@@ -107,7 +114,7 @@ export function JourneyPanel({
                         className={
                           isActive
                             ? 'journey-card active'
-                            : prog
+                            : canResume || prog?.completedAt
                               ? 'journey-card has-progress'
                               : 'journey-card'
                         }

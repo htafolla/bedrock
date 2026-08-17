@@ -88,6 +88,43 @@ describe('field-state', () => {
     expect(pathResumeChamberId('marriage-shaken', 'god-on-marriage')).toBe('hope-of-glory')
   })
 
+  it('resumes new door when Field still has old door-only progress (wounded)', () => {
+    const stages = [
+      { chamberId: 'god-on-marriage' },
+      { chamberId: 'wounded' },
+      { chamberId: 'he-is-for-you' },
+    ]
+    // Stale: only opened path when door was wounded
+    writeFieldState({
+      ...emptyFieldState(),
+      paths: {
+        'marriage-shaken': {
+          stageIndex: 0,
+          chamberId: 'wounded',
+          lastAt: 1,
+        },
+      },
+    })
+    expect(
+      pathResumeChamberId('marriage-shaken', 'god-on-marriage', readFieldState(), stages),
+    ).toBe('god-on-marriage')
+
+    // Real mid-path progress still resumes
+    writeFieldState({
+      ...emptyFieldState(),
+      paths: {
+        'marriage-shaken': {
+          stageIndex: 1,
+          chamberId: 'wounded',
+          lastAt: 2,
+        },
+      },
+    })
+    expect(
+      pathResumeChamberId('marriage-shaken', 'god-on-marriage', readFieldState(), stages),
+    ).toBe('wounded')
+  })
+
   it('stand is once per local day for daysStood', () => {
     const day = localDayKey(new Date('2026-08-17T12:00:00'))
     vi.setSystemTime(new Date('2026-08-17T12:00:00'))

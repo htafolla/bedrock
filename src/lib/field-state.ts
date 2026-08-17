@@ -321,12 +321,27 @@ export function summarizeField(state: FieldState = readFieldState()): FieldSumma
   }
 }
 
-/** Resume chamber for a path — progress chamber or door. */
+/**
+ * Resume chamber for a path — progress chamber or door.
+ * @param stages Optional path stages; used to validate + migrate stale progress
+ *   (e.g. old marriage-shaken door was wounded, now god-on-marriage).
+ */
 export function pathResumeChamberId(
   journeyId: string,
   doorChamberId: string,
   state: FieldState = readFieldState(),
+  stages?: ReadonlyArray<{ chamberId: string }>,
 ): string {
   const p = state.paths[journeyId.trim()]
-  return p?.chamberId || doorChamberId
+  if (!p?.chamberId) return doorChamberId
+
+  const onPath = stages?.some((s) => s.chamberId === p.chamberId) ?? true
+  if (!onPath) return doorChamberId
+
+  // Only ever opened the *old* door (stage 0) and door has since moved — start at new door.
+  if (p.stageIndex <= 0 && p.chamberId !== doorChamberId) {
+    return doorChamberId
+  }
+
+  return p.chamberId
 }

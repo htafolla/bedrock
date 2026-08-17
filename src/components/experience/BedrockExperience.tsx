@@ -442,7 +442,12 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                   activeChamberId={state.activeChamberId}
                   fieldPaths={field.state.paths}
                   onSelectJourney={(journeyId, doorChamberId) => {
-                    const resume = field.pathResumeChamberId(journeyId, doorChamberId)
+                    const j = getJourney(journeyId)
+                    const resume = field.pathResumeChamberId(
+                      journeyId,
+                      doorChamberId,
+                      j?.stages,
+                    )
                     selectChamber(resume, 'journeys', journeyId)
                   }}
                 />

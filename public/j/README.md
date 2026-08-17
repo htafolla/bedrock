@@ -3,7 +3,7 @@
 Canonical multi-station paths for crawlers and social share.
 
 - [Death of a loved one](https://bedrock.rippel.ai/j/death-of-loved-one) — Mourning is not unbelief. Hope does not erase tears. Empty hands. Remain today.
-- [Marriage Shaken](https://bedrock.rippel.ai/j/marriage-shaken) — Marriage is shaken — left, leaving, betrayal, or fracture. Name it under God. You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God.
+- [Marriage Shaken](https://bedrock.rippel.ai/j/marriage-shaken) — Marriage is shaken — left, leaving, betrayal, or fracture. Name it under God. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God.
 - [Deep wound](https://bedrock.rippel.ai/j/deep-wound) — You were harmed. God sees. Do not repay evil; forgive over time; keep wise boundaries.
 - [Abandonment fear](https://bedrock.rippel.ai/j/abandonment-fear) — Perfect love casts out fear. You cry Abba — not slave to terror. Trust when the face is gone.
 - [Addiction](https://bedrock.rippel.ai/j/addiction) — If it masters you, it is not free. Name the master; walk by the Spirit one hour; get real help.
