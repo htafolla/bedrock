@@ -563,10 +563,11 @@ body {
   transform: scale(0.98);
 }
 
-/* Keys · Journeys · Map · Contents: compact chrome so DNA has room and remains clickable */
+/* Keys · Journeys · Field · Map · Contents: compact chrome so DNA has room and remains clickable */
 .mode-constellation.nav-map .constellation-hud.map-chrome,
 .mode-constellation.nav-keys .key-chips-panel,
 .mode-constellation.nav-journeys .journey-panel,
+.mode-constellation.nav-field .field-panel,
 .mode-constellation.nav-toc .toc-panel {
   max-width: 40rem;
   margin-left: auto;
@@ -576,6 +577,7 @@ body {
 /* Shared glass frame — DNA spins outside / through the border on all surfaces */
 .mode-constellation.nav-keys .key-chips-panel,
 .mode-constellation.nav-journeys .journey-panel,
+.mode-constellation.nav-field .field-panel,
 .mode-constellation.nav-map .constellation-hud.map-chrome,
 .mode-constellation.nav-toc .toc-panel {
   padding: 0.85rem 0.9rem 1rem;
@@ -589,9 +591,10 @@ body {
     0 12px 40px var(--shadow-card);
 }
 
-/* Contents + Journeys are long — keep the frame finite so DNA still shows around it */
+/* Contents + Journeys + Field are long — keep the frame finite so DNA still shows around it */
 .mode-constellation.nav-toc .toc-panel,
-.mode-constellation.nav-journeys .journey-panel {
+.mode-constellation.nav-journeys .journey-panel,
+.mode-constellation.nav-field .field-panel {
   max-height: min(70dvh, 40rem);
   overflow-y: auto;
   scrollbar-width: thin;
@@ -601,6 +604,7 @@ body {
 .mode-constellation.nav-map .map-chrome-header,
 .mode-constellation.nav-keys .key-chips-panel .nav-panel-header,
 .mode-constellation.nav-journeys .journey-panel .nav-panel-header,
+.mode-constellation.nav-field .field-panel .nav-panel-header,
 .mode-constellation.nav-toc .toc-panel .nav-panel-header {
   margin-bottom: 0.5rem;
   padding: 0.75rem 1rem;
@@ -609,6 +613,7 @@ body {
 /* Header sits inside the frame — no second box */
 .mode-constellation.nav-keys .key-chips-panel .nav-panel-header,
 .mode-constellation.nav-journeys .journey-panel .nav-panel-header,
+.mode-constellation.nav-field .field-panel .nav-panel-header,
 .mode-constellation.nav-map .constellation-hud.map-chrome .nav-panel-header,
 .mode-constellation.nav-toc .toc-panel .nav-panel-header {
   background: transparent;
@@ -700,6 +705,10 @@ body {
 }
 
 /* —— Field (local walk state) —— */
+.field-panel {
+  /* Frame chrome applied under .mode-constellation.nav-field .field-panel */
+}
+
 .field-stat-grid {
   list-style: none;
   margin: 0 0 1.1rem;
@@ -4288,6 +4297,7 @@ a.guide-card-chip-action {
 [data-theme='light'] .key-chips-panel,
 [data-theme='light'] .toc-panel,
 [data-theme='light'] .journey-panel,
+[data-theme='light'] .field-panel,
 [data-theme='light'] .about-overlay .about-panel {
   box-shadow: 0 12px 36px var(--shadow-card);
   border-color: var(--glass-border);
