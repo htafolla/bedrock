@@ -15,7 +15,10 @@ const PLAUSIBLE_SRC =
   (import.meta.env.VITE_PLAUSIBLE_SRC as string | undefined)?.trim() ||
   'https://plausible.io/js/script.js'
 const UMAMI_WEBSITE_ID = (import.meta.env.VITE_UMAMI_WEBSITE_ID as string | undefined)?.trim()
-const UMAMI_SRC = (import.meta.env.VITE_UMAMI_SRC as string | undefined)?.trim()
+/** Default: Umami Cloud. Override with VITE_UMAMI_SRC for self-host. */
+const UMAMI_SRC =
+  (import.meta.env.VITE_UMAMI_SRC as string | undefined)?.trim() ||
+  (UMAMI_WEBSITE_ID ? 'https://cloud.umami.is/script.js' : '')
 
 export type AnalyticsEvent =
   | TelemetryEvent

@@ -279,7 +279,10 @@ function analyticsHeadSnippet(pagePath) {
   const plausibleDomain = (process.env.PLAUSIBLE_DOMAIN || process.env.VITE_PLAUSIBLE_DOMAIN || '').trim()
   const plausibleSrc = (process.env.PLAUSIBLE_SRC || process.env.VITE_PLAUSIBLE_SRC || 'https://plausible.io/js/script.js').trim()
   const umamiId = (process.env.UMAMI_WEBSITE_ID || process.env.VITE_UMAMI_WEBSITE_ID || '').trim()
-  const umamiSrc = (process.env.UMAMI_SRC || process.env.VITE_UMAMI_SRC || '').trim()
+  // Default: Umami Cloud. Override UMAMI_SRC / VITE_UMAMI_SRC for self-host.
+  const umamiSrc =
+    (process.env.UMAMI_SRC || process.env.VITE_UMAMI_SRC || '').trim() ||
+    (umamiId ? 'https://cloud.umami.is/script.js' : '')
   const parts = []
   if (plausibleDomain) {
     parts.push(
