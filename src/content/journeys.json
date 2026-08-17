@@ -107,7 +107,7 @@
       "title": "Marriage Shaken",
       "family": "body",
       "wave": 1,
-      "summary": "Marriage is shaken — left, leaving, betrayal, or fracture. You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God.",
+      "summary": "Marriage is shaken — left, leaving, betrayal, or fracture. Name it under God. You were wounded. You are still His. Do not let their choices rule your peace. Do your part. Leave the rest to God.",
       "plainSpeech": [
         "my wife left",
         "my husband left",
@@ -127,14 +127,17 @@
         "affair",
         "my marriage is broken",
         "we separated",
-        "want a divorce"
+        "want a divorce",
+        "god on marriage",
+        "my marriage"
       ],
-      "doorChamberId": "wounded",
+      "doorChamberId": "god-on-marriage",
       "distinctFrom": [
-        "death-of-loved-one"
+        "death-of-loved-one",
+        "deep-wound"
       ],
       "keyIds": [
-        "key-wounded"
+        "key-marriage"
       ],
       "loopStageIds": [
         "spiral",
@@ -145,9 +148,16 @@
         {
           "id": "blow",
           "role": "blow",
+          "label": "Shaken",
+          "chamberId": "god-on-marriage",
+          "note": "This is marriage before God. Feelings collapsed; His design did not. Name that the covenant is under fire."
+        },
+        {
+          "id": "wound",
+          "role": "blow",
           "label": "Wound",
           "chamberId": "wounded",
-          "note": "Name the harm. Do not hide in hate."
+          "note": "Name the harm done to you. Not all of it is your fault. Do not hide in hate."
         },
         {
           "id": "near",
@@ -157,13 +167,6 @@
           "note": "You are still His. Do not let their choices rule your peace."
         },
         {
-          "id": "spiral",
-          "role": "spiral",
-          "label": "Replay",
-          "chamberId": "rumination",
-          "note": "Obsession is not revelation. Stop feeding the loop."
-        },
-        {
           "id": "interrupt",
           "role": "spiral",
           "label": "Wave",
@@ -171,11 +174,25 @@
           "note": "When memory or pain surges: notice, own your state, return to what is in front of you."
         },
         {
+          "id": "spiral",
+          "role": "spiral",
+          "label": "Replay",
+          "chamberId": "rumination",
+          "note": "Obsession is not revelation. Stop feeding the loop."
+        },
+        {
           "id": "fear",
           "role": "spiral",
           "label": "Fear",
           "chamberId": "fear",
-          "note": "Name the fear. Then trust God."
+          "note": "Name the fear — loss, alone, future. Then trust God."
+        },
+        {
+          "id": "grip",
+          "role": "fork",
+          "label": "Grip",
+          "chamberId": "control",
+          "note": "Stop securing their heart, the timeline, the outcome. Do your part. Leave the rest."
         },
         {
           "id": "fork-vengeance",
@@ -199,6 +216,13 @@
           "note": "Do not invent a new story. Stay true to what God still calls true."
         },
         {
+          "id": "stance",
+          "role": "long_middle",
+          "label": "The Line",
+          "chamberId": "the-line",
+          "note": "How you stand every day: your state is your own · presence without control · love keeps no record."
+        },
+        {
           "id": "forgive",
           "role": "long_middle",
           "label": "Forgive",
@@ -206,25 +230,11 @@
           "note": "Not saying it did not hurt. Release the debt. Grief may stay."
         },
         {
-          "id": "endure",
-          "role": "long_middle",
-          "label": "Patience",
-          "chamberId": "patience",
-          "note": "One duty you own today."
-        },
-        {
-          "id": "stance",
-          "role": "remain",
-          "label": "The Line",
-          "chamberId": "the-line",
-          "note": "Daily creed: your state is your own · presence without control · love keeps no record."
-        },
-        {
           "id": "trust",
           "role": "remain",
           "label": "Trust",
           "chamberId": "trust-in-the-lord",
-          "note": "You cannot force the outcome."
+          "note": "You cannot force the outcome — them, timeline, or certainty."
         },
         {
           "id": "presence",
@@ -269,7 +279,9 @@
         "marriage-shaken",
         "death-of-loved-one"
       ],
-      "keyIds": [],
+      "keyIds": [
+        "key-wounded"
+      ],
       "loopStageIds": [
         "fork",
         "long_middle"

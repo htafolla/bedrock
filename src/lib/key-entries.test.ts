@@ -56,7 +56,7 @@ describe('KEY_ENTRIES', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-persecution')?.chamberId).toBe('persecution')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-control')?.chamberId).toBe('control')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-god')?.journeyId).toBeUndefined()
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-marriage')?.journeyId).toBeUndefined()
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-marriage')?.journeyId).toBe('marriage-shaken')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-trust')?.journeyId).toBeUndefined()
   })
 
@@ -102,7 +102,9 @@ describe('KEY_ENTRIES', () => {
 
   it('storm Keys link to core journey ids when set', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-loss')?.journeyId).toBe('death-of-loved-one')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('marriage-shaken')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-marriage')?.journeyId).toBe('marriage-shaken')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-marriage')?.chamberId).toBe('god-on-marriage')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('deep-wound')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.journeyId).toBe('addiction')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-wait')?.journeyId).toBe('forced-waiting')
   })

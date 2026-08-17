@@ -449,9 +449,27 @@ describe('bedrock content integrity', () => {
     }
     const spouse = journeysDoc.journeys.find((j) => j.id === 'marriage-shaken')
     expect(spouse?.title).toBe('Marriage Shaken')
+    expect(spouse?.doorChamberId).toBe('god-on-marriage')
+    expect(spouse?.stages[0]?.chamberId).toBe('god-on-marriage')
     expect(spouse?.summary).toMatch(/do not let their choices rule your peace/i)
-    expect(spouse?.stages.some((s) => s.chamberId === 'the-line')).toBe(true)
-    expect(spouse?.stages.some((s) => s.chamberId === 'pain-interrupt')).toBe(true)
+    expect(spouse?.stages.map((s) => s.chamberId)).toEqual([
+      'god-on-marriage',
+      'wounded',
+      'he-is-for-you',
+      'pain-interrupt',
+      'rumination',
+      'fear',
+      'control',
+      'leave-vengeance-to-the-lord',
+      'do-not-repay-evil-with-evil',
+      'marriage-covenant',
+      'the-line',
+      'forgive-as-you-have-been-forgiven',
+      'trust-in-the-lord',
+      'presence-without-control',
+      'kill-the-flesh-walk-in-the-spirit',
+      'hope-of-glory',
+    ])
   })
 
   it('Truth stays verse-shaped — application lives in Under fire', () => {

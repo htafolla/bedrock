@@ -37,9 +37,9 @@ export const KEY_ENTRIES: KeyEntry[] = [
   {
     id: 'key-marriage',
     label: 'Marriage',
-    hint: 'Covenant',
-    chamberId: 'marriage-covenant',
-    // Station only — marriage-shaken door is Wounded
+    hint: 'Shaken',
+    chamberId: 'god-on-marriage',
+    journeyId: 'marriage-shaken',
   },
   {
     id: 'key-wait',
@@ -67,7 +67,8 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Wounded',
     hint: 'I was hurt',
     chamberId: 'wounded',
-    journeyId: 'marriage-shaken',
+    // Generic harm path — marriage crisis opens via Marriage key / marriage-shaken
+    journeyId: 'deep-wound',
   },
   {
     id: 'key-obsession',

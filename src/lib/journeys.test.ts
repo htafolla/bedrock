@@ -81,7 +81,9 @@ describe('core journeys SSOT', () => {
     const death = getJourney('death-of-loved-one')!
     const left = getJourney('marriage-shaken')!
     expect(death.doorChamberId).toBe('loss')
-    expect(left.doorChamberId).toBe('wounded')
+    expect(left.doorChamberId).toBe('god-on-marriage')
+    expect(left.stages[0]?.chamberId).toBe('god-on-marriage')
+    expect(left.stages.some((s) => s.chamberId === 'wounded')).toBe(true)
     expect(death.distinctFrom).toContain('marriage-shaken')
     expect(left.distinctFrom).toContain('death-of-loved-one')
     // Legacy alias still resolves
@@ -109,8 +111,11 @@ describe('core journeys SSOT', () => {
     expect(stageByChamber(j, 'hope-of-glory')?.label).toMatch(/Hope|Pain and glory/i)
   })
 
-  it('journeysForChamber finds loss and wounded doors', () => {
+  it('journeysForChamber finds loss and marriage doors', () => {
     expect(journeysForChamber('loss').some((j) => j.id === 'death-of-loved-one')).toBe(true)
+    expect(journeysForChamber('god-on-marriage').some((j) => j.id === 'marriage-shaken')).toBe(
+      true,
+    )
     expect(journeysForChamber('wounded').some((j) => j.id === 'marriage-shaken')).toBe(true)
   })
 
@@ -135,7 +140,7 @@ describe('core journeys SSOT', () => {
 
   it('formatJourneyContextLine includes next stations and distinctness', () => {
     const j = getJourney('marriage-shaken')!
-    const line = formatJourneyContextLine(j, { chamberId: 'wounded' })
+    const line = formatJourneyContextLine(j, { chamberId: 'god-on-marriage' })
     expect(line).toMatch(/marriage-shaken/)
     expect(line).toMatch(/Next stations/)
     expect(line).toMatch(/death-of-loved-one/)

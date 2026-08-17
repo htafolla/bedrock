@@ -3,7 +3,7 @@
 Storm triage doors for crawlers and social share.
 
 - [God](https://bedrock.rippel.ai/k/key-god) — First
-- [Marriage](https://bedrock.rippel.ai/k/key-marriage) — Covenant
+- [Marriage](https://bedrock.rippel.ai/k/key-marriage) — Shaken
 - [Out of control](https://bedrock.rippel.ai/k/key-wait) — Can't force it
 - [Trust](https://bedrock.rippel.ai/k/key-trust) — Release grip
 - [Grief](https://bedrock.rippel.ai/k/key-loss) — Loss

@@ -18,8 +18,8 @@ describe('path-routing', () => {
 
   it('builds journey app hrefs', () => {
     expect(journeyAppHref('marriage-shaken')).toBe('/?j=marriage-shaken')
-    expect(journeyAppHref('marriage-shaken', 'wounded')).toBe(
-      '/?j=marriage-shaken&c=wounded',
+    expect(journeyAppHref('marriage-shaken', 'god-on-marriage')).toBe(
+      '/?j=marriage-shaken&c=god-on-marriage',
     )
     // Legacy alias resolves to preferred id
     expect(journeyAppHref('spouse-left')).toBe('/?j=marriage-shaken')
@@ -28,8 +28,8 @@ describe('path-routing', () => {
   it('buildAppHref orders journey then chamber and home', () => {
     expect(buildAppHref({})).toBe('/')
     expect(buildAppHref({ chamberId: 'loss' })).toBe('/?c=loss')
-    expect(buildAppHref({ journeyId: 'marriage-shaken', chamberId: 'wounded' })).toBe(
-      '/?j=marriage-shaken&c=wounded',
+    expect(buildAppHref({ journeyId: 'marriage-shaken', chamberId: 'god-on-marriage' })).toBe(
+      '/?j=marriage-shaken&c=god-on-marriage',
     )
   })
 
