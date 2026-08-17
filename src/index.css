@@ -401,13 +401,13 @@ body {
   outline-offset: 2px;
 }
 
-/* Bedrock (left) · Keys/Map/Contents (center) · theme (far right) */
+/* Bedrock (left) · Keys/Journeys/Contents (center) · Field + theme (profile, far right) */
 .nav-modes-bar {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-template-areas: 'brand tabs theme';
+  grid-template-areas: 'brand tabs profile';
   align-items: center;
-  gap: 0.45rem 0.65rem;
+  gap: 0.4rem 0.5rem;
   max-width: 56rem;
   margin: 0 auto;
 }
@@ -443,9 +443,9 @@ body {
   grid-area: tabs;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.3rem;
-  padding: 0.3rem;
-  max-width: 22rem;
+  gap: 0.25rem;
+  padding: 0.28rem;
+  max-width: 20rem;
   width: 100%;
   margin: 0 auto;
   background: var(--panel-fill-strong);
@@ -454,37 +454,98 @@ body {
   box-shadow: 0 8px 28px var(--shadow-card);
 }
 
-.nav-theme {
-  grid-area: theme;
+/* Profile start: Field chip · light/dark */
+.nav-profile {
+  grid-area: profile;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   justify-self: end;
+  flex-shrink: 0;
+}
+
+.nav-field-chip {
+  flex-shrink: 0;
+  border: 1px solid var(--glass-border);
+  background: var(--panel-fill-strong);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.nav-field-chip:hover {
+  color: var(--beam);
+  border-color: var(--ember-border-mid);
+}
+
+.nav-field-chip:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+.nav-field-chip.active {
+  background: var(--ember-wash);
+  color: var(--beam);
+  border-color: var(--ember-border-mid);
+}
+
+.nav-theme {
+  /* inside .nav-profile */
 }
 
 @media (max-width: 640px) {
   .nav-modes-bar {
     grid-template-columns: 1fr auto;
     grid-template-areas:
-      'brand theme'
+      'brand profile'
       'tabs tabs';
+    gap: 0.35rem 0.4rem;
   }
 
   .nav-modes-inner {
     max-width: none;
   }
+
+  .nav-brand {
+    font-size: 0.82rem;
+    letter-spacing: 0.2em;
+  }
+
+  .nav-field-chip {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.55rem;
+  }
+
+  .theme-toggle {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.55rem;
+  }
 }
 
 .nav-mode-btn {
-  min-height: 2.75rem;
+  min-height: 2.5rem;
   border: none;
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
+  padding: 0.25rem 0.35rem;
 }
 
 .nav-mode-btn:focus-visible {
@@ -1030,12 +1091,14 @@ body {
   }
 }
 
-/* Four nav tabs — slightly tighter on narrow screens */
+/* Three walk tabs — keep single-line on the narrowest phones */
 @media (max-width: 420px) {
   .nav-mode-btn {
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
-    font-size: 0.78rem;
+    min-height: 2.35rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
   }
 }
 

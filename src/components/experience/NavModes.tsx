@@ -13,16 +13,20 @@ interface NavModesProps {
   onHome: () => void
 }
 
-/** Header chrome — Field is first-class (local walk state), not optional. */
+/** Main walk tabs — three only so the pill never wraps. */
 const MODES: Array<{ id: NavMode; label: string }> = [
   { id: 'keys', label: 'Keys' },
   { id: 'journeys', label: 'Journeys' },
-  { id: 'field', label: 'Field' },
   { id: 'toc', label: 'Contents' },
 ]
 
-/** Mobile-first top chrome: Bedrock · Keys/Journeys/Contents · theme far right. */
+/**
+ * Mobile-first top chrome:
+ * Bedrock · Keys/Journeys/Contents · [Field · theme] (profile start, far right).
+ */
 export function NavModes({ mode, onChange, theme, onToggleTheme, onHome }: NavModesProps) {
+  const fieldActive = mode === 'field'
+
   return (
     <header className="nav-modes" role="banner">
       <div className="nav-modes-bar">
@@ -46,7 +50,19 @@ export function NavModes({ mode, onChange, theme, onToggleTheme, onHome }: NavMo
             )
           })}
         </nav>
-        <ThemeToggle theme={theme} onToggle={onToggleTheme} className="nav-theme" />
+        <div className="nav-profile" aria-label="Field and display">
+          <button
+            type="button"
+            className={fieldActive ? 'nav-field-chip active' : 'nav-field-chip'}
+            aria-pressed={fieldActive}
+            aria-label="Field — your walk"
+            title="Field — your walk"
+            onClick={() => onChange('field')}
+          >
+            Field
+          </button>
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} className="nav-theme" />
+        </div>
       </div>
     </header>
   )
