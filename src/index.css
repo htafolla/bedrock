@@ -629,6 +629,184 @@ body {
   background: var(--ember-wash);
 }
 
+.journey-card.has-progress {
+  border-color: rgba(196, 165, 116, 0.35);
+}
+
+.journey-card.has-progress .journey-card-meta {
+  color: var(--ember-soft);
+  opacity: 0.95;
+}
+
+/* —— Field (local walk state) —— */
+.field-stat-grid {
+  list-style: none;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.field-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.55rem 0.35rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--surface-row);
+}
+
+.field-stat-n {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--beam);
+  line-height: 1.1;
+}
+
+.field-stat-l {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.field-section {
+  margin: 0 0 1.15rem;
+}
+
+.field-section-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.field-stand-btn,
+.field-row-btn,
+.field-mark-btn {
+  border: 1px solid var(--glass-border);
+  background: var(--surface-row);
+  color: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  font: inherit;
+}
+
+.field-stand-btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  border-radius: 12px;
+}
+
+.field-stand-btn.done,
+.field-mark-btn.done {
+  border-color: rgba(196, 165, 116, 0.45);
+  background: var(--ember-wash);
+  color: var(--beam);
+}
+
+.field-list-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field-row-btn {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  border-radius: 12px;
+}
+
+.field-row-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.field-row-meta {
+  font-size: 0.72rem;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.field-empty {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.field-empty-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+.field-chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.field-chip {
+  border: 1px solid var(--glass-border);
+  background: var(--surface-row);
+  color: var(--beam);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.78rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.field-mark-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.65rem;
+}
+
+.field-mark-btn {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+}
+
+.field-mark-btn:disabled {
+  cursor: default;
+  opacity: 0.95;
+}
+
+.key-chip.key-used {
+  border-color: rgba(196, 165, 116, 0.4);
+}
+
+.key-chip.key-used .key-chip-hint::before {
+  content: 'used · ';
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--ember-soft);
+}
+
 .journey-card-top {
   display: flex;
   align-items: baseline;

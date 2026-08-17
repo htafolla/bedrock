@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BedrockDocument, BodyBlock, Chamber } from '../../types/content'
 import type { Journey } from '../../types/journey'
+import type { StationMark } from '../../lib/field-state'
 import { VerseLink } from '../VerseLink'
 import { spineNeighbor, spineIndexOf, SPINE_ORDER } from '../../lib/spine'
 import { chamberPath } from '../../lib/path-routing'
@@ -25,6 +26,13 @@ interface ChamberFocusProps {
   onSelectJourneyStage?: (chamberId: string) => void
   /** Rubric Field card → Battlefield of the mind journey */
   onOpenMindPath?: () => void
+  /** Field marks for this station (local) */
+  stationMark?: StationMark | null
+  stoodToday?: boolean
+  onMarkHeld?: () => void
+  onMarkPrayed?: () => void
+  onMarkStand?: () => void
+  onMarkLock?: () => void
 }
 
 const PRAYER_RE = /^Prayer:\s*/i
@@ -299,6 +307,12 @@ export function ChamberFocus({
   journey = null,
   onSelectJourneyStage,
   onOpenMindPath,
+  stationMark = null,
+  stoodToday = false,
+  onMarkHeld,
+  onMarkPrayed,
+  onMarkStand,
+  onMarkLock,
 }: ChamberFocusProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -314,6 +328,8 @@ export function ChamberFocus({
   const isRubric = chamber.kind === 'rubric'
   const isStance = chamber.kind === 'stance'
   const isLock = chamber.kind === 'lock'
+  const held = Boolean(stationMark?.heldAt)
+  const prayed = Boolean(stationMark?.prayedAt)
   const journeyPrevStage =
     journey && stageIdx > 0 ? journey.stages[stageIdx - 1] ?? null : null
   const journeyNextStage =
@@ -544,6 +560,40 @@ export function ChamberFocus({
                     <li key={hack}>{hack}</li>
                   ))}
                 </ul>
+                {onMarkHeld || onMarkStand || onMarkLock ? (
+                  <div className="field-mark-row" role="group" aria-label="Field marks">
+                    {isStance && onMarkStand ? (
+                      <button
+                        type="button"
+                        className={stoodToday ? 'field-mark-btn done' : 'field-mark-btn'}
+                        onClick={onMarkStand}
+                        disabled={stoodToday}
+                      >
+                        {stoodToday ? 'Stood today' : 'I stood'}
+                      </button>
+                    ) : null}
+                    {isLock && onMarkLock ? (
+                      <button
+                        type="button"
+                        className={held ? 'field-mark-btn done' : 'field-mark-btn'}
+                        onClick={onMarkLock}
+                        disabled={held}
+                      >
+                        {held ? 'Lock used' : 'Used under fire'}
+                      </button>
+                    ) : null}
+                    {!isStance && !isLock && onMarkHeld ? (
+                      <button
+                        type="button"
+                        className={held ? 'field-mark-btn done' : 'field-mark-btn'}
+                        onClick={onMarkHeld}
+                        disabled={held}
+                      >
+                        {held ? 'Held' : 'I held this'}
+                      </button>
+                    ) : null}
+                  </div>
+                ) : null}
               </section>
             ) : null}
 
@@ -561,6 +611,18 @@ export function ChamberFocus({
                     <li key={prayer}>{prayer}</li>
                   ))}
                 </ul>
+                {onMarkPrayed ? (
+                  <div className="field-mark-row">
+                    <button
+                      type="button"
+                      className={prayed ? 'field-mark-btn done' : 'field-mark-btn'}
+                      onClick={onMarkPrayed}
+                      disabled={prayed}
+                    >
+                      {prayed ? 'Prayed' : 'I prayed'}
+                    </button>
+                  </div>
+                ) : null}
               </section>
             ) : null}
           </div>

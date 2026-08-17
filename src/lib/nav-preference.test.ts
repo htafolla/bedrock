@@ -16,6 +16,7 @@ describe('nav-preference', () => {
   it('validates nav modes', () => {
     expect(isNavMode('keys')).toBe(true)
     expect(isNavMode('journeys')).toBe(true)
+    expect(isNavMode('field')).toBe(true)
     expect(isNavMode('map')).toBe(true)
     expect(isNavMode('toc')).toBe(true)
     expect(isNavMode('backstory')).toBe(false)

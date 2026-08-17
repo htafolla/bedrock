@@ -7,12 +7,15 @@ import {
   type TouchEvent,
 } from 'react'
 import { KEY_ENTRIES } from '../../lib/key-entries'
+import type { KeyMark } from '../../lib/field-state'
 import { useMediaCapability } from '../../hooks/useMediaCapability'
 
 interface KeyChipsProps {
   activeChamberId: string | null
   /** chamberId, optional journeyId from key entry */
   onSelect: (chamberId: string, journeyId?: string) => void
+  /** Field key marks by key entry id */
+  keyMarks?: Record<string, KeyMark>
 }
 
 /** Mobile carousel page size — one row so DNA stays usable. */
@@ -21,16 +24,20 @@ export const KEYS_PAGE_SIZE = 3
 function ChipButton({
   entry,
   active,
+  used,
   onSelect,
 }: {
   entry: (typeof KEY_ENTRIES)[number]
   active: boolean
+  used?: boolean
   onSelect: (chamberId: string, journeyId?: string) => void
 }) {
   return (
     <button
       type="button"
-      className={active ? 'key-chip active' : 'key-chip'}
+      className={[active ? 'key-chip active' : 'key-chip', used ? 'key-used' : '']
+        .filter(Boolean)
+        .join(' ')}
       onClick={() => onSelect(entry.chamberId, entry.journeyId)}
       title={entry.journeyId ? `Journey: ${entry.journeyId}` : undefined}
     >
@@ -51,7 +58,7 @@ export const KEYS_BLURB =
 const KEYS_BLURB_MOBILE = 'Tap what hits. Under fire is the hold.'
 
 /** Storm triage — 3-up carousel on mobile; full grid on desktop. */
-export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
+export function KeyChips({ activeChamberId, onSelect, keyMarks = {} }: KeyChipsProps) {
   const { isNarrow } = useMediaCapability()
 
   if (!isNarrow) {
@@ -68,6 +75,7 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
               <ChipButton
                 entry={entry}
                 active={entry.chamberId === activeChamberId}
+                used={Boolean(keyMarks[entry.id])}
                 onSelect={onSelect}
               />
             </li>
@@ -77,11 +85,17 @@ export function KeyChips({ activeChamberId, onSelect }: KeyChipsProps) {
     )
   }
 
-  return <KeyChipsCarousel activeChamberId={activeChamberId} onSelect={onSelect} />
+  return (
+    <KeyChipsCarousel
+      activeChamberId={activeChamberId}
+      onSelect={onSelect}
+      keyMarks={keyMarks}
+    />
+  )
 }
 
 /** Mobile-only: one row of three + arrows so the DNA map stays interactive. */
-function KeyChipsCarousel({ activeChamberId, onSelect }: KeyChipsProps) {
+function KeyChipsCarousel({ activeChamberId, onSelect, keyMarks = {} }: KeyChipsProps) {
   const pageCount = Math.ceil(KEY_ENTRIES.length / KEYS_PAGE_SIZE)
   const [page, setPage] = useState(0)
   const touchStartX = useRef<number | null>(null)
@@ -153,6 +167,7 @@ function KeyChipsCarousel({ activeChamberId, onSelect }: KeyChipsProps) {
               <ChipButton
                 entry={entry}
                 active={entry.chamberId === activeChamberId}
+                used={Boolean(keyMarks[entry.id])}
                 onSelect={onSelect}
               />
             </li>

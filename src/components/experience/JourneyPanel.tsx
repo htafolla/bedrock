@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { listJourneys } from '../../lib/journeys'
+import type { PathProgress } from '../../lib/field-state'
 import type { Journey, JourneyFamily } from '../../types/journey'
 import { JourneyStageRail } from './JourneyStageRail'
 
@@ -22,16 +23,20 @@ const FAMILY_HINT: Record<JourneyFamily, string> = {
 interface JourneyPanelProps {
   activeJourneyId?: string | null
   activeChamberId?: string | null
+  /** Field path progress by journey id */
+  fieldPaths?: Record<string, PathProgress>
   onSelectJourney: (journeyId: string, doorChamberId: string) => void
 }
 
 /**
  * Core journeys surface — multi-stage paths for ground-shaking life.
  * Tap a journey → door chamber with ?j= context (not a one-shot card dump).
+ * Resumes from Field progress when present.
  */
 export function JourneyPanel({
   activeJourneyId,
   activeChamberId,
+  fieldPaths = {},
   onSelectJourney,
 }: JourneyPanelProps) {
   const journeys = useMemo(() => listJourneys(), [])
@@ -88,11 +93,24 @@ export function JourneyPanel({
               <ul className="journey-list" aria-label={FAMILY_LABEL[family]}>
                 {list.map((j) => {
                   const isActive = j.id === activeJourneyId
+                  const prog = fieldPaths[j.id]
+                  const total = j.stages.length
+                  const meta = prog
+                    ? prog.completedAt
+                      ? `Complete · ${total} stations`
+                      : `Continue ${Math.min(prog.stageIndex + 1, total)}/${total}`
+                    : `${total} stations · door ${j.doorChamberId.replace(/-/g, ' ')}`
                   return (
                     <li key={j.id}>
                       <button
                         type="button"
-                        className={isActive ? 'journey-card active' : 'journey-card'}
+                        className={
+                          isActive
+                            ? 'journey-card active'
+                            : prog
+                              ? 'journey-card has-progress'
+                              : 'journey-card'
+                        }
                         onClick={() => onSelectJourney(j.id, j.doorChamberId)}
                       >
                         <span className="journey-card-top">
@@ -100,9 +118,7 @@ export function JourneyPanel({
                           <span className="journey-card-wave">W{j.wave}</span>
                         </span>
                         <span className="journey-card-summary">{j.summary}</span>
-                        <span className="journey-card-meta">
-                          {j.stages.length} stations · door {j.doorChamberId.replace(/-/g, ' ')}
-                        </span>
+                        <span className="journey-card-meta">{meta}</span>
                       </button>
                     </li>
                   )

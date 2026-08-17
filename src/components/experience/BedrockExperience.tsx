@@ -13,8 +13,15 @@ import {
 import { getJourney } from '../../lib/journeys'
 import { scrollExperienceToTop } from '../../lib/scroll-top'
 import { trackEvent, trackPageview } from '../../lib/analytics'
+import { useFieldState } from '../../hooks/useFieldState'
+import { KEY_ENTRIES } from '../../lib/key-entries'
+import {
+  markPathStage as fieldMarkPathStage,
+  markStationOpened as fieldMarkStationOpened,
+} from '../../lib/field-state'
 import { ArrivalGate } from './ArrivalGate'
 import { ChamberFocus } from './ChamberFocus'
+import { FieldPanel } from './FieldPanel'
 import { GuideChat } from './GuideChat'
 import { KeyChips } from './KeyChips'
 import { JourneyPanel } from './JourneyPanel'
@@ -62,11 +69,13 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
   const { state, enterNave, openChamber, backToMap, spineStep, restore } = useExperience({
     initialChamberId: deepLink.chamberId,
   })
-  /** Preferred Keys · Journeys · Contents — localStorage-backed (About is session-only). */
+  /** Preferred Keys · Journeys · Field · Contents — localStorage-backed (About is session-only). */
   const { navMode, setNavMode, leaveAbout } = useNavModePreference()
   // About is always the static Origin page (/about) — never an SPA overlay
   /** Dark default; light available — localStorage-backed. */
   const { theme, toggleTheme } = useThemePreference()
+  /** Field — always on: keys, stations, paths, stand, lock (device-local). */
+  const field = useFieldState()
 
   /** Skip push when restoring from browser Back/Forward. */
   const skipHistoryRef = useRef(false)
@@ -81,6 +90,24 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
     () => (activeJourneyId ? getJourney(activeJourneyId) : null),
     [activeJourneyId],
   )
+
+  // Field: mark open + path when chamber focus changes (deep links, spine, history)
+  useEffect(() => {
+    if (state.mode !== 'chamber' || !state.activeChamberId) return
+    fieldMarkStationOpened(state.activeChamberId)
+    if (activeJourney) {
+      const stageIdx = activeJourney.stages.findIndex((s) => s.chamberId === state.activeChamberId)
+      if (stageIdx >= 0) {
+        fieldMarkPathStage(
+          activeJourney.id,
+          stageIdx,
+          state.activeChamberId,
+          activeJourney.stages.length,
+        )
+      }
+    }
+    field.refresh()
+  }, [state.mode, state.activeChamberId, activeJourney, field.refresh])
 
   // Push history on navigation so the browser Back button returns to the prior view
   useEffect(() => {
@@ -177,26 +204,46 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
        * - key/station open where chamberId is that path’s door (never attach a
        *   mismatched journey that would mislabel Station as Path).
        */
+      let pathId: string | null = null
       if (journeyId) {
         const j = getJourney(journeyId)
         const pathUi =
           source === 'journeys' ||
           source === 'journey-stage' ||
           source === 'rubric-mind-path' ||
-          source === 'guide'
+          source === 'guide' ||
+          source === 'field'
         const doorMatch = Boolean(j && j.doorChamberId === id)
-        if (pathUi || doorMatch) setActiveJourneyId(journeyId)
-        else setActiveJourneyId(null)
+        if (pathUi || doorMatch) {
+          setActiveJourneyId(journeyId)
+          pathId = journeyId
+        } else setActiveJourneyId(null)
       } else if (source === 'journey-stage') {
+        pathId = activeJourneyId
         // stay on active journey
       } else if (source === 'keys' || source === 'ui' || source === 'toc') {
         setActiveJourneyId(null)
       }
+
+      // Field: station open + key management + path stage
+      field.markStationOpened(id)
+      if (source === 'keys') {
+        const key = KEY_ENTRIES.find((k) => k.chamberId === id)
+        if (key) field.markKeyOpened(key.id)
+      }
+      const jForPath = pathId ? getJourney(pathId) : activeJourneyId ? getJourney(activeJourneyId) : null
+      if (jForPath) {
+        const stageIdx = jForPath.stages.findIndex((s) => s.chamberId === id)
+        if (stageIdx >= 0) {
+          field.markPathStage(jForPath.id, stageIdx, id, jForPath.stages.length)
+        }
+      }
+
       openChamber(id)
       // Do not override preferred nav mode — chamber focus always shows while reading.
       scrollExperienceToTop()
     },
-    [openChamber, navMode],
+    [openChamber, navMode, field, activeJourneyId],
   )
 
   /** Leave chamber; keep journey path context for the Journeys tab. */
@@ -384,6 +431,7 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
               {state.mode === 'constellation' && (navMode === 'keys' || navMode === 'map') ? (
                 <KeyChips
                   activeChamberId={state.activeChamberId}
+                  keyMarks={field.state.keys}
                   onSelect={(id, journeyId) => selectChamber(id, 'keys', journeyId)}
                 />
               ) : null}
@@ -392,17 +440,25 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                 <JourneyPanel
                   activeJourneyId={activeJourneyId}
                   activeChamberId={state.activeChamberId}
-                  onSelectJourney={(journeyId, chamberId) => {
-                    trackEvent('open_chamber', {
-                      chamberId,
-                      source: 'journeys',
-                      nav: 'journeys',
-                      journeyId,
-                    })
-                    setActiveJourneyId(journeyId)
-                    openChamber(chamberId)
-                    scrollExperienceToTop()
+                  fieldPaths={field.state.paths}
+                  onSelectJourney={(journeyId, doorChamberId) => {
+                    const resume = field.pathResumeChamberId(journeyId, doorChamberId)
+                    selectChamber(resume, 'journeys', journeyId)
                   }}
+                />
+              ) : null}
+
+              {state.mode === 'constellation' && navMode === 'field' ? (
+                <FieldPanel
+                  state={field.state}
+                  stoodToday={field.stoodToday}
+                  onOpenStation={(chamberId, journeyId) =>
+                    selectChamber(chamberId, 'field', journeyId)
+                  }
+                  onOpenPath={(journeyId, chamberId) =>
+                    selectChamber(chamberId, 'field', journeyId)
+                  }
+                  onOpenStand={() => selectChamber('the-line', 'field')}
                 />
               ) : null}
 
@@ -430,6 +486,18 @@ export function BedrockExperience({ document }: BedrockExperienceProps) {
                   onOpenMindPath={
                     activeChamber.kind === 'rubric' ? openMindPath : undefined
                   }
+                  stationMark={field.getStationMark(activeChamber.id)}
+                  stoodToday={field.stoodToday}
+                  onMarkHeld={() => field.markStationHeld(activeChamber.id)}
+                  onMarkPrayed={() => field.markStationPrayed(activeChamber.id)}
+                  onMarkStand={() => {
+                    field.markStandToday()
+                    field.markStationHeld(activeChamber.id)
+                  }}
+                  onMarkLock={() => {
+                    field.markLockUsed()
+                    field.markStationHeld(activeChamber.id)
+                  }}
                 />
               ) : null}
             </div>

@@ -2,7 +2,7 @@ import type { ThemeMode } from '../../lib/theme-preference'
 import { ThemeToggle } from './ThemeToggle'
 
 /** map kept for DNA/legacy; about is footer-only (not in header chrome). */
-export type NavMode = 'keys' | 'journeys' | 'map' | 'toc' | 'about'
+export type NavMode = 'keys' | 'journeys' | 'field' | 'map' | 'toc' | 'about'
 
 interface NavModesProps {
   mode: NavMode
@@ -13,10 +13,11 @@ interface NavModesProps {
   onHome: () => void
 }
 
-/** Header chrome only — Map hidden (nearly same as Keys; keeps menu from wrapping). */
+/** Header chrome — Field is first-class (local walk state), not optional. */
 const MODES: Array<{ id: NavMode; label: string }> = [
   { id: 'keys', label: 'Keys' },
   { id: 'journeys', label: 'Journeys' },
+  { id: 'field', label: 'Field' },
   { id: 'toc', label: 'Contents' },
 ]
 
