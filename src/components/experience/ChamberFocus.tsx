@@ -358,9 +358,23 @@ export function ChamberFocus({
 
   /**
    * Share hierarchy under fog:
-   * - Primary: this station / standard (header + footer)
-   * - Secondary: path only when on a journey, compact/ghost, never equal weight
+   * - On a path: Path is primary (Marriage Shaken, not station Wounded / God on Marriage)
+   * - Off path: Station / Standard primary
    */
+  const stationPayload = buildStationShare({
+    chamberId: chamber.id,
+    title: chamber.title,
+    summary: chamber.summary,
+    kind: chamber.kind,
+  })
+  const pathPayload =
+    journey && onPath
+      ? buildPathShare({
+          journeyId: journey.id,
+          title: journey.title,
+          summary: journey.summary,
+        })
+      : null
   const cardShare = (placement: 'header' | 'footer') => (
     <div
       className={
@@ -369,26 +383,19 @@ export function ChamberFocus({
           : 'chamber-card-share chamber-card-share-footer'
       }
     >
-      <ShareMenu
-        payload={buildStationShare({
-          chamberId: chamber.id,
-          title: chamber.title,
-          summary: chamber.summary,
-          kind: chamber.kind,
-        })}
-      />
-      {journey && onPath ? (
-        <ShareMenu
-          compact
-          className="chamber-share-path chamber-share-path-secondary"
-          triggerLabel="Path"
-          payload={buildPathShare({
-            journeyId: journey.id,
-            title: journey.title,
-            summary: journey.summary,
-          })}
-        />
-      ) : null}
+      {pathPayload ? (
+        <>
+          <ShareMenu payload={pathPayload} triggerLabel="Share path" />
+          <ShareMenu
+            compact
+            className="chamber-share-path chamber-share-path-secondary"
+            triggerLabel="Station"
+            payload={stationPayload}
+          />
+        </>
+      ) : (
+        <ShareMenu payload={stationPayload} />
+      )}
     </div>
   )
 
@@ -507,6 +514,14 @@ export function ChamberFocus({
           ) : null}
 
           <header className="chamber-header">
+            {journey && onPath ? (
+              <p className="chamber-path-step">
+                {journey.title}
+                {stageIdx >= 0
+                  ? ` · ${stageIdx + 1}/${journey.stages.length} · ${journey.stages[stageIdx]?.label ?? ''}`
+                  : ''}
+              </p>
+            ) : null}
             <div className="chamber-title-row">
               <h2
                 className="chamber-title"

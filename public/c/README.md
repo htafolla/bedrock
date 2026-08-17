@@ -24,7 +24,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Faithfulness](https://bedrock.rippel.ai/c/faithfulness) — Spirit fruit: faithfulness.
 - [Gentleness](https://bedrock.rippel.ai/c/gentleness) — Spirit fruit: gentleness.
 - [Self-control](https://bedrock.rippel.ai/c/self-control) — Spirit fruit: self-control.
-- [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage) — God designed marriage as a lifelong one-flesh covenant and hates divorce.
+- [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage) — Marriage is His design — lifelong one-flesh covenant. Not of feelings. Hold the standard when the house shakes.
 - [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant) — One-flesh covenant. Sacrificial love.
 - [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience) — True love is patient, kind, and keeps no record of wrongs.
 - [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy) — Consider it pure joy when you face trials.

@@ -1498,6 +1498,16 @@ body {
   padding-left: 0.75rem;
 }
 
+/* Path step chrome — which journey + stage (Shaken, not bare station title alone) */
+.chamber-path-step {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+  opacity: 0.95;
+}
+
 .chamber-focus.is-rubric .field-layer-label {
   letter-spacing: 0.06em;
 }

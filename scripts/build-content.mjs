@@ -1205,12 +1205,11 @@ const document = {
     ),
     chamber(
       'God on Marriage',
-      'God designed marriage as a lifelong one-flesh covenant and hates divorce.',
+      'Marriage is His design — lifelong one-flesh covenant. Not of feelings. Hold the standard when the house shakes.',
       [
-        'God designed marriage as a lifelong one-flesh covenant and hates divorce.',
-        'God is the witness between a man and the wife of his youth.',
-        'What He has joined, no one should separate.',
-        'Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring.',
+        'God designed marriage as a lifelong one-flesh covenant. Not of feelings. He is witness between a man and the wife of his youth.',
+        'What He has joined, no one should separate. Hold His design when the house shakes — left, leaving, betrayal, or fracture.',
+        'Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring. Do not invent a lighter standard under fire.',
       ],
       'Malachi 2:14-16 · Matthew 19:4-6, 8-9 · Luke 16:18',
     ),

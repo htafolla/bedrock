@@ -65,10 +65,11 @@ export const FIELD_AIDS = {
   },
   'god-on-marriage': {
     hacks: [
+      'Marriage is shaken. Name it under God — lifelong one-flesh, not of feelings.',
       'God’s design does not change when feelings collapse. Hold the standard.',
       'He is witness. Speak as if He is in the room.',
     ],
-    prayers: ['Father of the covenant, make me faithful under Your eye. Amen.'],
+    prayers: ['Father of the covenant, I stand under Your design. Make me faithful. Amen.'],
   },
   'love-and-patience': {
     hacks: [
