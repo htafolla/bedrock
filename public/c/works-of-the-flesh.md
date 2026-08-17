@@ -36,6 +36,7 @@ But as for the cowardly, the faithless, the detestable, as for murderers, the se
 
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
+- [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)
 - [Adultery](https://bedrock.rippel.ai/c/adultery)

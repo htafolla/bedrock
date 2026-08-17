@@ -46,6 +46,7 @@ But seek first the kingdom of God and His righteousness, and all these things wi
 ## Connected truth
 
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
+- [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [Kill the Flesh. Walk in the Spirit.](https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control)

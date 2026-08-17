@@ -34,6 +34,7 @@ But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, f
 ## Connected truth
 
 - [Control](https://bedrock.rippel.ai/c/control)
+- [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
 - [Self-control](https://bedrock.rippel.ai/c/self-control)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

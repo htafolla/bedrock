@@ -813,7 +813,8 @@
         "lust owns me",
         "porn",
         "i broke the marriage bed",
-        "affair"
+        "affair",
+        "lust of the eyes"
       ],
       "doorChamberId": "adultery",
       "keyIds": [
@@ -827,9 +828,9 @@
         {
           "id": "blow",
           "role": "blow",
-          "label": "Adultery",
+          "label": "Lust",
           "chamberId": "adultery",
-          "note": "Not your own; do not rename darkness."
+          "note": "Lust of the eyes is already adultery of the heart. Flee. Do not rename darkness."
         },
         {
           "id": "confess",
@@ -837,6 +838,13 @@
           "label": "Confess",
           "chamberId": "confess-and-be-cleansed",
           "note": "Forsake; receive cleansing."
+        },
+        {
+          "id": "idol",
+          "role": "fork",
+          "label": "Idolatry",
+          "chamberId": "idolatry",
+          "note": "Sex, image, or person as god — tear the idol down."
         },
         {
           "id": "deny",

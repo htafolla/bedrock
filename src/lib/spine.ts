@@ -67,6 +67,7 @@ export const SPINE_ORDER = [
   'wheat-and-tares',
   'persecution',
   'works-of-the-flesh',
+  'idolatry',
   'kill-the-flesh',
   'kill-the-flesh-walk-in-the-spirit',
   'adultery',

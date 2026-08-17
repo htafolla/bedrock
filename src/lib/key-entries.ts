@@ -115,7 +115,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
   {
     id: 'key-sexual-sin',
     label: 'Sexual sin',
-    hint: 'Not your own',
+    hint: 'Lust · flee',
     chamberId: 'adultery',
     journeyId: 'sexual-sin',
   },

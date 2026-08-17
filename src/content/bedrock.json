@@ -3961,6 +3961,7 @@
       ],
       "related": [
         "control",
+        "idolatry",
         "works-of-the-flesh",
         "self-control",
         "walk-by-the-spirit",
@@ -4052,6 +4053,7 @@
       ],
       "related": [
         "the-line",
+        "idolatry",
         "pain-interrupt",
         "fear",
         "presence-without-control",
@@ -4252,6 +4254,7 @@
       ],
       "related": [
         "pain-interrupt",
+        "idolatry",
         "kill-the-flesh-walk-in-the-spirit",
         "kill-the-flesh",
         "presence-without-control",
@@ -5062,6 +5065,7 @@
       "related": [
         "kill-the-flesh",
         "kill-the-flesh-walk-in-the-spirit",
+        "idolatry",
         "spiritual-warfare",
         "walk-by-the-spirit",
         "adultery",
@@ -5234,8 +5238,12 @@
     {
       "id": "adultery",
       "title": "Adultery",
-      "summary": "Flee sexual immorality. You are not your own.",
+      "summary": "Lust of the eyes is already adultery of the heart. Flee sexual immorality. Your body is not your own.",
       "body": [
+        {
+          "type": "paragraph",
+          "text": "Lust of the eyes is already adultery of the heart. The look, the chat, the fantasy, the feed — name it. Flee. Do not rename darkness as “needs” or “identity.”"
+        },
         {
           "type": "paragraph",
           "text": "You shall not commit adultery."
@@ -5255,20 +5263,28 @@
         {
           "type": "paragraph",
           "text": "Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous."
+        },
+        {
+          "type": "paragraph",
+          "text": "So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart."
+        },
+        {
+          "type": "paragraph",
+          "text": "I have made a covenant with my eyes; how then could I gaze at a virgin?"
         }
       ],
       "verses": [
-        {
-          "display": "Exodus 20:14",
-          "book": "Exodus",
-          "chapter": 20,
-          "verseStart": 14
-        },
         {
           "display": "Matthew 5:28",
           "book": "Matthew",
           "chapter": 5,
           "verseStart": 28
+        },
+        {
+          "display": "Exodus 20:14",
+          "book": "Exodus",
+          "chapter": 20,
+          "verseStart": 14
         },
         {
           "display": "1 Corinthians 6:18–20",
@@ -5282,24 +5298,135 @@
           "book": "Hebrews",
           "chapter": 13,
           "verseStart": 4
+        },
+        {
+          "display": "2 Timothy 2:22",
+          "book": "2 Timothy",
+          "chapter": 2,
+          "verseStart": 22
+        },
+        {
+          "display": "Job 31:1",
+          "book": "Job",
+          "chapter": 31,
+          "verseStart": 1
         }
       ],
       "hacks": [
-        "Flee sexual immorality. Your body is a temple of the Holy Spirit.",
-        "Adultery starts in the heart. Guard the look, the chat, the fantasy.",
-        "Confess. Forsake. Be cleansed. Do not call darkness a new identity."
+        "Lust of the eyes is already adultery of the heart. Close the look, the chat, the feed.",
+        "Flee sexual immorality. Your body is a temple. You are not your own.",
+        "Confess. Forsake. Be cleansed. Do not rename darkness as needs or identity."
       ],
       "prayers": [
-        "Father, cleanse me. Keep me pure. Amen."
+        "Father, cleanse my eyes and my heart. Keep me pure. Amen."
       ],
       "related": [
+        "idolatry",
         "works-of-the-flesh",
+        "kill-the-flesh",
         "confess-and-be-cleansed",
         "marriage-covenant",
         "god-on-marriage",
-        "walk-by-the-spirit",
         "self-control",
-        "addiction"
+        "walk-by-the-spirit",
+        "take-every-thought-captive",
+        "addiction",
+        "the-line"
+      ],
+      "kind": "chamber"
+    },
+    {
+      "id": "idolatry",
+      "title": "Idolatry",
+      "summary": "Anything that sits where only God should is an idol — person, outcome, image, control. Tear it down. Worship Him.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Idolatry is not only a statue. It is whatever owns your peace, your worship, your obedience — a person, a timeline, an image, a grip. Name the idol. Put God first."
+        },
+        {
+          "type": "paragraph",
+          "text": "You shall have no other gods before Me."
+        },
+        {
+          "type": "paragraph",
+          "text": "Little children, keep yourselves from idols."
+        },
+        {
+          "type": "paragraph",
+          "text": "Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry."
+        },
+        {
+          "type": "paragraph",
+          "text": "Those who pay regard to vain idols forsake their hope of steadfast love."
+        },
+        {
+          "type": "paragraph",
+          "text": "For they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen."
+        },
+        {
+          "type": "paragraph",
+          "text": "No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Exodus 20:3",
+          "book": "Exodus",
+          "chapter": 20,
+          "verseStart": 3
+        },
+        {
+          "display": "1 John 5:21",
+          "book": "1 John",
+          "chapter": 5,
+          "verseStart": 21
+        },
+        {
+          "display": "Colossians 3:5",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 5
+        },
+        {
+          "display": "Jonah 2:8",
+          "book": "Jonah",
+          "chapter": 2,
+          "verseStart": 8
+        },
+        {
+          "display": "Romans 1:25",
+          "book": "Romans",
+          "chapter": 1,
+          "verseStart": 25
+        },
+        {
+          "display": "Matthew 6:24",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 24
+        }
+      ],
+      "hacks": [
+        "Name the idol — person, outcome, image, control. Only God sits there.",
+        "Tear it down. Stop feeding worship to what is not God.",
+        "Put God first. One free step of obedience under Him now."
+      ],
+      "prayers": [
+        "Father, I put down every idol. You alone are God. Amen."
+      ],
+      "related": [
+        "god-first",
+        "control",
+        "jealousy",
+        "the-line",
+        "works-of-the-flesh",
+        "kill-the-flesh",
+        "adultery",
+        "trust-in-the-lord",
+        "take-every-thought-captive",
+        "marriage-covenant",
+        "deny-yourself"
       ],
       "kind": "chamber"
     },
@@ -5373,6 +5500,7 @@
       "related": [
         "addiction",
         "works-of-the-flesh",
+        "idolatry",
         "spiritual-warfare",
         "do-not-fear",
         "walk-by-the-spirit",

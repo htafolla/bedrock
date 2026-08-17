@@ -463,6 +463,7 @@ const RELATED = {
   ],
   jealousy: [
     'control',
+    'idolatry',
     'works-of-the-flesh',
     'self-control',
     'walk-by-the-spirit',
@@ -474,6 +475,7 @@ const RELATED = {
   ],
   control: [
     'the-line',
+    'idolatry',
     'pain-interrupt',
     'fear',
     'presence-without-control',
@@ -521,6 +523,7 @@ const RELATED = {
   'works-of-the-flesh': [
     'kill-the-flesh',
     'kill-the-flesh-walk-in-the-spirit',
+    'idolatry',
     'spiritual-warfare',
     'walk-by-the-spirit',
     'adultery',
@@ -570,6 +573,7 @@ const RELATED = {
    */
   'the-line': [
     'pain-interrupt',
+    'idolatry',
     'kill-the-flesh-walk-in-the-spirit',
     'kill-the-flesh',
     'presence-without-control',
@@ -618,17 +622,35 @@ const RELATED = {
     'regret',
   ],
   adultery: [
+    'idolatry',
     'works-of-the-flesh',
+    'kill-the-flesh',
     'confess-and-be-cleansed',
     'marriage-covenant',
     'god-on-marriage',
-    'walk-by-the-spirit',
     'self-control',
+    'walk-by-the-spirit',
+    'take-every-thought-captive',
     'addiction',
+    'the-line',
+  ],
+  idolatry: [
+    'god-first',
+    'control',
+    'jealousy',
+    'the-line',
+    'works-of-the-flesh',
+    'kill-the-flesh',
+    'adultery',
+    'trust-in-the-lord',
+    'take-every-thought-captive',
+    'marriage-covenant',
+    'deny-yourself',
   ],
   pharmakeia: [
     'addiction',
     'works-of-the-flesh',
+    'idolatry',
     'spiritual-warfare',
     'do-not-fear',
     'walk-by-the-spirit',
@@ -1719,15 +1741,36 @@ const document = {
     ),
     chamber(
       'Adultery',
-      'Flee sexual immorality. You are not your own.',
+      'Lust of the eyes is already adultery of the heart. Flee sexual immorality. Your body is not your own.',
       [
+        'Lust of the eyes is already adultery of the heart. The look, the chat, the fantasy, the feed — name it. Flee. Do not rename darkness as “needs” or “identity.”',
         'You shall not commit adultery.',
         'But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart.',
         'Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body.',
         'Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.',
         'Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous.',
+        'So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart.',
+        'I have made a covenant with my eyes; how then could I gaze at a virgin?',
       ],
-      'Exodus 20:14 · Matthew 5:28 · 1 Corinthians 6:18-20 · Hebrews 13:4',
+      'Matthew 5:28 · Exodus 20:14 · 1 Corinthians 6:18-20 · Hebrews 13:4 · 2 Timothy 2:22 · Job 31:1',
+    ),
+    /**
+     * Idolatry — root under God First; person/outcome/image as god.
+     * Links Control · Jealousy · The Line · Works of the Flesh · Adultery.
+     */
+    chamber(
+      'Idolatry',
+      'Anything that sits where only God should is an idol — person, outcome, image, control. Tear it down. Worship Him.',
+      [
+        'Idolatry is not only a statue. It is whatever owns your peace, your worship, your obedience — a person, a timeline, an image, a grip. Name the idol. Put God first.',
+        'You shall have no other gods before Me.',
+        'Little children, keep yourselves from idols.',
+        'Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry.',
+        'Those who pay regard to vain idols forsake their hope of steadfast love.',
+        'For they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.',
+        'No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money.',
+      ],
+      'Exodus 20:3 · 1 John 5:21 · Colossians 3:5 · Jonah 2:8 · Romans 1:25 · Matthew 6:24',
     ),
     chamber(
       'Pharmakeia',

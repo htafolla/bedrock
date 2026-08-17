@@ -63,7 +63,8 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Persecution](https://bedrock.rippel.ai/c/persecution) — Blessed when they revile you for His name — stand, bless, do not repay evil.
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh) — Those who practice such things will not inherit the kingdom of God.
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh) — You’re in a fight. The urge is real. You feel out of control — master the flesh.
-- [Adultery](https://bedrock.rippel.ai/c/adultery) — Flee sexual immorality. You are not your own.
+- [Adultery](https://bedrock.rippel.ai/c/adultery) — Lust of the eyes is already adultery of the heart. Flee sexual immorality. Your body is not your own.
+- [Idolatry](https://bedrock.rippel.ai/c/idolatry) — Anything that sits where only God should is an idol — person, outcome, image, control. Tear it down. Worship Him.
 - [Pharmakeia](https://bedrock.rippel.ai/c/pharmakeia) — Sorcery — and every counterfeit power — is works of the flesh.
 - [Murder](https://bedrock.rippel.ai/c/murder) — You shall not murder — not by hand, and not by hatred.
 - [Malice](https://bedrock.rippel.ai/c/malice) — Put away all malice — the quiet wish to harm.

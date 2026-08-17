@@ -38,6 +38,7 @@ Submit yourselves therefore to God. Resist the devil, and he will flee from you.
 
 - [Addiction](https://bedrock.rippel.ai/c/addiction)
 - [Works of the Flesh](https://bedrock.rippel.ai/c/works-of-the-flesh)
+- [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [Spiritual Warfare](https://bedrock.rippel.ai/c/spiritual-warfare)
 - [Do Not Fear](https://bedrock.rippel.ai/c/do-not-fear)
 - [Walk by the Spirit](https://bedrock.rippel.ai/c/walk-by-the-spirit)

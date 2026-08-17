@@ -14,6 +14,6 @@ Storm triage doors for crawlers and social share.
 - [Addiction](https://bedrock.rippel.ai/k/key-addiction) — It owns me
 - [Jealousy](https://bedrock.rippel.ai/k/key-jealousy) — Not love
 - [Control](https://bedrock.rippel.ai/k/key-control) — Stop securing
-- [Sexual sin](https://bedrock.rippel.ai/k/key-sexual-sin) — Not your own
+- [Sexual sin](https://bedrock.rippel.ai/k/key-sexual-sin) — Lust · flee
 - [Witchcraft](https://bedrock.rippel.ai/k/key-witchcraft) — Counterfeit power
 - [Persecution](https://bedrock.rippel.ai/k/key-persecution) — For His name

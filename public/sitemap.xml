@@ -666,6 +666,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://bedrock.rippel.ai/c/idolatry</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://bedrock.rippel.ai/og/c/idolatry.v10.png</image:loc>
+      <image:title>Idolatry</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://bedrock.rippel.ai/c/pharmakeia</loc>
     <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>

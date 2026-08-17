@@ -22,8 +22,8 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(80)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(80)
+    expect(chambers.length).toBe(81)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(81)
     // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
@@ -234,6 +234,33 @@ describe('bedrock content integrity', () => {
     expect(byId.has('the-full-armor-of-god')).toBe(true)
   })
 
+  it('idolatry and strengthened adultery ship as first-principle stations', () => {
+    expect(byId.has('idolatry')).toBe(true)
+    const idol = byId.get('idolatry')!
+    expect(idol.title).toBe('Idolatry')
+    expect(idol.kind ?? 'chamber').toBe('chamber')
+    expect(idol.summary.toLowerCase()).toMatch(/idol|god|person|outcome/)
+    expect(idol.hacks.length).toBeGreaterThan(0)
+    expect(idol.hacks.length).toBeLessThanOrEqual(3)
+    expect(idol.hacks.join(' ').toLowerCase()).toMatch(/idol|god first|tear/)
+    expect(idol.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(idol.related).toEqual(
+      expect.arrayContaining(['god-first', 'control', 'the-line', 'adultery', 'works-of-the-flesh']),
+    )
+    expect(idol.verses.map((v) => v.display).join(' ')).toMatch(
+      /Exodus 20:3|1 John 5:21|Colossians 3:5/,
+    )
+
+    const adultery = byId.get('adultery')!
+    expect(adultery.summary.toLowerCase()).toMatch(/lust|heart|flee/)
+    expect(adultery.hacks.join(' ').toLowerCase()).toMatch(/lust|eyes|flee|confess/)
+    expect(adultery.body.some((b) => /lustful intent|looks at a woman/i.test(b.text))).toBe(true)
+    expect(adultery.related).toContain('idolatry')
+    expect(adultery.verses.map((v) => v.display).join(' ')).toMatch(
+      /Matthew 5:28|1 Corinthians 6:18|Job 31:1|2 Timothy 2:22/,
+    )
+  })
+
   it('war → enemy sows → works of the flesh → armor', () => {
     const war = byId.get('spiritual-warfare')
     const flesh = byId.get('works-of-the-flesh')
@@ -241,7 +268,14 @@ describe('bedrock content integrity', () => {
     expect(war!.related).toContain('works-of-the-flesh')
     expect(war!.related).toContain('wheat-and-tares')
     expect(flesh!.related).toEqual(
-      expect.arrayContaining(['adultery', 'pharmakeia', 'murder', 'malice', 'falsehood']),
+      expect.arrayContaining([
+        'adultery',
+        'idolatry',
+        'pharmakeia',
+        'murder',
+        'malice',
+        'falsehood',
+      ]),
     )
     const body = flesh!.body.map((b) => b.text).join(' ').toLowerCase()
     expect(body).toMatch(/will not inherit|kingdom/)

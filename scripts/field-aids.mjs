@@ -481,11 +481,19 @@ export const FIELD_AIDS = {
   },
   adultery: {
     hacks: [
-      'Flee sexual immorality. Your body is a temple of the Holy Spirit.',
-      'Adultery starts in the heart. Guard the look, the chat, the fantasy.',
-      'Confess. Forsake. Be cleansed. Do not call darkness a new identity.',
+      'Lust of the eyes is already adultery of the heart. Close the look, the chat, the feed.',
+      'Flee sexual immorality. Your body is a temple. You are not your own.',
+      'Confess. Forsake. Be cleansed. Do not rename darkness as needs or identity.',
     ],
-    prayers: ['Father, cleanse me. Keep me pure. Amen.'],
+    prayers: ['Father, cleanse my eyes and my heart. Keep me pure. Amen.'],
+  },
+  idolatry: {
+    hacks: [
+      'Name the idol — person, outcome, image, control. Only God sits there.',
+      'Tear it down. Stop feeding worship to what is not God.',
+      'Put God first. One free step of obedience under Him now.',
+    ],
+    prayers: ['Father, I put down every idol. You alone are God. Amen.'],
   },
   pharmakeia: {
     hacks: [
