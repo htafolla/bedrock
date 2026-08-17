@@ -172,15 +172,14 @@
       border-radius:999px; padding:.4rem .85rem; text-decoration:none;
     }
     .related-link:hover { border-color:var(--ember); background:rgba(196,165,116,.2); }
-    .chamber-card-end {
-      margin-top:1.35rem; padding-top:1rem; border-top:1px solid var(--border); text-align:center;
+    .site-footer.compact {
+      margin:1.5rem 0 0; padding:1rem 0 0; border-top:1px solid var(--border); text-align:center;
+      font-size:.72rem; color:var(--muted); line-height:1.5;
     }
-    .chamber-card-motto {
-      margin:0; font-family:var(--font-display); font-size:1.05rem; font-style:italic; color:var(--beam);
+    .site-footer .page-card-motto {
+      margin:0 0 .35rem; font-family:var(--font-display); font-size:1.05rem; font-style:italic; color:var(--beam);
     }
-    .chamber-card-end-meta { margin:.4rem 0 0; font-size:.72rem; color:var(--muted); letter-spacing:.04em; }
-    .chamber-card-crisis { margin:.55rem 0 0; font-size:.72rem; color:var(--muted); line-height:1.45; }
-    .chamber-card-crisis a { color:var(--ember-soft); }
+    .site-footer a { color:var(--ember-soft); }
     .chamber-kind-note {
       margin:.35rem 0 0; font-size:.78rem; color:var(--muted); letter-spacing:.02em; line-height:1.4;
     }
@@ -262,15 +261,12 @@
 <li><a class="related-link" href="/c/one-taken-one-left">One Taken, One Left</a></li>
 <li><a class="related-link" href="/c/walk-by-the-spirit">Walk by the Spirit</a></li></ul>
       </nav>
-      <footer class="chamber-card-end" aria-label="Bedrock">
-        <p class="chamber-card-motto">Do Better. Be Better. Trust God.</p>
-        <p class="chamber-card-end-meta">Hold first · Public beta v0.2.0-beta · Not a crisis hotline</p>
-        <p class="chamber-card-crisis">
-          In crisis: <a href="tel:988">call or text 988</a>
-          · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a>
-        </p>
-      </footer>
     </article>
+    <footer class="site-footer compact" role="contentinfo">
+      <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
+      <p>Hold first · Public beta v0.2.0-beta · Not a crisis hotline.</p>
+      <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
+    </footer>
   </main>
 </body>
 </html>
