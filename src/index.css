@@ -705,10 +705,7 @@ body {
 }
 
 /* —— Field (local walk state) —— */
-.field-panel {
-  /* Frame chrome applied under .mode-constellation.nav-field .field-panel */
-}
-
+/* Frame chrome: .mode-constellation.nav-field .field-panel (shared glass box) */
 .field-stat-grid {
   list-style: none;
   margin: 0 0 1.1rem;
