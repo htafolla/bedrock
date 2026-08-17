@@ -88,7 +88,12 @@ export function FieldPanel({
           className={stoodToday ? 'field-stand-btn done' : 'field-stand-btn'}
           onClick={onOpenStand}
         >
-          {stoodToday ? 'Stood today — open The Line' : 'Stand today — open The Line'}
+          <span className="field-mark-check" aria-hidden>
+            {stoodToday ? '✓' : ''}
+          </span>
+          <span>
+            {stoodToday ? 'Stood today — open The Line' : 'Stand today — open The Line'}
+          </span>
         </button>
       </section>
 

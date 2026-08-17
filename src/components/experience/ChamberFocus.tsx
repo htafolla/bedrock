@@ -585,7 +585,12 @@ export function ChamberFocus({
                         onClick={onMarkStand}
                         disabled={stoodToday}
                       >
-                        {stoodToday ? 'Stood today' : 'I stood'}
+                        <span className="field-mark-check" aria-hidden>
+                          {stoodToday ? '✓' : ''}
+                        </span>
+                        <span className="field-mark-label">
+                          {stoodToday ? 'Stood today' : 'I stood'}
+                        </span>
                       </button>
                     ) : null}
                     {isLock && onMarkLock ? (
@@ -595,7 +600,12 @@ export function ChamberFocus({
                         onClick={onMarkLock}
                         disabled={held}
                       >
-                        {held ? 'Lock used' : 'Used under fire'}
+                        <span className="field-mark-check" aria-hidden>
+                          {held ? '✓' : ''}
+                        </span>
+                        <span className="field-mark-label">
+                          {held ? 'Lock used' : 'Used under fire'}
+                        </span>
                       </button>
                     ) : null}
                     {!isStance && !isLock && onMarkHeld ? (
@@ -605,7 +615,12 @@ export function ChamberFocus({
                         onClick={onMarkHeld}
                         disabled={held}
                       >
-                        {held ? 'Held' : 'I held this'}
+                        <span className="field-mark-check" aria-hidden>
+                          {held ? '✓' : ''}
+                        </span>
+                        <span className="field-mark-label">
+                          {held ? 'Held' : 'I held this'}
+                        </span>
                       </button>
                     ) : null}
                   </div>
@@ -635,7 +650,12 @@ export function ChamberFocus({
                       onClick={onMarkPrayed}
                       disabled={prayed}
                     >
-                      {prayed ? 'Prayed' : 'I prayed'}
+                      <span className="field-mark-check" aria-hidden>
+                        {prayed ? '✓' : ''}
+                      </span>
+                      <span className="field-mark-label">
+                        {prayed ? 'Prayed' : 'I prayed'}
+                      </span>
                     </button>
                   </div>
                 ) : null}
