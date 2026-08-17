@@ -21,7 +21,7 @@ const root = join(__dirname, '..')
 const publicOg = join(root, 'public', 'og')
 
 /** Must match src/lib/seo.ts OG_CARD_VERSION */
-const OG_CARD_VERSION = '7'
+const OG_CARD_VERSION = '8'
 
 function ogFileName(id) {
   return `${id}.v${OG_CARD_VERSION}.png`

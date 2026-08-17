@@ -18,7 +18,7 @@ const journeysPath = join(root, 'src/content/journeys.json')
 const keyEntriesPath = join(root, 'src/lib/key-entries.ts')
 const ORIGIN = 'https://bedrock.rippel.ai'
 /** Keep in sync with src/lib/seo.ts */
-const OG_CARD_VERSION = '7'
+const OG_CARD_VERSION = '8'
 function ogFile(id) {
   return `${id}.v${OG_CARD_VERSION}.png`
 }

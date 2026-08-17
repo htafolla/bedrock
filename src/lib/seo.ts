@@ -204,7 +204,7 @@ export function buildDefaultSeo(doc: BedrockDocument): SeoPayload {
  * Prefer path versioning (no query string) — X/Twitter is unreliable with `?v=`
  * on image URLs; Facebook also pins cache to the full image URL.
  */
-export const OG_CARD_VERSION = '7'
+export const OG_CARD_VERSION = '8'
 
 /** Filename only: `{id}.v7.png` */
 export function staticOgFileName(id: string): string {
