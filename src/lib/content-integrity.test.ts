@@ -447,8 +447,11 @@ describe('bedrock content integrity', () => {
       expect(c!.hacks.length).toBeLessThanOrEqual(3)
       expect(c!.hacks.join(' ')).toMatch(axiom)
     }
-    const spouse = journeysDoc.journeys.find((j) => j.id === 'spouse-left')
+    const spouse = journeysDoc.journeys.find((j) => j.id === 'marriage-shaken')
+    expect(spouse?.title).toBe('Marriage Shaken')
     expect(spouse?.summary).toMatch(/do not let their choices rule your peace/i)
+    expect(spouse?.stages.some((s) => s.chamberId === 'the-line')).toBe(true)
+    expect(spouse?.stages.some((s) => s.chamberId === 'pain-interrupt')).toBe(true)
   })
 
   it('Truth stays verse-shaped — application lives in Under fire', () => {

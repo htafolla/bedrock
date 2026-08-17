@@ -60,8 +60,23 @@ export function getJourneysMeta() {
   return loadJourneysDoc().meta
 }
 
+/** Legacy path aliases → preferred journey id */
+const JOURNEY_ALIASES = {
+  'spouse-left': 'marriage-shaken',
+  'marriage-under-fire': 'marriage-shaken',
+}
+
+export function resolveJourneyId(id) {
+  const raw = String(id || '')
+    .trim()
+    .toLowerCase()
+  if (!raw) return raw
+  return JOURNEY_ALIASES[raw] || raw
+}
+
 export function getJourney(id) {
-  return listJourneys().find((j) => j.id === id) || null
+  const resolved = resolveJourneyId(id)
+  return listJourneys().find((j) => j.id === resolved) || null
 }
 
 /**

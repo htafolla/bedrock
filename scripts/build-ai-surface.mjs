@@ -855,7 +855,7 @@ SPA and static chamber pages both follow hold-first. Field card (standard) is op
 - **Prayer** — short release prayers to the Living God
 - **Truth** — Scripture-rooted first principles (after the hold)
 - **Keys** — storm triage (${keysHint})
-- **Journeys** — multi-stage paths (spouse left ≠ death; mind war ≠ obsession alone)
+- **Journeys** — multi-stage paths (marriage shaken ≠ death; mind war ≠ obsession alone)
 - **Standard** — Kill the Flesh. Walk in the Spirit. Field card first
 - **Guide** — AI companion in the same card form (not pastor, not crisis hotline)
 

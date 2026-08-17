@@ -90,7 +90,7 @@ describe('share payloads', () => {
       label: 'Wounded',
       hint: 'I was hurt',
       chamberId: 'wounded',
-      journeyId: 'spouse-left',
+      journeyId: 'marriage-shaken',
     })
     expect(p.layer).toBe('door')
     expect(p.layerLabel).toBe('Key')

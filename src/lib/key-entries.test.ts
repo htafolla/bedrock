@@ -102,7 +102,7 @@ describe('KEY_ENTRIES', () => {
 
   it('storm Keys link to core journey ids when set', () => {
     expect(KEY_ENTRIES.find((k) => k.id === 'key-loss')?.journeyId).toBe('death-of-loved-one')
-    expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('spouse-left')
+    expect(KEY_ENTRIES.find((k) => k.id === 'key-wounded')?.journeyId).toBe('marriage-shaken')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-addiction')?.journeyId).toBe('addiction')
     expect(KEY_ENTRIES.find((k) => k.id === 'key-wait')?.journeyId).toBe('forced-waiting')
   })

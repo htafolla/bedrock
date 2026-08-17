@@ -10,6 +10,7 @@
  */
 
 import { publicChamberSlug, resolveChamberIdFromSlug } from './chamber-slugs'
+import { publicJourneySlug, resolveJourneyIdFromSlug } from './journey-slugs'
 
 export const CHAMBER_QUERY = 'c'
 export const JOURNEY_QUERY = 'j'
@@ -32,13 +33,13 @@ export function chamberAppHref(id: string): string {
 
 /** Canonical crawlable journey page (static OG for social share). */
 export function journeyPath(id: string): string {
-  return `/j/${id}`
+  return `/j/${publicJourneySlug(resolveJourneyIdFromSlug(id))}`
 }
 
 /** Shareable SPA link into a core journey (opens door chamber). */
 export function journeyAppHref(journeyId: string, chamberId?: string): string {
   const params = new URLSearchParams()
-  params.set(JOURNEY_QUERY, journeyId)
+  params.set(JOURNEY_QUERY, resolveJourneyIdFromSlug(journeyId))
   if (chamberId) params.set(CHAMBER_QUERY, chamberId)
   return `/?${params.toString()}`
 }
@@ -61,13 +62,13 @@ export function parseChamberFromLocation(
   return null
 }
 
-/** Parse core journey id from ?j= */
+/** Parse core journey id from ?j= (resolves legacy aliases e.g. spouse-left). */
 export function parseJourneyFromLocation(
   search: string = typeof window !== 'undefined' ? window.location.search : '',
 ): string | null {
   try {
     const q = new URLSearchParams(search).get(JOURNEY_QUERY)
-    if (q && isSlugId(q)) return q.trim().toLowerCase()
+    if (q && isSlugId(q)) return resolveJourneyIdFromSlug(q)
   } catch {
     /* ignore */
   }
@@ -89,7 +90,7 @@ export function buildAppHref(opts: {
   journeyId?: string | null
 }): string {
   const params = new URLSearchParams()
-  if (opts.journeyId) params.set(JOURNEY_QUERY, opts.journeyId)
+  if (opts.journeyId) params.set(JOURNEY_QUERY, resolveJourneyIdFromSlug(opts.journeyId))
   if (opts.chamberId) params.set(CHAMBER_QUERY, opts.chamberId)
   const q = params.toString()
   return q ? `/?${q}` : '/'

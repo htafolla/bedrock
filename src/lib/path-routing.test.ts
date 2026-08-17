@@ -17,15 +17,19 @@ describe('path-routing', () => {
   })
 
   it('builds journey app hrefs', () => {
-    expect(journeyAppHref('spouse-left')).toBe('/?j=spouse-left')
-    expect(journeyAppHref('spouse-left', 'wounded')).toBe('/?j=spouse-left&c=wounded')
+    expect(journeyAppHref('marriage-shaken')).toBe('/?j=marriage-shaken')
+    expect(journeyAppHref('marriage-shaken', 'wounded')).toBe(
+      '/?j=marriage-shaken&c=wounded',
+    )
+    // Legacy alias resolves to preferred id
+    expect(journeyAppHref('spouse-left')).toBe('/?j=marriage-shaken')
   })
 
   it('buildAppHref orders journey then chamber and home', () => {
     expect(buildAppHref({})).toBe('/')
     expect(buildAppHref({ chamberId: 'loss' })).toBe('/?c=loss')
-    expect(buildAppHref({ journeyId: 'spouse-left', chamberId: 'wounded' })).toBe(
-      '/?j=spouse-left&c=wounded',
+    expect(buildAppHref({ journeyId: 'marriage-shaken', chamberId: 'wounded' })).toBe(
+      '/?j=marriage-shaken&c=wounded',
     )
   })
 
@@ -35,7 +39,8 @@ describe('path-routing', () => {
   })
 
   it('parses ?j= journey query', () => {
-    expect(parseJourneyFromLocation('?j=spouse-left')).toBe('spouse-left')
+    expect(parseJourneyFromLocation('?j=marriage-shaken')).toBe('marriage-shaken')
+    expect(parseJourneyFromLocation('?j=spouse-left')).toBe('marriage-shaken')
     expect(parseJourneyFromLocation('?j=death-of-loved-one&c=loss')).toBe('death-of-loved-one')
     expect(parseJourneyFromLocation('?j=../x')).toBeNull()
   })

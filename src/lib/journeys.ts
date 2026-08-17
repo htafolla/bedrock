@@ -10,6 +10,7 @@ import type {
   JourneysDocument,
   JourneyStageRole,
 } from '../types/journey'
+import { resolveJourneyIdFromSlug } from './journey-slugs'
 
 const doc = journeysDoc as JourneysDocument
 
@@ -24,8 +25,11 @@ export function getJourneysMeta(): JourneysDocument['meta'] {
   return doc.meta
 }
 
+/** Resolve id or legacy alias (e.g. spouse-left → marriage-shaken). */
 export function getJourney(id: string): Journey | null {
-  return byId.get(id) ?? null
+  const resolved = resolveJourneyIdFromSlug(id)
+  if (!resolved) return null
+  return byId.get(resolved) ?? null
 }
 
 /** Journeys whose door or any stage lands on this chamber. */
@@ -46,7 +50,7 @@ export function journeyForKey(keyId: string): Journey | null {
 
 /**
  * Score plain-speech match: longer phrase hits rank higher.
- * Prefer more specific journeys (spouse-left over deep-wound when both match).
+ * Prefer more specific journeys (marriage-shaken over deep-wound when both match).
  */
 export function matchJourneyFromText(text: string): Journey | null {
   const raw = text.trim().toLowerCase()

@@ -100,7 +100,8 @@ for (const c of checks) {
 // SPA deep links must redirect social crawlers to canonical pages with card OG
 for (const deep of [
   { name: 'SPA ?c=wounded → /c/', from: `${origin}/?c=wounded`, expectPath: '/c/wounded', image: '/og/c/wounded.png' },
-  { name: 'SPA ?j=spouse-left → /j/', from: `${origin}/?j=spouse-left`, expectPath: '/j/spouse-left', image: '/og/j/spouse-left.png' },
+  { name: 'SPA ?j=marriage-shaken → /j/', from: `${origin}/?j=marriage-shaken`, expectPath: '/j/marriage-shaken', image: '/og/j/marriage-shaken.png' },
+  { name: 'Legacy ?j=spouse-left → /j/marriage-shaken', from: `${origin}/?j=spouse-left`, expectPath: '/j/marriage-shaken', image: '/og/j/marriage-shaken.png' },
 ]) {
   process.stdout.write(`· ${deep.name}… `)
   try {

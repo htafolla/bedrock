@@ -40,6 +40,7 @@ import {
   matchJourneyFromText,
   formatJourneyContextLine,
   journeysForChamber,
+  resolveJourneyId,
 } from './journeys.mjs'
 import sharp from 'sharp'
 import { buildOgSvg } from './og-card.mjs'
@@ -178,7 +179,7 @@ Core posture:
 Help the visitor stand on what is true when feelings and circumstances are unstable.
 
 Critical healing axiom (when love, marriage under fire, jealousy, control, abandonment, obsession, or “I can’t be okay unless they…” appear):
-Do not let their choices rule your peace. You can love them, want them, pursue reconciliation — and still rule yourself. Hold it. Point to Control, Self-control, Wounded, He Is For You — and the spouse-left / control-grip journeys.
+Do not let their choices rule your peace. You can love them, want them, pursue reconciliation — and still rule yourself. Hold it. Point to Control, Self-control, Wounded, He Is For You — and the marriage-shaken / control-grip journeys.
 
 Artifact kinds: most nodes are first-principle *chambers* (Scripture-led Truth, short Under fire). A *rubric* is denser daily standard under fire (holds + prayer lines). A *stance* is how you stand every day (The Line: emotional state · presence without control · love keeps no record). A *lock* is the moment tool that snaps you back into stance when pain, memory, or rage surges (Pain Interrupt: notice · state is my own · return to what is in front of you). Same steel; not the same form. Do not flatten a rubric into a thin chamber card when the visitor needs the full standard.
 
@@ -192,9 +193,9 @@ Lock when the wave hits (how you recover):
 “Pain Interrupt” (kind=lock, /c/pain-interrupt) — Notice it · My emotional state is my own · Return to what is in front of me. Use mid-hour when a painful memory or reminder hits; then stand again on The Line.
 
 Core journeys (ground-shaking life — multi-stage paths, not one chamber):
-When the visitor describes real life (spouse left, death, addiction, obsession, fall, wait…), you are walking a **journey**, not dumping a random card.
+When the visitor describes real life (marriage shaken, spouse left, death, addiction, obsession, fall, wait…), you are walking a **journey**, not dumping a random card.
 - Prefer Connected truth from the **next stations** on the matched journey (see context if provided).
-- Death of a loved one ≠ spouse left — never mix those doors (Loss vs Wounded).
+- Death of a loved one ≠ marriage shaken / spouse left — never mix those doors (Loss vs Wounded).
 - Journeys loop: spiral and long middle re-enter; invite the next station, not a finished checklist.
 - API catalog: GET /api/journeys
 `
@@ -388,7 +389,8 @@ function createApp() {
       return
     }
     if (j && SLUG_RE.test(j)) {
-      res.redirect(302, `/j/${encodeURIComponent(j)}`)
+      // Prefer public journey id (marriage-shaken over legacy spouse-left)
+      res.redirect(302, `/j/${encodeURIComponent(resolveJourneyId(j))}`)
       return
     }
     if (k && SLUG_RE.test(k)) {
@@ -970,9 +972,15 @@ function createApp() {
 
   // Journey / path pages — static HTML with path OG (social crawlers do not run SPA JS)
   app.get('/j/:id', (req, res, next) => {
-    const id = String(req.params.id || '').toLowerCase()
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+    const rawId = String(req.params.id || '').toLowerCase()
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(rawId)) {
       next()
+      return
+    }
+    const id = resolveJourneyId(rawId)
+    // Legacy path → preferred public slug
+    if (rawId !== id) {
+      res.redirect(301, `/j/${encodeURIComponent(id)}`)
       return
     }
     for (const base of staticRoots) {

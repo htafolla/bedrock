@@ -39,7 +39,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Marriage',
     hint: 'Covenant',
     chamberId: 'marriage-covenant',
-    // Station only — spouse-left door is Wounded
+    // Station only — marriage-shaken door is Wounded
   },
   {
     id: 'key-wait',
@@ -67,7 +67,7 @@ export const KEY_ENTRIES: KeyEntry[] = [
     label: 'Wounded',
     hint: 'I was hurt',
     chamberId: 'wounded',
-    journeyId: 'spouse-left',
+    journeyId: 'marriage-shaken',
   },
   {
     id: 'key-obsession',

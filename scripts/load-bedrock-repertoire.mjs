@@ -152,11 +152,11 @@ function buildBedrockSignals() {
     signal({
       name: 'bedrock-death-vs-leave',
       definition:
-        'Death of a loved one opens journey death-of-loved-one door Loss. Spouse left / divorce opens spouse-left door Wounded. Never dual-pack or swap these doors.',
+        'Death of a loved one opens journey death-of-loved-one door Loss. Marriage shaken / spouse left / divorce opens marriage-shaken door Wounded. Never dual-pack or swap these doors.',
       tags: ['bedrock', 'journey', 'loss', 'wounded', 'pastoral'],
       priority: 'high',
       example_inference_snippet:
-        'my husband left → spouse-left/wounded; we buried them → death-of-loved-one/loss',
+        'my husband left → marriage-shaken/wounded; we buried them → death-of-loved-one/loss',
     }),
   )
 
@@ -248,7 +248,7 @@ function buildBedrockSignals() {
         'do your part · kill the flesh · do not let their choices rule your peace · shield of faith · low contact is protection',
       evaluation_criteria:
         'User under fire in marriage/limbo/jealousy/control/fear needs a clear standard, not only abstract truth.',
-      master_index_integration: '/c/kill-the-flesh-walk-in-the-spirit · journeys spouse-left + control-grip',
+      master_index_integration: '/c/kill-the-flesh-walk-in-the-spirit · journeys marriage-shaken + control-grip',
     }),
   )
 

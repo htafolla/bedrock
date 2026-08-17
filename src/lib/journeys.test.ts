@@ -60,7 +60,7 @@ describe('core journeys SSOT', () => {
   it('stages have valid roles, unique ids per journey, door matches first blow chamber', () => {
     for (const j of journeys) {
       expect(j.stages.length).toBeGreaterThanOrEqual(4)
-      expect(j.stages.length).toBeLessThanOrEqual(14)
+      expect(j.stages.length).toBeLessThanOrEqual(16)
       const stageIds = new Set<string>()
       for (const s of j.stages) {
         expect(ROLES).toContain(s.role)
@@ -77,17 +77,20 @@ describe('core journeys SSOT', () => {
     }
   })
 
-  it('death and spouse-left are distinct and do not share door', () => {
+  it('death and marriage-shaken are distinct and do not share door', () => {
     const death = getJourney('death-of-loved-one')!
-    const left = getJourney('spouse-left')!
+    const left = getJourney('marriage-shaken')!
     expect(death.doorChamberId).toBe('loss')
     expect(left.doorChamberId).toBe('wounded')
-    expect(death.distinctFrom).toContain('spouse-left')
+    expect(death.distinctFrom).toContain('marriage-shaken')
     expect(left.distinctFrom).toContain('death-of-loved-one')
+    // Legacy alias still resolves
+    expect(getJourney('spouse-left')?.id).toBe('marriage-shaken')
   })
 
   it('matches plain speech with precision', () => {
-    expect(matchJourneyFromText('my husband left me')?.id).toBe('spouse-left')
+    expect(matchJourneyFromText('my husband left me')?.id).toBe('marriage-shaken')
+    expect(matchJourneyFromText('marriage is falling apart')?.id).toBe('marriage-shaken')
     expect(matchJourneyFromText('we buried them last week')?.id).toBe('death-of-loved-one')
     expect(matchJourneyFromText("it owns me")?.id).toBe('addiction')
     expect(matchJourneyFromText("i can't stop replaying")?.id).toBe('obsession')
@@ -108,7 +111,7 @@ describe('core journeys SSOT', () => {
 
   it('journeysForChamber finds loss and wounded doors', () => {
     expect(journeysForChamber('loss').some((j) => j.id === 'death-of-loved-one')).toBe(true)
-    expect(journeysForChamber('wounded').some((j) => j.id === 'spouse-left')).toBe(true)
+    expect(journeysForChamber('wounded').some((j) => j.id === 'marriage-shaken')).toBe(true)
   })
 
   it('keyIds point at real Keys when set; primary key door matches journey door', () => {
@@ -131,9 +134,9 @@ describe('core journeys SSOT', () => {
   })
 
   it('formatJourneyContextLine includes next stations and distinctness', () => {
-    const j = getJourney('spouse-left')!
+    const j = getJourney('marriage-shaken')!
     const line = formatJourneyContextLine(j, { chamberId: 'wounded' })
-    expect(line).toMatch(/spouse-left/)
+    expect(line).toMatch(/marriage-shaken/)
     expect(line).toMatch(/Next stations/)
     expect(line).toMatch(/death-of-loved-one/)
   })
@@ -147,8 +150,8 @@ describe('core journeys SSOT', () => {
         'death-of-loved-one',
         'forced-waiting',
         'i-fell',
+        'marriage-shaken',
         'obsession',
-        'spouse-left',
       ].sort(),
     )
   })
