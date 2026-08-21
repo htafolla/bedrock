@@ -74,11 +74,11 @@ export const FIELD_AIDS = {
   'when-you-can-no-longer-stand': {
     hacks: [
       'Ease is not the deciding factor. The covenant is.',
-      'Wait on the Lord. Patience. Keep praying. Refuse bitterness.',
+      'Keep praying. Keep hoping for change. Refuse bitterness.',
       'Guard your spirit. Do not deal treacherously. Submit to Him.',
     ],
     prayers: [
-      'Father, I feel spent and stuck in limbo. Walking away looks easier. I am bound by covenant. Form patience. Help me wait and stand firm. Amen.',
+      'Father, love has cost everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen.',
     ],
   },
   'love-and-patience': {
