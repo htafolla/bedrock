@@ -22,8 +22,8 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(81)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(81)
+    expect(chambers.length).toBe(82)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(82)
     // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
@@ -497,13 +497,28 @@ describe('bedrock content integrity', () => {
       'leave-vengeance-to-the-lord',
       'do-not-repay-evil-with-evil',
       'marriage-covenant',
+      'when-you-can-no-longer-stand',
       'the-line',
       'forgive-as-you-have-been-forgiven',
       'trust-in-the-lord',
-      'presence-without-control',
       'kill-the-flesh-walk-in-the-spirit',
       'hope-of-glory',
     ])
+    expect(byId.has('when-you-can-no-longer-stand')).toBe(true)
+    const stand = byId.get('when-you-can-no-longer-stand')!
+    expect(stand.title).toBe('When You Can No Longer Stand')
+    expect(stand.summary.toLowerCase()).toMatch(/covenant|ease|stand/)
+    expect(stand.hacks.join(' ').toLowerCase()).toMatch(/covenant|pray|guard/)
+    expect(stand.prayers[0]?.toLowerCase()).toMatch(/stand firm|covenant/)
+    expect(stand.related).toEqual(
+      expect.arrayContaining([
+        'count-the-trial-as-joy',
+        'trust-in-the-lord',
+        'god-on-marriage',
+        'marriage-covenant',
+        'the-line',
+      ]),
+    )
   })
 
   it('Truth stays verse-shaped — application lives in Under fire', () => {

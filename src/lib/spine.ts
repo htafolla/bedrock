@@ -31,6 +31,7 @@ export const SPINE_ORDER = [
   'self-control',
   'god-on-marriage',
   'marriage-covenant',
+  'when-you-can-no-longer-stand',
   'love-and-patience',
   'count-the-trial-as-joy',
   'wait-on-the-lord',

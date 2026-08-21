@@ -32,6 +32,7 @@ Divorce covers a man’s garment with violence and breaks faith, yet God desires
 ## Connected truth
 
 - [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant)
+- [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand)
 - [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
 - [Forgive as You Have Been Forgiven](https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven)
 

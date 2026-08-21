@@ -133,7 +133,11 @@
         "we separated",
         "want a divorce",
         "god on marriage",
-        "my marriage"
+        "my marriage",
+        "i can't stand anymore",
+        "want to walk away",
+        "love costs everything",
+        "easier to leave"
       ],
       "doorChamberId": "god-on-marriage",
       "distinctFrom": [
@@ -220,6 +224,13 @@
           "note": "Do not invent a new story. Stay true to what God still calls true."
         },
         {
+          "id": "stand",
+          "role": "long_middle",
+          "label": "Stand",
+          "chamberId": "when-you-can-no-longer-stand",
+          "note": "Love costs everything. Walking away looks easier. Ease is not the deciding factor — the covenant is."
+        },
+        {
           "id": "stance",
           "role": "long_middle",
           "label": "The Line",
@@ -239,13 +250,6 @@
           "label": "Trust",
           "chamberId": "trust-in-the-lord",
           "note": "You cannot force the outcome — them, timeline, or certainty."
-        },
-        {
-          "id": "presence",
-          "role": "remain",
-          "label": "Presence",
-          "chamberId": "presence-without-control",
-          "note": "When near: present, not managing. Relax. Listen. Don’t force present or future."
         },
         {
           "id": "rubric",

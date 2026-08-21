@@ -44,6 +44,7 @@ To the married I give this charge (not I, but the Lord): the wife should not sep
 ## Connected truth
 
 - [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage)
+- [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand)
 - [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience)
 - [Choose Selfless Love](https://bedrock.rippel.ai/c/choose-selfless-love)
 - [Leave Vengeance to the Lord](https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord)

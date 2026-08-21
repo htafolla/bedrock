@@ -244,14 +244,33 @@ const RELATED = {
     'wait-on-the-lord',
     'patience',
   ],
-  'god-on-marriage': ['marriage-covenant', 'love-and-patience', 'forgive-as-you-have-been-forgiven'],
+  'god-on-marriage': [
+    'marriage-covenant',
+    'when-you-can-no-longer-stand',
+    'love-and-patience',
+    'forgive-as-you-have-been-forgiven',
+  ],
   'marriage-covenant': [
     'god-on-marriage',
+    'when-you-can-no-longer-stand',
     'love-and-patience',
     'choose-selfless-love',
     'leave-vengeance-to-the-lord',
     'faithfulness',
     'love',
+  ],
+  'when-you-can-no-longer-stand': [
+    'count-the-trial-as-joy',
+    'trust-in-the-lord',
+    'his-grace-is-sufficient',
+    'he-is-for-you',
+    'god-on-marriage',
+    'marriage-covenant',
+    'kill-the-flesh-walk-in-the-spirit',
+    'the-line',
+    'pain-interrupt',
+    'patience',
+    'presence-without-control',
   ],
   'love-and-patience': [
     'marriage-covenant',
@@ -261,6 +280,7 @@ const RELATED = {
     'patience',
   ],
   'count-the-trial-as-joy': [
+    'when-you-can-no-longer-stand',
     'wait-on-the-lord',
     'hope-of-glory',
     'lament-and-pour-out-your-heart',
@@ -578,6 +598,7 @@ const RELATED = {
   'the-line': [
     'pain-interrupt',
     'idolatry',
+    'when-you-can-no-longer-stand',
     'kill-the-flesh-walk-in-the-spirit',
     'kill-the-flesh',
     'presence-without-control',
@@ -1252,6 +1273,28 @@ const document = {
         'To the married I give this charge (not I, but the Lord): the wife should not separate from her husband… and the husband should not divorce his wife.',
       ],
       'Ephesians 5:23, 25-26, 33 · 1 Peter 3:1-2 · Proverbs 31:12 · 1 Corinthians 7:5, 10-11 · Matthew 19:6, 8-9',
+    ),
+    /**
+     * When You Can No Longer Stand — marriage under fire when exit looks wise.
+     * Covenant > ease; patience from the trial; pray/hope; guard spirit (Mal 2).
+     */
+    chamber(
+      'When You Can No Longer Stand',
+      'When love costs everything and walking away looks easier — ease is not the deciding factor. The covenant is. Stand firm in the patience God is forming.',
+      [
+        'Standing firm is not grit left in your tank. It is patience produced by the trial itself. When strength is gone, when love costs everything, and when walking away looks easier, you stand by what God is forming in you — not by your remaining power.',
+        'Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.',
+        'Ease is not the deciding factor. The covenant is. Affections rise and fall; the covenant keeps the marriage standing when feelings disappear — so that love can be rekindled after the fire.',
+        'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — initiating, sacrificial, steady even when she is not lovely, not reciprocating, or hard to love. Persevering in the covenant displays something true about Christ’s faithful love for the church; walking away when it is hard lies about that picture.',
+        '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Refuse treachery against the wife of your youth. The enemy presses the lie that exit is wisdom — “protect yourself, she doesn’t deserve it.” Standing firm resists that counsel.',
+        'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
+        'Cast all your anxieties on Him, because He cares for you.',
+        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
+        'But God shows His love for us in that while we were still sinners, Christ died for us.',
+        'Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm.',
+      ],
+      'James 1:2-4 · Philippians 4:6-7 · 1 Peter 5:7 · Proverbs 3:5-6 · Ephesians 5:25 · Malachi 2:16 · Romans 5:8 · Ephesians 6:13',
+      'when-you-can-no-longer-stand',
     ),
     chamber(
       'Love and Patience',

@@ -26,6 +26,7 @@ Suffering produces perseverance; perseverance, character; and character, hope.
 
 ## Connected truth
 
+- [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand)
 - [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord)
 - [Hope of Glory](https://bedrock.rippel.ai/c/hope-of-glory)
 - [Lament and Pour Out Your Heart](https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart)

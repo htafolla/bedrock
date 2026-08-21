@@ -2344,6 +2344,7 @@
       ],
       "related": [
         "marriage-covenant",
+        "when-you-can-no-longer-stand",
         "love-and-patience",
         "forgive-as-you-have-been-forgiven"
       ],
@@ -2452,11 +2453,134 @@
       ],
       "related": [
         "god-on-marriage",
+        "when-you-can-no-longer-stand",
         "love-and-patience",
         "choose-selfless-love",
         "leave-vengeance-to-the-lord",
         "faithfulness",
         "love"
+      ],
+      "kind": "chamber"
+    },
+    {
+      "id": "when-you-can-no-longer-stand",
+      "title": "When You Can No Longer Stand",
+      "summary": "When love costs everything and walking away looks easier — ease is not the deciding factor. The covenant is. Stand firm in the patience God is forming.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Standing firm is not grit left in your tank. It is patience produced by the trial itself. When strength is gone, when love costs everything, and when walking away looks easier, you stand by what God is forming in you — not by your remaining power."
+        },
+        {
+          "type": "paragraph",
+          "text": "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ease is not the deciding factor. The covenant is. Affections rise and fall; the covenant keeps the marriage standing when feelings disappear — so that love can be rekindled after the fire."
+        },
+        {
+          "type": "paragraph",
+          "text": "Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — initiating, sacrificial, steady even when she is not lovely, not reciprocating, or hard to love. Persevering in the covenant displays something true about Christ’s faithful love for the church; walking away when it is hard lies about that picture."
+        },
+        {
+          "type": "paragraph",
+          "text": "“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Refuse treachery against the wife of your youth. The enemy presses the lie that exit is wisdom — “protect yourself, she doesn’t deserve it.” Standing firm resists that counsel."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cast all your anxieties on Him, because He cares for you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
+        },
+        {
+          "type": "paragraph",
+          "text": "But God shows His love for us in that while we were still sinners, Christ died for us."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm."
+        }
+      ],
+      "verses": [
+        {
+          "display": "James 1:2–4",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 2,
+          "verseEnd": 4
+        },
+        {
+          "display": "Philippians 4:6–7",
+          "book": "Philippians",
+          "chapter": 4,
+          "verseStart": 6,
+          "verseEnd": 7
+        },
+        {
+          "display": "1 Peter 5:7",
+          "book": "1 Peter",
+          "chapter": 5,
+          "verseStart": 7
+        },
+        {
+          "display": "Proverbs 3:5–6",
+          "book": "Proverbs",
+          "chapter": 3,
+          "verseStart": 5,
+          "verseEnd": 6
+        },
+        {
+          "display": "Ephesians 5:25",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 25
+        },
+        {
+          "display": "Malachi 2:16",
+          "book": "Malachi",
+          "chapter": 2,
+          "verseStart": 16
+        },
+        {
+          "display": "Romans 5:8",
+          "book": "Romans",
+          "chapter": 5,
+          "verseStart": 8
+        },
+        {
+          "display": "Ephesians 6:13",
+          "book": "Ephesians",
+          "chapter": 6,
+          "verseStart": 13
+        }
+      ],
+      "hacks": [
+        "Ease is not the deciding factor — the covenant is. Standing firm is patience from the trial.",
+        "Keep praying and petitioning. Keep hope for change in both of you. Refuse bitterness.",
+        "Guard your spirit. Refuse treachery. Lean not on your own understanding — submit to Him."
+      ],
+      "prayers": [
+        "Father, love has cost everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen."
+      ],
+      "related": [
+        "count-the-trial-as-joy",
+        "trust-in-the-lord",
+        "his-grace-is-sufficient",
+        "he-is-for-you",
+        "god-on-marriage",
+        "marriage-covenant",
+        "kill-the-flesh-walk-in-the-spirit",
+        "the-line",
+        "pain-interrupt",
+        "patience",
+        "presence-without-control"
       ],
       "kind": "chamber"
     },
@@ -2537,6 +2661,7 @@
         "Father, use this fire. I release my demand for its end. Amen."
       ],
       "related": [
+        "when-you-can-no-longer-stand",
         "wait-on-the-lord",
         "hope-of-glory",
         "lament-and-pour-out-your-heart",
@@ -4255,6 +4380,7 @@
       "related": [
         "pain-interrupt",
         "idolatry",
+        "when-you-can-no-longer-stand",
         "kill-the-flesh-walk-in-the-spirit",
         "kill-the-flesh",
         "presence-without-control",
