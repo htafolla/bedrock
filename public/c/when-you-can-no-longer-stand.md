@@ -12,7 +12,7 @@
 
 ## Prayer
 
-Father, I feel like love has cost me everything. I refuse the easy exit. Bind me to the covenant. Form patience. I cast this on You — help me stand firm. Amen.
+Father, I feel like love has cost me everything. I refuse the easy exit. Keep me in the covenant. Form patience. Help me stand firm. Amen.
 
 ## Truth
 
