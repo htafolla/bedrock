@@ -1280,9 +1280,9 @@ const document = {
      */
     chamber(
       'When You Can No Longer Stand',
-      'Love has cost everything. Walking away looks easier. Ease is not the deciding factor — the covenant is.',
+      'When you feel love has cost everything and walking away looks easier — ease is not the deciding factor. The covenant is.',
       [
-        'You can no longer stand in your own strength. Love has cost everything. Walking away looks easier. Ease is not the deciding factor. The covenant is. Stand under God — He forms patience in the trial.',
+        'You can no longer stand in your own strength. You feel like love has cost everything. Walking away looks easier. Ease is not the deciding factor. The covenant is. Stand under God — He forms patience in the trial.',
         'Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.',
         'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — even when they are hard to love. Feelings come and go. The covenant still holds.',
         '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Do not deal treacherously. Exit is not wisdom when God still calls you to stay faithful.',

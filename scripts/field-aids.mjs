@@ -78,7 +78,7 @@ export const FIELD_AIDS = {
       'Guard your spirit. Do not deal treacherously. Submit to Him.',
     ],
     prayers: [
-      'Father, love has cost everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen.',
+      'Father, I feel like love has cost me everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen.',
     ],
   },
   'love-and-patience': {
