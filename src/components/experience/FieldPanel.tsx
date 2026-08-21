@@ -42,13 +42,18 @@ export function FieldPanel({
     .sort((a, b) => (b[1].heldAt ?? 0) - (a[1].heldAt ?? 0))
     .slice(0, 12)
 
+  const prayedStations = Object.entries(state.stations)
+    .filter(([, m]) => m.prayedAt != null)
+    .sort((a, b) => (b[1].prayedAt ?? 0) - (a[1].prayedAt ?? 0))
+    .slice(0, 12)
+
   return (
     <div className="field-panel key-chips-panel">
       <header className="nav-panel-header">
         <p className="constellation-kicker">Field</p>
         <h2 className="constellation-title">Your walk</h2>
         <p className="constellation-blurb">
-          Private on this device. Keys used · stations held · paths walked · The Line · Lock.
+          Private on this device. Held · prayed · paths · The Line · Lock.
         </p>
       </header>
 
@@ -62,6 +67,10 @@ export function FieldPanel({
           <span className="field-stat-l">Held</span>
         </li>
         <li className="field-stat">
+          <span className="field-stat-n">{sum.stationsPrayed}</span>
+          <span className="field-stat-l">Prayed</span>
+        </li>
+        <li className="field-stat">
           <span className="field-stat-n">{sum.pathsStarted}</span>
           <span className="field-stat-l">Paths</span>
         </li>
@@ -72,10 +81,6 @@ export function FieldPanel({
         <li className="field-stat">
           <span className="field-stat-n">{sum.locksUsed}</span>
           <span className="field-stat-l">Locks</span>
-        </li>
-        <li className="field-stat">
-          <span className="field-stat-n">{sum.pathsCompleted}</span>
-          <span className="field-stat-l">Finished</span>
         </li>
       </ul>
 
@@ -162,6 +167,27 @@ export function FieldPanel({
           </h3>
           <ul className="field-chip-list">
             {heldStations.map(([id]) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  className="field-chip"
+                  onClick={() => onOpenStation(id)}
+                >
+                  {id.replace(/-/g, ' ')}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {prayedStations.length > 0 ? (
+        <section className="field-section" aria-labelledby="field-prayed">
+          <h3 id="field-prayed" className="field-section-title">
+            Prayed
+          </h3>
+          <ul className="field-chip-list">
+            {prayedStations.map(([id]) => (
               <li key={id}>
                 <button
                   type="button"
