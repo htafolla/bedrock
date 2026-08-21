@@ -1276,24 +1276,23 @@ const document = {
     ),
     /**
      * When You Can No Longer Stand — marriage under fire when exit looks wise.
-     * Covenant > ease; patience from the trial; pray/hope; guard spirit (Mal 2).
+     * Bedrock voice: short holds; lead + Scripture; no essay / no celebrity frame.
      */
     chamber(
       'When You Can No Longer Stand',
-      'When love costs everything and walking away looks easier — ease is not the deciding factor. The covenant is. Stand firm in the patience God is forming.',
+      'Love has cost everything. Walking away looks easier. Ease is not the deciding factor — the covenant is.',
       [
-        'Standing firm is not grit left in your tank. It is patience produced by the trial itself. When strength is gone, when love costs everything, and when walking away looks easier, you stand by what God is forming in you — not by your remaining power.',
+        'You can no longer stand in your own strength. Love has cost everything. Walking away looks easier. Ease is not the deciding factor. The covenant is. Stand under God — He forms patience in the trial.',
         'Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.',
-        'Ease is not the deciding factor. The covenant is. Affections rise and fall; the covenant keeps the marriage standing when feelings disappear — so that love can be rekindled after the fire.',
-        'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — initiating, sacrificial, steady even when she is not lovely, not reciprocating, or hard to love. Persevering in the covenant displays something true about Christ’s faithful love for the church; walking away when it is hard lies about that picture.',
-        '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Refuse treachery against the wife of your youth. The enemy presses the lie that exit is wisdom — “protect yourself, she doesn’t deserve it.” Standing firm resists that counsel.',
+        'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — even when they are hard to love. Feelings come and go. The covenant still holds.',
+        '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Do not deal treacherously. Exit is not wisdom when God still calls you to stay faithful.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
         'Cast all your anxieties on Him, because He cares for you.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
         'But God shows His love for us in that while we were still sinners, Christ died for us.',
         'Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm.',
       ],
-      'James 1:2-4 · Philippians 4:6-7 · 1 Peter 5:7 · Proverbs 3:5-6 · Ephesians 5:25 · Malachi 2:16 · Romans 5:8 · Ephesians 6:13',
+      'James 1:2-4 · Ephesians 5:25 · Malachi 2:16 · Philippians 4:6-7 · 1 Peter 5:7 · Proverbs 3:5-6 · Romans 5:8 · Ephesians 6:13',
       'when-you-can-no-longer-stand',
     ),
     chamber(

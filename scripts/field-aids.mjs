@@ -73,9 +73,9 @@ export const FIELD_AIDS = {
   },
   'when-you-can-no-longer-stand': {
     hacks: [
-      'Ease is not the deciding factor — the covenant is. Standing firm is patience from the trial.',
-      'Keep praying and petitioning. Keep hope for change in both of you. Refuse bitterness.',
-      'Guard your spirit. Refuse treachery. Lean not on your own understanding — submit to Him.',
+      'Ease is not the deciding factor. The covenant is.',
+      'Keep praying. Keep hoping for change. Refuse bitterness.',
+      'Guard your spirit. Do not deal treacherously. Submit to Him.',
     ],
     prayers: [
       'Father, love has cost everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen.',

@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 82,
-    "exportedAt": "2026-08-21T18:23:41.197Z",
+    "exportedAt": "2026-08-21T18:26:58.243Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -2559,11 +2559,11 @@
     {
       "id": "when-you-can-no-longer-stand",
       "title": "When You Can No Longer Stand",
-      "summary": "When love costs everything and walking away looks easier — ease is not the deciding factor. The covenant is. Stand firm in the patience God is forming.",
+      "summary": "Love has cost everything. Walking away looks easier. Ease is not the deciding factor — the covenant is.",
       "body": [
         {
           "type": "paragraph",
-          "text": "Standing firm is not grit left in your tank. It is patience produced by the trial itself. When strength is gone, when love costs everything, and when walking away looks easier, you stand by what God is forming in you — not by your remaining power."
+          "text": "You can no longer stand in your own strength. Love has cost everything. Walking away looks easier. Ease is not the deciding factor. The covenant is. Stand under God — He forms patience in the trial."
         },
         {
           "type": "paragraph",
@@ -2571,15 +2571,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Ease is not the deciding factor. The covenant is. Affections rise and fall; the covenant keeps the marriage standing when feelings disappear — so that love can be rekindled after the fire."
+          "text": "Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — even when they are hard to love. Feelings come and go. The covenant still holds."
         },
         {
           "type": "paragraph",
-          "text": "Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — initiating, sacrificial, steady even when she is not lovely, not reciprocating, or hard to love. Persevering in the covenant displays something true about Christ’s faithful love for the church; walking away when it is hard lies about that picture."
-        },
-        {
-          "type": "paragraph",
-          "text": "“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Refuse treachery against the wife of your youth. The enemy presses the lie that exit is wisdom — “protect yourself, she doesn’t deserve it.” Standing firm resists that counsel."
+          "text": "“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Do not deal treacherously. Exit is not wisdom when God still calls you to stay faithful."
         },
         {
           "type": "paragraph",
@@ -2611,6 +2607,18 @@
           "verseEnd": 4
         },
         {
+          "display": "Ephesians 5:25",
+          "book": "Ephesians",
+          "chapter": 5,
+          "verseStart": 25
+        },
+        {
+          "display": "Malachi 2:16",
+          "book": "Malachi",
+          "chapter": 2,
+          "verseStart": 16
+        },
+        {
           "display": "Philippians 4:6–7",
           "book": "Philippians",
           "chapter": 4,
@@ -2631,18 +2639,6 @@
           "verseEnd": 6
         },
         {
-          "display": "Ephesians 5:25",
-          "book": "Ephesians",
-          "chapter": 5,
-          "verseStart": 25
-        },
-        {
-          "display": "Malachi 2:16",
-          "book": "Malachi",
-          "chapter": 2,
-          "verseStart": 16
-        },
-        {
           "display": "Romans 5:8",
           "book": "Romans",
           "chapter": 5,
@@ -2656,9 +2652,9 @@
         }
       ],
       "hacks": [
-        "Ease is not the deciding factor — the covenant is. Standing firm is patience from the trial.",
-        "Keep praying and petitioning. Keep hope for change in both of you. Refuse bitterness.",
-        "Guard your spirit. Refuse treachery. Lean not on your own understanding — submit to Him."
+        "Ease is not the deciding factor. The covenant is.",
+        "Keep praying. Keep hoping for change. Refuse bitterness.",
+        "Guard your spirit. Do not deal treacherously. Submit to Him."
       ],
       "prayers": [
         "Father, love has cost everything. Walking away looks easier. I am bound by covenant. Form patience. Help me stand firm. Amen."

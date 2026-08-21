@@ -26,7 +26,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Self-control](https://bedrock.rippel.ai/c/self-control) — Spirit fruit: self-control.
 - [God on Marriage](https://bedrock.rippel.ai/c/god-on-marriage) — Marriage is His design — lifelong one-flesh covenant. Not of feelings. Hold the standard when the house shakes.
 - [Marriage Covenant](https://bedrock.rippel.ai/c/marriage-covenant) — One-flesh covenant. Sacrificial love.
-- [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand) — When love costs everything and walking away looks easier — ease is not the deciding factor. The covenant is. Stand firm in the patience God is forming.
+- [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand) — Love has cost everything. Walking away looks easier. Ease is not the deciding factor — the covenant is.
 - [Love and Patience](https://bedrock.rippel.ai/c/love-and-patience) — True love is patient, kind, and keeps no record of wrongs.
 - [Count the Trial as Joy](https://bedrock.rippel.ai/c/count-the-trial-as-joy) — Consider it pure joy when you face trials.
 - [Wait on the Lord](https://bedrock.rippel.ai/c/wait-on-the-lord) — When everything is out of your control — wait. Be strong. Take courage.
