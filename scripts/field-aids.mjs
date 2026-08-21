@@ -640,10 +640,12 @@ export const FIELD_AIDS = {
   },
   'renew-your-mind': {
     hacks: [
-      'The world pattern comes back. Choose Word and prayer over the spiral.',
-      'Renew the mind daily. One thought at a time.',
-      'Put on the mind of Christ. Refuse the old loop.',
+      'The old pattern is back. Open Word. Pray. Do not feed the spiral.',
+      'One thought at a time. Capture it to Christ. Replace it with truth.',
+      'Put on the mind of Christ. Refuse the loop for this hour.',
     ],
-    prayers: ['Lord, renew my mind. Amen.'],
+    prayers: [
+      'Father, renew my mind. I refuse the old pattern. Fix my thoughts on You. Amen.',
+    ],
   },
 }

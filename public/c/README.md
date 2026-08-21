@@ -54,7 +54,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
 - [The Line](https://bedrock.rippel.ai/c/the-line) — My emotional state is my own. Presence without control. Love keeps no record.
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt) — Notice it. My emotional state is my own. Return to what is in front of me.
-- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Transformed mind.
+- [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Do not conform to the old pattern. Be transformed by the renewal of your mind — Word, prayer, one thought at a time.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.
 - [The Word](https://bedrock.rippel.ai/c/the-word) — The lie says you cannot know or understand. God says His Word is for you — light to the simple.
 - [The Adversary](https://bedrock.rippel.ai/c/the-adversary) — Christ has already won. Fix your eyes on Jesus. Stand with God.

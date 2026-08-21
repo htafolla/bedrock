@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 81,
-    "exportedAt": "2026-08-17T12:49:25.090Z",
+    "exportedAt": "2026-08-21T18:20:24.086Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4578,8 +4578,12 @@
     {
       "id": "renew-your-mind",
       "title": "Renew Your Mind",
-      "summary": "Transformed mind.",
+      "summary": "Do not conform to the old pattern. Be transformed by the renewal of your mind — Word, prayer, one thought at a time.",
       "body": [
+        {
+          "type": "paragraph",
+          "text": "The old pattern comes back — craving, spiral, the world’s script. Do not stay conformed to it. Renew the mind: open the Word, pray, take the next right thought under Christ."
+        },
         {
           "type": "paragraph",
           "text": "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."
@@ -4587,6 +4591,22 @@
         {
           "type": "paragraph",
           "text": "Have this mind among yourselves, which is yours in Christ Jesus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and be renewed in the spirit of your minds, and put on the new self, created after the likeness of God in true righteousness and holiness."
+        },
+        {
+          "type": "paragraph",
+          "text": "Set your minds on things that are above, not on things that are on earth."
+        },
+        {
+          "type": "paragraph",
+          "text": "You keep him in perfect peace whose mind is stayed on You, because he trusts in You."
+        },
+        {
+          "type": "paragraph",
+          "text": "For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit."
         }
       ],
       "verses": [
@@ -4601,20 +4621,49 @@
           "book": "Philippians",
           "chapter": 2,
           "verseStart": 5
+        },
+        {
+          "display": "Ephesians 4:22–24",
+          "book": "Ephesians",
+          "chapter": 4,
+          "verseStart": 22,
+          "verseEnd": 24
+        },
+        {
+          "display": "Colossians 3:2",
+          "book": "Colossians",
+          "chapter": 3,
+          "verseStart": 2
+        },
+        {
+          "display": "Isaiah 26:3",
+          "book": "Isaiah",
+          "chapter": 26,
+          "verseStart": 3
+        },
+        {
+          "display": "Romans 8:5",
+          "book": "Romans",
+          "chapter": 8,
+          "verseStart": 5
         }
       ],
       "hacks": [
-        "The world pattern comes back. Choose Word and prayer over the spiral.",
-        "Renew the mind daily. One thought at a time.",
-        "Put on the mind of Christ. Refuse the old loop."
+        "The old pattern is back. Open Word. Pray. Do not feed the spiral.",
+        "One thought at a time. Capture it to Christ. Replace it with truth.",
+        "Put on the mind of Christ. Refuse the loop for this hour."
       ],
       "prayers": [
-        "Lord, renew my mind. Amen."
+        "Father, renew my mind. I refuse the old pattern. Fix my thoughts on You. Amen."
       ],
       "related": [
         "take-every-thought-captive",
         "the-word",
         "walk-by-the-spirit",
+        "rumination",
+        "addiction",
+        "kill-the-flesh",
+        "peace",
         "spiritual-warfare",
         "the-full-armor-of-god"
       ],
