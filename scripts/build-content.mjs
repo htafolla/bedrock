@@ -1280,12 +1280,12 @@ const document = {
      */
     chamber(
       'When You Can No Longer Stand',
-      'Love has cost everything. Walking away looks easier. Ease is not the deciding factor — the covenant is.',
+      'You are giving; they feel cold. You want the marriage and sit in limbo. Hold. Ease is not the deciding factor — the covenant is.',
       [
-        'You can no longer stand in your own strength. Love has cost everything. Walking away looks easier. Ease is not the deciding factor. The covenant is. Stand under God — He forms patience in the trial.',
+        'You are over-giving. They feel cold or turned off. You are in love and stuck in limbo — impatient, maybe used. Those feelings may be true. Hold anyway. Everyone says leave. Ease is not the deciding factor. The covenant is one-flesh — not broken lightly. Wait on the Lord. He forms patience in the trial.',
         'Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.',
-        'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — even when they are hard to love. Feelings come and go. The covenant still holds.',
-        '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Do not deal treacherously. Exit is not wisdom when God still calls you to stay faithful.',
+        'Husbands, love your wives, as Christ loved the church and gave Himself up for her. Love as Christ loved — even when they are hard to love. Feelings come and go. You have not “loved enough” to quit. The covenant still holds.',
+        '“For I hate divorce,” says the Lord, the God of Israel… So guard yourselves in your spirit, and do not be faithless. Guard your spirit. Do not deal treacherously. What everyone says is divorce. Hold. Wait on the Lord.',
         'Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.',
         'Cast all your anxieties on Him, because He cares for you.',
         'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
