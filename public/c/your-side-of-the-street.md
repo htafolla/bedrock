@@ -7,7 +7,7 @@
 ## Under fire
 
 - Stay on your side.
-- Pray and show love.
+- Operate in love.
 - Live your life.
 
 ## Prayer

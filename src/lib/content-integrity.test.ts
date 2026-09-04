@@ -176,7 +176,7 @@ describe('bedrock content integrity', () => {
     expect(yourSide.summary.toLowerCase()).toMatch(/this is your life|love is the way|change is the mission/)
     expect(yourSide.hacks).toEqual([
       'Stay on your side.',
-      'Pray and show love.',
+      'Operate in love.',
       'Live your life.',
     ])
     expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/tend my side|become clean/)

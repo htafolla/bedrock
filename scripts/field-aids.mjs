@@ -416,7 +416,7 @@ export const FIELD_AIDS = {
     // Stance — creed is summary/Standard. Under fire = do now, not a repeat.
     hacks: [
       'Stay on your side.',
-      'Pray and show love.',
+      'Operate in love.',
       'Live your life.',
     ],
     prayers: [
