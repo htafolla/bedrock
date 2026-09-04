@@ -6,9 +6,9 @@
 
 ## Under fire
 
-- This is your life.
-- Love is the way.
-- Change is the mission.
+- Stay on your side.
+- Pray and show love.
+- Live your life.
 
 ## Prayer
 

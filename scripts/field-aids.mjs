@@ -413,11 +413,11 @@ export const FIELD_AIDS = {
     ],
   },
   'your-side-of-the-street': {
-    // Stance — your side under fire. Creed is Standard; lock line lives in Truth.
+    // Stance — creed is summary/Standard. Under fire = do now, not a repeat.
     hacks: [
-      'This is your life.',
-      'Love is the way.',
-      'Change is the mission.',
+      'Stay on your side.',
+      'Pray and show love.',
+      'Live your life.',
     ],
     prayers: [
       'Lord, I tend my side. Make me able to treat them right. If they turn, good. If I only become clean, still good. Amen.',

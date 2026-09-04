@@ -175,9 +175,9 @@ describe('bedrock content integrity', () => {
     expect(yourSide.kind).toBe('stance')
     expect(yourSide.summary.toLowerCase()).toMatch(/this is your life|love is the way|change is the mission/)
     expect(yourSide.hacks).toEqual([
-      'This is your life.',
-      'Love is the way.',
-      'Change is the mission.',
+      'Stay on your side.',
+      'Pray and show love.',
+      'Live your life.',
     ])
     expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/tend my side|become clean/)
     expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
