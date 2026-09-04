@@ -40,6 +40,7 @@ Cast your burden on the Lord, and He will sustain you; He will never permit the 
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street)
 - [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Fear](https://bedrock.rippel.ai/c/fear)

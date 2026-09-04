@@ -45,6 +45,7 @@ But seek first the kingdom of God and His righteousness, and all these things wi
 
 ## Connected truth
 
+- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street)
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Idolatry](https://bedrock.rippel.ai/c/idolatry)
 - [When You Can No Longer Stand](https://bedrock.rippel.ai/c/when-you-can-no-longer-stand)

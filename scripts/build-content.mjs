@@ -499,6 +499,7 @@ const RELATED = {
   ],
   control: [
     'the-line',
+    'your-side-of-the-street',
     'idolatry',
     'pain-interrupt',
     'fear',
@@ -578,6 +579,7 @@ const RELATED = {
   /** Practical other path when Master the Flesh meets real presence */
   'presence-without-control': [
     'the-line',
+    'your-side-of-the-street',
     'pain-interrupt',
     'kill-the-flesh',
     'control',
@@ -596,6 +598,7 @@ const RELATED = {
    * Sister: Pain Interrupt (Lock) when the wave hits.
    */
   'the-line': [
+    'your-side-of-the-street',
     'pain-interrupt',
     'idolatry',
     'when-you-can-no-longer-stand',
@@ -610,11 +613,30 @@ const RELATED = {
     'forgive-as-you-have-been-forgiven',
   ],
   /**
+   * Stance — Your Side of the Street (daily creed under relational fire).
+   * Sister to The Line. Lock snap-back is Pain Interrupt; lock line lives in Truth.
+   */
+  'your-side-of-the-street': [
+    'the-line',
+    'pain-interrupt',
+    'presence-without-control',
+    'control',
+    'leave-vengeance-to-the-lord',
+    'love-and-patience',
+    'forgive-as-you-have-been-forgiven',
+    'when-you-can-no-longer-stand',
+    'marriage-covenant',
+    'he-is-for-you',
+    'love',
+    'deny-yourself',
+  ],
+  /**
    * Lock — Pain Interrupt (moment tool when pain / memory / rage surges).
    * Snaps you back into The Line (Stance).
    */
   'pain-interrupt': [
     'the-line',
+    'your-side-of-the-street',
     'wounded',
     'rumination',
     'loss',
@@ -843,7 +865,7 @@ const document = {
     /** One place for the triad */
     tagline: "A Hitchhiker's Guide to Love · Living · Enduring",
     mission:
-      'Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.',
+      'Truth, brain hacks, and prayer to max-cope and grow out of the storm.',
     workingTitle: "The Hitchhiker's Guild · Love · Living · Enduring",
     version: '0.2.0-beta',
     revised: '2026-08-10',
@@ -1252,9 +1274,9 @@ const document = {
     ),
     chamber(
       'God on Marriage',
-      'Marriage is His design — lifelong one-flesh covenant. Not of feelings. Hold the standard when the house shakes.',
+      'Marriage is His design — lifelong covenant, two made one. Not of feelings. Hold the standard when the house shakes.',
       [
-        'God designed marriage as a lifelong one-flesh covenant. Not of feelings. He is witness between a man and the wife of his youth.',
+        'God designed marriage as a lifelong covenant — two made one. Not of feelings. He is witness between a man and the wife of his youth.',
         'What He has joined, no one should separate. Hold His design when the house shakes — left, leaving, betrayal, or fracture.',
         'Divorce covers a man’s garment with violence and breaks faith, yet God desires godly offspring. Do not invent a lighter standard under fire.',
       ],
@@ -1262,7 +1284,7 @@ const document = {
     ),
     chamber(
       'Marriage Covenant',
-      'One-flesh covenant. Sacrificial love.',
+      'Two made one. Sacrificial love.',
       [
         'The husband is the head of the wife even as Christ is the head of the church, His body, and is Himself its Savior.',
         'Husbands, love your wives, as Christ loved the church and gave Himself up for her, that He might sanctify her, having cleansed her by the washing of water with the word.',
@@ -1619,6 +1641,34 @@ const document = {
       ],
       'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5-6 · Matthew 6:33',
       'the-line',
+    ),
+    /**
+     * Stance — Your Side of the Street.
+     * Sister to The Line: state / presence / ledger vs your side / your life / change.
+     * First principles stay in their words. Lock line in Truth, not a second station.
+     */
+    chamber(
+      'Your Side of the Street',
+      'This is your life. Love is the way. Change is the mission.',
+      [
+        'Your side only. Small true touch points. Then your life.',
+        'Create a better you. No excuses. Manage your feelings and independence. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.',
+        'Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other. Fault does not require being used or abused.',
+        'Their schedule, emotions, and decisions are not yours. Love is not optional. It is the way. Good and bad moments are weather. Not decisions.',
+        'Watch what is kept, not what is said. Winning them back is not the mission. Change is.',
+        'Next right step. Not the whole restoration.',
+        'When the war is person, grip, and ledger — stand on [The Line](chamber:the-line). When a wave hits — [Pain Interrupt](chamber:pain-interrupt).',
+        'Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?',
+        'But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load.',
+        'If possible, so far as it depends on you, live peaceably with all.',
+        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.',
+        'Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is mine, I will repay, says the Lord.”',
+        'And to aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
+        'For God gave us a spirit not of fear but of power and love and of self-control.',
+        'Keep your heart with all vigilance, for from it flow the springs of life.',
+      ],
+      'Matthew 7:3-5 · Galatians 6:4-5 · Romans 12:18 · 1 Corinthians 13:4-5 · Romans 12:19 · 1 Thessalonians 4:11-12 · 2 Timothy 1:7 · Proverbs 4:23',
+      'your-side-of-the-street',
     ),
     /**
      * Lock — moment tool when pain, memory, or rage surges.
@@ -2111,7 +2161,7 @@ for (const c of document.chambers) {
   // Artifact kinds: most nodes are first-principle chambers; rubrics are denser SOP under fire
   if (c.id === 'kill-the-flesh-walk-in-the-spirit') {
     c.kind = 'rubric'
-  } else if (c.id === 'the-line') {
+  } else if (c.id === 'the-line' || c.id === 'your-side-of-the-street') {
     c.kind = 'stance'
   } else if (c.id === 'pain-interrupt') {
     c.kind = 'lock'

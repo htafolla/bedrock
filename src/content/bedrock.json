@@ -3,7 +3,7 @@
     "title": "Bedrock",
     "subtitle": "Do Better. Be Better. Trust God.",
     "tagline": "A Hitchhiker's Guide to Love · Living · Enduring",
-    "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm — do better, be better, trust God when everything feels out of control.",
+    "mission": "Truth, brain hacks, and prayer to max-cope and grow out of the storm.",
     "workingTitle": "The Hitchhiker's Guild · Love · Living · Enduring",
     "version": "0.2.0-beta",
     "revised": "2026-08-10",
@@ -100,7 +100,8 @@
       ],
       "hacks": [
         "Stop. Name who is first: God, not the outcome.",
-        "Seek the kingdom in the next five minutes. One clear act of obedience."
+        "Seek the kingdom in the next five minutes. One clear act of obedience.",
+        "Be still. He is God — not the timeline."
       ],
       "prayers": [
         "Father, You are first. Lead me in Your will. Amen."
@@ -2270,7 +2271,7 @@
         }
       ],
       "hacks": [
-        "Love them. Do not let their choices rule your peace.",
+        "Impulse is not master — delay before you act, speak, or check.",
         "Rage, lust, and checking again are not masters.",
         "Name the urge. Wait. Capture the thought. Keep in step with the Spirit."
       ],
@@ -2290,11 +2291,11 @@
     {
       "id": "god-on-marriage",
       "title": "God on Marriage",
-      "summary": "Marriage is His design — lifelong one-flesh covenant. Not of feelings. Hold the standard when the house shakes.",
+      "summary": "Marriage is His design — lifelong covenant, two made one. Not of feelings. Hold the standard when the house shakes.",
       "body": [
         {
           "type": "paragraph",
-          "text": "God designed marriage as a lifelong one-flesh covenant. Not of feelings. He is witness between a man and the wife of his youth."
+          "text": "God designed marriage as a lifelong covenant — two made one. Not of feelings. He is witness between a man and the wife of his youth."
         },
         {
           "type": "paragraph",
@@ -2335,7 +2336,7 @@
         }
       ],
       "hacks": [
-        "Marriage is shaken. Name it under God — lifelong one-flesh, not of feelings.",
+        "Marriage is shaken. Name it under God — lifelong, two made one, not of feelings.",
         "God’s design does not change when feelings collapse. Hold the standard.",
         "He is witness. Speak as if He is in the room."
       ],
@@ -2353,7 +2354,7 @@
     {
       "id": "marriage-covenant",
       "title": "Marriage Covenant",
-      "summary": "One-flesh covenant. Sacrificial love.",
+      "summary": "Two made one. Sacrificial love.",
       "body": [
         {
           "type": "paragraph",
@@ -4174,6 +4175,7 @@
       ],
       "related": [
         "the-line",
+        "your-side-of-the-street",
         "idolatry",
         "pain-interrupt",
         "fear",
@@ -4269,6 +4271,7 @@
       ],
       "related": [
         "the-line",
+        "your-side-of-the-street",
         "pain-interrupt",
         "kill-the-flesh",
         "control",
@@ -4374,6 +4377,7 @@
         "Father, my state is my own. I am present under You. I keep no record. Amen."
       ],
       "related": [
+        "your-side-of-the-street",
         "pain-interrupt",
         "idolatry",
         "when-you-can-no-longer-stand",
@@ -4386,6 +4390,150 @@
         "love",
         "god-first",
         "forgive-as-you-have-been-forgiven"
+      ],
+      "kind": "stance"
+    },
+    {
+      "id": "your-side-of-the-street",
+      "title": "Your Side of the Street",
+      "summary": "This is your life. Love is the way. Change is the mission.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Your side only. Small true touch points. Then your life."
+        },
+        {
+          "type": "paragraph",
+          "text": "Create a better you. No excuses. Manage your feelings and independence. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other. Fault does not require being used or abused."
+        },
+        {
+          "type": "paragraph",
+          "text": "Their schedule, emotions, and decisions are not yours. Love is not optional. It is the way. Good and bad moments are weather. Not decisions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Watch what is kept, not what is said. Winning them back is not the mission. Change is."
+        },
+        {
+          "type": "paragraph",
+          "text": "Next right step. Not the whole restoration."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the war is person, grip, and ledger — stand on [The Line](chamber:the-line). When a wave hits — [Pain Interrupt](chamber:pain-interrupt)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?"
+        },
+        {
+          "type": "paragraph",
+          "text": "But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load."
+        },
+        {
+          "type": "paragraph",
+          "text": "If possible, so far as it depends on you, live peaceably with all."
+        },
+        {
+          "type": "paragraph",
+          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful."
+        },
+        {
+          "type": "paragraph",
+          "text": "Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is mine, I will repay, says the Lord.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "And to aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one."
+        },
+        {
+          "type": "paragraph",
+          "text": "For God gave us a spirit not of fear but of power and love and of self-control."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+        }
+      ],
+      "verses": [
+        {
+          "display": "Matthew 7:3–5",
+          "book": "Matthew",
+          "chapter": 7,
+          "verseStart": 3,
+          "verseEnd": 5
+        },
+        {
+          "display": "Galatians 6:4–5",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "Romans 12:18",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 18
+        },
+        {
+          "display": "1 Corinthians 13:4–5",
+          "book": "1 Corinthians",
+          "chapter": 13,
+          "verseStart": 4,
+          "verseEnd": 5
+        },
+        {
+          "display": "Romans 12:19",
+          "book": "Romans",
+          "chapter": 12,
+          "verseStart": 19
+        },
+        {
+          "display": "1 Thessalonians 4:11–12",
+          "book": "1 Thessalonians",
+          "chapter": 4,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
+        {
+          "display": "Proverbs 4:23",
+          "book": "Proverbs",
+          "chapter": 4,
+          "verseStart": 23
+        }
+      ],
+      "hacks": [
+        "This is your life.",
+        "Love is the way.",
+        "Change is the mission."
+      ],
+      "prayers": [
+        "Lord, I tend my side. Make me able to treat them right. If they turn, good. If I only become clean, still good. Amen."
+      ],
+      "related": [
+        "the-line",
+        "pain-interrupt",
+        "presence-without-control",
+        "control",
+        "leave-vengeance-to-the-lord",
+        "love-and-patience",
+        "forgive-as-you-have-been-forgiven",
+        "when-you-can-no-longer-stand",
+        "marriage-covenant",
+        "he-is-for-you",
+        "love",
+        "deny-yourself"
       ],
       "kind": "stance"
     },
@@ -4479,6 +4627,7 @@
       ],
       "related": [
         "the-line",
+        "your-side-of-the-street",
         "wounded",
         "rumination",
         "loss",

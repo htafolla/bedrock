@@ -8,6 +8,7 @@ export const FIELD_AIDS = {
     hacks: [
       'Stop. Name who is first: God, not the outcome.',
       'Seek the kingdom in the next five minutes. One clear act of obedience.',
+      'Be still. He is God — not the timeline.',
     ],
     prayers: ['Father, You are first. Lead me in Your will. Amen.'],
   },
@@ -65,7 +66,7 @@ export const FIELD_AIDS = {
   },
   'god-on-marriage': {
     hacks: [
-      'Marriage is shaken. Name it under God — lifelong one-flesh, not of feelings.',
+      'Marriage is shaken. Name it under God — lifelong, two made one, not of feelings.',
       'God’s design does not change when feelings collapse. Hold the standard.',
       'He is witness. Speak as if He is in the room.',
     ],
@@ -251,7 +252,7 @@ export const FIELD_AIDS = {
   },
   'self-control': {
     hacks: [
-      'Love them. Do not let their choices rule your peace.',
+      'Impulse is not master — delay before you act, speak, or check.',
       'Rage, lust, and checking again are not masters.',
       'Name the urge. Wait. Capture the thought. Keep in step with the Spirit.',
     ],
@@ -409,6 +410,17 @@ export const FIELD_AIDS = {
     ],
     prayers: [
       'Father, my state is my own. I am present under You. I keep no record. Amen.',
+    ],
+  },
+  'your-side-of-the-street': {
+    // Stance — your side under fire. Creed is Standard; lock line lives in Truth.
+    hacks: [
+      'This is your life.',
+      'Love is the way.',
+      'Change is the mission.',
+    ],
+    prayers: [
+      'Lord, I tend my side. Make me able to treat them right. If they turn, good. If I only become clean, still good. Amen.',
     ],
   },
   'pain-interrupt': {

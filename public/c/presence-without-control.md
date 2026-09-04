@@ -40,6 +40,7 @@ Trust in the Lord with all your heart, and do not lean on your own understanding
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street)
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt)
 - [Master the Flesh](https://bedrock.rippel.ai/c/master-the-flesh)
 - [Control](https://bedrock.rippel.ai/c/control)

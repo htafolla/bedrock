@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bedrock.rippel.ai/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/about</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -23,31 +23,31 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/llms.txt</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/llms-full.txt</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/export/chambers.json</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/export/journeys.json</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/god-first</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/his-power-and-beauty</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/his-promises</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -77,7 +77,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/his-provision</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -87,7 +87,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-lords-prayer</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-cross-and-our-justification</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -107,7 +107,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/he-is-for-you</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -117,7 +117,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/his-grace-is-sufficient</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -127,7 +127,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-meaning-of-life</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -137,7 +137,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/deny-yourself</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/walk-by-the-spirit</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -157,7 +157,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/kill-the-flesh-walk-in-the-spirit</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/holy-spirit</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -177,7 +177,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/love</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -187,7 +187,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/joy</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -197,7 +197,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/peace</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -207,7 +207,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/patience</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -217,7 +217,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/kindness</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -227,7 +227,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/goodness</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -237,7 +237,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/faithfulness</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -247,7 +247,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/gentleness</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -257,7 +257,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/self-control</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -267,7 +267,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/god-on-marriage</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -277,7 +277,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/marriage-covenant</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -287,7 +287,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/when-you-can-no-longer-stand</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -297,7 +297,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/love-and-patience</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -307,7 +307,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/count-the-trial-as-joy</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -317,7 +317,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/wait-on-the-lord</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -327,7 +327,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/lament-and-pour-out-your-heart</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -337,7 +337,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/a-broken-and-contrite-heart</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -347,7 +347,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/guard-your-heart-and-mouth</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -357,7 +357,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/be-quick-to-listen</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -367,7 +367,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/restore-gently-and-give-time</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -377,7 +377,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/confess-and-be-cleansed</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -387,7 +387,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/walk-in-honesty-and-truth</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -397,7 +397,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/choose-selfless-love</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -407,7 +407,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/do-not-repay-evil-with-evil</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -417,7 +417,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/leave-vengeance-to-the-lord</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -427,7 +427,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/forgive-as-you-have-been-forgiven</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -437,7 +437,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/one-another-in-the-body</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -447,7 +447,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/trust-in-the-lord</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -457,7 +457,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/do-not-fear</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -467,7 +467,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/fear</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -477,7 +477,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/loss</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -487,7 +487,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/wounded</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -497,7 +497,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/rumination</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -507,7 +507,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/regret</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -517,7 +517,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/addiction</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -527,7 +527,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/jealousy</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -537,7 +537,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/control</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -547,7 +547,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/presence-without-control</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -557,7 +557,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-line</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -566,8 +566,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://bedrock.rippel.ai/c/your-side-of-the-street</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://bedrock.rippel.ai/og/c/your-side-of-the-street.v10.png</image:loc>
+      <image:title>Your Side of the Street</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://bedrock.rippel.ai/c/pain-interrupt</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -577,7 +587,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/renew-your-mind</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -587,7 +597,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/take-every-thought-captive</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -597,7 +607,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-word</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -607,7 +617,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-adversary</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -617,7 +627,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/spiritual-warfare</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -627,7 +637,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/wheat-and-tares</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -637,7 +647,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/persecution</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -647,7 +657,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/works-of-the-flesh</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -657,7 +667,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/master-the-flesh</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -667,7 +677,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/adultery</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -677,7 +687,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/idolatry</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -687,7 +697,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/pharmakeia</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -697,7 +707,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/murder</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -707,7 +717,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/malice</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -717,7 +727,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/falsehood</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -727,7 +737,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-full-armor-of-god</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -737,7 +747,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/watch-and-be-ready</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -747,7 +757,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/ten-virgins</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -757,7 +767,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-faithful-servant</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -767,7 +777,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/one-taken-one-left</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -777,7 +787,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/treasure-in-heaven</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -787,7 +797,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/prayer</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -797,7 +807,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/fasting</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -807,7 +817,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/sabbath</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -817,7 +827,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/healing</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -827,7 +837,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/laying-on-of-hands</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -837,7 +847,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/spiritual-gifts</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -847,7 +857,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/hope-of-glory</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -857,7 +867,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/c/the-righteous-fall</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -867,7 +877,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/death-of-loved-one</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -877,7 +887,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/marriage-shaken</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -887,7 +897,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/deep-wound</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -897,7 +907,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/abandonment-fear</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -907,7 +917,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/addiction</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -917,7 +927,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/obsession</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -927,7 +937,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/control-grip</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -937,7 +947,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/jealousy</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -947,7 +957,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/i-fell</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -957,7 +967,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/sexual-sin</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -967,7 +977,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/stuck-regret</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -977,7 +987,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/persecution</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -987,7 +997,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/spiritual-warfare-fog</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -997,7 +1007,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/forced-waiting</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -1007,7 +1017,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/j/battlefield-of-the-mind</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -1017,7 +1027,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-god</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1027,7 +1037,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-marriage</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1037,7 +1047,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-wait</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1047,7 +1057,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-trust</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1057,7 +1067,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-loss</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1067,7 +1077,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-wounded</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1077,7 +1087,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-obsession</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1087,7 +1097,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-regret</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1097,7 +1107,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-fear</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1107,7 +1117,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-addiction</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1117,7 +1127,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-jealousy</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1127,7 +1137,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-control</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1137,7 +1147,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-sexual-sin</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1147,7 +1157,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-witchcraft</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>
@@ -1157,7 +1167,7 @@
   </url>
   <url>
     <loc>https://bedrock.rippel.ai/k/key-persecution</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
     <image:image>

@@ -30,7 +30,7 @@ export type ChamberKind = 'chamber' | 'rubric' | 'stance' | 'lock'
  * Field-guide node on the navigable web of truth.
  * Chambers: Truth (body + verses) | Hack | Prayer.
  * Rubrics: Forged word + Standard (body) | Under fire (≤3) | Prayer — intentionally denser SOP.
- * Stance: daily creed (The Line). Lock: field interrupt when the wave hits (Pain Interrupt).
+ * Stance: daily creed (The Line · Your Side of the Street). Lock: field interrupt when the wave hits (Pain Interrupt).
  */
 /** Optional battle-card / station illustration (static under public/). */
 export interface ChamberIllustration {

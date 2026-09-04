@@ -22,8 +22,8 @@ describe('bedrock content integrity', () => {
   const byId = new Map(chambers.map((c) => [c.id, c]))
 
   it('ships the full atlas (storm + fruit + war + flesh + readiness + practice + glory)', () => {
-    expect(chambers.length).toBe(82)
-    expect(new Set(chambers.map((c) => c.id)).size).toBe(82)
+    expect(chambers.length).toBe(83)
+    expect(new Set(chambers.map((c) => c.id)).size).toBe(83)
     // Full Standard (rubric) — former card restored
     expect(byId.has('kill-the-flesh-walk-in-the-spirit')).toBe(true)
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.title).toMatch(/Kill the Flesh\. Walk in the Spirit/i)
@@ -168,6 +168,25 @@ describe('bedrock content integrity', () => {
     expect(byId.get('control')!.related).toContain('pain-interrupt')
     expect(byId.get('kill-the-flesh')!.related).toContain('the-line')
     expect(byId.get('kill-the-flesh-walk-in-the-spirit')!.related).toContain('the-line')
+    // Stance — Your Side of the Street (sister to The Line)
+    expect(byId.has('your-side-of-the-street')).toBe(true)
+    const yourSide = byId.get('your-side-of-the-street')!
+    expect(yourSide.title).toBe('Your Side of the Street')
+    expect(yourSide.kind).toBe('stance')
+    expect(yourSide.summary.toLowerCase()).toMatch(/this is your life|love is the way|change is the mission/)
+    expect(yourSide.hacks).toEqual([
+      'This is your life.',
+      'Love is the way.',
+      'Change is the mission.',
+    ])
+    expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/tend my side|become clean/)
+    expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()).toMatch(
+      /your side only|winning them back is not the mission|next right step/,
+    )
+    expect(yourSide.related).toContain('the-line')
+    expect(yourSide.related).toContain('pain-interrupt')
+    expect(theLine.related).toContain('your-side-of-the-street')
     expect(byId.get('wounded')!.related).toContain('pain-interrupt')
     expect(byId.get('control')!.kind ?? 'chamber').toBe('chamber')
     expect(byId.has('persecution')).toBe(true)
@@ -475,7 +494,8 @@ describe('bedrock content integrity', () => {
   it('etches critical healing axiom: peace not ruled by them (≤3 under-fire lines)', () => {
     // Plain form of “your emotional state is your own” — no coaching jargon.
     const axiom = /do not let their choices rule your peace|rule yourself, not them/i
-    for (const id of ['control', 'self-control', 'he-is-for-you', 'wounded'] as const) {
+    // Self-control is impulse mastery (enkrateia) — not this relational axiom.
+    for (const id of ['control', 'he-is-for-you', 'wounded'] as const) {
       const c = byId.get(id)
       expect(c, id).toBeDefined()
       expect(c!.hacks.length).toBeLessThanOrEqual(3)

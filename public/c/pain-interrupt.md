@@ -46,6 +46,7 @@ You keep him in perfect peace whose mind is stayed on You, because he trusts in 
 ## Connected truth
 
 - [The Line](https://bedrock.rippel.ai/c/the-line)
+- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street)
 - [Wounded](https://bedrock.rippel.ai/c/wounded)
 - [Obsession](https://bedrock.rippel.ai/c/rumination)
 - [Loss](https://bedrock.rippel.ai/c/loss)

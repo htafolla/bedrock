@@ -66,6 +66,11 @@ describe('seo', () => {
       | { articleSection?: string }
       | undefined
     expect(article?.articleSection).toMatch(/Stance/i)
+    const side = doc.chambers.find((x) => x.id === 'your-side-of-the-street')!
+    expect(side.kind).toBe('stance')
+    const sideSeo = buildChamberSeo(doc, side)
+    expect(sideSeo.title).toContain('Bedrock Stance')
+    expect(sideSeo.canonical).toContain('/c/your-side-of-the-street')
   })
 
   it('lock chamber titles as Lock', () => {

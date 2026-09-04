@@ -59,6 +59,18 @@ describe('share payloads', () => {
     expect(p.ogImage).toMatch(/\/og\/c\/the-line\.v\d+\.png$/)
   })
 
+  it('your-side-of-the-street is stance layer', () => {
+    const p = buildStationShare({
+      chamberId: 'your-side-of-the-street',
+      title: 'Your Side of the Street',
+      summary: 'This is your life. Love is the way. Change is the mission.',
+      kind: 'stance',
+    })
+    expect(p.layer).toBe('stance')
+    expect(p.title).toContain('Bedrock Stance')
+    expect(p.url).toBe(`${SITE_ORIGIN}/c/your-side-of-the-street`)
+  })
+
   it('lock chamber is lock layer', () => {
     const p = buildStationShare({
       chamberId: 'pain-interrupt',

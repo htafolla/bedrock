@@ -59,6 +59,7 @@ export const SPINE_ORDER = [
   'control',
   'presence-without-control',
   'the-line',
+  'your-side-of-the-street',
   'pain-interrupt',
   'renew-your-mind',
   'take-every-thought-captive',
