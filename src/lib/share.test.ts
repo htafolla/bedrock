@@ -63,7 +63,7 @@ describe('share payloads', () => {
     const p = buildStationShare({
       chamberId: 'your-side-of-the-street',
       title: 'Your Side of the Street',
-      summary: 'This is your life. Love is the way. Change is the mission.',
+      summary: 'Your life. Love is the way. Change the mission.',
       kind: 'stance',
     })
     expect(p.layer).toBe('stance')

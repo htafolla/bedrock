@@ -173,16 +173,16 @@ describe('bedrock content integrity', () => {
     const yourSide = byId.get('your-side-of-the-street')!
     expect(yourSide.title).toBe('Your Side of the Street')
     expect(yourSide.kind).toBe('stance')
-    expect(yourSide.summary.toLowerCase()).toMatch(/this is your life|love is the way|change is the mission/)
+    expect(yourSide.summary.toLowerCase()).toMatch(/your life|love is the way|change the mission/)
     expect(yourSide.hacks).toEqual([
       'Stay on your side.',
-      'Operate in love.',
-      'Live your life.',
+      'Choose Love. Not Evil.',
+      'Openly share without games.',
     ])
-    expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/tend my side|become clean/)
+    expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/where you have me now|walk in love/)
     expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
     expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()).toMatch(
-      /your side only|winning them back is not the mission|next right step/,
+      /during separation|their side of the street|winning them back is not the mission/,
     )
     expect(yourSide.related).toContain('the-line')
     expect(yourSide.related).toContain('pain-interrupt')

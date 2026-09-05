@@ -413,14 +413,14 @@ export const FIELD_AIDS = {
     ],
   },
   'your-side-of-the-street': {
-    // Stance — creed is summary/Standard. Under fire = do now, not a repeat.
+    // Stance — creed is summary. Under fire = do now. Prayer is presence, not campaign.
     hacks: [
       'Stay on your side.',
-      'Operate in love.',
-      'Live your life.',
+      'Choose Love. Not Evil.',
+      'Openly share without games.',
     ],
     prayers: [
-      'Lord, I tend my side. Make me able to treat them right. If they turn, good. If I only become clean, still good. Amen.',
+      'Lord, this is where You have me now. Help me be present and walk in love. Amen.',
     ],
   },
   'pain-interrupt': {

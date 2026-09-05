@@ -1,22 +1,22 @@
 # Stance: Your Side of the Street
 
-> This is your life. Love is the way. Change is the mission.
+> Your life. Love is the way. Change the mission.
 
 *Stance · Daily creed · How you stand · Hold first · Bedrock · https://bedrock.rippel.ai/c/your-side-of-the-street*
 
 ## Under fire
 
 - Stay on your side.
-- Operate in love.
-- Live your life.
+- Choose Love. Not Evil.
+- Openly share without games.
 
 ## Prayer
 
-Lord, I tend my side. Make me able to treat them right. If they turn, good. If I only become clean, still good. Amen.
+Lord, this is where You have me now. Help me be present and walk in love. Amen.
 
 ## Truth
 
-Your side only. Small true touch points. Then your life.
+During separation they are on their side of the street and you on yours.
 
 Create a better you. No excuses. Manage your feelings and independence. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.
 

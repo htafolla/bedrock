@@ -1649,9 +1649,9 @@ const document = {
      */
     chamber(
       'Your Side of the Street',
-      'This is your life. Love is the way. Change is the mission.',
+      'Your life. Love is the way. Change the mission.',
       [
-        'Your side only. Small true touch points. Then your life.',
+        'During separation they are on their side of the street and you on yours.',
         'Create a better you. No excuses. Manage your feelings and independence. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.',
         'Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other. Fault does not require being used or abused.',
         'Their schedule, emotions, and decisions are not yours. Love is not optional. It is the way. Good and bad moments are weather. Not decisions.',
