@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T01:53:28.631Z",
+    "exportedAt": "2026-09-05T02:16:40.556Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4606,7 +4606,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "During separation they are on their side of the street and you on yours. Their schedule, emotions, and decisions are not yours."
+          "text": "During separation they are on their side of the street and you on yours."
         },
         {
           "type": "paragraph",

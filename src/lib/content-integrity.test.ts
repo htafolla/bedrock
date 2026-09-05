@@ -181,9 +181,11 @@ describe('bedrock content integrity', () => {
     ])
     expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/where you have me now|walk in love/)
     expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
-    expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()).toMatch(
-      /during separation|their schedule, emotions, and decisions are not yours|winning them back is not the mission/,
-    )
+    const yourSideBody = yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()
+    expect(yourSideBody).toMatch(/during separation/)
+    expect(yourSideBody).toMatch(/their side of the street and you on yours/)
+    expect(yourSideBody).toMatch(/winning them back is not the mission/)
+    expect(yourSideBody).not.toMatch(/their schedule, emotions, and decisions are not yours/)
     const yourSideVerses = yourSide.verses.map((v) => v.display).join(' ')
     expect(yourSideVerses).toMatch(/Matthew 7:3/)
     expect(yourSideVerses).toMatch(/1 Thessalonians 4:11/)
