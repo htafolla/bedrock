@@ -26,26 +26,26 @@ Good and bad moments are weather. Not decisions. Watch what is kept, not what is
 
 When the war is person, grip, and ledger — stand on [The Line](https://bedrock.rippel.ai/c/the-line). When a wave hits — [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt).
 
-But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load.
+Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?
+
+Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.
+
+So then each of us will give an account of himself to God.
 
 If possible, so far as it depends on you, live peaceably with all.
 
-Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.
+Let love be genuine. Abhor what is evil; hold fast to what is good.
 
-Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is mine, I will repay, says the Lord.”
-
-For God gave us a spirit not of fear but of power and love and of self-control.
-
-Keep your heart with all vigilance, for from it flow the springs of life.
+Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another.
 
 ## Scripture
 
-- [Galatians 6:4–5](https://www.biblegateway.com/passage/?search=Galatians+6%3A4-5&version=NIV)
+- [Matthew 7:3](https://www.biblegateway.com/passage/?search=Matthew+7%3A3&version=NIV)
+- [1 Thessalonians 4:11–12](https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A11-12&version=NIV)
+- [Romans 14:12](https://www.biblegateway.com/passage/?search=Romans+14%3A12&version=NIV)
 - [Romans 12:18](https://www.biblegateway.com/passage/?search=Romans+12%3A18&version=NIV)
-- [1 Corinthians 13:4–5](https://www.biblegateway.com/passage/?search=1+Corinthians+13%3A4-5&version=NIV)
-- [Romans 12:19](https://www.biblegateway.com/passage/?search=Romans+12%3A19&version=NIV)
-- [2 Timothy 1:7](https://www.biblegateway.com/passage/?search=2+Timothy+1%3A7&version=NIV)
-- [Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&version=NIV)
+- [Romans 12:9](https://www.biblegateway.com/passage/?search=Romans+12%3A9&version=NIV)
+- [Ephesians 4:25](https://www.biblegateway.com/passage/?search=Ephesians+4%3A25&version=NIV)
 
 ## Connected truth
 

@@ -184,6 +184,19 @@ describe('bedrock content integrity', () => {
     expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()).toMatch(
       /during separation|their schedule, emotions, and decisions are not yours|winning them back is not the mission/,
     )
+    const yourSideVerses = yourSide.verses.map((v) => v.display).join(' ')
+    expect(yourSideVerses).toMatch(/Matthew 7:3/)
+    expect(yourSideVerses).toMatch(/1 Thessalonians 4:11/)
+    expect(yourSideVerses).toMatch(/Romans 14:12/)
+    expect(yourSideVerses).toMatch(/Romans 12:18/)
+    expect(yourSideVerses).toMatch(/Romans 12:9/)
+    expect(yourSideVerses).toMatch(/Ephesians 4:25/)
+    expect(yourSideVerses).not.toMatch(/2 Timothy 1:7/)
+    expect(yourSideVerses).not.toMatch(/1 Corinthians 13/)
+    expect(yourSideVerses).not.toMatch(/Galatians 6:4/)
+    expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ')).toMatch(
+      /mind your own affairs|account of himself to God|Abhor what is evil|put away falsehood/,
+    )
     expect(yourSide.related).toContain('the-line')
     expect(yourSide.related).toContain('pain-interrupt')
     expect(theLine.related).toContain('your-side-of-the-street')

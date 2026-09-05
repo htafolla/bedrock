@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T01:26:02.184Z",
+    "exportedAt": "2026-09-05T01:47:10.836Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4626,7 +4626,15 @@
         },
         {
           "type": "paragraph",
-          "text": "But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load."
+          "text": "Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one."
+        },
+        {
+          "type": "paragraph",
+          "text": "So then each of us will give an account of himself to God."
         },
         {
           "type": "paragraph",
@@ -4634,28 +4642,32 @@
         },
         {
           "type": "paragraph",
-          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful."
+          "text": "Let love be genuine. Abhor what is evil; hold fast to what is good."
         },
         {
           "type": "paragraph",
-          "text": "Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, “Vengeance is mine, I will repay, says the Lord.”"
-        },
-        {
-          "type": "paragraph",
-          "text": "For God gave us a spirit not of fear but of power and love and of self-control."
-        },
-        {
-          "type": "paragraph",
-          "text": "Keep your heart with all vigilance, for from it flow the springs of life."
+          "text": "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another."
         }
       ],
       "verses": [
         {
-          "display": "Galatians 6:4–5",
-          "book": "Galatians",
-          "chapter": 6,
-          "verseStart": 4,
-          "verseEnd": 5
+          "display": "Matthew 7:3",
+          "book": "Matthew",
+          "chapter": 7,
+          "verseStart": 3
+        },
+        {
+          "display": "1 Thessalonians 4:11–12",
+          "book": "1 Thessalonians",
+          "chapter": 4,
+          "verseStart": 11,
+          "verseEnd": 12
+        },
+        {
+          "display": "Romans 14:12",
+          "book": "Romans",
+          "chapter": 14,
+          "verseStart": 12
         },
         {
           "display": "Romans 12:18",
@@ -4664,29 +4676,16 @@
           "verseStart": 18
         },
         {
-          "display": "1 Corinthians 13:4–5",
-          "book": "1 Corinthians",
-          "chapter": 13,
-          "verseStart": 4,
-          "verseEnd": 5
-        },
-        {
-          "display": "Romans 12:19",
+          "display": "Romans 12:9",
           "book": "Romans",
           "chapter": 12,
-          "verseStart": 19
+          "verseStart": 9
         },
         {
-          "display": "2 Timothy 1:7",
-          "book": "2 Timothy",
-          "chapter": 1,
-          "verseStart": 7
-        },
-        {
-          "display": "Proverbs 4:23",
-          "book": "Proverbs",
+          "display": "Ephesians 4:25",
+          "book": "Ephesians",
           "chapter": 4,
-          "verseStart": 23
+          "verseStart": 25
         }
       ],
       "hacks": [
