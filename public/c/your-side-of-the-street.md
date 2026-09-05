@@ -16,11 +16,23 @@ Lord, this is where You have me now. Help me be present and walk in love. Amen.
 
 ## Truth
 
-Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.
+Create a better you. No excuses. This is your work.
 
-Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other or require being used or abused.
+Don’t bottle feelings. Let them flow.
 
-Good and bad moments are weather. Not decisions. Watch what is kept, not what is said.
+Take care of your body and mind.
+
+Bad decisions and mistakes do not define you.
+
+Boundaries protect. They do not punish.
+
+No hate, record-keeping, or revenge.
+
+Faults on both sides do not cancel the other or require being used or abused.
+
+Good and bad moments are weather. Not decisions. A good hour is not the answer. A bad hour is not the end.
+
+Watch what is kept, not what is said. What holds is the truth.
 
 ### The Word
 

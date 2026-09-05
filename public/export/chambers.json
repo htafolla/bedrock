@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T11:24:21.396Z",
+    "exportedAt": "2026-09-05T11:32:21.838Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4606,15 +4606,39 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you."
+          "text": "Create a better you. No excuses. This is your work."
         },
         {
           "type": "paragraph",
-          "text": "Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other or require being used or abused."
+          "text": "Don’t bottle feelings. Let them flow."
         },
         {
           "type": "paragraph",
-          "text": "Good and bad moments are weather. Not decisions. Watch what is kept, not what is said."
+          "text": "Take care of your body and mind."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bad decisions and mistakes do not define you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Boundaries protect. They do not punish."
+        },
+        {
+          "type": "paragraph",
+          "text": "No hate, record-keeping, or revenge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faults on both sides do not cancel the other or require being used or abused."
+        },
+        {
+          "type": "paragraph",
+          "text": "Good and bad moments are weather. Not decisions. A good hour is not the answer. A bad hour is not the end."
+        },
+        {
+          "type": "paragraph",
+          "text": "Watch what is kept, not what is said. What holds is the truth."
         },
         {
           "type": "heading",
