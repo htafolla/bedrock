@@ -4421,11 +4421,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?"
+          "text": "For each will have to bear his own load."
         },
         {
           "type": "paragraph",
-          "text": "Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one."
+          "text": "Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you."
         },
         {
           "type": "paragraph",
@@ -4441,22 +4441,21 @@
         },
         {
           "type": "paragraph",
-          "text": "Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another."
+          "text": "Let what you say be simply “Yes” or “No”; anything more than this comes from evil."
         }
       ],
       "verses": [
         {
-          "display": "Matthew 7:3",
-          "book": "Matthew",
-          "chapter": 7,
-          "verseStart": 3
+          "display": "Galatians 6:5",
+          "book": "Galatians",
+          "chapter": 6,
+          "verseStart": 5
         },
         {
-          "display": "1 Thessalonians 4:11–12",
+          "display": "1 Thessalonians 4:11",
           "book": "1 Thessalonians",
           "chapter": 4,
-          "verseStart": 11,
-          "verseEnd": 12
+          "verseStart": 11
         },
         {
           "display": "Romans 14:12",
@@ -4477,10 +4476,10 @@
           "verseStart": 9
         },
         {
-          "display": "Ephesians 4:25",
-          "book": "Ephesians",
-          "chapter": 4,
-          "verseStart": 25
+          "display": "Matthew 5:37",
+          "book": "Matthew",
+          "chapter": 5,
+          "verseStart": 37
         }
       ],
       "hacks": [
