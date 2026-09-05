@@ -1654,6 +1654,7 @@ const document = {
         'Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.',
         'Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other. Fault does not require being used or abused.',
         'Good and bad moments are weather. Not decisions. Watch what is kept, not what is said. Winning them back is not the mission. Change is. Next right step. Not the whole restoration.',
+        h3('The Word'),
         'Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?',
         'Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
         'So then each of us will give an account of himself to God.',

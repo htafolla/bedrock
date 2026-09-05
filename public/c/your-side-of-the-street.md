@@ -24,6 +24,8 @@ Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Fau
 
 Good and bad moments are weather. Not decisions. Watch what is kept, not what is said. Winning them back is not the mission. Change is. Next right step. Not the whole restoration.
 
+### The Word
+
 Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?
 
 Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.

@@ -180,7 +180,10 @@ describe('bedrock content integrity', () => {
       'Openly share without games.',
     ])
     expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/where you have me now|walk in love/)
-    expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(yourSide.body.filter((b) => b.type === 'heading').map((b) => ('text' in b ? b.text : ''))).toEqual([
+      'The Word',
+    ])
+    expect(yourSide.body.every((b) => b.type === 'paragraph' || b.type === 'heading')).toBe(true)
     const yourSideBody = yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()
     expect(yourSideBody).toMatch(/during separation/)
     expect(yourSideBody).toMatch(/their side of the street and you on yours/)
@@ -391,6 +394,8 @@ describe('bedrock content integrity', () => {
   it('stations use uniform Truth shape by kind (no accidental SOP bodies)', () => {
     /** @type {ReadonlySet<string>} */
     const stationListAllow = new Set(['kill-the-flesh'])
+    /** Stance may mark the Word as a subhead when teaching and verses share Truth. */
+    const stationHeadingAllow = new Set(['your-side-of-the-street'])
     for (const c of chambers) {
       const kind = c.kind ?? 'chamber'
       if (kind === 'rubric') {
@@ -399,6 +404,13 @@ describe('bedrock content integrity', () => {
       }
       if (stationListAllow.has(c.id)) {
         expect(c.body.some((b) => b.type === 'list'), c.id).toBe(true)
+        continue
+      }
+      if (stationHeadingAllow.has(c.id)) {
+        expect(c.body.some((b) => b.type === 'heading'), c.id).toBe(true)
+        for (const b of c.body) {
+          expect(['paragraph', 'heading'], `${c.id} Truth block ${b.type}`).toContain(b.type)
+        }
         continue
       }
       // Default station chrome: Scripture paragraphs only in Truth
