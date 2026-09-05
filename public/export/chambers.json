@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T11:39:15.037Z",
+    "exportedAt": "2026-09-05T11:41:21.015Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4618,7 +4618,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Bad decisions and mistakes do not define you. Are not who you are."
+          "text": "Bad decisions and mistakes do not define who you are."
         },
         {
           "type": "paragraph",
