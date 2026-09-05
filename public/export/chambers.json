@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T02:16:40.556Z",
+    "exportedAt": "2026-09-05T02:35:53.554Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4619,10 +4619,6 @@
         {
           "type": "paragraph",
           "text": "Good and bad moments are weather. Not decisions. Watch what is kept, not what is said. Winning them back is not the mission. Change is. Next right step. Not the whole restoration."
-        },
-        {
-          "type": "paragraph",
-          "text": "When the war is person, grip, and ledger — stand on [The Line](chamber:the-line). When a wave hits — [Pain Interrupt](chamber:pain-interrupt)."
         },
         {
           "type": "paragraph",

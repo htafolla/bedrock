@@ -186,6 +186,8 @@ describe('bedrock content integrity', () => {
     expect(yourSideBody).toMatch(/their side of the street and you on yours/)
     expect(yourSideBody).toMatch(/winning them back is not the mission/)
     expect(yourSideBody).not.toMatch(/their schedule, emotions, and decisions are not yours/)
+    expect(yourSideBody).not.toMatch(/when the war is person/)
+    expect(yourSideBody).not.toMatch(/pain interrupt/)
     const yourSideVerses = yourSide.verses.map((v) => v.display).join(' ')
     expect(yourSideVerses).toMatch(/Matthew 7:3/)
     expect(yourSideVerses).toMatch(/1 Thessalonians 4:11/)
