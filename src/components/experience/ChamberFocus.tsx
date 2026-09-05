@@ -539,11 +539,6 @@ export function ChamberFocus({
                 Under fire first. Field card and full map when you can read.
               </p>
             ) : null}
-            {isStance ? (
-              <p className="chamber-kind-note">
-                Stance — how you stand every day. When the wave hits, use Pain Interrupt.
-              </p>
-            ) : null}
             {isLock ? (
               <p className="chamber-kind-note">
                 Lock — snaps you back into The Line when pain, memory, or rage surges.
@@ -566,7 +561,7 @@ export function ChamberFocus({
                   {isRubric
                     ? 'Three holds when fog is worst.'
                     : isStance
-                      ? 'Three lines — how you stand every day.'
+                      ? 'How you stand this hour.'
                       : isLock
                         ? 'Three moves when the wave hits.'
                         : 'The next right hold — walk this hour.'}

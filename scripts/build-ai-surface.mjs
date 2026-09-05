@@ -448,7 +448,7 @@ function chamberHtml(c, meta, titleById = new Map()) {
     c.kind === 'rubric'
       ? 'Three holds when fog is worst.'
       : c.kind === 'stance'
-        ? 'Three lines — how you stand every day.'
+        ? 'How you stand this hour.'
         : c.kind === 'lock'
           ? 'Three moves when the wave hits.'
           : 'The next right hold — walk this hour.'
@@ -752,20 +752,13 @@ function chamberHtml(c, meta, titleById = new Map()) {
           <h1 class="chamber-title">${esc(c.title)}</h1>
           <p class="chamber-summary">${esc(c.summary)}</p>
           ${
-            isStance
-              ? '<p class="chamber-kind-note">Stance — how you stand every day. When the wave hits, use Pain Interrupt.</p>'
-              : isLock
-                ? '<p class="chamber-kind-note">Lock — snaps you back into The Line when pain, memory, or rage surges.</p>'
-                : isRubric
-                  ? '<p class="chamber-kind-note">Under fire first. Field card and full map when you can read.</p>'
-                  : ''
+            isLock
+              ? '<p class="chamber-kind-note">Lock — snaps you back into The Line when pain, memory, or rage surges.</p>'
+              : isRubric
+                ? '<p class="chamber-kind-note">Under fire first. Field card and full map when you can read.</p>'
+                : ''
           }
         </header>
-        <nav class="nav" aria-label="Chamber actions">
-          <a class="primary" href="/?c=${esc(c.id)}">Open in field guide</a>
-          <a href="/c/${esc(slug)}.md">Markdown</a>
-          <a href="/">Home</a>
-        </nav>
         <div class="hold-block" id="${esc(c.id)}-hold">
           <p class="hold-block-kicker">This hour</p>
           <section class="field-layer field-hacks" aria-labelledby="fire">
@@ -801,6 +794,11 @@ function chamberHtml(c, meta, titleById = new Map()) {
       </nav>
     </article>
     <footer class="site-footer compact" role="contentinfo">
+      <nav class="nav" aria-label="Chamber actions">
+        <a class="primary" href="/?c=${esc(c.id)}">Open in field guide</a>
+        <a href="/c/${esc(slug)}.md">Markdown</a>
+        <a href="/?enter=1">Home</a>
+      </nav>
       <p class="page-card-motto">Do Better. Be Better. Trust God.</p>
       <p>Hold first · Public beta v${esc(meta.version)} · Not a crisis hotline.</p>
       <p>In crisis: <a href="tel:988">call or text 988</a> · Christian counsel: <a href="tel:18557714357">1-855-771-HELP</a></p>
