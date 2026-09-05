@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T11:52:49.935Z",
+    "exportedAt": "2026-09-05T11:56:26.167Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4643,10 +4643,6 @@
         {
           "type": "paragraph",
           "text": "Boundaries protect. They do not punish."
-        },
-        {
-          "type": "paragraph",
-          "text": "No hate, record-keeping, or revenge."
         },
         {
           "type": "paragraph",

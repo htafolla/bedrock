@@ -26,8 +26,6 @@ Bad decisions and mistakes do not define who you are.
 
 Boundaries protect. They do not punish.
 
-No hate, record-keeping, or revenge.
-
 Faults on both sides do not cancel the other.
 
 You can own your part and still refuse to be used or abused.

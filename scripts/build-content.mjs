@@ -1621,9 +1621,9 @@ const document = {
       'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     /**
-     * Stance — The Line.
-     * Opener names the stance (their choices do not own your peace). Holds are the three lines.
-     * Sister tools live in related, not in Truth.
+     * Stance — The Line (inner: peace, state, presence, ledger).
+     * Opener names the stance. Holds are the three lines.
+     * Sister tools live in related, not in Truth. Ledger does not live on the street.
      */
     chamber(
       'The Line',
@@ -1648,9 +1648,9 @@ const document = {
       'the-line',
     ),
     /**
-     * Stance — Your Side of the Street.
-     * Opener names the stance (separation, two sides). Holds are the now-actions.
-     * Sister tools live in related, not in Truth.
+     * Stance — Your Side of the Street (outer: two sides, their life, your work).
+     * Opener names the stance. Holds are the now-actions.
+     * Ledger / record-keeping belongs on The Line, not here.
      */
     chamber(
       'Your Side of the Street',
@@ -1661,7 +1661,6 @@ const document = {
         'Take care of your body and mind.',
         'Bad decisions and mistakes do not define who you are.',
         'Boundaries protect. They do not punish.',
-        'No hate, record-keeping, or revenge.',
         'Faults on both sides do not cancel the other.',
         'You can own your part and still refuse to be used or abused.',
         'Good and bad moments are weather. Not decisions. A good hour is not the answer. A bad hour is not the end.',
