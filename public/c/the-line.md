@@ -1,6 +1,6 @@
 # Stance: The Line
 
-> Their choices, silence, or return do not own your peace. My emotional state is my own. Presence without control. Love keeps no record.
+> Their choices, silence, or return do not own your peace.
 
 *Stance · Daily creed · How you stand · Hold first · Bedrock · https://bedrock.rippel.ai/c/the-line*
 

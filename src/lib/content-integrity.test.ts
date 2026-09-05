@@ -134,9 +134,9 @@ describe('bedrock content integrity', () => {
     expect(theLine.title).toBe('The Line')
     expect(theLine.kind).toBe('stance')
     expect(theLine.summary.toLowerCase()).toMatch(/choices, silence, or return do not own your peace/)
-    expect(theLine.summary.toLowerCase()).toMatch(
-      /emotional state is my own|presence without control|love keeps no record/,
-    )
+    expect(theLine.summary.toLowerCase()).not.toMatch(/emotional state is my own/)
+    expect(theLine.summary.toLowerCase()).not.toMatch(/presence without control/)
+    expect(theLine.summary.toLowerCase()).not.toMatch(/love keeps no record/)
     expect(theLine.hacks).toEqual([
       'My emotional state is my own.',
       'Presence without control.',

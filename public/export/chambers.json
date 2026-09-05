@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T11:48:55.102Z",
+    "exportedAt": "2026-09-05T11:52:49.935Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4491,7 +4491,7 @@
     {
       "id": "the-line",
       "title": "The Line",
-      "summary": "Their choices, silence, or return do not own your peace. My emotional state is my own. Presence without control. Love keeps no record.",
+      "summary": "Their choices, silence, or return do not own your peace.",
       "body": [
         {
           "type": "paragraph",

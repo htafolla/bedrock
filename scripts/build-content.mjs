@@ -1627,7 +1627,7 @@ const document = {
      */
     chamber(
       'The Line',
-      'Their choices, silence, or return do not own your peace. My emotional state is my own. Presence without control. Love keeps no record.',
+      'Their choices, silence, or return do not own your peace.',
       [
         'You can love them and still rule yourself under God.',
         'Listen. Wait. Talk less.',
