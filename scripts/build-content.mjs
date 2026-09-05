@@ -1654,7 +1654,7 @@ const document = {
         'Create a better you. No excuses. This is your work.',
         'Don’t bottle feelings. Let them flow.',
         'Take care of your body and mind.',
-        'Bad decisions and mistakes do not define you.',
+        'Bad decisions and mistakes do not define you. Are not who you are.',
         'Boundaries protect. They do not punish.',
         'No hate, record-keeping, or revenge.',
         'Faults on both sides do not cancel the other or require being used or abused.',
