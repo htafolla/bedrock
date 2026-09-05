@@ -133,6 +133,7 @@ describe('bedrock content integrity', () => {
     const theLine = byId.get('the-line')!
     expect(theLine.title).toBe('The Line')
     expect(theLine.kind).toBe('stance')
+    expect(theLine.summary.toLowerCase()).toMatch(/choices, silence, or return do not own your peace/)
     expect(theLine.summary.toLowerCase()).toMatch(
       /emotional state is my own|presence without control|love keeps no record/,
     )
@@ -142,7 +143,24 @@ describe('bedrock content integrity', () => {
       'Love keeps no record.',
     ])
     expect(theLine.prayers[0]?.toLowerCase()).toMatch(/state is my own|keep no record/)
-    expect(theLine.body.every((b) => b.type === 'paragraph')).toBe(true)
+    expect(theLine.body.filter((b) => b.type === 'heading').map((b) => ('text' in b ? b.text : ''))).toEqual([
+      'The Word',
+    ])
+    expect(theLine.body.every((b) => b.type === 'paragraph' || b.type === 'heading')).toBe(true)
+    const theLineBody = theLine.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()
+    expect(theLineBody).not.toMatch(/choices, silence, or return do not own your peace/)
+    expect(theLineBody).toMatch(/love them and still rule yourself/)
+    expect(theLineBody).toMatch(/stop the ledger/)
+    expect(theLineBody).toMatch(/forgive as you have been forgiven/)
+    const theLineVerses = theLine.verses.map((v) => v.display).join(' ')
+    expect(theLineVerses).toMatch(/2 Timothy 1:7/)
+    expect(theLineVerses).toMatch(/Psalm 46:10/)
+    expect(theLineVerses).toMatch(/James 1:19/)
+    expect(theLineVerses).toMatch(/Matthew 6:34/)
+    expect(theLineVerses).toMatch(/1 Corinthians 13:4/)
+    expect(theLineVerses).toMatch(/Colossians 3:13/)
+    expect(theLineVerses).not.toMatch(/Proverbs 3:5/)
+    expect(theLineVerses).not.toMatch(/Matthew 6:33/)
     expect(theLine.related).toContain('pain-interrupt')
     expect(theLine.related).toContain('kill-the-flesh-walk-in-the-spirit')
     expect(theLine.related).toContain('kill-the-flesh')
@@ -410,7 +428,7 @@ describe('bedrock content integrity', () => {
     /** @type {ReadonlySet<string>} */
     const stationListAllow = new Set(['kill-the-flesh'])
     /** Stance may mark the Word as a subhead when teaching and verses share Truth. */
-    const stationHeadingAllow = new Set(['your-side-of-the-street'])
+    const stationHeadingAllow = new Set(['your-side-of-the-street', 'the-line'])
     for (const c of chambers) {
       const kind = c.kind ?? 'chamber'
       if (kind === 'rubric') {

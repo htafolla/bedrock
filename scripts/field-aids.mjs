@@ -402,7 +402,7 @@ export const FIELD_AIDS = {
     ],
   },
   'the-line': {
-    // Stance — daily creed / how you stand
+    // Stance — opener names the war for your peace. Holds are the three lines.
     hacks: [
       'My emotional state is my own.',
       'Presence without control.',

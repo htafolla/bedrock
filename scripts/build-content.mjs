@@ -1621,25 +1621,30 @@ const document = {
       'Psalm 46:10 · James 1:19 · Philippians 4:6 · Matthew 6:34 · Proverbs 3:5-6 · 2 Timothy 1:7',
     ),
     /**
-     * Stance — daily creed. Title: The Line. Kind: stance.
-     * Truth expands the three lines only — no product meta, no architecture talk.
-     * Sister tool (Pain Interrupt) lives in related / kind chrome, not in Truth.
+     * Stance — The Line.
+     * Opener names the stance (their choices do not own your peace). Holds are the three lines.
+     * Sister tools live in related, not in Truth.
      */
     chamber(
       'The Line',
-      'My emotional state is my own. Presence without control. Love keeps no record.',
+      'Their choices, silence, or return do not own your peace. My emotional state is my own. Presence without control. Love keeps no record.',
       [
-        'My emotional state is my own. Their choices, silence, or return do not own your peace. You can love them and still rule yourself under God.',
-        'Presence without control. Listen. Wait. Talk less. Do not force the present or the future. Show up cleanly; stop securing the outcome.',
-        'Love keeps no record. Stop the ledger. Release the score. Do not rehearse every gap as evidence. Forgive as you have been forgiven.',
-        'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
-        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.',
+        'You can love them and still rule yourself under God.',
+        'Listen. Wait. Talk less.',
+        'Do not force the present or the future.',
+        'Show up cleanly. Stop securing the outcome.',
+        'Stop the ledger. Release the score.',
+        'Do not rehearse every gap as evidence.',
+        'Forgive as you have been forgiven.',
+        h3('The Word'),
         'For God gave us a spirit not of fear but of power and love and self-control.',
+        'Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!',
         'Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.',
-        'Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths.',
-        'But seek first the kingdom of God and His righteousness, and all these things will be added to you.',
+        'Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.',
+        'Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful.',
+        'As the Lord has forgiven you, so you also must forgive.',
       ],
-      'Psalm 46:10 · 1 Corinthians 13:4-5 · 2 Timothy 1:7 · James 1:19 · Proverbs 3:5-6 · Matthew 6:33',
+      '2 Timothy 1:7 · Psalm 46:10 · James 1:19 · Matthew 6:34 · 1 Corinthians 13:4-5 · Colossians 3:13',
       'the-line',
     ),
     /**

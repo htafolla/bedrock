@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T11:41:21.015Z",
+    "exportedAt": "2026-09-05T11:48:55.102Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4491,27 +4491,40 @@
     {
       "id": "the-line",
       "title": "The Line",
-      "summary": "My emotional state is my own. Presence without control. Love keeps no record.",
+      "summary": "Their choices, silence, or return do not own your peace. My emotional state is my own. Presence without control. Love keeps no record.",
       "body": [
         {
           "type": "paragraph",
-          "text": "My emotional state is my own. Their choices, silence, or return do not own your peace. You can love them and still rule yourself under God."
+          "text": "You can love them and still rule yourself under God."
         },
         {
           "type": "paragraph",
-          "text": "Presence without control. Listen. Wait. Talk less. Do not force the present or the future. Show up cleanly; stop securing the outcome."
+          "text": "Listen. Wait. Talk less."
         },
         {
           "type": "paragraph",
-          "text": "Love keeps no record. Stop the ledger. Release the score. Do not rehearse every gap as evidence. Forgive as you have been forgiven."
+          "text": "Do not force the present or the future."
         },
         {
           "type": "paragraph",
-          "text": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!"
+          "text": "Show up cleanly. Stop securing the outcome."
         },
         {
           "type": "paragraph",
-          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful."
+          "text": "Stop the ledger. Release the score."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not rehearse every gap as evidence."
+        },
+        {
+          "type": "paragraph",
+          "text": "Forgive as you have been forgiven."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "The Word"
         },
         {
           "type": "paragraph",
@@ -4519,23 +4532,49 @@
         },
         {
           "type": "paragraph",
+          "text": "Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!"
+        },
+        {
+          "type": "paragraph",
           "text": "Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger."
         },
         {
           "type": "paragraph",
-          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge Him, and He will make straight your paths."
+          "text": "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."
         },
         {
           "type": "paragraph",
-          "text": "But seek first the kingdom of God and His righteousness, and all these things will be added to you."
+          "text": "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful."
+        },
+        {
+          "type": "paragraph",
+          "text": "As the Lord has forgiven you, so you also must forgive."
         }
       ],
       "verses": [
+        {
+          "display": "2 Timothy 1:7",
+          "book": "2 Timothy",
+          "chapter": 1,
+          "verseStart": 7
+        },
         {
           "display": "Psalm 46:10",
           "book": "Psalm",
           "chapter": 46,
           "verseStart": 10
+        },
+        {
+          "display": "James 1:19",
+          "book": "James",
+          "chapter": 1,
+          "verseStart": 19
+        },
+        {
+          "display": "Matthew 6:34",
+          "book": "Matthew",
+          "chapter": 6,
+          "verseStart": 34
         },
         {
           "display": "1 Corinthians 13:4–5",
@@ -4545,29 +4584,10 @@
           "verseEnd": 5
         },
         {
-          "display": "2 Timothy 1:7",
-          "book": "2 Timothy",
-          "chapter": 1,
-          "verseStart": 7
-        },
-        {
-          "display": "James 1:19",
-          "book": "James",
-          "chapter": 1,
-          "verseStart": 19
-        },
-        {
-          "display": "Proverbs 3:5–6",
-          "book": "Proverbs",
+          "display": "Colossians 3:13",
+          "book": "Colossians",
           "chapter": 3,
-          "verseStart": 5,
-          "verseEnd": 6
-        },
-        {
-          "display": "Matthew 6:33",
-          "book": "Matthew",
-          "chapter": 6,
-          "verseStart": 33
+          "verseStart": 13
         }
       ],
       "hacks": [
