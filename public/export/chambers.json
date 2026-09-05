@@ -12,7 +12,7 @@
     "baseAnchorTx": null,
     "origin": "https://bedrock.rippel.ai",
     "chamberCount": 83,
-    "exportedAt": "2026-09-05T01:17:43.778Z",
+    "exportedAt": "2026-09-05T01:23:50.560Z",
     "license": "Public gift — cite Bedrock; not a crisis hotline"
   },
   "chambers": [
@@ -4610,7 +4610,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Create a better you. No excuses. Manage your feelings and independence. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you."
+          "text": "Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you."
         },
         {
           "type": "paragraph",
@@ -4618,23 +4618,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Their schedule, emotions, and decisions are not yours. Love is not optional. It is the way. Good and bad moments are weather. Not decisions."
-        },
-        {
-          "type": "paragraph",
-          "text": "Watch what is kept, not what is said. Winning them back is not the mission. Change is."
-        },
-        {
-          "type": "paragraph",
-          "text": "Next right step. Not the whole restoration."
+          "text": "Good and bad moments are weather. Not decisions. Watch what is kept, not what is said. Winning them back is not the mission. Change is. Next right step. Not the whole restoration."
         },
         {
           "type": "paragraph",
           "text": "When the war is person, grip, and ledger — stand on [The Line](chamber:the-line). When a wave hits — [Pain Interrupt](chamber:pain-interrupt)."
-        },
-        {
-          "type": "paragraph",
-          "text": "Why do you see the speck that is in your brother’s eye, but do not notice the log that is in your own eye?"
         },
         {
           "type": "paragraph",
@@ -4654,10 +4642,6 @@
         },
         {
           "type": "paragraph",
-          "text": "And to aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one."
-        },
-        {
-          "type": "paragraph",
           "text": "For God gave us a spirit not of fear but of power and love and of self-control."
         },
         {
@@ -4666,13 +4650,6 @@
         }
       ],
       "verses": [
-        {
-          "display": "Matthew 7:3–5",
-          "book": "Matthew",
-          "chapter": 7,
-          "verseStart": 3,
-          "verseEnd": 5
-        },
         {
           "display": "Galatians 6:4–5",
           "book": "Galatians",
@@ -4698,13 +4675,6 @@
           "book": "Romans",
           "chapter": 12,
           "verseStart": 19
-        },
-        {
-          "display": "1 Thessalonians 4:11–12",
-          "book": "1 Thessalonians",
-          "chapter": 4,
-          "verseStart": 11,
-          "verseEnd": 12
         },
         {
           "display": "2 Timothy 1:7",
