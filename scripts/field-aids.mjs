@@ -415,7 +415,7 @@ export const FIELD_AIDS = {
   'your-side-of-the-street': {
     // Stance — creed is summary. Under fire = do now. Prayer is presence, not campaign.
     hacks: [
-      'Stay on your side.',
+      'Stay on your side. Their schedule, emotions, and decisions are not yours.',
       'Choose Love. Not Evil.',
       'Openly share without games.',
     ],

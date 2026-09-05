@@ -175,7 +175,7 @@ describe('bedrock content integrity', () => {
     expect(yourSide.kind).toBe('stance')
     expect(yourSide.summary.toLowerCase()).toMatch(/your life|love is the way|change the mission/)
     expect(yourSide.hacks).toEqual([
-      'Stay on your side.',
+      'Stay on your side. Their schedule, emotions, and decisions are not yours.',
       'Choose Love. Not Evil.',
       'Openly share without games.',
     ])
