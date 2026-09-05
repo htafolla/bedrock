@@ -173,9 +173,11 @@ describe('bedrock content integrity', () => {
     const yourSide = byId.get('your-side-of-the-street')!
     expect(yourSide.title).toBe('Your Side of the Street')
     expect(yourSide.kind).toBe('stance')
+    expect(yourSide.summary.toLowerCase()).toMatch(/during separation/)
+    expect(yourSide.summary.toLowerCase()).toMatch(/their side of the street and you on yours/)
     expect(yourSide.summary.toLowerCase()).toMatch(/your life|love is the way|change the mission/)
     expect(yourSide.hacks).toEqual([
-      'Stay on your side. Their schedule, emotions, and decisions are not yours.',
+      'Their schedule, emotions, and decisions are not yours.',
       'Choose Love. Not Evil.',
       'Openly share without games.',
     ])
@@ -185,8 +187,7 @@ describe('bedrock content integrity', () => {
     ])
     expect(yourSide.body.every((b) => b.type === 'paragraph' || b.type === 'heading')).toBe(true)
     const yourSideBody = yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()
-    expect(yourSideBody).toMatch(/during separation/)
-    expect(yourSideBody).toMatch(/their side of the street and you on yours/)
+    expect(yourSideBody).not.toMatch(/during separation/)
     expect(yourSideBody).toMatch(/do not cancel the other or require being used or abused/)
     expect(yourSideBody).toMatch(/good and bad moments are weather/)
     expect(yourSideBody).not.toMatch(/winning them back/)

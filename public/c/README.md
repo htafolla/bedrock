@@ -54,7 +54,7 @@ Canonical field-guide pages for crawlers and answer engines.
 - [Control](https://bedrock.rippel.ai/c/control) — Control is the grip on the outcome. Often fear — also pride, habit, or idol. Stop securing what only God can rule.
 - [Presence Without Control](https://bedrock.rippel.ai/c/presence-without-control) — Relax. Be present. Don’t take or force control of the present or the future.
 - [The Line](https://bedrock.rippel.ai/c/the-line) — My emotional state is my own. Presence without control. Love keeps no record.
-- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street) — Your life. Love is the way. Change the mission.
+- [Your Side of the Street](https://bedrock.rippel.ai/c/your-side-of-the-street) — During separation they are on their side of the street and you on yours. Your life. Love is the way. Change the mission.
 - [Pain Interrupt](https://bedrock.rippel.ai/c/pain-interrupt) — Notice it. My emotional state is my own. Return to what is in front of me.
 - [Renew Your Mind](https://bedrock.rippel.ai/c/renew-your-mind) — Do not conform to the old pattern. Be transformed by the renewal of your mind — Word, prayer, one thought at a time.
 - [Take Every Thought Captive](https://bedrock.rippel.ai/c/take-every-thought-captive) — Divine power demolishes strongholds — take every thought captive to Christ.

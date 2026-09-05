@@ -1,12 +1,12 @@
 # Stance: Your Side of the Street
 
-> Your life. Love is the way. Change the mission.
+> During separation they are on their side of the street and you on yours. Your life. Love is the way. Change the mission.
 
 *Stance · Daily creed · How you stand · Hold first · Bedrock · https://bedrock.rippel.ai/c/your-side-of-the-street*
 
 ## Under fire
 
-- Stay on your side. Their schedule, emotions, and decisions are not yours.
+- Their schedule, emotions, and decisions are not yours.
 - Choose Love. Not Evil.
 - Openly share without games.
 
@@ -15,8 +15,6 @@
 Lord, this is where You have me now. Help me be present and walk in love. Amen.
 
 ## Truth
-
-During separation they are on their side of the street and you on yours.
 
 Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.
 

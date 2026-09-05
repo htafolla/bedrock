@@ -1644,13 +1644,13 @@ const document = {
     ),
     /**
      * Stance — Your Side of the Street.
-     * Sister tools (The Line, Pain Interrupt) live in related, not in Truth.
+     * Opener names the stance (separation, two sides). Holds are the now-actions.
+     * Sister tools live in related, not in Truth.
      */
     chamber(
       'Your Side of the Street',
-      'Your life. Love is the way. Change the mission.',
+      'During separation they are on their side of the street and you on yours. Your life. Love is the way. Change the mission.',
       [
-        'During separation they are on their side of the street and you on yours.',
         'Create a better you. No excuses. Don’t bottle feelings. Let them flow. Take care of your body and mind. Bad decisions and mistakes do not define you.',
         'Boundaries protect. They do not punish. No hate, record-keeping, or revenge. Faults on both sides do not cancel the other or require being used or abused.',
         'Good and bad moments are weather. Not decisions. Watch what is kept, not what is said.',
