@@ -182,7 +182,7 @@ describe('bedrock content integrity', () => {
     expect(yourSide.prayers[0]?.toLowerCase()).toMatch(/where you have me now|walk in love/)
     expect(yourSide.body.every((b) => b.type === 'paragraph')).toBe(true)
     expect(yourSide.body.map((b) => ('text' in b ? b.text : '')).join(' ').toLowerCase()).toMatch(
-      /during separation|their side of the street|winning them back is not the mission/,
+      /during separation|their schedule, emotions, and decisions are not yours|winning them back is not the mission/,
     )
     expect(yourSide.related).toContain('the-line')
     expect(yourSide.related).toContain('pain-interrupt')
